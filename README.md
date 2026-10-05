@@ -1,33 +1,23 @@
 # Universal Fitment
 
-Premium mobile-first demo for identifying products, verifying fitment evidence and comparing compatible parts.
+Premium mobile-first prototype for identifying products, verifying fitment evidence and completing repair / maintenance jobs without forgotten parts.
 
 ## Current build
 
-**v0.8 demo**
+**v0.9 demo**
 
-- Premium Light / Dark / System themes
-- Search, scan and guided troubleshooting
-- Product → part → evidence → offer flow
-- Transparent fitment confidence and offer ranking
-- Saved devices, history and local device notes
-- Camera / BarcodeDetector support when available
-- PWA / offline cache
-- Automated core, data, static and resolver tests
-- New resolver boundary for external product identification
-- Unknown valid barcodes can optionally query Open Facts as a live identification candidate
-- External barcode matches are **never** treated as proof of spare-part compatibility
+New in v0.9:
+- Universal **Job-Kits**: main part + required items + recommended items + consumables + care items
+- **Job completeness score** so users can see whether everything needed for the work is covered
+- Part pages link back to the relevant job, so a single spare part can reveal missing screws, seals or consumables
+- Washing-machine examples for pump replacement and care
+- Automotive examples for oil service and driveshaft replacement, explicitly marked as prototype data
+- **Smart Stock** for consumables with stock, usage rate, delivery window and safety buffer
+- Dynamic reorder recommendation instead of a fixed calendar interval
+- Browser notification permission and test notification
+- Local persistence of job selections, inventory plans and reminder preferences
+- Backend schema draft for jobs, job items, inventory plans and inventory events
 
-> Demo records remain prototype data unless explicitly marked as a live external identification result. No demo fitment or price record is a purchase recommendation.
+Trust rule: AI or an external product database may help identify a product. Compatibility and mandatory replacement items require separate, verifiable evidence.
 
-## Trust rule
-
-AI or an external product database may help identify a product. Compatibility requires separate evidence such as a manufacturer source or verified fitment catalog.
-
-## Deployment
-
-GitHub Actions reconstructs the checked v0.7 base package, applies the v0.8 overlay, runs all automated checks, then deploys the result to GitHub Pages.
-
-v0.8 overlay SHA-256:
-
-`21995e6ae8621e0718a7e804ba82684dfba25132f89922fcc0a41cc8bcf3c071`
+> Demo data only unless explicitly marked otherwise. No demo fitment or repair instruction is a purchase or repair recommendation.
