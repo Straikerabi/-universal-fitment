@@ -1,20 +1,14 @@
-# Universal Fitment v1.2
+# Universal Fitment v1.3
 
-Blind-test build with smarter identifier handling.
+Blind-test build with portable type-plate OCR and an exact manufacturer-verified Krups coffee-machine record.
 
-## New in v1.2
+## New in v1.3
 
-- Distinguishes valid GTIN/EAN/UPC from long manufacturer / serial / production codes.
-- Does not waste generic product-database queries on codes that are very likely serial or production identifiers.
-- Scanner now explains when a decoded barcode is probably not the model number.
-- Typenschild photo flow tries to prefer a model/product-number candidate over a serial-like barcode.
-- Users can still force a live lookup if the heuristic is wrong.
-- Added GTIN checksum validation and regression tests for the blind-test code pattern.
+- iPhone/Safari no longer relies only on the experimental browser TextDetector.
+- Type-plate photos fall back to client-side Tesseract OCR when native text detection is missing.
+- OCR prioritizes labelled REF, TYPE, MODEL and Product No. values over serial-like barcodes.
+- Added manufacturer-verified Krups NDG ESPERTA KP310 / KP310510 / KP310510/7Z0.
+- Added source-linked original Krups parts MS-624360, MS-624569, MS-624570, MS-624673 and MS-624688.
+- Product identity and spare-part compatibility remain separate evidence claims.
 
-## Coffee-machine blind test
-
-The app still knows nothing about the user's actual machine in advance. The goal is:
-
-scan/photo/manual entry → identify exact device → verify care/parts separately → never fabricate fitment.
-
-A serial or production code alone may be insufficient to identify the exact model. In that case the app explicitly asks for the complete type plate instead of pretending the product lookup failed mysteriously.
+No merchant stock or price is invented when no live merchant API is connected.

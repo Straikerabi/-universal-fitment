@@ -1,4 +1,4 @@
-name: Deploy v1.2 identifier-guidance to GitHub Pages
+name: Deploy v1.3 OCR blind-test to GitHub Pages
 
 on:
   push:
@@ -67,6 +67,13 @@ jobs:
           cat .demo/v1.2-patch/part-* | base64 -d | gzip -d > update-v1.2.patch
           echo "81704c1fd138b05cf8511cda27580f4bda0c0de13cdfad926f99dab7a5c90b06  update-v1.2.patch" | sha256sum -c -
           patch -p1 -d site < update-v1.2.patch
+
+      - name: Apply v1.3 OCR blind-test patch
+        shell: bash
+        run: |
+          cat .demo/v1.3-patch/part-* | base64 -d | gzip -d > update-v1.3.patch
+          echo "712dffd0bff704b8afcf6a48ae166f604bd38d8359fb7910e1318495717f6e6d  update-v1.3.patch" | sha256sum -c -
+          patch -p1 -d site < update-v1.3.patch
 
       - name: Run checks
         working-directory: site
