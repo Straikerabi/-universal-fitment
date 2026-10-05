@@ -1,4 +1,4 @@
-name: Deploy v0.7 demo to GitHub Pages
+name: Deploy v0.8 demo to GitHub Pages
 
 on:
   push:
@@ -24,7 +24,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Rebuild demo package
+      - name: Rebuild v0.7 base
         shell: bash
         run: |
           cat .demo/v0.7/part-* > demo-v0.7.zip
@@ -32,6 +32,13 @@ jobs:
           mkdir -p build
           unzip -q demo-v0.7.zip -d build
           mv build/universal-fitment-demo-v0.7 site
+
+      - name: Apply v0.8 overlay
+        shell: bash
+        run: |
+          cat .demo/v0.8-overlay/part-* > overlay-v0.8.zip
+          echo "21995e6ae8621e0718a7e804ba82684dfba25132f89922fcc0a41cc8bcf3c071  overlay-v0.8.zip" | sha256sum -c -
+          unzip -qo overlay-v0.8.zip -d site
 
       - name: Run demo checks
         working-directory: site
@@ -41,8 +48,6 @@ jobs:
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
-        with:
-          enablement: true
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
