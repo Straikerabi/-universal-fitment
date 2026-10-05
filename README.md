@@ -1,14 +1,18 @@
-# Universal Fitment v1.3
+# Universal Fitment v1.5
 
-Blind-test build with portable type-plate OCR and the first exact Krups manufacturer dataset.
+Blind-test build with a real device flow for the Krups KP310 test machine.
 
-## New in v1.3
+## New in v1.5
 
-- iPhone/Safari no longer depends on the experimental browser TextDetector.
-- Full type-plate photos fall back to client-side Tesseract OCR when native text detection is missing.
-- OCR prefers labelled REF, TYPE, MODEL and Product No. values instead of a serial barcode.
-- Added manufacturer-verified Krups NDG ESPERTA KP310 / KP310510 / KP310510/7Z0 data.
-- Added source-linked original Krups parts including MS-624360, MS-624569, MS-624570, MS-624673 and MS-624688.
-- Product identity and part compatibility remain separate evidence claims.
+- Explicit iPhone photo-library picker: Live-Scan, Foto aufnehmen, Aus Fotos.
+- Universal cart stored locally in the browser.
+- Cart groups items by merchant and keeps fitment context attached to every item.
+- Checkout still happens at the merchant; Universal Fitment does not pretend to be the merchant of record yet.
+- Manufacturer-linked Krups offer snapshots for MS-624360, MS-624569 and MS-624570 with source URL, retrieval date, item price, availability and delivery label.
+- Unknown shipping is shown as unknown instead of silently treated as zero.
+- Official manuals/support links are visible on device pages.
+- Verified offers are separated from demo ranking data.
 
-The OCR library is loaded only when a type-plate photo actually needs the fallback path. If OCR cannot load, manual model entry remains available.
+## Trust rule
+
+Identity, compatibility, merchant availability and checkout are separate claims. Every layer can have its own source and timestamp. No live price or shipping cost is invented.
