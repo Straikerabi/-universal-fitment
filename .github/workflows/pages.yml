@@ -1,4 +1,4 @@
-name: Deploy v0.9 demo to GitHub Pages
+name: Deploy v1.0 real-data seed to GitHub Pages
 
 on:
   push:
@@ -33,21 +33,28 @@ jobs:
           unzip -q demo-v0.7.zip -d build
           mv build/universal-fitment-demo-v0.7 site
 
-      - name: Apply tested v0.8 patch
+      - name: Apply v0.8 patch
         shell: bash
         run: |
           base64 -d .demo/v0.8-patch/update.patch.gz.b64 | gzip -d > update-v0.8.patch
           echo "d3f355b83087464fef338635177166f483fa75b8f89b0c004fec3566a7252ba7  update-v0.8.patch" | sha256sum -c -
           patch -p2 -d site < update-v0.8.patch
 
-      - name: Apply tested v0.9 patch
+      - name: Apply v0.9 patch
         shell: bash
         run: |
           cat .demo/v0.9-patch/part-* | base64 -d | gzip -d > update-v0.9.patch
           echo "2303c23b9d83e4cc7564c48f432b6c69fb21785e20dbb3faf4afcf199e87c01f  update-v0.9.patch" | sha256sum -c -
           patch -p1 -d site < update-v0.9.patch
 
-      - name: Run demo checks
+      - name: Apply v1.0 real-data patch
+        shell: bash
+        run: |
+          cat .demo/v1.0-patch/part-* | base64 -d | gzip -d > update-v1.0.patch
+          echo "edb5a97b5d2be13cc359f049122d8ba4b5782fbb74a1faa82dae813141ce8b31  update-v1.0.patch" | sha256sum -c -
+          patch -p1 -d site < update-v1.0.patch
+
+      - name: Run checks
         working-directory: site
         run: |
           npm test
