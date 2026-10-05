@@ -1,4 +1,4 @@
-name: Deploy v1.1 coffee blind-test to GitHub Pages
+name: Deploy v1.2 identifier-guidance to GitHub Pages
 
 on:
   push:
@@ -60,6 +60,13 @@ jobs:
           cat .demo/v1.1-patch/part-* | base64 -d | gzip -d > update-v1.1.patch
           echo "60d05e22d55ad4c56a453e44b3afda5edc23b3d04fdde5c79d9d5005c429f462  update-v1.1.patch" | sha256sum -c -
           patch -p1 -d site < update-v1.1.patch
+
+      - name: Apply v1.2 identifier-guidance patch
+        shell: bash
+        run: |
+          cat .demo/v1.2-patch/part-* | base64 -d | gzip -d > update-v1.2.patch
+          echo "81704c1fd138b05cf8511cda27580f4bda0c0de13cdfad926f99dab7a5c90b06  update-v1.2.patch" | sha256sum -c -
+          patch -p1 -d site < update-v1.2.patch
 
       - name: Run checks
         working-directory: site

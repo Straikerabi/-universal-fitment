@@ -1,19 +1,20 @@
-# Universal Fitment v1.1
+# Universal Fitment v1.2
 
-Blind-test build for real coffee-machine identification.
+Blind-test build with smarter identifier handling.
 
-## What works now
+## New in v1.2
 
-- Live barcode and model/product-number lookup.
-- Search order: verified local records → UPCitemdb → Open Products Facts fallback for barcodes.
-- External matches are identity candidates only and never become fitment proof automatically.
-- Coffee-machine support bridges for De'Longhi, Philips/Saeco, Bosch, Siemens, JURA, Krups and Nespresso.
-- Officially sourced seed records for De'Longhi Magnifica Evo ECAM290.89.SBX EX:1, Philips Series 5500 EP5547/90 and Nespresso VERTUO Pop.
-- Browser image scan can use BarcodeDetector and, where supported, TextDetector. Manual model entry remains the reliable fallback.
-- Confirmed live devices can be saved locally and opened like a normal device record.
+- Distinguishes valid GTIN/EAN/UPC from long manufacturer / serial / production codes.
+- Does not waste generic product-database queries on codes that are very likely serial or production identifiers.
+- Scanner now explains when a decoded barcode is probably not the model number.
+- Typenschild photo flow tries to prefer a model/product-number candidate over a serial-like barcode.
+- Users can still force a live lookup if the heuristic is wrong.
+- Added GTIN checksum validation and regression tests for the blind-test code pattern.
 
-## Trust rule
+## Coffee-machine blind test
 
-Product identity, spare-part compatibility and merchant availability are separate claims. A live product-database hit is not enough to mark a spare part compatible. Compatibility must be backed by manufacturer or other verifiable catalog evidence.
+The app still knows nothing about the user's actual machine in advance. The goal is:
 
-No merchant price or stock is invented when no live merchant API is connected.
+scan/photo/manual entry → identify exact device → verify care/parts separately → never fabricate fitment.
+
+A serial or production code alone may be insufficient to identify the exact model. In that case the app explicitly asks for the complete type plate instead of pretending the product lookup failed mysteriously.
