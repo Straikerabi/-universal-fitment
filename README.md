@@ -1,19 +1,17 @@
-# Universal Fitment v1.6
+# Universal Fitment v1.7 – Miele vacuum pilot
 
-BUILD NOW release. This build consolidates the next usable product layer on top of the verified v1.3 base.
+The public product is now intentionally focused on one vertical and one brand: **Miele vacuum cleaners**.
 
-## Included now
-- Live scan, camera photo and explicit photo-library picker
-- Catalog filters by category, brand, trust level and fitment
-- Universal local cart with device/job/fitment context
-- Job Kits + Smart Stock + Repair Readiness
-- Tool inventory and technical-data status with no invented torque values
-- VIN/FIN + HSN/TSN local vehicle context capture
-- Workshop/repair-service finder with just-in-time location or manual place/ZIP
-- Expanded Settings/More menu
-- Guest-mode account screen with honest limitations
-- FAQ/help center
-- Local export and offline shell
+## Current pilot scope
+- Category exposed in the app: vacuum cleaners only
+- Brand exposed in the catalog: Miele only
+- Initial manufacturer-backed families: Complete C3, Complete C2, Classic C1, Compact C1, Compact C2, Complete C1, Guard L1, Guard S1, Guard M1
+- Explicit camera, photo-library and OCR paths remain available
+- Search and filters are now Miele-vacuum specific
+- Jobs, Smart Stock, cart, repair-readiness, tools and repair-service finder remain available around the vacuum workflow
+
+## Data-quality rule
+Other categories and brands are deliberately hidden until the Miele pilot is deep enough. Expansion happens brand-by-brand after blind tests and source-quality checks.
 
 ## Deliberately not faked
-Cloud accounts, OAuth login, payments, live merchant feeds, licensed VIN decode, TecDoc/GS1/EPREL credentials and partner-workshop booking remain disabled until the real backend/contracts/credentials exist.
+Cloud accounts, OAuth, payments, licensed VIN decode, TecDoc/GS1/EPREL credentials, partner repair-service booking and live merchant feeds remain disabled until the real backend/contracts/credentials exist.

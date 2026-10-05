@@ -1,4 +1,4 @@
-name: Deploy v1.6 BUILD NOW to GitHub Pages
+name: Deploy v1.7 Miele vacuum pilot to GitHub Pages
 
 on:
   push:
@@ -81,6 +81,13 @@ jobs:
           cat .demo/v1.6-patch/part-* | base64 -d | gzip -d > update-v1.6.patch
           echo "229ae9440f4b399e9a15777b4e75baa2b5c9e63ac7095fe44f52d7fa56f36c9f  update-v1.6.patch" | sha256sum -c -
           patch -p1 -d site < update-v1.6.patch
+
+      - name: Apply v1.7 Miele pilot patch
+        shell: bash
+        run: |
+          cat .demo/v1.7-patch/part-* | base64 -d | gzip -d > update-v1.7.patch
+          echo "a1060c3d92add6113d6d77a3dc9ec2c2f593968f944240bc1e501d63aa84c8c2  update-v1.7.patch" | sha256sum -c -
+          patch -p1 -d site < update-v1.7.patch
 
       - name: Run checks
         working-directory: site
