@@ -1,18 +1,19 @@
-# Universal Fitment v1.5
+# Universal Fitment v1.6
 
-Blind-test build with a real device flow for the Krups KP310 test machine.
+BUILD NOW release. This build consolidates the next usable product layer on top of the verified v1.3 base.
 
-## New in v1.5
+## Included now
+- Live scan, camera photo and explicit photo-library picker
+- Catalog filters by category, brand, trust level and fitment
+- Universal local cart with device/job/fitment context
+- Job Kits + Smart Stock + Repair Readiness
+- Tool inventory and technical-data status with no invented torque values
+- VIN/FIN + HSN/TSN local vehicle context capture
+- Workshop/repair-service finder with just-in-time location or manual place/ZIP
+- Expanded Settings/More menu
+- Guest-mode account screen with honest limitations
+- FAQ/help center
+- Local export and offline shell
 
-- Explicit iPhone photo-library picker: Live-Scan, Foto aufnehmen, Aus Fotos.
-- Universal cart stored locally in the browser.
-- Cart groups items by merchant and keeps fitment context attached to every item.
-- Checkout still happens at the merchant; Universal Fitment does not pretend to be the merchant of record yet.
-- Manufacturer-linked Krups offer snapshots for MS-624360, MS-624569 and MS-624570 with source URL, retrieval date, item price, availability and delivery label.
-- Unknown shipping is shown as unknown instead of silently treated as zero.
-- Official manuals/support links are visible on device pages.
-- Verified offers are separated from demo ranking data.
-
-## Trust rule
-
-Identity, compatibility, merchant availability and checkout are separate claims. Every layer can have its own source and timestamp. No live price or shipping cost is invented.
+## Deliberately not faked
+Cloud accounts, OAuth login, payments, live merchant feeds, licensed VIN decode, TecDoc/GS1/EPREL credentials and partner-workshop booking remain disabled until the real backend/contracts/credentials exist.
