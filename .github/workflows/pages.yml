@@ -52,7 +52,7 @@ jobs:
         run: |
           cat .demo/v1.0-patch/part-* | base64 -d | gzip -d > update-v1.0.patch
           echo "edb5a97b5d2be13cc359f049122d8ba4b5782fbb74a1faa82dae813141ce8b31  update-v1.0.patch" | sha256sum -c -
-          patch -p1 -d site < update-v1.0.patch
+          patch -p2 -d site < update-v1.0.patch
 
       - name: Run checks
         working-directory: site
