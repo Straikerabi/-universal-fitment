@@ -1,0 +1,54 @@
+name: Deploy v0.7 demo to GitHub Pages
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  test-and-deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Rebuild demo package
+        shell: bash
+        run: |
+          cat .demo/v0.7/part-* > demo-v0.7.zip
+          echo "c02466e0c2a55cbdce895fae64bf1359b725bd09de4a9de69b483bb2b090078e  demo-v0.7.zip" | sha256sum -c -
+          mkdir -p build
+          unzip -q demo-v0.7.zip -d build
+          mv build/universal-fitment-demo-v0.7 site
+
+      - name: Run demo checks
+        working-directory: site
+        run: |
+          npm test
+          npm run check
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
