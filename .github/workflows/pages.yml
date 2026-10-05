@@ -1,4 +1,4 @@
-name: Deploy v1.3 OCR blind-test to GitHub Pages
+name: Deploy v1.4 photo-library picker to GitHub Pages
 
 on:
   push:
@@ -74,6 +74,13 @@ jobs:
           cat .demo/v1.3-patch/part-* | base64 -d | gzip -d > update-v1.3.patch
           echo "712dffd0bff704b8afcf6a48ae166f604bd38d8359fb7910e1318495717f6e6d  update-v1.3.patch" | sha256sum -c -
           patch -p1 -d site < update-v1.3.patch
+
+      - name: Apply v1.4 photo-library patch
+        shell: bash
+        run: |
+          cat .demo/v1.4-patch/part-* | base64 -d | gzip -d > update-v1.4.patch
+          echo "c1f0b81617ca0401190dc1a857894ff44bac6a6442b589ef82b48d94a484378e  update-v1.4.patch" | sha256sum -c -
+          patch -p1 -d site < update-v1.4.patch
 
       - name: Run checks
         working-directory: site
