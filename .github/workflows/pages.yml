@@ -1,4 +1,4 @@
-name: Deploy v1.0 real-data seed to GitHub Pages
+name: Deploy v1.1 coffee blind-test to GitHub Pages
 
 on:
   push:
@@ -53,6 +53,13 @@ jobs:
           cat .demo/v1.0-patch/part-* | base64 -d | gzip -d > update-v1.0.patch
           echo "edb5a97b5d2be13cc359f049122d8ba4b5782fbb74a1faa82dae813141ce8b31  update-v1.0.patch" | sha256sum -c -
           patch -p2 -d site < update-v1.0.patch
+
+      - name: Apply v1.1 coffee live-data patch
+        shell: bash
+        run: |
+          cat .demo/v1.1-patch/part-* | base64 -d | gzip -d > update-v1.1.patch
+          echo "60d05e22d55ad4c56a453e44b3afda5edc23b3d04fdde5c79d9d5005c429f462  update-v1.1.patch" | sha256sum -c -
+          patch -p1 -d site < update-v1.1.patch
 
       - name: Run checks
         working-directory: site
