@@ -1,4 +1,4 @@
-# Universal Fitment v1.20 – Miele, Bosch, Dyson and AEG catalogs
+# Universal Fitment v1.20.1 – Miele, Bosch, Dyson and AEG catalogs
 
 The public product covers **Miele, Bosch, Dyson and AEG floor and cordless vacuum cleaners**: 249 distinct model names, 260 catalog references and 759 unique parts/accessories. Device references, dated price snapshots and part-fitment approval remain separate. The catalog is expanding; it is not an exhaustive list or a certified German sales ranking.
 

@@ -1,4 +1,4 @@
-# v1.20 — four vacuum brands and on-demand catalogs
+# v1.20.1 — four vacuum brands and on-demand catalogs
 
 The app now presents 249 distinct model names, 260 catalog references and 759 unique parts/accessories. The new AEG and Dyson content is usable from home, search, device details, parts/prices, marketplace searches, repair referrals, the cart and reviewed JSON backups. Model references do not assert that a spare part fits the user's actual device.
 
