@@ -1,12 +1,12 @@
 # Phase 4: eBay- und Amazon-Zugänge
 
-Stand: 2026-10-06. Vorbereitung für Universal Fitment v1.15; keine Registrierung, Freigabe oder produktive API-Verbindung wird durch dieses Dokument behauptet.
+Stand: 2026-10-06. Vorbereitung für Universal Fitment v1.16; keine Registrierung, Freigabe oder produktive API-Verbindung wird durch dieses Dokument behauptet.
 
 ## Tatsächlicher Stand
 
 | Zugang | Status | Nächster Nachweis |
 | --- | --- | --- |
-| GitHub / öffentliche App | Repository und v1.15 vorhanden | Bestehender Projektzugang |
+| GitHub / öffentliche App | Repository und v1.16 vorhanden | Bestehender Projektzugang |
 | Supabase | Projekt `universal-fitment`, Frankfurt, Free; Marketplace-Server Version 4 und dauerhafte Aufrufgrenzen bereitgestellt | Anbieterzugänge und angemeldeter Pilotnutzer noch offen |
 | eBay Developers | Kontostatus und Schlüssel unbekannt; Anmeldung aus dem Cloud-Browser ausgeschlossen | Aktiviertes Produktions-Keyset und verfügbare OAuth-Berechtigungen |
 | eBay Partner Network | Mitgliedschaft, Publisher-ID und Kampagne unbekannt | Bestätigte Teilnahme für Provisionslinks |

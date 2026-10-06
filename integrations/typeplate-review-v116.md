@@ -1,0 +1,17 @@
+# Reviewed type-plate identification v1.16
+
+Photo OCR now opens a local editable review. It never automatically chooses the first OCR token or sends the full type plate to an external product catalog. Text is bounded to 8,000 characters / 100 parsed lines, kept only in current-page memory and cleared on leaving the review/comparison workflow. It is excluded from saved-device state, backup files, support diagnostics and URLs. Images are revoked through existing cleanup. Optional OCR engine/language downloads remain separate; no new recognition model or brand data was invented.
+
+Material numbers, GTINs, product types, model/family names and serial fields are parsed separately. Labelled serials (including next-line values) cannot become bare barcode candidates. GTIN parsing accepts numeric formatting, not letters stripped out of arbitrary serial strings. Recognized device constraints must agree. Mixed part/device fields and a recognized device plus an unrecognized material/GTIN require correction. Unknown type codes stay visibly unknown; explicit known family names can offer a family record without asserting an exact variant. Known foreign brands block suggestions; missing brand requires an explicit Miele checkbox before device selection. Editing the textarea disables previous device/part buttons until rechecking.
+
+Part identifiers are resolved against the actual part catalog, never device accessory aliases. A known part number or EAN entered through manual/photo/live scan goes to part review. Device type alone can describe several variants; all matching variants are shown. Existing source-backed part fitment remains unchanged and unresolved assemblies remain unresolved.
+
+Up to four concrete variants can be compared side by side using the existing manufacturer facts, material/EAN/type, color, bag system, control and equipment. Differences are labelled; missing values stay explicit. The table adds no inferred price, quality rating or part interchangeability. Family records cannot masquerade as concrete devices in this comparison.
+
+Search badges state what matched: device material, device EAN, common type, family or accessory identifier. Internal relevance scores still rank results but are no longer shown as percentage likelihoods. External barcode lookup responses must match the requested normalized barcode. Malformed item lists are handled without crashing; cancellation stops fallback calls and both fetch and JSON parsing have a bounded deadline.
+
+Validation: 23 app suites plus syntax checks; type-plate fixtures cover all 62 concrete variants and parts, conflicting/repeated/same-line labels, missing and foreign brands, serial exclusion and unknown types. Resolver tests cover mismatched returned codes, malformed payloads, ignored AbortSignal, slow JSON and no fallback after cancellation. These are synthetic fixtures, not blind physical type-plate accuracy evidence. Existing server contracts and generated Edge package are checked; backend v4, DB grants, quotas, credentials and provider activation are unchanged.
+
+Core offline assets: 869,710 bytes (about 0.87 MB uncompressed). Photos and optional OCR downloads are additional. Prices retain the dated 2026-10-06 source snapshot; this release does not refresh stock/prices or enable live merchant offers.
+
+Browser verification will be recorded after publication. Real camera/mobile and blind photo tests, a real positive pilot login and provider access are still outstanding.

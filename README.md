@@ -1,14 +1,18 @@
-# Universal Fitment v1.15 – pilot readiness and cancellable scanning
+# Universal Fitment v1.16 – reviewed type-plate identification
 
 The public product is now intentionally focused on one vertical and one brand: **Miele vacuum cleaners**.
 
 ## Current pilot scope
+- Photo OCR now opens a local, editable type-plate review before any device selection. Material number, EAN, type, model and serial number remain distinct; contradictory known identifiers block selection. A named family can remain usable when a type is unknown, without asserting an exact variant
+- A source-fact comparison shows two to four concrete variants with explicit differences and missing values; shared type does not imply shared equipment or interchangeable parts
+- Known part codes open a part review instead of being presented as exact vacuum identities. Missing brand requires confirmation before a device can open; known foreign brands are blocked. Serial fields are excluded, including values on the following line
+- Search badges explain the actual matching field instead of presenting relevance scores as identity/fitment percentages. External barcode lookups reject mismatched returned codes and malformed responses; cancellation stops later fallbacks and bounds response-body parsing. See [v1.16 validation](integrations/typeplate-review-v116.md)
 - A dedicated access-status page separates connectivity, the current account's pilot permission and eBay/Amazon configuration without provider calls or quota consumption. Its previewable diagnostic report excludes credentials and personal records
 - Login/logout mutations are serialized; a cancelled late login cannot restore the SDK session. Photo OCR starts explicitly, supports retries, and releases cancelled or late-arriving workers. Schema 3 imports reject missing data sections before replacement. See [v1.15 validation](integrations/pilot-readiness-v115.md)
 - Guest cart and device data recover safely from malformed local records; blocked/full browser storage keeps a temporary current-tab copy and displays an export warning
 - Local JSON backups now include a reviewed restore flow with preview and an explicit replace confirmation. Known devices and parts are checked against the catalog; altered prices remain open, and old timestamps are never refreshed by importing
 - Part search supports reversed word order and formatted material/EAN numbers. Cart quantities are consistent whole numbers, known-part marketplace links are rebuilt from the selected part, and interrupted scanner/photo/search tasks cannot repaint another page
-- A reproducible, pinned esbuild bundle uses a unique versioned entry and stylesheet cache key. Core offline assets total about **0.85 MB uncompressed**, still below 1 MB. Optional manufacturer photos and OCR engine/language downloads are additional; manuals are linked. See [v1.14 validation](integrations/guest-readiness-v114.md)
+- A reproducible, pinned esbuild bundle uses a unique versioned entry and stylesheet cache key. Core offline assets total about **0.87 MB uncompressed**, still below 1 MB. Optional manufacturer photos and OCR engine/language downloads are additional; manuals are linked. See [v1.14 validation](integrations/guest-readiness-v114.md)
 - Account page now supports email/password login for existing pilot accounts, verified through Supabase Auth; the session stays in memory and refreshes through the pinned local SDK. No public signup or outgoing test email was performed
 - Part pages can call the protected marketplace server with the user JWT. Missing login, pilot permission, provider access, quota and network failure are distinguished. Cross-origin Auth and API responses bypass the offline cache
 - Real positive login still needs an actual pilot account and a database pilot-permission entry. Local device/cart data are not synced. See [pilot authentication](integrations/auth-sdk/README.md)
