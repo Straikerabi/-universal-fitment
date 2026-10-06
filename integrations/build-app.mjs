@@ -14,3 +14,11 @@ if(process.argv.includes('--check')){
   if(!fs.existsSync(target)||!Buffer.from(bytes).equals(fs.readFileSync(target)))throw Error('Published bundle differs from the current source. Run integrations/build-app.mjs.');
 }else fs.writeFileSync(target,bytes);
 console.log(`App ${version}: ${bytes.length} bytes; ${process.argv.includes('--check')?'reproducible artifact verified':'bundle written'}.`);
+
+const servicesTarget=path.join(root,`site/services-v${version}.js`);
+const servicesResult=await esbuild.build({entryPoints:[path.join(root,'site/src/data/services.js')],bundle:true,format:'esm',platform:'browser',target:'es2022',minify:true,legalComments:'inline',write:false});
+const servicesBytes=servicesResult.outputFiles[0].contents;
+if(process.argv.includes('--check')){
+ if(!fs.existsSync(servicesTarget)||!Buffer.from(servicesBytes).equals(fs.readFileSync(servicesTarget)))throw Error('Optional service pack differs from source.');
+}else fs.writeFileSync(servicesTarget,servicesBytes);
+console.log(`Optional services: ${servicesBytes.length} bytes; loaded on demand.`);

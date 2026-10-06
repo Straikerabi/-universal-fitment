@@ -1,4 +1,4 @@
-name: Deploy v1.18 Bosch device-to-part workflow to GitHub Pages
+name: Deploy v1.19 vacuum repair and rental to GitHub Pages
 
 on:
   push:
@@ -162,6 +162,13 @@ jobs:
           cat .demo/v1.18-patch/part-* | base64 -d | gzip -d > update-v1.18.patch
           echo "6508ab3ace327d687c4d2560f105828b85d5b94a7ef254794ad84bca239bc1ec  update-v1.18.patch" | sha256sum -c -
           patch -p1 -d site < update-v1.18.patch
+
+      - name: Apply v1.19 vacuum repair and rental patch
+        shell: bash
+        run: |
+          cat .demo/v1.19-patch/part-* | base64 -d | gzip -d > update-v1.19.patch
+          echo "94b8a08648c1686d5a8a5dc3b0317b047fe3142aeec555cc2279b05ede174981  update-v1.19.patch" | sha256sum -c -
+          patch -p1 -d site < update-v1.19.patch
 
       - name: Verify reproducible app bundle
         run: |

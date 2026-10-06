@@ -1,8 +1,9 @@
-# Universal Fitment v1.18 – Bosch device-to-part review
+# Universal Fitment v1.19 – Vacuum repair, rentals and photo loading
 
 The public product focuses on **Miele and Bosch vacuum cleaners**. Bosch is added as 60 source-linked model references; full E-Nr. indices and individual replacement-part suitability remain open for manufacturer review.
 
 ## Current pilot scope
+- **Repair and rental referrals:** source-backed Miele/Bosch vacuum repair, device-specific copyable requests, explicit vacuum/electronics local search and an OBI wet/dry rental with dated tariffs/deposit. Local results and rental stock are not verified partners/live offers. Default lists use local illustrations, with detail/on-demand/automatic photo modes; an optional service pack loads only when opened. Core offline files remain about 1.04 MB; manufacturer catalogs are not cloud-backed yet. See [v1.19 scope, sources and checks](integrations/services-v119.md).
 - **Bosch E-Nr. workflow:** the reviewed full /xx number follows the matching device through its parts, price list and marketplace searches. A part detail can copy the actual E-Nr. and part identifiers for manufacturer/supplier checking. Editing, discarding, switching devices, leaving the device workflow or reloading clears this temporary context; saved records, cart, backup, diagnostics and share URLs exclude it. Format validation does not approve fitment. Brand-specific parts/marketplace filter choices now stay within the chosen brand. See [v1.18 workflow and validation](integrations/bosch-workflow-v118.md)
 - **Bosch second brand:** 22 bagged, 18 bagless and 20 cordless model references from Bosch product pages, with exact model codes, validated device EANs, technical facts, manufacturer photos and 225 linked instruction/product documents
 - 45 distinct original Bosch articles are deduplicated by the actual material number, with model relationships taken only from each device's manufacturer accessory list. All Bosch relationships remain visibly `variant_check_required`; no /xx index is invented or promoted to a confirmed device variant
