@@ -153,7 +153,7 @@ jobs:
         shell: bash
         run: |
           cat .demo/v1.17-patch/part-* | base64 -d | gzip -d > update-v1.17.patch
-          echo "10515486e0330288cce47a91008f309555da10eae9106b9f00679a357f831b8b  update-v1.17.patch" | sha256sum -c -
+          echo "363c4bb9f49d5db322499d67324d1241b2b7e45e29c23af9820ce590a0d20288  update-v1.17.patch" | sha256sum -c -
           patch -p1 -d site < update-v1.17.patch
 
       - name: Verify reproducible app bundle
