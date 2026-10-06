@@ -1,4 +1,4 @@
-# Universal Fitment v1.9 – Miele spare parts, aftermarket alternatives and instructions
+# Universal Fitment v1.10 – sourced parts prices, shipping and estimated installation time
 
 The public product is now intentionally focused on one vertical and one brand: **Miele vacuum cleaners**.
 
@@ -14,6 +14,12 @@ The public product is now intentionally focused on one vertical and one brand: *
 - Aftermarket bags, filters, hoses, batteries and a charger are linked to primary supplier statements and visibly labelled as supplier claims, not Miele approvals. No HX2 battery is inferred to fit HX3; a supplier typo is not treated as Duoflex evidence
 - Every concrete model displays its exact official product photo, with a local vacuum illustration when a photo fails or the device is offline
 - A complete parts catalog and per-device filters support original/aftermarket, category, series, name, material number, article number and EAN
+- Global and per-device price lists cover all 167 catalog entries. Each price links its own part page, gives its retrieval date and distinguishes sale-unit/pack price, VAT basis, currency and provider availability
+- 157 original Miele prices were fetched directly from their exact material-number pages on 2026-10-06. Seven vhbw prices come from current German Electropapa pages. SQOON net quantity-tier prices, a Polish PLN hose price and an older Müller/Swirl reference remain visibly separate
+- Shipping policies link the provider's own terms. Miele's 6.50 EUR fee and inclusive 49 EUR free-shipping threshold are applied once per merchant basket; the captured German Electropapa product pages explicitly offer free DE shipping
+- The cart accepts available, recently retrieved gross EUR source prices for a selected device, recomputes the merchant threshold as quantity changes and keeps incomplete totals open. Unknown values are never converted to zero; net, foreign-currency, unavailable and older prices do not enter a confirmed EUR total
+- Quotes are dated snapshots, not a live merchant feed. Prices older than 24 hours are marked; the deliberately older Swirl source is marked from the outset. The provider's current price and selected delivery method are checked on its product page
+- 89 parts have editorial estimates of active replacement time, with a task-specific range and explicit exclusion of charging, drying and diagnosis. Internal assemblies and unresolved variants retain an open time instead of an invented labor standard
 - Part details link available illustrated bag-change instructions, supplier manuals and the selected device's instruction PDF. Product sheets are explicitly distinguished from installation instructions; internal part repair steps are not invented
 - Exact instruction/data-sheet downloads are linked where published; missing full instructions link to Miele's explicitly labelled manual finder
 - Explicit camera, photo-library and OCR paths remain available
@@ -24,7 +30,7 @@ The public product is now intentionally focused on one vertical and one brand: *
 ## Data-quality rule
 Other categories and brands are deliberately hidden until the Miele pilot is deep enough. Expansion happens brand-by-brand after blind tests and source-quality checks.
 
-Source snapshot: **2026-10-06**. No snapshot prices, merchant stock, ratings or delivery claims become live offers. CI checks every exact device identifier, job reference, category/series filter, spare-part provenance, supplier scope and sensitive generation/variant boundary. The public spare-parts catalog is not the complete serial-specific internal service inventory; unlisted motors/electronics require an official Miele check using the type plate.
+Source snapshot: **2026-10-06**. Provider prices, stock and arrival ranges are shown as dated source records, never as live offers or fabricated rating-based recommendations. Installation minutes are our own planning estimates, not manufacturer specifications. CI checks exact device identifiers, job references, category/series filters, spare-part provenance, supplier scope, generation/variant boundaries, VAT/currency/age handling and same-merchant shipping thresholds. The public spare-parts catalog is not the complete serial-specific internal service inventory; unlisted motors/electronics require an official Miele check using the type plate.
 
 ## Deliberately not faked
 Cloud accounts, OAuth, payments, licensed VIN decode, TecDoc/GS1/EPREL credentials, partner repair-service booking and live merchant feeds remain disabled until the real backend/contracts/credentials exist.

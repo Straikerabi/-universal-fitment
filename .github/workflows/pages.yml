@@ -1,4 +1,4 @@
-name: Deploy v1.9 Miele parts and guides to GitHub Pages
+name: Deploy v1.10 parts prices and shipping to GitHub Pages
 
 on:
   push:
@@ -102,6 +102,13 @@ jobs:
           cat .demo/v1.9-patch/part-* | base64 -d | gzip -d > update-v1.9.patch
           echo "7d81aad8e2d2eff7f379f950bf15dd5226d6b9f4d8e86e74d73a8ebcbc943569  update-v1.9.patch" | sha256sum -c -
           patch -p1 -d site < update-v1.9.patch
+
+      - name: Apply v1.10 prices, shipping and installation-time patch
+        shell: bash
+        run: |
+          cat .demo/v1.10-patch/part-* | base64 -d | gzip -d > update-v1.10.patch
+          echo "8f7e5d2f5d3c3dc8e25874e97322cb9e599089e3f7f1c5ebe31999d64b5b8a0c  update-v1.10.patch" | sha256sum -c -
+          patch -p1 -d site < update-v1.10.patch
 
       - name: Run checks
         working-directory: site
