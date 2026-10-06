@@ -1,4 +1,4 @@
-name: Deploy v1.17 Bosch second-brand to GitHub Pages
+name: Deploy v1.18 Bosch device-to-part workflow to GitHub Pages
 
 on:
   push:
@@ -155,6 +155,13 @@ jobs:
           cat .demo/v1.17-patch/part-* | base64 -d | gzip -d > update-v1.17.patch
           echo "363c4bb9f49d5db322499d67324d1241b2b7e45e29c23af9820ce590a0d20288  update-v1.17.patch" | sha256sum -c -
           patch -p1 -d site < update-v1.17.patch
+
+      - name: Apply v1.18 Bosch device-to-part workflow patch
+        shell: bash
+        run: |
+          cat .demo/v1.18-patch/part-* | base64 -d | gzip -d > update-v1.18.patch
+          echo "6508ab3ace327d687c4d2560f105828b85d5b94a7ef254794ad84bca239bc1ec  update-v1.18.patch" | sha256sum -c -
+          patch -p1 -d site < update-v1.18.patch
 
       - name: Verify reproducible app bundle
         run: |

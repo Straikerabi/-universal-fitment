@@ -1,8 +1,9 @@
-# Universal Fitment v1.17 – Bosch as the second vacuum brand
+# Universal Fitment v1.18 – Bosch device-to-part review
 
 The public product focuses on **Miele and Bosch vacuum cleaners**. Bosch is added as 60 source-linked model references; full E-Nr. indices and individual replacement-part suitability remain open for manufacturer review.
 
 ## Current pilot scope
+- **Bosch E-Nr. workflow:** the reviewed full /xx number follows the matching device through its parts, price list and marketplace searches. A part detail can copy the actual E-Nr. and part identifiers for manufacturer/supplier checking. Editing, discarding, switching devices, leaving the device workflow or reloading clears this temporary context; saved records, cart, backup, diagnostics and share URLs exclude it. Format validation does not approve fitment. Brand-specific parts/marketplace filter choices now stay within the chosen brand. See [v1.18 workflow and validation](integrations/bosch-workflow-v118.md)
 - **Bosch second brand:** 22 bagged, 18 bagless and 20 cordless model references from Bosch product pages, with exact model codes, validated device EANs, technical facts, manufacturer photos and 225 linked instruction/product documents
 - 45 distinct original Bosch articles are deduplicated by the actual material number, with model relationships taken only from each device's manufacturer accessory list. All Bosch relationships remain visibly `variant_check_required`; no /xx index is invented or promoted to a confirmed device variant
 - Two primary Swirl Anti-Geruch bag sources are captured. S67 examples are not generalized to G-ALL devices; S73 is a narrow BGL8SIL family candidate and is not generalized to all Serie 8 devices. Prices are open for these two sources
@@ -19,7 +20,7 @@ The public product focuses on **Miele and Bosch vacuum cleaners**. Bosch is adde
 - Guest cart and device data recover safely from malformed local records; blocked/full browser storage keeps a temporary current-tab copy and displays an export warning
 - Local JSON backups now include a reviewed restore flow with preview and an explicit replace confirmation. Known devices and parts are checked against the catalog; altered prices remain open, and old timestamps are never refreshed by importing
 - Part search supports reversed word order and formatted material/EAN numbers. Cart quantities are consistent whole numbers, known-part marketplace links are rebuilt from the selected part, and interrupted scanner/photo/search tasks cannot repaint another page
-- A reproducible, pinned esbuild bundle uses a unique versioned entry and stylesheet cache key. Core offline assets total **1,024,850 bytes (about 1.02 MB uncompressed)**. Optional manufacturer photos and OCR engine/language downloads are additional; manuals are linked. See [v1.14 validation](integrations/guest-readiness-v114.md)
+- A reproducible, pinned esbuild bundle uses a unique versioned entry and stylesheet cache key. Core offline assets total **1,028,302 bytes (about 1.03 MB uncompressed)**. Optional manufacturer photos and OCR engine/language downloads are additional; manuals are linked. See [v1.14 validation](integrations/guest-readiness-v114.md)
 - Account page now supports email/password login for existing pilot accounts, verified through Supabase Auth; the session stays in memory and refreshes through the pinned local SDK. No public signup or outgoing test email was performed
 - Part pages can call the protected marketplace server with the user JWT. Missing login, pilot permission, provider access, quota and network failure are distinguished. Cross-origin Auth and API responses bypass the offline cache
 - Real positive login still needs an actual pilot account and a database pilot-permission entry. Local device/cart data are not synced. See [pilot authentication](integrations/auth-sdk/README.md)
