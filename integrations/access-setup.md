@@ -1,13 +1,13 @@
 # Phase 4: eBay- und Amazon-Zugänge
 
-Stand: 2026-10-06. Vorbereitung für Universal Fitment v1.13; keine Registrierung, Freigabe oder produktive API-Verbindung wird durch dieses Dokument behauptet.
+Stand: 2026-10-06. Vorbereitung für Universal Fitment v1.15; keine Registrierung, Freigabe oder produktive API-Verbindung wird durch dieses Dokument behauptet.
 
 ## Tatsächlicher Stand
 
 | Zugang | Status | Nächster Nachweis |
 | --- | --- | --- |
-| GitHub / öffentliche App | Repository und v1.13 vorhanden | Bestehender Projektzugang |
-| Supabase | Projekt `universal-fitment`, Frankfurt, Free; Marketplace-Server Version 2 und dauerhafte Aufrufgrenzen bereitgestellt | Anbieterzugänge und angemeldeter Pilotnutzer noch offen |
+| GitHub / öffentliche App | Repository und v1.15 vorhanden | Bestehender Projektzugang |
+| Supabase | Projekt `universal-fitment`, Frankfurt, Free; Marketplace-Server Version 4 und dauerhafte Aufrufgrenzen bereitgestellt | Anbieterzugänge und angemeldeter Pilotnutzer noch offen |
 | eBay Developers | Kontostatus und Schlüssel unbekannt; Anmeldung aus dem Cloud-Browser ausgeschlossen | Aktiviertes Produktions-Keyset und verfügbare OAuth-Berechtigungen |
 | eBay Partner Network | Mitgliedschaft, Publisher-ID und Kampagne unbekannt | Bestätigte Teilnahme für Provisionslinks |
 | Amazon PartnerNet DE | Mitgliedschaft und Partner-Tag unbekannt; Anmelde-Einstieg weist diese Browser-Sitzung zurück | PartnerNet-Kontostatus und endgültige Annahme |
@@ -20,7 +20,7 @@ In dieser Einrichtung wurden keine kostenpflichtigen Tarife gebucht, Konten regi
 | Feld | Vorbereitete Angabe |
 | --- | --- |
 | Anwendungsname | Universal Fitment |
-| Öffentliche Website | https://straikerabi.github.io/-universal-fitment/?v=1.12 |
+| Öffentliche Website | https://straikerabi.github.io/-universal-fitment/?v=1.15#access |
 | Repository | https://github.com/Straikerabi/-universal-fitment |
 | Zielmarkt | Deutschland; Lieferung nach Deutschland |
 | Kategorie | Ersatzteile und Zubehör für Miele-Staubsauger |
@@ -37,7 +37,7 @@ Betreiber-/Firmendaten, Kontaktkonto, Anschrift, Rechtsform, Steuer-/Auszahlungs
 
 Das aktuelle EPN Developer Questionnaire nennt die Browse API ausdrücklich als ohne zusätzliche Genehmigung zugänglich. Der allgemeine Buy-API-Leitfaden beschreibt weiterhin Freigaben und Verträge. Deshalb zuerst das konkrete Produktions-Keyset, seine Scopes und den normalen Browse-Zugriff prüfen; ein Antrag für erweiterte Rechte ist kein automatischer erster Schritt.
 
-Neue Produktions-Keysets müssen vor dem ersten Aufruf die Account-Deletion-Anforderungen erfüllen: Benachrichtigungen abonnieren oder eine zulässige Ausnahme beantragen. Die Ausnahme darf erst gewählt werden, wenn die tatsächliche Verarbeitung und Speicherung von eBay-Daten sie erfüllt; das ist für unseren noch nicht bereitgestellten Server nicht geprüft.
+Neue Produktions-Keysets müssen vor dem ersten Aufruf die Account-Deletion-Anforderungen erfüllen: Benachrichtigungen abonnieren oder eine zulässige Ausnahme beantragen. Die Ausnahme darf erst gewählt werden, wenn die tatsächliche Verarbeitung und Speicherung von eBay-Daten sie erfüllt; das ist für unseren bereitgestellten, noch nicht mit eBay verbundenen Server nicht geprüft.
 
 EPN-Teilnahme betrifft Provisionslinks. Das Questionnaire betrifft eingeschränkte APIs, Feeds und höhere Limits; es verlangt unter anderem die registrierte E-Mail, Produktions-Client-ID und eine Umsatzschätzung. Kein Client Secret in dieses Formular eintragen. Für unseren Pilot werden Checkout, Bieten, Feeds und erhöhte Limits derzeit nicht beantragt.
 
@@ -52,7 +52,7 @@ Erst bei vorhandener Berechtigung folgt unter Tools > Creators API eine Anwendun
 1. Kontostatus, verfügbare APIs, Bedingungen und Limits des jeweiligen Anbieters belegen.
 2. Schlüssel ausschließlich als Server-Secrets speichern; `.env.example` enthält nur die Variablennamen. Keine Secrets in Chat, Browser-App, Git oder Screenshots übertragen.
 3. Der Server-Endpunkt ist bereitgestellt und nimmt nur Katalog-Teile an. Dauerhafte globale Aufrufgrenzen sind installiert und geprüft. Für die Live-Aktivierung fehlen noch Anbieterzugänge, ein freigegebener Auth-Nutzer und ein echter positiver Anmeldetest. Die Client-Anbindung ist implementiert und synthetisch getestet.
-4. OAuth und einen echten, zulässigen Produktionsaufruf testen; Angebot, Zustand, EUR-Preis, Verkäufer, Lieferung und Quellenzeit prüfen. Danach die öffentliche Oberfläche anbinden.
+4. OAuth und einen echten, zulässigen Produktionsaufruf testen; Angebot, Zustand, EUR-Preis, Verkäufer, Lieferung und Quellenzeit prüfen. Die Oberfläche ist angebunden; erst danach Live-Aufrufe aktivieren.
 
 `EBAY_BUY_APPROVED` ist momentan die ausdrückliche Aktivierungssperre des Server-Moduls. Der Name bedeutet nicht, dass die normale Browse API grundsätzlich einen separaten Antrag benötigt. Beide Provider bleiben gesperrt, bis der tatsächliche Zugang geprüft ist. Synthetische Tests bleiben außerhalb der Live-Anzeige.
 

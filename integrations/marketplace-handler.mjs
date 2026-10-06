@@ -49,6 +49,7 @@ export function createMarketplaceHandler({env={},partIndex=[],providers={},authe
   authenticate=authenticate||createAuthenticator({env});
   authorizePilot=authorizePilot||createPilotAuthorization({env});
   reserveQuota=reserveQuota||createQuotaReservation({env});
+  const providerStatus=()=>Object.fromEntries(['ebay','amazon'].map(name=>[name,env.MARKETPLACE_LIVE_ENABLED==='true'&&providers[name]?.mode==='live'?'configured':'access_required']));
   return async request=>{
     const requestOrigin=request.headers.get('origin');
     const headers={'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store','Vary':'Origin'};
@@ -60,12 +61,23 @@ export function createMarketplaceHandler({env={},partIndex=[],providers={},authe
     const path=new URL(request.url).pathname;
     if(request.method==='OPTIONS')return new Response(null,{status:204,headers});
     if(request.method==='GET'&&path.endsWith('/marketplace-search/health'))return reply(200,{
-      status:'ready',backendVersion:3,liveOffersEnabled:env.MARKETPLACE_LIVE_ENABLED==='true'&&Object.values(providers).some(p=>p.mode==='live'),partCount:parts.size,
+      status:'ready',backendVersion:4,liveOffersEnabled:env.MARKETPLACE_LIVE_ENABLED==='true'&&Object.values(providers).some(p=>p.mode==='live'),partCount:parts.size,
       quota:'persistent-postgres',
       quotaBackendVerifiedAtStartup,
       pilotBackendVerifiedAtStartup,
-      authentication:'supabase-user-and-database-pilot-permission',providers:{ebay:'access_required',amazon:'access_required'}
+      authentication:'supabase-user-and-database-pilot-permission',providers:providerStatus()
     });
+    if(path.endsWith('/marketplace-search/access')){
+      if(request.method!=='GET')return reply(405,{status:'method_not_allowed'},{Allow:'GET, OPTIONS'});
+      if(new URL(request.url).search)return reply(400,{status:'invalid_request'});
+      let user;
+      try{user=await authenticate(request);}catch{return reply(503,{status:'auth_unavailable'});}
+      if(!user||!uuid.test(user.id))return reply(401,{status:'auth_required'});
+      try{
+        const allowed=await authorizePilot(user.id);
+        return reply(allowed===true?200:403,{status:allowed===true?'pilot_allowed':'pilot_access_required',pilotAllowed:allowed===true,backendVersion:4,providers:providerStatus()});
+      }catch{return reply(503,{status:'pilot_unavailable'});}
+    }
     if(!path.endsWith('/marketplace-search'))return reply(404,{status:'not_found'});
     if(request.method!=='POST')return reply(405,{status:'method_not_allowed'},{Allow:'POST, OPTIONS'});
     let user;

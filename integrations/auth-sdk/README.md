@@ -1,4 +1,4 @@
-# Pilot authentication – v1.13
+# Pilot authentication – v1.15
 
 The static app uses the existing project's enabled email/password Auth provider for **existing accounts only**. No user account, password, invitation, registration or test email was created. The API's private database pilot-permission table remains empty; marketplace credentials and live calls remain disabled.
 
@@ -26,3 +26,5 @@ Supabase JS 2.117.2, esbuild 0.25.12. Runtime licenses are in `site/src/vendor/L
 5. Activate legitimate eBay/Amazon access before enabling live calls. No automatic merchant cart transfer or payment processing is implemented.
 
 Primary references checked 2026-10-06: https://supabase.com/docs/guides/auth/passwords ; https://supabase.com/docs/guides/auth/auth-smtp ; https://supabase.com/docs/guides/auth/auth-email-passwordless
+
+The `#access` page checks GET `/access` for the current verified user only. This read-only RPC does not consume quota. Login cancellation and SDK session races are covered by synthetic regression tests; a real positive pilot login is still required.

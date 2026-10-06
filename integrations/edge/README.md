@@ -1,10 +1,10 @@
 # Marketplace-Server: erster bereitgestellter Schritt in Phase 4
 
-Stand: 2026-10-06. Die öffentliche App bleibt v1.14 mit Suchlinks und einer Pilotanmeldung. Supabase-Projekt `universal-fitment`, Region Frankfurt; keine Tarifänderung vorgenommen.
+Stand: 2026-10-06. Die öffentliche App ist v1.15 mit Suchlinks und einer Pilotanmeldung. Supabase-Projekt `universal-fitment`, Region Frankfurt; keine Tarifänderung vorgenommen.
 
 ## Bereitgestellt
 
-Edge Function `marketplace-search`, Version 3. Der öffentliche Bereitschaftstest ist erreichbar:
+Edge Function `marketplace-search`, Version 4. Der öffentliche Bereitschaftstest ist erreichbar:
 
 https://riorfdgoovydfyzjwdvf.supabase.co/functions/v1/marketplace-search/health
 
@@ -79,3 +79,7 @@ Die lokalen Auth- und Provider-Szenarien benutzen synthetische Antworten. Der Pa
 - [Supabase: JWT-Verifikation beim Auth-Server](https://supabase.com/docs/guides/auth/jwts)
 - [Supabase: Edge-Authorization und verify_jwt](https://supabase.com/docs/guides/functions/auth-headers)
 - [Supabase: automatische Edge-Schlüssel und Migration](https://supabase.com/docs/guides/getting-started/migrating-to-new-api-keys)
+
+## Zugangsdiagnose ohne Kontingentverbrauch (v4)
+
+`GET /marketplace-search/access` prüft den bestätigten aktuellen Benutzer und dessen Pilotfreigabe, ohne Kontingentreservierung oder Anbieteraufruf. Queryparameter und andere Methoden werden abgewiesen. 200 `pilot_allowed` und 403 `pilot_access_required` sind getrennt von 401/503. Die App enthält eine explizit startbare Statusseite und einen bereinigten Diagnosebericht. Providerstatus `configured` bestätigt die Konfigurationssperre, keinen erfolgreichen produktiven Abruf.

@@ -1,4 +1,4 @@
-name: Deploy v1.14 guest reliability to GitHub Pages
+name: Deploy v1.15 pilot readiness to GitHub Pages
 
 on:
   push:
@@ -135,6 +135,13 @@ jobs:
           echo "ec71cbf9c62391872c8b9a52d813b12092eedf91ac45813e5f3a58080e973822  update-v1.14.patch" | sha256sum -c -
           patch -p1 -d site < update-v1.14.patch
 
+      - name: Apply v1.15 pilot readiness patch
+        shell: bash
+        run: |
+          cat .demo/v1.15-patch/part-* | base64 -d | gzip -d > update-v1.15.patch
+          echo "e8872d05ee7d791df416805b37d576b725f136808bc95e31befd92dc4599369a  update-v1.15.patch" | sha256sum -c -
+          patch -p1 -d site < update-v1.15.patch
+
       - name: Verify reproducible app bundle
         run: |
           npm ci --prefix integrations/auth-sdk --ignore-scripts
@@ -152,6 +159,7 @@ jobs:
           node integrations/marketplace-providers.test.mjs
           node --check integrations/marketplace-handler.mjs
           node integrations/marketplace-handler.test.mjs
+          node integrations/marketplace-access.test.mjs
           node integrations/marketplace-quota.test.mjs
           node integrations/marketplace-pilot.test.mjs
           node integrations/build-edge.mjs
