@@ -1,4 +1,4 @@
-name: Deploy v1.12 cart handoff to GitHub Pages
+name: Deploy v1.13 pilot authentication to GitHub Pages
 
 on:
   push:
@@ -120,6 +120,13 @@ jobs:
           cat .demo/v1.12-patch/part-* | base64 -d | gzip -d > update-v1.12.patch
           echo "f1911ece8369a9cbcb5b3b1de66f8985228b0eb1c263f2af5d0e5d84afa936a3  update-v1.12.patch" | sha256sum -c -
           patch -p1 -d site < update-v1.12.patch
+
+      - name: Apply v1.13 pilot authentication patch
+        shell: bash
+        run: |
+          cat .demo/v1.13-patch/part-* | base64 -d | gzip -d > update-v1.13.patch
+          echo "d5de1d4803d4b5ba65d52ee57dfe264ca9f6b270a6c4361e081788c61c39f53a  update-v1.13.patch" | sha256sum -c -
+          patch -p1 -d site < update-v1.13.patch
 
       - name: Run checks
         working-directory: site

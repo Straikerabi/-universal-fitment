@@ -1,6 +1,6 @@
 # Marketplace-Server: erster bereitgestellter Schritt in Phase 4
 
-Stand: 2026-10-06. Die öffentliche App bleibt v1.12 im Suchlink-Modus. Supabase-Projekt `universal-fitment`, Region Frankfurt; keine Tarifänderung vorgenommen.
+Stand: 2026-10-06. Die öffentliche App bleibt v1.13 mit Suchlinks und einer Pilotanmeldung. Supabase-Projekt `universal-fitment`, Region Frankfurt; keine Tarifänderung vorgenommen.
 
 ## Bereitgestellt
 
@@ -43,7 +43,7 @@ Ein gültiger Supabase-Benutzer-Token gehört in `Authorization: Bearer <user JW
 
 Browser-CORS ist auf `https://straikerabi.github.io` begrenzt. Antworten sind `no-store`. Das Lesen des Anfragekörpers und Auth-Aufrufe haben jeweils ein Fünf-Sekunden-Limit. Fehler geben keine internen Details, Tokens oder Kontaktdaten aus.
 
-`MARKETPLACE_LIVE_ENABLED` bleibt false; es wurden keine Provider-Secrets eingerichtet. Erst ein bestätigter Pilotnutzer, ein ausdrücklich aktivierter Anbieter und eine erfolgreiche Datenbank-Reservierung erlauben eine Händlerabfrage. Dann läuft das Ergebnis durch den bestehenden Angebotsvalidator. Vor Live-Freigabe fehlen weiterhin geprüfte Händlerberechtigungen, ein echter positiver Nutzer-Test und die angemeldete Client-Anbindung.
+`MARKETPLACE_LIVE_ENABLED` bleibt false; es wurden keine Provider-Secrets eingerichtet. Erst ein bestätigter Pilotnutzer, ein ausdrücklich aktivierter Anbieter und eine erfolgreiche Datenbank-Reservierung erlauben eine Händlerabfrage. Dann läuft das Ergebnis durch den bestehenden Angebotsvalidator. Vor Live-Freigabe fehlen weiterhin geprüfte Händlerberechtigungen, ein echter positiver Nutzer-Test. Die angemeldete Client-Anbindung ist in v1.13 implementiert und mit synthetischen Auth-/API-Verträgen getestet; siehe [Pilotanmeldung](../auth-sdk/README.md).
 
 ## Dauerhafte Kontingente
 

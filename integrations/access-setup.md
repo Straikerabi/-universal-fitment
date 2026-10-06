@@ -1,12 +1,12 @@
 # Phase 4: eBay- und Amazon-Zugänge
 
-Stand: 2026-10-06. Vorbereitung für Universal Fitment v1.12; keine Registrierung, Freigabe oder produktive API-Verbindung wird durch dieses Dokument behauptet.
+Stand: 2026-10-06. Vorbereitung für Universal Fitment v1.13; keine Registrierung, Freigabe oder produktive API-Verbindung wird durch dieses Dokument behauptet.
 
 ## Tatsächlicher Stand
 
 | Zugang | Status | Nächster Nachweis |
 | --- | --- | --- |
-| GitHub / öffentliche App | Repository und v1.12 vorhanden | Bestehender Projektzugang |
+| GitHub / öffentliche App | Repository und v1.13 vorhanden | Bestehender Projektzugang |
 | Supabase | Projekt `universal-fitment`, Frankfurt, Free; Marketplace-Server Version 2 und dauerhafte Aufrufgrenzen bereitgestellt | Anbieterzugänge und angemeldeter Pilotnutzer noch offen |
 | eBay Developers | Kontostatus und Schlüssel unbekannt; Anmeldung aus dem Cloud-Browser ausgeschlossen | Aktiviertes Produktions-Keyset und verfügbare OAuth-Berechtigungen |
 | eBay Partner Network | Mitgliedschaft, Publisher-ID und Kampagne unbekannt | Bestätigte Teilnahme für Provisionslinks |
@@ -51,7 +51,7 @@ Erst bei vorhandener Berechtigung folgt unter Tools > Creators API eine Anwendun
 
 1. Kontostatus, verfügbare APIs, Bedingungen und Limits des jeweiligen Anbieters belegen.
 2. Schlüssel ausschließlich als Server-Secrets speichern; `.env.example` enthält nur die Variablennamen. Keine Secrets in Chat, Browser-App, Git oder Screenshots übertragen.
-3. Der Server-Endpunkt ist bereitgestellt und nimmt nur Katalog-Teile an. Dauerhafte globale Aufrufgrenzen sind installiert und geprüft. Für die Live-Aktivierung fehlen noch Anbieterzugänge, ein freigegebener Auth-Nutzer und die Client-Anbindung.
+3. Der Server-Endpunkt ist bereitgestellt und nimmt nur Katalog-Teile an. Dauerhafte globale Aufrufgrenzen sind installiert und geprüft. Für die Live-Aktivierung fehlen noch Anbieterzugänge, ein freigegebener Auth-Nutzer und ein echter positiver Anmeldetest. Die Client-Anbindung ist implementiert und synthetisch getestet.
 4. OAuth und einen echten, zulässigen Produktionsaufruf testen; Angebot, Zustand, EUR-Preis, Verkäufer, Lieferung und Quellenzeit prüfen. Danach die öffentliche Oberfläche anbinden.
 
 `EBAY_BUY_APPROVED` ist momentan die ausdrückliche Aktivierungssperre des Server-Moduls. Der Name bedeutet nicht, dass die normale Browse API grundsätzlich einen separaten Antrag benötigt. Beide Provider bleiben gesperrt, bis der tatsächliche Zugang geprüft ist. Synthetische Tests bleiben außerhalb der Live-Anzeige.

@@ -1,8 +1,12 @@
-# Universal Fitment v1.12 – cart-to-merchant handoff and shopping lists
+# Universal Fitment v1.13 – pilot login and protected marketplace client
 
 The public product is now intentionally focused on one vertical and one brand: **Miele vacuum cleaners**.
 
 ## Current pilot scope
+- Account page now supports email/password login for existing pilot accounts, verified through Supabase Auth; the session stays in memory and refreshes through the pinned local SDK. No public signup or outgoing test email was performed
+- Part pages can call the protected marketplace server with the user JWT. Missing login, pilot permission, provider access, quota and network failure are distinguished. Cross-origin Auth and API responses bypass the offline cache
+- Real positive login still needs an actual pilot account and allowlist entry. Local device/cart data are not synced. See [pilot authentication](integrations/auth-sdk/README.md)
+
 - Category exposed in the app: vacuum cleaners only
 - Brand exposed in the catalog: Miele only
 - 57 distinct manufacturer model names, represented by 62 material-number variants; colors and nine family fallbacks do not inflate the model count
@@ -39,9 +43,9 @@ Other categories and brands are deliberately hidden until the Miele pilot is dee
 Source snapshot: **2026-10-06**. Provider prices, stock and arrival ranges are shown as dated source records, never as live offers or fabricated rating-based recommendations. Installation minutes are our own planning estimates, not manufacturer specifications. CI checks exact device identifiers, job references, category/series filters, spare-part provenance, supplier scope, generation/variant boundaries, VAT/currency/age handling and same-merchant shipping thresholds. The public spare-parts catalog is not the complete serial-specific internal service inventory; unlisted motors/electronics require an official Miele check using the type plate.
 
 ## Deliberately not faked
-Cloud accounts, client login OAuth, payments, licensed VIN decode, TecDoc/GS1/EPREL credentials, partner repair-service booking and live merchant feeds remain disabled until the real backend/contracts/credentials exist. The eBay/Amazon search links are available now; their server modules and access requirements are documented in [integrations/README.md](integrations/README.md). API keys never enter the static site. CI checks the app and server request contracts before deployment.
+Public registration, social OAuth, cloud device sync, payments, licensed VIN decode, TecDoc/GS1/EPREL credentials, partner repair-service booking and live merchant feeds remain disabled until the real backend/contracts/credentials exist. The eBay/Amazon search links are available now; their server modules and access requirements are documented in [integrations/README.md](integrations/README.md). Provider secrets and server-only keys never enter the static site; Supabase uses its existing public publishable key. CI checks the app and server request contracts before deployment.
 
-Marketplace server version 2 is deployed on the existing Supabase Free project. Its health check reports all 167 catalog parts and verifies the server's database quota connection. Search requests require a validated Supabase user and an explicit pilot allowlist. Persistent quotas cap searches at five per user/minute, twenty globally/minute and one hundred per provider/UTC day. Provider calls remain disabled until actual access and authenticated client integration are verified; see [integrations/edge/README.md](integrations/edge/README.md).
+Marketplace server version 2 is deployed on the existing Supabase Free project. Its health check reports all 167 catalog parts and verifies the server's database quota connection. Search requests require a validated Supabase user and an explicit pilot allowlist. Persistent quotas cap searches at five per user/minute, twenty globally/minute and one hundred per provider/UTC day. Provider calls remain disabled until actual access and a real authenticated pilot test are verified; see [integrations/edge/README.md](integrations/edge/README.md).
 
 ## Checkout model
 
