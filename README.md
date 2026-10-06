@@ -1,8 +1,12 @@
-# Universal Fitment v1.13 – pilot login and protected marketplace client
+# Universal Fitment v1.14 – reliable guest data and local backups
 
 The public product is now intentionally focused on one vertical and one brand: **Miele vacuum cleaners**.
 
 ## Current pilot scope
+- Guest cart and device data recover safely from malformed local records; blocked/full browser storage keeps a temporary current-tab copy and displays an export warning
+- Local JSON backups now include a reviewed restore flow with preview and an explicit replace confirmation. Known devices and parts are checked against the catalog; altered prices remain open, and old timestamps are never refreshed by importing
+- Part search supports reversed word order and formatted material/EAN numbers. Cart quantities are consistent whole numbers, known-part marketplace links are rebuilt from the selected part, and interrupted scanner/photo/search tasks cannot repaint another page
+- A reproducible, pinned esbuild bundle uses a unique versioned entry and stylesheet cache key. Core offline assets total about **0.84 MB uncompressed**, approximately **19% less** than v1.13. Optional manufacturer photos and OCR engine/language downloads are additional; manuals are linked. See [v1.14 validation](integrations/guest-readiness-v114.md)
 - Account page now supports email/password login for existing pilot accounts, verified through Supabase Auth; the session stays in memory and refreshes through the pinned local SDK. No public signup or outgoing test email was performed
 - Part pages can call the protected marketplace server with the user JWT. Missing login, pilot permission, provider access, quota and network failure are distinguished. Cross-origin Auth and API responses bypass the offline cache
 - Real positive login still needs an actual pilot account and allowlist entry. Local device/cart data are not synced. See [pilot authentication](integrations/auth-sdk/README.md)
