@@ -7,7 +7,7 @@ Stand: 2026-10-06. Vorbereitung für Universal Fitment v1.12; keine Registrierun
 | Zugang | Status | Nächster Nachweis |
 | --- | --- | --- |
 | GitHub / öffentliche App | Repository und v1.12 vorhanden | Bestehender Projektzugang |
-| Supabase | Projekt `universal-fitment`, Frankfurt, Free; zuletzt Datenbankverbindung erfolgreich geprüft | Noch keine Marketplace-Funktion bereitgestellt |
+| Supabase | Projekt `universal-fitment`, Frankfurt, Free; Marketplace-Server als Version 1 bereitgestellt | Anbieterzugänge und angemeldeter Pilotnutzer noch offen |
 | eBay Developers | Kontostatus und Schlüssel unbekannt; Anmeldung aus dem Cloud-Browser ausgeschlossen | Aktiviertes Produktions-Keyset und verfügbare OAuth-Berechtigungen |
 | eBay Partner Network | Mitgliedschaft, Publisher-ID und Kampagne unbekannt | Bestätigte Teilnahme für Provisionslinks |
 | Amazon PartnerNet DE | Mitgliedschaft und Partner-Tag unbekannt; Anmelde-Einstieg weist diese Browser-Sitzung zurück | PartnerNet-Kontostatus und endgültige Annahme |
@@ -51,7 +51,7 @@ Erst bei vorhandener Berechtigung folgt unter Tools > Creators API eine Anwendun
 
 1. Kontostatus, verfügbare APIs, Bedingungen und Limits des jeweiligen Anbieters belegen.
 2. Schlüssel ausschließlich als Server-Secrets speichern; `.env.example` enthält nur die Variablennamen. Keine Secrets in Chat, Browser-App, Git oder Screenshots übertragen.
-3. Einen begrenzten Server-Endpunkt bereitstellen. Das vorhandene Supabase-Projekt betreibt derzeit noch keinen solchen Endpunkt.
+3. Der Server-Endpunkt ist bereitgestellt und nimmt nur Katalog-Teile an. Für die Live-Aktivierung fehlen noch Anbieterzugänge, ein freigegebener Auth-Nutzer, dauerhafte globale Aufrufgrenzen und die Client-Anbindung.
 4. OAuth und einen echten, zulässigen Produktionsaufruf testen; Angebot, Zustand, EUR-Preis, Verkäufer, Lieferung und Quellenzeit prüfen. Danach die öffentliche Oberfläche anbinden.
 
 `EBAY_BUY_APPROVED` ist momentan die ausdrückliche Aktivierungssperre des Server-Moduls. Der Name bedeutet nicht, dass die normale Browse API grundsätzlich einen separaten Antrag benötigt. Beide Provider bleiben gesperrt, bis der tatsächliche Zugang geprüft ist. Synthetische Tests bleiben außerhalb der Live-Anzeige.

@@ -1,4 +1,5 @@
 // Server-only modules; GitHub Pages publishes site/, never this directory.
+import { Buffer } from 'node:buffer';
 import { ebayListings, amazonListings } from '../site/src/core/marketplaces.js';
 
 async function readJson(response){

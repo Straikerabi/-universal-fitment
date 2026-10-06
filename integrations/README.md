@@ -20,9 +20,11 @@ The Amazon client uses Creators API catalog v1, Login with Amazon OAuth, a valid
 
 ## Access and deployment
 
+The first Supabase Edge endpoint is deployed and its public readiness check and blocked-access responses have been verified. It remains a backend foundation: all marketplace calls are disabled, and the public app still uses ordinary search links. See [edge/README.md](edge/README.md) for the API contract, custom authentication and the remaining activation gates.
+
 1. eBay: developer account, activated production keyset, required OAuth scopes and agreements for the application's model. Meet account-deletion notification or eligible exemption requirements before the first production call. Check ordinary Browse access first; apply for additional approval only for restricted capabilities or extended access. EPN participation is additionally relevant to affiliate links.
 2. Amazon: Associates membership for the target market, Creators API eligibility/registration and credentials, and a valid assigned Partner Tag. The checked documentation requires at least ten qualifying sales in the preceding 30 days for its stated API access path. Review the current content license and participation policies before displaying licensed data.
-3. Deploy an authenticated or appropriately rate-limited server endpoint around the providers. GitHub Pages cannot run these modules. Keep flags, keys and secrets in that server's environment. `.env.example` lists variable names only. Do not put credentials in the app or public repository.
+3. The first endpoint is deployed with user authentication and an empty private-pilot allowlist. Before activating provider calls, add persistent global quota enforcement, verified provider access and authenticated client integration. GitHub Pages cannot run the server modules. Keep flags, keys and secrets in that server's environment. `.env.example` lists variable names only. Do not put credentials in the app or public repository.
 4. Verify authorized production responses, token renewal, quotas, attribution, caching and display rules. Then connect an endpoint to the public UI. The v1.12 public app remains in search-link mode; this repository does not claim a completed production API connection.
 
 The current account blockers, prepared registration facts and provider-specific next steps are recorded in [access-setup.md](access-setup.md). No provider account or API key was created during this setup attempt.

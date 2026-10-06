@@ -41,6 +41,8 @@ Source snapshot: **2026-10-06**. Provider prices, stock and arrival ranges are s
 ## Deliberately not faked
 Cloud accounts, client login OAuth, payments, licensed VIN decode, TecDoc/GS1/EPREL credentials, partner repair-service booking and live merchant feeds remain disabled until the real backend/contracts/credentials exist. The eBay/Amazon search links are available now; their server modules and access requirements are documented in [integrations/README.md](integrations/README.md). API keys never enter the static site. CI checks the app and server request contracts before deployment.
 
+The first marketplace server endpoint is now deployed on the existing Supabase Free project. Its health check reports all 167 catalog parts; search requests require a validated Supabase user and an explicit pilot allowlist. Provider calls remain disabled. Live offers, account UI and a persistent global request budget are still pending; see [integrations/edge/README.md](integrations/edge/README.md).
+
 ## Checkout model
 
 The current pilot is an outbound shopping planner: customers choose the actual offer, add the desired quantity and pay at each merchant/marketplace. Several shops mean separate orders. Automatic cart transfer requires selected offer identifiers and an officially supported, permitted provider integration; it is not assumed from search results or a generic URL parameter. Own-platform payments are a separate business/integration decision, not enabled by installing a payment widget. See [integrations/checkout.md](integrations/checkout.md).
