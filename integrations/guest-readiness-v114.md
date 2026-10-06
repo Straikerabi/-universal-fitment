@@ -39,6 +39,6 @@ Browser checks did not submit orders, authenticate users, grant camera/location 
 
 ## Remaining external dependencies
 
-The public marketplace backend remains version 2 on the existing Free project. Live eBay/Amazon calls are disabled; official search links remain available. A real pilot account and authorized access are still needed for a positive protected-search test. Public signup/mail delivery and device sync are not ready.
+The v1.14 guest release initially retained backend version 2. After separate explicit authorization on 2026-10-06, the private pilot schema was installed and backend version 3 deployed on the existing Free project. Live eBay/Amazon calls are disabled; official search links remain available. A real pilot account and authorized access are still needed for a positive protected-search test. Public signup/mail delivery and device sync are not ready.
 
-The separate private pilot-permission proposal in PR #3 remains unmerged. Its schema/RLS/grants were not installed because automatic approval rejected the persistent permission change for lack of specific authorization. This guest release neither retries that operation nor changes database permissions. Checkout remains separate merchant orders and payment at each merchant.
+PR #3 was the separate proposal. Its installation was initially rejected for lack of specific authorization; the user subsequently explicitly authorized the table and server SELECT/EXECUTE grants. The schema is now installed, RLS/privileges and negative RPC responses were verified, and the security advisor reports no findings. No pilot user was admitted. See pilot-access.md for the current state. Checkout remains separate merchant orders and payment at each merchant.

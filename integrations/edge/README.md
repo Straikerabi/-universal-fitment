@@ -1,14 +1,14 @@
 # Marketplace-Server: erster bereitgestellter Schritt in Phase 4
 
-Stand: 2026-10-06. Die öffentliche App bleibt v1.13 mit Suchlinks und einer Pilotanmeldung. Supabase-Projekt `universal-fitment`, Region Frankfurt; keine Tarifänderung vorgenommen.
+Stand: 2026-10-06. Die öffentliche App bleibt v1.14 mit Suchlinks und einer Pilotanmeldung. Supabase-Projekt `universal-fitment`, Region Frankfurt; keine Tarifänderung vorgenommen.
 
 ## Bereitgestellt
 
-Edge Function `marketplace-search`, Version 2. Der öffentliche Bereitschaftstest ist erreichbar:
+Edge Function `marketplace-search`, Version 3. Der öffentliche Bereitschaftstest ist erreichbar:
 
 https://riorfdgoovydfyzjwdvf.supabase.co/functions/v1/marketplace-search/health
 
-Er meldet `status: ready`, `partCount: 167`, `liveOffersEnabled: false` und `quotaBackendVerifiedAtStartup: true`. Das bestätigt Server, Katalogindex und die echte Verbindung zur Kontingent-Funktion, keine Händleranbindung.
+Er meldet `status: ready`, `partCount: 167`, `liveOffersEnabled: false` und prüft beim Start sowohl Kontingent- als auch Pilot-RPC (`quotaBackendVerifiedAtStartup` / `pilotBackendVerifiedAtStartup`). Die Verbindungstests bestätigen die Datenbankanbindung, keine Händleranbindung.
 
 ## Suchvertrag
 
@@ -24,9 +24,9 @@ Er meldet `status: ready`, `partCount: 167`, `liveOffersEnabled: false` und `quo
 
 Provider: `ebay` oder `amazon`. Zustand: `used`, `new` oder `all`. Der Server akzeptiert ausschließlich seine aus dem Katalog erzeugten Teile-Identitäten. Freie Suchtexte, URLs, zusätzliche Felder und Gerät-Materialnummern sind kein Ersatz für diesen Schlüssel. Die Zahl von 167 und eindeutige Identitäten werden beim Paketbau getestet.
 
-Ein gültiger Supabase-Benutzer-Token gehört in `Authorization: Bearer <user JWT>`. Die Funktion prüft ihn beim Auth-Server des eigenen Projekts (`GET /auth/v1/user`); weder dekodierte Claims noch `user_metadata` erteilen Zugriff. Anonyme Nutzer, API-Schlüssel und Service-Rollen erhalten keinen Nutzerzugang. Zusätzlich muss die bestätigte Benutzer-ID in `MARKETPLACE_USER_IDS` stehen. Die momentan leere Liste verweigert allen Nutzern Suchzugriff.
+Ein gültiger Supabase-Benutzer-Token gehört in `Authorization: Bearer <user JWT>`. Die Funktion prüft ihn beim Auth-Server des eigenen Projekts (`GET /auth/v1/user`); weder dekodierte Claims noch `user_metadata` erteilen Zugriff. Anonyme Nutzer, API-Schlüssel und Service-Rollen erhalten keinen Nutzerzugang. Zusätzlich muss die bestätigte Benutzer-ID eine aktuelle, nicht widerrufene Freigabe in `fitment_private.marketplace_pilots` besitzen. Die Tabelle ist momentan leer und verweigert allen Nutzern Suchzugriff. Die frühere Umgebungsvariable `MARKETPLACE_USER_IDS` erteilt keinen Zugriff mehr.
 
-`verify_jwt` ist für diese Funktion **false**, weil der harmlose GET-Bereitschaftstest und CORS-Preflight öffentlich sind. Das ist keine anonyme Suchfreigabe: Jeder Such-POST durchläuft die eigene serverseitige Auth-Prüfung und die Pilotliste. Änderungen an Supabase Auth oder dem Projekt-Schlüsselsystem wurden nicht vorgenommen. Neue Publishable-Keys werden bevorzugt; der automatisch bereitgestellte Legacy-Anon-Key bleibt nur ein serverseitiger Kompatibilitäts-Fallback.
+`verify_jwt` ist für diese Funktion **false**, weil der harmlose GET-Bereitschaftstest und CORS-Preflight öffentlich sind. Das ist keine anonyme Suchfreigabe: Jeder Such-POST durchläuft die eigene serverseitige Auth-Prüfung und die Datenbank-Pilotfreigabe. Änderungen an Supabase Auth oder dem Projekt-Schlüsselsystem wurden nicht vorgenommen. Neue Publishable-Keys werden bevorzugt; der automatisch bereitgestellte Legacy-Anon-Key bleibt nur ein serverseitiger Kompatibilitäts-Fallback.
 
 ## Antworten und Grenzen
 
@@ -38,12 +38,16 @@ Ein gültiger Supabase-Benutzer-Token gehört in `Authorization: Bearer <user JW
 | 403 | `pilot_access_required` / `origin_denied` | Kein Pilotzugang oder fremder Browser-Ursprung |
 | 400 / 413 / 415 / 408 | `invalid_request` / `json_required` | Ungültige Daten, über 4096 Byte, falsches Format oder Zeitlimit |
 | 429 | `quota_exceeded` | Kontingent erschöpft; `Retry-After` nennt Sekunden bis zum nächsten Fenster |
-| 503 | `auth_unavailable` / `quota_unavailable` | Auth- oder Kontingent-Prüfung nicht verfügbar; keine Händlerabfrage |
+| 503 | `auth_unavailable` / `pilot_unavailable` / `quota_unavailable` | Auth-, Pilot- oder Kontingent-Prüfung nicht verfügbar; keine Händlerabfrage |
 | 502 / 504 | `unavailable` / `timeout` | Anbieterfehler oder Zehn-Sekunden-Frist erreicht |
 
 Browser-CORS ist auf `https://straikerabi.github.io` begrenzt. Antworten sind `no-store`. Das Lesen des Anfragekörpers und Auth-Aufrufe haben jeweils ein Fünf-Sekunden-Limit. Fehler geben keine internen Details, Tokens oder Kontaktdaten aus.
 
 `MARKETPLACE_LIVE_ENABLED` bleibt false; es wurden keine Provider-Secrets eingerichtet. Erst ein bestätigter Pilotnutzer, ein ausdrücklich aktivierter Anbieter und eine erfolgreiche Datenbank-Reservierung erlauben eine Händlerabfrage. Dann läuft das Ergebnis durch den bestehenden Angebotsvalidator. Vor Live-Freigabe fehlen weiterhin geprüfte Händlerberechtigungen, ein echter positiver Nutzer-Test. Die angemeldete Client-Anbindung ist in v1.13 implementiert und mit synthetischen Auth-/API-Verträgen getestet; siehe [Pilotanmeldung](../auth-sdk/README.md).
+
+## Installierte Pilotfreigabe
+
+Die private Tabelle und die ausschließlich vom Server ausführbare Read-only-Funktion `marketplace_check_pilot` sind nach ausdrücklicher Zustimmung installiert. Nur der Administrator darf Freigaben ändern; der Server darf sie lesen. Gäste und angemeldete App-Nutzer haben keinen direkten Zugriff. Freigaben laufen spätestens nach 90 Tagen ab; fehlende, künftige, abgelaufene oder widerrufene Einträge sperren neue Suchen. Fehler sperren die Händlerabfrage. Der Sicherheitsberater meldet keine Befunde. Details und Rollenprüfung: [Pilotfreigabe](../pilot-access.md).
 
 ## Dauerhafte Kontingente
 
@@ -63,6 +67,7 @@ Das Ersteinrichtungs-SQL steht in `integrations/quota-schema.sql`. Es wurde übe
 node integrations/marketplace-providers.test.mjs
 node integrations/marketplace-handler.test.mjs
 node integrations/marketplace-quota.test.mjs
+node integrations/marketplace-pilot.test.mjs
 node integrations/build-edge.mjs
 node integrations/edge-smoke.test.mjs
 ```
