@@ -14,4 +14,6 @@ Validation: 23 app suites plus syntax checks; type-plate fixtures cover all 62 c
 
 Core offline assets: 869,710 bytes (about 0.87 MB uncompressed). Photos and optional OCR downloads are additional. Prices retain the dated 2026-10-06 source snapshot; this release does not refresh stock/prices or enable live merchant offers.
 
-Browser verification will be recorded after publication. Real camera/mobile and blind photo tests, a real positive pilot login and provider access are still outstanding.
+Publication verified: GitHub Actions run 37493072416 completed successfully for both build-and-test and Pages deployment (commit 7d44fb7be7eca76b6f4c0c5f0e5fcbf645b52bd7). The public root returned HTTP 200 and the downloaded public app-v1.16.0.js was byte-identical to the tested bundle (SHA-256 55b96f3a83635c770345b6f0703556750101f821d4d4ee2a8e9cdf6ea0479ca2).
+
+Interactive browser verification was attempted but blocked by the browser access path returning 502 / connection refused, including repeated loads of the root and versioned scan URL. This does not establish successful UI interaction; no v1.16 browser screenshot or OCR end-to-end success is claimed. Real camera/mobile and blind photo tests, a real positive pilot login and provider access are still outstanding.
