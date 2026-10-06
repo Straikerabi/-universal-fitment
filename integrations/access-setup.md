@@ -1,12 +1,12 @@
 # Phase 4: eBay- und Amazon-Zugänge
 
-Stand: 2026-10-06. Vorbereitung für Universal Fitment v1.16; keine Registrierung, Freigabe oder produktive API-Verbindung wird durch dieses Dokument behauptet.
+Stand: 2026-10-06. Vorbereitung für Universal Fitment v1.17; keine Registrierung, Freigabe oder produktive API-Verbindung wird durch dieses Dokument behauptet.
 
 ## Tatsächlicher Stand
 
 | Zugang | Status | Nächster Nachweis |
 | --- | --- | --- |
-| GitHub / öffentliche App | Repository und v1.16 vorhanden | Bestehender Projektzugang |
+| GitHub / öffentliche App | Repository und v1.17 vorbereitet | Bestehender Projektzugang |
 | Supabase | Projekt `universal-fitment`, Frankfurt, Free; Marketplace-Server Version 4 und dauerhafte Aufrufgrenzen bereitgestellt | Anbieterzugänge und angemeldeter Pilotnutzer noch offen |
 | eBay Developers | Kontostatus und Schlüssel unbekannt; Anmeldung aus dem Cloud-Browser ausgeschlossen | Aktiviertes Produktions-Keyset und verfügbare OAuth-Berechtigungen |
 | eBay Partner Network | Mitgliedschaft, Publisher-ID und Kampagne unbekannt | Bestätigte Teilnahme für Provisionslinks |
@@ -20,11 +20,11 @@ In dieser Einrichtung wurden keine kostenpflichtigen Tarife gebucht, Konten regi
 | Feld | Vorbereitete Angabe |
 | --- | --- |
 | Anwendungsname | Universal Fitment |
-| Öffentliche Website | https://straikerabi.github.io/-universal-fitment/?v=1.15#access |
+| Öffentliche Website | https://straikerabi.github.io/-universal-fitment/?v=1.17#access |
 | Repository | https://github.com/Straikerabi/-universal-fitment |
 | Zielmarkt | Deutschland; Lieferung nach Deutschland |
-| Kategorie | Ersatzteile und Zubehör für Miele-Staubsauger |
-| Pilot | 57 Modellnamen, 62 Materialnummer-Varianten, 167 Teile und Zubehörartikel |
+| Kategorie | Ersatzteile und Zubehör für Miele- und Bosch-Staubsauger |
+| Pilot | Miele: 57 Modellnamen, 62 Materialvarianten, 167 Artikel; Bosch: 60 Modellreferenzen, 47 Artikel. Geschützter Server weiterhin Miele-only |
 | Geschäftsmodell | Geplanter Ersatzteilfinder mit Angebotsvergleich und ausgehenden Händlerlinks; Affiliate-Einnahmen erst nach Teilnahmefreigabe |
 | eBay-Funktion | Teilebezogene Browse-Suche, Festpreisangebote, neu oder gebraucht, `EBAY_DE` |
 | Amazon-Funktion | Geplante Creators-Suche in `www.amazon.de`, mit zugewiesenem DE-Partner-Tag |
@@ -46,6 +46,8 @@ EPN-Teilnahme betrifft Provisionslinks. Das Questionnaire betrifft eingeschränk
 Zuerst PartnerNet für Deutschland und den zugewiesenen DE-Partner-Tag prüfen. Die Creators-Onboarding-Seite verlangt endgültige Programmaufnahme; nur der primäre Kontoinhaber kann die API-Anmeldung vornehmen. Die Einführung nennt mindestens zehn qualifizierte Verkäufe in den vergangenen 30 Tagen für den dort beschriebenen PA-API-Zugang über Creators API. Diese Voraussetzungen sind bei unserem Konto nicht nachgewiesen.
 
 Erst bei vorhandener Berechtigung folgt unter Tools > Creators API eine Anwendung namens `Universal Fitment` und ein gültiges Credential-Set. Ein normales Amazon-Kundenkonto oder die öffentliche Website allein belegt keine API-Berechtigung.
+
+Die öffentliche Bosch-Suche arbeitet derzeit mit Herstellerquellen und ausgehenden Marktplatzlinks. Bosch-Teile sind noch nicht im geschützten Serverregister; die entsprechenden In-App-API-Schaltflächen werden ausgeblendet. Ein Bosch-Modellname ersetzt keinen bestätigten E-Nr.-Index.
 
 ## Technische Vorbereitung und Aktivierung
 

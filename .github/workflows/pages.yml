@@ -1,4 +1,4 @@
-name: Deploy v1.16 type-plate review to GitHub Pages
+name: Deploy v1.17 Bosch second-brand to GitHub Pages
 
 on:
   push:
@@ -148,6 +148,13 @@ jobs:
           cat .demo/v1.16-patch/part-* | base64 -d | gzip -d > update-v1.16.patch
           echo "0dc3d86701e52472c440806f96e17d51240b699ae4658cdb7cd77f7a521665a7  update-v1.16.patch" | sha256sum -c -
           patch -p1 -d site < update-v1.16.patch
+
+      - name: Apply v1.17 Bosch second-brand patch
+        shell: bash
+        run: |
+          cat .demo/v1.17-patch/part-* | base64 -d | gzip -d > update-v1.17.patch
+          echo "9761bfa5788ac66b08565b369a89990f551178244b57b3f23252be714bc571c9  update-v1.17.patch" | sha256sum -c -
+          patch -p1 -d site < update-v1.17.patch
 
       - name: Verify reproducible app bundle
         run: |
