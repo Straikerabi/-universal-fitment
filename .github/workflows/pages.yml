@@ -128,17 +128,17 @@ jobs:
           echo "d5de1d4803d4b5ba65d52ee57dfe264ca9f6b270a6c4361e081788c61c39f53a  update-v1.13.patch" | sha256sum -c -
           patch -p1 -d site < update-v1.13.patch
 
-      - name: Verify reproducible app bundle
-        run: |
-          npm ci --prefix integrations/auth-sdk --ignore-scripts
-          node integrations/build-app.mjs --check
-
       - name: Apply v1.14 guest reliability patch
         shell: bash
         run: |
           cat .demo/v1.14-patch/part-* | base64 -d | gzip -d > update-v1.14.patch
           echo "ec71cbf9c62391872c8b9a52d813b12092eedf91ac45813e5f3a58080e973822  update-v1.14.patch" | sha256sum -c -
           patch -p1 -d site < update-v1.14.patch
+
+      - name: Verify reproducible app bundle
+        run: |
+          npm ci --prefix integrations/auth-sdk --ignore-scripts
+          node integrations/build-app.mjs --check
 
       - name: Run checks
         working-directory: site
