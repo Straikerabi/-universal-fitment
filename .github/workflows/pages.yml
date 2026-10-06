@@ -1,4 +1,4 @@
-name: Deploy v1.8 Miele model catalog to GitHub Pages
+name: Deploy v1.9 Miele parts and guides to GitHub Pages
 
 on:
   push:
@@ -95,6 +95,13 @@ jobs:
           cat .demo/v1.8-patch/part-* | base64 -d | gzip -d > update-v1.8.patch
           echo "218433b58e66c104e6396ee4624cfeb8bc15cb1b644d11fefdee2570de61e4c4  update-v1.8.patch" | sha256sum -c -
           patch -p1 -d site < update-v1.8.patch
+
+      - name: Apply v1.9 Miele spare-parts patch
+        shell: bash
+        run: |
+          cat .demo/v1.9-patch/part-* | base64 -d | gzip -d > update-v1.9.patch
+          echo "7d81aad8e2d2eff7f379f950bf15dd5226d6b9f4d8e86e74d73a8ebcbc943569  update-v1.9.patch" | sha256sum -c -
+          patch -p1 -d site < update-v1.9.patch
 
       - name: Run checks
         working-directory: site
