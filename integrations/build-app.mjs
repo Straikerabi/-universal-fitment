@@ -22,3 +22,13 @@ if(process.argv.includes('--check')){
  if(!fs.existsSync(servicesTarget)||!Buffer.from(servicesBytes).equals(fs.readFileSync(servicesTarget)))throw Error('Optional service pack differs from source.');
 }else fs.writeFileSync(servicesTarget,servicesBytes);
 console.log(`Optional services: ${servicesBytes.length} bytes; loaded on demand.`);
+
+for(const brand of ['dyson','aeg']){
+ const output=path.join(root,`site/catalog-${brand}-v${version}.js`);
+ const pack=await esbuild.build({entryPoints:[path.join(root,`site/src/data/${brand}-pack.js`)],bundle:true,format:'esm',platform:'browser',target:'es2022',minify:true,legalComments:'inline',write:false});
+ const packed=pack.outputFiles[0].contents;
+ if(process.argv.includes('--check')){
+  if(!fs.existsSync(output)||!Buffer.from(packed).equals(fs.readFileSync(output)))throw Error(`Optional ${brand} catalog differs from source.`);
+ }else fs.writeFileSync(output,packed);
+ console.log(`Optional ${brand} catalog: ${packed.length} bytes; loaded on demand.`);
+}
