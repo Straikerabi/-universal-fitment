@@ -26,6 +26,17 @@ All 18 app suites and syntax checks passed locally. Additional regressions cover
 
 Provider, endpoint, quota and generated Edge smoke tests passed with synthetic responses. These do not establish a real merchant feed or a successful production-account login. GitHub Pages runs the same tests plus a reproducible bundle check before deployment. Public browser QA is performed after deployment; physical mobile-device/camera testing remains separate.
 
+Public deployment of commit `1bd6e440bc027e39b08ba550647637754fc411ce` passed build and deploy in workflow run `37463587349`. Browser QA on the published `?v=1.14` app confirmed:
+
+- The start page displays v1.14.0, 57 models, 62 variants and 167 parts, and loads the versioned bundle.
+- `Akku Abdeckung` returns the three actual battery covers; spaced code `1 2 1 3 2 5 7 0` returns only material 12132570.
+- The filtered price list shows its actual fresh-source count and source-age label, price, shipping and open installation time. At the tested 1348px browser width there was no page-wide horizontal overflow.
+- A valid local fixture previews one device and one cart position. Restore opens the replace-data warning; cancelling closes it. No restore was committed to the browser's existing guest data.
+- Invalid JSON displays a readable error and disables restore. Export downloaded a valid 522-byte schema 3 backup, which passed the same restore reviewer.
+- The guest cart stays available without login and remained empty after the preview/cancel/export tests. A fresh navigation/reload still opens the new backup page. No app-origin error appeared in the captured source-scoped browser log.
+
+Browser checks did not submit orders, authenticate users, grant camera/location permissions, call live merchant APIs or prove physical mobile/camera behavior. Cart quantity/handoff, storage-denial and late-scanner behavior are covered by the automated suites rather than claimed as real-device tests.
+
 ## Remaining external dependencies
 
 The public marketplace backend remains version 2 on the existing Free project. Live eBay/Amazon calls are disabled; official search links remain available. A real pilot account and authorized access are still needed for a positive protected-search test. Public signup/mail delivery and device sync are not ready.
