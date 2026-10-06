@@ -46,7 +46,7 @@ The protected marketplace registry remains scoped to 167 Miele articles. New bra
 
 ## Loading and validation
 
-- Main bundle: 1,043,058 bytes; core offline assets: 1,098,340 bytes before transport compression. AEG details: 698,022 bytes; Dyson details: 260,570 bytes; service data: 3,331 bytes. The small index is in the core; these detail packs load only when needed. Brand pack sizes are shown on the coverage page.
+- Main bundle: 1,043,141 bytes; core offline assets: 1,098,423 bytes before transport compression. AEG details: 698,022 bytes; Dyson details: 260,570 bytes; service data: 3,331 bytes. The small index is in the core; these detail packs load only when needed. Brand pack sizes are shown on the coverage page.
 - First-use pack imports deduplicate simultaneous requests, fail with a retry view, reject a mismatched brand and register atomically. Route changes suppress stale rendering. Optional packs become available offline after first fetch; manufacturer photos/PDFs and arbitrary API responses are excluded from app cache.
 - Default home renders 40 model cards and offers 40 more. Switching brands resets this limit. Standard lists use the local vacuum illustration; manufacturer photos follow the existing detail/on-demand preference.
 - All 29 app test groups and syntax checks passed. Server provider/access/quota/pilot contracts and generated Edge smoke passed without external provider calls. Main and all optional bundles are reproducible with pinned esbuild.
