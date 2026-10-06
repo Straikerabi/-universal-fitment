@@ -133,6 +133,7 @@ jobs:
           node integrations/marketplace-providers.test.mjs
           node --check integrations/marketplace-handler.mjs
           node integrations/marketplace-handler.test.mjs
+          node integrations/marketplace-quota.test.mjs
           node integrations/build-edge.mjs
           node integrations/edge-smoke.test.mjs
 

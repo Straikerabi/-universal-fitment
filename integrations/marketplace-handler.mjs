@@ -1,3 +1,6 @@
+import { normalizeMarketplaceOffer } from '../site/src/core/marketplaces.js';
+import { createQuotaReservation } from './marketplace-quota.mjs';
+
 const uuid=/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 const origin='https://straikerabi.github.io';
 const bodyLimit=4096;
@@ -40,10 +43,11 @@ async function readBody(request){
   return JSON.parse(new TextDecoder().decode(bytes));
 }
 
-export function createMarketplaceHandler({env={},partIndex=[],providers={},authenticate}={}){
+export function createMarketplaceHandler({env={},partIndex=[],providers={},authenticate,reserveQuota,quotaBackendVerifiedAtStartup=false,timeoutMs=10000}={}){
   const parts=new Map(partIndex.map(part=>[part.partKey,part]));
   const allowedUsers=new Set((env.MARKETPLACE_USER_IDS||'').split(',').map(x=>x.trim()).filter(x=>uuid.test(x)));
   authenticate=authenticate||createAuthenticator({env});
+  reserveQuota=reserveQuota||createQuotaReservation({env});
   return async request=>{
     const requestOrigin=request.headers.get('origin');
     const headers={'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store','Vary':'Origin'};
@@ -55,7 +59,9 @@ export function createMarketplaceHandler({env={},partIndex=[],providers={},authe
     const path=new URL(request.url).pathname;
     if(request.method==='OPTIONS')return new Response(null,{status:204,headers});
     if(request.method==='GET'&&path.endsWith('/marketplace-search/health'))return reply(200,{
-      status:'ready',backendVersion:1,liveOffersEnabled:false,partCount:parts.size,
+      status:'ready',backendVersion:2,liveOffersEnabled:env.MARKETPLACE_LIVE_ENABLED==='true'&&Object.values(providers).some(p=>p.mode==='live'),partCount:parts.size,
+      quota:'persistent-postgres',
+      quotaBackendVerifiedAtStartup,
       authentication:'supabase-user-and-pilot-allowlist',providers:{ebay:'access_required',amazon:'access_required'}
     });
     if(!path.endsWith('/marketplace-search'))return reply(404,{status:'not_found'});
@@ -71,11 +77,20 @@ export function createMarketplaceHandler({env={},partIndex=[],providers={},authe
     if(!valid||!['ebay','amazon'].includes(input.provider)||!['used','new','all'].includes(input.condition)||
       typeof input.partKey!=='string'||!parts.has(input.partKey))return reply(400,{status:'invalid_request'});
     const provider=providers[input.provider];
-    // This increment cannot enable provider calls, even if secrets are present.
-    // Global quota enforcement and authenticated client integration are a separate activation step.
     if(env.MARKETPLACE_LIVE_ENABLED!=='true'||!provider||provider.mode!=='live')return reply(200,{
       provider:input.provider,partKey:input.partKey,status:'access_required',offers:[]
     });
-    return reply(503,{status:'activation_required',offers:[]});
+    let quota;
+    try{quota=await reserveQuota(user.id,input.provider);}catch{return reply(503,{status:'quota_unavailable',offers:[]});}
+    if(quota?.allowed!==true)return reply(429,{status:'quota_exceeded',offers:[]},{'Retry-After':String(quota?.retryAfterSeconds||60)});
+    const controller=new AbortController();let timer;
+    try{
+      const timeout=new Promise((_,reject)=>{timer=setTimeout(()=>{controller.abort();reject(new Error('timeout'));},timeoutMs);});
+      const result=await Promise.race([provider.search({...parts.get(input.partKey),condition:input.condition,market:'DE'},{signal:controller.signal}),timeout]);
+      if(result?.status!=='ok'||!Array.isArray(result.offers))return reply(502,{status:'unavailable',offers:[]});
+      const offers=result.offers.map(x=>normalizeMarketplaceOffer(x,input.provider)).filter(x=>x&&(input.condition==='all'||x.condition===input.condition));
+      return reply(200,{provider:input.provider,partKey:input.partKey,status:'ok',offers});
+    }catch{return reply(controller.signal.aborted?504:502,{status:controller.signal.aborted?'timeout':'unavailable',offers:[]});}
+    finally{clearTimeout(timer);}
   };
 }

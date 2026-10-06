@@ -43,8 +43,27 @@ for(const part of partIndex){
   assert.equal(response.status,200);assert.deepEqual(await response.json(),{provider:'ebay',partKey:part.partKey,status:'access_required',offers:[]});
 }
 const guarded=createMarketplaceHandler({env:{MARKETPLACE_USER_IDS:userId,MARKETPLACE_LIVE_ENABLED:'true'},partIndex,providers,authenticate:async()=>({id:userId})});
-const guardedResponse=await guarded(request());assert.equal(guardedResponse.status,503);assert.equal((await guardedResponse.json()).status,'activation_required');
+const guardedResponse=await guarded(request());assert.equal(guardedResponse.status,503);assert.equal((await guardedResponse.json()).status,'quota_unavailable');
 assert.equal(providerCalls,0);
+
+const rawOffer={provider:'ebay',offerId:'test-listing',title:'Seller claim',url:'https://www.ebay.de/itm/123',condition:'used',
+  fixedPrice:true,price:19,currency:'EUR',checkedAt:new Date().toISOString(),dataMode:'live'};
+let quotaCalls=0,searchCalls=0;
+const liveEnv={MARKETPLACE_USER_IDS:userId,MARKETPLACE_LIVE_ENABLED:'true'};
+const liveOptions={env:liveEnv,partIndex,authenticate:async()=>({id:userId}),providers:{ebay:{mode:'live',search:async(identity)=>{
+  searchCalls++;assert.equal(identity.query,partIndex[0].query);assert.equal(identity.market,'DE');return {status:'ok',offers:[rawOffer,{...rawOffer,testData:true}]};
+}}},reserveQuota:async(id,provider)=>{quotaCalls++;assert.equal(id,userId);assert.equal(provider,'ebay');return {allowed:true};}};
+const live=createMarketplaceHandler(liveOptions);
+const liveResult=await (await live(request())).json();assert.equal(liveResult.offers.length,1);
+assert.equal(liveResult.offers[0].fitmentStatus,'offer_check_required');assert.equal(quotaCalls,1);assert.equal(searchCalls,1);
+const limited=createMarketplaceHandler({...liveOptions,reserveQuota:async()=>({allowed:false,retryAfterSeconds:42})});
+const limitedResult=await limited(request());assert.equal(limitedResult.status,429);assert.equal(limitedResult.headers.get('retry-after'),'42');assert.equal(searchCalls,1);
+const quotaDown=createMarketplaceHandler({...liveOptions,reserveQuota:async()=>{throw new Error('internal secret');}});
+assert.equal((await quotaDown(request())).status,503);assert.equal(searchCalls,1);
+const failing=createMarketplaceHandler({...liveOptions,providers:{ebay:{mode:'live',search:async()=>{throw new Error('provider secret');}}}});
+assert.deepEqual(await (await failing(request())).json(),{status:'unavailable',offers:[]});
+const timeout=createMarketplaceHandler({...liveOptions,timeoutMs:10,providers:{ebay:{mode:'live',search:async()=>new Promise(()=>{})}}});
+assert.equal((await timeout(request())).status,504);
 
 let authCalls=0;
 const env={SUPABASE_URL:'https://test-project.invalid',SUPABASE_ANON_KEY:'test-public-key'};
@@ -74,4 +93,4 @@ for(const keyEnv of [
   }});
   assert.deepEqual(await verify(request(input,{authorization:'Bearer header.payload.signature'})),{id:userId});
 }
-console.log('Marketplace endpoint checks passed: Auth verification, pilot isolation, CORS, request limits, all 167 part keys and zero provider calls.');
+console.log('Marketplace endpoint checks passed: Auth, pilot isolation, CORS, all 167 parts, quota gates and bounded provider dispatch. No external API was called.');

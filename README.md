@@ -41,7 +41,7 @@ Source snapshot: **2026-10-06**. Provider prices, stock and arrival ranges are s
 ## Deliberately not faked
 Cloud accounts, client login OAuth, payments, licensed VIN decode, TecDoc/GS1/EPREL credentials, partner repair-service booking and live merchant feeds remain disabled until the real backend/contracts/credentials exist. The eBay/Amazon search links are available now; their server modules and access requirements are documented in [integrations/README.md](integrations/README.md). API keys never enter the static site. CI checks the app and server request contracts before deployment.
 
-The first marketplace server endpoint is now deployed on the existing Supabase Free project. Its health check reports all 167 catalog parts; search requests require a validated Supabase user and an explicit pilot allowlist. Provider calls remain disabled. Live offers, account UI and a persistent global request budget are still pending; see [integrations/edge/README.md](integrations/edge/README.md).
+Marketplace server version 2 is deployed on the existing Supabase Free project. Its health check reports all 167 catalog parts and verifies the server's database quota connection. Search requests require a validated Supabase user and an explicit pilot allowlist. Persistent quotas cap searches at five per user/minute, twenty globally/minute and one hundred per provider/UTC day. Provider calls remain disabled until actual access and authenticated client integration are verified; see [integrations/edge/README.md](integrations/edge/README.md).
 
 ## Checkout model
 

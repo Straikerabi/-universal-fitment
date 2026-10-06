@@ -4,11 +4,11 @@ Stand: 2026-10-06. Die öffentliche App bleibt v1.12 im Suchlink-Modus. Supabase
 
 ## Bereitgestellt
 
-Edge Function `marketplace-search`, Version 1. Der öffentliche Bereitschaftstest ist erreichbar:
+Edge Function `marketplace-search`, Version 2. Der öffentliche Bereitschaftstest ist erreichbar:
 
 https://riorfdgoovydfyzjwdvf.supabase.co/functions/v1/marketplace-search/health
 
-Er meldet `status: ready`, `partCount: 167` und `liveOffersEnabled: false`. Das bestätigt die Serverbereitstellung und den geladenen Katalogindex, keine Händleranbindung.
+Er meldet `status: ready`, `partCount: 167`, `liveOffersEnabled: false` und `quotaBackendVerifiedAtStartup: true`. Das bestätigt Server, Katalogindex und die echte Verbindung zur Kontingent-Funktion, keine Händleranbindung.
 
 ## Suchvertrag
 
@@ -37,11 +37,23 @@ Ein gültiger Supabase-Benutzer-Token gehört in `Authorization: Bearer <user JW
 | 401 | `auth_required` | Kein bestätigter, regulärer Supabase-Nutzer |
 | 403 | `pilot_access_required` / `origin_denied` | Kein Pilotzugang oder fremder Browser-Ursprung |
 | 400 / 413 / 415 / 408 | `invalid_request` / `json_required` | Ungültige Daten, über 4096 Byte, falsches Format oder Zeitlimit |
-| 503 | `auth_unavailable` / `activation_required` | Auth-Prüfung nicht verfügbar oder Live-Schalter vorzeitig gesetzt |
+| 429 | `quota_exceeded` | Kontingent erschöpft; `Retry-After` nennt Sekunden bis zum nächsten Fenster |
+| 503 | `auth_unavailable` / `quota_unavailable` | Auth- oder Kontingent-Prüfung nicht verfügbar; keine Händlerabfrage |
+| 502 / 504 | `unavailable` / `timeout` | Anbieterfehler oder Zehn-Sekunden-Frist erreicht |
 
 Browser-CORS ist auf `https://straikerabi.github.io` begrenzt. Antworten sind `no-store`. Das Lesen des Anfragekörpers und Auth-Aufrufe haben jeweils ein Fünf-Sekunden-Limit. Fehler geben keine internen Details, Tokens oder Kontaktdaten aus.
 
-Auch mit gesetztem `MARKETPLACE_LIVE_ENABLED=true` und vorhandenen Provider-Secrets ruft diese Version keine Anbieter-API auf. Vor Live-Freigabe sind noch erforderlich: geprüfte Händlerberechtigungen, ein echter positiver Nutzer-Test, dauerhafte globale Anfrage-/Quotengrenzen, Angebotsvalidierung über den bestehenden gemeinsamen Vertrag und angemeldete Client-Anbindung. Es existiert noch kein globaler Rate-Limiter. Preise, Versand und Passform werden nicht aus Suchergebnissen erfunden.
+`MARKETPLACE_LIVE_ENABLED` bleibt false; es wurden keine Provider-Secrets eingerichtet. Erst ein bestätigter Pilotnutzer, ein ausdrücklich aktivierter Anbieter und eine erfolgreiche Datenbank-Reservierung erlauben eine Händlerabfrage. Dann läuft das Ergebnis durch den bestehenden Angebotsvalidator. Vor Live-Freigabe fehlen weiterhin geprüfte Händlerberechtigungen, ein echter positiver Nutzer-Test und die angemeldete Client-Anbindung.
+
+## Dauerhafte Kontingente
+
+Die Zähler liegen in `fitment_private.marketplace_quota`: fünf Angebotssuchen je Nutzer und Minute über beide Anbieter, zwanzig insgesamt je Minute und hundert je Anbieter und UTC-Tag. Das sind unsere Pilotgrenzen, keine Aussage über Vertragslimits von eBay oder Amazon. Eine Reservierung zählt einen Suchversuch; zusätzliche OAuth-Aufrufe zählen nicht als weitere Suchreservierungen. Fehler geben reservierte Plätze nicht zurück.
+
+`marketplace_reserve_quota` prüft und erhöht die drei Zähler unter einer Transaktionssperre. Abgewiesene Anfragen belasten keine anderen Fenster. Die Zeit stammt aus der Datenbank. Ein Datenbankfehler verhindert die Händlerabfrage. Beim Start prüft der Server die RPC-Berechtigung mit ungültigen Argumenten, ohne Kontingent zu verbrauchen oder Nutzer anzulegen.
+
+Nur die Serverrolle darf die Funktion ausführen und die private Tabelle bearbeiten. RLS und ausdrückliche Ablehnungspolicies schützen die Tabelle zusätzlich. Gespeichert werden Zählerscope, Zeitfenster und Anzahl. Fenster älter als zwei Tage werden bei der nächsten Reservierung bereinigt; bei ausbleibenden Reservierungen kann die letzte Historie länger bestehen bleiben.
+
+Das Ersteinrichtungs-SQL steht in `integrations/quota-schema.sql`. Es wurde über Supabase ausgeführt und mit zurückgerollten Testdaten geprüft; es ist kein CLI-Migrationsstand. Der Sicherheitsberater meldet keine Befunde. Ein echter angemeldeter Pilotnutzer und produktive Händlerangebote sind weiterhin nicht geprüft.
 
 ## Paket und Prüfungen
 
@@ -50,6 +62,7 @@ Auch mit gesetztem `MARKETPLACE_LIVE_ENABLED=true` und vorhandenen Provider-Secr
 ```sh
 node integrations/marketplace-providers.test.mjs
 node integrations/marketplace-handler.test.mjs
+node integrations/marketplace-quota.test.mjs
 node integrations/build-edge.mjs
 node integrations/edge-smoke.test.mjs
 ```
