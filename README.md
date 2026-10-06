@@ -1,4 +1,4 @@
-# Universal Fitment v1.10 – sourced parts prices, shipping and estimated installation time
+# Universal Fitment v1.11 – used parts, eBay/Amazon searches and prepared API providers
 
 The public product is now intentionally focused on one vertical and one brand: **Miele vacuum cleaners**.
 
@@ -14,6 +14,10 @@ The public product is now intentionally focused on one vertical and one brand: *
 - Aftermarket bags, filters, hoses, batteries and a charger are linked to primary supplier statements and visibly labelled as supplier claims, not Miele approvals. No HX2 battery is inferred to fit HX3; a supplier typo is not treated as Duoflex evidence
 - Every concrete model displays its exact official product photo, with a local vacuum illustration when a photo fails or the device is offline
 - A complete parts catalog and per-device filters support original/aftermarket, category, series, name, material number, article number and EAN
+- A used-parts page searches all 167 part templates or a selected device, with original/aftermarket, component, series and New/Used filters. eBay opens a part-specific Buy It Now search with a condition filter; Amazon opens a part-specific search and leaves used buying options to the product page
+- Part details provide both marketplace choices. Searches are not verified fitment evidence, stock or source-price records. Device material numbers never substitute for part identifiers
+- Searches can be saved to the cart as part notes with requested condition and both links. Seller, price, stock, shipping and total remain open. Source quotes check part membership for the device; separate marketplace sellers cannot share a shipping threshold
+- Server-only eBay Browse and Amazon Creators OAuth providers, response adapters and failure/deadline contracts are prepared and tested with synthetic responses. Missing access triggers no external calls; flagged mock/sandbox data, auctions, defective conditions and stale responses are rejected. No production API call or live feed is claimed
 - Global and per-device price lists cover all 167 catalog entries. Each price links its own part page, gives its retrieval date and distinguishes sale-unit/pack price, VAT basis, currency and provider availability
 - 157 original Miele prices were fetched directly from their exact material-number pages on 2026-10-06. Seven vhbw prices come from current German Electropapa pages. SQOON net quantity-tier prices, a Polish PLN hose price and an older Müller/Swirl reference remain visibly separate
 - Shipping policies link the provider's own terms. Miele's 6.50 EUR fee and inclusive 49 EUR free-shipping threshold are applied once per merchant basket; the captured German Electropapa product pages explicitly offer free DE shipping
@@ -33,4 +37,4 @@ Other categories and brands are deliberately hidden until the Miele pilot is dee
 Source snapshot: **2026-10-06**. Provider prices, stock and arrival ranges are shown as dated source records, never as live offers or fabricated rating-based recommendations. Installation minutes are our own planning estimates, not manufacturer specifications. CI checks exact device identifiers, job references, category/series filters, spare-part provenance, supplier scope, generation/variant boundaries, VAT/currency/age handling and same-merchant shipping thresholds. The public spare-parts catalog is not the complete serial-specific internal service inventory; unlisted motors/electronics require an official Miele check using the type plate.
 
 ## Deliberately not faked
-Cloud accounts, OAuth, payments, licensed VIN decode, TecDoc/GS1/EPREL credentials, partner repair-service booking and live merchant feeds remain disabled until the real backend/contracts/credentials exist.
+Cloud accounts, client login OAuth, payments, licensed VIN decode, TecDoc/GS1/EPREL credentials, partner repair-service booking and live merchant feeds remain disabled until the real backend/contracts/credentials exist. The eBay/Amazon search links are available now; their server modules and access requirements are documented in [integrations/README.md](integrations/README.md). API keys never enter the static site. CI checks the app and server request contracts before deployment.

@@ -1,4 +1,4 @@
-name: Deploy v1.10 parts prices and shipping to GitHub Pages
+name: Deploy v1.11 used parts and marketplace search to GitHub Pages
 
 on:
   push:
@@ -110,11 +110,23 @@ jobs:
           echo "8f7e5d2f5d3c3dc8e25874e97322cb9e599089e3f7f1c5ebe31999d64b5b8a0c  update-v1.10.patch" | sha256sum -c -
           patch -p1 -d site < update-v1.10.patch
 
+      - name: Apply v1.11 used-parts and marketplace-search patch
+        shell: bash
+        run: |
+          cat .demo/v1.11-patch/part-* | base64 -d | gzip -d > update-v1.11.patch
+          echo "7e44c824deee688b2a07b5dbd32764d10e5f7640f70b33626accb6bce457d1d1  update-v1.11.patch" | sha256sum -c -
+          patch -p1 -d site < update-v1.11.patch
+
       - name: Run checks
         working-directory: site
         run: |
           npm test
           npm run check
+
+      - name: Check server provider contracts
+        run: |
+          node --check integrations/marketplace-providers.mjs
+          node integrations/marketplace-providers.test.mjs
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
