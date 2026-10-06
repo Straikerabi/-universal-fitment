@@ -1,5 +1,6 @@
 import { normalizeMarketplaceOffer } from '../site/src/core/marketplaces.js';
 import { createQuotaReservation } from './marketplace-quota.mjs';
+import { createPilotAuthorization } from './marketplace-pilot.mjs';
 
 const uuid=/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 const origin='https://straikerabi.github.io';
@@ -43,10 +44,10 @@ async function readBody(request){
   return JSON.parse(new TextDecoder().decode(bytes));
 }
 
-export function createMarketplaceHandler({env={},partIndex=[],providers={},authenticate,reserveQuota,quotaBackendVerifiedAtStartup=false,timeoutMs=10000}={}){
+export function createMarketplaceHandler({env={},partIndex=[],providers={},authenticate,authorizePilot,reserveQuota,pilotBackendVerifiedAtStartup=false,quotaBackendVerifiedAtStartup=false,timeoutMs=10000}={}){
   const parts=new Map(partIndex.map(part=>[part.partKey,part]));
-  const allowedUsers=new Set((env.MARKETPLACE_USER_IDS||'').split(',').map(x=>x.trim()).filter(x=>uuid.test(x)));
   authenticate=authenticate||createAuthenticator({env});
+  authorizePilot=authorizePilot||createPilotAuthorization({env});
   reserveQuota=reserveQuota||createQuotaReservation({env});
   return async request=>{
     const requestOrigin=request.headers.get('origin');
@@ -59,17 +60,19 @@ export function createMarketplaceHandler({env={},partIndex=[],providers={},authe
     const path=new URL(request.url).pathname;
     if(request.method==='OPTIONS')return new Response(null,{status:204,headers});
     if(request.method==='GET'&&path.endsWith('/marketplace-search/health'))return reply(200,{
-      status:'ready',backendVersion:2,liveOffersEnabled:env.MARKETPLACE_LIVE_ENABLED==='true'&&Object.values(providers).some(p=>p.mode==='live'),partCount:parts.size,
+      status:'ready',backendVersion:3,liveOffersEnabled:env.MARKETPLACE_LIVE_ENABLED==='true'&&Object.values(providers).some(p=>p.mode==='live'),partCount:parts.size,
       quota:'persistent-postgres',
       quotaBackendVerifiedAtStartup,
-      authentication:'supabase-user-and-pilot-allowlist',providers:{ebay:'access_required',amazon:'access_required'}
+      pilotBackendVerifiedAtStartup,
+      authentication:'supabase-user-and-database-pilot-permission',providers:{ebay:'access_required',amazon:'access_required'}
     });
     if(!path.endsWith('/marketplace-search'))return reply(404,{status:'not_found'});
     if(request.method!=='POST')return reply(405,{status:'method_not_allowed'},{Allow:'POST, OPTIONS'});
     let user;
     try{user=await authenticate(request);}catch{return reply(503,{status:'auth_unavailable'});}
     if(!user||!uuid.test(user.id))return reply(401,{status:'auth_required'});
-    if(!allowedUsers.has(user.id))return reply(403,{status:'pilot_access_required'});
+    try{if(await authorizePilot(user.id)!==true)return reply(403,{status:'pilot_access_required'});}
+    catch{return reply(503,{status:'pilot_unavailable'});}
     if(!/^application\/json(?:\s*;|$)/i.test(request.headers.get('content-type')||''))return reply(415,{status:'json_required'});
     let input;
     try{input=await readBody(request);}catch(error){return reply(error instanceof RangeError?413:error.name==='TimeoutError'?408:400,{status:'invalid_request'});}

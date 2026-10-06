@@ -1,21 +1,14 @@
-name: Deploy v1.13 pilot authentication to GitHub Pages
+name: Check pilot permission proposal
 
 on:
-  push:
+  pull_request:
     branches: ["main"]
-  workflow_dispatch:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: true
 
 jobs:
-  build-and-test:
+  verify:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -145,21 +138,3 @@ jobs:
           node integrations/build-edge.mjs
           node integrations/edge-smoke.test.mjs
 
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: site
-
-  deploy:
-    needs: build-and-test
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4

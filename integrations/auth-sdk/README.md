@@ -17,6 +17,8 @@ npm ci
 
 Supabase JS 2.117.2, esbuild 0.25.12. Runtime licenses are in `site/src/vendor/LICENSES.txt`. No third-party CDN request is needed. The CI reconstructs the complete site from versioned patches and runs the client tests.
 
+A [draft database-backed pilot permission](../pilot-access.md) is prepared but not installed; the currently deployed server still uses the empty environment allowlist.
+
 ## Remaining release dependencies
 
 1. Create an actual pilot account through an authorized secure account workflow; confirm it and add its UUID to `MARKETPLACE_USER_IDS` on the server. No shared/default password and no credential exchange in chat.

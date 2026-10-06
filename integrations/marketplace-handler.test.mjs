@@ -12,7 +12,7 @@ const input={provider:'ebay',partKey:partIndex[0].partKey,condition:'used'};
 const request=(data=input,headers={})=>new Request(url,{method:'POST',headers:{'content-type':'application/json',...headers},body:typeof data==='string'?data:JSON.stringify(data)});
 let providerCalls=0;
 const providers={ebay:{mode:'live',search:async()=>{providerCalls++;throw new Error('Must not be called');}},amazon:{mode:'live',search:async()=>{providerCalls++;}}};
-const approved=createMarketplaceHandler({env:{MARKETPLACE_USER_IDS:userId},partIndex,providers,authenticate:async()=>({id:userId})});
+const approved=createMarketplaceHandler({authorizePilot:async()=>true,env:{},partIndex,providers,authenticate:async()=>({id:userId})});
 const health=await approved(new Request(`${url}/health`));
 assert.equal(health.status,200);assert.equal((await health.json()).partCount,167);
 assert.equal(health.headers.get('cache-control'),'no-store');
@@ -23,8 +23,12 @@ const preflight=await approved(new Request(url,{method:'OPTIONS',headers:{origin
 assert.equal(preflight.status,204);assert.equal(preflight.headers.get('access-control-allow-origin'),'https://straikerabi.github.io');
 const unauthenticated=createMarketplaceHandler({partIndex,providers,authenticate:async()=>null});
 assert.equal((await unauthenticated(request())).status,401);
-const noPilot=createMarketplaceHandler({partIndex,providers,authenticate:async()=>({id:userId})});
+const noPilot=createMarketplaceHandler({authorizePilot:async()=>false,partIndex,providers,authenticate:async()=>({id:userId})});
 assert.equal((await noPilot(request())).status,403);
+const pilotDown=createMarketplaceHandler({partIndex,providers,authenticate:async()=>({id:userId}),authorizePilot:async()=>{throw new Error('private details');}});
+assert.deepEqual(await (await pilotDown(request())).json(),{status:'pilot_unavailable'});assert.equal(providerCalls,0);
+const legacyEnv=createMarketplaceHandler({env:{MARKETPLACE_USER_IDS:userId},partIndex,providers,authenticate:async()=>({id:userId})});
+assert.equal((await legacyEnv(request())).status,503,'legacy env cannot bypass database authorization');
 const authFailure=createMarketplaceHandler({partIndex,providers,authenticate:async()=>{throw new Error('Sensitive internal error');}});
 const authResponse=await authFailure(request());assert.equal(authResponse.status,503);assert.deepEqual(await authResponse.json(),{status:'auth_unavailable'});
 for(const bad of [null,[],{...input,query:'unrestricted search'},{...input,url:'https://internal.invalid'},
@@ -42,15 +46,15 @@ for(const part of partIndex){
   const response=await approved(request({...input,partKey:part.partKey}));
   assert.equal(response.status,200);assert.deepEqual(await response.json(),{provider:'ebay',partKey:part.partKey,status:'access_required',offers:[]});
 }
-const guarded=createMarketplaceHandler({env:{MARKETPLACE_USER_IDS:userId,MARKETPLACE_LIVE_ENABLED:'true'},partIndex,providers,authenticate:async()=>({id:userId})});
+const guarded=createMarketplaceHandler({authorizePilot:async()=>true,env:{MARKETPLACE_LIVE_ENABLED:'true'},partIndex,providers,authenticate:async()=>({id:userId})});
 const guardedResponse=await guarded(request());assert.equal(guardedResponse.status,503);assert.equal((await guardedResponse.json()).status,'quota_unavailable');
 assert.equal(providerCalls,0);
 
 const rawOffer={provider:'ebay',offerId:'test-listing',title:'Seller claim',url:'https://www.ebay.de/itm/123',condition:'used',
   fixedPrice:true,price:19,currency:'EUR',checkedAt:new Date().toISOString(),dataMode:'live'};
 let quotaCalls=0,searchCalls=0;
-const liveEnv={MARKETPLACE_USER_IDS:userId,MARKETPLACE_LIVE_ENABLED:'true'};
-const liveOptions={env:liveEnv,partIndex,authenticate:async()=>({id:userId}),providers:{ebay:{mode:'live',search:async(identity)=>{
+const liveEnv={MARKETPLACE_LIVE_ENABLED:'true'};
+const liveOptions={authorizePilot:async id=>id===userId,env:liveEnv,partIndex,authenticate:async()=>({id:userId}),providers:{ebay:{mode:'live',search:async(identity)=>{
   searchCalls++;assert.equal(identity.query,partIndex[0].query);assert.equal(identity.market,'DE');return {status:'ok',offers:[rawOffer,{...rawOffer,testData:true}]};
 }}},reserveQuota:async(id,provider)=>{quotaCalls++;assert.equal(id,userId);assert.equal(provider,'ebay');return {allowed:true};}};
 const live=createMarketplaceHandler(liveOptions);

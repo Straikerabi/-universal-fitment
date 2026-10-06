@@ -2,6 +2,8 @@
 
 The public product is now intentionally focused on one vertical and one brand: **Miele vacuum cleaners**.
 
+A [reviewable draft for expiring, revocable pilot permissions](integrations/pilot-access.md) is prepared separately. Its database installation was blocked by approval review and has not been applied; the deployed server remains version 2.
+
 ## Current pilot scope
 - Account page now supports email/password login for existing pilot accounts, verified through Supabase Auth; the session stays in memory and refreshes through the pinned local SDK. No public signup or outgoing test email was performed
 - Part pages can call the protected marketplace server with the user JWT. Missing login, pilot permission, provider access, quota and network failure are distinguished. Cross-origin Auth and API responses bypass the offline cache

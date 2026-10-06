@@ -17,6 +17,7 @@ const copy=async(name,path,from,to)=>{
 await copy('index.ts','integrations/edge/index.ts');
 await copy('handler.mjs','integrations/marketplace-handler.mjs',"'../site/src/core/marketplaces.js'","'./marketplaces.js'");
 await copy('marketplace-quota.mjs','integrations/marketplace-quota.mjs');
+await copy('marketplace-pilot.mjs','integrations/marketplace-pilot.mjs');
 await copy('marketplace-providers.mjs','integrations/marketplace-providers.mjs',"'../site/src/core/marketplaces.js'","'./marketplaces.js'");
 await copy('marketplaces.js','site/src/core/marketplaces.js',"'../data/miele-parts.js'","'./miele-parts.js'");
 await copy('miele-parts.js','site/src/data/miele-parts.js');

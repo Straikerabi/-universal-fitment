@@ -2,6 +2,8 @@
 
 Stand: 2026-10-06. Die öffentliche App bleibt v1.13 mit Suchlinks und einer Pilotanmeldung. Supabase-Projekt `universal-fitment`, Region Frankfurt; keine Tarifänderung vorgenommen.
 
+Ein separater [Entwurf für befristete Pilotfreigaben](../pilot-access.md) bereitet Server Version 3 vor. Er ist noch nicht installiert; die automatische Datenbankfreigabe wurde blockiert. Die folgenden Angaben beschreiben Version 2 im laufenden Projekt.
+
 ## Bereitgestellt
 
 Edge Function `marketplace-search`, Version 2. Der öffentliche Bereitschaftstest ist erreichbar:
