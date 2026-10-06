@@ -1,4 +1,4 @@
-# Universal Fitment v1.11 – used parts, eBay/Amazon searches and prepared API providers
+# Universal Fitment v1.12 – cart-to-merchant handoff and shopping lists
 
 The public product is now intentionally focused on one vertical and one brand: **Miele vacuum cleaners**.
 
@@ -17,6 +17,8 @@ The public product is now intentionally focused on one vertical and one brand: *
 - A used-parts page searches all 167 part templates or a selected device, with original/aftermarket, component, series and New/Used filters. eBay opens a part-specific Buy It Now search with a condition filter; Amazon opens a part-specific search and leaves used buying options to the product page
 - Part details provide both marketplace choices. Searches are not verified fitment evidence, stock or source-price records. Device material numbers never substitute for part identifiers
 - Searches can be saved to the cart as part notes with requested condition and both links. Seller, price, stock, shipping and total remain open. Source quotes check part membership for the device; separate marketplace sellers cannot share a shipping threshold
+- The cart now has an explicit **Beim Händler bestellen** step. It groups product links, marketplace searches and reference pages, shows the desired quantity and sale unit, and copies the complete or per-merchant shopping list with part numbers and URLs
+- Handoff opens the actual part page, not a guessed cart or device page. Reference pages and searches do not become selected offers. Quantities are not automatically transferred, no order is submitted, no payment is collected and the saved cart is never cleared by opening or copying the list
 - Server-only eBay Browse and Amazon Creators OAuth providers, response adapters and failure/deadline contracts are prepared and tested with synthetic responses. Missing access triggers no external calls; flagged mock/sandbox data, auctions, defective conditions and stale responses are rejected. No production API call or live feed is claimed
 - Global and per-device price lists cover all 167 catalog entries. Each price links its own part page, gives its retrieval date and distinguishes sale-unit/pack price, VAT basis, currency and provider availability
 - 157 original Miele prices were fetched directly from their exact material-number pages on 2026-10-06. Seven vhbw prices come from current German Electropapa pages. SQOON net quantity-tier prices, a Polish PLN hose price and an older Müller/Swirl reference remain visibly separate
@@ -38,3 +40,7 @@ Source snapshot: **2026-10-06**. Provider prices, stock and arrival ranges are s
 
 ## Deliberately not faked
 Cloud accounts, client login OAuth, payments, licensed VIN decode, TecDoc/GS1/EPREL credentials, partner repair-service booking and live merchant feeds remain disabled until the real backend/contracts/credentials exist. The eBay/Amazon search links are available now; their server modules and access requirements are documented in [integrations/README.md](integrations/README.md). API keys never enter the static site. CI checks the app and server request contracts before deployment.
+
+## Checkout model
+
+The current pilot is an outbound shopping planner: customers choose the actual offer, add the desired quantity and pay at each merchant/marketplace. Several shops mean separate orders. Automatic cart transfer requires selected offer identifiers and an officially supported, permitted provider integration; it is not assumed from search results or a generic URL parameter. Own-platform payments are a separate business/integration decision, not enabled by installing a payment widget. See [integrations/checkout.md](integrations/checkout.md).

@@ -1,4 +1,4 @@
-name: Deploy v1.11 used parts and marketplace search to GitHub Pages
+name: Deploy v1.12 cart handoff to GitHub Pages
 
 on:
   push:
@@ -113,6 +113,13 @@ jobs:
           cat .demo/v1.11-patch/part-* | base64 -d | gzip -d > update-v1.11.patch
           echo "7e44c824deee688b2a07b5dbd32764d10e5f7640f70b33626accb6bce457d1d1  update-v1.11.patch" | sha256sum -c -
           patch -p1 -d site < update-v1.11.patch
+
+      - name: Apply v1.12 cart-to-merchant handoff patch
+        shell: bash
+        run: |
+          cat .demo/v1.12-patch/part-* | base64 -d | gzip -d > update-v1.12.patch
+          echo "f1911ece8369a9cbcb5b3b1de66f8985228b0eb1c263f2af5d0e5d84afa936a3  update-v1.12.patch" | sha256sum -c -
+          patch -p1 -d site < update-v1.12.patch
 
       - name: Run checks
         working-directory: site
