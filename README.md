@@ -1,4 +1,10 @@
-# Universal Fitment v1.26.4 – aktuelle Hilfe und zurücksetzbare Modellfilter
+# Universal Fitment v1.26.5 – öffentliche Roadmap und Kontakt & Feedback
+
+[Roadmap · Deutsch](ROADMAP.md) · [Roadmap · English](ROADMAP.en.md) · [Patchnotes](CHANGELOG.md) · [Ideen & Kommentare](https://github.com/Straikerabi/-universal-fitment/issues)
+
+Universal Fitment beginnt mit Staubsaugern für Deutschland. Unser langfristiges Ziel ist die verständliche Ersatzteilsuche für weitere Geräte und internationale Märkte. Die öffentliche Roadmap trennt vorhandene Funktionen, nächste Prioritäten und Zukunftspläne.
+
+Der neue Kontaktbereich unter **Mehr → Kontakt & Roadmap** bereitet überprüfbare GitHub-Beiträge vor. Ein eigenes Supportpostfach und privater Versand sind noch offen; es werden keine E-Mails automatisch verschickt. Zentrale App-Nutzungszahlen sind bisher nicht erfasst.
 
 Der Staubsaugerkatalog enthält **868 Modellbezeichnungen in 879 konkreten Modelleinträgen** und **1.903 unterschiedliche Katalogartikel**. Davon zählen **1.785** als katalogisierte Ersatzteile, Zubehörartikel oder Verbrauchsmaterialien. Dokumente, Komplettgeräte und noch nicht eingeordnete Artikel werden separat geführt. Neun Miele-Familienhinweise zählen nicht als konkrete Geräte.
 

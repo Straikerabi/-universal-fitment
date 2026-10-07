@@ -9,7 +9,7 @@
   "baseline_physical_parts": 1785,
   "baseline_articles": 1903,
   "baseline_unassigned_models": 255,
-  "budget_minutes": 420,
+  "budget_minutes": 470,
   "coverage": [
     {
       "brand": "Miele",
@@ -204,13 +204,64 @@
       "task": "Fertigstand mit neuen Zahlen, offenen Punkten und App-Link erstellen",
       "budget_minutes": 10,
       "status": "pending"
+    },
+    {
+      "id": "public_roadmap",
+      "task": "Öffentliche Roadmap auf Deutsch und Englisch erstellen und verlinken",
+      "budget_minutes": 20,
+      "status": "prepared"
+    },
+    {
+      "id": "contact_frontend",
+      "task": "Kontaktbereich mit sichtbarem GitHub-Entwurf und Kopieren vorbereiten",
+      "budget_minutes": 20,
+      "status": "prepared"
+    },
+    {
+      "id": "support_mail_plan",
+      "task": "Eigenes Supportpostfach und privaten Versandweg planen",
+      "budget_minutes": 5,
+      "status": "done"
+    },
+    {
+      "id": "usage_audit",
+      "task": "Vorhandene Nutzungsstatistik prüfen und sinnvollen Messumfang festhalten",
+      "budget_minutes": 5,
+      "status": "done"
     }
   ],
   "active_run": null,
-  "automations": {},
+  "automations": {
+    "worker": {
+      "id": "6ac6d322e8448191b621ec4839d783c6",
+      "start": "2026-10-08T02:00:00+02:00",
+      "last_start": "2026-10-08T07:00:00+02:00",
+      "runs": 6,
+      "timezone": "Europe/Berlin",
+      "enabled": true
+    },
+    "report": {
+      "id": "6ac6d3302b608191becb514456d5ec2d",
+      "start": "2026-10-08T08:00:00+02:00",
+      "style": "Patchnotes",
+      "enabled": true
+    }
+  },
   "completed_notes": [
     "Bestand vor dem Nachtausbau geprüft: 255 Modelleinträge ohne physische Teilezuordnung.",
-    "v1.26.4: FAQ und Rücksetzen der Modellfilter lokal geprüft; zur Veröffentlichung vorbereitet."
+    "v1.26.4: FAQ und Rücksetzen der Modellfilter lokal sowie in CI geprüft und veröffentlicht. Live: 5 Filterwerte korrekt zurückgesetzt, 9/9 Teile, geöffnete Filtergruppe erhalten.",
+    "Supportadresse bewusst noch nicht festgelegt; kein E-Mail-Versand und kein neuer Dienst aktiviert.",
+    "Keine zentrale App-Nutzungsstatistik gefunden; Repository-Traffic-Endpunkt im verfügbaren Connector nicht zugelassen. Keine Nutzerzahl behauptet."
   ],
-  "blocked": []
+  "blocked": [],
+  "first_release": {
+    "version": "1.26.4",
+    "commit": "ff8eb236acf469fbb8c19ae422293c8da68947c4",
+    "ci_run": 37701405087,
+    "build": "success",
+    "deploy": "success",
+    "live_filter_reset": "passed"
+  },
+  "follow_up_version": "1.26.5",
+  "latest_user_direction": "Nicht alles muss fertig werden; Qualität vor Vollständigkeit. Morgenbericht als Patchnotes. Zukunft: weitere Geräte und internationale Märkte; Roadmap auf Deutsch und Englisch, Ideen und Kommentare willkommen."
 }

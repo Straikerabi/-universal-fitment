@@ -29,7 +29,22 @@ Abi hat den eigenständigen Ausbau des bestehenden Staubsaugerprojekts bis zum k
 | 21 | Geprüfte Änderungen veröffentlichen und live kontrollieren | 20 Min. | Geplant |
 | 22 | Fertigstand mit neuen Zahlen, offenen Punkten und App-Link erstellen | 10 Min. | Geplant |
 
-Gesamtbudget: 420 Minuten. Inventur, FAQ und Filterrücksetzung sind bereits bearbeitet. Die übrigen Punkte werden nach Priorität fortgesetzt. Der Abschlussbericht ist für 08:00 Uhr vorgesehen.
+Erweiterung nach Abis letzter Nachricht:
+
+| Nr. | Aufgabe | Budget | Startstatus |
+|---|---|---:|---|
+| 23 | Öffentliche Roadmap auf Deutsch und Englisch erstellen und verlinken | 20 Min. | Vorbereitet |
+| 24 | Kontaktbereich mit prüfbarem GitHub-Entwurf und Kopieren | 20 Min. | Vorbereitet |
+| 25 | Supportpostfach und privaten Versandweg planen | 5 Min. | Erledigt / Adresse offen |
+| 26 | Vorhandene Nutzungsstatistik prüfen und Messumfang festhalten | 5 Min. | Erledigt / keine zentrale Messung |
+
+Erweitertes Arbeitsbudget: 470 Minuten. Die Liste ist damit größer als das verbleibende Nachtfenster. Abi hat ausdrücklich gesagt, dass nicht alles bis zum Endtermin fertig sein muss; nach Priorität arbeiten, keine Belege oder Erledigung erfinden. Inventur, FAQ und Filterrücksetzung sind bereits bearbeitet. Die übrigen Punkte werden nach Priorität fortgesetzt. Der Abschlussbericht ist für 08:00 Uhr vorgesehen.
+
+## Öffentliche Kommunikation
+
+Die Roadmap steht in `ROADMAP.md` und `ROADMAP.en.md`, Releaseänderungen in `CHANGELOG.md`. Jede tatsächlich veröffentlichte Nachtversion bekommt dort kurze Patchnotes auf Deutsch und Englisch. Zwischen vorbereiteten, getesteten und veröffentlichten Änderungen unterscheiden. Der Bericht um 08:00 folgt dem Stil Neu, Verbessert, Behoben, Katalogzahlen, Bekannte offene Punkte, Als Nächstes.
+
+`integrations/contact-feedback-plan.md` dokumentiert den echten Kontakt-/Messstand. Kein Postfach oder Analytikdienst ist eingerichtet; eine private Adresse nicht aus Commitmetadaten übernehmen. Ein GitHub-Entwurf ist eine Nutzerweiterleitung, kein automatischer Versand. `supportEmail=null` bleibt offen, bis eine echte Adresse bestätigt ist.
 
 ## Ausgangsstand
 

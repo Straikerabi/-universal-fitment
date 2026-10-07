@@ -1,4 +1,4 @@
-name: "Deploy v1.26.4 current FAQ and resettable model filters to GitHub Pages"
+name: "Deploy v1.26.5 public bilingual roadmap and reviewable contact drafts to GitHub Pages"
 
 on:
   push:
@@ -246,6 +246,13 @@ jobs:
           cat .demo/v1.26.4-patch/part-* | base64 -d | gzip -d > update-v1.26.4.patch
           echo "47b77bdb1fa13a5fe60a527c34537aa8f82b96441f3a8afaf46236409ee64a08  update-v1.26.4.patch" | sha256sum -c -
           patch -p1 -d site < update-v1.26.4.patch
+
+      - name: "Apply v1.26.5 public bilingual roadmap and reviewable contact drafts"
+        shell: bash
+        run: |
+          cat .demo/v1.26.5-patch/part-* | base64 -d | gzip -d > update-v1.26.5.patch
+          echo "0f7c4ae2b8e4a6cbd44f45acb054b9ac9078d6f3463158a225a6d385947e1c12  update-v1.26.5.patch" | sha256sum -c -
+          patch -p1 -d site < update-v1.26.5.patch
 
       - name: Verify reproducible app bundle
         run: |

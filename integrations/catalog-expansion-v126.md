@@ -1,4 +1,4 @@
-# Katalogstand v1.26.4
+# Katalogstand v1.26.5
 
 ## Ergebnis
 
@@ -63,3 +63,7 @@ Die zugeordneten Teile eines Geräts werden nach der gemeinsamen Teileart in nat
 ## Hilfe und Filter v1.26.4
 
 Das FAQ nennt dynamisch alle zehn Katalogmarken. Veraltete globale Stichtage wurden durch den jeweiligen Artikel- und Quellenstand ersetzt. Die Hilfe erklärt aufklappbare Teilekategorien, fehlende Modellzuordnungen und offene Preise. Auf Modellseiten setzt ein gemeinsamer Knopf Suchtext, Original/Nachbau, Artikelart, Bauteil und Sortierung zurück; bestehende Öffnungszustände bleiben erhalten. Die Daten- und Teilezahlen ändern sich in dieser Version nicht.
+
+## Öffentliche Roadmap und Feedback in v1.26.5
+
+Eine deutsche und englische Roadmap beschreibt den heutigen Staubsaugerfokus für Deutschland und die langfristige Richtung für weitere Geräte und internationale Märkte. Der Kontaktbereich bereitet sichtbare GitHub-Entwürfe vor und bietet Kopieren; ein echtes Supportpostfach, privater Versand und zentrale App-Nutzungsstatistik bleiben offen. Diese UI- und Kommunikationsänderung verändert die obigen Katalogzahlen nicht.
