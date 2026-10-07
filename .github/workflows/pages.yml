@@ -1,4 +1,4 @@
-name: Deploy v1.26.2 categorized parts and model coverage to GitHub Pages
+name: Deploy v1.26.3 collapsible model-part categories and sorting to GitHub Pages
 
 on:
   push:
@@ -232,6 +232,13 @@ jobs:
           cat .demo/v1.26.2-patch/part-* | base64 -d | gzip -d > update-v1.26.2.patch
           echo "b6b3df8386895ab6046a387585742be74f09c0b9495aff210d865924ba2c96d9  update-v1.26.2.patch" | sha256sum -c -
           patch -p1 -d site < update-v1.26.2.patch
+
+      - name: Apply v1.26.3 collapsible model-part categories and sorting
+        shell: bash
+        run: |
+          cat .demo/v1.26.3-patch/part-* | base64 -d | gzip -d > update-v1.26.3.patch
+          echo "f7c7eb526f50b148b9192d39b563b58591216fbbbb860226afc7763a2d520d23  update-v1.26.3.patch" | sha256sum -c -
+          patch -p1 -d site < update-v1.26.3.patch
 
       - name: Verify reproducible app bundle
         run: |

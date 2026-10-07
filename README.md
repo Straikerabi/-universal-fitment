@@ -1,4 +1,4 @@
-# Universal Fitment v1.26.2 – erkennbare Teilearten und zehn aktive Marken
+# Universal Fitment v1.26.3 – aufklappbare Modell-Teilelisten und zehn aktive Marken
 
 Der Staubsaugerkatalog enthält **868 Modellbezeichnungen in 879 konkreten Modelleinträgen** und **1.903 unterschiedliche Katalogartikel**. Davon zählen **1.785** als katalogisierte Ersatzteile, Zubehörartikel oder Verbrauchsmaterialien. Dokumente, Komplettgeräte und noch nicht eingeordnete Artikel werden separat geführt. Neun Miele-Familienhinweise zählen nicht als konkrete Geräte.
 
@@ -23,7 +23,7 @@ Eine vorhandene Teilezuordnung bestätigt weder eine vollständige Teileliste no
 
 Alle Marken verwenden dieselbe Teileart, Farbe und dasselbe SVG-Symbol: Düsen blau, Beutel gelb, Filter grün, Akkus violett. Weitere Kategorien unterscheiden Ladegeräte, Schläuche, Rohre, Griffe, Bürstenwalzen, Behälter, Elektrik, Kabel, Mechanik, Adapter, Aufbewahrung, Pflegemittel, Sets und Baugruppen. Textbeschriftungen ergänzen jede Farbe. Filterhalter und Gehäusedeckel werden von den eigentlichen Filtern und Behältern unterschieden.
 
-Artikelart und Teileart sind unabhängig filterbar: Ersatzteil, Zubehör, Verbrauchsmaterial, Dokument, Komplettgerät oder offene Einordnung. Die farbigen Schnellfilter funktionieren im globalen Katalog, in der Modell-Teileliste und in der Marktplatzansicht. Fotos bleiben optional; ohne Foto zeigt die Karte das passende Symbol.
+Artikelart und Teileart sind unabhängig filterbar: Ersatzteil, Zubehör, Verbrauchsmaterial, Dokument, Komplettgerät oder offene Einordnung. Die farbigen Schnellfilter funktionieren im globalen Katalog und in der Marktplatzansicht. Unter jedem Modell stehen die zugeordneten Artikel in einzeln aufklappbaren Kategorien mit derselben Farbe, demselben Symbol und einer Artikelanzahl. Alle Kategorien lassen sich gemeinsam öffnen oder schließen. Name A–Z/Z–A, erfasster Artikelpreis auf-/absteigend und Einbauzeit sortieren innerhalb jeder Kategorie. Vergleichbare erfasste Bruttopreise in EUR für Deutschland bleiben auch als ältere Quellenpreise sortierbar; fehlende, fremdwährungs-, Netto- und Staffelpreise stehen am Ende. Die Sortierung bestätigt weder Aktualität noch Bestellbarkeit. Suche und Filter öffnen die passenden Kategorien; eine Änderung der Sortierung behält geöffnete und geschlossene Kategorien bei. Fotos bleiben optional; ohne Foto zeigt die Karte das passende Symbol.
 
 Die Startseite und die Zielübersicht zeigen fehlende Modellteile. Der Filter **Ohne erfasste Teile** funktioniert bereits mit dem kleinen Modellindex und nach dem Laden eines Markenpakets mit denselben Zahlen.
 

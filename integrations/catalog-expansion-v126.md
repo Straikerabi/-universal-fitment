@@ -1,4 +1,4 @@
-# Katalogstand v1.26.2
+# Katalogstand v1.26.3
 
 ## Ergebnis
 
@@ -55,3 +55,7 @@ Weitere Originalquellen sind direkt am jeweiligen Modell und Artikel hinterlegt.
 36 App-Testgruppen und Syntaxprüfung, reproduzierbare Browserpakete und bytegenaue Wiederherstellung des Veröffentlichungspatches. Neue Prüfungen umfassen gemeinsame Farben, Ersatzteil-/Zubehör-/Verbrauchsfilter, spezifische Bauteilnamen, das getrennte Teileziel, stabile Zahlen beim Nachladen, unverwechselbare Artikel, Vorsatztypen, unbekannte Preise und Samsung-/Hoover-Kennungsgrenzen. Physische Gerätepassung, echte Kameraerkennung und Produktionsmarktplätze werden dadurch nicht bestätigt.
 
 Die Live-Prüfung ergänzte konkrete Fälle für Düsen mit Rohranschluss, Filterdichtungen, Bürstenleisten, Halter und Akkus mit Modellzusätzen. Teilnamen werden vor ihrer Gerätebeschreibung eingeordnet. Neue Prüfungen verhindern, dass solche Kontextbegriffe die Farbe des Artikels ändern.
+
+## Modell-Teilelisten v1.26.3
+
+Die zugeordneten Teile eines Geräts werden nach der gemeinsamen Teileart in native aufklappbare Kategorien gegliedert. Jede Überschrift zeigt Farbe, Symbol und Artikelanzahl. Leere Kategorien werden nicht angezeigt. Alle öffnen/schließen sowie Tastaturbedienung der Überschriften sind verfügbar. Suche und Filter öffnen Treffer; Sortierung nach Name, erfasstem Artikelpreis auf-/absteigend oder Einbauzeit gilt innerhalb der Kategorie und erhält den Öffnungszustand. Fehlende oder nicht vergleichbare Preise stehen zuletzt. Ältere Quellenpreise werden durch die Sortierung nicht zu aktuellen Angeboten; die bestehenden Warenkorb- und Angebotsprüfungen bleiben bestehen. Serienteile mit zusätzlicher Ausführungsprüfung stehen weiterhin im eigenen gekennzeichneten Bereich.
