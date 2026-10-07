@@ -1,4 +1,4 @@
-# Katalogstand v1.26.1
+# Katalogstand v1.26.2
 
 ## Ergebnis
 

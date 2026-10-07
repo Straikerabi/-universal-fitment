@@ -1,4 +1,4 @@
-# Universal Fitment v1.26.1 – erkennbare Teilearten und zehn aktive Marken
+# Universal Fitment v1.26.2 – erkennbare Teilearten und zehn aktive Marken
 
 Der Staubsaugerkatalog enthält **868 Modellbezeichnungen in 879 konkreten Modelleinträgen** und **1.903 unterschiedliche Katalogartikel**. Davon zählen **1.785** als katalogisierte Ersatzteile, Zubehörartikel oder Verbrauchsmaterialien. Dokumente, Komplettgeräte und noch nicht eingeordnete Artikel werden separat geführt. Neun Miele-Familienhinweise zählen nicht als konkrete Geräte.
 
