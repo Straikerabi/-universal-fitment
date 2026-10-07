@@ -1,4 +1,4 @@
-name: Deploy v1.26.3 collapsible model-part categories and sorting to GitHub Pages
+name: "Deploy v1.26.4 current FAQ and resettable model filters to GitHub Pages"
 
 on:
   push:
@@ -239,6 +239,13 @@ jobs:
           cat .demo/v1.26.3-patch/part-* | base64 -d | gzip -d > update-v1.26.3.patch
           echo "f7c7eb526f50b148b9192d39b563b58591216fbbbb860226afc7763a2d520d23  update-v1.26.3.patch" | sha256sum -c -
           patch -p1 -d site < update-v1.26.3.patch
+
+      - name: "Apply v1.26.4 current FAQ and resettable model filters"
+        shell: bash
+        run: |
+          cat .demo/v1.26.4-patch/part-* | base64 -d | gzip -d > update-v1.26.4.patch
+          echo "47b77bdb1fa13a5fe60a527c34537aa8f82b96441f3a8afaf46236409ee64a08  update-v1.26.4.patch" | sha256sum -c -
+          patch -p1 -d site < update-v1.26.4.patch
 
       - name: Verify reproducible app bundle
         run: |

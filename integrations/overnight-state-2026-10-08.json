@@ -1,0 +1,216 @@
+{
+  "date": "2026-10-08",
+  "timezone": "Europe/Berlin",
+  "deadline": "2026-10-08T08:00:00+02:00",
+  "baseline_version": "1.26.3",
+  "first_release_version": "1.26.4",
+  "baseline_model_names": 868,
+  "baseline_model_records": 879,
+  "baseline_physical_parts": 1785,
+  "baseline_articles": 1903,
+  "baseline_unassigned_models": 255,
+  "budget_minutes": 420,
+  "coverage": [
+    {
+      "brand": "Miele",
+      "models": 57,
+      "physical_parts": 167,
+      "models_without_parts": 0
+    },
+    {
+      "brand": "Bosch",
+      "models": 60,
+      "physical_parts": 102,
+      "models_without_parts": 2
+    },
+    {
+      "brand": "Dyson",
+      "models": 54,
+      "physical_parts": 185,
+      "models_without_parts": 2
+    },
+    {
+      "brand": "AEG",
+      "models": 78,
+      "physical_parts": 351,
+      "models_without_parts": 0
+    },
+    {
+      "brand": "Rowenta",
+      "models": 272,
+      "physical_parts": 100,
+      "models_without_parts": 75
+    },
+    {
+      "brand": "Philips",
+      "models": 140,
+      "physical_parts": 101,
+      "models_without_parts": 84
+    },
+    {
+      "brand": "Siemens",
+      "models": 101,
+      "physical_parts": 605,
+      "models_without_parts": 0
+    },
+    {
+      "brand": "Samsung",
+      "models": 64,
+      "physical_parts": 14,
+      "models_without_parts": 64
+    },
+    {
+      "brand": "Hoover",
+      "models": 24,
+      "physical_parts": 55,
+      "models_without_parts": 24
+    },
+    {
+      "brand": "Vorwerk",
+      "models": 18,
+      "physical_parts": 105,
+      "models_without_parts": 4
+    }
+  ],
+  "stages": [
+    {
+      "id": "inventory",
+      "task": "Bestand, Dubletten und offene Modell-Teilelisten prüfen",
+      "budget_minutes": 15,
+      "status": "done"
+    },
+    {
+      "id": "samsung_parts",
+      "task": "Samsung-Ersatzteile und Zubehör aus Herstellerquellen ergänzen",
+      "budget_minutes": 45,
+      "status": "pending"
+    },
+    {
+      "id": "hoover_parts",
+      "task": "Hoover-Ersatzteile und Zubehör aus Herstellerquellen ergänzen",
+      "budget_minutes": 40,
+      "status": "pending"
+    },
+    {
+      "id": "samsung_fitment",
+      "task": "Samsung-Artikel zu vollständig genannten Modellcodes zuordnen",
+      "budget_minutes": 25,
+      "status": "pending"
+    },
+    {
+      "id": "hoover_fitment",
+      "task": "Hoover-Artikel zu deutschen Modellen und Produktcodes prüfen",
+      "budget_minutes": 25,
+      "status": "pending"
+    },
+    {
+      "id": "miele_models",
+      "task": "Weitere echte Miele-Modellreferenzen recherchieren und erfassen",
+      "budget_minutes": 20,
+      "status": "pending"
+    },
+    {
+      "id": "bosch_models",
+      "task": "Weitere echte Bosch-Modellreferenzen recherchieren und erfassen",
+      "budget_minutes": 20,
+      "status": "pending"
+    },
+    {
+      "id": "dyson_models",
+      "task": "Weitere echte Dyson-Modellreferenzen recherchieren und erfassen",
+      "budget_minutes": 20,
+      "status": "pending"
+    },
+    {
+      "id": "aeg_models",
+      "task": "Weitere echte AEG-Modellreferenzen recherchieren und erfassen",
+      "budget_minutes": 20,
+      "status": "pending"
+    },
+    {
+      "id": "existing_parts",
+      "task": "Teilelücken bei Rowenta, Philips, Siemens und Vorwerk bearbeiten",
+      "budget_minutes": 30,
+      "status": "pending"
+    },
+    {
+      "id": "taxonomy",
+      "task": "Noch offene Teilearten und fehlerhafte Einordnungen prüfen",
+      "budget_minutes": 15,
+      "status": "pending"
+    },
+    {
+      "id": "brush_subtypes",
+      "task": "Düsen, Bürstenköpfe und einzelne Bürstenwalzen sauber unterscheiden",
+      "budget_minutes": 10,
+      "status": "pending"
+    },
+    {
+      "id": "filter_reset",
+      "task": "Modellfilter mit einem Knopf zurücksetzen",
+      "budget_minutes": 10,
+      "status": "done"
+    },
+    {
+      "id": "faq",
+      "task": "FAQ auf zehn Marken und die aktuelle Teileansicht aktualisieren",
+      "budget_minutes": 10,
+      "status": "done"
+    },
+    {
+      "id": "price_sources",
+      "task": "Preisstand, fehlende Preise und Preisquellen kontrollieren",
+      "budget_minutes": 15,
+      "status": "pending"
+    },
+    {
+      "id": "shipping",
+      "task": "Versand- und Händlerhinweise bei offenen Angaben prüfen",
+      "budget_minutes": 10,
+      "status": "pending"
+    },
+    {
+      "id": "evidence",
+      "task": "Artikelquellen, Kennungen und Ausführungsbedingungen verständlich ergänzen",
+      "budget_minutes": 15,
+      "status": "pending"
+    },
+    {
+      "id": "manuals",
+      "task": "Fehlende offizielle Anleitungs- und Servicelinks ergänzen",
+      "budget_minutes": 10,
+      "status": "pending"
+    },
+    {
+      "id": "mobile",
+      "task": "Schmale Layouts, Zeilenumbrüche und bedienbare Filter prüfen",
+      "budget_minutes": 15,
+      "status": "pending"
+    },
+    {
+      "id": "tests",
+      "task": "Katalog, Zuordnungen, Suche, Preise und Offline-Verhalten prüfen",
+      "budget_minutes": 20,
+      "status": "pending"
+    },
+    {
+      "id": "publish",
+      "task": "Geprüfte Änderungen veröffentlichen und live kontrollieren",
+      "budget_minutes": 20,
+      "status": "pending"
+    },
+    {
+      "id": "report",
+      "task": "Fertigstand mit neuen Zahlen, offenen Punkten und App-Link erstellen",
+      "budget_minutes": 10,
+      "status": "pending"
+    }
+  ],
+  "active_run": null,
+  "automations": {},
+  "completed_notes": [
+    "Bestand vor dem Nachtausbau geprüft: 255 Modelleinträge ohne physische Teilezuordnung.",
+    "v1.26.4: FAQ und Rücksetzen der Modellfilter lokal geprüft; zur Veröffentlichung vorbereitet."
+  ],
+  "blocked": []
+}

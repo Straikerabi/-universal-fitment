@@ -1,0 +1,72 @@
+{
+  "checked_local_date": "2026-10-08",
+  "status": "primary pages opened; not yet applied",
+  "pages": [
+    {
+      "model_code": "VS20B75BDR5",
+      "full_reference": "VS20B75BDR5/WD",
+      "url": "https://www.samsung.com/de/vacuum-cleaners/stick/vs9000rl-stick-more-advance-cleaning-performance-digital-inverter-motor-jet-cyclone-silver-vs20b75bdr5-wd/",
+      "listed_parts": [
+        "VCA-SBTA60",
+        "VCA-SABC75E/GL",
+        "VCA-SPA75E/GL",
+        "VCA-SPW75E/VT",
+        "VCA-SHF90",
+        "VCA-SHF90A",
+        "VCA-SHF90B",
+        "VCA-SAK95/GL"
+      ]
+    },
+    {
+      "model_code": "VS20C95D2TK",
+      "full_reference": "VS20C95D2TK/WD",
+      "url": "https://www.samsung.com/de/vacuum-cleaners/stick/vs9500al-stick-more-advance-cleaning-performance-hexajet-motor-jet-cyclone-black-vs20c95d2tk-wd/",
+      "listed_parts": [
+        "VCA-SABB95",
+        "VCA-WBA95/GL",
+        "VCA-SPA95/GL",
+        "VCA-SPW95/VT",
+        "VCA-SHF95B",
+        "VCA-SHF95N",
+        "VCA-SHF95W",
+        "VCA-SAK95/GL",
+        "VCA-SBTA95/VT",
+        "VCA-SAPB95/WA"
+      ]
+    },
+    {
+      "model_code": "VS20B95C43W",
+      "full_reference": "VS20B95C43W/WD",
+      "url": "https://www.samsung.com/de/vacuum-cleaners/stick/bespoke-jet-plus-210w-all-in-one-clean-station-mis-white-vs20b95c43w-wd/",
+      "listed_parts": [
+        "VCA-SBTA95/VT",
+        "VCA-SAPB95/WA",
+        "VCA-WBA95/GL",
+        "VCA-ADB952",
+        "VCA-SPA95/GL",
+        "VCA-SPW95/VT",
+        "VCA-SHF95B",
+        "VCA-SHF95N",
+        "VCA-SHF95W",
+        "VCA-SHF95K",
+        "VCA-SAK95/GL"
+      ]
+    }
+  ],
+  "battery_source": {
+    "code": "VCA-SAPB95/WA",
+    "url": "https://www.samsung.com/de/home-appliance-accessories/jet-vc-renewal-accessory-battery1-vca-sapb95-wa/",
+    "type": "Akku mit Ladegerät",
+    "included": [
+      "Ersatz-Akku",
+      "Ladegerät"
+    ],
+    "ean": "8806095344393",
+    "no_usable_price": true
+  },
+  "cautions": [
+    "Short filter codes in an optional list do not automatically resolve /VT or other complete article variants.",
+    "Consumables for Wischaufsatz and All-in-One Clean Station need separate attachment context.",
+    "Record explicit manufacturer optional-list relationship, not unconditional fitment."
+  ]
+}

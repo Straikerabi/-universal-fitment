@@ -1,4 +1,4 @@
-# Katalogstand v1.26.3
+# Katalogstand v1.26.4
 
 ## Ergebnis
 
@@ -59,3 +59,7 @@ Die Live-Prüfung ergänzte konkrete Fälle für Düsen mit Rohranschluss, Filte
 ## Modell-Teilelisten v1.26.3
 
 Die zugeordneten Teile eines Geräts werden nach der gemeinsamen Teileart in native aufklappbare Kategorien gegliedert. Jede Überschrift zeigt Farbe, Symbol und Artikelanzahl. Leere Kategorien werden nicht angezeigt. Alle öffnen/schließen sowie Tastaturbedienung der Überschriften sind verfügbar. Suche und Filter öffnen Treffer; Sortierung nach Name, erfasstem Artikelpreis auf-/absteigend oder Einbauzeit gilt innerhalb der Kategorie und erhält den Öffnungszustand. Fehlende oder nicht vergleichbare Preise stehen zuletzt. Ältere Quellenpreise werden durch die Sortierung nicht zu aktuellen Angeboten; die bestehenden Warenkorb- und Angebotsprüfungen bleiben bestehen. Serienteile mit zusätzlicher Ausführungsprüfung stehen weiterhin im eigenen gekennzeichneten Bereich.
+
+## Hilfe und Filter v1.26.4
+
+Das FAQ nennt dynamisch alle zehn Katalogmarken. Veraltete globale Stichtage wurden durch den jeweiligen Artikel- und Quellenstand ersetzt. Die Hilfe erklärt aufklappbare Teilekategorien, fehlende Modellzuordnungen und offene Preise. Auf Modellseiten setzt ein gemeinsamer Knopf Suchtext, Original/Nachbau, Artikelart, Bauteil und Sortierung zurück; bestehende Öffnungszustände bleiben erhalten. Die Daten- und Teilezahlen ändern sich in dieser Version nicht.
