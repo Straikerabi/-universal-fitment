@@ -21,6 +21,7 @@ await copy('marketplace-pilot.mjs','integrations/marketplace-pilot.mjs');
 await copy('marketplace-providers.mjs','integrations/marketplace-providers.mjs',"'../site/src/core/marketplaces.js'","'./marketplaces.js'");
 await copy('marketplaces.js','site/src/core/marketplaces.js',"'../data/miele-parts.js'","'./miele-parts.js'");
 await copy('miele-parts.js','site/src/data/miele-parts.js');
+await copy('part-taxonomy.js','site/src/data/part-taxonomy.js');
 await copy('miele-spare-records.js','site/src/data/miele-spare-records.js');
 await copy('miele-aftermarket.js','site/src/data/miele-aftermarket.js');
 files.push({name:'part-index.mjs',content:`export const partIndex=${JSON.stringify(partIndex,null,2)};\n`});
