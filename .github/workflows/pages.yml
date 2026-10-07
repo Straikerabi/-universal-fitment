@@ -1,4 +1,4 @@
-name: Deploy v1.21 five-brand budget catalog to GitHub Pages
+name: Deploy v1.22 seven-brand parts catalog to GitHub Pages
 
 on:
   push:
@@ -183,6 +183,13 @@ jobs:
           cat .demo/v1.21-patch/part-* | base64 -d | gzip -d > update-v1.21.patch
           echo "87e5cd2d25b9eb3a4060e908a01d3f6e69b471f6bf5211b007b4f3b69adc71a6  update-v1.21.patch" | sha256sum -c -
           patch -p1 -d site < update-v1.21.patch
+
+      - name: Apply v1.22 Philips and Siemens parts catalog patch
+        shell: bash
+        run: |
+          cat .demo/v1.22-patch/part-* | base64 -d | gzip -d > update-v1.22.patch
+          echo "c35ca1ffd5b710620e59912d656730317299382f23b8d554845b41ddc3ae0af0  update-v1.22.patch" | sha256sum -c -
+          patch -p1 -d site < update-v1.22.patch
 
       - name: Verify reproducible app bundle
         run: |
