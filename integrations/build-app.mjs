@@ -23,7 +23,7 @@ if(process.argv.includes('--check')){
 }else fs.writeFileSync(servicesTarget,servicesBytes);
 console.log(`Optional services: ${servicesBytes.length} bytes; loaded on demand.`);
 
-for(const brand of ['dyson','aeg','rowenta','philips','siemens']){
+for(const brand of ['dyson','aeg','rowenta','philips','siemens','vorwerk']){
  const output=path.join(root,`site/catalog-${brand}-v${version}.js`);
  const pack=await esbuild.build({entryPoints:[path.join(root,`site/src/data/${brand}-pack.js`)],bundle:true,format:'esm',platform:'browser',target:'es2022',minify:true,legalComments:'inline',write:false});
  const packed=pack.outputFiles[0].contents;
@@ -32,3 +32,4 @@ for(const brand of ['dyson','aeg','rowenta','philips','siemens']){
  }else fs.writeFileSync(output,packed);
  console.log(`Optional ${brand} catalog: ${packed.length} bytes; loaded on demand.`);
 }
+
