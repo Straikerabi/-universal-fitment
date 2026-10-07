@@ -230,7 +230,13 @@
       "status": "done"
     }
   ],
-  "active_run": null,
+  "active_run": {
+    "worker": "night-0200-samsung",
+    "stage": "samsung_parts",
+    "started_at": "2026-10-08T01:56:00+02:00",
+    "base_commit": "9973d87563c0b90bcb5ce550cc863289b94b5cb9",
+    "note": "Samsung-Herstellerzubehör für drei bereits belegte vollständige /WD-Modellcodes prüfen und katalogisieren."
+  },
   "automations": {
     "worker": {
       "id": "6ac6d322e8448191b621ec4839d783c6",
