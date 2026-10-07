@@ -1,4 +1,4 @@
-# Universal Fitment v1.21.1 – Rowenta, device budgets and ten-brand target
+# Universal Fitment v1.21.2 – Rowenta, device budgets and ten-brand target
 
 The public product covers **Miele, Bosch, Dyson, AEG and Rowenta floor and cordless vacuum cleaners**: 418 model labels, 429 catalog references and 763 unique parts/accessories. The target is ten priority brands with about 100 genuine model references per brand. The coverage view separates active content from planned brands; this release has 349/1,000 capped target slots. It is not a completed 1,000-model catalog or a verified German bestseller ranking. Device purchase prices, spare-part prices and part-fitment approval remain separate.
 
