@@ -1,4 +1,4 @@
-# v1.21.0: ten-brand target, Rowenta references and device budgets
+# v1.21.1: ten-brand target, Rowenta references and device budgets
 
 The requested target is ten priority German-market brands and about 100 genuine model references per brand (1,000 target slots). Current manufacturer catalogs are not a sales ranking. The provisional work list is Miele, Bosch, Dyson, AEG, Rowenta, Philips, Siemens, Samsung, Hoover and Vorwerk. Brands outside this list remain in scope for later expansion. Never fabricate missing models or use one brand's surplus to fill another brand's gap. Historical models belong in a repair catalog.
 
@@ -10,7 +10,7 @@ Four initial original Rowenta articles were captured from their own detail pages
 
 Rowenta shipping is separate: the four captured accessories state free shipping from EUR 30. The charge below that remains unknown. Manufacturer messages distinguish Rowenta Shop and Rowenta Zubehör warehouses and disallow mixing warehouses in one order. No combined universal checkout, automatic external cart fill or payment service is enabled.
 
-The manufacturer instruction finder is linked for every new model. No direct device PDF, verified teardown procedure or installation time is invented. Model review recognises observed RO/RH references and excludes serial labels; identifying a model remains `catalog_reference`, never exact fitment. Rowenta is lazy loaded for detail/global part routes, scan part searches and cold backups. New pack and application URLs use v1.21.0. The core is approximately 1.27 MB, plus an optional approximately 166 KB Rowenta pack; external photos/OCR/PDF resources are additional.
+The manufacturer instruction finder is linked for every new model. No direct device PDF, verified teardown procedure or installation time is invented. Model review recognises observed RO/RH references and excludes serial labels; identifying a model remains `catalog_reference`, never exact fitment. Rowenta is lazy loaded for detail/global part routes, scan part searches and cold backups. New pack and application URLs use v1.21.1. The core is approximately 1.27 MB, plus an optional approximately 166 KB Rowenta pack; external photos/OCR/PDF resources are additional.
 
 Primary sources consulted on 2026-10-07:
 
