@@ -1,4 +1,4 @@
-name: Deploy v1.23 expanded Rowenta catalog to GitHub Pages
+name: Deploy v1.24 expanded Philips catalog to GitHub Pages
 
 on:
   push:
@@ -197,6 +197,13 @@ jobs:
           cat .demo/v1.23-patch/part-* | base64 -d | gzip -d > update-v1.23.patch
           echo "7a7c99efc0487540dc506918b28292baed53fdd44f4ed430a6719719ee2d43ea  update-v1.23.patch" | sha256sum -c -
           patch -p1 -d site < update-v1.23.patch
+
+      - name: Apply v1.24 Philips articles, model review and guides patch
+        shell: bash
+        run: |
+          cat .demo/v1.24-patch/part-* | base64 -d | gzip -d > update-v1.24.patch
+          echo "93b0de4deea5621ac1e0c9f4e99263213e7ccf5a42e52b4ed970c7281de7ca25  update-v1.24.patch" | sha256sum -c -
+          patch -p1 -d site < update-v1.24.patch
 
       - name: Verify reproducible app bundle
         run: |
