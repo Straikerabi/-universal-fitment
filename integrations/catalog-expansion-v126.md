@@ -1,8 +1,8 @@
-# Katalogstand v1.26.0
+# Katalogstand v1.26.1
 
 ## Ergebnis
 
-Zehn aktive Marken, 868 verschiedene Modellnamen in 879 konkreten Datensätzen, 1.903 unterschiedliche Artikel. Die neuen Kategorien trennen 1.784 physische Teile/Zubehör-/Verbrauchsartikel von Dokumenten, kompletten Geräten und offenen Einordnungen. 655 von 1.000 gedeckelten Modellplätzen sind belegt; acht Marken erreichen das Ziel von mindestens 100 Teilen.
+Zehn aktive Marken, 868 verschiedene Modellnamen in 879 konkreten Datensätzen, 1.903 unterschiedliche Artikel. Die neuen Kategorien trennen 1.785 physische Teile/Zubehör-/Verbrauchsartikel von Dokumenten, kompletten Geräten und offenen Einordnungen. 655 von 1.000 gedeckelten Modellplätzen sind belegt; acht Marken erreichen das Ziel von mindestens 100 Teilen.
 
 290 neue Herstellerartikel und 88 neue Samsung-/Hoover-Modellreferenzen wurden erfasst. 51 vorher leere Modelllisten erhielten mindestens eine belegte Teilezuordnung. Die Gegenüberstellung der kleinen und der geladenen Kataloge wird automatisch geprüft.
 
@@ -11,10 +11,10 @@ Zehn aktive Marken, 868 verschiedene Modellnamen in 879 konkreten Datensätzen, 
 | Miele | 57 | 43 | 167 | 0 | 0 |
 | Bosch | 60 | 40 | 102 | 0 | 2 |
 | Dyson | 54 | 46 | 185 | 0 | 2 |
-| AEG | 78 | 22 | 349 | 0 | 0 |
+| AEG | 78 | 22 | 351 | 0 | 0 |
 | Rowenta | 272 | 0 | 100 | 0 | 75 |
-| Philips | 140 | 0 | 103 | 0 | 84 |
-| Siemens | 101 | 0 | 604 | 0 | 0 |
+| Philips | 140 | 0 | 101 | 0 | 84 |
+| Siemens | 101 | 0 | 605 | 0 | 0 |
 | Samsung | 64 | 36 | 14 | 86 | 64 |
 | Hoover | 24 | 76 | 55 | 45 | 24 |
 | Vorwerk | 18 | 82 | 105 | 0 | 4 |
@@ -48,8 +48,10 @@ Abrufprüfung am 07.10.2026. Die Quellen können archivierte Inhalte und ältere
 - [Hoover Hersteller-Zubehör GB](https://www.hoover-home.com/en_GB/collections/accessories-consumables)
 - [Hoover Filter U112 – Produktcode 35602893](https://www.hoover-home.com/en_GB/products/35602893-u112-filterkit-hf2)
 
-Weitere Originalquellen sind direkt am jeweiligen Modell und Artikel hinterlegt. Bei neuen Artikeln wurden Staging-Adressen, Dampferzeugerteile, Saugroboterteile und nicht belegte Modellkombinationen wurden nicht zum Auffüllen des Bestands verwendet.
+Weitere Originalquellen sind direkt am jeweiligen Modell und Artikel hinterlegt. Staging-Adressen, Dampferzeugerteile, Saugroboterteile und nicht belegte Modellkombinationen wurden nicht zum Auffüllen des Bestands verwendet.
 
 ## Prüfung
 
 36 App-Testgruppen und Syntaxprüfung, reproduzierbare Browserpakete und bytegenaue Wiederherstellung des Veröffentlichungspatches. Neue Prüfungen umfassen gemeinsame Farben, Ersatzteil-/Zubehör-/Verbrauchsfilter, spezifische Bauteilnamen, das getrennte Teileziel, stabile Zahlen beim Nachladen, unverwechselbare Artikel, Vorsatztypen, unbekannte Preise und Samsung-/Hoover-Kennungsgrenzen. Physische Gerätepassung, echte Kameraerkennung und Produktionsmarktplätze werden dadurch nicht bestätigt.
+
+Die Live-Prüfung ergänzte konkrete Fälle für Düsen mit Rohranschluss, Filterdichtungen, Bürstenleisten, Halter und Akkus mit Modellzusätzen. Teilnamen werden vor ihrer Gerätebeschreibung eingeordnet. Neue Prüfungen verhindern, dass solche Kontextbegriffe die Farbe des Artikels ändern.

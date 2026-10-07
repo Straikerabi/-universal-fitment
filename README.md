@@ -1,6 +1,6 @@
-# Universal Fitment v1.26.0 – erkennbare Teilearten und zehn aktive Marken
+# Universal Fitment v1.26.1 – erkennbare Teilearten und zehn aktive Marken
 
-Der Staubsaugerkatalog enthält **868 Modellbezeichnungen in 879 konkreten Modelleinträgen** und **1.903 unterschiedliche Katalogartikel**. Davon zählen **1.784** als katalogisierte Ersatzteile, Zubehörartikel oder Verbrauchsmaterialien. Dokumente, Komplettgeräte und noch nicht eingeordnete Artikel werden separat geführt. Neun Miele-Familienhinweise zählen nicht als konkrete Geräte.
+Der Staubsaugerkatalog enthält **868 Modellbezeichnungen in 879 konkreten Modelleinträgen** und **1.903 unterschiedliche Katalogartikel**. Davon zählen **1.785** als katalogisierte Ersatzteile, Zubehörartikel oder Verbrauchsmaterialien. Dokumente, Komplettgeräte und noch nicht eingeordnete Artikel werden separat geführt. Neun Miele-Familienhinweise zählen nicht als konkrete Geräte.
 
 Die Ziele sind getrennt: **100 echte Modellreferenzen und mindestens 100 katalogisierte Teile je Marke**. 655 von 1.000 gedeckelten Modellplätzen sind belegt. Acht von zehn Marken erreichen das Teileziel. Zusätzliche Artikel einer Marke füllen die Lücken einer anderen Marke nicht. Verkaufssets und Zubehör erzeugen keine weiteren Grundmodelle.
 
@@ -9,10 +9,10 @@ Die Ziele sind getrennt: **100 echte Modellreferenzen und mindestens 100 katalog
 | Miele | 57 | 62 | 167 | 0 | 0 |
 | Bosch | 60 | 60 | 102 | 1 | 2 |
 | Dyson | 54 | 60 | 185 | 6 | 2 |
-| AEG | 78 | 78 | 349 | 5 | 0 |
+| AEG | 78 | 78 | 351 | 3 | 0 |
 | Rowenta | 272 | 272 | 100 | 0 | 75 |
-| Philips | 140 | 140 | 103 | 1 | 84 |
-| Siemens | 101 | 101 | 604 | 106 | 0 |
+| Philips | 140 | 140 | 101 | 3 | 84 |
+| Siemens | 101 | 101 | 605 | 105 | 0 |
 | Samsung | 64 | 64 | 14 | 0 | 64 |
 | Hoover | 24 | 24 | 55 | 0 | 24 |
 | Vorwerk | 18 | 18 | 105 | 0 | 4 |
