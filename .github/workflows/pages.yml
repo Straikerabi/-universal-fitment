@@ -1,4 +1,4 @@
-name: Deploy v1.25 Vorwerk catalog to GitHub Pages
+name: Deploy v1.26 categorized parts and ten-brand catalog to GitHub Pages
 
 on:
   push:
@@ -211,6 +211,13 @@ jobs:
           cat .demo/v1.25-patch/part-* | base64 -d | gzip -d > update-v1.25.patch
           echo "568220dbf2ee53167107d409d736ea05d5f8f8dfc55106ba2f8d3c8b0ecaf8c7  update-v1.25.patch" | sha256sum -c -
           patch -p1 -d site < update-v1.25.patch
+
+      - name: Apply v1.26 categorized parts, source expansion and new brands patch
+        shell: bash
+        run: |
+          cat .demo/v1.26-patch/part-* | base64 -d | gzip -d > update-v1.26.patch
+          echo "09cf016c1698b87564e2cdeb816302e7026b876951188f39716c19ff0f32be0a  update-v1.26.patch" | sha256sum -c -
+          patch -p1 -d site < update-v1.26.patch
 
       - name: Verify reproducible app bundle
         run: |
