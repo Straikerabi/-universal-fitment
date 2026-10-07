@@ -33,8 +33,8 @@ Erweiterung nach Abis letzter Nachricht:
 
 | Nr. | Aufgabe | Budget | Startstatus |
 |---|---|---:|---|
-| 23 | Öffentliche Roadmap auf Deutsch und Englisch erstellen und verlinken | 20 Min. | Vorbereitet |
-| 24 | Kontaktbereich mit prüfbarem GitHub-Entwurf und Kopieren | 20 Min. | Vorbereitet |
+| 23 | Öffentliche Roadmap auf Deutsch und Englisch erstellen und verlinken | 20 Min. | Veröffentlicht / v1.26.5 |
+| 24 | Kontaktbereich mit prüfbarem GitHub-Entwurf und Kopieren | 20 Min. | Veröffentlicht / v1.26.5 |
 | 25 | Supportpostfach und privaten Versandweg planen | 5 Min. | Erledigt / Adresse offen |
 | 26 | Vorhandene Nutzungsstatistik prüfen und Messumfang festhalten | 5 Min. | Erledigt / keine zentrale Messung |
 
@@ -82,3 +82,7 @@ Hoover hat 55 Herstellerartikel aus GB, bisher ohne deutsche Zuordnung. Britisch
 Preise werden nur mit tatsächlicher Quelle, Währung, Preisbasis, Steuer-/Marktangabe und Datum erfasst. Keine unbekannten Werte als null Euro behandeln. Quellenpreise bleiben von Live-Angeboten getrennt; Warenkorb-, Nachbau-, Händler- und Ausführungsprüfungen erhalten. Kein behaupteter vollautomatischer Checkout, keine erfundenen Bewertungen und keine Zusagen über aktuelle Bestände.
 
 Keine Auth-, Supabase-, Rollen-, Sicherheits- oder Zahlungsänderungen in diesem Nachtauftrag. Kein Kauf, keine Kontoanlage, keine Nachrichten an Dritte und keine zusätzlichen externen Dienste. Der geschützte Serververtrag mit 167 Miele-Vorlagen bleibt bestehen. Keine Subagenten starten, sofern nicht später ausdrücklich angefordert.
+
+## Erster geprüfter Nachtstand
+
+v1.26.4 und v1.26.5 wurden mit jeweils erfolgreichem Build und Deployment veröffentlicht. v1.26.5: 36 Testgruppen, Syntax, reproduzierbarer Build, sichtbarer GitHub-Entwurf, Pflichtfeld und Verwerfen alter Vorschauen geprüft. Die deutsche und englische Roadmap sind öffentlich gerendert. 81 aktuelle Source-Segmente wurden von GitHub zurückgelesen und verglichen; 124 Quelldateien lassen sich SHA-geprüft wiederherstellen. Die Katalogzahlen sind dabei unverändert. Nächste Datenpriorität: Samsung-Leads konkret bearbeiten, danach Hoover und weitere Teilelücken.

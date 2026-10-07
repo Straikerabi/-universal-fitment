@@ -21,6 +21,11 @@ Release notes describe published changes. Plans live in the [German](ROADMAP.md)
 - **DE:** GitHub-Beiträge sind öffentlich und werden vom Nutzer selbst veröffentlicht. Supportpostfach, privater E-Mail-Versand und zentrale App-Nutzungszahlen sind noch offen.
 - **EN:** GitHub contributions are public and are published by the user. A support mailbox, private email delivery and central app usage statistics remain open.
 
+### Geprüft / checked
+
+- **DE:** 36 App-Testgruppen, Syntaxprüfung, reproduzierbarer Build und GitHub-CI/Deployment bestanden. Öffentliche Roadmaps und Kontaktvorschau live geprüft; es wurde kein Beitrag versendet.
+- **EN:** 36 app test groups, syntax checks, reproducible build and GitHub CI/deployment passed. Public roadmaps and contact preview checked live; no contribution was sent.
+
 ## v1.26.4 — 8. Oktober 2026
 
 ### Verbessert / improved
