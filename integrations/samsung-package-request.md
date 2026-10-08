@@ -9,3 +9,5 @@ Retry 3: handle JavaScript regex source strings with multiple literal escape bac
 Retry 4: fixed indentation in temporary Python version migration.
 
 Retry 5: update model totals and catalog totals in global regression tests.
+
+Retry 6: publish generated files using GitHub Actions; apply workflow change separately with authorised GitHub connector.
