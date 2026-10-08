@@ -1,0 +1,61 @@
+name: "Samsung original accessories v1.28.1 source verification"
+on:
+  push:
+    branches: ["work/samsung-original-parts-v1281"]
+    paths: ["integrations/samsung-parts-v1281-request.md"]
+permissions:
+  contents: write
+jobs:
+  verify-and-package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Restore v1.28.0 immutable app source and reproduce original bundles
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 integrations/restore-source-checkpoint.py --target site
+          test "$(node -p "require('./site/package.json').version")" = "1.28.0"
+          npm ci --prefix integrations/auth-sdk --ignore-scripts
+          node integrations/build-app.mjs
+      - name: Prepare new release and insert ten exact source-backed accessory SKUs
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 integrations/package-samsung-parts-v1281.py prepare
+          node integrations/import-samsung-parts-v1281.mjs
+          python3 integrations/package-samsung-parts-v1281.py update-tests
+          node integrations/test-samsung-parts-v1281.mjs
+      - name: Reproduce article bundles and execute the complete app regression suite
+        shell: bash
+        run: |
+          set -euo pipefail
+          node integrations/build-app.mjs
+          python3 integrations/package-samsung-parts-v1281.py sync
+          node integrations/build-app.mjs
+          node integrations/build-app.mjs --check
+          (cd site && npm test && npm run check)
+      - name: Reproduce complete SHA256 release delta and validate source restore
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 integrations/package-site-patch.py --baseline baseline/site --site site --version 1.28.1 --description "Ten new Samsung manufacturer-original accessory SKUs without inferred model fitment"
+          python3 integrations/create-source-checkpoint.py --site site
+          python3 integrations/restore-source-checkpoint.py --target /tmp/samsung-original-v1281
+          python3 integrations/package-samsung-parts-v1281.py finish
+          cat publish-info-v1.28.1.json
+      - name: Commit only verified source checkpoint, patch segments and release notes
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md CHANGELOG.md integrations/source-checkpoint.json integrations/samsung-parts-release-v1281.json
+          git add -f .demo/v1.28.1-patch/part-* .demo/source-v1.28.1/part-*
+          if git diff --cached --name-only | grep -E '^site/|^\.github/workflows/'; then
+            echo "Refusing to add local source/workflow to production"; exit 1
+          fi
+          git commit -m "Package verified Samsung original parts v1.28.1 source and reproducible patch"
+          git push origin HEAD:work/samsung-original-parts-v1281
