@@ -1,0 +1,55 @@
+{
+  "checked_at": "2026-10-08",
+  "market": "DE",
+  "stage": "manufacturer_source_reviewed_not_yet_imported",
+  "source_kind": "exact_named_optional_accessory_list",
+  "models": [
+    {
+      "full_code": "VS28C97B4QK/WD",
+      "name": "Bespoke Jet AI Akku+ CompleteClean",
+      "manufacturer_url": "https://www.samsung.com/de/vacuum-cleaners/stick/bespoke-jet-ai-black-vs28c97b4qk-wd/",
+      "optional_accessories": [
+        "VCA-WBA95/GL",
+        "VCA-ADB952",
+        "VCA-SPW95/VT",
+        "VCA-SPA95/GL"
+      ],
+      "catalog_status": "existing_model_without_parts"
+    },
+    {
+      "full_code": "VS28C97B7QK/WD",
+      "name": "Bespoke Jet AI Akku+ Wet & Clean",
+      "manufacturer_url": "https://www.samsung.com/de/vacuum-cleaners/stick/bespoke-jet-ai-black-vs28c97b7qk-wd/",
+      "optional_accessories": [
+        "VCA-SABC97/GL",
+        "VCA-ADB952",
+        "VCA-SPW95/VT",
+        "VCA-SPA95/GL"
+      ],
+      "catalog_status": "existing_model_without_parts"
+    },
+    {
+      "full_code": "VS80F28EGS/WD",
+      "name": "Bespoke AI Jet Akku+ Wet & Clean Santorini Beige",
+      "manufacturer_url": "https://www.samsung.com/de/vacuum-cleaners/stick/stick-vc-with-light-powerful-jet-ailite-280w-bespoke-jet-ai-lite-280w-vs9500al-beige-vs80f28egs-wd/",
+      "optional_accessories": [
+        "VCA-SABC97/GL",
+        "VCA-ADB952",
+        "VCA-SPA95/GL",
+        "VCA-SPW95/VT",
+        "VCA-SHFF80E",
+        "VCA-SAK95/GL"
+      ],
+      "catalog_status": "new_concrete_model"
+    }
+  ],
+  "restrictions": [
+    "Exact regional suffix /WD must match the model and manufacturer's article listing",
+    "Source lists explicitly optional accessories, not in-the-box equipment",
+    "Optional list is not a mechanical fitment certificate for all model revisions",
+    "VCA-WBA95/GL wipe head required before using VCA-SPA95/GL or VCA-SPW95/VT consumables",
+    "VCA-ADB952 bags require All-in-One Clean Station",
+    "No live prices, inventories, lead times or seller claims",
+    "VCA-SABC97/GL is a distinct article from other slim brushes"
+  ]
+}
