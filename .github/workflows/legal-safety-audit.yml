@@ -65,17 +65,26 @@ jobs:
         run: |
           set -euo pipefail
           git check-ignore -q integrations/legal-compliance/operator-private.json
+          git check-ignore -q site/index.html
           set +e
           python3 integrations/legal-compliance/launch_preflight.py --config integrations/legal-compliance/operator.example.json --site site
           status=$?
           set -e
           test "$status" -eq 2
-      - name: Rebuild JavaScript and run full app tests without publishing
+      - name: Build private preview and run full app tests without publishing
         shell: bash
         run: |
           set -euo pipefail
-          npm ci --prefix integrations/auth-sdk --ignore-scripts
-          node integrations/build-app.mjs
-          node integrations/build-app.mjs --check
-          npm test --prefix site
-          npm run check --prefix site
+          bash integrations/legal-compliance/private-preview-build.sh
+          python3 -m http.server 4173 --bind 127.0.0.1 --directory site > /tmp/uf-preview-smoke.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid" 2>/dev/null || true' EXIT
+          for i in 1 2 3 4 5; do
+            curl -fsS http://127.0.0.1:4173/index.html -o /tmp/uf-preview-index.html && break
+            sleep 1
+          done
+          grep -q 'projekt-hinweise.html' /tmp/uf-preview-index.html
+          grep -q 'Rechtshinweise' <(curl -fsS http://127.0.0.1:4173/projekt-hinweise.html)
+          node --check site/src/core/pilot-client.js
+          python3 -m json.tool .devcontainer/devcontainer.json > /dev/null
+          echo 'Private preview HTTP route smoke test passed.'
