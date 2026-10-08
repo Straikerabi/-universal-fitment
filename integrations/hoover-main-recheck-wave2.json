@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-08",
+  "assignedBaseCommit": "d254df54d7bb4d72febdf9f2587efec9a66be336",
+  "assignedAppVersion": "1.28.0",
+  "mainCommit": "9419d49419fd2d3257b910f49c9afd30f40de289",
+  "mainCheckpoint": {
+    "version": "1.28.2",
+    "segment_dir": ".demo/source-v1.28.2",
+    "segments": 85,
+    "archive_sha256": "bc272af5578364432f7ccd1279b600cc2afa086225c87be84ec748fc5379c378",
+    "archive_bytes": 636478,
+    "file_count": 131,
+    "compiled_assets_included": false
+  },
+  "sourceFilesChangedSinceAssignedBase": [
+    "index.html",
+    "package.json",
+    "src/app.js",
+    "src/data/new-brands-index.js",
+    "src/data/samsung-pack.js",
+    "styles.css",
+    "sw.js",
+    "tests/catalog-v126.test.mjs",
+    "tests/marketplaces.test.mjs",
+    "tests/miele-models.test.mjs",
+    "tests/miele-parts.test.mjs",
+    "tests/offline.test.mjs",
+    "tests/services.test.mjs",
+    "tests/static.test.mjs",
+    "tests/v16.test.mjs",
+    "tests/vorwerk-expansion.test.mjs"
+  ],
+  "originalSourceEquality": {
+    "src/data/hoover-pack.js": true,
+    "src/data/hoover-fitment.js": true,
+    "src/core/typeplate.js": true
+  },
+  "verified": {
+    "hooverPackByteIdentical": true,
+    "hooverFitmentSourceByteIdentical": true,
+    "hooverIndexRecordsDeepEqual": true,
+    "allPriorHooverArticlesAndFitmentDeepEqual": true
+  },
+  "currentMainCounts": {
+    "catalogModels": 943,
+    "catalogRecords": 954,
+    "articles": 1940,
+    "physicalArticles": 1822,
+    "cappedModelSlots": 730,
+    "hooverModels": 24,
+    "hooverArticles": 60,
+    "hooverPhysicalArticles": 60,
+    "hooverFitmentRelationships": 22,
+    "hooverModelsWithoutParts": 22,
+    "samsungArticles": 46
+  },
+  "expectedAfterOwnerIntegration": {
+    "catalogModels": 1019,
+    "catalogRecords": 1030,
+    "cappedModelSlots": 806,
+    "hooverModels": 100,
+    "hooverArticles": 60,
+    "hooverPhysicalArticles": 60,
+    "hooverFitmentRelationships": 22,
+    "hooverModelsWithoutParts": 98,
+    "newArticles": 0,
+    "newFitmentRelationships": 0,
+    "articles": 1940,
+    "physicalArticles": 1822
+  },
+  "importerAgainstCurrentMain": {
+    "status": "safely-refused",
+    "reason": "Checkpoint/source conflict: index.html\n+ actual - expected\n\n+ '8454cf91932b74fa7cc273a0e447ee0836d1e520d85d0f0fcd39f58027e99a3c'\n- '40c31f96dc5f72d84444d8ebd92ebcf7a8f79e55ea350e8c3a23b4567a2310b6'\n",
+    "all131SourceFilesUnchanged": true
+  },
+  "ownerIntegrationRequired": [
+    "Auf aktueller Owner-Integrationsbranch die sechs lokalen Hoover-Patches gezielt übernehmen und Basis-Lock sowie Versions-/Buildpfade überprüft neu erzeugen.",
+    "Den aktuellen Samsung-Index und die zehn neuen Samsung-Artikel sowie den mobilen Herstellerlink-Fix beibehalten.",
+    "Zähler nur um 76 Hoover-Modelle erhöhen; Artikel- und Passungssummen unverändert.",
+    "Vollständige App-Suite, Hoover-Tests, Syntax und zwei frische Builds nach Owner-Integration erneut ausführen.",
+    "PR nicht direkt mergen; Veröffentlichung ausschließlich durch den zentralen Release-Owner #12."
+  ],
+  "scope": "Kein Checkout, Commit, Merge oder Deploy auf main. Die zugewiesene Integrationsbasis bleibt d254 / v1.28.0; aktueller main-Stand wurde nur gelesen und geprüft."
+}

@@ -1,5 +1,14 @@
 # Universal Fitment — Patchnotes / patch notes
 
+## v1.29.0 — 8. Oktober 2026
+
+- **DE:** Drei unabhängig geprüfte Work-Arbeitsstränge auf v1.28.2 integriert: +25 Miele-S-Codes, +38 Dyson-Modell-/Generationsbelege, +76 Hoover-Grundgeräte mit achtstelligem Original-Produktcode. Herkunft und Grenzen werden pro Gerät dokumentiert.
+- **DE:** 1.082 Modellnamen, 1.093 Modelleinträge, 869/1.000 auf Marken gedeckelte Modellplätze. Dyson 92 Katalognamen ≠ 92 belegte unabhängige Konstruktionen. Hoover 72/76 neue Geräte aus GB, 1 FR, 3 DE.
+- **DE:** Alle 1.940 bisherigen Katalogartikel, 1.822 physische Artikel und vorhandene Fitmentbeziehungen erhalten. **Keine** erfundenen Teilepassungen oder deutschen Angebote für neue Auslandsmodelle. 447 Modelleinträge benötigen noch gerätespezifisch geprüfte Teile.
+- **DE:** Gemeinsame Miele-/Dyson-/Hoover-Typenschildregeln und Regressionstests zusammengeführt; mobile Fixes aus v1.28.2 und Samsung-Originalartikel v1.28.1 bleiben erhalten.
+- **EN:** Adds 139 primary-source manufacturer model references across Miele, Dyson and Hoover. No inferred articles, prices or exact part compatibility.
+
+
 ## v1.28.2 — 8. Oktober 2026
 
 - **DE:** Schwerer iPhone-Darstellungsfehler in „Weitere Ersatzteile anhand deines Geräts prüfen“ behoben. Sieben Hersteller-Links stehen auf schmalen Bildschirmen in getrennten, vollständig lesbaren Schaltflächen mit ausreichend Tippfläche und Abstand.

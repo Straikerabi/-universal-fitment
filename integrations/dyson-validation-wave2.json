@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "issue": 23,
+  "branch": "work/model-dyson-wave2",
+  "baseCommit": "d254df54d7bb4d72febdf9f2587efec9a66be336",
+  "sourceCheckpointSha256": "5cb8e5b9c155b8493ded22211778cbf224c538f73214cb41590dc95f6f41d0a3",
+  "appVersion": "1.28.0",
+  "checkedAt": "2026-10-08",
+  "runtime": {
+    "node": "v24.19.0",
+    "npm": "11.9.0",
+    "esbuild": "0.25.12"
+  },
+  "researchSummary": {
+    "acceptedNewModelReferences": 38,
+    "deferredNewIdentities": 8,
+    "rejectedCandidates": 12,
+    "legacyModelNamesAfter": 92,
+    "modelRecordsAfter": 98,
+    "independentTotal": null,
+    "globalModelNamesAfter": 981,
+    "globalModelRecordsAfter": 992,
+    "legacyTargetSlotsAfter": 768,
+    "newArticles": 0,
+    "newFitmentRelationships": 0,
+    "physicalPartsAfter": 185,
+    "articlesAfter": 191,
+    "articleReferencesRechecked": 185,
+    "articleCodesConfirmed": 176,
+    "articleReferencesInconclusive": 9,
+    "legacyReferencesRechecked": 60,
+    "legacyReferencesRetrieved": 44
+  },
+  "catalogCounts": {
+    "catalogStats": {
+      "modelCount": 981,
+      "recordCount": 992,
+      "retrievedAt": "2026-10-07"
+    },
+    "allRecords": 1001,
+    "articles": 1930,
+    "physicalParts": 1812,
+    "dysonCoverage": {
+      "brand": "Dyson",
+      "models": 92,
+      "records": 98,
+      "recordsWithParts": 58,
+      "recordsWithoutParts": 40,
+      "physicalParts": 185,
+      "parts": 191,
+      "loaded": true,
+      "manuals": 85,
+      "identity": "Dyson-Produktnummer und Generation",
+      "note": "38 zusätzliche Hersteller-Modell-/Generationsreferenzen. 92 zählt Katalognamen, nicht belegte unabhängige Grundgeräte. Bestehende 185 physische Artikel bleiben erhalten; für die neuen Referenzen sind Teilelisten und Ausführungen offen."
+    }
+  },
+  "tests": {
+    "applicationGroups": 39,
+    "applicationExitCode": 0,
+    "applicationSyntaxExitCode": 0,
+    "integrationSyntaxExitCode": 0,
+    "importer": {
+      "passed": true,
+      "rejectedInvalidCases": 53,
+      "changedFiles": 11,
+      "freshReplay": "byte-identical",
+      "idempotent": true,
+      "transactionRollback": true
+    },
+    "sourceReplay": "byte-identical",
+    "compiledReplay": "byte-identical",
+    "compiledPackages": 10,
+    "buildCheckExitCode": 0
+  },
+  "localSourceOutputs": {
+    "src/data/dyson-models-wave2.js": "0bf4c5384f182293b5baa2ee37b6bb631d9fd96136ce8ff6a6af28317ce55466",
+    "tests/dyson-models-wave2.test.mjs": "cb2c904b7d674fe4992cbbb0a49eae624fbadd1e47d2ea7ad9e13aa4d0673784",
+    "src/data/dyson-pack.js": "41bd2f116ca568ec9e4cb48acef343fb3c9f3fa94277e5d76c4c81432058d1f6",
+    "src/data/brand-index.js": "c6e921166c28ca8f6a01a9ddd4b830769535c058c7235985dd313aaecf6706c1",
+    "src/data/brand-products.js": "09e82567c7a0da41c76a8fb81eaba6aa8b1cd2ef5d09c68b547edc17cdb0c06c",
+    "src/core/typeplate.js": "c726c640af97c689b5b2ccdbed88019d45230f39026b1ed9e58a95e5a33344cf",
+    "tests/catalog-seven-brands.test.mjs": "64160140ec967036b8c4c19a57caffd6db3a4b10b192f208ede97fa6e68b305e",
+    "tests/vorwerk-expansion.test.mjs": "52409db5bbf290441b23d71e66b2100dd09bf200c34b3b95d63b20e0e57d8835",
+    "tests/philips-expansion.test.mjs": "184f551c62a89ccea95b443a98c5db9e8598293cb66a7869ed28bb605e824fdd",
+    "package.json": "ffa928a7284a7ecec901a31add952ded1cef0db3fa5f7fedcbed82c54f8c79f7"
+  },
+  "localStateFile": "src/data/dyson-models-wave2-state.json",
+  "compiledAssets": {
+    "app-v1.28.0.js": {
+      "sha256": "8b2f9ffd4a8da096cb4dda7685c5439afa13a5b21f58dda4c589bcb91f1d838e",
+      "bytes": 1688227
+    },
+    "catalog-aeg-v1.28.0.js": {
+      "sha256": "78db9817f4f437d2ddf65a910bfadb190e849990a8b35a67a3f420ed69ad8422",
+      "bytes": 725910
+    },
+    "catalog-dyson-v1.28.0.js": {
+      "sha256": "3be40672676abc99088d4340689efde33b92bf0abd98d8bdbb02e7f5e18cb436",
+      "bytes": 300258
+    },
+    "catalog-hoover-v1.28.0.js": {
+      "sha256": "402bcc52da2eb8ededfb52a5c2b91ae3e665f38626182a5a9dbe257b7b3cd8f9",
+      "bytes": 53707
+    },
+    "catalog-philips-v1.28.0.js": {
+      "sha256": "28f2ba1da41522658a86df8db5b43efe8eaec7240a21a84e9813846511391e22",
+      "bytes": 352773
+    },
+    "catalog-rowenta-v1.28.0.js": {
+      "sha256": "ab2ad6dbaacb32d625e02987faa81d32f0a59fa171f45d170d1322b8e7e0c898",
+      "bytes": 502458
+    },
+    "catalog-samsung-v1.28.0.js": {
+      "sha256": "03d7d9453c4940ac646b29aa36bdaa08ac347997d843a47b6bbd7fb7a8ac24af",
+      "bytes": 175773
+    },
+    "catalog-siemens-v1.28.0.js": {
+      "sha256": "80a968bb58b1f9ed06b26f42562e6c1c260935df274bd97122897d4465e15ba8",
+      "bytes": 1234312
+    },
+    "catalog-vorwerk-v1.28.0.js": {
+      "sha256": "b9c6084b4841eebc30c367c1136dd88881f6f6d2a7ee89e6f4111255a2bb490e",
+      "bytes": 108090
+    },
+    "services-v1.28.0.js": {
+      "sha256": "accc35b5028711192c011ab4bce9a27c7a85da1fd75c10366d2d585f3a78741d",
+      "bytes": 3331
+    }
+  },
+  "mainRecheck": {
+    "mainCommit": "9419d49419fd2d3257b910f49c9afd30f40de289",
+    "checkpoint": {
+      "version": "1.28.2",
+      "segment_dir": ".demo/source-v1.28.2",
+      "segments": 85,
+      "archive_sha256": "bc272af5578364432f7ccd1279b600cc2afa086225c87be84ec748fc5379c378",
+      "archive_bytes": 636478,
+      "file_count": 131,
+      "compiled_assets_included": false
+    },
+    "changedCheckpointFiles": [
+      "index.html",
+      "package.json",
+      "src/app.js",
+      "src/data/new-brands-index.js",
+      "src/data/samsung-pack.js",
+      "styles.css",
+      "sw.js",
+      "tests/catalog-v126.test.mjs",
+      "tests/marketplaces.test.mjs",
+      "tests/miele-models.test.mjs",
+      "tests/miele-parts.test.mjs",
+      "tests/offline.test.mjs",
+      "tests/services.test.mjs",
+      "tests/static.test.mjs",
+      "tests/v16.test.mjs",
+      "tests/vorwerk-expansion.test.mjs"
+    ],
+    "dysonPackUnchanged": true,
+    "modelCountsUnchanged": true,
+    "integrationReady": false,
+    "reason": "Importer deliberately requires frozen v1.28.0; release owner must port local patches preserving Samsung additions and mobile styles."
+  },
+  "prBoundaryAudit": {
+    "branch": "work/model-dyson-wave2",
+    "managed": true,
+    "status": "pass",
+    "files_checked": 7,
+    "blocked": [],
+    "review": [],
+    "invalid_records": 0
+  },
+  "inputAndReportSha256": {
+    "integrations/dyson-model-research-wave2.json": "81cf181d4ba5b93a2b3ae5d6cb9253ca4c09ab5b9007fbf9cc7801dcc44cc956",
+    "integrations/import-dyson-models-wave2.mjs": "a6f0ec71ed61311e7f067afaa0162bafe732757062d9bd0696ca77f035fd573c",
+    "integrations/import-dyson-models-wave2.test.mjs": "845c8eee7855e4748cfdbdcd9fada62ac2d35c541c66174496bfad162d76c720",
+    "integrations/dyson-models-wave2.test.template.mjs": "cb2c904b7d674fe4992cbbb0a49eae624fbadd1e47d2ea7ad9e13aa4d0673784",
+    "integrations/dyson-models-wave2.md": "32a8db40164e0ff0b9c947cfc91fccc069650046c7fb75d1fcb4a2735ae257ec",
+    "integrations/dyson-validation-wave2.log": "31dfc532501711db8addb80ea9f6418fc93f446f822817dbbbd3aeb16c6f4f58"
+  },
+  "merged": false,
+  "deployed": false
+}

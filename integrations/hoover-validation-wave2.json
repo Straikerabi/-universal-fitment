@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-08",
+  "baseCommit": "d254df54d7bb4d72febdf9f2587efec9a66be336",
+  "appVersion": "1.28.0",
+  "esbuildVersion": "0.25.12",
+  "appTestGroups": 38,
+  "waveTests": 29,
+  "failures": 0,
+  "freshCheckpointRuns": 2,
+  "sourceFiles": {
+    "src/data/hoover-pack.js": "21dd46407719229a016bfffa8e0d8f7b326f4e1ee59a781d79ca6afcecff737d",
+    "src/data/new-brands-index.js": "e79a28d26da92c85c3952bd5de88ee4decc8d57fa285b528f8620e70af40af2b",
+    "src/core/typeplate.js": "0c3e6b30d3579f2303cad52a3fc27d079344bdbc9e6aae726730bdf518396976",
+    "tests/catalog-seven-brands.test.mjs": "37260f351f8c9813ede18c6ed9eda2e4aa00c4a248fa0156c0557954f3916d07",
+    "tests/vorwerk-expansion.test.mjs": "097d33358dd2bc7c374ac197e490239a7d8f2f0938128ccda6bb7435db510105",
+    "tests/catalog-v126.test.mjs": "f8abe91f375f4718de55e978f4f10001f155e2c8bbeabb18e7747efbc90bd701"
+  },
+  "buildArtifacts": {
+    "app-v1.28.0.js": {
+      "bytes": 1754186,
+      "sha256": "f1d939a7f75471f09463f122b4d805e84a4553f0a798c624247a481dbbb14998"
+    },
+    "catalog-aeg-v1.28.0.js": {
+      "bytes": 725910,
+      "sha256": "78db9817f4f437d2ddf65a910bfadb190e849990a8b35a67a3f420ed69ad8422"
+    },
+    "catalog-dyson-v1.28.0.js": {
+      "bytes": 260570,
+      "sha256": "cfbb6c417fe56af42ad8811c445adef7cf9d95b5f31dad220a6dbf9f6937a868"
+    },
+    "catalog-hoover-v1.28.0.js": {
+      "bytes": 187679,
+      "sha256": "974befde66feb0b3e78e830df852b619092243d2ccc36fb3a55c65f13154bf0a"
+    },
+    "catalog-philips-v1.28.0.js": {
+      "bytes": 352773,
+      "sha256": "28f2ba1da41522658a86df8db5b43efe8eaec7240a21a84e9813846511391e22"
+    },
+    "catalog-rowenta-v1.28.0.js": {
+      "bytes": 502458,
+      "sha256": "ab2ad6dbaacb32d625e02987faa81d32f0a59fa171f45d170d1322b8e7e0c898"
+    },
+    "catalog-samsung-v1.28.0.js": {
+      "bytes": 175773,
+      "sha256": "03d7d9453c4940ac646b29aa36bdaa08ac347997d843a47b6bbd7fb7a8ac24af"
+    },
+    "catalog-siemens-v1.28.0.js": {
+      "bytes": 1234312,
+      "sha256": "80a968bb58b1f9ed06b26f42562e6c1c260935df274bd97122897d4465e15ba8"
+    },
+    "catalog-vorwerk-v1.28.0.js": {
+      "bytes": 108090,
+      "sha256": "b9c6084b4841eebc30c367c1136dd88881f6f6d2a7ee89e6f4111255a2bb490e"
+    },
+    "services-v1.28.0.js": {
+      "bytes": 3331,
+      "sha256": "accc35b5028711192c011ab4bce9a27c7a85da1fd75c10366d2d585f3a78741d"
+    }
+  },
+  "summary": {
+    "state": "applied",
+    "newModels": 76,
+    "hooverModels": 100,
+    "physicalArticles": 60,
+    "existingFitmentRelationships": 22,
+    "addedFitmentRelationships": 0,
+    "modelsWithoutParts": 98,
+    "manualCount": 72,
+    "catalogModels": 1019,
+    "catalogRecords": 1030,
+    "generatedSourceFiles": [
+      "src/data/hoover-pack.js",
+      "src/data/new-brands-index.js",
+      "tests/catalog-seven-brands.test.mjs",
+      "tests/vorwerk-expansion.test.mjs",
+      "tests/catalog-v126.test.mjs",
+      "src/core/typeplate.js"
+    ],
+    "check": false,
+    "writtenFiles": [
+      "src/data/hoover-pack.js",
+      "src/data/new-brands-index.js",
+      "tests/catalog-seven-brands.test.mjs",
+      "tests/vorwerk-expansion.test.mjs",
+      "tests/catalog-v126.test.mjs",
+      "src/core/typeplate.js"
+    ]
+  },
+  "checks": [
+    {
+      "label": "restore-1",
+      "status": "passed"
+    },
+    {
+      "label": "build-1",
+      "status": "passed"
+    },
+    {
+      "label": "build-check-1",
+      "status": "passed"
+    },
+    {
+      "label": "full-app-suite",
+      "status": "passed"
+    },
+    {
+      "label": "full-app-syntax",
+      "status": "passed"
+    },
+    {
+      "label": "hoover-import-and-app-tests",
+      "status": "passed"
+    },
+    {
+      "label": "importer-syntax",
+      "status": "passed"
+    },
+    {
+      "label": "wave-tests-syntax",
+      "status": "passed"
+    },
+    {
+      "label": "restore-2",
+      "status": "passed"
+    },
+    {
+      "label": "build-2",
+      "status": "passed"
+    },
+    {
+      "label": "build-check-2",
+      "status": "passed"
+    }
+  ],
+  "limits": [
+    "OCR/Typenschildtests verwenden synthetische Text-Fixtures; keine physische Geräteprüfung.",
+    "EU-Hoover-Fitmentservice beim Live-Abruf blockiert; Originalbeziehungen unverändert aus dem geprüften Checkpoint erhalten.",
+    "Quellenmärkte der neuen Modelle: 3 DE, 1 FR, 72 GB; keine marktübergreifende Gleichheit oder Passung behauptet.",
+    "Der gemeinsame Checkpoint, site/, Releases und produktive Workflows werden in dieser PR nicht geändert."
+  ]
+}
