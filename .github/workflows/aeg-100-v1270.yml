@@ -1,0 +1,59 @@
+name: "One-time AEG 100 model verification v1.27.0"
+on:
+  push:
+    branches: ["work/aeg-100-models-v1270"]
+    paths: ["integrations/aeg-v1270-request.md"]
+permissions:
+  contents: write
+jobs:
+  checked-source:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Restore immutable v1.26.12 application source
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 integrations/restore-source-checkpoint.py --target site
+          test "$(node -p "require('./site/package.json').version")" = "1.26.12"
+      - name: Compile original bundle, prepare AEG 100 and protect model identity
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm ci --prefix integrations/auth-sdk --ignore-scripts
+          node integrations/build-app.mjs
+          python3 integrations/package-aeg-v1270.py prepare
+          node integrations/import-aeg-100-v1270.mjs
+      - name: Compile release, verify reproducibility and all app regression tests
+        shell: bash
+        run: |
+          set -euo pipefail
+          node integrations/build-app.mjs
+          python3 integrations/package-aeg-v1270.py sync
+          node integrations/build-app.mjs
+          node integrations/build-app.mjs --check
+          (cd site && npm test && npm run check)
+      - name: Verify version patch and source-checkpoint SHA 256
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 integrations/package-site-patch.py --baseline baseline/site --site site --version 1.27.0 --description "AEG 100 verified model references, no new part fitment"
+          python3 integrations/create-source-checkpoint.py --site site
+          python3 integrations/restore-source-checkpoint.py --target /tmp/aeg-v1270-source-check
+          python3 integrations/package-aeg-v1270.py finish
+          cat publish-info-v1.27.0.json
+      - name: Save release archives and docs, without any temporary source or workflow mutation
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md CHANGELOG.md integrations/source-checkpoint.json integrations/aeg-release-v1270.json
+          git add -f .demo/v1.27.0-patch/part-* .demo/source-v1.27.0/part-*
+          if git diff --cached --name-only | grep -E '^site/|^\.github/workflows/'; then
+            echo "Refusing to stage temporary source/workflow changes"; exit 1
+          fi
+          git commit -m "Prepare fully tested AEG 100-model release v1.27.0"
+          git push origin HEAD:work/aeg-100-models-v1270
