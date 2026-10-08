@@ -1,5 +1,13 @@
 # Universal Fitment — Patchnotes / patch notes
 
+## v1.26.11 — 8. Oktober 2026
+
+- **DE:** Vier Samsung-Geräte mit 36 belegten optionalen Zubehörbeziehungen ergänzt. Jetzt 17 von 66 Samsung-Geräten mit expliziter Zubehörliste, noch 49 ohne Zuordnung.
+- **DE:** Ein neuer eindeutig benannter Originalartikel: VCA-SABA95 Slim Action Bürste. Samsung zählt 35, der gesamte Katalog 1.929 unterschiedliche Artikel. Variantenkennungen /WD, /WA und /VT bleiben getrennt.
+- **EN:** 36 optional OEM accessory references across four exact Samsung devices, including one new VCA-SABA95 brush article. Explicit fitment check and accessory prerequisites remain; no live price or stock claim.
+- **Release:** Local build, tests and source/patch checks are followed by independent GitHub Pages CI verification.
+
+
 ## v1.26.10 — 8. Oktober 2026
 
 - **DE:** Vier vorhandene Samsung-Staubsauger erhalten 35 exakte optionale Zubehör-Zuordnungen aus den deutschen Herstellerseiten. Jetzt 13 von 66 Samsung-Modellen mit konkreter Zubehörliste; 53 bleiben offen.
