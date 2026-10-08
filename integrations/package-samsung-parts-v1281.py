@@ -54,7 +54,7 @@ elif phase=="sync":
  print(json.dumps({"packBytes":bundle.stat().st_size,"samsungParts":46}))
 elif phase=="finish":
  report={"version":new,"checked_at":"2026-10-08","evidence":"integrations/samsung-parts-wave1-v1281.json",
-  "newManufacturerParts":10,"newBatteries":5,"newMotorizedBrushesOrMopHeads":5,
+  "newManufacturerParts":10,"newBatteries":4,"newMotorizedBrushesOrMopHeads":6,
   "samsungPartsBefore":36,"samsungPartsAfter":46,"samsungModels":77,
   "globalDistinctArticles":1940,"globalPhysicalParts":1822,
   "globalDistinctModels":943,"globalModelRecords":954,"globalModelTargetSlots":730,
@@ -75,7 +75,7 @@ elif phase=="finish":
  t=readme.read_text()
  marker="\n## Teile auf einen Blick"
  assert marker in t
- add=("\n\n**Originalteile-Ausbau v1.28.1:** Samsung +10 herstellerseitig belegte Original-Zubehörartikel: fünf unterschiedliche Wechselakku-SKUs (mit/ohne Ladestation, 2.200/3.970 mAh), vier motorisierte Bürsten und ein Spinning-Sweeper-Wischaufsatz. Jede Position enthält die konkrete Samsung-Artikelkennung, veröffentlichte EAN, Herstellerlink und geprüfte Gerätefamilie. **Keine der zehn neu aufgenommenen SKUs wurde einer bestimmten Geräteausführung ohne separaten Nachweis als passend zugewiesen.** Unbekannte Preis- und Lagerangaben bleiben unbekannt. [Herstellerquellen und Akkuvarianten](integrations/samsung-parts-wave1-v1281.json).\n")
+ add=("\n\n**Originalteile-Ausbau v1.28.1:** Samsung +10 herstellerseitig belegte Original-Zubehörartikel: vier unterschiedliche Wechselakku-SKUs (mit/ohne Ladestation, 2.200/3.970 mAh), fünf Bürsten und ein Spinning-Sweeper-Wischaufsatz. Jede Position enthält die konkrete Samsung-Artikelkennung, veröffentlichte EAN, Herstellerlink und geprüfte Gerätefamilie. **Keine der zehn neu aufgenommenen SKUs wurde einer bestimmten Geräteausführung ohne separaten Nachweis als passend zugewiesen.** Unbekannte Preis- und Lagerangaben bleiben unbekannt. [Herstellerquellen und Akkuvarianten](integrations/samsung-parts-wave1-v1281.json).\n")
  readme.write_text(t.replace(marker,add+marker,1))
  history=root/"CHANGELOG.md"
  raw=history.read_text()
@@ -84,7 +84,7 @@ elif phase=="finish":
  raw=raw.replace(h,h+"""
 ## v1.28.1 — 8. Oktober 2026
 
-- **DE:** Zehn getrennte Samsung-Originalzubehörartikel direkt mit EAN/Typ über Samsung DE bestätigt: fünf Ersatz-Akkus (Ladegerät und Kapazitätsvarianten separat) sowie fünf motorisierte Bürsten-/Wischaufsatz-SKUs.
+- **DE:** Zehn getrennte Samsung-Originalzubehörartikel direkt mit EAN/Typ über Samsung DE bestätigt: vier Ersatz-Akkus (Ladegerät und Kapazitätsvarianten separat) sowie sechs Bürsten-/Wischaufsatz-SKUs.
 - **DE:** Samsung: 36 → **46 physische** Zubehörartikel; gesamt **1.940 Katalogartikel, 1.822 physische Artikel**. Weiterhin 943 einzigartige Gerätemodelle, 954 Records, 730/1.000 Modellplätze.
 - **DE:** Familienkompatibilität ist keine gerätespezifische Passung. Daher **0 neue Geräte-/Teilebeziehungen** und keine unbelegten Preise, Lagerbestände oder Versandangaben.
 - **EN:** Adds 10 original Samsung accessory SKUs with German manufacturer evidence and explicitly no unverified exact-device compatibility. No fabricated commerce data.
