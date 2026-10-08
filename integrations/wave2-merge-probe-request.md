@@ -11,3 +11,5 @@ Probe 5: rebase Miele and Dyson audit tests to allow intentional cross-brand mod
 Probe 6: Miele 9 historical family hints remain outside 87 concrete device rows, rerun all category tests.
 
 Probe 7: validate Hoover 98 unlinked base models and all Miele/Dyson model tests after source merge.
+
+Probe 8: full target-slot count after 25 Miele, 38 Dyson, and 76 Hoover model additions is 869; rerun complete suite.
