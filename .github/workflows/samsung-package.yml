@@ -131,7 +131,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git rm -qr --cached site
           rm -rf site baseline
-          git rm -f .github/workflows/samsung-source-workspace.yml .github/workflows/samsung-package.yml integrations/samsung-workspace-request.md integrations/samsung-package-request.md
+          git restore --staged --worktree .github/workflows/pages.yml
           git add -A
           git add -f .demo/v1.26.9-patch/part-* .demo/source-v1.26.9/part-*
           git commit -m "Release-ready v1.26.9 Samsung optional accessories and verified package"
