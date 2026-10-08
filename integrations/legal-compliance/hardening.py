@@ -24,7 +24,7 @@ STYLE = '''<!-- UF LEGAL PREVIEW STYLE -->
 '''
 NOTICE = '''<!-- UF LEGAL PREVIEW START -->
 <footer class="uf-legal-notice" aria-label="Projekt- und Rechtshinweise">
-  <strong>Produktrecherche / Prototyp:</strong> Keine Bestellung oder Zahlung auf dieser Website. Preise, Verfügbarkeit und Passung bitte beim jeweiligen Anbieter und anhand der vollständigen Gerätekennung prüfen. Keine offizielle Verbindung zu den genannten Herstellern. Die Pilot-Anmeldung ist auf GitHub Pages deaktiviert.
+  <strong>Produktrecherche / Prototyp:</strong> Keine Bestellung oder Zahlung auf dieser Website. Preise, Verfügbarkeit und Passung bitte beim jeweiligen Anbieter und anhand der vollständigen Gerätekennung prüfen. Keine offizielle Verbindung zu den genannten Herstellern. Die Pilot-Anmeldung ist in öffentlichen und privaten Testvorschauen deaktiviert.
   <a href="./projekt-hinweise.html">Projekt- und Rechtshinweise</a>
 </footer>
 <!-- UF LEGAL PREVIEW END -->'''
@@ -101,7 +101,7 @@ def apply(site: Path) -> dict:
         if pilot_before.count(needle)!=1:
             raise ValueError('Pilot login shape changed; refusing partial modifications')
         replacement=("// UF_GITHUB_PAGES_LOGIN_DISABLED: no passwords in Pages preview.\n"
-                     "          if(typeof window!=='undefined' && window.location.hostname.toLowerCase().endsWith('.github.io'))return {status:'access_required'};\n"
+                     "          if(typeof window!=='undefined' && (window.location.hostname.toLowerCase().endsWith('.github.io') || window.location.hostname.toLowerCase().endsWith('.app.github.dev')))return {status:'access_required'};\n"
                      "          "+needle)
         pilot_after=pilot_before.replace(needle,replacement,1)
     if new != original: index.write_text(new,encoding='utf-8')
