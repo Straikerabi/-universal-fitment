@@ -72,7 +72,7 @@ for(const item of data.newParts) {
  count[item.partTypeId]++;
  knownParts.add(item.code);
 }
-assert.deepEqual(count,{nozzle:5,battery:5});
+assert.deepEqual(count,{nozzle:6,battery:4});
 assert.equal(JSON.stringify(pack.models),originalModels);
 assert.equal(JSON.stringify(index),originalIndex);
 assert.equal(JSON.stringify(pack.parts.slice(0,36)),originalParts);
@@ -83,4 +83,4 @@ assert.equal(manifest.partTypes.reduce((n,x)=>n+x.count,0),46,'Physical parts by
 manifest.note='77 konkrete Samsung-Gerätemodelle, 46 individuelle physische Originalzubehör-/Ersatzteilartikel. 10 neue aus Samsung-DE-Produktseiten belegte SKUs (5 Ersatz-Akkus, 5 Bürsten/Wischaufsätze) wurden als herstellerechte Artikel ohne unbestätigte gerätespezifische Teilepassung erfasst; 57 Geräte weiterhin ohne geprüfte Modellartikel-Liste. Herstellerseitige Kompatibilität auf Familienebene ist nicht identisch mit exaktem Länder-/Revisionscode.';
 fs.writeFileSync(packFile,'// Samsung original articles: ten additional verified manufacturer SKUs, 2026-10-08; no inferred device fitment.\nexport const brandPack='+JSON.stringify(pack)+';\n');
 fs.writeFileSync(idxFile,'// Samsung and Hoover compact model records, article coverage from the Samsung original parts first wave.\n'+idxHeader+JSON.stringify(index)+';\n'+manHeader+JSON.stringify(manifests)+';\n');
-console.log(JSON.stringify({addedOriginalArticles:10,batteries:5,brushesOrMopHeads:5,samsungTotal:46,modelsStill:77,modelWithNewParts:0,globalArticles:1940,globalPhysicalParts:1822}));
+console.log(JSON.stringify({addedOriginalArticles:10,batteries:4,brushesOrMopHeads:6,samsungTotal:46,modelsStill:77,modelWithNewParts:0,globalArticles:1940,globalPhysicalParts:1822}));
