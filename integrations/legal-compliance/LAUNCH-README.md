@@ -1,5 +1,7 @@
 # Vorbereitung: kommerzieller Launch (Deutschland, v1.29.0)
 
+**Konkrete kostengünstige Nebenerwerbsgründung:** [NEBENGEWERBE-START-2026.md](NEBENGEWERBE-START-2026.md). Die Gemeinde Eschelbronn nennt in der veröffentlichten Gebührensatzung 22,10 €; den aktuellen Betrag vor Anmeldung bestätigen. ELSTER-Fragebogen innerhalb eines Monats nach Betriebsbeginn; § 19 UStG im Gründungsjahr mit 25.000-€-Schwelle und EU-Affiliate-Reverse-Charge ausdrücklich prüfen. Arbeitsvertrag/Nebentätigkeitsklausel beachten.
+
 **Status: BLOCKIERT.** Dies ist ein interner Entwurf, keine Rechtsberatung und keine Freigabe. **Keine realen Anschriften, Personendaten, Telefonnummern, Geburtsdaten, Kontonummern oder Zugangsdaten in diesem öffentlichen GitHub-Repository erfassen.** Insbesondere `operator.example.json` bleibt leer.
 
 ## Zielmodell
