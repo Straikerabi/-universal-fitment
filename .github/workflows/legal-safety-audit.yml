@@ -27,6 +27,24 @@ jobs:
           python3 integrations/restore-source-checkpoint.py --target site
       - name: Review static data flows and missing legal surfaces
         run: python3 integrations/legal-compliance/hardening.py inventory --site site
+      - name: Inspect public legal surface and authentication code
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          base=Path('site')
+          for path in ('index.html','src/app.js','docs/LEGAL_CHECKLIST.md','src/core/pilot-client.js','src/core/local-state.js'):
+              p=base/path
+              if not p.exists(): continue
+              lines=p.read_text(errors='replace').splitlines()
+              rx=re.compile(r'impressum|datenschutz|privacy|cookie|signInWithPassword|login|pilot|contact|kontakt|footer',re.I)
+              hits=[i for i,line in enumerate(lines) if rx.search(line)]
+              print('SURFACE',path,'total_lines',len(lines),'matching_lines',len(hits))
+              for i in hits[:25]:
+                  s=lines[i][:220].replace('apikey','[api-key-name]')
+                  print('LINE',i+1,s)
+          PY
       - name: Validate safe, idempotent non-publishing preview modifications
         shell: bash
         run: |
