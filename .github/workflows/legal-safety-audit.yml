@@ -1,0 +1,53 @@
+name: Legal Safety Audit (no deployment)
+
+on:
+  push:
+    branches:
+      - audit/legal-hardening-v1290
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  legal-preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout code without persisted credentials
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Restore immutable audited source
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 integrations/restore-source-checkpoint.py --target site
+      - name: Review static data flows and missing legal surfaces
+        run: python3 integrations/legal-compliance/hardening.py inventory --site site
+      - name: Validate safe, idempotent non-publishing preview modifications
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 integrations/legal-compliance/hardening.py apply --site site
+          python3 integrations/legal-compliance/hardening.py apply --site site
+          python3 -m unittest discover -s integrations/legal-compliance -p 'test_*.py' -v
+      - name: Confirm public release is blocked before verified documents and hosting
+        shell: bash
+        run: |
+          set +e
+          python3 integrations/legal-compliance/hardening.py release-check --site site
+          status=$?
+          set -e
+          test "$status" -eq 2
+      - name: Rebuild JavaScript and run full app tests without publishing
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm ci --prefix integrations/auth-sdk --ignore-scripts
+          node integrations/build-app.mjs
+          node integrations/build-app.mjs --check
+          npm test --prefix site
+          npm run check --prefix site
