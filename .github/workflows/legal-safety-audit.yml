@@ -75,7 +75,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          bash integrations/legal-compliance/private-preview-build.sh
+          bash integrations/legal-compliance/private-preview-build.sh --test
           bash integrations/legal-compliance/private-preview-serve.sh
           curl -fsS http://127.0.0.1:4173/index.html -o /tmp/uf-preview-index.html
           bash integrations/legal-compliance/private-preview-serve.sh
