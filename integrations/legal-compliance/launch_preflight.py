@@ -92,6 +92,10 @@ def assess(config: dict, site: Path) -> dict:
 
     status_keys = (
         'business.gewerbe_registration_confirmed',
+        'business.employment_side_activity_checked',
+        'business.employment_approval_if_needed_resolved',
+        'business.cross_border_affiliate_tax_reviewed',
+        'business.bookkeeping_ready',
         'hosting.terms_approved','hosting.av_contract_checked',
         'privacy.actual_data_flows_documented',
         'privacy.privacy_notice_approved','privacy.processor_contracts_reviewed',
