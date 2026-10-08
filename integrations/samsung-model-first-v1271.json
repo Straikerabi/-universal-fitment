@@ -1,0 +1,41 @@
+{
+  "checkedAt": "2026-10-08",
+  "market": "DE",
+  "status": "manufacturer_exact_model_verified_model_index_only",
+  "release_candidate": "1.27.1",
+  "models": [
+    {
+      "code": "VS70H28HEK",
+      "full": "VS70H28HEK/WD",
+      "name": "Jet 95S Akku+ CompleteClean mit Standing Station",
+      "series": "Jet 95S",
+      "deviceType": "cordless",
+      "url": "https://www.samsung.com/de/vacuum-cleaners/stick/jet-95s-stick-vacuum-cleaner-jet-95s-stick-vacuum-cleaner-satin-black-vs70h28hek-wd/",
+      "service": "https://www.samsung.com/de/support/model/VS70H28HEK/WD/",
+      "manufacturerOptionalArticleCodes": [
+        "VCA-WBA95/GL",
+        "VCA-SHFF80K",
+        "VCA-SPW95",
+        "VCA-SPA95/GL",
+        "VCA-SAK95/GL"
+      ]
+    },
+    {
+      "code": "VS80F28EFP",
+      "full": "VS80F28EFP/WD",
+      "name": "Bespoke AI Jet CompleteClean mit All-in-One Clean Station, Pebble Gray",
+      "series": "Bespoke AI Jet",
+      "deviceType": "cordless",
+      "url": "https://www.samsung.com/de/vacuum-cleaners/stick/stick-vc-with-light-powerful-jet-ailite-280w-bespoke-jet-ai-lite-280w-vs9500al-gray-vs80f28efp-wd/",
+      "service": "https://www.samsung.com/de/support/model/VS80F28EFP/WD/",
+      "manufacturerOptionalArticleCodes": []
+    }
+  ],
+  "guardrails": [
+    "These are complete device models, not accessories or bundle identifiers",
+    "An official manufacturer product URL and exact /WD code are mandatory",
+    "Device model verified; model-to-article fitment NOT imported at this model-first stage",
+    "Manufacturer optional accessories tracked as future candidates, NOT counted as linked until article-specific import and compatibility conditions verified",
+    "No stock, prices, bestseller rank, technical compatibility or 11-digit substitute identifiers invented"
+  ]
+}
