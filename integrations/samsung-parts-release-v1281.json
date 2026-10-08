@@ -1,0 +1,32 @@
+{
+  "version": "1.28.1",
+  "checked_at": "2026-10-08",
+  "evidence": "integrations/samsung-parts-wave1-v1281.json",
+  "newManufacturerParts": 10,
+  "newBatteries": 4,
+  "newMotorizedBrushesOrMopHeads": 6,
+  "samsungPartsBefore": 36,
+  "samsungPartsAfter": 46,
+  "samsungModels": 77,
+  "globalDistinctArticles": 1940,
+  "globalPhysicalParts": 1822,
+  "globalDistinctModels": 943,
+  "globalModelRecords": 954,
+  "globalModelTargetSlots": 730,
+  "modelsWithoutParts": 308,
+  "newIndividualModelFitments": 0,
+  "manufacturerFamilyCompatibilityNotExactFitment": true,
+  "pricesInvented": 0,
+  "stockInvented": 0,
+  "checks": [
+    "SKU collision-free",
+    "EAN unique on manufacturer pages",
+    "specific model fitment remains empty",
+    "38 app test groups",
+    "new Samsung spare tests",
+    "deterministic code/build",
+    "SHA256 patch",
+    "SHA256 source checkpoint"
+  ],
+  "important": "SKU inclusion documents original accessory existence, not compatibility with a specific model revision or live salability"
+}

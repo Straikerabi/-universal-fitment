@@ -1,4 +1,4 @@
-# Universal Fitment v1.28.0 – Bosch 100, Samsung 77 und mobile Teileansicht
+# Universal Fitment v1.28.1 – Bosch 100, Samsung 77 und mobile Teileansicht
 
 [Roadmap · Deutsch](ROADMAP.md) · [Roadmap · English](ROADMAP.en.md) · [Patchnotes](CHANGELOG.md) · [Ideen & Kommentare](https://github.com/Straikerabi/-universal-fitment/issues)
 
@@ -6,7 +6,7 @@ Universal Fitment beginnt mit Staubsaugern für Deutschland. Unser langfristiges
 
 Der neue Kontaktbereich unter **Mehr → Kontakt & Roadmap** bereitet überprüfbare GitHub-Beiträge vor. Ein eigenes Supportpostfach und privater Versand sind noch offen; es werden keine E-Mails automatisch verschickt. Zentrale App-Nutzungszahlen sind bisher nicht erfasst.
 
-Der Staubsaugerkatalog enthält **943 Modellbezeichnungen in 954 konkreten Modelleinträgen** und **1.930 unterschiedliche Katalogartikel**. Davon zählen **1.812** als katalogisierte Ersatzteile, Zubehörartikel oder Verbrauchsmaterialien. Dokumente, Komplettgeräte und noch nicht eingeordnete Artikel werden separat geführt. Neun Miele-Familienhinweise zählen nicht als konkrete Geräte.
+Der Staubsaugerkatalog enthält **943 Modellbezeichnungen in 954 konkreten Modelleinträgen** und **1.940 unterschiedliche Katalogartikel**. Davon zählen **1.822** als katalogisierte Ersatzteile, Zubehörartikel oder Verbrauchsmaterialien. Dokumente, Komplettgeräte und noch nicht eingeordnete Artikel werden separat geführt. Neun Miele-Familienhinweise zählen nicht als konkrete Geräte.
 
 Die Ziele sind getrennt: **100 echte Modellreferenzen und mindestens 100 katalogisierte Teile je Marke**. 730 von 1.000 gedeckelten Modellplätzen sind belegt. Acht von zehn Marken erreichen das Teileziel. Zusätzliche Artikel einer Marke füllen die Lücken einer anderen Marke nicht. Verkaufssets und Zubehör erzeugen keine weiteren Grundmodelle.
 
@@ -19,7 +19,7 @@ Die Ziele sind getrennt: **100 echte Modellreferenzen und mindestens 100 katalog
 | Rowenta | 272 | 272 | 100 | 0 | 75 |
 | Philips | 140 | 140 | 101 | 3 | 84 |
 | Siemens | 101 | 101 | 605 | 105 | 0 |
-| Samsung | 77 | 77 | 36 | 0 | 57 |
+| Samsung | 77 | 77 | 46 | 0 | 57 |
 | Hoover | 24 | 24 | 60 | 0 | 22 |
 | Vorwerk | 18 | 18 | 105 | 0 | 4 |
 
@@ -27,6 +27,9 @@ Eine vorhandene Teilezuordnung bestätigt weder eine vollständige Teileliste no
 
 
 **v1.28.0 – drei geprüfte Work-Arbeitsstränge vereint:** Samsung +8 exakt belegte Grundgeräte (69 → 77), Bosch +40 eigenständige Grundmodelle (60 → 100) und eine überarbeitete **mobile Gerätesicht mit aufklappbaren Bauteilgruppen, Filtern und Preissortierung**. Neue Geräte ohne geprüfte Teilenummern bleiben bei **0 passenden Artikeln**. Die 1.930 bisherigen Katalogartikel bleiben erhalten; unbekannte Preise werden in der Oberfläche nicht als 0 € oder als Live-Angebot dargestellt. Die vollständigen unabhängigen Arbeitsberichte sind in [Samsung](integrations/samsung-models-next.md), [Bosch](integrations/bosch-models-next.md) und [UX](integrations/ui-vacuum-detail-next/README.md) dokumentiert.
+
+
+**Originalteile-Ausbau v1.28.1:** Samsung +10 herstellerseitig belegte Original-Zubehörartikel: vier unterschiedliche Wechselakku-SKUs (mit/ohne Ladestation, 2.200/3.970 mAh), fünf Bürsten und ein Spinning-Sweeper-Wischaufsatz. Jede Position enthält die konkrete Samsung-Artikelkennung, veröffentlichte EAN, Herstellerlink und geprüfte Gerätefamilie. **Keine der zehn neu aufgenommenen SKUs wurde einer bestimmten Geräteausführung ohne separaten Nachweis als passend zugewiesen.** Unbekannte Preis- und Lagerangaben bleiben unbekannt. [Herstellerquellen und Akkuvarianten](integrations/samsung-parts-wave1-v1281.json).
 
 ## Teile auf einen Blick
 
