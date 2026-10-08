@@ -19,7 +19,7 @@ jobs:
           set -euo pipefail
           mkdir -p baseline
           cp -a site baseline/site
-          for file in src/data/samsung-pack.js src/data/new-brands-index.js tests/catalog-v126.test.mjs; do
+          for file in src/data/samsung-pack.js src/data/new-brands-index.js tests/catalog-v126.test.mjs tests/catalog-seven-brands.test.mjs tests/vorwerk-expansion.test.mjs; do
             git show "e2fe474d5ca724d14225ccf9a089e56c94a81410:site/$file" > "baseline/site/$file"
           done
           python3 - <<'PY'
