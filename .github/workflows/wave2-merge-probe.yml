@@ -68,6 +68,12 @@ jobs:
                 echo "--- $file conflict context ---"
                 grep -n -C 3 '^<<<<<<<\\|^=======\\|^>>>>>>>' "$repo/$file" | head -110 || true
               done
-              git -C "$repo" merge --abort
+              while IFS= read -r conflict; do
+                test -n "$conflict" || continue
+                git -C "$repo" checkout --ours -- "$conflict"
+                git -C "$repo" add -- "$conflict"
+                echo "DIAGNOSTIC_ONLY_KEEP_OURS $name $conflict"
+              done < <(git -C "$repo" diff --name-only --diff-filter=U)
+              git -C "$repo" commit -qm "Diagnostic provisional merge of $name (not shippable)"
             fi
           done
