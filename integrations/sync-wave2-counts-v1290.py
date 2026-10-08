@@ -73,7 +73,7 @@ t=dyson.read_text()
 needle="assert.equal(digest(products.filter(p=>p.brand!=='Dyson')),evidence.baseline.otherBrandIndexSha256,'Other brand indices unchanged');"
 assert t.count(needle)==1,(needle,t.count(needle))
 t=t.replace(needle,"assert.equal(products.filter(p=>p.brand==='Miele'&&p.recordType==='model').length,87); assert.equal(products.filter(p=>p.brand==='Hoover').length,100); assert.equal(products.filter(p=>p.brand==='Samsung').length,77); // Cross-Work index additions explicitly allowed.",1)
-for old,new in [("catalogStats.modelCount,981","catalogStats.modelCount,1082"),("catalogStats.recordCount,992","catalogStats.recordCount,1093")]:
+for old,new in [("catalogStats.modelCount,981","catalogStats.modelCount,1082"),("catalogStats.recordCount,992","catalogStats.recordCount,1093"),("0),768","0),869")]:
  assert t.count(old)==1,(old,t.count(old))
  t=t.replace(old,new,1)
 dyson.write_text(t)
