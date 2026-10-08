@@ -10,6 +10,21 @@ Die aktuelle GitHub-Pages-Vorschau ist **öffentlich** und sollte vor der kommer
 4. **Open in Browser** / Globus-Symbol bei Port 4173 anklicken – die tatsächlich gebaute, vollständige App öffnet sich unter `https://...-4173.app.github.dev`.
 5. Für iPhone/Android denselben Link öffnen, mit **deinem GitHub-Konto anmelden**. Bei Ablauf der Private-Port-Authentifizierung erneut anmelden. Tests von Suche, Filtern, Warenkorb, Verbindungen und mobiler Darstellung sind möglich.
 
+### Wenn Browser HTTP 502 meldet
+
+HTTP 502 an der privaten `...-4173.app.github.dev`-Adresse bedeutet meistens, dass zwar der private Tunnel existiert, aber der **Webserver auf Port 4173 nicht läuft**. Ein weiterer grüner Port (z. B. VS Code 40023) ist kein Nachweis für Port 4173.
+
+1. In Codespaces **Terminal** öffnen und im Projektordner ausführen:
+   ```bash
+   python3 -m http.server 4173 --bind 0.0.0.0 --directory site
+   ```
+   Bei `Serving HTTP on 0.0.0.0 port 4173` das Terminal geöffnet lassen und die Browser-Vorschau aktualisieren.
+2. Wenn `Address already in use` erscheint, den bereits laufenden Server prüfen. Bei einem Fehler `site/index.html` fehlt oder nicht gebaut: im **zweiten Terminal** `bash integrations/legal-compliance/private-preview-build.sh` ausführen.
+3. Für die künftig automatisch reparierte Version im bestehenden Codespace (nach sauberen lokalen Änderungen): `git pull --ff-only origin audit/legal-hardening-v1290`; danach `bash integrations/legal-compliance/private-preview-serve.sh`. Das Startskript zeigt HTTP-Bereitschaft oder konkrete Fehler aus `/tmp/uf-private-preview.log` an. Nicht an eigenen ungecommitteten Änderungen vorbeiziehen.
+4. In Codespaces **PORTS** kontrollieren: `4173` muss als laufender Prozess angezeigt werden, `Port Visibility = Private`. Den `-4173.app.github.dev`-Link erneut im angemeldeten Browser öffnen. **Nicht** den Port öffentlich schalten.
+
+Die Vorschau wird nur bei aktivem Codespace bedient. Bei Stop/Suspend ist ein HTTP-502 oder Nichterreichbarkeit möglich; Codespace zuerst neu starten.
+
 ### Änderungen / Testfehler
 - Ein Codespace auf diesem Branch testet den Stand des Branches (derzeit v1.29.0 inkl. rechtlicher Vorschau). Neue Worker-Änderungen werden erst sichtbar, nachdem sie **bewusst** in den gewählten Quellstand übernommen wurden – nicht automatisch aus fremden Branches.
 - Um die Vorschau aus dem Codespaces-Terminal erneut zu bauen:
