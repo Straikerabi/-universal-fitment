@@ -15,7 +15,7 @@ import {installationTime} from '../src/data/miele-installation-times.js';
 import {catalogTargetProgress,deviceBudgetBand} from '../src/data/catalog-plan.js';
 
 const codes=['VK7','VB100','VK200','VK150','VK140','VK136','VK135','VK131','VK130','VK122','VK121','VK120','VT300','VT270','VT265','VT260','VT252','VT251'];
-assert.equal(catalogBrands.length,10);assert.equal(catalogStats.modelCount,868);assert.equal(catalogStats.recordCount,879);
+assert.equal(catalogBrands.length,10);assert.equal(catalogStats.modelCount,870);assert.equal(catalogStats.recordCount,881);
 assert.deepEqual(brandPack.models.map(m=>m.code),codes);
 assert.equal(brandPack.parts.length,105);assert.equal(brandManifest.Vorwerk.manualCount,12);
 const models=filterCatalog({brand:'Vorwerk'}),refs=new Map(models.map(p=>[p.id,p]));
@@ -90,8 +90,8 @@ assert.equal(plan.total,null);assert.equal(plan.groups[0].lines[0].partNumberLab
 assert.match(handoffListText(plan),/Herstellerbezeichnung: FP7/);assert.doesNotMatch(handoffListText(plan),/Teilenummer: FP7/);
 assert.equal(buildHandoffPlan(restored.cart).groups[0].lines[0].partNumberLabel,'Teilekennung','an unloaded record does not invent its identifier type');
 assert.equal(shippingCost('vorwerk-de',38.99),5);assert.equal(shippingCost('vorwerk-de',39),0);
-await loader.ensureAll();assert.equal(imports,8);assert.equal(new Set(partsCatalog.map(partIdentity)).size,1921);
-assert.equal(partsCatalog.length,1921);assert.equal(new Set(products.map(p=>p.id)).size,products.length);
-const progress=catalogTargetProgress(catalogCoverage());assert.equal(progress.reduce((n,r)=>n+r.slots,0),655);assert.equal(progress.filter(r=>!r.active).length,0);
+await loader.ensureAll();assert.equal(imports,8);assert.equal(new Set(partsCatalog.map(partIdentity)).size,1928);
+assert.equal(partsCatalog.length,1928);assert.equal(new Set(products.map(p=>p.id)).size,products.length);
+const progress=catalogTargetProgress(catalogCoverage());assert.equal(progress.reduce((n,r)=>n+r.slots,0),657);assert.equal(progress.filter(r=>!r.active).length,0);
 assert.equal(progress.find(r=>r.brand==='Vorwerk').models,18);
 console.log('Vorwerk passed: 18 actual main devices, 105 manufacturer designations, 12 direct manuals, lazy/offline-ready hydration, separate accessory types, serial/brand boundaries, source-only prices, backup and shopping list. Ten brands retain 1,921 distinct articles.');
