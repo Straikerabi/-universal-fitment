@@ -55,6 +55,19 @@ class TestHardening(unittest.TestCase):
             self.assertFalse(mod.apply(s)['login_guard_added'])
             self.assertEqual(guarded,p.read_text())
 
+    def test_codespaces_and_public_pages_login_are_both_disabled(self):
+        with TemporaryDirectory() as folder:
+            site=Path(folder)
+            (site/'index.html').write_text('<html><head></head><body></body></html>')
+            pilot=site/'src/core/pilot-client.js'
+            pilot.parent.mkdir(parents=True)
+            pilot.write_text('async function login(auth,email,password){const signed=await auth.signInWithPassword({email,password});return signed;}')
+            mod.apply(site)
+            guarded=pilot.read_text()
+            self.assertIn("endsWith('.github.io')",guarded)
+            self.assertIn("endsWith('.app.github.dev')",guarded)
+            self.assertEqual(guarded,pilot.read_text())
+
     def test_inventory(self):
         with TemporaryDirectory() as folder:
             s=Path(folder)
