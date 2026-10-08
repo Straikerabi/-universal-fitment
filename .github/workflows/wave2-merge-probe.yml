@@ -77,6 +77,7 @@ jobs:
           (cd "$GITHUB_WORKSPACE/site" && node --check src/core/typeplate.js && node --check src/data/new-brands-index.js && node --check src/data/brand-index.js)
           echo "=== MODEL EVIDENCE MATERIALIZED ==="
           grep -n "modelCount" "$GITHUB_WORKSPACE/site/src/data/new-brands-index.js" | cut -c1-200
+          python3 integrations/sync-wave2-counts-v1290.py site
           npm ci --prefix integrations/auth-sdk --ignore-scripts
           node integrations/build-app.mjs
           (cd site && npm test && npm run check)
