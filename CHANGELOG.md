@@ -1,5 +1,12 @@
 # Universal Fitment — Patchnotes / patch notes
 
+## v1.27.1 — 8. Oktober 2026
+
+- **DE:** Zwei konkrete Samsung-Staubsauger mit nachgewiesener deutscher /WD-Modellkennung ergänzt: VS70H28HEK und VS80F28EFP. Samsung erreicht 69 unterschiedliche Modelle, 49 aktuell ohne erfasste Teile.
+- **DE:** Modell-zuerst-Strategie: keine nicht nachgewiesene Ersatzteilpassung; 36 Samsung-Artikel und 1.930 Katalogartikel bleiben unverändert. Insgesamt 895 unterschiedliche Modellbezeichnungen und 682 von 1.000 Zielplätzen.
+- **EN:** Two manufacturer-verified Samsung vacuum devices added without guessing optional-accessory fitment, prices or inventory. Tested release patch and source checkpoint.
+
+
 ## v1.27.0 — 8. Oktober 2026
 
 - **DE:** AEG erreicht 100 echte unterschiedliche Staubsauger-Modellreferenzen (+22), alle direkt aus AEG-/Electrolux-Herstellerseiten belegt. Keine Zubehörteile als zusätzliche Geräte gerechnet.
