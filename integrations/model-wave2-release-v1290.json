@@ -1,0 +1,76 @@
+{
+  "release": "1.29.0",
+  "checkedDate": "2026-10-08",
+  "baseVersion": "1.28.2",
+  "originalWorkPullRequests": [
+    30,
+    32,
+    31
+  ],
+  "miele": {
+    "previousModelNames": 57,
+    "newModelNames": 82,
+    "newNames": 25,
+    "newRecords": 25,
+    "partsUnchanged": 167,
+    "newFitment": 0,
+    "unlinkedNew": 25,
+    "evidence": "integrations/miele-model-research-wave2.json"
+  },
+  "dyson": {
+    "previousModelNames": 54,
+    "newModelNames": 92,
+    "newNames": 38,
+    "newRecords": 38,
+    "partsUnchanged": 191,
+    "physicalPartsUnchanged": 185,
+    "newFitment": 0,
+    "unlinkedNew": 38,
+    "note": "92 catalog references, NOT a manufacturer-confirmed tally of 92 independent constructions",
+    "evidence": "integrations/dyson-model-research-wave2.json"
+  },
+  "hoover": {
+    "previousModelNames": 24,
+    "newModelNames": 100,
+    "newNames": 76,
+    "newRecords": 76,
+    "partsUnchanged": 60,
+    "newFitment": 0,
+    "unlinkedNew": 76,
+    "sourceRegions": {
+      "DE": 3,
+      "FR": 1,
+      "GB": 72
+    },
+    "note": "Only 3 of 76 new Hoover models have DE primary sources; 72 GB and 1 FR references are not German offers",
+    "evidence": "integrations/hoover-model-research-wave2.json"
+  },
+  "totalNewModelNames": 139,
+  "modelNames": 1082,
+  "modelRecords": 1093,
+  "targetSlotsOf1000": 869,
+  "totalParts": 1940,
+  "totalPhysicalParts": 1822,
+  "modelRecordsWithoutParts": 447,
+  "realDevicePartRelationshipsNew": 0,
+  "newPricingClaims": 0,
+  "preservedVersions": [
+    "v1.28.1 Samsung 10 original SKUs",
+    "v1.28.2 iPhone manufacturer links fixed"
+  ],
+  "checks": [
+    "each original Work importer applied to the exact locked baseline in isolated branches",
+    "all three source outputs 3-way merged on verified production v1.28.2",
+    "shared model parsing merged from precise brand-specific edits",
+    "Samsung 46 physical parts preserved",
+    "full app tests and independent Miele/Dyson model suites",
+    "all JS syntax and deterministic browser bundle build",
+    "SHA256 verified patch replay and source checkpoint restore"
+  ],
+  "limitations": [
+    "Model reference is not a separately proven device construction",
+    "Most new Hoover sources originate outside DE",
+    "All new devices require verified original parts catalog matching",
+    "Real physical iOS Safari test not run by this CI"
+  ]
+}

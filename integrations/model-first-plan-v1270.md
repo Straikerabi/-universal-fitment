@@ -1,4 +1,4 @@
-# Modell-zuerst-Plan, Stand 8. Oktober 2026 (v1.28.0)
+# Modell-zuerst-Plan, Stand 8. Oktober 2026 (v1.29.0)
 
 ## Nächster Arbeitsabschnitt
 
@@ -13,15 +13,15 @@ Vor weiteren großen Teileimporten bauen wir die **Gerätemodell-Abdeckung** aus
 | AEG | 100 | 0 | **abgeschlossen v1.27.0** |
 | Samsung | 77 | 23 | 1 |
 | Bosch | 100 | 0 | abgeschlossen v1.28.0 |
-| Miele | 57 | 43 | 3 |
-| Dyson | 54 | 46 | 4 |
-| Hoover | 24 | 76 | 5 |
+| Miele | 82 | 18 | Work #30 integrated |
+| Dyson | 92 | 8 | Work #32 integrated; construction count unresolved |
+| Hoover | 100 | 0 | Work #31 integrated; 72 GB, 1 FR, 3 DE |
 | Vorwerk | 18 | 82 | 6, echte Grundmodelle gesondert prüfen |
 | Rowenta | 272 | 0 | erfüllt |
 | Philips | 140 | 0 | erfüllt |
 | Siemens | 101 | 0 | erfüllt |
 
-**Summe:** 730 von 1.000 gedeckelten Modellplätzen; 270 noch offen. 943 Modellbezeichnungen, 954 konkreten Modelleinträge und 1.940 Katalogartikel. 308 Modelleinträge aktuell ohne gelistete Teile.
+**Summe:** 869 von 1.000 gedeckelten Modellplätzen; 131 noch offen. 1.082 Modellbezeichnungen, 1.093 konkreten Modelleinträge und 1.940 Katalogartikel. 447 Modelleinträge aktuell ohne gelistete Teile.
 
 ## Verbindliche Datenregeln
 
