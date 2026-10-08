@@ -1,0 +1,27 @@
+name: "Temporary Samsung source workspace"
+on:
+  push:
+    branches: ["work/samsung-import-v1-26-9"]
+    paths: ["integrations/samsung-workspace-request.md"]
+permissions:
+  contents: write
+jobs:
+  unpack-source:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Restore checked source and expose files on work branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          python integrations/restore-source-checkpoint.py --target site
+          echo "Available Samsung source modules:"
+          find site/src -type f -iname '*samsung*' -print
+          echo "Source checkpoint prepared."
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f site
+          git commit -m "Temporary source workspace for Samsung catalog v1.26.9"
+          git push origin HEAD:work/samsung-import-v1-26-9
