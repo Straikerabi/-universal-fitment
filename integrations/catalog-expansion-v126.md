@@ -1,10 +1,10 @@
-# Katalogstand v1.26.6
+# Katalogstand v1.26.7
 
 ## Ergebnis
 
-Zehn aktive Marken, 868 verschiedene Modellnamen in 879 konkreten Datensätzen, 1.916 unterschiedliche Artikel. Die neuen Kategorien trennen 1.798 physische Teile/Zubehör-/Verbrauchsartikel von Dokumenten, kompletten Geräten und offenen Einordnungen. 655 von 1.000 gedeckelten Modellplätzen sind belegt; acht Marken erreichen das Ziel von mindestens 100 Teilen.
+Zehn aktive Marken, 868 verschiedene Modellnamen in 879 konkreten Datensätzen, 1.921 unterschiedliche Artikel. Die neuen Kategorien trennen 1.803 physische Teile/Zubehör-/Verbrauchsartikel von Dokumenten, kompletten Geräten und offenen Einordnungen. 655 von 1.000 gedeckelten Modellplätzen sind belegt; acht Marken erreichen das Ziel von mindestens 100 Teilen.
 
-303 neue Herstellerartikel und 88 neue Samsung-/Hoover-Modellreferenzen wurden erfasst. 54 vorher leere Modelllisten erhielten mindestens eine belegte Teilezuordnung. Die Gegenüberstellung der kleinen und der geladenen Kataloge wird automatisch geprüft.
+308 neue Herstellerartikel und 88 neue Samsung-/Hoover-Modellreferenzen wurden erfasst. 56 vorher leere Modelllisten erhielten mindestens eine belegte Teilezuordnung. Die Gegenüberstellung der kleinen und der geladenen Kataloge wird automatisch geprüft.
 
 | Marke | Modelle / 100 | Modelle offen | Teile / 100 | Teile offen | Modelleinträge ohne Teile |
 |---|---:|---:|---:|---:|---:|
@@ -16,7 +16,7 @@ Zehn aktive Marken, 868 verschiedene Modellnamen in 879 konkreten Datensätzen, 
 | Philips | 140 | 0 | 101 | 0 | 84 |
 | Siemens | 101 | 0 | 605 | 0 | 0 |
 | Samsung | 64 | 36 | 27 | 73 | 61 |
-| Hoover | 24 | 76 | 55 | 45 | 24 |
+| Hoover | 24 | 76 | 60 | 40 | 22 |
 | Vorwerk | 18 | 82 | 105 | 0 | 4 |
 
 Das Zählen der Geräte ist von der Artikelzahl unabhängig. Zubehör und Verkaufssets werden nicht als weitere Grundgeräte erfasst. Eine vorhandene Beziehung ist eine quellenbezogene Modellnennung, keine technische Freigabe für jede Produktionsausführung.
@@ -27,13 +27,13 @@ Herstellerartikel werden nach tatsächlicher Artikelkennung erfasst; bei Vorwerk
 
 Rowenta-Zuordnungen übernehmen die sichtbaren Ref.-Zeilen des Artikelkatalogs, inklusive ausdrücklich genannter Produktionsbedingungen. Unsichtbare Zeilen und zusätzliche /xxx-Ausführungen werden nicht ergänzt. Philips-Zuordnungen benötigen ausdrücklich genannte vollständige /xx/R-Codes; Nummernbereiche und Wildcards werden nicht ausgefüllt. Nicht vorhandene Modelle werden nicht aus einem Zubehörnamen erzeugt. Bei Vorwerk wird die eigene Vorsatzkennung zusätzlich angezeigt. Teile eines EB400 werden nicht jedem VK-/VT-/VB-Grundgerät zugeordnet.
 
-Samsung-Modellreferenzen stammen aus deutschen Serviceeinträgen und der deutschen Gerätecode-Tabelle des Herstellers. Drei deutsche Produktseiten nennen für vollständige /WD-Gerätecodes ausdrücklich optionale Zubehörkennungen; nur diese Beziehungen wurden übernommen. Verbrauchsmaterial bleibt zusätzlich an Wischaufsatz oder Clean Station gebunden. Ein archivierter Serviceeintrag belegt kein aktuelles deutsches Verkaufsangebot. Hoover-Modell und achtstelliger Produktcode stammen von deutschen Produktseiten. Hoover-Zubehör ist aus dem britischen Herstellerkatalog übernommen und als Quelle GB gekennzeichnet. Keine deutsche Passung, Spannung, Verfügbarkeit oder Preisangabe wird aus einem britischen Artikel abgeleitet.
+Samsung-Modellreferenzen stammen aus deutschen Serviceeinträgen und der deutschen Gerätecode-Tabelle des Herstellers. Drei deutsche Produktseiten nennen für vollständige /WD-Gerätecodes ausdrücklich optionale Zubehörkennungen; nur diese Beziehungen wurden übernommen. Verbrauchsmaterial bleibt zusätzlich an Wischaufsatz oder Clean Station gebunden. Ein archivierter Serviceeintrag belegt kein aktuelles deutsches Verkaufsangebot. Hoover-Modell und achtstelliger Produktcode stammen von deutschen Produktseiten. Britische Hoover-Artikel bleiben als Quelle GB gekennzeichnet. Konkrete Beziehungen wurden nur ergänzt, wenn die exakte Produktcode-Suche im von Hoover Deutschland verlinkten EU-Service den Artikel auflistet. Die sichtbare italienische Preis-/Ländereinstellung wird nicht als deutscher Preis, Bestand oder deutsches Angebot übernommen.
 
 Die neuen Artikel erhalten keine ungeprüften Live-Preise oder Bestände. Ihre Montagezeit bleibt bei offener Zuordnung unbekannt. Der bestehende geschützte Serververtrag für 167 Miele-Teile bleibt unverändert.
 
 ## Ausgewählte Herstellerquellen
 
-Abrufprüfung am 07.10.2026. Die Quellen können archivierte Inhalte und ältere Shopstände enthalten; die App übernimmt für die neuen Artikel keine aktuellen Kaufpreise.
+Abrufprüfung am 08.10.2026. Die Quellen können archivierte Inhalte und ältere Shopstände enthalten; die App übernimmt für die neuen Artikel keine aktuellen Kaufpreise.
 
 - [Bosch Motorschutzfilter 17002210](https://www.bosch-home.com/de/de/product/17002210)
 - [Bosch Staubbehälterfilter 00754174](https://www.bosch-home.com/de/de/product/00754174)
@@ -50,6 +50,9 @@ Abrufprüfung am 07.10.2026. Die Quellen können archivierte Inhalte und ältere
 - [Hoover HF910H 011 – Produktcode 39401000](https://www.hoover-home.com/de_DE/akkusauger/39401000/hf910h-011/)
 - [Hoover Hersteller-Zubehör GB](https://www.hoover-home.com/en_GB/collections/accessories-consumables)
 - [Hoover Filter U112 – Produktcode 35602893](https://www.hoover-home.com/en_GB/products/35602893-u112-filterkit-hf2)
+- [Hoover HF202P 011 – deutscher Produktcode 39401035](https://www.hoover-home.com/de_DE/akkusauger/39401035/hf202p-011/)
+- [Hoover HF201H 011 – deutscher Produktcode 39401038](https://www.hoover-home.com/de_DE/akkusauger/39401038/hf201h-011/)
+- [Von Hoover Deutschland verlinkter EU-Ersatzteilservice](https://www.premiumservicesforhoover.eu/default.aspx?lang=de)
 
 Weitere Originalquellen sind direkt am jeweiligen Modell und Artikel hinterlegt. Staging-Adressen, Dampferzeugerteile, Saugroboterteile und nicht belegte Modellkombinationen wurden nicht zum Auffüllen des Bestands verwendet.
 
@@ -70,3 +73,4 @@ Das FAQ nennt dynamisch alle zehn Katalogmarken. Veraltete globale Stichtage wur
 ## Öffentliche Roadmap und Feedback in v1.26.5
 
 Eine deutsche und englische Roadmap beschreibt den heutigen Staubsaugerfokus für Deutschland und die langfristige Richtung für weitere Geräte und internationale Märkte. Der Kontaktbereich bereitet sichtbare GitHub-Entwürfe vor und bietet Kopieren; ein echtes Supportpostfach, privater Versand und zentrale App-Nutzungsstatistik bleiben offen. Diese UI- und Kommunikationsänderung verändert die obigen Katalogzahlen nicht.
+

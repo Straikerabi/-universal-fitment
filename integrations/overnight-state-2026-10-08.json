@@ -62,8 +62,8 @@
     {
       "brand": "Hoover",
       "models": 24,
-      "physical_parts": 55,
-      "models_without_parts": 24
+      "physical_parts": 60,
+      "models_without_parts": 22
     },
     {
       "brand": "Vorwerk",
@@ -89,7 +89,7 @@
       "id": "hoover_parts",
       "task": "Hoover-Ersatzteile und Zubehör aus Herstellerquellen ergänzen",
       "budget_minutes": 40,
-      "status": "pending"
+      "status": "partial"
     },
     {
       "id": "samsung_fitment",
@@ -101,7 +101,7 @@
       "id": "hoover_fitment",
       "task": "Hoover-Artikel zu deutschen Modellen und Produktcodes prüfen",
       "budget_minutes": 25,
-      "status": "pending"
+      "status": "partial"
     },
     {
       "id": "miele_models",
@@ -231,11 +231,11 @@
     }
   ],
   "active_run": {
-    "worker": "night-0300-hoover",
+    "worker": "night-0600-hoover-release",
     "stage": "hoover_fitment",
-    "started_at": "2026-10-08T02:57:53+02:00",
-    "base_commit": "2c49bc7f2ff3d9eb15fc89bb2ce4a13fc5666ff4",
-    "note": "Hoover-Primärquellen für konkrete deutsche Modell- und Produktcodes prüfen; GB-Artikel nicht ohne ausdrücklichen Nachweis als DE-Passung zuordnen."
+    "started_at": "2026-10-08T06:00:26+02:00",
+    "base_commit": "c0c6d46991f3c2317bee2b8869997ae6165a9b27",
+    "note": "Veralteten Hoover-Lauf übernommen; zwei belegte HF2-Produktcode-Listen prüfen, paketieren und veröffentlichen."
   },
   "automations": {
     "worker": {
@@ -263,7 +263,9 @@
     "81 Source-Segmente von GitHub mit dem lokalen Inhalt verglichen; Wiederherstellung der 124 Quelldateien SHA-geprüft.",
     "Morgenbericht und sechs begrenzte Nachtfortsetzungen vom Automationswerkzeug als aktiv bestätigt. Tagesüberblick unverändert deaktiviert.",
     "v1.26.6 veröffentlicht: 13 neue Samsung-Artikel; 19 eindeutige Artikel für VS20B75BDR5/WD, VS20C95D2TK/WD und VS20B95C43W/WD zugeordnet. Keine Preise übernommen; Wisch- und Clean-Station-Verbrauchsmaterial behält die zusätzliche Zubehörbedingung.",
-    "Prüfung v1.26.6: 36 App-Testgruppen, Syntax, reproduzierbarer Build, GitHub-CI und Pages-Deployment bestanden. Live geprüft: Versionsanzeige, 27 Samsung-Teile, 61 offene Samsung-Modelle, VS20B75BDR5/WD mit 8 Artikeln und aufklappbaren Gruppen."
+    "Prüfung v1.26.6: 36 App-Testgruppen, Syntax, reproduzierbarer Build, GitHub-CI und Pages-Deployment bestanden. Live geprüft: Versionsanzeige, 27 Samsung-Teile, 61 offene Samsung-Modelle, VS20B75BDR5/WD mit 8 Artikeln und aufklappbaren Gruppen.",
+    "v1.26.7 vorbereitet: fünf zusätzliche Hoover-Teile; HF202P 011 / 39401035 mit 10 und HF201H 011 / 39401038 mit 12 Service-Artikeln. Italienische Servicepreise nicht als deutsche Preise übernommen.",
+    "Prüfung v1.26.7 vor Veröffentlichung: 36 App-Testgruppen, Syntax und reproduzierbare Browserpakete lokal bestanden; frische v1.26.6-Quelle aus 81 Segmenten SHA-geprüft wiederhergestellt."
   ],
   "blocked": [],
   "first_release": {
@@ -300,10 +302,10 @@
     "contact_url": "https://straikerabi.github.io/-universal-fitment/?v=1.26.5#contact"
   },
   "current_totals": {
-    "version": "1.26.6",
-    "articles": 1916,
-    "physical_parts": 1798,
-    "models_without_parts": 252
+    "version": "1.26.7",
+    "articles": 1921,
+    "physical_parts": 1803,
+    "models_without_parts": 250
   },
   "last_run": {
     "worker": "night-0200-samsung",
@@ -338,3 +340,4 @@
   },
   "last_verified_at_utc": "2026-10-08T00:11:44+00:00"
 }
+

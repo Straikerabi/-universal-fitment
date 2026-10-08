@@ -1,4 +1,4 @@
-name: "Deploy v1.26.6 Samsung-Zubehoer und Modellzuordnungen to GitHub Pages"
+name: "Deploy v1.26.7 Verified Hoover HF2 product-code parts and fitment to GitHub Pages"
 
 on:
   push:
@@ -261,6 +261,13 @@ jobs:
           echo "02855e8b1fcb1693328448e76ae1669c19206738e5bd47700cec04d62ee94802  update-v1.26.6.patch" | sha256sum -c -
           patch -p1 -d site < update-v1.26.6.patch
 
+      - name: "Apply v1.26.7 Verified Hoover HF2 product-code parts and fitment"
+        shell: bash
+        run: |
+          cat .demo/v1.26.7-patch/part-* | base64 -d | gzip -d > update-v1.26.7.patch
+          echo "e926f5e85ae5b65fa36c8418a0994e3c01bd04e46f891342d55f2daaa982deeb  update-v1.26.7.patch" | sha256sum -c -
+          patch -p1 -d site < update-v1.26.7.patch
+
       - name: Verify reproducible app bundle
         run: |
           npm ci --prefix integrations/auth-sdk --ignore-scripts
@@ -302,4 +309,5 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
 

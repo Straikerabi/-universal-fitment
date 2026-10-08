@@ -2,6 +2,25 @@
 
 Release notes describe published changes. Plans live in the [German](ROADMAP.md) and [English](ROADMAP.en.md) roadmaps.
 
+## v1.26.7 — 8. Oktober 2026
+
+### Neu / new
+
+- **DE:** Fünf weitere Hoover-Ersatzteile aus der exakten Produktcode-Suche des von Hoover Deutschland verlinkten EU-Ersatzteilservices; insgesamt 60 katalogisierte Hoover-Teile.
+- **EN:** Five additional Hoover spare parts from the exact product-code search provided by the EU spare-parts service linked by Hoover Germany; 60 catalogued Hoover parts in total.
+- **DE:** HF202P 011 (39401035) zeigt 10 und HF201H 011 (39401038) 12 konkret gelistete Artikel in aufklappbaren Teilegruppen.
+- **EN:** HF202P 011 (39401035) now shows 10 and HF201H 011 (39401038) 12 specifically listed items in expandable part groups.
+
+### Verbessert / improved
+
+- **DE:** Britische Artikelstammdaten und die EU-Service-Zuordnung bleiben getrennt nachvollziehbar. Die im Service sichtbare italienische Preis-/Ländereinstellung wird nicht als deutscher Preis, Bestand oder deutsches Angebot übernommen.
+- **EN:** British item records and EU service fitment evidence remain separately traceable. The Italian price/country setting visible in the service is not treated as a German price, stock status or offer.
+
+### Geprüft / checked
+
+- **DE:** 36 App-Testgruppen, Syntaxprüfung und bytegenau reproduzierbare Haupt- und optionale Browserpakete wurden lokal bestanden. Veröffentlichung und Live-Prüfung folgen separat.
+- **EN:** 36 app test groups, syntax checks and byte-for-byte reproducible main and optional browser bundles passed locally. Publication and live verification follow separately.
+
 ## v1.26.6 — 8. Oktober 2026
 
 ### Neu / new
@@ -73,3 +92,4 @@ Release notes describe published changes. Plans live in the [German](ROADMAP.md)
 
 - **DE:** Teilelisten sind noch nicht bei allen Modellen vollständig. Samsung- und Hoover-Zuordnungen sowie belegte neue Modelle haben Priorität. Erfasste Preise sind keine Live-Preise.
 - **EN:** Parts lists are still incomplete for some models. Samsung and Hoover fitment and documented additional models are priorities. Recorded prices are not live quotes.
+

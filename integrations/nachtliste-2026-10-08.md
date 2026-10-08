@@ -8,9 +8,9 @@ Abi hat den eigenständigen Ausbau des bestehenden Staubsaugerprojekts bis zum k
 |---|---|---:|---|
 | 1 | Bestand, Dubletten und offene Modell-Teilelisten prüfen | 15 Min. | Erledigt / erster Release |
 | 2 | Samsung-Ersatzteile und Zubehör aus Herstellerquellen ergänzen | 45 Min. | Teilstand v1.26.6 |
-| 3 | Hoover-Ersatzteile und Zubehör aus Herstellerquellen ergänzen | 40 Min. | Geplant |
+| 3 | Hoover-Ersatzteile und Zubehör aus Herstellerquellen ergänzen | 40 Min. | Teilstand v1.26.7 |
 | 4 | Samsung-Artikel zu vollständig genannten Modellcodes zuordnen | 25 Min. | 3 Modelle / v1.26.6 |
-| 5 | Hoover-Artikel zu deutschen Modellen und Produktcodes prüfen | 25 Min. | Geplant |
+| 5 | Hoover-Artikel zu deutschen Modellen und Produktcodes prüfen | 25 Min. | 2 Modelle / v1.26.7 |
 | 6 | Weitere echte Miele-Modellreferenzen recherchieren und erfassen | 20 Min. | Geplant |
 | 7 | Weitere echte Bosch-Modellreferenzen recherchieren und erfassen | 20 Min. | Geplant |
 | 8 | Weitere echte Dyson-Modellreferenzen recherchieren und erfassen | 20 Min. | Geplant |
@@ -77,7 +77,7 @@ Nur belegte Hersteller- oder klar benannte Anbieterquellen verwenden. Ein Modell
 
 Samsung hat noch keine konkret zugeordneten Modellteile. Unter `integrations/samsung-research-leads-2026-10-08.json` sind drei neu geöffnete deutsche Produktseiten mit vollständigen /WD-Gerätecodes und explizit genanntem optionalem Zubehör vorgemerkt. Die passenden Modelle sind bereits im Katalog. Herstellerartikel, die nur mit einer verkürzten Familienkennung genannt sind, werden nicht stillschweigend einer vorhandenen vollständigen Länderkennung gleichgesetzt. Akku-plus-Ladegerät als Lieferumfang kennzeichnen; Clean-Station-Beutel und Wischaufsatz-Verbrauchsmaterial benötigen den jeweils vorhandenen Zubehörtyp. Die Quelle zum Akku VCA-SAPB95/WA enthält Template-Platzhalter und generische Beispielpreise: daraus keinen Preis übernehmen.
 
-Hoover hat 55 Herstellerartikel aus GB, bisher ohne deutsche Zuordnung. Britische Angaben belegen weder deutsche Passung noch deutsche Preise oder Bestände. Der Quellenmarkt bleibt sichtbar. Vorwerk-Vorsätze bleiben vom Grundgerät getrennt. Dokumente, komplette Geräte und offene Klassifikationen füllen das physische Teileziel nicht. Gleiche Teileart behält über alle Marken Farbe und SVG-Symbol.
+Hoover hat 60 Herstellerartikel. 55 Artikelstammsätze stammen aus GB; dieser Quellenmarkt bleibt sichtbar. Für HF202P 011 / 39401035 und HF201H 011 / 39401038 sind 10 beziehungsweise 12 Artikel über die exakte Produktcode-Suche des von Hoover Deutschland verlinkten EU-Services belegt. Die sichtbare italienische Preis-/Ländereinstellung wird nicht als deutsches Angebot übernommen. Britische Angaben allein belegen weiterhin weder deutsche Passung noch deutsche Preise oder Bestände. Vorwerk-Vorsätze bleiben vom Grundgerät getrennt. Dokumente, komplette Geräte und offene Klassifikationen füllen das physische Teileziel nicht. Gleiche Teileart behält über alle Marken Farbe und SVG-Symbol.
 
 Preise werden nur mit tatsächlicher Quelle, Währung, Preisbasis, Steuer-/Marktangabe und Datum erfasst. Keine unbekannten Werte als null Euro behandeln. Quellenpreise bleiben von Live-Angeboten getrennt; Warenkorb-, Nachbau-, Händler- und Ausführungsprüfungen erhalten. Kein behaupteter vollautomatischer Checkout, keine erfundenen Bewertungen und keine Zusagen über aktuelle Bestände.
 
@@ -86,3 +86,4 @@ Keine Auth-, Supabase-, Rollen-, Sicherheits- oder Zahlungsänderungen in diesem
 ## Erster geprüfter Nachtstand
 
 v1.26.4 und v1.26.5 wurden mit jeweils erfolgreichem Build und Deployment veröffentlicht. v1.26.5: 36 Testgruppen, Syntax, reproduzierbarer Build, sichtbarer GitHub-Entwurf, Pflichtfeld und Verwerfen alter Vorschauen geprüft. Die deutsche und englische Roadmap sind öffentlich gerendert. 81 aktuelle Source-Segmente wurden von GitHub zurückgelesen und verglichen; 124 Quelldateien lassen sich SHA-geprüft wiederherstellen. In v1.26.6 wurden 13 zusätzliche Samsung-Artikel und 19 eindeutige Artikelzuordnungen für drei vollständige /WD-Gerätecodes vorbereitet und lokal vollständig geprüft. Nächste Datenpriorität nach der Veröffentlichung: Hoover und weitere Teilelücken.
+
