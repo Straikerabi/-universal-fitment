@@ -26,5 +26,12 @@
   "limitations": [
     "Actual 11-digit AEG PNC needed for spare-part technical fitment",
     "Model page validates the device, not its full original spare parts list"
-  ]
+  ],
+  "verified_release": {
+    "commit": "9f1a0d6839f0313eecf586bff3de3cda7656f598",
+    "github_actions_run": 37754071931,
+    "build_and_test": "success",
+    "pages_deployment": "success",
+    "browser_visual_review": "not_performed"
+  }
 }

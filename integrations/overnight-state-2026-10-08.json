@@ -31,9 +31,9 @@
     },
     {
       "brand": "AEG",
-      "models": 78,
+      "models": 100,
       "physical_parts": 351,
-      "models_without_parts": 0
+      "models_without_parts": 22
     },
     {
       "brand": "Rowenta",
@@ -264,7 +264,8 @@
     "Wiederherstellbare v1.26.7-Quellsicherung erstellt: 81 Segmente, 125 Quelldateien, SHA-256 23cb25544f1030937bb4577a20d4536d7a3f16f2907ebce6acec59a0486cf408.",
     "v1.26.9 und v1.26.10 im GitHub-Pages-Hauptbranch veröffentlicht. Vier weitere Samsung-Modelle wurden in v1.26.10 mit insgesamt 35 herstellerseitig gelisteten optionalen Zubehörbeziehungen verknüpft. Es kamen keine neuen Artikel hinzu. 36 App-Testgruppen und Pages-Deployment erfolgreich.",
     "v1.26.11 Samsung-Zubehör veröffentlicht: vier bestehende /WD-/WA-Geräte mit 36 ausdrücklichen optionalen Herstellernennungen; VCA-SABA95 als eigenständige Bürste hinzugefügt. Vollständige GitHub-Actions-Prüfung und Pages-Deployment 37747978056 erfolgreich.",
-    "v1.26.12 Samsung-Jet-AI-Release: zwei Modelle erstmals mit Zubehörlisten und ein neues konkretes Modell inkl. sechs Originalzubehörnennungen; eine neue Slim LED+ Bürste VCA-SABC97/GL. Alle App-/Serverchecks und GitHub Pages erfolgreich: Lauf 37749919586."
+    "v1.26.12 Samsung-Jet-AI-Release: zwei Modelle erstmals mit Zubehörlisten und ein neues konkretes Modell inkl. sechs Originalzubehörnennungen; eine neue Slim LED+ Bürste VCA-SABC97/GL. Alle App-/Serverchecks und GitHub Pages erfolgreich: Lauf 37749919586.",
+    "v1.27.0: AEG von 78 auf 100 echte Hersteller-Modellreferenzen erweitert (22 neu), 22 Geräte vorerst ohne gerätespezifische Ersatzteilliste. 6 Produktseiten nur mit neunstelliger PNC, nicht künstlich auf 11 Stellen verlängert. Vollständige App-Tests und Pages-Deployment 37754071931 erfolgreich."
   ],
   "blocked": [],
   "first_release": {
@@ -301,13 +302,13 @@
     "contact_url": "https://straikerabi.github.io/-universal-fitment/?v=1.26.5#contact"
   },
   "current_totals": {
-    "version": "1.26.12",
-    "model_names": 871,
-    "model_records": 882,
+    "version": "1.27.0",
+    "model_names": 893,
+    "model_records": 904,
     "articles": 1930,
     "physical_parts": 1812,
-    "models_without_parts": 236,
-    "target_slots": 658
+    "models_without_parts": 258,
+    "target_slots": 680
   },
   "last_run": {
     "worker": "night-0600-hoover-release",
@@ -368,13 +369,12 @@
   },
   "last_verified_at_utc": "2026-10-08T04:14:04+00:00",
   "last_verified_chat_release": {
-    "version": "1.26.12",
-    "commit": "d409853879acfc49a35631181636bf14761571a7",
-    "run_id": 37749919586,
+    "version": "1.27.0",
+    "commit": "9f1a0d6839f0313eecf586bff3de3cda7656f598",
+    "run_id": 37754071931,
     "build": "success",
     "deploy": "success",
-    "extra_model_article_relationships": 14,
-    "unique_new_parts": 1,
-    "new_models": 1
+    "extra_model_references": 22,
+    "new_parts": 0
   }
 }
