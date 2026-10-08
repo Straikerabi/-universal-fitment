@@ -28,7 +28,11 @@
   "business": {
     "gewerbe_registration_confirmed": false,
     "mode": "affiliate-referral-only",
-    "own_checkout_enabled": false
+    "own_checkout_enabled": false,
+    "employment_side_activity_checked": false,
+    "employment_approval_if_needed_resolved": false,
+    "cross_border_affiliate_tax_reviewed": false,
+    "bookkeeping_ready": false
   },
   "hosting": {
     "production_domain": "",
