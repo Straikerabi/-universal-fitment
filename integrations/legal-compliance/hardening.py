@@ -24,7 +24,7 @@ STYLE = '''<!-- UF LEGAL PREVIEW STYLE -->
 '''
 NOTICE = '''<!-- UF LEGAL PREVIEW START -->
 <footer class="uf-legal-notice" aria-label="Projekt- und Rechtshinweise">
-  <strong>Produktrecherche / Prototyp:</strong> Keine Bestellung oder Zahlung auf dieser Website. Preise, Verfügbarkeit und Passung bitte beim jeweiligen Anbieter und anhand der vollständigen Gerätekennung prüfen. Keine offizielle Verbindung zu den genannten Herstellern.
+  <strong>Produktrecherche / Prototyp:</strong> Keine Bestellung oder Zahlung auf dieser Website. Preise, Verfügbarkeit und Passung bitte beim jeweiligen Anbieter und anhand der vollständigen Gerätekennung prüfen. Keine offizielle Verbindung zu den genannten Herstellern. Die Pilot-Anmeldung ist auf GitHub Pages deaktiviert.
   <a href="./projekt-hinweise.html">Projekt- und Rechtshinweise</a>
 </footer>
 <!-- UF LEGAL PREVIEW END -->'''
@@ -90,9 +90,24 @@ def apply(site: Path) -> dict:
     details=site/NOTICE_FILE
     if details.exists() and details.read_text(encoding='utf-8')!=DETAILS:
         raise ValueError('Existing notices page differs; refusing replacement')
+    # Prevent email/password submission in the GitHub Pages preview.
+    # The commercial release must move to an appropriate host with real notices.
+    pilot_path=site/'src/core/pilot-client.js'
+    pilot_before=pilot_path.read_text(encoding='utf-8') if pilot_path.is_file() else None
+    pilot_after=pilot_before
+    guard_marker='UF_GITHUB_PAGES_LOGIN_DISABLED'
+    needle='const signed=await auth.signInWithPassword({email,password});'
+    if pilot_before is not None and guard_marker not in pilot_before:
+        if pilot_before.count(needle)!=1:
+            raise ValueError('Pilot login shape changed; refusing partial modifications')
+        replacement=("// UF_GITHUB_PAGES_LOGIN_DISABLED: no passwords in Pages preview.\\n"
+                     "          if(typeof window!=='undefined' && window.location.hostname.toLowerCase().endsWith('.github.io'))return {status:'access_required'};\\n"
+                     "          "+needle)
+        pilot_after=pilot_before.replace(needle,replacement,1)
     if new != original: index.write_text(new,encoding='utf-8')
+    if pilot_after is not None and pilot_after != pilot_before: pilot_path.write_text(pilot_after,encoding='utf-8')
     if not details.exists(): details.write_text(DETAILS,encoding='utf-8')
-    return {'modified_index':new!=original,'legal_disclosure_present':details.is_file()}
+    return {'modified_index':new!=original,'login_guard_added':pilot_after is not None and pilot_after!=pilot_before,'legal_disclosure_present':details.is_file()}
 
 def release_check(site: Path) -> dict:
     # Deliberate fail-closed release gate, independent of preview notices.
