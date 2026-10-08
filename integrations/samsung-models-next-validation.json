@@ -1,0 +1,227 @@
+{
+  "issue": 13,
+  "branch": "work/model-samsung-next",
+  "sourceCommit": "6545d9affb6b3c6c04b8d585084f2094a09e77b1",
+  "sourceVersion": "1.27.1",
+  "validationDate": "2026-10-08",
+  "runtime": {
+    "node": "24.19.0",
+    "esbuild": "0.25.12"
+  },
+  "result": {
+    "samsungModelsBefore": 69,
+    "samsungModelsAfter": 77,
+    "addedBaseDevices": 8,
+    "exactNewModelReferences": 9,
+    "samsungArticles": 36,
+    "samsungModelsWithParts": 20,
+    "samsungModelsWithoutParts": 57,
+    "addedArticles": 0,
+    "addedFitment": 0,
+    "addedPrices": 0,
+    "catalogModelNames": 903,
+    "catalogModelRecords": 914,
+    "catalogArticles": 1930,
+    "catalogPhysicalArticles": 1812,
+    "occupiedTargetSlots": 690,
+    "catalogRecordsWithoutParts": 268,
+    "remainingSamsungTargetSlots": 23
+  },
+  "checks": {
+    "checksumRestore": {
+      "passed": true,
+      "sourceArchiveSha256": "656b9a487bdc5c13646de10b97b0a6793c49e6110b668e9b836c8fe338acff21"
+    },
+    "newIntegrationTests": {
+      "command": "node --test integrations/samsung-models-next.test.mjs",
+      "passed": 9,
+      "failed": 0,
+      "log": [
+        "✔ fresh checksum restore imports eight independent groups and nine exact references (4.871944ms)",
+        "✔ all ten brands, stable IDs, lazy hydration and exact variant binding (0.841229ms)",
+        "✔ all existing devices, articles, offers and fitment remain byte-semantically unchanged (3.317349ms)",
+        "✔ second import and check-only run are byte-stable (104.8375ms)",
+        "✔ rejects fabricated/unqualified variants and unsupported device types before writing (47.117142ms)",
+        "✔ rejects insecure, foreign, credentialed or code-mismatched source links (46.070327ms)",
+        "✔ detects drift, partial imports and invented offers instead of overwriting them (104.867289ms)",
+        "✔ only six documented local preparation files change; version and archives stay untouched (984.830288ms)",
+        "✔ CLI supports explicit target and check without changing the prepared copy (193.769289ms)",
+        "ℹ tests 9",
+        "ℹ suites 0",
+        "ℹ pass 9",
+        "ℹ fail 0",
+        "ℹ cancelled 0",
+        "ℹ skipped 0",
+        "ℹ todo 0",
+        "ℹ duration_ms 7539.467518"
+      ]
+    },
+    "baselineAppTests": {
+      "command": "npm --prefix site test",
+      "passedGroups": 36,
+      "passed": true
+    },
+    "preparedAppTests": {
+      "command": "npm --prefix site test",
+      "passedGroups": 36,
+      "passed": true,
+      "testFiles": [
+        "tests/core.test.mjs",
+        "tests/data.test.mjs",
+        "tests/static.test.mjs",
+        "tests/resolver.test.mjs",
+        "tests/jobs.test.mjs",
+        "tests/identifier.test.mjs",
+        "tests/v16.test.mjs",
+        "tests/miele-pilot.test.mjs",
+        "tests/miele-models.test.mjs",
+        "tests/miele-parts.test.mjs",
+        "tests/commerce.test.mjs",
+        "tests/marketplaces.test.mjs",
+        "tests/handoff.test.mjs",
+        "tests/pilot-client.test.mjs",
+        "tests/local-data.test.mjs",
+        "tests/backup.test.mjs",
+        "tests/scanner-lifecycle.test.mjs",
+        "tests/offline.test.mjs",
+        "tests/pilot-readiness.test.mjs",
+        "tests/scanner-ocr.test.mjs",
+        "tests/typeplate.test.mjs",
+        "tests/identity-boundaries.test.mjs",
+        "tests/device-comparison.test.mjs",
+        "tests/bosch-catalog.test.mjs",
+        "tests/bosch-boundaries.test.mjs",
+        "tests/bosch-workflow.test.mjs",
+        "tests/services.test.mjs",
+        "tests/photo-policy.test.mjs",
+        "tests/catalog-expansion.test.mjs",
+        "tests/catalog-goal.test.mjs",
+        "tests/catalog-seven-brands.test.mjs",
+        "tests/rowenta-expansion.test.mjs",
+        "tests/philips-expansion.test.mjs",
+        "tests/vorwerk-expansion.test.mjs",
+        "tests/part-taxonomy.test.mjs",
+        "tests/catalog-v126.test.mjs"
+      ],
+      "log": [
+        "All core tests passed.",
+        "All demo data invariants passed.",
+        "All static/PWA checks passed.",
+        "All resolver checks passed.",
+        "All job-kit / smart-stock checks passed.",
+        "All identifier-classification checks passed.",
+        "All current feature checks passed.",
+        "All Miele pilot checks passed.",
+        "Miele model checks passed: 57 models, 62 variants, exact identifier matching, compatible parts, filter combinations and OCR.",
+        "Miele spare-parts checks passed: 167 unique parts, 109 vacuum spares, 10 supplier-linked alternatives, restricted fitment and honest installation coverage.",
+        "Commerce checks passed: own-part sources, gross/currency/quantity handling, basket shipping thresholds, price age, unavailable parts and active installation estimates.",
+        "Marketplace checks passed: 167 part searches, condition semantics, device boundaries, open-price cart notes, distinct sellers, mock isolation, price age, API failures and deadlines.",
+        "Handoff checks passed: exact part links, search/reference distinction, quantities and copied list, separate merchants, source-price age, open totals, safe URLs and no cart transfer/payment/order side effects.",
+        "Pilot client checks passed: guest gate, verified login, JWT request, API gates, listing validation, logout race and no auth caching. Synthetic requests only.",
+        "Local-data checks passed: malformed records, memory fallback, bounded quantities, preferences, quote age/variant checks and flexible part-number search.",
+        "Backup checks passed: schema round trip, exact device/part boundaries, canonical search links, forged/open/stale prices, schema 2 compatibility and no account credentials.",
+        "Scanner lifecycle checks passed: playback failure, repeated stop, cancelled pending detection and bitmap cleanup. No camera or network used.",
+        "Offline checks passed: versioned entry/CSS cached, old caches removed, offline navigation and Auth/API exclusion. Simulated network only.",
+        "Pilot-readiness checks passed: guest health, typed access gates, expiry/logout, late-login SDK cleanup, unsupported responses and non-personal diagnostic report. Synthetic Auth only.",
+        "Scanner/OCR cancellation, late worker cleanup, recognition failure and engine-download retry checks passed. Synthetic mocks only; no camera or network used.",
+        "Type-plate checks passed: all 62 device variants, shared types, family fallback, foreign brands, serial exclusion, contradictory identifiers, part-only codes and bounded OCR text. Synthetic fixtures only.",
+        "Identity boundary checks passed: typed lookup input, exact returned barcode, malformed responses, cancellation without fallbacks, bounded request/body and explanatory search labels. No external request made.",
+        "Device comparison checks passed: all catalog variants, 2–4 distinct concrete devices, source facts, differences and explicit missing values; no inferred compatibility or price.",
+        "Bosch catalog checks passed: 60 source-linked model references, 101 unique original articles, 2 narrow Swirl sources, manufacturer-list relationships, brand filters and explicit open indices.",
+        "Bosch boundary checks passed: /xx parsing, all model references, brand conflicts, FD/serial exclusion, every captured part code, tiered shipping and unresolved cart/backup handoff.",
+        "Bosch workflow checks passed: all 60 reviewed indices, brand confirmation, conflicts, immediate invalidation, device-route isolation, discard/reload, part-copy membership, unchanged cart gate and brand-scoped filter choices.",
+        "Service checks passed: all catalog devices, brand/category boundaries, local search, rental scope and optional pack.",
+        "Photo checks passed: default list, detail, explicit loading, invalid preference and shared parts policy.",
+        "Catalog expansion checks passed: 160 new references, 545 source articles, maker/category boundaries, PNC/SKU checks, lazy retry, stable backup objects and open fitment.",
+        "Catalog goal checks passed: 272 grouped Rowenta references, 24 device price snapshots, all three budgets, variant review, source/cart boundaries, and ten-brand target gaps.",
+        "Catalog brand checks passed: 140 Philips / 101 Siemens references, 814 named original articles, full-index boundaries, manuals/drawings, device budgets, unknown-stock price gates and stable handoff/backup.",
+        "Rowenta expansion passed: country-reference fitment boundaries, article coverage, reference prices, separate seller shipping, readable external manuals, internal motor guidance and unpriced shop handoff.",
+        "Philips expansion passed: all ten catalog brands, explicit /xx/R boundaries, separate battery series, actual recall model/code scope, five unknown-stock source prices, external illustrated filter care, stable backup and honest maker-list handoff.",
+        "Vorwerk passed: 18 actual main devices, 105 manufacturer designations, 12 direct manuals, lazy/offline-ready hydration, separate accessory types, serial/brand boundaries, source-only prices, backup and shopping list. Ten brands retain 1,921 distinct articles.",
+        "Part taxonomy passed: shared brand colors, purpose filters, named component boundaries, documents/devices excluded from the physical-part goal.",
+        "Catalog 1.26 passed: ten active brands, eight physical-part targets, exact gaps before/after hydration, preserved article identities, accessory-only scope and Samsung/Hoover identity boundaries."
+      ],
+      "logNote": "Some legacy console summaries retain historical counts; runtime counts above are independently asserted in the new integration tests."
+    },
+    "syntax": {
+      "command": "npm --prefix site run check; node --check integrations/import-samsung-models-next.mjs; node --check integrations/samsung-models-next.test.mjs; python3 -m py_compile integrations/check-samsung-sources-next.py",
+      "passed": true
+    },
+    "reproducibleBuild": {
+      "command": "node integrations/build-app.mjs --check",
+      "passed": true,
+      "log": [
+        "App 1.27.1: 1601311 bytes; reproducible artifact verified.",
+        "Optional services: 3331 bytes; loaded on demand.",
+        "Optional dyson catalog: 260570 bytes; loaded on demand.",
+        "Optional aeg catalog: 725910 bytes; loaded on demand.",
+        "Optional rowenta catalog: 502458 bytes; loaded on demand.",
+        "Optional philips catalog: 352773 bytes; loaded on demand.",
+        "Optional siemens catalog: 1234312 bytes; loaded on demand.",
+        "Optional vorwerk catalog: 108090 bytes; loaded on demand.",
+        "Optional samsung catalog: 175773 bytes; loaded on demand.",
+        "Optional hoover catalog: 53707 bytes; loaded on demand."
+      ]
+    },
+    "manufacturerEvidence": {
+      "reviewedUrls": 57,
+      "supportCandidates": 56,
+      "initialHttpChecksPassed": 57,
+      "importedSourceRecheck": {
+        "command": "python3 integrations/check-samsung-sources-next.py --output /tmp/samsung-source-check.json",
+        "checkedAt": "2026-10-08T10:48:12.087601+00:00",
+        "sources": 10,
+        "passed": 10
+      }
+    },
+    "importRepeatAndCheck": {
+      "command": "node integrations/import-samsung-models-next.mjs --target site --check",
+      "passed": true
+    },
+    "existingDataPreserved": {
+      "passed": true,
+      "checks": [
+        "69 Samsung detail/index rows unchanged",
+        "all existing hydrated device hashes unchanged",
+        "all 1930 article/offer/fitment records unchanged",
+        "all ten brands retained",
+        "other brands coverage unchanged"
+      ]
+    },
+    "branchBoundaryAudit": {
+      "passed": true,
+      "result": {
+        "branch": "work/model-samsung-next",
+        "managed": true,
+        "status": "pass",
+        "files_checked": 6,
+        "blocked": [],
+        "review": [],
+        "invalid_records": 0
+      },
+      "trustedGuardCommit": "b8752146109a583dd1f7e29e01466b13424bf99d",
+      "currentMainSourceCheckpointUnchanged": true
+    }
+  },
+  "compiledLocalSamsungPack": {
+    "bytes": 175773,
+    "sha256": "03d7d9453c4940ac646b29aa36bdaa08ac347997d843a47b6bbd7fb7a8ac24af",
+    "committed": false
+  },
+  "notPerformed": [
+    "physical fitment",
+    "current dealer prices/stock/delivery",
+    "visual browser QA",
+    "merge to main",
+    "release packaging",
+    "deployment"
+  ],
+  "limitations": [
+    "Weitere unabhängige Samsung-DE-Grundgeräte bis zum Ziel 100 sind nicht nachgewiesen.",
+    "Historische Seriennachbarn und regionale Ausführungen brauchen eine technische oder deutsche Markt-Abgrenzung.",
+    "SC4041 und VC-7413V haben im geprüften Serviceabruf keine direkt hinterlegte deutsche Anleitung.",
+    "Der bestehende Katalog wird nicht rückwirkend zusammengelegt oder umklassifiziert; seine 69 Basisdatensätze bleiben exakt erhalten.",
+    "Teilelisten, Artikelquellen und technische Passung der acht neuen Modellgruppen sind offen."
+  ],
+  "integrationReview": "Only Samsung-owned preparation files are committed. Six generated local site files are documented in samsung-models-next.md; shared parser/count assertions require coordinator review when combining Bosch or UX Work."
+}

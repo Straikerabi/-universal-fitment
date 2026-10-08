@@ -7,8 +7,8 @@ Vor weiteren großen Teileimporten bauen wir die **Gerätemodell-Abdeckung** aus
 | Marke | Verschiedene Modelle | Zielplätze offen | Reihenfolge |
 |---|---:|---:|---:|
 | AEG | 100 | 0 | **abgeschlossen v1.27.0** |
-| Samsung | 69 | 31 | 1 |
-| Bosch | 60 | 40 | 2 |
+| Samsung | 77 | 23 | 1 |
+| Bosch | 100 | 0 | abgeschlossen v1.28.0 |
 | Miele | 57 | 43 | 3 |
 | Dyson | 54 | 46 | 4 |
 | Hoover | 24 | 76 | 5 |
@@ -17,7 +17,7 @@ Vor weiteren großen Teileimporten bauen wir die **Gerätemodell-Abdeckung** aus
 | Philips | 140 | 0 | erfüllt |
 | Siemens | 101 | 0 | erfüllt |
 
-**Summe:** 682 von 1.000 gedeckelten Modellplätzen; 318 noch offen. 895 Modellbezeichnungen, 906 konkreten Modelleinträge und 1.930 Katalogartikel. 260 Modelleinträge aktuell ohne gelistete Teile.
+**Summe:** 730 von 1.000 gedeckelten Modellplätzen; 270 noch offen. 943 Modellbezeichnungen, 954 konkreten Modelleinträge und 1.930 Katalogartikel. 308 Modelleinträge aktuell ohne gelistete Teile.
 
 ## Verbindliche Datenregeln
 

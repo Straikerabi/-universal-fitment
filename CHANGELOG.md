@@ -1,5 +1,14 @@
 # Universal Fitment — Patchnotes / patch notes
 
+## v1.28.0 — 8. Oktober 2026
+
+- **DE:** Samsung +8 Hersteller-belegte, eindeutig abgegrenzte Grundmodelle (69 → 77). Zwei ausdrücklich baugleiche Ultra-Farbvarianten zählen zusammen als ein Gerät, kein künstlicher Modellplatz.
+- **DE:** Bosch +40 Original-Grundmodelle (60 → 100). Vollständige E-Nr.-Indizes nur, wenn im Hersteller-Service belegt; sechs neue Modelle bleiben in dieser Recherche ohne nachgewiesene vollständige Serviceausführung.
+- **DE:** Mobile Geräteansicht überarbeitet: aufklappbare Filter-/Bürsten-/Akkugruppen, lokale Sortierung, Gesamtfilter, Preisgrenzen, klare nicht verfügbare Preise und Lade-/Leerzustände; bestehende persönliche Daten und Offlinenutzung werden beibehalten.
+- **DE:** 943 unterschiedliche Modellnamen, 954 Modelleinträge, 730/1.000 Modellzielplätze. **1.930 Artikel / 1.812 physische** unverändert, keine erfundene technische Teilepassung.
+- **EN:** Released three independently prepared Work streams, model-first Samsung/Bosch coverage and responsive vacuum detail UX with reproducible combined CI checks.
+
+
 ## v1.27.1 — 8. Oktober 2026
 
 - **DE:** Zwei konkrete Samsung-Staubsauger mit nachgewiesener deutscher /WD-Modellkennung ergänzt: VS70H28HEK und VS80F28EFP. Samsung erreicht 69 unterschiedliche Modelle, 49 aktuell ohne erfasste Teile.

@@ -1,0 +1,2591 @@
+{
+  "schemaVersion": 1,
+  "brand": "Samsung",
+  "issue": "https://github.com/Straikerabi/-universal-fitment/issues/13",
+  "branch": "work/model-samsung-next",
+  "checkedAt": "2026-10-08",
+  "status": "source_verified_model_only_preparation",
+  "baseline": {
+    "version": "1.27.1",
+    "commit": "6545d9affb6b3c6c04b8d585084f2094a09e77b1",
+    "modelCount": 69,
+    "partCount": 36,
+    "modelsWithoutParts": 49,
+    "modelRowsSha256": "264dd6e5894298e698cfc966e8d15faaf37226df5b0c2dbce8e414b03c5367ab",
+    "partsSha256": "6ded5508982b59ffecb5a477c53f8fcea3d903de7583e0a9e75478a337d3f378",
+    "indexRowsSha256": "4e5e5238584d0e2334f5ecb907df9473e52f52f0124d8ffcc8ecb93bb8dc4473",
+    "models": [
+      {
+        "code": "VCC8460H3B",
+        "deviceReferences": [
+          "VCC8460H3B/XEG"
+        ],
+        "series": "Bodenstaubsauger"
+      },
+      {
+        "code": "VCC7253H3S",
+        "deviceReferences": [
+          "VCC7253H3S/XEG"
+        ],
+        "series": "Bodenstaubsauger"
+      },
+      {
+        "code": "VCC8450H3R",
+        "deviceReferences": [
+          "VCC8450H3R/XEG"
+        ],
+        "series": "Bodenstaubsauger"
+      },
+      {
+        "code": "VCC7293H3R",
+        "deviceReferences": [
+          "VCC7293H3R/XEG"
+        ],
+        "series": "Bodenstaubsauger"
+      },
+      {
+        "code": "VCC8580H3S",
+        "deviceReferences": [
+          "VCC8580H3S/XEG"
+        ],
+        "series": "Bodenstaubsauger"
+      },
+      {
+        "code": "VCC63G0H3K",
+        "deviceReferences": [
+          "VCC63G0H3K/XEG"
+        ],
+        "series": "Bodenstaubsauger"
+      },
+      {
+        "code": "VCC4350V34",
+        "deviceReferences": [
+          "VCC4350V34/XEG"
+        ],
+        "series": "Bodenstaubsauger"
+      },
+      {
+        "code": "VCC63J0H36",
+        "deviceReferences": [
+          "VCC63J0H36/XEG"
+        ],
+        "series": "Bodenstaubsauger"
+      },
+      {
+        "code": "VS15A6031R4",
+        "deviceReferences": [
+          "VS15A6031R4/SW"
+        ],
+        "series": "Jet"
+      },
+      {
+        "code": "VS15A6031R1",
+        "deviceReferences": [
+          "VS15A6031R1/EF",
+          "VS15A6031R1/EG"
+        ],
+        "series": "Jet"
+      },
+      {
+        "code": "VS15A60AGR5",
+        "deviceReferences": [
+          "VS15A60AGR5/WA"
+        ],
+        "series": "Jet"
+      },
+      {
+        "code": "VS20B75BGR4",
+        "deviceReferences": [
+          "VS20B75BGR4/WD"
+        ],
+        "series": "Jet"
+      },
+      {
+        "code": "VS20B75AER4",
+        "deviceReferences": [
+          "VS20B75AER4/WA"
+        ],
+        "series": "Jet"
+      },
+      {
+        "code": "VS15T7033R4",
+        "deviceReferences": [
+          "VS15T7033R4/SW"
+        ],
+        "series": "Jet"
+      },
+      {
+        "code": "VS20A95823W",
+        "deviceReferences": [
+          "VS20A95823W/GE",
+          "VS20A95823W/WA"
+        ],
+        "series": "Jet"
+      },
+      {
+        "code": "VS15A6032R7",
+        "deviceReferences": [
+          "VS15A6032R7/EG"
+        ],
+        "series": "Jet"
+      },
+      {
+        "code": "VS20T7534T4",
+        "deviceReferences": [
+          "VS20T7534T4/GE"
+        ],
+        "series": "Jet"
+      },
+      {
+        "code": "VS15T7031R1",
+        "deviceReferences": [
+          "VS15T7031R1/ET"
+        ],
+        "series": "Jet"
+      },
+      {
+        "code": "VS20C8522TN",
+        "deviceReferences": [
+          "VS20C8522TN/GE"
+        ],
+        "series": "Jet"
+      },
+      {
+        "code": "VC07M31B0HN",
+        "deviceReferences": [
+          "VC07M31B0HN/GE"
+        ],
+        "series": "Bodenstaubsauger"
+      },
+      {
+        "code": "VC07M2110SB",
+        "deviceReferences": [
+          "VC07M2110SB/GE"
+        ],
+        "series": "Bodenstaubsauger"
+      },
+      {
+        "code": "VC15F60JUVB",
+        "deviceReferences": [
+          "VC15F60JUVB/GE"
+        ],
+        "series": "Bodenstaubsauger"
+      },
+      {
+        "code": "VC20F70HUCC",
+        "deviceReferences": [
+          "VC20F70HUCC/TR"
+        ],
+        "series": "Bodenstaubsauger"
+      },
+      {
+        "code": "VC08F60YKSC",
+        "deviceReferences": [
+          "VC08F60YKSC/EG"
+        ],
+        "series": "Bodenstaubsauger"
+      },
+      {
+        "code": "VC05K71G0HC",
+        "deviceReferences": [
+          "VC05K71G0HC/SW"
+        ],
+        "series": "Bodenstaubsauger"
+      },
+      {
+        "code": "VC-LSS91",
+        "deviceReferences": [
+          "VC-LSS91"
+        ],
+        "series": "Bodenstaubsauger"
+      },
+      {
+        "code": "VC07F60WNUR",
+        "deviceReferences": [
+          "VC07F60WNUR/EG"
+        ],
+        "series": "Bodenstaubsauger"
+      },
+      {
+        "code": "VC07F80HURK",
+        "deviceReferences": [
+          "VC07F80HURK/EG"
+        ],
+        "series": "Bodenstaubsauger"
+      },
+      {
+        "code": "VC7716VC3S",
+        "deviceReferences": [
+          "VC7716VC3S/NKM"
+        ],
+        "series": "Bodenstaubsauger"
+      },
+      {
+        "code": "VC-5913V",
+        "deviceReferences": [
+          "VC-5913V"
+        ],
+        "series": "Bodenstaubsauger"
+      },
+      {
+        "code": "VC7614VN3G",
+        "deviceReferences": [
+          "VC7614VN3G/XEG"
+        ],
+        "series": "Bodenstaubsauger"
+      },
+      {
+        "code": "VC-8716H",
+        "deviceReferences": [
+          "VC-8716H"
+        ],
+        "series": "Bodenstaubsauger"
+      },
+      {
+        "code": "VC07H40F0VB",
+        "deviceReferences": [
+          "VC07H40F0VB/EG"
+        ],
+        "series": "Bodenstaubsauger"
+      },
+      {
+        "code": "VC7616VN3R",
+        "deviceReferences": [
+          "VC7616VN3R/XEG"
+        ],
+        "series": "Bodenstaubsauger"
+      },
+      {
+        "code": "VC6013SN3B",
+        "deviceReferences": [
+          "VC6013SN3B/XEG"
+        ],
+        "series": "Bodenstaubsauger"
+      },
+      {
+        "code": "VC5813SU2M",
+        "deviceReferences": [
+          "VC5813SU2M/XEO"
+        ],
+        "series": "Bodenstaubsauger"
+      },
+      {
+        "code": "VC8928EN3B",
+        "deviceReferences": [
+          "VC8928EN3B/XEG"
+        ],
+        "series": "Bodenstaubsauger"
+      },
+      {
+        "code": "VC8927EC3B",
+        "deviceReferences": [
+          "VC8927EC3B/XEH"
+        ],
+        "series": "Bodenstaubsauger"
+      },
+      {
+        "code": "VC9015VC2R",
+        "deviceReferences": [
+          "VC9015VC2R/HAC"
+        ],
+        "series": "Bodenstaubsauger"
+      },
+      {
+        "code": "VC8828EN3G",
+        "deviceReferences": [
+          "VC8828EN3G/ERP"
+        ],
+        "series": "Bodenstaubsauger"
+      },
+      {
+        "code": "VC7114HT3S",
+        "deviceReferences": [
+          "VC7114HT3S/SBW"
+        ],
+        "series": "Bodenstaubsauger"
+      },
+      {
+        "code": "VS20C95D4TK",
+        "deviceReferences": [
+          "VS20C95D4TK/WD"
+        ],
+        "series": "Jet 95"
+      },
+      {
+        "code": "VS20C95D2TK",
+        "deviceReferences": [
+          "VS20C95D2TK/WD"
+        ],
+        "series": "Jet 95"
+      },
+      {
+        "code": "VS20C95E4TB",
+        "deviceReferences": [
+          "VS20C95E4TB/WD"
+        ],
+        "series": "Jet 95"
+      },
+      {
+        "code": "VS20R9076T7",
+        "deviceReferences": [
+          "VS20R9076T7/EG"
+        ],
+        "series": "Jet 90"
+      },
+      {
+        "code": "VS20C85G4PB",
+        "deviceReferences": [
+          "VS20C85G4PB/WD"
+        ],
+        "series": "Jet 85"
+      },
+      {
+        "code": "VS20C85G7TB",
+        "deviceReferences": [
+          "VS20C85G7TB/WD"
+        ],
+        "series": "Jet 85"
+      },
+      {
+        "code": "VS20C85G4TB",
+        "deviceReferences": [
+          "VS20C85G4TB/WD"
+        ],
+        "series": "Jet 85"
+      },
+      {
+        "code": "VS20C85G2TN",
+        "deviceReferences": [
+          "VS20C85G2TN/WD"
+        ],
+        "series": "Jet 85"
+      },
+      {
+        "code": "VS20B75BDR5",
+        "deviceReferences": [
+          "VS20B75BDR5/WD"
+        ],
+        "series": "Jet 75E"
+      },
+      {
+        "code": "VS20B75BCR5",
+        "deviceReferences": [
+          "VS20B75BCR5/WD"
+        ],
+        "series": "Jet 75E"
+      },
+      {
+        "code": "VS20B75BGR1",
+        "deviceReferences": [
+          "VS20B75BGR1/WD"
+        ],
+        "series": "Jet 75E"
+      },
+      {
+        "code": "VS20T7562R5",
+        "deviceReferences": [
+          "VS20T7562R5/EG"
+        ],
+        "series": "Jet 75"
+      },
+      {
+        "code": "VS20T75D6R5",
+        "deviceReferences": [
+          "VS20T75D6R5/EG"
+        ],
+        "series": "Jet 75"
+      },
+      {
+        "code": "VS15T7032R1",
+        "deviceReferences": [
+          "VS15T7032R1/EG"
+        ],
+        "series": "Jet 70"
+      },
+      {
+        "code": "VS15A60BGR5",
+        "deviceReferences": [
+          "VS15A60BGR5/WD"
+        ],
+        "series": "Jet 65"
+      },
+      {
+        "code": "VS28C97B7QK",
+        "deviceReferences": [
+          "VS28C97B7QK/WD"
+        ],
+        "series": "BESPOKE Jet"
+      },
+      {
+        "code": "VS28C97B4QK",
+        "deviceReferences": [
+          "VS28C97B4QK/WD"
+        ],
+        "series": "BESPOKE Jet"
+      },
+      {
+        "code": "VS20B95B73B",
+        "deviceReferences": [
+          "VS20B95B73B/WD"
+        ],
+        "series": "BESPOKE Jet"
+      },
+      {
+        "code": "VS20B95B43N",
+        "deviceReferences": [
+          "VS20B95B43N/WD"
+        ],
+        "series": "BESPOKE Jet"
+      },
+      {
+        "code": "VS20B95C43W",
+        "deviceReferences": [
+          "VS20B95C43W/WD"
+        ],
+        "series": "BESPOKE Jet"
+      },
+      {
+        "code": "VS20A95973B",
+        "deviceReferences": [
+          "VS20A95973B/WA"
+        ],
+        "series": "BESPOKE Jet"
+      },
+      {
+        "code": "VS20A95943N",
+        "deviceReferences": [
+          "VS20A95943N/WA"
+        ],
+        "series": "BESPOKE Jet"
+      },
+      {
+        "code": "VS20A95843W",
+        "deviceReferences": [
+          "VS20A95843W/WA"
+        ],
+        "series": "BESPOKE Jet"
+      },
+      {
+        "code": "VS70H25XFT",
+        "deviceReferences": [
+          "VS70H25XFT/WD"
+        ],
+        "series": "Jet 85S"
+      },
+      {
+        "code": "VS70H28HFC",
+        "deviceReferences": [
+          "VS70H28HFC/WD"
+        ],
+        "series": "Jet 95S"
+      },
+      {
+        "code": "VS80F28EGS",
+        "deviceReferences": [
+          "VS80F28EGS/WD"
+        ],
+        "series": "Bespoke AI Jet"
+      },
+      {
+        "code": "VS70H28HEK",
+        "deviceReferences": [
+          "VS70H28HEK/WD"
+        ],
+        "series": "Jet 95S"
+      },
+      {
+        "code": "VS80F28EFP",
+        "deviceReferences": [
+          "VS80F28EFP/WD"
+        ],
+        "series": "Bespoke AI Jet"
+      }
+    ]
+  },
+  "researchScope": {
+    "sources": "Samsung-DE-Geräte- und Supportseiten; exakte Service-Metadaten per HTTPS geprüft.",
+    "countingRule": "Eine ausgewählte Modellreferenz je bisher fehlender belegter Grundgerätelinie. Farb-/Ausstattungs-/Länderkennungen und unklare Nachbarmodelle zählen nicht pauschal; explizit baugleiche Ultra-Geräte werden zusammengeführt.",
+    "excluded": [
+      "Saugroboter und andere Unterkategorien",
+      "Zubehör",
+      "Sets als Grundgeräte",
+      "Nicht belegter deutscher Markt",
+      "Ungeklärte Serienvarianten"
+    ],
+    "queries": [
+      "Samsung-DE support: VC/VCC, XEG, EG, klassische Bodenstaubsauger",
+      "VC4100, VC5100, VCF500G, VCDC20",
+      "Historische VC59/60/67/74/76/89-Modellseiten",
+      "Jet 60, Powerstick und aktuelle Bespoke AI Jet Ultra-Geräte",
+      "Ausländische Powerstick-/SC-Modellquellen nicht als DE-Nachweis übernommen"
+    ],
+    "sourceUrlCount": 57,
+    "supportCandidateCount": 56,
+    "decisionCounts": {
+      "add": 8,
+      "already_present": 22,
+      "deferred_market": 12,
+      "deferred_variant": 12,
+      "excluded_scope": 1,
+      "variant_of_new_model": 1
+    },
+    "manufacturerWideUpperBound": null,
+    "upperBoundNote": "77 ist der mit diesem konservativen Import erreichte belegte Katalogstand, keine bewiesene absolute Herstellerobergrenze. Weitere 23 Zielplätze bleiben offen; 31 unabhängige neue deutsche Grundgeräte konnten in den geprüften Quellen nicht belegt werden."
+  },
+  "models": [
+    {
+      "model": "SC4041",
+      "name": "Samsung SC4041",
+      "code": "VCC4040V34",
+      "fullCode": "VCC4040V34/XEG",
+      "manufacturerModelName": "SC4041",
+      "series": "SC4041",
+      "deviceType": "floor",
+      "region": "DE",
+      "marketEvidence": "Samsung-DE-Serviceeintrag mit exakt beobachteter /EG-, /XEG- oder /WD-Kennung; archivierter Modellnachweis, keine aktuelle Verkaufsbehauptung.",
+      "url": "https://www.samsung.com/de/support/model/VCC4040V34/XEG/",
+      "primarySourceId": "samsung-next-051",
+      "checkedAt": "2026-10-08",
+      "deviceReferences": [
+        "VCC4040V34/XEG"
+      ],
+      "referenceSources": {
+        "VCC4040V34/XEG": "samsung-next-051"
+      },
+      "baseDeviceKey": "sc4041",
+      "decision": "add",
+      "independenceBasis": "Samsung führt SC4041 als eigenes Boden-Grundmodell. Die SC40-Kennung ist im Ausgangskatalog nicht vorhanden; sie wird nicht aus einer SC43-Serie abgeleitet.",
+      "notes": [
+        "Modellnachweis im deutschen Hersteller-Service; kein Nachweis aktuellen Verkaufs.",
+        "Keine gerätespezifisch geprüften Artikelquellen importiert: 0 Teile, keine Preise, Bestände oder neuen Passungsfreigaben."
+      ],
+      "uncertainties": [
+        "Baujahre, Lieferumfang und gerätespezifische Ersatzteilliste bleiben offen.",
+        "Keine direkt hinterlegte deutsche Anleitung in der geprüften Serviceantwort; der Service-Modellcode ist dennoch explizit vorhanden."
+      ]
+    },
+    {
+      "model": "VC-7413V",
+      "name": "Samsung VC-7413V",
+      "code": "VC7413VN3B",
+      "fullCode": "VC7413VN3B/XEG",
+      "manufacturerModelName": "VC-7413V",
+      "series": "VC-7400",
+      "deviceType": "floor",
+      "region": "DE",
+      "marketEvidence": "Samsung-DE-Serviceeintrag mit exakt beobachteter /EG-, /XEG- oder /WD-Kennung; archivierter Modellnachweis, keine aktuelle Verkaufsbehauptung.",
+      "url": "https://www.samsung.com/de/support/model/VC7413VN3B/XEG/",
+      "primarySourceId": "samsung-next-006",
+      "checkedAt": "2026-10-08",
+      "deviceReferences": [
+        "VC7413VN3B/XEG"
+      ],
+      "referenceSources": {
+        "VC7413VN3B/XEG": "samsung-next-006"
+      },
+      "baseDeviceKey": "vc7413",
+      "decision": "add",
+      "independenceBasis": "Die Herstellerkennung VC-7413V gehört zur bisher nicht erfassten VC74-Gerätelinie. Andere Länder- oder Ausstattungskennungen der VC74-Linie werden nicht zusätzlich gezählt.",
+      "notes": [
+        "Modellnachweis im deutschen Hersteller-Service; kein Nachweis aktuellen Verkaufs.",
+        "Keine gerätespezifisch geprüften Artikelquellen importiert: 0 Teile, keine Preise, Bestände oder neuen Passungsfreigaben."
+      ],
+      "uncertainties": [
+        "Baujahre, Lieferumfang und gerätespezifische Ersatzteilliste bleiben offen.",
+        "Keine direkt hinterlegte deutsche Anleitung in der geprüften Serviceantwort; der Service-Modellcode ist dennoch explizit vorhanden."
+      ]
+    },
+    {
+      "model": "VC-6713H",
+      "name": "Samsung VC-6713H",
+      "code": "VC6713HN3S",
+      "fullCode": "VC6713HN3S/XEG",
+      "manufacturerModelName": "VC-6713H",
+      "series": "VC-6700",
+      "deviceType": "floor",
+      "region": "DE",
+      "marketEvidence": "Samsung-DE-Serviceeintrag mit exakt beobachteter /EG-, /XEG- oder /WD-Kennung; archivierter Modellnachweis, keine aktuelle Verkaufsbehauptung.",
+      "url": "https://www.samsung.com/de/support/model/VC6713HN3S/XEG/",
+      "primarySourceId": "samsung-next-012",
+      "checkedAt": "2026-10-08",
+      "deviceReferences": [
+        "VC6713HN3S/XEG"
+      ],
+      "referenceSources": {
+        "VC6713HN3S/XEG": "samsung-next-012"
+      },
+      "baseDeviceKey": "vc6713",
+      "decision": "add",
+      "independenceBasis": "VC-6713H ist ein separat benanntes Hersteller-Grundgerät der bisher nicht erfassten VC67-Linie. Die benachbarte VC6713SN3G-Ausführung wird wegen ungeklärter Grundgerätegleichheit zurückgestellt.",
+      "notes": [
+        "Modellnachweis im deutschen Hersteller-Service; kein Nachweis aktuellen Verkaufs.",
+        "Keine gerätespezifisch geprüften Artikelquellen importiert: 0 Teile, keine Preise, Bestände oder neuen Passungsfreigaben."
+      ],
+      "uncertainties": [
+        "Baujahre, Lieferumfang und gerätespezifische Ersatzteilliste bleiben offen."
+      ]
+    },
+    {
+      "model": "VC4100",
+      "name": "Samsung VC4100",
+      "code": "VC07K41E0VY",
+      "fullCode": "VC07K41E0VY/EG",
+      "manufacturerModelName": "SC07K41E0VY",
+      "series": "VC4100",
+      "deviceType": "floor",
+      "region": "DE",
+      "marketEvidence": "Samsung-DE-Serviceeintrag mit exakt beobachteter /EG-, /XEG- oder /WD-Kennung; archivierter Modellnachweis, keine aktuelle Verkaufsbehauptung.",
+      "url": "https://www.samsung.com/de/support/model/VC07K41E0VY/EG/",
+      "primarySourceId": "samsung-next-016",
+      "checkedAt": "2026-10-08",
+      "deviceReferences": [
+        "VC07K41E0VY/EG"
+      ],
+      "referenceSources": {
+        "VC07K41E0VY/EG": "samsung-next-016"
+      },
+      "baseDeviceKey": "vc4100",
+      "decision": "add",
+      "independenceBasis": "Samsung bezeichnet dieses Gerät ausdrücklich als VC4100. Diese Gerätelinie fehlt im Bestand; die vorhandene VC4000-Kennung VC07H40F0VB wird nicht umbenannt oder als Passungsbeweis verwendet.",
+      "notes": [
+        "Modellnachweis im deutschen Hersteller-Service; kein Nachweis aktuellen Verkaufs.",
+        "Keine gerätespezifisch geprüften Artikelquellen importiert: 0 Teile, keine Preise, Bestände oder neuen Passungsfreigaben."
+      ],
+      "uncertainties": [
+        "Baujahre, Lieferumfang und gerätespezifische Ersatzteilliste bleiben offen."
+      ]
+    },
+    {
+      "model": "VC5100",
+      "name": "Samsung VC5100",
+      "code": "VC07K51H0VD",
+      "fullCode": "VC07K51H0VD/EG",
+      "manufacturerModelName": "SC07K51H0VD",
+      "series": "VC5100",
+      "deviceType": "floor",
+      "region": "DE",
+      "marketEvidence": "Samsung-DE-Serviceeintrag mit exakt beobachteter /EG-, /XEG- oder /WD-Kennung; archivierter Modellnachweis, keine aktuelle Verkaufsbehauptung.",
+      "url": "https://www.samsung.com/de/support/model/VC07K51H0VD/EG/",
+      "primarySourceId": "samsung-next-013",
+      "checkedAt": "2026-10-08",
+      "deviceReferences": [
+        "VC07K51H0VD/EG"
+      ],
+      "referenceSources": {
+        "VC07K51H0VD/EG": "samsung-next-013"
+      },
+      "baseDeviceKey": "vc5100",
+      "decision": "add",
+      "independenceBasis": "Samsung benennt eine eigene VC5100-Gerätelinie, die im Ausgangskatalog nicht enthalten ist. Weitere K51-Farb-, Ausstattungs- oder Länderkennungen werden nicht als zusätzliche Grundgeräte übernommen.",
+      "notes": [
+        "Modellnachweis im deutschen Hersteller-Service; kein Nachweis aktuellen Verkaufs.",
+        "Keine gerätespezifisch geprüften Artikelquellen importiert: 0 Teile, keine Preise, Bestände oder neuen Passungsfreigaben."
+      ],
+      "uncertainties": [
+        "Baujahre, Lieferumfang und gerätespezifische Ersatzteilliste bleiben offen."
+      ]
+    },
+    {
+      "model": "VCF500G",
+      "name": "Samsung VCF500G",
+      "code": "VC07F50HNRB",
+      "fullCode": "VC07F50HNRB/EG",
+      "manufacturerModelName": "SC07F50HR",
+      "series": "VCF500G",
+      "deviceType": "floor",
+      "region": "DE",
+      "marketEvidence": "Samsung-DE-Serviceeintrag mit exakt beobachteter /EG-, /XEG- oder /WD-Kennung; archivierter Modellnachweis, keine aktuelle Verkaufsbehauptung.",
+      "url": "https://www.samsung.com/de/support/model/VC07F50HNRB/EG/",
+      "primarySourceId": "samsung-next-019",
+      "checkedAt": "2026-10-08",
+      "deviceReferences": [
+        "VC07F50HNRB/EG"
+      ],
+      "referenceSources": {
+        "VC07F50HNRB/EG": "samsung-next-019"
+      },
+      "baseDeviceKey": "vcf500g",
+      "decision": "add",
+      "independenceBasis": "Die deutsche Herstellerseite benennt VCF500G als bisher nicht erfasste Gerätelinie. Von mehreren F50-Ausführungen wird nur dieses eine Grundgerät aufgenommen; Farb- und Düsenunterschiede erzeugen keine weiteren Zielplätze.",
+      "notes": [
+        "Modellnachweis im deutschen Hersteller-Service; kein Nachweis aktuellen Verkaufs.",
+        "Keine gerätespezifisch geprüften Artikelquellen importiert: 0 Teile, keine Preise, Bestände oder neuen Passungsfreigaben."
+      ],
+      "uncertainties": [
+        "Baujahre, Lieferumfang und gerätespezifische Ersatzteilliste bleiben offen."
+      ]
+    },
+    {
+      "model": "VCDC20",
+      "name": "Samsung VCDC20",
+      "code": "VC08QHNDCBB",
+      "fullCode": "VC08QHNDCBB/EG",
+      "manufacturerModelName": "VCDC08QH",
+      "series": "VCDC20",
+      "deviceType": "floor",
+      "region": "DE",
+      "marketEvidence": "Samsung-DE-Serviceeintrag mit exakt beobachteter /EG-, /XEG- oder /WD-Kennung; archivierter Modellnachweis, keine aktuelle Verkaufsbehauptung.",
+      "url": "https://www.samsung.com/de/support/model/VC08QHNDCBB/EG/",
+      "primarySourceId": "samsung-next-025",
+      "checkedAt": "2026-10-08",
+      "deviceReferences": [
+        "VC08QHNDCBB/EG"
+      ],
+      "referenceSources": {
+        "VC08QHNDCBB/EG": "samsung-next-025"
+      },
+      "baseDeviceKey": "vcdc20",
+      "decision": "add",
+      "independenceBasis": "Samsung führt die bisher nicht erfasste VCDC20-Gerätelinie mit Twin-Chamber-System. Die rote VC08QVNDCRD-Ausführung und VCDC20AV werden bis zur Grundgeräteabgrenzung nicht separat gezählt.",
+      "notes": [
+        "Modellnachweis im deutschen Hersteller-Service; kein Nachweis aktuellen Verkaufs.",
+        "Keine gerätespezifisch geprüften Artikelquellen importiert: 0 Teile, keine Preise, Bestände oder neuen Passungsfreigaben."
+      ],
+      "uncertainties": [
+        "Baujahre, Lieferumfang und gerätespezifische Ersatzteilliste bleiben offen."
+      ]
+    },
+    {
+      "model": "Bespoke AI Jet Ultra",
+      "name": "Samsung Bespoke AI Jet Ultra",
+      "code": "VS90F40EEK",
+      "fullCode": "VS90F40EEK/WD",
+      "manufacturerModelName": "VS90F40EEK",
+      "series": "Bespoke AI Jet Ultra",
+      "deviceType": "cordless",
+      "region": "DE",
+      "marketEvidence": "Samsung-DE-Serviceeintrag mit exakt beobachteter /EG-, /XEG- oder /WD-Kennung; archivierter Modellnachweis, keine aktuelle Verkaufsbehauptung.",
+      "url": "https://www.samsung.com/de/support/model/VS90F40EEK/WD/",
+      "primarySourceId": "samsung-next-054",
+      "checkedAt": "2026-10-08",
+      "deviceReferences": [
+        "VS90F40EEK/WD",
+        "VS90F40EEM/WD"
+      ],
+      "referenceSources": {
+        "VS90F40EEK/WD": "samsung-next-054",
+        "VS90F40EEM/WD": "samsung-next-055"
+      },
+      "baseDeviceKey": "bespoke-ai-jet-ultra-vs90f40",
+      "decision": "add",
+      "independenceBasis": "Die VS90F40-Ultra-Gerätegeneration ist im Bestand nicht enthalten. Samsung bezeichnet EEK und EEM ausdrücklich als baugleich; beide Vollcodes werden in genau einer Modellgruppe geführt.",
+      "notes": [
+        "Modellnachweis im deutschen Hersteller-Service; kein Nachweis aktuellen Verkaufs.",
+        "Keine gerätespezifisch geprüften Artikelquellen importiert: 0 Teile, keine Preise, Bestände oder neuen Passungsfreigaben."
+      ],
+      "uncertainties": [
+        "Baujahre, Lieferumfang und gerätespezifische Ersatzteilliste bleiben offen."
+      ],
+      "equivalenceSourceId": "samsung-next-ultra-equivalence"
+    }
+  ],
+  "sources": [
+    {
+      "id": "samsung-next-001",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VC7614VN3G/XEG/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VC7614VN3G/XEG/",
+      "pageTitle": "VC-7614V | Samsung Service DE",
+      "observedFullCode": "VC7614VN3G/XEG",
+      "observedModelName": "VC-7614V",
+      "categoryCode": "2401",
+      "responseSha256": "b22df8acf53d4a352079e1cbd11f4a4deb4a81705f2f05943b6e0f5574f68907",
+      "manualFileNames": [
+        "20030331204700078_DJ68-00085C(EN)0.1.pdf"
+      ],
+      "hasGermanManual": false,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-002",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VC7616VN3R/XEG/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VC7616VN3R/XEG/",
+      "pageTitle": "VC-7616V | Samsung Service DE",
+      "observedFullCode": "VC7616VN3R/XEG",
+      "observedModelName": "VC-7616V",
+      "categoryCode": "2401",
+      "responseSha256": "38a9f32a67fb50bf5b6593fc692f2a2db6ff1f1962267f86d42b40e7f0b99ed2",
+      "manualFileNames": [
+        "20030331204137000_DJ68-00085E(DE_NL_FR)0.0.PDF",
+        "20030331204700078_DJ68-00085C(EN)0.1.pdf"
+      ],
+      "hasGermanManual": true,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-003",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VC6013SN3B/XEG/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VC6013SN3B/XEG/",
+      "pageTitle": "VC-6013 | Samsung Service DE",
+      "observedFullCode": "VC6013SN3B/XEG",
+      "observedModelName": "VC-6013",
+      "categoryCode": "2401",
+      "responseSha256": "4f3462564a87741f18ab8fda5b34fc84ac8bc76a2167ca38044f447cfe97488b",
+      "manualFileNames": [
+        "20030331214933906_DJ68-00097J(DE_FR_NL)0.0.PDF"
+      ],
+      "hasGermanManual": true,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-004",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VC8928EN3B/XEG/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VC8928EN3B/XEG/",
+      "pageTitle": "VC-8928E | Samsung Service DE",
+      "observedFullCode": "VC8928EN3B/XEG",
+      "observedModelName": "VC-8928E",
+      "categoryCode": "2401",
+      "responseSha256": "9b668712081b8e4c43664bcbc478b7100db7792192f684ea25f9e8368c35ec07",
+      "manualFileNames": [
+        "20031027145554500_DJ68-00093E.pdf"
+      ],
+      "hasGermanManual": false,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-005",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VC6015VN3R/XEG/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VC6015VN3R/XEG/",
+      "pageTitle": "VC-6015V | Samsung Service DE",
+      "observedFullCode": "VC6015VN3R/XEG",
+      "observedModelName": "VC-6015V",
+      "categoryCode": "2401",
+      "responseSha256": "9afa845f490fc32526493239d04f3311104d2c83b1687fbf16c466875edbd012",
+      "manualFileNames": [
+        "20030331214933906_DJ68-00097J(DE_FR_NL)0.0.PDF",
+        "20030331215342703_DJ68-00097B(EN_NL_FR)0.0.PDF"
+      ],
+      "hasGermanManual": true,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-006",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VC7413VN3B/XEG/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VC7413VN3B/XEG/",
+      "pageTitle": "VC-7413V | Samsung Service DE",
+      "observedFullCode": "VC7413VN3B/XEG",
+      "observedModelName": "VC-7413V",
+      "categoryCode": "2401",
+      "responseSha256": "3570d21dd101f25c656ee885f13ad987a5a891071132d6081f82392d03df9144",
+      "manualFileNames": [],
+      "hasGermanManual": false,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-007",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VC8918VN3R/XEG/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VC8918VN3R/XEG/",
+      "pageTitle": "VC-8908V | Samsung Service DE",
+      "observedFullCode": "VC8918VN3R/XEG",
+      "observedModelName": "VC-8908V",
+      "categoryCode": "2401",
+      "responseSha256": "c1ce3c0e0825b360bfc69cd081c1c81d0919c441cdd0bca67c4d169c69f42451",
+      "manualFileNames": [],
+      "hasGermanManual": false,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-008",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VC6713SN3G/XEG/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VC6713SN3G/XEG/",
+      "pageTitle": "VC-6713 | Samsung Service DE",
+      "observedFullCode": "VC6713SN3G/XEG",
+      "observedModelName": "VC-6713",
+      "categoryCode": "2401",
+      "responseSha256": "4bb20320ee3078351984cf903c0f0d9bbb079659a6948574046398274587bd26",
+      "manualFileNames": [],
+      "hasGermanManual": false,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-009",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VC7615VN3W/XEG/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VC7615VN3W/XEG/",
+      "pageTitle": "VC-7615V | Samsung Service DE",
+      "observedFullCode": "VC7615VN3W/XEG",
+      "observedModelName": "VC-7615V",
+      "categoryCode": "2401",
+      "responseSha256": "a01508ab3536007ba60bcbca81cf7e59fa2aff25bcbb70452e4a47ea0aca11c0",
+      "manualFileNames": [
+        "20030331204137000_DJ68-00085E(DE_NL_FR)0.0.PDF",
+        "20030331205907437_DJ68-00085E(DE_NL_FR)0.0.PDF",
+        "20030331204700078_DJ68-00085C(EN)0.1.pdf"
+      ],
+      "hasGermanManual": true,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-010",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VC5956VN3R/XEG/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VC5956VN3R/XEG/",
+      "pageTitle": "VC-5956V | Samsung Service DE",
+      "observedFullCode": "VC5956VN3R/XEG",
+      "observedModelName": "VC-5956V",
+      "categoryCode": "2401",
+      "responseSha256": "43e276d8041dbf55d9bd245c53debc375d3487cac8247e34b0eedbf3bd536693",
+      "manualFileNames": [
+        "20040318163811500_DJ68-00068A.pdf"
+      ],
+      "hasGermanManual": false,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-011",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VC5956VN3B/XEG/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VC5956VN3B/XEG/",
+      "pageTitle": "VC-5956V | Samsung Service DE",
+      "observedFullCode": "VC5956VN3B/XEG",
+      "observedModelName": "VC-5956V",
+      "categoryCode": "2401",
+      "responseSha256": "7de09153e950499b651de8109b94b7c5b62395466320e6f323d1a73f158b5ac7",
+      "manualFileNames": [
+        "20040318163811500_DJ68-00068A.pdf"
+      ],
+      "hasGermanManual": false,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-012",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VC6713HN3S/XEG/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VC6713HN3S/XEG/",
+      "pageTitle": "VC-6713H | Samsung Service DE",
+      "observedFullCode": "VC6713HN3S/XEG",
+      "observedModelName": "VC-6713H",
+      "categoryCode": "2401",
+      "responseSha256": "af3bcfd0aca8f3bccc51ceda93c14844acb03846be77f62aea5f20125445f0c2",
+      "manualFileNames": [
+        "20030624010443343_DJ68-40145Q.pdf"
+      ],
+      "hasGermanManual": true,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-013",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VC07K51H0VD/EG/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VC07K51H0VD/EG/",
+      "pageTitle": "VC5100 Bodenstaubsauger mit Cyclone Force, 750 Watt, Tangerine Gold | Samsung Service DE",
+      "observedFullCode": "VC07K51H0VD/EG",
+      "observedModelName": "SC07K51H0VD",
+      "categoryCode": "2401",
+      "responseSha256": "b96d042bddbc4cb69d9f264d434aee5361d8f75776da6e984c7b4087ccf27a9e",
+      "manualFileNames": [
+        "DJ68-00744D.pdf",
+        "VC5100_00744D-08_EN_190624.pdf"
+      ],
+      "hasGermanManual": true,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-014",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VC07K51E0VB/EE/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VC07K51E0VB/EE/",
+      "pageTitle": "SC07K51E0VB | Samsung Service DE",
+      "observedFullCode": "VC07K51E0VB/EE",
+      "observedModelName": "SC07K51E0VB",
+      "categoryCode": "2401",
+      "responseSha256": "f5acd103ce247f4073f3f7f1c9571da5004fc80d69e3c1c988bc8eac8e59f6a3",
+      "manualFileNames": [
+        "DJ68-00744D.pdf",
+        "VC5100_00744D-08_EN_190624.pdf"
+      ],
+      "hasGermanManual": true,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-015",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VC07K51L9H1/SB/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VC07K51L9H1/SB/",
+      "pageTitle": "SC07K51L9H1 | Samsung Service DE",
+      "observedFullCode": "VC07K51L9H1/SB",
+      "observedModelName": "SC07K51L9H1",
+      "categoryCode": "2401",
+      "responseSha256": "643c035415ba26bd77e76fa22997889a2259042cb1a0e956627e754b390b5360",
+      "manualFileNames": [
+        "DJ68-00744B-09_GE_VC5100_13ge_190623.pdf",
+        "DJ68-00744D.pdf",
+        "VC5100_00744D-08_EN_190624.pdf"
+      ],
+      "hasGermanManual": true,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-016",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VC07K41E0VY/EG/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VC07K41E0VY/EG/",
+      "pageTitle": "VC4100 Bodenstaubsauger mit Cyclone Force, 750 Watt, Yellow Halo | Samsung Service DE",
+      "observedFullCode": "VC07K41E0VY/EG",
+      "observedModelName": "SC07K41E0VY",
+      "categoryCode": "2401",
+      "responseSha256": "18fdb539bfb878a27fe6d5c2b93c0ba66a88a59be99f984860081a88cd534bf1",
+      "manualFileNames": [
+        "EU_Environmental_Regulatory_Statements.pdf",
+        "10_DJ68-00724B.pdf",
+        "SC07H40_V_SERIES_DE_NL_FR_00724B-12_EN_190624.pdf"
+      ],
+      "hasGermanManual": true,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-017",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VC07M2110SB/EN/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VC07M2110SB/EN/",
+      "pageTitle": "SC07M2110SB | Samsung Service DE",
+      "observedFullCode": "VC07M2110SB/EN",
+      "observedModelName": "SC07M2110SB",
+      "categoryCode": "2401",
+      "responseSha256": "fdf3d86fc715c17b4256522bc959889d29c61473d325eb01a60df7fefcdc99e2",
+      "manualFileNames": [
+        "O-DJ68-00758L-09_IB_VC2100_GE_DE_251203.pdf",
+        "O-DJ68-00758M-05_IB_VC2100_EN_DE_250801.pdf",
+        "O-DJ68-00758M-05_IB_VC2100_EN_FR_250801.pdf",
+        "O-DJ68-00758M-05_IB_VC2100_EN_NL_250801.pdf",
+        "O-DJ68-00758J-05_IB_VC2100_SB_EN_250801.pdf",
+        "O-DJ68-00758L-09_IB_VC2100_GE_EN_251203.pdf"
+      ],
+      "hasGermanManual": true,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-018",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VC20F70HUCC/EG/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VC20F70HUCC/EG/",
+      "pageTitle": "VC7000 Beutellose Staubsauger Animal Pro | Samsung Service DE",
+      "observedFullCode": "VC20F70HUCC/EG",
+      "observedModelName": "SC20F70HC",
+      "categoryCode": "2401",
+      "responseSha256": "184b3e4290392cdf9f8a20c13bb73f46094a9d7bc6e5d0b8591afb71c2e46a5e",
+      "manualFileNames": [
+        "06.DJ68-00701J.pdf",
+        "04_DJ68-00701Q.pdf"
+      ],
+      "hasGermanManual": true,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-019",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VC07F50HNRB/EG/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VC07F50HNRB/EG/",
+      "pageTitle": "VCF500G Bodenstaubsauger mit extremer Saugleistung, 700 Watt, Vital Blue | Samsung Service DE",
+      "observedFullCode": "VC07F50HNRB/EG",
+      "observedModelName": "SC07F50HR",
+      "categoryCode": "2401",
+      "responseSha256": "1cc91a9448cd34806f4226e1cadea82c82459cbdc96b3337599d18c65df82ace",
+      "manualFileNames": [
+        "05.DJ68-00699A.pdf",
+        "06.DJ68-00699A.pdf"
+      ],
+      "hasGermanManual": true,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-020",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VC07M21N9VD/GE/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VC07M21N9VD/GE/",
+      "pageTitle": "SC07M21N9VD | Samsung Service DE",
+      "observedFullCode": "VC07M21N9VD/GE",
+      "observedModelName": "SC07M21N9VD",
+      "categoryCode": "2401",
+      "responseSha256": "ae6be796562dd1daab284e5bb331bb02d4b713c19fd088cefc3266584b544edd",
+      "manualFileNames": [
+        "O-DJ68-00758L-09_IB_VC2100_GE_DE_251203.pdf",
+        "O-DJ68-00758L-09_IB_VC2100_GE_EN_251203.pdf",
+        "O-DJ68-00758L-09_IB_VC2100_GE_EN_251203.pdf"
+      ],
+      "hasGermanManual": true,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-021",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VC07F50HU1U/EG/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VC07F50HU1U/EG/",
+      "pageTitle": "VCF500G Bodenstaubsauger mit extremer Saugleistung, 700 Watt, Earth Blue | Samsung Service DE",
+      "observedFullCode": "VC07F50HU1U/EG",
+      "observedModelName": "SC07F50H1",
+      "categoryCode": "2401",
+      "responseSha256": "4f44b71da2c2b9bfdda22fed1c06073b0accda2a83cbddbd2debd110bf15d95b",
+      "manualFileNames": [
+        "08_DJ68-00699U.pdf",
+        "05.DJ68-00699A.pdf",
+        "06.DJ68-00699A.pdf"
+      ],
+      "hasGermanManual": true,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-022",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VC07H40F0VB/EG/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VC07H40F0VB/EG/",
+      "pageTitle": "VC4000 Bodenstaubsauger mit Cyclone Force, 700 Watt, Deep Blue | Samsung Service DE",
+      "observedFullCode": "VC07H40F0VB/EG",
+      "observedModelName": "SC07H40F0V",
+      "categoryCode": "2401",
+      "responseSha256": "9b74969c97bb0f966807a2db9e548c5da92cfb5a790df28c2fad487642f57cd3",
+      "manualFileNames": [
+        "01_DJ68-00724K.pdf",
+        "SC07H40_V_SERIES_EN_ET_LV_LT_00724K-11_SB_190623.pdf",
+        "EU_Environmental_Regulatory_Statements.pdf",
+        "10_DJ68-00724B.pdf",
+        "SC07H40_V_SERIES_DE_NL_FR_00724B-12_EN_190624.pdf",
+        "11._DJ68-00724C.pdf",
+        "SC07H40_V_SERIES_13ge_00724C-15_GE_190624.pdf",
+        "EU_Environmental_Regulatory_Statements.pdf",
+        "EU_Environmental_Regulatory_Statements.pdf",
+        "SEHC_12_DJ68-00724C.pdf"
+      ],
+      "hasGermanManual": true,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-023",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VC07M31B0HN/GE/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VC07M31B0HN/GE/",
+      "pageTitle": "SC07M31B0HN | Samsung Service DE",
+      "observedFullCode": "VC07M31B0HN/GE",
+      "observedModelName": "SC07M31B0HN",
+      "categoryCode": "2401",
+      "responseSha256": "5e57248c11261c586fcb98bee601e599eddf593d18ff3f76fc16bd889678de43",
+      "manualFileNames": [
+        "O-DJ68-00753D-09_IB_VC3100_GE_EN_251203.pdf"
+      ],
+      "hasGermanManual": false,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-024",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VC-LSS91/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VC-LSS91/",
+      "pageTitle": "VC-LSS91 | Samsung Service DE",
+      "observedFullCode": "VC-LSS91",
+      "observedModelName": "VC-LSS91",
+      "categoryCode": "2404",
+      "responseSha256": "7ce527df2aeb07d02e4eb0c8f7aab58b9be81a7f9e1a12f0ea05ccb579b2bd01",
+      "manualFileNames": [],
+      "hasGermanManual": false,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-025",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VC08QHNDCBB/EG/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VC08QHNDCBB/EG/",
+      "pageTitle": "VCDC20 Bodenstaubsauger mit Twin Chamber System™, 850 Watt, Ebony Black | Samsung Service DE",
+      "observedFullCode": "VC08QHNDCBB/EG",
+      "observedModelName": "VCDC08QH",
+      "categoryCode": "2401",
+      "responseSha256": "7815c68e16d5c67239d04afe534fb1a1cee4c8bca8ab8917315e73b55c26c01f",
+      "manualFileNames": [
+        "06.DJ68-00665C.pdf"
+      ],
+      "hasGermanManual": true,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-026",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VC07F50VN3Y/EG/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VC07F50VN3Y/EG/",
+      "pageTitle": "SC07F50V3 | Samsung Service DE",
+      "observedFullCode": "VC07F50VN3Y/EG",
+      "observedModelName": "SC07F50V3",
+      "categoryCode": "2401",
+      "responseSha256": "51197db4887bdf7ca4a4613c8e3ddc68bd7e5e6f4f90f3aa132839432075ce79",
+      "manualFileNames": [
+        "05.DJ68-00699A.pdf",
+        "06.DJ68-00699A.pdf"
+      ],
+      "hasGermanManual": true,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-027",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VC07F80HUEK/SW/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VC07F80HUEK/SW/",
+      "pageTitle": "SC07F80HE | Samsung Service DE",
+      "observedFullCode": "VC07F80HUEK/SW",
+      "observedModelName": "SC07F80HE",
+      "categoryCode": "2401",
+      "responseSha256": "ae7d49f7dd3577688b86ba4efae6cbe1a09e343b99788776bd0b4553e9f22e2e",
+      "manualFileNames": [
+        "DJ68-00701L-00.pdf"
+      ],
+      "hasGermanManual": true,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-028",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VC15F50HUSU/EG/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VC15F50HUSU/EG/",
+      "pageTitle": "Beutelloser Staubsauger SC15F50HS | Samsung Service DE",
+      "observedFullCode": "VC15F50HUSU/EG",
+      "observedModelName": "SC15F50HS",
+      "categoryCode": "2401",
+      "responseSha256": "d94df6d37db6876a50534be3549acc645f946a735915fae00174adcedd5dc3ce",
+      "manualFileNames": [
+        "05.DJ68-00699A.pdf",
+        "06.DJ68-00699A.pdf"
+      ],
+      "hasGermanManual": true,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-029",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VC07M3110VB/SB/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VC07M3110VB/SB/",
+      "pageTitle": "SC07M3110VB | Samsung Service DE",
+      "observedFullCode": "VC07M3110VB/SB",
+      "observedModelName": "SC07M3110VB",
+      "categoryCode": "2401",
+      "responseSha256": "8a1431438c80f343fc864acd142c0a566548d72e28a69d02a8a1760ce7ff48ba",
+      "manualFileNames": [
+        "DJ68-00753E-00.pdf",
+        "VC3100_00753E-03_SB_190622.pdf",
+        "O-DJ68-00753D-09_IB_VC3100_GE_EN_251203.pdf"
+      ],
+      "hasGermanManual": false,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-030",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VC07M2110SB/GE/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VC07M2110SB/GE/",
+      "pageTitle": "SC07M2110SB | Samsung Service DE",
+      "observedFullCode": "VC07M2110SB/GE",
+      "observedModelName": "SC07M2110SB",
+      "categoryCode": "2401",
+      "responseSha256": "d55b3025bcdcc1e44e4495e032b69f7dbbf18cd9d8682558307cb2815b707238",
+      "manualFileNames": [
+        "O-DJ68-00758L-09_IB_VC2100_GE_DE_251203.pdf",
+        "O-DJ68-00758M-05_IB_VC2100_EN_DE_250801.pdf",
+        "O-DJ68-00758M-05_IB_VC2100_EN_FR_250801.pdf",
+        "O-DJ68-00758M-05_IB_VC2100_EN_NL_250801.pdf",
+        "O-DJ68-00758J-05_IB_VC2100_SB_EN_250801.pdf",
+        "O-DJ68-00758L-09_IB_VC2100_GE_EN_251203.pdf"
+      ],
+      "hasGermanManual": true,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-031",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VC07M2110SR/SB/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VC07M2110SR/SB/",
+      "pageTitle": "SC07M2110SR | Samsung Service DE",
+      "observedFullCode": "VC07M2110SR/SB",
+      "observedModelName": "SC07M2110SR",
+      "categoryCode": "2401",
+      "responseSha256": "90c45be28d2bd8cab6726f5591966ff907eace7c34ace8e40abc7544b61adc6f",
+      "manualFileNames": [
+        "O-DJ68-00758L-09_IB_VC2100_GE_DE_251203.pdf",
+        "O-DJ68-00758M-05_IB_VC2100_EN_DE_250801.pdf",
+        "O-DJ68-00758M-05_IB_VC2100_EN_FR_250801.pdf",
+        "O-DJ68-00758M-05_IB_VC2100_EN_NL_250801.pdf",
+        "O-DJ68-00758J-05_IB_VC2100_SB_EN_250801.pdf",
+        "O-DJ68-00758L-09_IB_VC2100_GE_EN_251203.pdf"
+      ],
+      "hasGermanManual": true,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-032",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VC05K41H0VB/SW/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VC05K41H0VB/SW/",
+      "pageTitle": "SC05K41H0VB | Samsung Service DE",
+      "observedFullCode": "VC05K41H0VB/SW",
+      "observedModelName": "SC05K41H0VB",
+      "categoryCode": "2401",
+      "responseSha256": "dc3c00bc8cb22d31c53417ea6327eae29f25f9727ab6a803b00a4e1dc5dffef4",
+      "manualFileNames": [
+        "SEHC_06_DJ68-00724L.pdf",
+        "06_DJ68-00724L.pdf",
+        "SC07H40_V_SERIES_EN_DE_FR_IT_00724L-08_SW_190623.pdf"
+      ],
+      "hasGermanManual": true,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-033",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VC07M25E0WR/SB/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VC07M25E0WR/SB/",
+      "pageTitle": "SC07M25E0WR | Samsung Service DE",
+      "observedFullCode": "VC07M25E0WR/SB",
+      "observedModelName": "SC07M25E0WR",
+      "categoryCode": "2401",
+      "responseSha256": "a3c4c0096bf53c1be752d9becb1223c701c62a1d63b5d01d3d46c200a9283ba4",
+      "manualFileNames": [
+        "00._DJ68-00759C.pdf",
+        "O_DJ68-00759C-01_IB_VC2500_AP_EN_AR_FR_190625.pdf"
+      ],
+      "hasGermanManual": false,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-034",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VC05K71G0HC/SW/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VC05K71G0HC/SW/",
+      "pageTitle": "SC05K71G0HC | Samsung Service DE",
+      "observedFullCode": "VC05K71G0HC/SW",
+      "observedModelName": "SC05K71G0HC",
+      "categoryCode": "2401",
+      "responseSha256": "b9f53440fcccb54dc481562cfc263705caa9e5ae68905a69476a3f9d4a028a6a",
+      "manualFileNames": [
+        "VC7100_00752D-00_SW_190424.pdf"
+      ],
+      "hasGermanManual": true,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-035",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model.VC15QVNDCNC_EH/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model.VC15QVNDCNC_EH/",
+      "pageTitle": "VCDC15QV | Samsung Service DE",
+      "observedFullCode": "VC15QVNDCNC/EH",
+      "observedModelName": "VCDC15QV",
+      "categoryCode": "2401",
+      "responseSha256": "51183fb6f75df44de13d8f605b36101c174387f7fe8dcb577af84c73f3ef9706",
+      "manualFileNames": [
+        "06.DJ68-00665C.pdf",
+        "02_DJ68-00665L.pdf"
+      ],
+      "hasGermanManual": true,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-036",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model.VC7415VN3B_XEP/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model.VC7415VN3B_XEP/",
+      "pageTitle": "VC-7415V | Samsung Service DE",
+      "observedFullCode": "VC7415VN3B/XEP",
+      "observedModelName": "VC-7415V",
+      "categoryCode": "2401",
+      "responseSha256": "011c5d527f355800da981f42cd96b1ffa1e12d802acd2f991d84960557ffe1e8",
+      "manualFileNames": [],
+      "hasGermanManual": false,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-037",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VCC8460H3B/XEG/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VCC8460H3B/XEG/",
+      "pageTitle": "SC-8460 | Samsung Service DE",
+      "observedFullCode": "VCC8460H3B/XEG",
+      "observedModelName": "SC8460",
+      "categoryCode": "2401",
+      "responseSha256": "3abe1a5b1f8fd80de17c331a416c6c057ff84fcb9502152420811599952bbf62",
+      "manualFileNames": [
+        "DJ68-00321K.pdf",
+        "20060419150042890_DJ68-00321U.pdf"
+      ],
+      "hasGermanManual": true,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-038",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VCC8450H3R/XEG/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VCC8450H3R/XEG/",
+      "pageTitle": "SC-8450 | Samsung Service DE",
+      "observedFullCode": "VCC8450H3R/XEG",
+      "observedModelName": "SC8450",
+      "categoryCode": "2401",
+      "responseSha256": "0692467ee139c0ff64304186a3a88a3d8dccf9929233a94a55af064fdc3a3012",
+      "manualFileNames": [
+        "20060419150042890_DJ68-00321U.pdf"
+      ],
+      "hasGermanManual": true,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-039",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VCC7253H3S/XEG/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VCC7253H3S/XEG/",
+      "pageTitle": "SC-7253 | Samsung Service DE",
+      "observedFullCode": "VCC7253H3S/XEG",
+      "observedModelName": "SC7253",
+      "categoryCode": "2401",
+      "responseSha256": "39eaafe82bccb11b54642c93862a448ba8c2f9c12aa86950e256cf8346b12e57",
+      "manualFileNames": [
+        "20070312191847125_DJ68-00308D.pdf"
+      ],
+      "hasGermanManual": true,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-040",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VCC63G0H3K/XEG/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VCC63G0H3K/XEG/",
+      "pageTitle": "SC-1400 | Samsung Service DE",
+      "observedFullCode": "VCC63G0H3K/XEG",
+      "observedModelName": "SC1400",
+      "categoryCode": "2401",
+      "responseSha256": "155b6575e5099064c4cdab412c2e4d43d162e4513c0a9dcbbe071316d0997afe",
+      "manualFileNames": [
+        "DJ68-00428K.pdf"
+      ],
+      "hasGermanManual": true,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-041",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VCC63J0H36/XEG/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VCC63J0H36/XEG/",
+      "pageTitle": "SC-1200 | Samsung Service DE",
+      "observedFullCode": "VCC63J0H36/XEG",
+      "observedModelName": "SC1200",
+      "categoryCode": "2401",
+      "responseSha256": "d5b93897138e8e8c5e84a82c7a9553c8449daf2394cdca491fcbd02af340065f",
+      "manualFileNames": [
+        "DJ68-00428K.pdf"
+      ],
+      "hasGermanManual": true,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-042",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VCC4350V34/XEG/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VCC4350V34/XEG/",
+      "pageTitle": "SC-4355-R | Samsung Service DE",
+      "observedFullCode": "VCC4350V34/XEG",
+      "observedModelName": "SC4355 R",
+      "categoryCode": "2401",
+      "responseSha256": "4a170764115da652d3cfaedf5ee7c8fa41fc880f327e8e573fed61d1c5680386",
+      "manualFileNames": [
+        "DJ68-00387V.pdf"
+      ],
+      "hasGermanManual": true,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-043",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VCC8580H3S/XEG/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VCC8580H3S/XEG/",
+      "pageTitle": "SC-8580 | Samsung Service DE",
+      "observedFullCode": "VCC8580H3S/XEG",
+      "observedModelName": "SC8580",
+      "categoryCode": "2401",
+      "responseSha256": "64e691aaaca0f708f67b9fd3b61da7db36021912e453a36a09eb296e4e5955c9",
+      "manualFileNames": [
+        "DJ68-00330Q.pdf"
+      ],
+      "hasGermanManual": true,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-044",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VCC7293H3R/XEG/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VCC7293H3R/XEG/",
+      "pageTitle": "SC-7293 | Samsung Service DE",
+      "observedFullCode": "VCC7293H3R/XEG",
+      "observedModelName": "SC7293",
+      "categoryCode": "2401",
+      "responseSha256": "5566a9eb5a99c1176bd30e280afc63a7b05fb52fd808901b5186fa3ba32b1605",
+      "manualFileNames": [
+        "20070312191847125_DJ68-00308D.pdf"
+      ],
+      "hasGermanManual": true,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-045",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VC-5913V/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VC-5913V/",
+      "pageTitle": "VC-5913V | Samsung Service DE",
+      "observedFullCode": "VC-5913V",
+      "observedModelName": "VC-5913V",
+      "categoryCode": "2401",
+      "responseSha256": "1e8944d05e0b6b6ec18ab5acfda3999588fbdd6c45dbf9084a489896a8be403c",
+      "manualFileNames": [
+        "20040318163811500_DJ68-00068A.pdf"
+      ],
+      "hasGermanManual": false,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-046",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VC-RE70V/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VC-RE70V/",
+      "pageTitle": "VC-RE70V | Samsung Service DE",
+      "observedFullCode": "VC-RE70V",
+      "observedModelName": "VC-RE70V",
+      "categoryCode": "2403",
+      "responseSha256": "762b1dff6c8b3df2b7233653f588f4c3df2d1beef7896fcf9ecf8fed990de291",
+      "manualFileNames": [],
+      "hasGermanManual": false,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-047",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VC9015VC2R/HAC/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VC9015VC2R/HAC/",
+      "pageTitle": "VC-9515T | Samsung Service DE",
+      "observedFullCode": "VC9015VC2R/HAC",
+      "observedModelName": "VC-9515T",
+      "categoryCode": "2401",
+      "responseSha256": "87ae38a8fbf910ca8524c7370868b569bcffeeb4f2ac2276162a06493c4725ec",
+      "manualFileNames": [],
+      "hasGermanManual": false,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-048",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VC5813SU2M/XEO/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VC5813SU2M/XEO/",
+      "pageTitle": "VC-5813 | Samsung Service DE",
+      "observedFullCode": "VC5813SU2M/XEO",
+      "observedModelName": "VC-5813",
+      "categoryCode": "2401",
+      "responseSha256": "228fef1fd32b655bb99cd6444f29a10b8692fa060261d1abfaeb65231b362d4b",
+      "manualFileNames": [],
+      "hasGermanManual": false,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-049",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VC5980VN3B/XEN/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VC5980VN3B/XEN/",
+      "pageTitle": "VC-5980V | Samsung Service DE",
+      "observedFullCode": "VC5980VN3B/XEN",
+      "observedModelName": "VC-5980V",
+      "categoryCode": "2401",
+      "responseSha256": "c1a118a64f85947a4de80e2aa6c87faddc62e65778a7b8e76cb355cc6ad57193",
+      "manualFileNames": [],
+      "hasGermanManual": false,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-050",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VC8614VN3S/XEN/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VC8614VN3S/XEN/",
+      "pageTitle": "VC-8614V | Samsung Service DE",
+      "observedFullCode": "VC8614VN3S/XEN",
+      "observedModelName": "VC-8614V",
+      "categoryCode": "2401",
+      "responseSha256": "39f0fcfbb4a43fbae05868966899fad9af609d82c6ff800a9cff27c9e198c000",
+      "manualFileNames": [
+        "20040109161636421_DJ68-00086D.pdf"
+      ],
+      "hasGermanManual": false,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-051",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VCC4040V34/XEG/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VCC4040V34/XEG/",
+      "pageTitle": "SC4041 | Samsung Service DE",
+      "observedFullCode": "VCC4040V34/XEG",
+      "observedModelName": "SC4041",
+      "categoryCode": "2401",
+      "responseSha256": "b0507e69ff07f3928616ea29b863d2c71f203ced83841e7cd36808432f47d007",
+      "manualFileNames": [],
+      "hasGermanManual": false,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-052",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VC20AVNDCRD/EG/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VC20AVNDCRD/EG/",
+      "pageTitle": "Samsung Zylinder-Staubsauger VCDC20AV | Samsung Service DE",
+      "observedFullCode": "VC20AVNDCRD/EG",
+      "observedModelName": "VCDC20AV",
+      "categoryCode": "2401",
+      "responseSha256": "72ecbfb84cd2459ebbc600fbda54679e45c8c373fbbdc185f5d87513c4de0adf",
+      "manualFileNames": [
+        "06.DJ68-00665C.pdf",
+        "02_DJ68-00665L.pdf"
+      ],
+      "hasGermanManual": true,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-053",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VC08QVNDCRD/EG/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VC08QVNDCRD/EG/",
+      "pageTitle": "VCDC20 Bodenstaubsauger mit Twin Chamber System™, 850 Watt, Red | Samsung Service DE",
+      "observedFullCode": "VC08QVNDCRD/EG",
+      "observedModelName": "VCDC08QV",
+      "categoryCode": "2401",
+      "responseSha256": "4901ffd9cfa0f6e0030d4046619ee9492752830b12b89e5a7edfb1b4eebf1230",
+      "manualFileNames": [
+        "06.DJ68-00665C.pdf"
+      ],
+      "hasGermanManual": true,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-054",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VS90F40EEK/WD/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VS90F40EEK/WD/",
+      "pageTitle": "Bespoke AI Jet Ultra Akku+ CompleteClean, 1050 W Motorleistung, Satin Black | Samsung Service DE",
+      "observedFullCode": "VS90F40EEK/WD",
+      "observedModelName": "VS90F40EEK",
+      "categoryCode": "2404",
+      "responseSha256": "21b522c052559e8b03f99e6ff6a622a367592388e4eeb5ca0fbf5cd99e82751e",
+      "manualFileNames": [
+        "start_here.html",
+        "O_DJ68-00900B-08_IB_VS9700_WD_DE_250731.pdf"
+      ],
+      "hasGermanManual": true,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-055",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VS90F40EEM/WD/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VS90F40EEM/WD/",
+      "pageTitle": "Bespoke AI Jet Ultra Akku+ CompleteClean, 1050 W Motorleistung, Satin Mint | Samsung Service DE",
+      "observedFullCode": "VS90F40EEM/WD",
+      "observedModelName": "VS90F40EEM",
+      "categoryCode": "2404",
+      "responseSha256": "0b4094c982f8403f020db6d6ecca082b6c2ac270a816731acdce6fcf9295ca82",
+      "manualFileNames": [
+        "start_here.html",
+        "O_DJ68-00900B-08_IB_VS9700_WD_DE_250731.pdf"
+      ],
+      "hasGermanManual": true,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-056",
+      "kind": "manufacturer_support",
+      "url": "https://www.samsung.com/de/support/model/VS15A6032R5/EG/",
+      "region": "DE support; market must be assessed separately",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "resolvedUrl": "https://www.samsung.com/de/support/model/VS15A6032R5/EG/",
+      "pageTitle": "Jet 60 pet , 150 W (Max.) | Samsung Service DE",
+      "observedFullCode": "VS15A6032R5/EG",
+      "observedModelName": "VS15A6032R5",
+      "categoryCode": "2404",
+      "responseSha256": "d766897ac0c4058a2f56eb653866fd2fc414a4b2f9b17ecbf0c9e4499edf068f",
+      "manualFileNames": [
+        "start_here.html",
+        "O_DJ68-00861B-03_IB_FULL_VS6700AL_EG_DE_250801.pdf",
+        "O_DJ68-00861G-04_IB_FULL_VS6700AL_GE_DE_250801.pdf",
+        "O_VS6700AL_DJ68-00861F-00_EN_ET_LV_LT_210205.pdf",
+        "O_DJ68-00861G-04_IB_FULL_VS6700AL_GE_EN_250801.pdf"
+      ],
+      "hasGermanManual": true,
+      "retrievalMethod": "HTTPS GET; modelCode and modelName read from manufacturer service metadata"
+    },
+    {
+      "id": "samsung-next-ultra-equivalence",
+      "kind": "manufacturer_product",
+      "url": "https://www.samsung.com/de/vacuum-cleaners/stick/vc9700cl-stick-vc-with-most-powerful-jet-aiultra-400w-black-vs90f40eek-wd/",
+      "region": "DE",
+      "checkedAt": "2026-10-08",
+      "httpStatus": 200,
+      "responseSha256": "d106f053fb64d981852d58d62132a2b4e520d9f7f82f2e306ab3c4c3fbb6be67",
+      "equivalenceClaim": "manufacturer_explicitly_identical",
+      "equivalentReferences": [
+        "VS90F40EEK/WD",
+        "VS90F40EEM/WD"
+      ],
+      "evidenceLocation": "Produktseite: Highlights und Auszeichnungen; Herstellerwort baugleich / produktgleich zu beiden Vollcodes",
+      "retrievalMethod": "HTTPS GET and manual manufacturer-page review"
+    }
+  ],
+  "decisions": [
+    {
+      "model": "VC-7614V",
+      "fullCode": "VC7614VN3G/XEG",
+      "sourceId": "samsung-next-001",
+      "url": "https://www.samsung.com/de/support/model/VC7614VN3G/XEG/",
+      "region": "DE",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "already_present",
+      "duplicateOf": "VC7614VN3G",
+      "notes": "Modellstamm bereits im Ausgangskatalog; weitere Länderkennung wird nicht als neues Grundgerät gezählt. Bestehende Datensätze bleiben unverändert."
+    },
+    {
+      "model": "VC-7616V",
+      "fullCode": "VC7616VN3R/XEG",
+      "sourceId": "samsung-next-002",
+      "url": "https://www.samsung.com/de/support/model/VC7616VN3R/XEG/",
+      "region": "DE",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "already_present",
+      "duplicateOf": "VC7616VN3R",
+      "notes": "Modellstamm bereits im Ausgangskatalog; weitere Länderkennung wird nicht als neues Grundgerät gezählt. Bestehende Datensätze bleiben unverändert."
+    },
+    {
+      "model": "VC-6013",
+      "fullCode": "VC6013SN3B/XEG",
+      "sourceId": "samsung-next-003",
+      "url": "https://www.samsung.com/de/support/model/VC6013SN3B/XEG/",
+      "region": "DE",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "already_present",
+      "duplicateOf": "VC6013SN3B",
+      "notes": "Modellstamm bereits im Ausgangskatalog; weitere Länderkennung wird nicht als neues Grundgerät gezählt. Bestehende Datensätze bleiben unverändert."
+    },
+    {
+      "model": "VC-8928E",
+      "fullCode": "VC8928EN3B/XEG",
+      "sourceId": "samsung-next-004",
+      "url": "https://www.samsung.com/de/support/model/VC8928EN3B/XEG/",
+      "region": "DE",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "already_present",
+      "duplicateOf": "VC8928EN3B",
+      "notes": "Modellstamm bereits im Ausgangskatalog; weitere Länderkennung wird nicht als neues Grundgerät gezählt. Bestehende Datensätze bleiben unverändert."
+    },
+    {
+      "model": "VC-6015V",
+      "fullCode": "VC6015VN3R/XEG",
+      "sourceId": "samsung-next-005",
+      "url": "https://www.samsung.com/de/support/model/VC6015VN3R/XEG/",
+      "region": "DE",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "deferred_variant",
+      "duplicateOf": "VC6013SN3B",
+      "notes": "VC60-Nachbarmodell zum vorhandenen VC6013; technische Abgrenzung gegenüber Grundgerät/Ausstattung nicht belegt."
+    },
+    {
+      "model": "VC-7413V",
+      "fullCode": "VC7413VN3B/XEG",
+      "sourceId": "samsung-next-006",
+      "url": "https://www.samsung.com/de/support/model/VC7413VN3B/XEG/",
+      "region": "DE",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "add",
+      "duplicateOf": "VC7413VN3B",
+      "notes": "Einmal als neues Grundgerät importiert."
+    },
+    {
+      "model": "VC-8908V",
+      "fullCode": "VC8918VN3R/XEG",
+      "sourceId": "samsung-next-007",
+      "url": "https://www.samsung.com/de/support/model/VC8918VN3R/XEG/",
+      "region": "DE",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "deferred_variant",
+      "duplicateOf": "VC8928EN3B",
+      "notes": "Herstellertitel VC-8908V weicht vom numerischen Modellcode VC8918 ab. Zusätzlich VC89-Nachbarmodelle im Bestand; keine belastbare Grundgeräteabgrenzung."
+    },
+    {
+      "model": "VC-6713",
+      "fullCode": "VC6713SN3G/XEG",
+      "sourceId": "samsung-next-008",
+      "url": "https://www.samsung.com/de/support/model/VC6713SN3G/XEG/",
+      "region": "DE",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "deferred_variant",
+      "duplicateOf": "VC6713HN3S",
+      "notes": "VC6713 wird in dieser Recherche nur einmal gezählt. H-/S-Ausführungsunterschied und technische Grundgeräteabgrenzung bleiben offen."
+    },
+    {
+      "model": "VC-7615V",
+      "fullCode": "VC7615VN3W/XEG",
+      "sourceId": "samsung-next-009",
+      "url": "https://www.samsung.com/de/support/model/VC7615VN3W/XEG/",
+      "region": "DE",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "deferred_variant",
+      "duplicateOf": "VC7614VN3G",
+      "notes": "Bereits VC7614 und VC7616 im Bestand. Weiteres VC76-Nachbarmodell ohne belegte technische Grundgeräteabgrenzung wird nicht pauschal gezählt."
+    },
+    {
+      "model": "VC-5956V",
+      "fullCode": "VC5956VN3R/XEG",
+      "sourceId": "samsung-next-010",
+      "url": "https://www.samsung.com/de/support/model/VC5956VN3R/XEG/",
+      "region": "DE",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "deferred_variant",
+      "duplicateOf": "VC-5913V",
+      "notes": "Eigener Servicename, aber VC59-Nachbarmodell zu VC-5913V und gemeinsame Unterlagen. Grundgeräteabgrenzung zuerst klären."
+    },
+    {
+      "model": "VC-5956V",
+      "fullCode": "VC5956VN3B/XEG",
+      "sourceId": "samsung-next-011",
+      "url": "https://www.samsung.com/de/support/model/VC5956VN3B/XEG/",
+      "region": "DE",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "deferred_variant",
+      "duplicateOf": "VC-5913V",
+      "notes": "Identischer Hersteller-Modellname VC-5956V wie beim roten R-Code. Farbvariante erzeugt keinen eigenen Zielplatz; außerdem VC59-Grundgeräteabgrenzung offen."
+    },
+    {
+      "model": "VC-6713H",
+      "fullCode": "VC6713HN3S/XEG",
+      "sourceId": "samsung-next-012",
+      "url": "https://www.samsung.com/de/support/model/VC6713HN3S/XEG/",
+      "region": "DE",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "add",
+      "duplicateOf": "VC6713HN3S",
+      "notes": "Einmal als neues Grundgerät importiert."
+    },
+    {
+      "model": "SC07K51H0VD",
+      "fullCode": "VC07K51H0VD/EG",
+      "sourceId": "samsung-next-013",
+      "url": "https://www.samsung.com/de/support/model/VC07K51H0VD/EG/",
+      "region": "DE",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "add",
+      "duplicateOf": "VC07K51H0VD",
+      "notes": "Einmal als neues Grundgerät importiert."
+    },
+    {
+      "model": "SC07K51E0VB",
+      "fullCode": "VC07K51E0VB/EE",
+      "sourceId": "samsung-next-014",
+      "url": "https://www.samsung.com/de/support/model/VC07K51E0VB/EE/",
+      "region": "DE support; sales market unresolved",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "deferred_market",
+      "duplicateOf": null,
+      "notes": "Deutsche Serviceoberfläche belegt die Modellkennung, aber nicht den deutschen Markt dieser regionalen Ausführung. Kein hinreichender Samsung-DE-Markt-/Grundgerätebeleg."
+    },
+    {
+      "model": "SC07K51L9H1",
+      "fullCode": "VC07K51L9H1/SB",
+      "sourceId": "samsung-next-015",
+      "url": "https://www.samsung.com/de/support/model/VC07K51L9H1/SB/",
+      "region": "DE support; sales market unresolved",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "deferred_market",
+      "duplicateOf": null,
+      "notes": "Deutsche Serviceoberfläche belegt die Modellkennung, aber nicht den deutschen Markt dieser regionalen Ausführung. Kein hinreichender Samsung-DE-Markt-/Grundgerätebeleg."
+    },
+    {
+      "model": "SC07K41E0VY",
+      "fullCode": "VC07K41E0VY/EG",
+      "sourceId": "samsung-next-016",
+      "url": "https://www.samsung.com/de/support/model/VC07K41E0VY/EG/",
+      "region": "DE",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "add",
+      "duplicateOf": "VC07K41E0VY",
+      "notes": "Einmal als neues Grundgerät importiert."
+    },
+    {
+      "model": "SC07M2110SB",
+      "fullCode": "VC07M2110SB/EN",
+      "sourceId": "samsung-next-017",
+      "url": "https://www.samsung.com/de/support/model/VC07M2110SB/EN/",
+      "region": "DE support; sales market unresolved",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "already_present",
+      "duplicateOf": "VC07M2110SB",
+      "notes": "Modellstamm bereits im Ausgangskatalog; weitere Länderkennung wird nicht als neues Grundgerät gezählt. Bestehende Datensätze bleiben unverändert."
+    },
+    {
+      "model": "SC20F70HC",
+      "fullCode": "VC20F70HUCC/EG",
+      "sourceId": "samsung-next-018",
+      "url": "https://www.samsung.com/de/support/model/VC20F70HUCC/EG/",
+      "region": "DE",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "already_present",
+      "duplicateOf": "VC20F70HUCC",
+      "notes": "Modellstamm bereits im Ausgangskatalog; weitere Länderkennung wird nicht als neues Grundgerät gezählt. Bestehende Datensätze bleiben unverändert."
+    },
+    {
+      "model": "SC07F50HR",
+      "fullCode": "VC07F50HNRB/EG",
+      "sourceId": "samsung-next-019",
+      "url": "https://www.samsung.com/de/support/model/VC07F50HNRB/EG/",
+      "region": "DE",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "add",
+      "duplicateOf": "VC07F50HNRB",
+      "notes": "Einmal als neues Grundgerät importiert."
+    },
+    {
+      "model": "SC07M21N9VD",
+      "fullCode": "VC07M21N9VD/GE",
+      "sourceId": "samsung-next-020",
+      "url": "https://www.samsung.com/de/support/model/VC07M21N9VD/GE/",
+      "region": "DE support; sales market unresolved",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "deferred_market",
+      "duplicateOf": null,
+      "notes": "Deutsche Serviceoberfläche belegt die Modellkennung, aber nicht den deutschen Markt dieser regionalen Ausführung. Kein hinreichender Samsung-DE-Markt-/Grundgerätebeleg."
+    },
+    {
+      "model": "SC07F50H1",
+      "fullCode": "VC07F50HU1U/EG",
+      "sourceId": "samsung-next-021",
+      "url": "https://www.samsung.com/de/support/model/VC07F50HU1U/EG/",
+      "region": "DE",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "deferred_variant",
+      "duplicateOf": "VC07F50HNRB",
+      "notes": "Gleiche VCF500G-Gerätelinie und 700-Watt-Titel. Andere Farbe/Ausstattung ist kein zusätzlicher Grundgerätebeweis."
+    },
+    {
+      "model": "SC07H40F0V",
+      "fullCode": "VC07H40F0VB/EG",
+      "sourceId": "samsung-next-022",
+      "url": "https://www.samsung.com/de/support/model/VC07H40F0VB/EG/",
+      "region": "DE",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "already_present",
+      "duplicateOf": "VC07H40F0VB",
+      "notes": "Modellstamm bereits im Ausgangskatalog; weitere Länderkennung wird nicht als neues Grundgerät gezählt. Bestehende Datensätze bleiben unverändert."
+    },
+    {
+      "model": "SC07M31B0HN",
+      "fullCode": "VC07M31B0HN/GE",
+      "sourceId": "samsung-next-023",
+      "url": "https://www.samsung.com/de/support/model/VC07M31B0HN/GE/",
+      "region": "DE support; sales market unresolved",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "already_present",
+      "duplicateOf": "VC07M31B0HN",
+      "notes": "Modellstamm bereits im Ausgangskatalog; weitere Länderkennung wird nicht als neues Grundgerät gezählt. Bestehende Datensätze bleiben unverändert."
+    },
+    {
+      "model": "VC-LSS91",
+      "fullCode": "VC-LSS91",
+      "sourceId": "samsung-next-024",
+      "url": "https://www.samsung.com/de/support/model/VC-LSS91/",
+      "region": "DE support; sales market unresolved",
+      "deviceType": "cordless",
+      "checkedAt": "2026-10-08",
+      "decision": "already_present",
+      "duplicateOf": "VC-LSS91",
+      "notes": "Modellstamm bereits im Ausgangskatalog; weitere Länderkennung wird nicht als neues Grundgerät gezählt. Bestehende Datensätze bleiben unverändert."
+    },
+    {
+      "model": "VCDC08QH",
+      "fullCode": "VC08QHNDCBB/EG",
+      "sourceId": "samsung-next-025",
+      "url": "https://www.samsung.com/de/support/model/VC08QHNDCBB/EG/",
+      "region": "DE",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "add",
+      "duplicateOf": "VC08QHNDCBB",
+      "notes": "Einmal als neues Grundgerät importiert."
+    },
+    {
+      "model": "SC07F50V3",
+      "fullCode": "VC07F50VN3Y/EG",
+      "sourceId": "samsung-next-026",
+      "url": "https://www.samsung.com/de/support/model/VC07F50VN3Y/EG/",
+      "region": "DE",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "deferred_variant",
+      "duplicateOf": "VC07F50HNRB",
+      "notes": "Weitere F50-Ausführung. Unterschiede am Grundgerät gegenüber der einmal aufgenommenen F500G-Linie bleiben ungeklärt."
+    },
+    {
+      "model": "SC07F80HE",
+      "fullCode": "VC07F80HUEK/SW",
+      "sourceId": "samsung-next-027",
+      "url": "https://www.samsung.com/de/support/model/VC07F80HUEK/SW/",
+      "region": "DE support; sales market unresolved",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "deferred_market",
+      "duplicateOf": null,
+      "notes": "Deutsche Serviceoberfläche belegt die Modellkennung, aber nicht den deutschen Markt dieser regionalen Ausführung. Kein hinreichender Samsung-DE-Markt-/Grundgerätebeleg."
+    },
+    {
+      "model": "SC15F50HS",
+      "fullCode": "VC15F50HUSU/EG",
+      "sourceId": "samsung-next-028",
+      "url": "https://www.samsung.com/de/support/model/VC15F50HUSU/EG/",
+      "region": "DE",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "deferred_variant",
+      "duplicateOf": "VC07F50HNRB",
+      "notes": "Andere Leistungs-/Länderausführung der F50-Linie. Motorleistung allein belegt kein weiteres unabhängiges Grundgerät; keine Doppelzählung."
+    },
+    {
+      "model": "SC07M3110VB",
+      "fullCode": "VC07M3110VB/SB",
+      "sourceId": "samsung-next-029",
+      "url": "https://www.samsung.com/de/support/model/VC07M3110VB/SB/",
+      "region": "DE support; sales market unresolved",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "deferred_market",
+      "duplicateOf": null,
+      "notes": "Deutsche Serviceoberfläche belegt die Modellkennung, aber nicht den deutschen Markt dieser regionalen Ausführung. Kein hinreichender Samsung-DE-Markt-/Grundgerätebeleg."
+    },
+    {
+      "model": "SC07M2110SB",
+      "fullCode": "VC07M2110SB/GE",
+      "sourceId": "samsung-next-030",
+      "url": "https://www.samsung.com/de/support/model/VC07M2110SB/GE/",
+      "region": "DE support; sales market unresolved",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "already_present",
+      "duplicateOf": "VC07M2110SB",
+      "notes": "Modellstamm bereits im Ausgangskatalog; weitere Länderkennung wird nicht als neues Grundgerät gezählt. Bestehende Datensätze bleiben unverändert."
+    },
+    {
+      "model": "SC07M2110SR",
+      "fullCode": "VC07M2110SR/SB",
+      "sourceId": "samsung-next-031",
+      "url": "https://www.samsung.com/de/support/model/VC07M2110SR/SB/",
+      "region": "DE support; sales market unresolved",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "deferred_market",
+      "duplicateOf": null,
+      "notes": "Deutsche Serviceoberfläche belegt die Modellkennung, aber nicht den deutschen Markt dieser regionalen Ausführung. Kein hinreichender Samsung-DE-Markt-/Grundgerätebeleg."
+    },
+    {
+      "model": "SC05K41H0VB",
+      "fullCode": "VC05K41H0VB/SW",
+      "sourceId": "samsung-next-032",
+      "url": "https://www.samsung.com/de/support/model/VC05K41H0VB/SW/",
+      "region": "DE support; sales market unresolved",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "deferred_market",
+      "duplicateOf": null,
+      "notes": "Deutsche Serviceoberfläche belegt die Modellkennung, aber nicht den deutschen Markt dieser regionalen Ausführung. Kein hinreichender Samsung-DE-Markt-/Grundgerätebeleg."
+    },
+    {
+      "model": "SC07M25E0WR",
+      "fullCode": "VC07M25E0WR/SB",
+      "sourceId": "samsung-next-033",
+      "url": "https://www.samsung.com/de/support/model/VC07M25E0WR/SB/",
+      "region": "DE support; sales market unresolved",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "deferred_market",
+      "duplicateOf": null,
+      "notes": "Deutsche Serviceoberfläche belegt die Modellkennung, aber nicht den deutschen Markt dieser regionalen Ausführung. Kein hinreichender Samsung-DE-Markt-/Grundgerätebeleg."
+    },
+    {
+      "model": "SC05K71G0HC",
+      "fullCode": "VC05K71G0HC/SW",
+      "sourceId": "samsung-next-034",
+      "url": "https://www.samsung.com/de/support/model/VC05K71G0HC/SW/",
+      "region": "DE support; sales market unresolved",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "already_present",
+      "duplicateOf": "VC05K71G0HC",
+      "notes": "Modellstamm bereits im Ausgangskatalog; weitere Länderkennung wird nicht als neues Grundgerät gezählt. Bestehende Datensätze bleiben unverändert."
+    },
+    {
+      "model": "VCDC15QV",
+      "fullCode": "VC15QVNDCNC/EH",
+      "sourceId": "samsung-next-035",
+      "url": "https://www.samsung.com/de/support/model.VC15QVNDCNC_EH/",
+      "region": "DE support; sales market unresolved",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "deferred_market",
+      "duplicateOf": null,
+      "notes": "Deutsche Serviceoberfläche belegt die Modellkennung, aber nicht den deutschen Markt dieser regionalen Ausführung. Kein hinreichender Samsung-DE-Markt-/Grundgerätebeleg."
+    },
+    {
+      "model": "VC-7415V",
+      "fullCode": "VC7415VN3B/XEP",
+      "sourceId": "samsung-next-036",
+      "url": "https://www.samsung.com/de/support/model.VC7415VN3B_XEP/",
+      "region": "DE support; sales market unresolved",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "deferred_market",
+      "duplicateOf": null,
+      "notes": "Deutsche Serviceoberfläche belegt die Modellkennung, aber nicht den deutschen Markt dieser regionalen Ausführung. Kein hinreichender Samsung-DE-Markt-/Grundgerätebeleg."
+    },
+    {
+      "model": "SC8460",
+      "fullCode": "VCC8460H3B/XEG",
+      "sourceId": "samsung-next-037",
+      "url": "https://www.samsung.com/de/support/model/VCC8460H3B/XEG/",
+      "region": "DE",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "already_present",
+      "duplicateOf": "VCC8460H3B",
+      "notes": "Modellstamm bereits im Ausgangskatalog; weitere Länderkennung wird nicht als neues Grundgerät gezählt. Bestehende Datensätze bleiben unverändert."
+    },
+    {
+      "model": "SC8450",
+      "fullCode": "VCC8450H3R/XEG",
+      "sourceId": "samsung-next-038",
+      "url": "https://www.samsung.com/de/support/model/VCC8450H3R/XEG/",
+      "region": "DE",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "already_present",
+      "duplicateOf": "VCC8450H3R",
+      "notes": "Modellstamm bereits im Ausgangskatalog; weitere Länderkennung wird nicht als neues Grundgerät gezählt. Bestehende Datensätze bleiben unverändert."
+    },
+    {
+      "model": "SC7253",
+      "fullCode": "VCC7253H3S/XEG",
+      "sourceId": "samsung-next-039",
+      "url": "https://www.samsung.com/de/support/model/VCC7253H3S/XEG/",
+      "region": "DE",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "already_present",
+      "duplicateOf": "VCC7253H3S",
+      "notes": "Modellstamm bereits im Ausgangskatalog; weitere Länderkennung wird nicht als neues Grundgerät gezählt. Bestehende Datensätze bleiben unverändert."
+    },
+    {
+      "model": "SC1400",
+      "fullCode": "VCC63G0H3K/XEG",
+      "sourceId": "samsung-next-040",
+      "url": "https://www.samsung.com/de/support/model/VCC63G0H3K/XEG/",
+      "region": "DE",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "already_present",
+      "duplicateOf": "VCC63G0H3K",
+      "notes": "Modellstamm bereits im Ausgangskatalog; weitere Länderkennung wird nicht als neues Grundgerät gezählt. Bestehende Datensätze bleiben unverändert."
+    },
+    {
+      "model": "SC1200",
+      "fullCode": "VCC63J0H36/XEG",
+      "sourceId": "samsung-next-041",
+      "url": "https://www.samsung.com/de/support/model/VCC63J0H36/XEG/",
+      "region": "DE",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "already_present",
+      "duplicateOf": "VCC63J0H36",
+      "notes": "Modellstamm bereits im Ausgangskatalog; weitere Länderkennung wird nicht als neues Grundgerät gezählt. Bestehende Datensätze bleiben unverändert."
+    },
+    {
+      "model": "SC4355 R",
+      "fullCode": "VCC4350V34/XEG",
+      "sourceId": "samsung-next-042",
+      "url": "https://www.samsung.com/de/support/model/VCC4350V34/XEG/",
+      "region": "DE",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "already_present",
+      "duplicateOf": "VCC4350V34",
+      "notes": "Modellstamm bereits im Ausgangskatalog; weitere Länderkennung wird nicht als neues Grundgerät gezählt. Bestehende Datensätze bleiben unverändert."
+    },
+    {
+      "model": "SC8580",
+      "fullCode": "VCC8580H3S/XEG",
+      "sourceId": "samsung-next-043",
+      "url": "https://www.samsung.com/de/support/model/VCC8580H3S/XEG/",
+      "region": "DE",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "already_present",
+      "duplicateOf": "VCC8580H3S",
+      "notes": "Modellstamm bereits im Ausgangskatalog; weitere Länderkennung wird nicht als neues Grundgerät gezählt. Bestehende Datensätze bleiben unverändert."
+    },
+    {
+      "model": "SC7293",
+      "fullCode": "VCC7293H3R/XEG",
+      "sourceId": "samsung-next-044",
+      "url": "https://www.samsung.com/de/support/model/VCC7293H3R/XEG/",
+      "region": "DE",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "already_present",
+      "duplicateOf": "VCC7293H3R",
+      "notes": "Modellstamm bereits im Ausgangskatalog; weitere Länderkennung wird nicht als neues Grundgerät gezählt. Bestehende Datensätze bleiben unverändert."
+    },
+    {
+      "model": "VC-5913V",
+      "fullCode": "VC-5913V",
+      "sourceId": "samsung-next-045",
+      "url": "https://www.samsung.com/de/support/model/VC-5913V/",
+      "region": "DE support; sales market unresolved",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "already_present",
+      "duplicateOf": "VC-5913V",
+      "notes": "Modellstamm bereits im Ausgangskatalog; weitere Länderkennung wird nicht als neues Grundgerät gezählt. Bestehende Datensätze bleiben unverändert."
+    },
+    {
+      "model": "VC-RE70V",
+      "fullCode": "VC-RE70V",
+      "sourceId": "samsung-next-046",
+      "url": "https://www.samsung.com/de/support/model/VC-RE70V/",
+      "region": "DE support; sales market unresolved",
+      "deviceType": "outside_scope",
+      "checkedAt": "2026-10-08",
+      "decision": "excluded_scope",
+      "duplicateOf": null,
+      "notes": "Hersteller-Unterkategorie 2403 statt klassischem Boden- oder Akku-Staubsauger; im erlaubten Scope nicht aufgenommen."
+    },
+    {
+      "model": "VC-9515T",
+      "fullCode": "VC9015VC2R/HAC",
+      "sourceId": "samsung-next-047",
+      "url": "https://www.samsung.com/de/support/model/VC9015VC2R/HAC/",
+      "region": "DE support; sales market unresolved",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "already_present",
+      "duplicateOf": "VC9015VC2R",
+      "notes": "Modellstamm bereits im Ausgangskatalog; weitere Länderkennung wird nicht als neues Grundgerät gezählt. Bestehende Datensätze bleiben unverändert."
+    },
+    {
+      "model": "VC-5813",
+      "fullCode": "VC5813SU2M/XEO",
+      "sourceId": "samsung-next-048",
+      "url": "https://www.samsung.com/de/support/model/VC5813SU2M/XEO/",
+      "region": "DE support; sales market unresolved",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "already_present",
+      "duplicateOf": "VC5813SU2M",
+      "notes": "Modellstamm bereits im Ausgangskatalog; weitere Länderkennung wird nicht als neues Grundgerät gezählt. Bestehende Datensätze bleiben unverändert."
+    },
+    {
+      "model": "VC-5980V",
+      "fullCode": "VC5980VN3B/XEN",
+      "sourceId": "samsung-next-049",
+      "url": "https://www.samsung.com/de/support/model/VC5980VN3B/XEN/",
+      "region": "DE support; sales market unresolved",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "deferred_market",
+      "duplicateOf": null,
+      "notes": "Deutsche Serviceoberfläche belegt die Modellkennung, aber nicht den deutschen Markt dieser regionalen Ausführung. Kein hinreichender Samsung-DE-Markt-/Grundgerätebeleg."
+    },
+    {
+      "model": "VC-8614V",
+      "fullCode": "VC8614VN3S/XEN",
+      "sourceId": "samsung-next-050",
+      "url": "https://www.samsung.com/de/support/model/VC8614VN3S/XEN/",
+      "region": "DE support; sales market unresolved",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "deferred_market",
+      "duplicateOf": null,
+      "notes": "Deutsche Serviceoberfläche belegt die Modellkennung, aber nicht den deutschen Markt dieser regionalen Ausführung. Kein hinreichender Samsung-DE-Markt-/Grundgerätebeleg."
+    },
+    {
+      "model": "SC4041",
+      "fullCode": "VCC4040V34/XEG",
+      "sourceId": "samsung-next-051",
+      "url": "https://www.samsung.com/de/support/model/VCC4040V34/XEG/",
+      "region": "DE",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "add",
+      "duplicateOf": "VCC4040V34",
+      "notes": "Einmal als neues Grundgerät importiert."
+    },
+    {
+      "model": "VCDC20AV",
+      "fullCode": "VC20AVNDCRD/EG",
+      "sourceId": "samsung-next-052",
+      "url": "https://www.samsung.com/de/support/model/VC20AVNDCRD/EG/",
+      "region": "DE",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "deferred_variant",
+      "duplicateOf": "VC08QHNDCBB",
+      "notes": "VCDC20AV aus derselben VCDC20-Linie. Modellgeneration/Grundgeräteabgrenzung ist noch nicht belegt."
+    },
+    {
+      "model": "VCDC08QV",
+      "fullCode": "VC08QVNDCRD/EG",
+      "sourceId": "samsung-next-053",
+      "url": "https://www.samsung.com/de/support/model/VC08QVNDCRD/EG/",
+      "region": "DE",
+      "deviceType": "floor",
+      "checkedAt": "2026-10-08",
+      "decision": "deferred_variant",
+      "duplicateOf": "VC08QHNDCBB",
+      "notes": "VCDC20 mit ebenfalls 850-Watt-Titel. Rot gegenüber Schwarz sowie H-/V-Ausführung werden nicht ohne Grundgerätebeleg getrennt gezählt."
+    },
+    {
+      "model": "VS90F40EEK",
+      "fullCode": "VS90F40EEK/WD",
+      "sourceId": "samsung-next-054",
+      "url": "https://www.samsung.com/de/support/model/VS90F40EEK/WD/",
+      "region": "DE",
+      "deviceType": "cordless",
+      "checkedAt": "2026-10-08",
+      "decision": "add",
+      "duplicateOf": "VS90F40EEK",
+      "notes": "Einmal als neues Grundgerät importiert."
+    },
+    {
+      "model": "VS90F40EEM",
+      "fullCode": "VS90F40EEM/WD",
+      "sourceId": "samsung-next-055",
+      "url": "https://www.samsung.com/de/support/model/VS90F40EEM/WD/",
+      "region": "DE",
+      "deviceType": "cordless",
+      "checkedAt": "2026-10-08",
+      "decision": "variant_of_new_model",
+      "duplicateOf": "VS90F40EEK",
+      "notes": "Explizit baugleiche Ultra-Farbvariante; an eine bestehende neue Modellgruppe gebunden, ohne weiteren Zielplatz."
+    },
+    {
+      "model": "VS15A6032R5",
+      "fullCode": "VS15A6032R5/EG",
+      "sourceId": "samsung-next-056",
+      "url": "https://www.samsung.com/de/support/model/VS15A6032R5/EG/",
+      "region": "DE",
+      "deviceType": "cordless",
+      "checkedAt": "2026-10-08",
+      "decision": "deferred_variant",
+      "duplicateOf": "VS15A6032R7",
+      "notes": "Hersteller nennt bei beiden Jet 60 pet. Akku-/Lieferumfangsausführung gegenüber vorhandenem R7-Gerät ungeklärt; kein neuer Grundgeräteplatz."
+    }
+  ],
+  "result": {
+    "addedModelCount": 8,
+    "exactNewReferenceCount": 9,
+    "finalModelCount": 77,
+    "finalModelsWithoutParts": 57,
+    "remainingTargetSlots": 23,
+    "addedPartCount": 0,
+    "addedFitmentClaimCount": 0,
+    "addedPriceCount": 0
+  },
+  "openGaps": [
+    "Weitere unabhängige Samsung-DE-Grundgeräte bis zum Ziel 100 sind nicht nachgewiesen.",
+    "Historische Seriennachbarn und regionale Ausführungen brauchen eine technische oder deutsche Markt-Abgrenzung.",
+    "SC4041 und VC-7413V haben im geprüften Serviceabruf keine direkt hinterlegte deutsche Anleitung.",
+    "Der bestehende Katalog wird nicht rückwirkend zusammengelegt oder umklassifiziert; seine 69 Basisdatensätze bleiben exakt erhalten.",
+    "Teilelisten, Artikelquellen und technische Passung der acht neuen Modellgruppen sind offen."
+  ]
+}

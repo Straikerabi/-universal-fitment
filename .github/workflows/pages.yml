@@ -1,4 +1,4 @@
-name: "Deploy v1.27.1 Samsung model-first catalogue to GitHub Pages"
+name: "Deploy v1.28.0 integrated Samsung Bosch and mobile UI"
 
 on:
   push:
@@ -316,6 +316,13 @@ jobs:
           cat .demo/v1.27.1-patch/part-* | base64 -d | gzip -d > update-v1.27.1.patch
           echo "c7955f8b751c92f089fe39adc797b9d14703bb447d3297fd6fcb6558952d88a2  update-v1.27.1.patch" | sha256sum -c -
           patch -p1 -d site < update-v1.27.1.patch
+
+      - name: "Apply v1.28.0 combined Samsung Bosch and mobile UI release"
+        shell: bash
+        run: |
+          cat .demo/v1.28.0-patch/part-* | base64 -d | gzip -d > update-v1.28.0.patch
+          echo "21c06f5dc7ea212e4994d91d39c430fb76413ba3f4b6b745fca12c669a32632e  update-v1.28.0.patch" | sha256sum -c -
+          patch -p1 -d site < update-v1.28.0.patch
 
       - name: Build and verify app bundles from checked sources
         run: |
