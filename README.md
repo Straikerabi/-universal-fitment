@@ -1,4 +1,4 @@
-# Universal Fitment v1.28.0 – Samsung-Zubehörlisten und geprüfte Hoover-Codes
+# Universal Fitment v1.28.0 – Bosch 100, Samsung 77 und mobile Teileansicht
 
 [Roadmap · Deutsch](ROADMAP.md) · [Roadmap · English](ROADMAP.en.md) · [Patchnotes](CHANGELOG.md) · [Ideen & Kommentare](https://github.com/Straikerabi/-universal-fitment/issues)
 

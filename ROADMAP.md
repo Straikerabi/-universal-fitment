@@ -22,7 +22,7 @@ Die Abdeckung unterscheidet sich noch deutlich je Marke und Modell. Ein gelistet
 
 | Schwerpunkt | Was wir erreichen wollen |
 |---|---|
-| Mehr echte Modelle | **Aktuelle Phase zuerst:** AEG ist mit 100 echten Modellen abgeschlossen. Nächste geprüfte Modellziele: Samsung 67→100, Bosch 60→100, Miele 57→100, Dyson 54→100 und Hoover 24→100; bei Vorwerk wird die tatsächliche Grundmodellzahl gesondert geprüft. Länder- und Produktionsausführungen bleiben getrennt. |
+| Mehr echte Modelle | **Modell-zuerst-Phase:** AEG und Bosch erreichen jeweils 100 belegte Grundmodelle. Samsung liegt bei 77 von 100; anschließend Miele (57), Dyson (54) und Hoover (24) erweitern. Bei Vorwerk (18) wird die tatsächlich vorhandene Grundmodellzahl geprüft; exakte Länder-/Ausführungskennungen bleiben wichtig. |
 | Mehr Teile je Gerät | Ersatzteile, Zubehör und Verbrauchsmaterial mit belegten Modellbeziehungen erfassen. Samsung, Hoover und bestehende leere Teilelisten haben Priorität. |
 | Vollständigerer Katalog | Auf 100 belegte Modellreferenzen und mindestens 100 physische Teile je Marke hinarbeiten, soweit die Herstellerdaten das hergeben. Sets und Vorsätze zählen nicht als neue Grundgeräte. |
 | Klarere Auswahl | Düsen, Bürstenköpfe, Walzen, Beutel, Filter und weitere Teile sauber unterscheiden; offene Preise und Passungsfragen sichtbar lassen. |

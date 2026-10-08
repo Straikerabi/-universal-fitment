@@ -1,6 +1,8 @@
-# Modell-zuerst-Plan, Stand 8. Oktober 2026 (v1.27.0)
+# Modell-zuerst-Plan, Stand 8. Oktober 2026 (v1.28.0)
 
 ## Nächster Arbeitsabschnitt
+
+**v1.28.0 abgeschlossen:** Samsung +8, Bosch +40 und Mobile UX aus den drei Work-Entwurfs-PRs integriert. Für 308 Modellrecords fehlen noch konkret geprüfte Ersatzteillisten; Modell- und Teileabdeckung bleiben bewusst getrennt.
 
 Vor weiteren großen Teileimporten bauen wir die **Gerätemodell-Abdeckung** aus. Ziel: je Marke bis zu 100 tatsächlich unterscheidbare Staubsauger-Grundmodelle mit Herkunftsbelegen. Es werden keine Zubehörteile, regional identischen Duplikate oder Marketing-Seriennamen als neue Staubsauger gezählt. Wenn ein Hersteller weniger als 100 unabhängige Grundmodelle anbietet, dokumentieren wir die echte Obergrenze statt Namen zu erfinden.
 

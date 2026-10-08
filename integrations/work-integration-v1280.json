@@ -55,5 +55,12 @@
     "Exact SHA-256 patch replay",
     "Source checkpoint SHA-256 restore"
   ],
-  "visualMobileRetest": "Chromium proof from PR #19 on baseline; fully combined live Safari review not completed"
+  "visualMobileRetest": "Chromium proof from PR #19 on baseline; fully combined live Safari review not completed",
+  "verified_release": {
+    "commit": "6bd73f073f6705c671cb5a44a450207d355c3d96",
+    "github_actions_run": 37775138875,
+    "build_and_test": "success",
+    "pages_deployment": "success",
+    "browser_visual_review": "Work C baseline Chromium only; combined live Safari unverified"
+  }
 }
