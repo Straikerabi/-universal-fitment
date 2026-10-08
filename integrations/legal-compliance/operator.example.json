@@ -1,0 +1,59 @@
+{
+  "operator": {
+    "legal_form": "unconfirmed",
+    "legal_name": "",
+    "trading_name": "Universal Fitment",
+    "business_address": {
+      "street": "",
+      "house_number": "",
+      "postal_code": "",
+      "city": "",
+      "country": "DE"
+    },
+    "public_email": "",
+    "additional_immediate_contact": "",
+    "commercial_register": {
+      "registered": false,
+      "court": "",
+      "number": ""
+    },
+    "vat_id_if_assigned": "",
+    "regulated_profession": false,
+    "professional_regulator": ""
+  },
+  "business": {
+    "gewerbe_registration_confirmed": false,
+    "mode": "affiliate-referral-only",
+    "own_checkout_enabled": false
+  },
+  "hosting": {
+    "production_domain": "",
+    "provider": "",
+    "terms_approved": false,
+    "av_contract_checked": false
+  },
+  "privacy": {
+    "actual_data_flows_documented": false,
+    "privacy_notice_approved": false,
+    "processor_contracts_reviewed": false,
+    "log_retention_verified": false,
+    "international_transfers_assessed": false,
+    "data_subject_requests_process": false,
+    "account_deletion_process_verified": false,
+    "terminal_storage_reviewed": false
+  },
+  "marketplace": {
+    "partner_contracts_approved": false,
+    "affiliate_disclosure_reviewed": false,
+    "offers_and_price_rules_verified": false
+  },
+  "content": {
+    "image_rights_cleared_or_disabled": false,
+    "third_party_licenses_reviewed": false,
+    "fitment_sources_verified": false
+  },
+  "launch": {
+    "human_legal_review_approved": false,
+    "operator_publication_approved": false
+  }
+}
