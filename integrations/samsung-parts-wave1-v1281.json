@@ -66,16 +66,16 @@
       }
     },
     {
-      "code": "VCA-SAPF80/WA",
-      "name": "Ersatz-Akku mit Ladestation für Bespoke AI Jet Ultra, Jet 95 und Jet 85 (2200 mAh)",
-      "partTypeId": "battery",
-      "ean": "8806097333074",
-      "url": "https://www.samsung.com/de/home-appliance-accessories/bespoke-ai-jet-accessory-battery-vca-sapf80-wa/",
+      "code": "VCA-PTB95/AA",
+      "name": "Pet Tool+ Tierhaarbürste für Bespoke Jet AI / Jet Plus / Jet 95 / Jet 85",
+      "partTypeId": "nozzle",
+      "ean": "8806094472578",
+      "url": "https://www.samsung.com/de/home-appliance-accessories/jet-vc-renewal-accessory-pet-tool-plus-vca-ptb95-aa/",
       "compatibility": "Bespoke AI Jet Ultra / Bespoke AI Jet / Bespoke Jet AI / Bespoke Jet Plus / Jet 95 / Jet 85",
-      "notes": "Akku mit Ladegerät; 2200 mAh. Hersteller nennt mehrere Familien, nicht jede Länder-/Revisionsexaktheit.",
+      "notes": "Samsung-Seitenkopf nennt VCA-PTB95/AA, Spezifikationen nennen den Artikelstamm VCA-PTB95. Das motorisierte Pet Tool+ ist nicht zwangsläufig jedem genannten Gerät beigepackt oder für jede Ausführung geeignet.",
       "specifications": {
-        "capacityMah": 2200,
-        "includesCharger": true
+        "bodenart": "Teppich/Polster",
+        "motorized": true
       }
     },
     {
