@@ -7,3 +7,5 @@ Preflight: print exact 36 existing SKUs for collision-free import.
 Second-source preflight: prior SKU VCA-SAPF80/WA already catalogued; replaced with direct-source Pet Tool+ VCA-PTB95/AA. Repeat the release gate.
 
 Third preflight: fix test parser delimiter; official Samsung product SKU import succeeded, retest combined app and checksum package.
+
+Retest 4: importer + 10 original product checks already pass. Update two cross-brand article-total assertions (1930 -> 1940).
