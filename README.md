@@ -1,4 +1,4 @@
-# Universal Fitment v1.26.9 – geprüfte Hoover-Produktcodes
+# Universal Fitment v1.26.9 – Samsung-Zubehörlisten und geprüfte Hoover-Codes
 
 [Roadmap · Deutsch](ROADMAP.md) · [Roadmap · English](ROADMAP.en.md) · [Patchnotes](CHANGELOG.md) · [Ideen & Kommentare](https://github.com/Straikerabi/-universal-fitment/issues)
 
@@ -35,15 +35,15 @@ Die Startseite und die Zielübersicht zeigen fehlende Modellteile. Der Filter **
 
 ## Neue Herstellerdaten
 
-308 zusätzliche benannte Herstellerartikel ergänzen den bisherigen Bestand: Bosch +56, Rowenta +44, Philips +40, Vorwerk +81, Samsung +27 und Hoover +60. 56 zuvor leere Modelleinträge haben mindestens eine ausdrücklich belegte Teilezuordnung erhalten. Quellen und Ausführungsbedingungen bleiben am Artikel sichtbar. Ein 3D-Ersatzdeckel für einen Dampferzeuger wurde bei der Recherche ausgeschlossen.
+315 zusätzliche benannte Herstellerartikel ergänzen den bisherigen Bestand: Bosch +56, Rowenta +44, Philips +40, Vorwerk +81, Samsung +34 und Hoover +60. 60 zuvor leere Modelleinträge haben mindestens eine ausdrücklich belegte Teilezuordnung erhalten. Quellen und Ausführungsbedingungen bleiben am Artikel sichtbar. Ein 3D-Ersatzdeckel für einen Dampferzeuger wurde bei der Recherche ausgeschlossen.
 
-Samsung enthält 64 Hersteller-Modellreferenzen. Für VS20B75BDR5/WD, VS20C95D2TK/WD und VS20B95C43W/WD sind die auf den deutschen Produktseiten ausdrücklich genannten optionalen Zubehörkennungen zugeordnet: 8, 10 und 11 Artikel. Überschneidungen ergeben 19 unterschiedliche zugeordnete Artikel; Clean-Station-Beutel und Wischverbrauchsmaterial behalten ihre zusätzliche Zubehörbedingung.
+Samsung enthält 66 Hersteller-Modellreferenzen. Neun genaue deutsche /WD-Modelle verfügen jetzt über ausdrücklich gelistetes optionales Zubehör; bei den zuletzt ergänzten sechs Modellen sind das insgesamt 50 Nennungen und sieben zusätzliche unterschiedliche Artikelkennungen. Einschließlich der bisherigen Samsung-Zubehörlisten sind 26 unterschiedliche Artikel wenigstens einem Modell zugeordnet. Clean-Station-Beutel und Wischverbrauchsmaterial behalten zusätzliche Zubehörbedingungen. Eine Liste optionalen Zubehörs ist keine vollständige Ersatzteilliste oder automatische Passungsfreigabe.
 
 Hoover enthält 24 deutsche Hersteller-Modelle und deren achtstellige Produktcodes. 55 Artikelstammsätze stammen aus dem britischen Herstellerverzeichnis; dieser Quellenmarkt bleibt sichtbar. Für HF202P 011 (39401035) und HF201H 011 (39401038) nennt der von Hoover Deutschland verlinkte EU-Ersatzteilservice 10 beziehungsweise 12 konkrete Artikel. Fünf dabei zusätzlich gefundene Teile erhöhen den Hoover-Bestand auf 60. Die im Service sichtbare italienische Preis-/Ländereinstellung wird nicht als deutscher Preis, Bestand oder deutsches Angebot übernommen. Hoover-Geräteseiten beschriften die achtstellige Kennung ausdrücklich als **Hoover-Produktcode**; die Dyson-Bezeichnung bleibt ausschließlich bei Dyson-Geräten.
 
 Vorwerk enthält weiterhin 18 echte VK-/VT-/VB-Grundmodelle. Die 105 Artikel umfassen auch Teile für Elektrobürsten, Saugwischer und weitere Vorsätze. Deren eigene Kennung, etwa EB400, wird angezeigt. Abweichende Überschriften desselben Herstellerartikels erzeugen keine doppelten Einträge. Die Herstellerbezeichnungen werden nicht als erfundene numerische Artikelnummern dargestellt.
 
-Details und ausgewählte Herstellerquellen: [Katalogstand v1.26](integrations/catalog-expansion-v126.md). Frühere Berichte: [v1.25 Vorwerk](integrations/catalog-expansion-v125.md) und [v1.24 Philips](integrations/catalog-expansion-v124.md).
+Neue Samsung-Quellen: [Ausbau v1.26.9](integrations/samsung-import-v1269.md) und [herstellerbezogene Modell- und Artikelnachweise](integrations/samsung-accessory-evidence-2026-10-08.json). Vorheriger Katalogstand: [v1.26](integrations/catalog-expansion-v126.md). Frühere Berichte: [v1.25 Vorwerk](integrations/catalog-expansion-v125.md) und [v1.24 Philips](integrations/catalog-expansion-v124.md).
 
 ## Kennungen, Preise und Betrieb
 
