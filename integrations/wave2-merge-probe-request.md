@@ -17,3 +17,5 @@ Probe 8: full target-slot count after 25 Miele, 38 Dyson, and 76 Hoover model ad
 Verified release candidate v1.29.0: exact archive delta/source checkpoint, 139 models, preserved 1940 articles and tested shared typeplate.
 
 Release candidate retry: Dyson packBytes must be assigned in lazy-load manifest extension, never inflated in static baseline.
+
+Retry production archive packaging after granting contents:write to this isolated release workflow. No main push from Work branch.
