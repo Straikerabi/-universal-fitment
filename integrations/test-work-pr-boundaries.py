@@ -99,6 +99,45 @@ class ParallelWorkGuardTests(unittest.TestCase):
             row("integrations/ui-vacuum-detail-patch.mjs")
         ])["status"], "pass")
 
+    def test_wave3_strict_ownership_and_allowed_artefacts(self):
+        suites = [
+            ("work/catalog-model-gap-wave3", "integrations/model-gap-wave3-research.json", "integrations/import-model-gap-wave3-devices.mjs"),
+            ("work/parts-fitment-wave3", "integrations/parts-fitment-wave3-verified.json", "integrations/import-parts-fitment-wave3-parts.mjs"),
+            ("work/catalog-media-wave3", "integrations/catalog-media-wave3-audit.json", "integrations/catalog-media-wave3-validate.mjs"),
+        ]
+        for branch, research, importer in suites:
+            with self.subTest(branch=branch):
+                ok = guard.assess(branch, [row(research), row(importer)])
+                self.assertTrue(ok["managed"])
+                self.assertEqual(ok["status"], "pass")
+                self.assertEqual(ok["files_checked"], 2)
+
+    def test_wave3_fails_closed_for_cross_scope_shared_files_and_releases(self):
+        cases = [
+            ("work/catalog-model-gap-wave3", "integrations/parts-fitment-wave3-verified.json"),
+            ("work/parts-fitment-wave3", "integrations/catalog-media-wave3-research.json"),
+            ("work/catalog-media-wave3", "integrations/model-gap-wave3-import.json"),
+        ]
+        for branch, other in cases:
+            with self.subTest(branch=branch):
+                result = guard.assess(branch, [
+                    row(other),
+                    row("integrations/shared-file.json"),
+                    row("site/src/app.js"),
+                    row(".demo/source-v1.29.0/part-001"),
+                    row("README.md"),
+                ])
+                self.assertEqual(result["status"], "blocked")
+                self.assertEqual(len(result["blocked"]), 5)
+                self.assertFalse(result["review"])
+
+    def test_wave3_filename_rename_attack_blocked(self):
+        self.assertEqual(
+            guard.assess("work/catalog-media-wave3", [
+                row("integrations/catalog-media-wave3-audit.json", "site/src/catalog.js", "renamed"),
+            ])["status"], "blocked",
+        )
+
     def test_site_worktree_and_release_archives_blocked(self):
         for filename in [
             "site/src/app.js",
