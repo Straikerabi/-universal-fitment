@@ -13,3 +13,5 @@ Probe 6: Miele 9 historical family hints remain outside 87 concrete device rows,
 Probe 7: validate Hoover 98 unlinked base models and all Miele/Dyson model tests after source merge.
 
 Probe 8: full target-slot count after 25 Miele, 38 Dyson, and 76 Hoover model additions is 869; rerun complete suite.
+
+Verified release candidate v1.29.0: exact archive delta/source checkpoint, 139 models, preserved 1940 articles and tested shared typeplate.
