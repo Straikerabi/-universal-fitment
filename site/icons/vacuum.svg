@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" role="img" aria-label="Staubsauger-Illustration">
+  <rect width="240" height="200" rx="28" fill="#edf1f5"/>
+  <path d="M103 92C32 72 21 24 66 24c50 0 61 34 76 53" fill="none" stroke="#596578" stroke-width="10" stroke-linecap="round"/>
+  <path d="M141 75l40 67" stroke="#8c98a8" stroke-width="9" stroke-linecap="round"/>
+  <path d="M154 150h49l14 20h-76z" fill="#283647"/>
+  <rect x="44" y="88" width="106" height="70" rx="30" fill="#db3041"/>
+  <path d="M71 86v-8h47v8" fill="none" stroke="#283647" stroke-width="8"/>
+  <rect x="60" y="103" width="75" height="17" rx="8" fill="#f46a71"/>
+  <circle cx="68" cy="151" r="15" fill="#283647"/>
+  <circle cx="127" cy="151" r="15" fill="#283647"/>
+  <circle cx="68" cy="151" r="6" fill="#a9b4c0"/>
+  <circle cx="127" cy="151" r="6" fill="#a9b4c0"/>
+</svg>
