@@ -1,0 +1,478 @@
+--- a/package.json
++++ b/package.json
+@@ -4,7 +4,7 @@
+   "private": true,
+   "type": "module",
+   "scripts": {
+-    "test": "node tests/core.test.mjs && node tests/data.test.mjs && node tests/static.test.mjs && node tests/resolver.test.mjs && node tests/jobs.test.mjs && node tests/identifier.test.mjs && node tests/v16.test.mjs && node tests/miele-pilot.test.mjs && node tests/miele-models.test.mjs && node tests/miele-parts.test.mjs && node tests/commerce.test.mjs && node tests/marketplaces.test.mjs && node tests/handoff.test.mjs && node tests/pilot-client.test.mjs && node tests/local-data.test.mjs && node tests/backup.test.mjs && node tests/scanner-lifecycle.test.mjs && node tests/offline.test.mjs && node tests/pilot-readiness.test.mjs && node tests/scanner-ocr.test.mjs && node tests/typeplate.test.mjs && node tests/identity-boundaries.test.mjs && node tests/device-comparison.test.mjs && node tests/bosch-catalog.test.mjs && node tests/bosch-boundaries.test.mjs && node tests/bosch-workflow.test.mjs && node tests/services.test.mjs && node tests/photo-policy.test.mjs && node tests/catalog-expansion.test.mjs && node tests/catalog-goal.test.mjs && node tests/catalog-seven-brands.test.mjs && node tests/rowenta-expansion.test.mjs && node tests/philips-expansion.test.mjs && node tests/vorwerk-expansion.test.mjs && node tests/part-taxonomy.test.mjs && node tests/catalog-v126.test.mjs",
+-    "check": "node --check src/app.js && node --check src/core/feedback.js && node --check src/core/normalization.js && node --check src/core/matcher.js && node --check src/core/ranking.js && node --check src/core/storage.js && node --check src/core/scanner.js && node --check src/core/identifiers.js && node --check src/data/demo-products.js && node --check src/data/product-resolver.js && node --check src/data/verified-products.js && node --check src/data/coffee-support.js && node --check src/data/catalog.js && node --check src/data/miele-vacuum.js && node --check src/core/cart.js && node --check src/core/preferences.js && node --check src/core/vehicle.js && node --check src/data/faq.js && node --check src/data/job-guidance.js && node --check src/data/miele-models.js && node --check src/data/miele-model-records.js && node --check src/data/miele-parts.js && node --check src/data/miele-spare-records.js && node --check src/data/miele-aftermarket.js && node --check src/data/miele-guides.js && node --check src/data/miele-commerce.js && node --check src/data/miele-commerce-records.js && node --check src/data/miele-installation-times.js && node --check src/core/marketplaces.js && node --check src/core/handoff.js && node --check src/core/pilot-client.js && node --check src/core/local-state.js && node --check src/core/quantity.js && node --check src/core/backup.js && node --check src/core/pilot-readiness.js && node --check src/core/pilot-config.js && node --check src/core/typeplate.js && node --check src/core/device-comparison.js && node --check src/core/bosch-identity.js && node --check src/data/bosch-vacuum.js && node --check src/data/bosch-records.js && node --check src/core/bosch-context.js && node --check src/core/services.js && node --check src/core/photo-policy.js && node --check src/data/services.js && node --check src/core/catalog-loader.js && node --check src/core/brand-identity.js && node --check src/data/brand-products.js && node --check src/data/brand-index.js && node --check src/data/aeg-pack.js && node --check src/data/dyson-pack.js && node --check src/data/rowenta-pack.js && node --check src/data/catalog-plan.js && node --check src/data/philips-pack.js && node --check src/data/siemens-pack.js && node --check src/data/vorwerk-pack.js && node --check src/data/vorwerk-index.js && node --check src/data/part-taxonomy.js && node --check src/data/catalog-extensions.js && node --check src/data/rowenta-extra.js && node --check src/data/philips-extra.js && node --check src/data/vorwerk-extra.js && node --check src/data/bosch-extra.js && node --check src/data/new-brands-index.js && node --check src/data/samsung-pack.js && node --check src/data/hoover-pack.js && node --check src/data/hoover-fitment.js"
++    "test": "node tests/core.test.mjs && node tests/data.test.mjs && node tests/static.test.mjs && node tests/resolver.test.mjs && node tests/jobs.test.mjs && node tests/identifier.test.mjs && node tests/v16.test.mjs && node tests/miele-pilot.test.mjs && node tests/miele-models.test.mjs && node tests/miele-parts.test.mjs && node tests/commerce.test.mjs && node tests/marketplaces.test.mjs && node tests/handoff.test.mjs && node tests/pilot-client.test.mjs && node tests/local-data.test.mjs && node tests/backup.test.mjs && node tests/scanner-lifecycle.test.mjs && node tests/offline.test.mjs && node tests/pilot-readiness.test.mjs && node tests/scanner-ocr.test.mjs && node tests/typeplate.test.mjs && node tests/identity-boundaries.test.mjs && node tests/device-comparison.test.mjs && node tests/bosch-catalog.test.mjs && node tests/bosch-boundaries.test.mjs && node tests/bosch-workflow.test.mjs && node tests/services.test.mjs && node tests/photo-policy.test.mjs && node tests/catalog-expansion.test.mjs && node tests/catalog-goal.test.mjs && node tests/catalog-seven-brands.test.mjs && node tests/rowenta-expansion.test.mjs && node tests/philips-expansion.test.mjs && node tests/vorwerk-expansion.test.mjs && node tests/part-taxonomy.test.mjs && node tests/catalog-v126.test.mjs && node tests/model-parts-view.test.mjs",
++    "check": "node --check src/app.js && node --check src/core/feedback.js && node --check src/core/normalization.js && node --check src/core/matcher.js && node --check src/core/ranking.js && node --check src/core/storage.js && node --check src/core/scanner.js && node --check src/core/identifiers.js && node --check src/data/demo-products.js && node --check src/data/product-resolver.js && node --check src/data/verified-products.js && node --check src/data/coffee-support.js && node --check src/data/catalog.js && node --check src/data/miele-vacuum.js && node --check src/core/cart.js && node --check src/core/preferences.js && node --check src/core/vehicle.js && node --check src/data/faq.js && node --check src/data/job-guidance.js && node --check src/data/miele-models.js && node --check src/data/miele-model-records.js && node --check src/data/miele-parts.js && node --check src/data/miele-spare-records.js && node --check src/data/miele-aftermarket.js && node --check src/data/miele-guides.js && node --check src/data/miele-commerce.js && node --check src/data/miele-commerce-records.js && node --check src/data/miele-installation-times.js && node --check src/core/marketplaces.js && node --check src/core/handoff.js && node --check src/core/pilot-client.js && node --check src/core/local-state.js && node --check src/core/quantity.js && node --check src/core/backup.js && node --check src/core/pilot-readiness.js && node --check src/core/pilot-config.js && node --check src/core/typeplate.js && node --check src/core/device-comparison.js && node --check src/core/bosch-identity.js && node --check src/data/bosch-vacuum.js && node --check src/data/bosch-records.js && node --check src/core/bosch-context.js && node --check src/core/services.js && node --check src/core/photo-policy.js && node --check src/data/services.js && node --check src/core/catalog-loader.js && node --check src/core/brand-identity.js && node --check src/data/brand-products.js && node --check src/data/brand-index.js && node --check src/data/aeg-pack.js && node --check src/data/dyson-pack.js && node --check src/data/rowenta-pack.js && node --check src/data/catalog-plan.js && node --check src/data/philips-pack.js && node --check src/data/siemens-pack.js && node --check src/data/vorwerk-pack.js && node --check src/data/vorwerk-index.js && node --check src/data/part-taxonomy.js && node --check src/data/catalog-extensions.js && node --check src/data/rowenta-extra.js && node --check src/data/philips-extra.js && node --check src/data/vorwerk-extra.js && node --check src/data/bosch-extra.js && node --check src/data/new-brands-index.js && node --check src/data/samsung-pack.js && node --check src/data/hoover-pack.js && node --check src/data/hoover-fitment.js && node --check src/core/model-parts-view.js"
+   }
+ }
+--- a/src/app.js
++++ b/src/app.js
+@@ -6,6 +6,7 @@
+ import {brandSupport} from './data/brand-products.js';
+ import {reviewAegPNC,aegPartsLink,reviewSiemensENumber,siemensServiceLink,reviewPhilipsModelReference,reviewVorwerkModel} from './core/brand-identity.js';
+ import {partType,partPurpose,partPurposes,partTypeSummary,groupPartsByType,isPhysicalPart} from './data/part-taxonomy.js';
++import {modelPartsDefaults,modelPartSortOptions,modelPartsView,modelPartsEmptyMessage,sortModelParts} from './core/model-parts-view.js';
+ import { filterParts, partFilterOptions, partCategory, partBrands, partIdentity, mielePartsCoverage, mieleSpareCatalogUrl } from './data/miele-parts.js';
+ import { installationInfo, swirlBagSteps } from './data/miele-guides.js';
+ import { installationTime } from './data/miele-installation-times.js';
+@@ -40,6 +41,7 @@
+ 
+ const THEME_KEY = 'uf_theme_v1';
+ const app = document.querySelector('#app');
++const topbarObserver=typeof ResizeObserver==='function'?new ResizeObserver(entries=>app.style.setProperty('--topbar-height',`${entries[0].target.offsetHeight}px`)):null;
+ let scannerSession = null;
+ let scannerController = null;
+ let photoController = null;
+@@ -53,7 +55,7 @@
+ let selectedPhotoUrl = null;
+ let deferredInstallPrompt = null;
+ let catalogLoadErrors=[];
+-const state = { offerMode:'recommended', catalogFilters:{brand:'all',series:'all',bagSystem:'all',deviceType:'all',budget:'all',partCoverage:'all',sort:'relevance'},partsFilters:{brand:'all',query:'',tier:'all',category:'all',purpose:'all',series:'all',sort:'name'},productPartsFilters:{productId:'',query:'',tier:'all',category:'all',purpose:'all',sort:'name'},productPartGroups:{} };
++const state = { offerMode:'recommended', catalogFilters:{brand:'all',series:'all',bagSystem:'all',deviceType:'all',budget:'all',partCoverage:'all',sort:'relevance'},partsFilters:{brand:'all',query:'',tier:'all',category:'all',purpose:'all',series:'all',sort:'name'},productPartsFilters:{productId:'',...modelPartsDefaults},productPartGroups:{},productPartSorts:{} };
+ state.catalogLimit=40;
+ state.marketplaceFilters={brand:'all',query:'',tier:'all',category:'all',purpose:'all',series:'all',condition:'used'};
+ const EXTERNAL_PRODUCTS_KEY='uf_external_products_v1';
+@@ -148,11 +150,14 @@
+       <div id="toastRegion" class="toast-region" aria-live="polite" aria-atomic="true"></div>
+       <div id="modalRoot"></div>
+     </div>`;
++  topbarObserver?.disconnect();topbarObserver?.observe(document.querySelector('.topbar'));
+ 
+   document.querySelectorAll('[data-nav]').forEach(button=>button.addEventListener('click',()=>navigate(button.dataset.nav)));
+   document.querySelector('[data-local-backup]')?.addEventListener('click',()=>navigate('backup'));
+   byId('brandHome')?.addEventListener('click',()=>navigate('home'));
+-  byId('retryCatalog')?.addEventListener('click',()=>route());
++  // Browsers memoize a failed module import until reload. Keep the canonical
++  // pack URL so the existing service worker can still cache it for offline use.
++  byId('retryCatalog')?.addEventListener('click',()=>location.reload());
+   byId('catalogHome')?.addEventListener('click',()=>navigate('home'));
+   byId('quickCart')?.addEventListener('click',()=>navigate('cart'));
+   byId('quickTheme')?.addEventListener('click',()=>{
+@@ -352,7 +357,7 @@
+ }
+ 
+ function priceText(quote){
+-  if(!quote||!isAmount(quote.price)||!['EUR','PLN'].includes(quote.currency))return 'Preis offen';
++  if(!quote||!isAmount(quote.price)||!['EUR','PLN'].includes(quote.currency))return 'Preis nicht verfügbar';
+   const amount=new Intl.NumberFormat('de-DE',{style:'currency',currency:quote.currency}).format(quote.price);
+   return `${quote.priceBasis==='bulk-from'?'ab ':''}${amount}`;
+ }
+@@ -731,12 +736,12 @@
+   return {label:'Nicht ausreichend bestätigt', cls:'pill-bad', tone:'bad'};
+ }
+ 
+-function renderPart(part,catalog=false){
++function renderPart(part,catalog=false,modelView=false){
+   const fit = partFitmentMeta(part);
+   const quote=quoteForPart(part),time=installationTime(part);
+   return `
+-    <article class="card part-card tap" data-part-type="${partType(part).id}" style="--part-color:${partType(part).color}" ${catalog?'data-catalog-part':'data-part'}="${part.id}" tabindex="0" role="button" aria-label="${esc(part.name)}: Details und Anleitungen öffnen">
+-      <div class="part-card-top">${partPhoto(part)}<div class="grow"><span class="pill ${fit.cls}">${fit.label}</span><h3>${esc(part.name)}</h3>${partLabels(part)}${partReferenceNote(part)}<div class="muted small">${part.tier==='oem'?'Original':'Nachbau'}</div><div class="small part-number">${esc(identifierLabel(part.identifiers?.[0]?.type,part.brand))} ${esc(part.identifiers?.[0]?.value)}</div></div><div class="chevron">›</div></div>
++    <article class="card part-card tap" data-part-type="${partType(part).id}" style="--part-color:${partType(part).color}" ${catalog?'data-catalog-part':'data-part'}="${part.id}" ${modelView?'':`tabindex="0" role="button" aria-label="${esc(part.name)}: Details und Anleitungen öffnen"`}>
++      <div class="part-card-top">${partPhoto(part)}<div class="grow"><span class="pill ${fit.cls}">${fit.label}</span><h3>${modelView?`<button type="button" class="text-button model-part-open" data-part-open aria-label="${esc(part.name)}: Details und Anleitungen öffnen">${esc(part.name)}</button>`:esc(part.name)}</h3>${partLabels(part)}${partReferenceNote(part)}<div class="muted small">${part.tier==='oem'?'Original':'Nachbau'}</div><div class="small part-number">${esc(identifierLabel(part.identifiers?.[0]?.type,part.brand))} ${esc(part.identifiers?.[0]?.value)}</div></div><div class="chevron" aria-hidden="true">›</div></div>
+       <div class="part-meta"><span>${part.fitment.evidence.length} Quelle${part.fitment.evidence.length===1?'':'n'} · Details & Anleitung</span><strong>${esc(priceText(quote))}</strong></div>
+       <div class="small muted part-commerce-line">${quote?`${esc(priceTaxLabel(quote))} · ${esc(quote.unitLabel)} · ${esc(quoteDate(quote))} · ${esc(priceAgeLabel(quote))}`:'Preisquelle fehlt'}</div>
+       <div class="small part-commerce-line">${quote?.stock==='unavailable'?'Nicht bestellbar im erfassten Stand · ':''}⏱ ${esc(time.label)}${time.status==='estimate'?' · geschätzt':''}</div>
+@@ -746,16 +751,23 @@
+ function wirePartCards(productId,root=document){
+   root.querySelectorAll('[data-part]').forEach(el=>{
+     const open=()=>navigate('part',`${productId}:${el.dataset.part}`);
+-    el.addEventListener('click',open);el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open();}});
+-  });
+-}
+-
+-function renderModelPartGroups(parts,openMatches=false){
+-  if(!parts.length)return '<div class="empty">Für diese Auswahl kein belegter Nachbau bzw. kein Teil hinterlegt.</div>';
+-  return `<div class="model-part-group-toolbar"><p class="small muted">Kategorie aufklappen, um die Artikel zu sehen.</p><div class="row wrap"><button type="button" class="btn btn-secondary btn-small" data-model-parts-expand="true">Alle öffnen</button><button type="button" class="btn btn-ghost btn-small" data-model-parts-expand="false">Alle schließen</button></div></div>${groupPartsByType(parts).map(type=>`<details class="model-part-group" data-model-part-group="${type.id}" style="--part-color:${type.color}" ${openMatches||state.productPartGroups[type.id]?'open':''}><summary><span class="model-part-group-icon">${partTypeIcon(type)}</span><span class="model-part-group-title">${esc(type.label)}</span><span class="model-part-group-count">${type.parts.length} Artikel</span><svg class="model-part-group-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary><div class="model-part-group-content">${type.parts.map(part=>renderPart(part)).join('')}</div></details>`).join('')}`;
+-}
+-
+-function wireModelPartGroups(productId){
++    el.addEventListener('click',e=>{if(e.target.closest('[data-part-open]')||!e.target.closest('button,a,input,select'))open();});el.addEventListener('keydown',e=>{if(e.target===el&&(e.key==='Enter'||e.key===' ')){e.preventDefault();open();}});
++  });
++}
++
++function modelSortOptions(value){return modelPartSortOptions.map(([id,label])=>`<option value="${id}" ${value===id?'selected':''}>${label}</option>`).join('');}
++function renderModelPartGroups(view,product,openMatches=false){
++  if(view.empty){const message=modelPartsEmptyMessage(view.empty);return `<div class="empty-state card model-parts-empty"><h3>${esc(message.title)}</h3><p>${esc(message.text)}</p>${view.empty==='filtered'?'<button type="button" class="btn btn-secondary" data-model-parts-reset>Filter zurücksetzen</button>':''}</div>`;}
++  const totals=new Map(groupPartsByType(product.parts).map(group=>[group.id,group.parts.length]));
++  return `<div class="model-part-group-toolbar"><p class="small muted">${groupPartsByType(view.parts).length} Kategorien · zum Öffnen antippen</p><div class="row wrap"><button type="button" class="btn btn-secondary btn-small" data-model-parts-expand="true">Alle öffnen</button><button type="button" class="btn btn-ghost btn-small" data-model-parts-expand="false">Alle schließen</button></div></div>${groupPartsByType(view.parts).map(type=>{
++   const sort=state.productPartSorts[type.id]||state.productPartsFilters.sort;
++   const list=sortModelParts(type.parts,sort,state.productPartsFilters.query,installationTime);
++   const count=type.parts.length===totals.get(type.id)?`${type.parts.length} Artikel`:`${type.parts.length} von ${totals.get(type.id)}`;
++   return `<details class="model-part-group" data-model-part-group="${type.id}" style="--part-color:${type.color}" ${openMatches||state.productPartGroups[type.id]?'open':''}><summary><span class="model-part-group-icon">${partTypeIcon(type)}</span><span class="model-part-group-title">${esc(type.label)}</span><span class="model-part-group-count">${count}</span><svg class="model-part-group-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary><div class="model-part-group-content"><label class="model-group-sort" for="modelGroupSort-${type.id}"><span>${esc(type.label)} sortieren</span><select id="modelGroupSort-${type.id}" data-model-group-sort="${type.id}" aria-describedby="modelPartsPriceNote">${modelSortOptions(sort)}</select></label>${list.map(part=>renderPart(part,false,true)).join('')}</div></details>`;
++  }).join('')}`;
++}
++
++function wireModelPartGroups(productId,updateParts){
+   const root=byId('modelPartsResults');
+   root.querySelectorAll('[data-model-part-group]').forEach(group=>group.addEventListener('toggle',()=>{
+     if(root.isConnected&&root.contains(group)&&state.productPartsFilters.productId===productId)state.productPartGroups[group.dataset.modelPartGroup]=group.open;
+@@ -765,6 +777,11 @@
+       group.open=button.dataset.modelPartsExpand==='true';
+       state.productPartGroups[group.dataset.modelPartGroup]=group.open;
+     });
++  }));
++  root.querySelector('[data-model-parts-reset]')?.addEventListener('click',()=>{byId('modelPartsReset').click();byId('modelPartsQuery').focus();});
++  root.querySelectorAll('[data-model-group-sort]').forEach(select=>select.addEventListener('change',()=>{
++    const focusId=select.id;state.productPartSorts[select.dataset.modelGroupSort]=select.value;
++    updateParts();byId(focusId)?.focus({preventScroll:true});
+   }));
+   wirePartCards(productId,root);
+ }
+@@ -843,24 +860,59 @@
+   wireProductCards();
+ }
+ 
++function modelPartsFilterCount(filters){return ['tier','category','purpose','fitment','priceStatus'].filter(key=>filters[key]!=='all').length+['minPrice','maxPrice'].filter(key=>String(filters[key]).trim()).length;}
++function modelPartsCountText(view){return view.empty==='unloaded'?'Artikel noch nicht geladen':`${view.parts.length} von ${view.total} Artikeln`;}
++function renderModelPartsPanel(product,filters,view){
++ const codes=product.identifiers.filter(identifier=>!['ean','gtin','upc'].includes(identifier.type)&&identifier.value!==product.model);
++ return `<section class="model-parts-workspace" aria-labelledby="modelPartsHeading">
++  <div class="model-device-context"><div><span class="field-label">Teile für dein Gerät</span><strong>${esc(product.brand)} ${esc(product.model)}</strong><span class="small muted model-device-codes">${codes.map(code=>`${esc(identifierLabel(code.type,product.brand))}: ${esc(code.value)}`).join(' · ')}</span></div><span class="pill pill-warn">Passung prüfen</span></div>
++  <p class="small muted model-fitment-note">Modell, Länderkennung und Ausführung am Typenschild mit der Artikelquelle vergleichen. Eine Zuordnung bestätigt die Passung nicht automatisch.</p>
++  <div class="section-head"><h3 class="section-title" id="modelPartsHeading">Originalteile & Nachbauten</h3><span class="small muted" id="modelPartsCount" role="status" aria-live="polite" aria-atomic="true">${modelPartsCountText(view)}</span></div>
++  <section class="card filter-card model-parts-filters" aria-label="Teile suchen, filtern und sortieren">
++   <label class="field-label" for="modelPartsQuery">Teile dieses Geräts durchsuchen</label><input class="text-input" type="search" id="modelPartsQuery" placeholder="Bezeichnung oder Teilenummer" autocomplete="off" value="${esc(filters.query)}" aria-controls="modelPartsResults">
++   <label class="model-sort-label" for="modelPartsSort"><span>Alle Kategorien sortieren</span><select id="modelPartsSort" aria-describedby="modelPartsPriceNote">${modelSortOptions(filters.sort)}</select></label>
++   <details class="model-advanced-filters" ${modelPartsFilterCount(filters)?'open':''}><summary>Filter <span id="modelPartsFilterCount">${modelPartsFilterCount(filters)?`(${modelPartsFilterCount(filters)} aktiv)`:'(optional)'}</span></summary>
++    <div class="filter-grid"><label><span>Original / Nachbau</span><select id="modelPartsTier">${[['all','Alle Teile'],['oem','Originalteile'],['aftermarket','Nachbauten']].map(([id,label])=>`<option value="${id}" ${filters.tier===id?'selected':''}>${label}</option>`).join('')}</select></label>${purposeFilter('modelPartsPurpose',filters.purpose)}
++    <label><span>Bauteil</span><select id="modelPartsCategory"><option value="all">Alle Bauteile</option>${[...new Set(product.parts.map(partCategory))].sort((a,b)=>a.localeCompare(b,'de')).map(category=>`<option value="${esc(category)}" ${filters.category===category?'selected':''}>${esc(category)}</option>`).join('')}</select></label>
++    <label><span>Zuordnungsstatus</span><select id="modelPartsFitment">${[['all','Alle Zuordnungen'],['manufacturer-listed','Hersteller-Modell-/Serienliste'],['supplier_listed','Nachbau nach Anbieterangabe'],['variant_check_required','Ausführung noch offen']].map(([id,label])=>`<option value="${id}" ${filters.fitment===id?'selected':''}>${label}</option>`).join('')}</select></label>
++    <label><span>Preisstatus</span><select id="modelPartsPriceStatus" aria-describedby="modelPartsPriceNote">${[['all','Alle Preisstände'],['known','Vergleichbarer EUR-Preis'],['unknown','Ohne vergleichbaren EUR-Preis']].map(([id,label])=>`<option value="${id}" ${filters.priceStatus===id?'selected':''}>${label}</option>`).join('')}</select></label></div>
++    <div class="model-price-range"><label for="modelPartsMinPrice"><span>Preis von (€)</span><input class="text-input" id="modelPartsMinPrice" inputmode="decimal" autocomplete="off" placeholder="Keine Untergrenze" value="${esc(filters.minPrice)}" aria-invalid="${view.bounds.invalidMin}" aria-describedby="modelPartsPriceError modelPartsPriceNote"></label><label for="modelPartsMaxPrice"><span>Preis bis (€)</span><input class="text-input" id="modelPartsMaxPrice" inputmode="decimal" autocomplete="off" placeholder="Keine Obergrenze" value="${esc(filters.maxPrice)}" aria-invalid="${view.bounds.invalidMax}" aria-describedby="modelPartsPriceError modelPartsPriceNote"></label></div>
++    <p id="modelPartsPriceError" class="model-price-error" role="status" aria-live="polite">${esc(view.bounds.error)}</p>
++   </details>
++   <p class="small muted" id="modelPartsPriceNote">Erfasste Bruttopreise in EUR für Deutschland, ohne Versand. Kein Live-Angebot. Ohne vergleichbaren Preis zuletzt; bei Preisgrenzen ausgeblendet.</p>
++   <button type="button" class="btn btn-secondary" id="modelPartsReset">Filter zurücksetzen</button>
++  </section>
++  <p class="small muted" id="modelPartsPriceCoverage">${view.total?`${view.unpricedCount} von ${view.total} Artikeln ohne vergleichbaren EUR-Preis.`:''}</p>
++  <div id="modelPartsResults">${renderModelPartGroups(view,product)}</div>
++  ${(product.candidateParts||[]).length?`<details class="card variant-parts"><summary>Weitere Serienteile · ${product.candidateParts.length} Ausführungen prüfen</summary><p class="small muted">Die Serie steht in der Quelle, aber z. B. Elektroanschluss, Filterhalter oder Bodendüse müssen zusätzlich geprüft werden. Diese Teile sind nicht als passend bestätigt.</p>${product.candidateParts.map(part=>renderPart(part,false,true)).join('')}</details>`:''}
++  ${renderPartListCoverage(product)}
++  <div class="model-parts-links"><button class="btn btn-secondary wide-btn" id="modelPrices">Preisliste, Versand & Einbauzeiten</button><button class="btn btn-secondary wide-btn" id="modelMarketplaces">Gebrauchte Teile · eBay & Amazon</button><a class="btn btn-secondary wide-btn" href="${esc(safeExternalUrl(product.spareFinderUrl||(product.brand==='Bosch'?boschSupportUrls.parts:mieleSpareCatalogUrl)))}" target="_blank" rel="noopener noreferrer">Weitere Originalteile bei ${esc(product.brand)} anhand Typenschild prüfen ↗</a></div>
++ </section>`;
++}
++
+ function productPage(id){
+   const product=products.find(x=>x.id===id);
+   if(!product){notFound();return;}
+   addRecent(id);
+-  if(state.productPartsFilters.productId!==id){state.productPartsFilters={productId:id,query:'',tier:'all',category:'all',purpose:'all',sort:'name'};state.productPartGroups={};}
++  if(state.productPartsFilters.productId!==id){state.productPartsFilters={productId:id,...modelPartsDefaults};state.productPartGroups={};state.productPartSorts={};}
+   const pf=state.productPartsFilters;
+-  const visibleParts=sortCommerceParts(filterParts(product.parts,pf),pf.sort,installationTime);
+-  const partCategories=[...new Set(product.parts.map(partCategory))].sort((a,b)=>a.localeCompare(b,'de'));
++  const partsView=modelPartsView(product,pf,installationTime);
+   const meta=getDeviceMeta(id);
++  const identifierButton=i=>`<button class="identifier identifier-button" data-copy-id="${esc(i.value)}" title="Kennung kopieren"><span>${esc(identifierLabel(i.type,product.brand))}</span><strong>${esc(i.value)}</strong><em>Kopieren</em></button>`;
++  const deviceCodes=product.identifiers.filter(identifier=>!['ean','gtin','upc'].includes(identifier.type));
++  const barcodes=product.identifiers.filter(identifier=>['ean','gtin','upc'].includes(identifier.type));
+   shell(`
+     <div class="page-action-row"><button class="btn btn-ghost" id="back">← Zurück</button><button class="btn btn-ghost" id="shareProduct">↗ Teilen</button></div>
+     <article class="product-hero card">
+       <div class="product-head">${productImage(product,true)}<div class="grow"><div class="row-tight"><span class="pill ${dataStatusMeta(product).cls}">${dataStatusMeta(product).label}</span><span class="pill pill-info">${product.parts.filter(p=>p.tier==='oem').length} Original · ${product.parts.filter(p=>p.tier==='aftermarket').length} Nachbau</span>${meta.nickname?`<span class="pill pill-saved">${esc(meta.nickname)}</span>`:''}</div><h2>${esc(product.brand)} ${esc(product.model)}</h2><div class="muted">${esc(product.type)}</div></div></div>
+       <p class="small muted">${product.imageUrl?`Produktfoto: ${esc(product.brand)} · ${product.identityScope==='model-reference'?'Modellreferenz, Geräteausführung prüfen':'Gerätevariante'}`:product.brand==='Vorwerk'?'Illustration · Modellreferenz':'Illustration · Familienzuordnung'}</p>
+       <div class="divider"></div>
+-      <div class="identifier-grid">${product.identifiers.map(i=>`<button class="identifier identifier-button" data-copy-id="${esc(i.value)}" title="Kennung kopieren"><span>${esc(identifierLabel(i.type,product.brand))}</span><strong>${esc(i.value)}</strong><em>Kopieren</em></button>`).join('')}</div>
++      <div class="identifier-grid">${deviceCodes.map(identifierButton).join('')}</div>
++      ${barcodes.length?`<details class="model-device-barcodes"><summary>EAN & weitere Barcodes</summary><div class="identifier-grid">${barcodes.map(identifierButton).join('')}</div></details>`:''}
+       <div class="row product-actions"><button class="btn btn-primary" id="save">${isSaved(id)?'★ Gespeichert':'☆ Gerät speichern'}</button><button class="btn btn-secondary" id="passport">Gerätepass</button><button class="btn btn-secondary" id="report">Datenproblem melden</button></div>
+     </article>
++
++    ${renderModelPartsPanel(product,pf,partsView)}
+ 
+     <section class="card"><h3>Reparatur oder Mietgerät?</h3><p class="small muted">Hersteller-Service für dieses Gerät oder ein Mietgerät für eine einzelne Reinigungsaufgabe finden.</p><div class="row wrap"><button class="btn btn-secondary" id="deviceRepair">Reparieren lassen</button><button class="btn btn-secondary" id="deviceRental">Gerät mieten</button></div></section>
+     ${renderBoschSupport(product)}
+@@ -879,16 +931,6 @@
+     ${(product.stockPlans||[]).length?`<div class="section-head"><div class="section-title">Smart Stock</div><span class="small muted">Verbrauch & Nachkauf</span></div>
+       <div class="stock-grid">${product.stockPlans.map(plan=>{const values=getInventoryPlan(product.id,plan);const advice=stockAdvice(plan,values);return `<button class="card stock-card tap" data-stock="${plan.id}"><span class="stock-status stock-${advice.urgency}">${advice.shouldOrder?'!':'✓'}</span><span class="grow"><strong>${esc(plan.label)}</strong><small>${values.stock} ${esc(plan.unit)} · ca. ${advice.remainingDays} Tage Reichweite</small><small>${advice.shouldOrder?'Nachbestellung empfohlen':'Puffer ausreichend'}</small></span><span class="chevron">›</span></button>`;}).join('')}</div>`:''}
+ 
+-    <div class="section-head"><div class="section-title">Originalteile & Nachbauten</div><span class="small muted" id="modelPartsCount" role="status">${visibleParts.length} von ${product.parts.length}</span></div>
+-    ${renderPartListCoverage(product)}
+-    <button class="btn btn-secondary wide-btn" id="modelPrices">Preisliste, Versand & Einbauzeiten für dieses Gerät →</button>
+-    <button class="btn btn-secondary wide-btn" id="modelMarketplaces">Gebrauchte Teile · eBay & Amazon für dieses Gerät →</button>
+-    <section class="card filter-card"><label class="field-label" for="modelPartsQuery">Teile dieses Geräts durchsuchen</label><input class="text-input" id="modelPartsQuery" placeholder="z. B. Filter, Schlauch oder Material-Nr." value="${esc(pf.query)}">
+-    <div class="filter-grid"><label><span>Original / Nachbau</span><select id="modelPartsTier">${[['all','Alle Teile'],['oem','Originalteile'],['aftermarket','Nachbauten']].map(([v,l])=>`<option value="${v}" ${pf.tier===v?'selected':''}>${l}</option>`).join('')}</select></label>${purposeFilter('modelPartsPurpose',pf.purpose)}<label><span>Bauteil</span><select id="modelPartsCategory"><option value="all">Alle Bauteile</option>${partCategories.map(c=>`<option value="${esc(c)}" ${pf.category===c?'selected':''}>${esc(c)}</option>`).join('')}</select></label><label><span>Sortieren</span><select id="modelPartsSort">${[['name','Name A–Z'],['name-desc','Name Z–A'],['recorded-price','Preis aufsteigend'],['recorded-price-desc','Preis absteigend'],['time','Einbauzeit aufsteigend']].map(([v,l])=>`<option value="${v}" ${pf.sort===v?'selected':''}>${l}</option>`).join('')}</select></label></div><p class="small muted">Sortierung innerhalb jeder Kategorie · erfasste Artikelpreise ohne Versand · ohne vergleichbaren Preis zuletzt.</p><button type="button" class="btn btn-secondary btn-small" id="modelPartsReset">Filter zurücksetzen</button></section>
+-    <p class="small muted">${product.catalogPack?'Originalartikel aus dem Herstellerverzeichnis. Die gelistete Kennung, Anschlüsse und Ausführung am eigenen Gerät prüfen.':product.brand==='Bosch'?'Original-Zubehör aus der Bosch-Modellliste. E-Nr.-Index und Eignung beim Hersteller prüfen; die konkrete Ausführung ist noch nicht bestätigt.':'Original-Zubehör aus Miele-Listen; Ersatzteile aus Miele-Serienangaben.'} Nachbauten nach Anbieterangabe. Kennung und Ausführung vor Auswahl vergleichen.</p>
+-    <div id="modelPartsResults">${renderModelPartGroups(visibleParts)}</div>
+-    ${(product.candidateParts||[]).length?`<details class="card variant-parts"><summary>Weitere Serienteile · ${product.candidateParts.length} Ausführungen prüfen</summary><p class="small muted">Die Serie steht in der Quelle, aber z. B. Elektroanschluss, Filterhalter oder Bodendüse müssen zusätzlich geprüft werden. Diese Teile sind nicht als passend bestätigt.</p>${product.candidateParts.map(p=>renderPart(p)).join('')}</details>`:''}
+-    <a class="btn btn-secondary wide-btn" href="${esc(safeExternalUrl(product.spareFinderUrl||(product.brand==='Bosch'?boschSupportUrls.parts:mieleSpareCatalogUrl)))}" target="_blank" rel="noopener noreferrer">Weitere Originalteile bei ${esc(product.brand)} anhand Typenschild prüfen ↗</a>
+     <article class="principle-card"><div class="principle-icon">✓</div><div><b>Fitment-Regel</b><div class="small muted">KI darf Kandidaten vorschlagen, aber niemals allein Kompatibilität bestätigen.</div></div></article>`,'home');
+ 
+   byId('back')?.addEventListener('click',()=>history.length>1?history.back():navigate('home'));
+@@ -916,24 +958,32 @@
+   const updateParts=()=>{
+     const root=byId('modelPartsResults');
+     root.querySelectorAll('[data-model-part-group]').forEach(group=>{state.productPartGroups[group.dataset.modelPartGroup]=group.open;});
+-    const next={productId:id,query:byId('modelPartsQuery').value.trim(),tier:byId('modelPartsTier').value,category:byId('modelPartsCategory').value,purpose:byId('modelPartsPurpose').value,sort:byId('modelPartsSort').value};
+-    const filterChanged=['query','tier','category','purpose'].some(key=>next[key]!==state.productPartsFilters[key]);
+-    const openMatches=filterChanged&&(next.query||[next.tier,next.category,next.purpose].some(value=>value!=='all'));
++    const next={productId:id,query:byId('modelPartsQuery').value.trim(),tier:byId('modelPartsTier').value,category:byId('modelPartsCategory').value,purpose:byId('modelPartsPurpose').value,fitment:byId('modelPartsFitment').value,priceStatus:byId('modelPartsPriceStatus').value,minPrice:byId('modelPartsMinPrice').value,maxPrice:byId('modelPartsMaxPrice').value,sort:byId('modelPartsSort').value};
++    const filterChanged=['query','tier','category','purpose','fitment','priceStatus','minPrice','maxPrice'].some(key=>next[key]!==state.productPartsFilters[key]);
++    const openMatches=filterChanged&&(next.query||modelPartsFilterCount(next)>0);
++    if(next.sort!==state.productPartsFilters.sort)state.productPartSorts={};
+     state.productPartsFilters=next;
+-    const list=sortCommerceParts(filterParts(product.parts,next),next.sort,installationTime);
+-    root.innerHTML=renderModelPartGroups(list,openMatches);
+-    byId('modelPartsCount').textContent=`${list.length} von ${product.parts.length}`;
+-    wireModelPartGroups(id);
++    const view=modelPartsView(product,next,installationTime);
++    root.innerHTML=renderModelPartGroups(view,product,openMatches);
++    byId('modelPartsCount').textContent=modelPartsCountText(view);
++    byId('modelPartsFilterCount').textContent=modelPartsFilterCount(next)?`(${modelPartsFilterCount(next)} aktiv)`:'(optional)';
++    byId('modelPartsPriceError').textContent=view.bounds.error;
++    byId('modelPartsMinPrice').setAttribute('aria-invalid',String(view.bounds.invalidMin));
++    byId('modelPartsMaxPrice').setAttribute('aria-invalid',String(view.bounds.invalidMax));
++    wireModelPartGroups(id,updateParts);
+   };
+-  wireModelPartGroups(id);
++  wireModelPartGroups(id,updateParts);
+   byId('modelPartsReset')?.addEventListener('click',()=>{
+     byId('modelPartsQuery').value='';
+-    ['modelPartsTier','modelPartsCategory','modelPartsPurpose'].forEach(key=>{byId(key).value='all';});
++    ['modelPartsTier','modelPartsCategory','modelPartsPurpose','modelPartsFitment','modelPartsPriceStatus'].forEach(key=>{byId(key).value='all';});
++    ['modelPartsMinPrice','modelPartsMaxPrice'].forEach(key=>{byId(key).value='';});
+     byId('modelPartsSort').value='name';
++    state.productPartSorts={};
+     updateParts();
+   });
+   byId('modelPartsQuery')?.addEventListener('input',updateParts);
+-  ['modelPartsTier','modelPartsCategory','modelPartsPurpose','modelPartsSort'].forEach(id=>byId(id)?.addEventListener('change',updateParts));
++  ['modelPartsMinPrice','modelPartsMaxPrice'].forEach(id=>byId(id)?.addEventListener('input',updateParts));
++  ['modelPartsTier','modelPartsCategory','modelPartsPurpose','modelPartsFitment','modelPartsPriceStatus','modelPartsSort'].forEach(id=>byId(id)?.addEventListener('change',updateParts));
+ }
+ 
+ function evidenceTypeLabel(type){
+@@ -1755,12 +1805,14 @@
+   const param=safeDecode(rest.join('/'));
+   const brands=routeCatalogBrands(routeName,param).filter(b=>!catalogLoader.isLoaded(b));
+   if(brands.length){
+-   shell(`<h2>Markenkatalog wird geladen …</h2><p class="muted">${esc(brands.join(' und '))}: Teile, Anleitungen und Quellen werden einmalig geladen. Deine Gerätedaten bleiben lokal.</p>`,'home');
++   const device=routeName==='product'?products.find(product=>product.id===param):null;
++   const loadingContext=device?`<section class="card model-loading-device"><h2>${esc(device.brand)} ${esc(device.model)}</h2><p class="small muted">${device.identifiers.filter(identifier=>!['ean','gtin','upc'].includes(identifier.type)).map(identifier=>`${esc(identifierLabel(identifier.type,device.brand))}: ${esc(identifier.value)}`).join(' · ')}</p><span class="pill pill-warn">Passung prüfen</span></section>`:'';
++   shell(`${loadingContext}<section role="status" aria-live="polite"><h2>Markenkatalog wird geladen …</h2><p class="muted">${esc(brands.join(' und '))}: Teile, Anleitungen und Quellen werden einmalig geladen. Die Teileliste ist noch nicht verfügbar. Deine Gerätedaten bleiben lokal.</p></section>`,'home');
+    const version=renderVersion;
+    const results=await Promise.allSettled(brands.map(b=>catalogLoader.ensure(b)));
+    if(version!==renderVersion)return;
+    catalogLoadErrors=brands.filter((b,i)=>results[i].status==='rejected');
+-   if(catalogLoadErrors.length&&!(['parts','prices','marketplaces'].includes(routeName)&&!param)){shell('<h2>Für dieses Gerät fehlen noch die Markendetails.</h2><p class="muted">Verbinde dich für den ersten Abruf oder öffne einen bereits geladenen Katalog.</p>','home');return;}
++   if(catalogLoadErrors.length&&!(['parts','prices','marketplaces'].includes(routeName)&&!param)){shell(`${loadingContext}<h2>Für dieses Gerät fehlen noch die Markendetails.</h2><p class="muted">Die Artikel sind noch nicht geladen. Das ist keine leere Teileliste. Verbinde dich für den ersten Abruf oder öffne einen bereits geladenen Katalog.</p>`,'home');return;}
+   }
+   boschContext.retainForRoute(routeName,param,products);
+   if(!['plate-review','compare'].includes(routeName))plateState.text='';
+--- a/styles.css
++++ b/styles.css
+@@ -458,3 +458,65 @@
+ .model-part-group-content>.part-card:last-child{margin-bottom:0}
+ @media(max-width:440px){.model-part-group>summary{gap:8px;padding:11px 10px}.model-part-group-icon{width:32px;height:36px}.model-part-group-icon svg{width:24px;height:24px}.model-part-group-title{font-size:12px}.model-part-group-count{font-size:10px;padding:4px 6px}.model-part-group[open]>.model-part-group-content{padding:8px}.model-part-group-content>.part-card{padding:12px}}
+ @media(prefers-reduced-motion:reduce){.model-part-group-chevron{transition:none}}
++
++/* Model detail workspace: extend the existing category tree. */
++.model-parts-workspace{margin:22px 0 28px;min-width:0;font-size:1rem;line-height:1.5}
++.model-parts-workspace .small{font-size:.875rem;line-height:1.5}
++.model-device-context{position:sticky;top:var(--topbar-height,72px);z-index:20;display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:12px 14px;border:1px solid var(--line);border-radius:14px;background:var(--surface);box-shadow:var(--shadow-soft)}
++.model-device-context>div{flex:1 1 10rem;min-width:0}
++.model-device-context strong,.model-device-codes{display:block;overflow-wrap:anywhere}
++.model-device-context strong{font-size:1rem;line-height:1.4}
++.model-device-context .pill{font-size:.875rem;white-space:normal;margin:0;flex:none}
++.model-device-context .field-label{margin:0;color:var(--muted);font-size:.875rem}
++.model-fitment-note{margin:10px 2px 16px}
++.model-parts-workspace>.section-head{flex-wrap:wrap;margin-top:16px;gap:6px}
++.model-parts-workspace .section-title{font-size:1rem}
++.model-parts-filters{margin-top:10px}
++.model-parts-filters .field-label,.model-sort-label>span,.model-group-sort>span,.model-price-range label>span{font-size:.875rem;font-weight:750;line-height:1.5}
++.model-sort-label,.model-group-sort{display:grid;gap:6px;margin:12px 0}
++.model-parts-workspace select,.model-parts-workspace input{width:100%;min-width:0;min-height:44px;font-size:1rem;border:1px solid var(--line);border-radius:12px;padding:11px;background:var(--surface-soft);color:var(--text)}
++.model-parts-workspace select:focus-visible,.model-parts-workspace input:focus-visible,.model-advanced-filters>summary:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
++.model-advanced-filters{border-top:1px solid var(--line);padding-top:4px}
++.model-advanced-filters>summary{padding:12px 0;cursor:pointer;font-size:1rem;font-weight:750;min-height:44px}
++.model-advanced-filters>summary span{font-size:.875rem;color:var(--muted);font-weight:500}
++.model-parts-filters .filter-grid label>span{font-size:.875rem;text-transform:none;letter-spacing:normal;line-height:1.5}
++.model-parts-filters .filter-grid label{min-width:0}
++.model-price-range{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:12px}
++.model-price-range label{display:grid;gap:6px;min-width:0}
++.model-price-error{font-size:.875rem;color:var(--bad);line-height:1.5;margin:8px 0}
++.model-price-error:empty{display:none}
++.model-parts-workspace [aria-invalid="true"]{border-color:var(--bad)}
++.model-parts-workspace .btn{min-height:44px;font-size:.875rem;white-space:normal;overflow-wrap:anywhere}
++.model-parts-links{display:grid;gap:8px;margin-top:18px}
++.model-parts-links .wide-btn{margin:0;line-height:1.5;text-align:left}
++.model-part-group>summary{flex-wrap:wrap}
++.model-part-group-title{font-size:1rem}
++.model-part-group-count{font-size:.875rem;white-space:normal}
++.model-group-sort{margin:0 0 14px}
++.model-parts-workspace .part-card h3{font-size:1rem;line-height:1.45}
++.model-part-open{font:inherit;font-weight:750;text-align:left;white-space:normal;overflow-wrap:anywhere;min-height:44px;width:100%}
++.model-parts-workspace .part-card-top{align-items:flex-start;flex-wrap:wrap}
++.model-parts-workspace .part-card-top>.grow{flex:1 1 11rem}
++.model-parts-workspace .part-card-top>.chevron{display:none}
++.model-parts-workspace .part-meta{flex-wrap:wrap;font-size:.875rem;line-height:1.5}
++.model-parts-workspace .part-meta strong{color:var(--text);font-size:1rem}
++.model-parts-workspace .part-card .pill,.model-parts-workspace .part-type-badge,.model-parts-workspace .part-purpose{font-size:.875rem;line-height:1.4;overflow-wrap:anywhere}
++.model-parts-workspace .photo-load{overflow-wrap:anywhere;white-space:normal}
++.model-parts-empty{text-align:left;margin:14px 0;font-size:1rem;line-height:1.5}
++.model-parts-empty h3{font-size:1rem}
++.model-loading-device h2,.model-loading-device p,.product-hero .identifier strong{overflow-wrap:anywhere}
++.product-hero .identifier span,.product-hero .identifier em{font-size:.875rem}
++.product-hero .identifier strong{font-size:1rem}
++.product-hero .identifier span{overflow-wrap:anywhere}
++.model-device-barcodes{margin:10px 0;font-size:.875rem}.model-device-barcodes>summary{cursor:pointer;padding:10px 0;min-height:44px}
++@media(max-width:440px){
++ .topbar{gap:8px;padding-inline:12px}.brand{font-size:1rem;letter-spacing:normal}.brand-mark{width:30px;height:32px}.top-actions{gap:5px}.connection-badge{display:none}
++ .product-hero .product-head{flex-wrap:wrap}.product-hero .product-photo-large{width:76px;height:90px}.product-hero .product-head>.grow{flex-basis:170px}
++ .product-hero .identifier-grid{grid-template-columns:minmax(0,1fr)}
++ .product-hero .product-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch}.product-hero .product-actions #save{grid-column:1/-1}.product-hero .product-actions .btn{font-size:.875rem;min-height:44px;min-width:0;padding:10px;white-space:normal;overflow-wrap:anywhere;line-height:1.4}
++ .model-device-context{padding:10px}.model-part-group-title{font-size:.875rem}.model-part-group-count{font-size:.875rem;padding:4px 6px}
++ .model-part-group-toolbar .row{width:100%}.model-part-group-toolbar .btn{flex:1}
++ .model-price-range{grid-template-columns:minmax(0,1fr)}
++ .model-part-group-content>.part-card{padding:12px}.model-parts-workspace .part-photo{width:2.75rem;height:3.125rem;flex:none}.model-parts-workspace .part-symbol svg{width:30px;height:30px}
++ .model-parts-workspace .part-card-top{gap:8px}.model-parts-workspace .part-photo .photo-load{font-size:.75rem;line-height:1.3}
++}
+--- /dev/null
++++ b/src/core/model-parts-view.js
+@@ -0,0 +1,71 @@
++import {filterParts} from '../data/miele-parts.js';
++import {quoteForPart,comparableQuote,sortCommerceParts} from '../data/miele-commerce.js';
++
++// View state only: catalog objects, quotes and fitment evidence remain untouched.
++export const modelPartsDefaults=Object.freeze({query:'',tier:'all',category:'all',purpose:'all',fitment:'all',priceStatus:'all',minPrice:'',maxPrice:'',sort:'name'});
++export const modelPartSortOptions=Object.freeze([
++ ['name','Bezeichnung A–Z'],['name-desc','Bezeichnung Z–A'],['relevance','Relevanz'],
++ ['part-number','Teilenummer'],['recorded-price','Preis aufsteigend'],
++ ['recorded-price-desc','Preis absteigend'],['time','Einbauzeit aufsteigend']
++]);
++const collator=new Intl.Collator('de',{numeric:true,sensitivity:'base'});
++const normalize=value=>String(value??'').normalize('NFKD').replace(/\p{M}/gu,'').toLowerCase().replace(/ß/g,'ss').replace(/[^a-z0-9]/g,'');
++
++export function partNumberForView(part){
++ const types=part.tier==='aftermarket'?['supplier-article','manufacturer-article','material-number','manufacturer-designation']:['material-number','manufacturer-article','manufacturer-designation','supplier-article'];
++ return types.map(type=>part.identifiers?.find(identifier=>identifier.type===type)?.value).find(Boolean)||'';
++}
++export function modelPriceBounds({minPrice='',maxPrice=''}={}){
++ const parse=value=>{
++  const text=String(value??'').trim();
++  if(!text)return null;
++  if(!/^(?:\d+(?:[.,]\d{1,2})?|[.,]\d{1,2})$/.test(text))return NaN;
++  const amount=Number(text.replace(',','.'));
++  return Number.isFinite(amount)?amount:NaN;
++ };
++ const min=parse(minPrice),max=parse(maxPrice);
++ const invalidMin=Number.isNaN(min),invalidMax=Number.isNaN(max),reversed=!invalidMin&&!invalidMax&&min!==null&&max!==null&&min>max;
++ return {min,max,invalidMin:invalidMin||reversed,invalidMax:invalidMax||reversed,error:invalidMin||invalidMax?'Bitte einen gültigen Preis mit höchstens zwei Nachkommastellen eingeben.':reversed?'Preis von darf nicht größer als Preis bis sein.':''};
++}
++function fitmentMatches(part,status){
++ if(status==='all')return true;
++ if(status==='manufacturer-listed')return ['manufacturer_listed','manufacturer_verified','manufacturer_family_listed'].includes(part.fitment?.status);
++ return part.fitment?.status===status;
++}
++export function sortModelParts(parts,sort='name',query='',timeForPart=()=>null){
++ if(sort==='part-number')return [...parts].sort((a,b)=>{
++  const av=partNumberForView(a),bv=partNumberForView(b);
++  if(Boolean(av)!==Boolean(bv))return av?-1:1;
++  return collator.compare(av,bv)||collator.compare(a.name,b.name);
++ });
++ if(sort==='relevance'){
++  const q=normalize(query);
++  const rank=part=>!q?0:part.identifiers?.some(id=>normalize(id.value)===q)?0:normalize(part.name)===q?1:normalize(part.name).startsWith(q)?2:normalize(part.name).includes(q)?3:4;
++  return [...parts].sort((a,b)=>rank(a)-rank(b));
++ }
++ return sortCommerceParts(parts,sort,timeForPart);
++}
++export function modelPartsView(product,filters={},timeForPart=()=>null){
++ const options={...modelPartsDefaults,...filters},parts=product?.parts||[],bounds=modelPriceBounds(options);
++ const loaded=product?.catalogLoaded!==false;
++ const hasBounds=bounds.min!==null||bounds.max!==null;
++ const unpricedCount=parts.filter(part=>!comparableQuote(quoteForPart(part))).length;
++ let list=[];
++ if(loaded&&!bounds.error)list=filterParts(parts,options).filter(part=>{
++  if(!fitmentMatches(part,options.fitment))return false;
++  const quote=quoteForPart(part),known=comparableQuote(quote);
++  if(options.priceStatus==='known'&&!known||options.priceStatus==='unknown'&&known)return false;
++  if(hasBounds&&!known)return false;
++  return !hasBounds||(bounds.min===null||quote.price>=bounds.min)&&(bounds.max===null||quote.price<=bounds.max);
++ });
++ return {parts:sortModelParts(list,options.sort,options.query,timeForPart),total:parts.length,unpricedCount,bounds,
++  empty:!loaded?'unloaded':!parts.length?'missing':bounds.error?'invalid-price':!list.length?'filtered':null};
++}
++export function modelPartsEmptyMessage(state){
++ return ({
++  unloaded:{title:'Markendetails noch nicht geladen',text:'Die Artikel dieses Geräts sind noch nicht verfügbar. Für den ersten Abruf ist eine Verbindung nötig.'},
++  missing:{title:'Teileliste noch nicht erfasst',text:'Für dieses Modell sind noch keine Artikel zugeordnet. Das bedeutet nicht, dass es keine Ersatzteile gibt. Vollständige Gerätekennung beim Hersteller prüfen.'},
++  'invalid-price':{title:'Preisfilter prüfen',text:'Korrigiere die Preisgrenzen oder setze die Filter zurück.'},
++  filtered:{title:'Keine Artikel für diese Filter',text:'Die erfasste Teileliste enthält keine Treffer für deine Auswahl. Ändere die Suche oder setze die Filter zurück. Die Teileliste ist möglicherweise unvollständig.'}
++ })[state]||null;
++}
+--- /dev/null
++++ b/tests/model-parts-view.test.mjs
+@@ -0,0 +1,66 @@
++import assert from 'node:assert/strict';
++import {modelPartsView,modelPriceBounds,sortModelParts,modelPartsDefaults,modelPartsEmptyMessage,partNumberForView} from '../src/core/model-parts-view.js';
++import {products,registerCatalogPack,optionalCatalogBrands} from '../src/data/catalog.js';
++import {quoteForPart,comparableQuote} from '../src/data/miele-commerce.js';
++
++// Synthetic view fixtures never enter the catalog or persisted state.
++const part=(id,name,price,extra={})=>({id,name,tier:'oem',identifiers:[{type:'manufacturer-article',value:id}],fitment:{status:'variant_check_required'},...(price===undefined?{}:{sourceQuote:{price,currency:'EUR',vatIncluded:true,priceBasis:'unit',market:'DE',checkedAt:'2020-01-01',stock:'unknown'}}),...extra});
++const fixtures=[part('9002','Filter Z',25),part('90010','Filter A',9.5),part('9003','Filter ohne Preis'),part('9004','Filter Fremdwährung',1,{sourceQuote:{price:1,currency:'PLN',vatIncluded:true,priceBasis:'unit',market:'PL'}}),part('9005','Filter netto',2,{sourceQuote:{price:2,currency:'EUR',vatIncluded:false,priceBasis:'unit',market:'DE'}}),part('9006','Filter Staffelpreis',3,{sourceQuote:{price:3,currency:'EUR',vatIncluded:true,priceBasis:'bulk-from',market:'DE'}}),part('9007','Filter fehlerhaft',NaN),part('9008','Filter null',null),part('9009','Filter negativ',-1)];
++const product={parts:fixtures};
++const snapshot=JSON.stringify(fixtures);
++for(const [sort,first,second] of [['recorded-price','90010','9002'],['recorded-price-desc','9002','90010']]){
++ const view=modelPartsView(product,{sort});
++ assert.deepEqual(view.parts.slice(0,2).map(part=>part.id),[first,second]);
++ assert.ok(view.parts.slice(2).every(part=>!comparableQuote(quoteForPart(part))),'unknown/non-comparable prices stay last in both directions');
++}
++assert.equal(modelPartsView(product,{priceStatus:'unknown'}).parts.length,7);
++assert.equal(modelPartsView(product,{priceStatus:'known'}).parts.length,2);
++assert.deepEqual(modelPartsView(product,{minPrice:'9,50',maxPrice:'9.50'}).parts.map(part=>part.id),['90010'],'inclusive German decimal bounds use recorded prices without claiming live offers');
++assert.equal(modelPartsView(product,{maxPrice:'30'}).parts.length,2,'bounded prices never admit unknown, foreign, net or bulk prices');
++assert.equal(modelPartsView(product,{priceStatus:'unknown',minPrice:'0'}).empty,'filtered');
++assert.equal(modelPriceBounds({minPrice:'',maxPrice:''}).min,null,'blank does not mean zero');
++assert.equal(modelPriceBounds({minPrice:'0'}).min,0,'an explicit genuine zero is a valid bound');
++assert.equal(modelPriceBounds({maxPrice:' ,50 '}).max,.5);
++for(const value of ['-1','12,345','foo','Infinity','1e2','1.000,50'])assert.ok(modelPriceBounds({maxPrice:value}).error,value);
++const reversed=modelPriceBounds({minPrice:'30',maxPrice:'20'});assert.ok(reversed.error&&reversed.invalidMin&&reversed.invalidMax);
++assert.equal(modelPartsView(product,{minPrice:'30',maxPrice:'20'}).empty,'invalid-price');
++assert.deepEqual(sortModelParts(fixtures.slice(0,3),'part-number').map(part=>part.id),['9002','9003','90010'],'part numbers have a natural order');
++assert.equal(partNumberForView({tier:'aftermarket',identifiers:[{type:'ean',value:'123'},{type:'supplier-article',value:'SUP-2'}]}),'SUP-2');
++assert.equal(sortModelParts([fixtures[0],{...fixtures[1],identifiers:[]}],'part-number')[0],fixtures[0],'missing part numbers sort last');
++assert.equal(sortModelParts(fixtures,'relevance','90010')[0],fixtures[1]);
++assert.equal(sortModelParts(fixtures,'relevance','Filter Z')[0],fixtures[0]);
++assert.deepEqual(sortModelParts(fixtures,'relevance'),fixtures,'relevance without query preserves source order');
++assert.equal(modelPartsView(product,{fitment:'variant_check_required'}).parts.length,fixtures.length);
++assert.equal(modelPartsView(product,{fitment:'manufacturer-listed'}).parts.length,0,'no invented confirmed-fit option');
++assert.equal(modelPartsView({parts:[part('X','Düse',1,{fitment:{status:'supplier_listed'},tier:'aftermarket'})]},{tier:'aftermarket',fitment:'supplier_listed',category:'Düsen & Bürstenköpfe',purpose:'accessory'}).parts.length,1);
++assert.equal(modelPartsView({parts:[]}).empty,'missing');
++assert.equal(modelPartsView({parts:[],catalogLoaded:false}).empty,'unloaded');
++assert.equal(modelPartsView(product,{query:'zzzz-no-result'}).empty,'filtered');
++assert.notEqual(modelPartsEmptyMessage('missing').title,modelPartsEmptyMessage('filtered').title);
++assert.match(modelPartsEmptyMessage('missing').text,/nicht, dass es keine Ersatzteile/);
++assert.equal(JSON.stringify(fixtures),snapshot,'view changes cannot mutate catalog objects or prices');
++assert.equal(modelPartsDefaults.sort,'name');
++
++const miele=products.find(product=>product.brand==='Miele'&&product.parts.length);
++const before=JSON.stringify(miele);
++assert.equal(modelPartsView(miele).parts.length,miele.parts.length);
++modelPartsView(miele,{tier:'aftermarket',sort:'recorded-price-desc',maxPrice:'100'});
++assert.equal(JSON.stringify(miele),before);
++const boschEmpty=products.find(product=>product.brand==='Bosch'&&!product.parts.length);
++assert.equal(modelPartsView(boschEmpty).empty,'missing');
++for(const brand of optionalCatalogBrands){
++ const indexed=products.filter(product=>product.catalogPack===brand);
++ const identities=indexed.map(product=>({id:product.id,identifiers:JSON.stringify(product.identifiers),object:product}));
++ assert.ok(indexed.length&&indexed.every(product=>modelPartsView(product).empty==='unloaded'),brand+' index is not a missing parts list');
++ const {brandPack}=await import(`../src/data/${brand.toLowerCase()}-pack.js`);registerCatalogPack(brandPack);
++ for(const identity of identities){
++  const loaded=products.find(product=>product.id===identity.id);
++  assert.equal(loaded,identity.object,'lazy hydration preserves device identity');
++  assert.equal(JSON.stringify(loaded.identifiers),identity.identifiers);
++  const view=modelPartsView(loaded);
++  assert.equal(view.parts.length,loaded.parts.length);
++  assert.equal(view.empty,loaded.parts.length?null:'missing');
++  if(loaded.parts.length)assert.equal(modelPartsView(loaded,{query:'zzzz-no-result'}).empty,'filtered');
++ }
++}
++console.log('Model parts UI passed: German price ranges, unknown prices last, natural codes, relevance, status/tier/type filters, empty/unloaded/hydrated devices and immutable data.');

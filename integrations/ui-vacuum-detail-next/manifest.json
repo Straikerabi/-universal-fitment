@@ -1,0 +1,35 @@
+{
+  "issue": 15,
+  "branch": "work/ui-vacuum-detail-next",
+  "base_commit": "6545d9affb6b3c6c04b8d585084f2094a09e77b1",
+  "base_version": "1.27.1",
+  "source_archive_sha256": "656b9a487bdc5c13646de10b97b0a6793c49e6110b668e9b836c8fe338acff21",
+  "patch_sha256": "50c5e36285929394bbe6af6980ddd86c073450692ec247aa9124e39660c67b54",
+  "files": [
+    {
+      "path": "package.json",
+      "before_sha256": "5b7bca49e17bea78341b4358c15db36e35261ae88313e95ef6946a1d4ebb9605",
+      "after_sha256": "8083cae1fe5aca8e72c5058cad39743d31f4a8b532458a37b2ce620e5702ea1a"
+    },
+    {
+      "path": "src/app.js",
+      "before_sha256": "b62ec41d9421c47f5997e18ceea078739a38e18fe044376e33e73f080fca1e84",
+      "after_sha256": "ea480fa24dabe30aa0793a0a429f157733d5f139b8dc69351079368e39d3910f"
+    },
+    {
+      "path": "styles.css",
+      "before_sha256": "5f03135fb19951704d3fbf2c6d93284cade1e022e205f26af4ef2ec8c06bcc20",
+      "after_sha256": "6725000fbde899ffc6a8cf6ea6d9b6f2fb60a1bce99658775cd843fcae6330cc"
+    },
+    {
+      "path": "src/core/model-parts-view.js",
+      "before_sha256": null,
+      "after_sha256": "b2e665b4f71a61bd8db9f53041fd89933d519006bdb376000e64295916e89504"
+    },
+    {
+      "path": "tests/model-parts-view.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "d36ebbea142cc462f3efa17f2726d58f217c523c083a37fbb8f8c20cc94196c6"
+    }
+  ]
+}
