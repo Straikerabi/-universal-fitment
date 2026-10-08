@@ -1,0 +1,127 @@
+{
+  "checked_local_date": "2026-10-08",
+  "market": "DE",
+  "status": "manufacturer_optional_lists_verified__not_in_app",
+  "imported_to_app": false,
+  "import_requires": [
+    "Deduplicate exact full model codes against the current 64 Samsung model references",
+    "Deduplicate accessories against 27 current Samsung catalog articles",
+    "Preserve exact manufacturer code spelling, including short unsuffixed codes",
+    "Optional accessory list is evidence of a manufacturer-provided option, not unconditional fitment for every part revision",
+    "Wipe consumables require relevant wipe attachment; Clean Station bags require the station",
+    "Never manufacture prices, stock or shipping estimates; recheck when offering purchase links",
+    "Run all existing app tests, rebuild, check deployment, then update catalog counts"
+  ],
+  "model_candidates": [
+    {
+      "full_model_code": "VS20B75BCR5/WD",
+      "manufacturer_name": "Jet 75E CompleteClean",
+      "manufacturer_url": "https://www.samsung.com/de/vacuum-cleaners/stick/vs9000rl-stick-more-advance-cleaning-performance-digital-inverter-motor-jet-cyclone-silver-vs20b75bcr5-wd/",
+      "list_type": "optional_accessories_from_exact_de_product_page",
+      "listed_article_codes": [
+        "VCA-SBTA60",
+        "VCA-WBC652/GL",
+        "VCA-SPA75E/GL",
+        "VCA-SPW75E/VT",
+        "VCA-SHF90",
+        "VCA-SHF90A",
+        "VCA-SHF90B",
+        "VCA-SAK95/GL"
+      ],
+      "evidence_note": "Wischverbrauchsmaterial setzt separat erworbenen Spinning-Sweeper-Aufsatz voraus; SHF90*-Codes stehen ohne Suffix auf der Modellseite.",
+      "import_status": "pending_current_catalog_crosscheck"
+    },
+    {
+      "full_model_code": "VS20B75BGR1/WD",
+      "manufacturer_name": "Jet 75E PetPRO",
+      "manufacturer_url": "https://www.samsung.com/de/vacuum-cleaners/stick/vs9000rl-stick-more-advance-cleaning-performance-digital-inverter-motor-jet-cyclone-mint-vs20b75bgr1-wd/",
+      "list_type": "optional_accessories_from_exact_de_product_page",
+      "listed_article_codes": [
+        "VCA-SBTA60",
+        "VCA-SABC75E/GL",
+        "VCA-WBC652/GL",
+        "VCA-SPA75E/GL",
+        "VCA-SPW75E/VT",
+        "VCA-SHF90",
+        "VCA-SHF90A",
+        "VCA-SHF90B",
+        "VCA-SAK95/GL"
+      ],
+      "evidence_note": "Wischverbrauchsmaterial erfordert den optionalen Spinning-Sweeper-Aufsatz; Feinstaubfilter werden ohne vollständige Länderkennung genannt.",
+      "import_status": "pending_current_catalog_crosscheck"
+    },
+    {
+      "full_model_code": "VS20C95E4TB/WD",
+      "manufacturer_name": "Jet 95 CompleteClean",
+      "manufacturer_url": "https://www.samsung.com/de/vacuum-cleaners/stick/vs9500al-stick-more-advance-cleaning-performance-hexajet-motor-jet-cyclone-blue-vs20c95e4tb-wd/",
+      "list_type": "optional_accessories_from_exact_de_product_page",
+      "listed_article_codes": [
+        "VCA-SBTA95/VT",
+        "VCA-SAPB95/WA",
+        "VCA-WBA95/GL",
+        "VCA-SPA95/GL",
+        "VCA-SPW95/VT",
+        "VCA-SHF95B",
+        "VCA-SHF95N",
+        "VCA-SHF95W",
+        "VCA-SAK95/GL"
+      ],
+      "evidence_note": "Wischpads/-tücher nur mit Spray-Spinning-Sweeper-Aufsatz; SHF95-Farbcodes nicht ohne Beleg zu anderen Varianten umdeuten.",
+      "import_status": "pending_current_catalog_crosscheck"
+    },
+    {
+      "full_model_code": "VS20C85G4PB/WD",
+      "manufacturer_name": "Jet 85 CompleteClean Plus",
+      "manufacturer_url": "https://www.samsung.com/de/vacuum-cleaners/stick/vs9500al-stick-more-advance-cleaning-performance-hexajet-motor-jet-cyclone-blue-vs20c85g4pb-wd/",
+      "list_type": "optional_accessories_from_exact_de_product_page",
+      "listed_article_codes": [
+        "VCA-SBTA95/VT",
+        "VCA-SAPB95/WA",
+        "VCA-ADB90",
+        "VCA-WBA95/GL",
+        "VCA-SPA95/GL",
+        "VCA-SPW95/VT",
+        "VCA-SHF95B",
+        "VCA-SHF95N",
+        "VCA-SHF95W",
+        "VCA-SAK95/GL"
+      ],
+      "evidence_note": "VCA-ADB90 ist für die separate Clean Station; Spray-Spinning-Sweeper-Verbrauchsmaterial setzt den Wischaufsatz voraus.",
+      "import_status": "pending_current_catalog_crosscheck"
+    },
+    {
+      "full_model_code": "VS70H25XFT/WD",
+      "manufacturer_name": "Jet 85S CompleteClean",
+      "manufacturer_url": "https://www.samsung.com/de/vacuum-cleaners/stick/jet-85s-stick-vacuum-cleaner-jet-85s-stick-vacuum-cleaner-phantom-green-vs70h25xft-wd/",
+      "list_type": "optional_accessories_from_exact_de_product_page",
+      "listed_article_codes": [
+        "VCA-WBA95/GL",
+        "VCA-SHFF80T",
+        "VCA-SBTD95",
+        "VCA-SAPF80/WA",
+        "VCA-SPW95",
+        "VCA-SPA95/GL",
+        "VCA-SAK95/GL"
+      ],
+      "evidence_note": "Neueres Modell; vor Import prüfen, ob schon im Modellindex. VCA-SPW95 ist in der Modellliste ohne /VT genannt.",
+      "import_status": "pending_current_catalog_crosscheck"
+    },
+    {
+      "full_model_code": "VS70H28HFC/WD",
+      "manufacturer_name": "Jet 95S CompleteClean",
+      "manufacturer_url": "https://www.samsung.com/de/vacuum-cleaners/stick/jet-95s-stick-vacuum-cleaner-jet-95s-stick-vacuum-cleaner-soapstone-charcoal-vs70h28hfc-wd/",
+      "list_type": "optional_accessories_from_exact_de_product_page",
+      "listed_article_codes": [
+        "VCA-WBA95/GL",
+        "VCA-SHFF80C",
+        "VCA-SBTD95",
+        "VCA-SAPF80/WA",
+        "VCA-SPW95",
+        "VCA-SPA95/GL",
+        "VCA-SAK95/GL"
+      ],
+      "evidence_note": "Neueres Modell; nicht als existierender Katalogeintrag voraussetzen. VCA-SPW95 wird ohne Suffix gelistet.",
+      "import_status": "pending_current_catalog_crosscheck"
+    }
+  ]
+}
