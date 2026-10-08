@@ -1,4 +1,4 @@
-name: "Deploy v1.28.2 mobile manufacturer parts links fix"
+name: "Deploy v1.29.0 Miele Dyson Hoover model catalog expansion"
 
 on:
   push:
@@ -337,6 +337,13 @@ jobs:
           cat .demo/v1.28.2-patch/part-* | base64 -d | gzip -d > update-v1.28.2.patch
           echo "a387edb0e78d0cf56cd751fa040895127d6f654debb103d409bc433c62c5c679  update-v1.28.2.patch" | sha256sum -c -
           patch -p1 -d site < update-v1.28.2.patch
+
+      - name: "Apply v1.29.0 Miele Dyson Hoover Wave 2 model references"
+        shell: bash
+        run: |
+          cat .demo/v1.29.0-patch/part-* | base64 -d | gzip -d > update-v1.29.0.patch
+          echo "17e986d1bf16d09500b863cb620253cbc8eca7ed3ddfd354abd2220991ae2cff  update-v1.29.0.patch" | sha256sum -c -
+          patch -p1 -d site < update-v1.29.0.patch
 
       - name: Build and verify app bundles from checked sources
         run: |
