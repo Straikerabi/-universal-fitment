@@ -1,0 +1,86 @@
+name: Legal Safety Audit (no deployment)
+
+on:
+  push:
+    branches:
+      - audit/legal-hardening-v1290
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  legal-preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout code without persisted credentials
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Restore immutable audited source
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 integrations/restore-source-checkpoint.py --target site
+      - name: Review static data flows and missing legal surfaces
+        run: python3 integrations/legal-compliance/hardening.py inventory --site site
+      - name: Inspect public legal surface and authentication code
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          base=Path('site')
+          for path in ('index.html','src/app.js','docs/LEGAL_CHECKLIST.md','src/core/pilot-client.js','src/core/local-state.js'):
+              p=base/path
+              if not p.exists(): continue
+              lines=p.read_text(errors='replace').splitlines()
+              rx=re.compile(r'impressum|datenschutz|privacy|cookie|signInWithPassword|login|pilot|contact|kontakt|footer',re.I)
+              hits=[i for i,line in enumerate(lines) if rx.search(line)]
+              print('SURFACE',path,'total_lines',len(lines),'matching_lines',len(hits))
+              for i in hits[:25]:
+                  s=lines[i][:220].replace('apikey','[api-key-name]')
+                  print('LINE',i+1,s)
+          PY
+      - name: Validate safe, idempotent non-publishing preview modifications
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 integrations/legal-compliance/hardening.py apply --site site
+          python3 integrations/legal-compliance/hardening.py apply --site site
+          python3 -m unittest discover -s integrations/legal-compliance -p 'test_*.py' -v
+      - name: Confirm public release is blocked before verified documents and hosting
+        shell: bash
+        run: |
+          set +e
+          python3 integrations/legal-compliance/hardening.py release-check --site site
+          status=$?
+          set -e
+          test "$status" -eq 2
+      - name: Assert commercial preflight rejects incomplete operator sample
+        shell: bash
+        run: |
+          set -euo pipefail
+          git check-ignore -q integrations/legal-compliance/operator-private.json
+          git check-ignore -q site/index.html
+          set +e
+          python3 integrations/legal-compliance/launch_preflight.py --config integrations/legal-compliance/operator.example.json --site site
+          status=$?
+          set -e
+          test "$status" -eq 2
+      - name: Build private preview and run full app tests without publishing
+        shell: bash
+        run: |
+          set -euo pipefail
+          bash integrations/legal-compliance/private-preview-build.sh --test
+          bash integrations/legal-compliance/private-preview-serve.sh
+          curl -fsS http://127.0.0.1:4173/index.html -o /tmp/uf-preview-index.html
+          bash integrations/legal-compliance/private-preview-serve.sh
+          grep -q 'projekt-hinweise.html' /tmp/uf-preview-index.html
+          grep -q 'Rechtshinweise' <(curl -fsS http://127.0.0.1:4173/projekt-hinweise.html)
+          node --check site/src/core/pilot-client.js
+          python3 -m json.tool .devcontainer/devcontainer.json > /dev/null
+          echo 'Private preview HTTP route smoke test passed.'

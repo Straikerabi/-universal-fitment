@@ -1,0 +1,16 @@
+{
+  "name": "Universal Fitment · Private Testvorschau",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "postCreateCommand": "bash integrations/legal-compliance/private-preview-build.sh",
+  "postStartCommand": "bash integrations/legal-compliance/private-preview-serve.sh",
+  "forwardPorts": [
+    4173
+  ],
+  "portsAttributes": {
+    "4173": {
+      "label": "Universal Fitment · Nur privat testen",
+      "onAutoForward": "notify"
+    }
+  },
+  "remoteUser": "codespace"
+}

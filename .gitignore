@@ -1,0 +1,12 @@
+# Local-only operator/contract/compliance materials.
+# Never bypass with git add -f; check git status before sharing!
+integrations/legal-compliance/operator-private.json
+integrations/legal-compliance/operator-private.*.json
+integrations/legal-compliance/private/
+integrations/legal-compliance/generated/
+*.secret
+.env
+.env.*
+
+# Reconstructed preview source and generated JS; never commit by accident.
+site/
