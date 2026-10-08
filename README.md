@@ -1,4 +1,4 @@
-# Universal Fitment v1.26.12 – Samsung-Zubehörlisten und geprüfte Hoover-Codes
+# Universal Fitment v1.27.0 – Samsung-Zubehörlisten und geprüfte Hoover-Codes
 
 [Roadmap · Deutsch](ROADMAP.md) · [Roadmap · English](ROADMAP.en.md) · [Patchnotes](CHANGELOG.md) · [Ideen & Kommentare](https://github.com/Straikerabi/-universal-fitment/issues)
 
@@ -6,16 +6,16 @@ Universal Fitment beginnt mit Staubsaugern für Deutschland. Unser langfristiges
 
 Der neue Kontaktbereich unter **Mehr → Kontakt & Roadmap** bereitet überprüfbare GitHub-Beiträge vor. Ein eigenes Supportpostfach und privater Versand sind noch offen; es werden keine E-Mails automatisch verschickt. Zentrale App-Nutzungszahlen sind bisher nicht erfasst.
 
-Der Staubsaugerkatalog enthält **871 Modellbezeichnungen in 882 konkreten Modelleinträgen** und **1.930 unterschiedliche Katalogartikel**. Davon zählen **1.812** als katalogisierte Ersatzteile, Zubehörartikel oder Verbrauchsmaterialien. Dokumente, Komplettgeräte und noch nicht eingeordnete Artikel werden separat geführt. Neun Miele-Familienhinweise zählen nicht als konkrete Geräte.
+Der Staubsaugerkatalog enthält **893 Modellbezeichnungen in 904 konkreten Modelleinträgen** und **1.930 unterschiedliche Katalogartikel**. Davon zählen **1.812** als katalogisierte Ersatzteile, Zubehörartikel oder Verbrauchsmaterialien. Dokumente, Komplettgeräte und noch nicht eingeordnete Artikel werden separat geführt. Neun Miele-Familienhinweise zählen nicht als konkrete Geräte.
 
-Die Ziele sind getrennt: **100 echte Modellreferenzen und mindestens 100 katalogisierte Teile je Marke**. 658 von 1.000 gedeckelten Modellplätzen sind belegt. Acht von zehn Marken erreichen das Teileziel. Zusätzliche Artikel einer Marke füllen die Lücken einer anderen Marke nicht. Verkaufssets und Zubehör erzeugen keine weiteren Grundmodelle.
+Die Ziele sind getrennt: **100 echte Modellreferenzen und mindestens 100 katalogisierte Teile je Marke**. 680 von 1.000 gedeckelten Modellplätzen sind belegt. Acht von zehn Marken erreichen das Teileziel. Zusätzliche Artikel einer Marke füllen die Lücken einer anderen Marke nicht. Verkaufssets und Zubehör erzeugen keine weiteren Grundmodelle.
 
 | Marke | Modellnamen | Modelleinträge | Physische Teile | Weitere Artikel | Modelle ohne Teilezuordnung |
 |---|---:|---:|---:|---:|---:|
 | Miele | 57 | 62 | 167 | 0 | 0 |
 | Bosch | 60 | 60 | 102 | 1 | 2 |
 | Dyson | 54 | 60 | 185 | 6 | 2 |
-| AEG | 78 | 78 | 351 | 3 | 0 |
+| AEG | 100 | 100 | 351 | 3 | 22 |
 | Rowenta | 272 | 272 | 100 | 0 | 75 |
 | Philips | 140 | 140 | 101 | 3 | 84 |
 | Siemens | 101 | 101 | 605 | 105 | 0 |
@@ -32,6 +32,14 @@ Alle Marken verwenden dieselbe Teileart, Farbe und dasselbe SVG-Symbol: Düsen b
 Artikelart und Teileart sind unabhängig filterbar: Ersatzteil, Zubehör, Verbrauchsmaterial, Dokument, Komplettgerät oder offene Einordnung. Die farbigen Schnellfilter funktionieren im globalen Katalog und in der Marktplatzansicht. Unter jedem Modell stehen die zugeordneten Artikel in einzeln aufklappbaren Kategorien mit derselben Farbe, demselben Symbol und einer Artikelanzahl. Alle Kategorien lassen sich gemeinsam öffnen oder schließen. Name A–Z/Z–A, erfasster Artikelpreis auf-/absteigend und Einbauzeit sortieren innerhalb jeder Kategorie. Vergleichbare erfasste Bruttopreise in EUR für Deutschland bleiben auch als ältere Quellenpreise sortierbar; fehlende, fremdwährungs-, Netto- und Staffelpreise stehen am Ende. Die Sortierung bestätigt weder Aktualität noch Bestellbarkeit. Suche und Filter öffnen die passenden Kategorien; eine Änderung der Sortierung behält geöffnete und geschlossene Kategorien bei. Ein gemeinsamer Rücksetzknopf setzt Suche, Artikelart, Bauteil und Sortierung auf die Ausgangswerte. Das FAQ erklärt die zehn aktiven Marken, die Kategorien, fehlende Teilelisten und die Grenzen erfasster Preise. Fotos bleiben optional; ohne Foto zeigt die Karte das passende Symbol.
 
 Die Startseite und die Zielübersicht zeigen fehlende Modellteile. Der Filter **Ohne erfasste Teile** funktioniert bereits mit dem kleinen Modellindex und nach dem Laden eines Markenpakets mit denselben Zahlen.
+
+
+## AEG-Modellkatalog vollständig erfasst
+
+AEG umfasst jetzt **100 konkrete Modellbezeichnungen**. Die 22 neu aufgenommenen Modelle wurden über Hersteller-Produktseiten bzw. AEG-/Electrolux-Modell- und PNC-Register nachgewiesen. Die Marken-Zielzahl wurde damit ohne Zubehörtricks erreicht. Dabei wurden **keine Ersatzteilbeziehungen behauptet oder Teilezahlen künstlich erhöht**: 22 AEG-Modelle haben noch keine erfasste Original-Ersatzteilliste.
+
+Sechs Produktseiten nennen lediglich die neunstellige AEG-Produktnummer. Die fehlenden zwei Ausführungsstellen einer elfstelligen Ersatzteil-PNC werden nicht erfunden. Für weitere Modelle sind konkrete elfstellige PNCs bereits belegt. Exakte Quellen und Kennungsqualität: [AEG-Quellen v1.27.0](integrations/aeg-model-candidates-v1270.json).
+
 
 ## Neue Herstellerdaten
 
@@ -67,5 +75,5 @@ Der geschützte Marketplace-Server behält seinen bestehenden Vertrag mit 167 Mi
 
 36 App-Testgruppen prüfen unter anderem Kategorien, Artikelarten, Ladezustände, genaue Zielzahlen, Quellenidentitäten, Zubehörtypen, Kennungsgrenzen, Warenkorb, Sicherungen und Offline-Verhalten. Syntaxprüfungen und bytegenau reproduzierbare Haupt- und optionale Pakete gehören zur Veröffentlichung. Die Prüfsummen-geschützte Änderung wird vor GitHub Pages aus dem bisherigen Stand rekonstruiert; bestehende synthetische Serverprüfungen laufen ebenfalls in CI.
 
-Noch offen sind die Modellziele für sieben Marken, mindestens 64 weitere Samsung- und 40 weitere Hoover-Teile sowie vollständige gerätespezifische Teilelisten. 236 Modelleinträge haben noch keine konkrete Teilezuordnung. Einzelne Montageanleitungen, breitere belegte Nachbauten, aktuelle Gerätepreise und reale Geräteprüfungen bleiben Teil des Ausbaus. Kleine eigenständige Handsauger, Roboter und weitere Gerätekategorien werden nicht zum Auffüllen der Modellziele verwendet.
+Noch offen sind die Modellziele für sechs Marken, mindestens 64 weitere Samsung- und 40 weitere Hoover-Teile sowie vollständige gerätespezifische Teilelisten. 258 Modelleinträge haben noch keine konkrete Teilezuordnung. Einzelne Montageanleitungen, breitere belegte Nachbauten, aktuelle Gerätepreise und reale Geräteprüfungen bleiben Teil des Ausbaus. Kleine eigenständige Handsauger, Roboter und weitere Gerätekategorien werden nicht zum Auffüllen der Modellziele verwendet.
 

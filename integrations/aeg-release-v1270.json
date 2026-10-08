@@ -1,0 +1,30 @@
+{
+  "version": "1.27.0",
+  "checked_at": "2026-10-08",
+  "sources": "integrations/aeg-model-candidates-v1270.json",
+  "manufacturer_verified_models_added": 22,
+  "aeg_models": 100,
+  "aeg_models_without_parts": 22,
+  "aeg_catalog_articles": 354,
+  "aeg_physical_articles": 351,
+  "new_spare_parts_claims": 0,
+  "nine_digit_PNC_preserved_without_suffix": 6,
+  "all_distinct_model_names": 893,
+  "all_model_records": 904,
+  "all_catalog_articles": 1930,
+  "all_physical_articles": 1812,
+  "total_model_records_without_parts": 258,
+  "model_goal_slots": 680,
+  "validation": [
+    "full unit tests",
+    "syntax/static bundle",
+    "reproducible bundles",
+    "SHA-verified patch replay",
+    "SHA-verified source checkpoint"
+  ],
+  "external_live_offer_refresh": "not_performed",
+  "limitations": [
+    "Actual 11-digit AEG PNC needed for spare-part technical fitment",
+    "Model page validates the device, not its full original spare parts list"
+  ]
+}

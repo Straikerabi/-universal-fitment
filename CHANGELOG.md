@@ -1,5 +1,13 @@
 # Universal Fitment — Patchnotes / patch notes
 
+## v1.27.0 — 8. Oktober 2026
+
+- **DE:** AEG erreicht 100 echte unterschiedliche Staubsauger-Modellreferenzen (+22), alle direkt aus AEG-/Electrolux-Herstellerseiten belegt. Keine Zubehörteile als zusätzliche Geräte gerechnet.
+- **DE:** PNC-Sicherheit: neunstellige Hersteller-Produktnummern werden nicht als vollständige elfstellige Ersatzteil-PNC behandelt. Die neuen AEG-Modelle bleiben bis zur Teilezuordnung mit 0 Artikeln gekennzeichnet.
+- **DE:** Weiterhin 1.930 Katalogartikel und 1.812 physische Ersatzteile/Zubehörartikel. 893 Modellbezeichnungen, 904 konkrete Modelleinträge und 680 von 1.000 Zielplätzen.
+- **EN:** AEG reaches 100 verified vacuum model references without inferred spare-part compatibility, model aliases or fabricated PNC suffixes. Verified release candidate; Pages CI is checked separately.
+
+
 ## v1.26.12 — 8. Oktober 2026
 
 - **DE:** Zwei vorhandene Bespoke Jet AI /WD-Modelle und das neu erfasste VS80F28EGS/WD erhalten 14 exakt quellenbelegte optionale Zubehörbeziehungen; Samsung: 67 Modelle, 36 verschiedene Artikel, 20 Modelle mit Artikelzuordnungen.
