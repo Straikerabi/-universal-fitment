@@ -18,8 +18,14 @@ python3 integrations/legal-compliance/hardening.py apply --site site
 npm ci --prefix integrations/auth-sdk --ignore-scripts
 node integrations/build-app.mjs
 node integrations/build-app.mjs --check
-npm test --prefix site
-npm run check --prefix site
+
+# A Codespace should serve its private preview as soon as the bundle is ready.
+# The full (potentially long) test suite runs in GitHub Actions, or when
+# explicitly requested with --test. Do not delay browser readiness for tests.
+if [ "${1:-}" = "--test" ]; then
+  npm test --prefix site
+  npm run check --prefix site
+fi
 
 printf '\nPrivate preview READY. Open port 4173 in the Codespaces PORTS tab.\n'
 printf 'Verify Port Visibility = Private (GitHub authentication required).\n'
