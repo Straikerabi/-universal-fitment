@@ -34,6 +34,10 @@ if phase=="prepare":
 elif phase=="update-tests":
  p=site/"tests/catalog-v126.test.mjs"
  text=p.read_text()
+ missingOld="assert.equal(progress.find(r=>r.brand===\'Samsung\').partsMissing,64);"
+ missingNew="assert.equal(progress.find(r=>r.brand===\'Samsung\').partsMissing,54);"
+ assert text.count(missingOld)==1,(str(p),"Samsung parts goal count",text.count(missingOld))
+ text=text.replace(missingOld,missingNew,1)
  oldassert="assert.equal(samsungParts.length,36);"
  assert text.count(oldassert)==1,("Samsung article-count assertion not exactly once",text.count(oldassert))
  p.write_text(text.replace(oldassert,"assert.equal(samsungParts.length,46);",1))
