@@ -18,11 +18,17 @@ WORK_BRANCHES = {
     "work/model-samsung-next": "samsung",
     "work/model-bosch-next": "bosch",
     "work/ui-vacuum-detail-next": "ux",
+    "work/model-miele-wave2": "miele",
+    "work/model-dyson-wave2": "dyson",
+    "work/model-hoover-wave2": "hoover",
 }
 BRAND_ALIASES = {
     "samsung": ("samsung",),
     "bosch": ("bosch", "bsh", "e-number", "enr"),
     "ux": ("ux", "ui-", "-ui", "mobile", "detail", "accordion", "sort", "filter", "responsive", "layout", "vacuum-view"),
+    "miele": ("miele",),
+    "dyson": ("dyson",),
+    "hoover": ("hoover", "candy", "haier"),
 }
 EXACT_RESTRICTED = {
     "README.md", "CHANGELOG.md", "ROADMAP.md", "ROADMAP.en.md",
