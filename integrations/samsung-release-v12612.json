@@ -1,0 +1,30 @@
+{
+  "version": "1.26.12",
+  "source_date": "2026-10-08",
+  "evidence_file": "integrations/samsung-evidence-v12612.json",
+  "new_model_references": 1,
+  "new_distinct_articles": 1,
+  "new_source_optional_relationships": 14,
+  "samsung_models": 67,
+  "samsung_articles": 36,
+  "samsung_models_with_parts": 20,
+  "samsung_models_without_parts": 47,
+  "all_model_names": 871,
+  "all_model_records": 882,
+  "all_catalog_articles": 1930,
+  "all_physical_articles": 1812,
+  "all_models_without_parts": 236,
+  "model_target_slots": 658,
+  "limitations": [
+    "Manufacturer-listed optional articles, not unqualified mechanical compatibility",
+    "No live prices, stock or shipping estimates",
+    "Wipe pads require matching mop attachment and station bags require station"
+  ],
+  "validation": [
+    "App test suite",
+    "Code syntax",
+    "Reproducible browser bundles",
+    "SHA-256 verified patch replay",
+    "SHA-256 verified source checkpoint"
+  ]
+}

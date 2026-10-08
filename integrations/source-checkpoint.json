@@ -1,9 +1,9 @@
 {
-  "version": "1.26.11",
-  "segment_dir": ".demo/source-v1.26.11",
+  "version": "1.26.12",
+  "segment_dir": ".demo/source-v1.26.12",
   "segments": 82,
-  "archive_sha256": "551eb0ae262d7c043710dda2eb0b967a506065861ff81516c027f58f1ff4dbe6",
-  "archive_bytes": 610465,
+  "archive_sha256": "7895061d21bc4c287cbba4b88d73825677481270cc3e9f9cac61c1f3c7064ff2",
+  "archive_bytes": 611555,
   "file_count": 127,
   "compiled_assets_included": false
 }
