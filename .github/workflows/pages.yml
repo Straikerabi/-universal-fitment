@@ -1,4 +1,4 @@
-name: "Deploy v1.26.5 public bilingual roadmap and reviewable contact drafts to GitHub Pages"
+name: "Deploy v1.26.6 Samsung-Zubehoer und Modellzuordnungen to GitHub Pages"
 
 on:
   push:
@@ -253,6 +253,13 @@ jobs:
           cat .demo/v1.26.5-patch/part-* | base64 -d | gzip -d > update-v1.26.5.patch
           echo "0f7c4ae2b8e4a6cbd44f45acb054b9ac9078d6f3463158a225a6d385947e1c12  update-v1.26.5.patch" | sha256sum -c -
           patch -p1 -d site < update-v1.26.5.patch
+
+      - name: "Apply v1.26.6 Samsung-Zubehoer und Modellzuordnungen"
+        shell: bash
+        run: |
+          cat .demo/v1.26.6-patch/part-* | base64 -d | gzip -d > update-v1.26.6.patch
+          echo "02855e8b1fcb1693328448e76ae1669c19206738e5bd47700cec04d62ee94802  update-v1.26.6.patch" | sha256sum -c -
+          patch -p1 -d site < update-v1.26.6.patch
 
       - name: Verify reproducible app bundle
         run: |

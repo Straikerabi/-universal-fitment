@@ -1,10 +1,10 @@
-# Katalogstand v1.26.5
+# Katalogstand v1.26.6
 
 ## Ergebnis
 
-Zehn aktive Marken, 868 verschiedene Modellnamen in 879 konkreten Datensätzen, 1.903 unterschiedliche Artikel. Die neuen Kategorien trennen 1.785 physische Teile/Zubehör-/Verbrauchsartikel von Dokumenten, kompletten Geräten und offenen Einordnungen. 655 von 1.000 gedeckelten Modellplätzen sind belegt; acht Marken erreichen das Ziel von mindestens 100 Teilen.
+Zehn aktive Marken, 868 verschiedene Modellnamen in 879 konkreten Datensätzen, 1.916 unterschiedliche Artikel. Die neuen Kategorien trennen 1.798 physische Teile/Zubehör-/Verbrauchsartikel von Dokumenten, kompletten Geräten und offenen Einordnungen. 655 von 1.000 gedeckelten Modellplätzen sind belegt; acht Marken erreichen das Ziel von mindestens 100 Teilen.
 
-290 neue Herstellerartikel und 88 neue Samsung-/Hoover-Modellreferenzen wurden erfasst. 51 vorher leere Modelllisten erhielten mindestens eine belegte Teilezuordnung. Die Gegenüberstellung der kleinen und der geladenen Kataloge wird automatisch geprüft.
+303 neue Herstellerartikel und 88 neue Samsung-/Hoover-Modellreferenzen wurden erfasst. 54 vorher leere Modelllisten erhielten mindestens eine belegte Teilezuordnung. Die Gegenüberstellung der kleinen und der geladenen Kataloge wird automatisch geprüft.
 
 | Marke | Modelle / 100 | Modelle offen | Teile / 100 | Teile offen | Modelleinträge ohne Teile |
 |---|---:|---:|---:|---:|---:|
@@ -15,7 +15,7 @@ Zehn aktive Marken, 868 verschiedene Modellnamen in 879 konkreten Datensätzen, 
 | Rowenta | 272 | 0 | 100 | 0 | 75 |
 | Philips | 140 | 0 | 101 | 0 | 84 |
 | Siemens | 101 | 0 | 605 | 0 | 0 |
-| Samsung | 64 | 36 | 14 | 86 | 64 |
+| Samsung | 64 | 36 | 27 | 73 | 61 |
 | Hoover | 24 | 76 | 55 | 45 | 24 |
 | Vorwerk | 18 | 82 | 105 | 0 | 4 |
 
@@ -27,7 +27,7 @@ Herstellerartikel werden nach tatsächlicher Artikelkennung erfasst; bei Vorwerk
 
 Rowenta-Zuordnungen übernehmen die sichtbaren Ref.-Zeilen des Artikelkatalogs, inklusive ausdrücklich genannter Produktionsbedingungen. Unsichtbare Zeilen und zusätzliche /xxx-Ausführungen werden nicht ergänzt. Philips-Zuordnungen benötigen ausdrücklich genannte vollständige /xx/R-Codes; Nummernbereiche und Wildcards werden nicht ausgefüllt. Nicht vorhandene Modelle werden nicht aus einem Zubehörnamen erzeugt. Bei Vorwerk wird die eigene Vorsatzkennung zusätzlich angezeigt. Teile eines EB400 werden nicht jedem VK-/VT-/VB-Grundgerät zugeordnet.
 
-Samsung-Modellreferenzen stammen aus deutschen Serviceeinträgen und der deutschen Gerätecode-Tabelle des Herstellers. Ein archivierter Serviceeintrag belegt kein aktuelles deutsches Verkaufsangebot. Die frühere Rückgabeaktion in der Gerätecode-Tabelle ist abgelaufen. Hoover-Modell und achtstelliger Produktcode stammen von deutschen Produktseiten. Hoover-Zubehör ist aus dem britischen Herstellerkatalog übernommen und als Quelle GB gekennzeichnet. Keine deutsche Passung, Spannung, Verfügbarkeit oder Preisangabe wird aus einem britischen Artikel abgeleitet.
+Samsung-Modellreferenzen stammen aus deutschen Serviceeinträgen und der deutschen Gerätecode-Tabelle des Herstellers. Drei deutsche Produktseiten nennen für vollständige /WD-Gerätecodes ausdrücklich optionale Zubehörkennungen; nur diese Beziehungen wurden übernommen. Verbrauchsmaterial bleibt zusätzlich an Wischaufsatz oder Clean Station gebunden. Ein archivierter Serviceeintrag belegt kein aktuelles deutsches Verkaufsangebot. Hoover-Modell und achtstelliger Produktcode stammen von deutschen Produktseiten. Hoover-Zubehör ist aus dem britischen Herstellerkatalog übernommen und als Quelle GB gekennzeichnet. Keine deutsche Passung, Spannung, Verfügbarkeit oder Preisangabe wird aus einem britischen Artikel abgeleitet.
 
 Die neuen Artikel erhalten keine ungeprüften Live-Preise oder Bestände. Ihre Montagezeit bleibt bei offener Zuordnung unbekannt. Der bestehende geschützte Serververtrag für 167 Miele-Teile bleibt unverändert.
 
@@ -44,6 +44,9 @@ Abrufprüfung am 07.10.2026. Die Quellen können archivierte Inhalte und ältere
 - [Vorwerk EB400 Revisionsklappe](https://www.vorwerk.com/de/de/s/shop/kobold-eb400-revisionsklappe-de)
 - [Samsung VS15A6031R1 Hersteller-Service](https://www.samsung.com/de/support/model/VS15A6031R1/EF/)
 - [Samsung deutsche Modellcode-Tabelle](https://images.samsung.com/is/content/samsung/assets/de/offer/jetgarantie-how-to/Samsung_Teilnahmebedingungen_HA_Jet_100_Tage_Promo_2024-2025.pdf)
+- [Samsung Jet 75E VS20B75BDR5/WD](https://www.samsung.com/de/vacuum-cleaners/stick/vs9000rl-stick-more-advance-cleaning-performance-digital-inverter-motor-jet-cyclone-silver-vs20b75bdr5-wd/)
+- [Samsung Jet 95 VS20C95D2TK/WD](https://www.samsung.com/de/vacuum-cleaners/stick/vs9500al-stick-more-advance-cleaning-performance-hexajet-motor-jet-cyclone-black-vs20c95d2tk-wd/)
+- [Samsung Bespoke Jet Plus VS20B95C43W/WD](https://www.samsung.com/de/vacuum-cleaners/stick/bespoke-jet-plus-210w-all-in-one-clean-station-mis-white-vs20b95c43w-wd/)
 - [Hoover HF910H 011 – Produktcode 39401000](https://www.hoover-home.com/de_DE/akkusauger/39401000/hf910h-011/)
 - [Hoover Hersteller-Zubehör GB](https://www.hoover-home.com/en_GB/collections/accessories-consumables)
 - [Hoover Filter U112 – Produktcode 35602893](https://www.hoover-home.com/en_GB/products/35602893-u112-filterkit-hf2)

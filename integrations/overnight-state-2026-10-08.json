@@ -56,8 +56,8 @@
     {
       "brand": "Samsung",
       "models": 64,
-      "physical_parts": 14,
-      "models_without_parts": 64
+      "physical_parts": 27,
+      "models_without_parts": 61
     },
     {
       "brand": "Hoover",
@@ -83,7 +83,7 @@
       "id": "samsung_parts",
       "task": "Samsung-Ersatzteile und Zubehör aus Herstellerquellen ergänzen",
       "budget_minutes": 45,
-      "status": "pending"
+      "status": "partial"
     },
     {
       "id": "hoover_parts",
@@ -95,7 +95,7 @@
       "id": "samsung_fitment",
       "task": "Samsung-Artikel zu vollständig genannten Modellcodes zuordnen",
       "budget_minutes": 25,
-      "status": "pending"
+      "status": "partial"
     },
     {
       "id": "hoover_fitment",
@@ -230,13 +230,7 @@
       "status": "done"
     }
   ],
-  "active_run": {
-    "worker": "night-0200-samsung",
-    "stage": "samsung_parts",
-    "started_at": "2026-10-08T01:56:00+02:00",
-    "base_commit": "9973d87563c0b90bcb5ce550cc863289b94b5cb9",
-    "note": "Samsung-Herstellerzubehör für drei bereits belegte vollständige /WD-Modellcodes prüfen und katalogisieren."
-  },
+  "active_run": null,
   "automations": {
     "worker": {
       "id": "6ac6d322e8448191b621ec4839d783c6",
@@ -261,7 +255,9 @@
     "v1.26.5 ist veröffentlicht: deutsche/englische Roadmap, Patchnotes und Kontaktbereich mit überprüfbarem GitHub-Entwurf. Alle 36 Testgruppen, Syntax, reproduzierbarer Build und GitHub-CI/Deployment bestanden.",
     "Kontakt live geprüft: leere Nachricht blockiert; Eingabe erscheint als reiner Text; Weiterleitungslink korrekt kodiert; Änderungen verwerfen alte Vorschau. Es wurde kein GitHub-Beitrag und keine E-Mail versendet.",
     "81 Source-Segmente von GitHub mit dem lokalen Inhalt verglichen; Wiederherstellung der 124 Quelldateien SHA-geprüft.",
-    "Morgenbericht und sechs begrenzte Nachtfortsetzungen vom Automationswerkzeug als aktiv bestätigt. Tagesüberblick unverändert deaktiviert."
+    "Morgenbericht und sechs begrenzte Nachtfortsetzungen vom Automationswerkzeug als aktiv bestätigt. Tagesüberblick unverändert deaktiviert.",
+    "v1.26.6 vorbereitet: 13 neue Samsung-Artikel; 19 eindeutige Artikel für VS20B75BDR5/WD, VS20C95D2TK/WD und VS20B95C43W/WD zugeordnet. Keine Preise übernommen; Wisch- und Clean-Station-Verbrauchsmaterial behält die zusätzliche Zubehörbedingung.",
+    "Lokale Prüfung v1.26.6: 36 App-Testgruppen, Syntax und reproduzierbarer Build bestanden. Veröffentlichung und Live-Prüfung folgen im selben Lauf."
   ],
   "blocked": [],
   "first_release": {
@@ -297,5 +293,20 @@
     },
     "contact_url": "https://straikerabi.github.io/-universal-fitment/?v=1.26.5#contact"
   },
-  "last_verified_at_utc": "2026-10-07T23:29:45.383640+00:00"
+  "current_totals": {
+    "version": "1.26.6",
+    "articles": 1916,
+    "physical_parts": 1798,
+    "models_without_parts": 252
+  },
+  "last_run": {
+    "worker": "night-0200-samsung",
+    "stage": "samsung_parts",
+    "started_at": "2026-10-08T01:56:00+02:00",
+    "ended_at": "2026-10-08T02:05:14+02:00",
+    "base_commit": "9973d87563c0b90bcb5ce550cc863289b94b5cb9",
+    "lease_commit": "2278a2b7514603c90a946e34ee99518db137291d",
+    "result": "13 zusätzliche Samsung-Artikel, 19 eindeutige Artikelzuordnungen an drei vollständigen /WD-Modellcodes; lokal geprüft, Veröffentlichung ausstehend."
+  },
+  "last_verified_at_utc": "2026-10-08T00:05:14+00:00"
 }

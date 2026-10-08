@@ -1,4 +1,4 @@
-# Universal Fitment v1.26.5 – öffentliche Roadmap und Kontakt & Feedback
+# Universal Fitment v1.26.6 – belegtes Samsung-Zubehör
 
 [Roadmap · Deutsch](ROADMAP.md) · [Roadmap · English](ROADMAP.en.md) · [Patchnotes](CHANGELOG.md) · [Ideen & Kommentare](https://github.com/Straikerabi/-universal-fitment/issues)
 
@@ -6,7 +6,7 @@ Universal Fitment beginnt mit Staubsaugern für Deutschland. Unser langfristiges
 
 Der neue Kontaktbereich unter **Mehr → Kontakt & Roadmap** bereitet überprüfbare GitHub-Beiträge vor. Ein eigenes Supportpostfach und privater Versand sind noch offen; es werden keine E-Mails automatisch verschickt. Zentrale App-Nutzungszahlen sind bisher nicht erfasst.
 
-Der Staubsaugerkatalog enthält **868 Modellbezeichnungen in 879 konkreten Modelleinträgen** und **1.903 unterschiedliche Katalogartikel**. Davon zählen **1.785** als katalogisierte Ersatzteile, Zubehörartikel oder Verbrauchsmaterialien. Dokumente, Komplettgeräte und noch nicht eingeordnete Artikel werden separat geführt. Neun Miele-Familienhinweise zählen nicht als konkrete Geräte.
+Der Staubsaugerkatalog enthält **868 Modellbezeichnungen in 879 konkreten Modelleinträgen** und **1.916 unterschiedliche Katalogartikel**. Davon zählen **1.798** als katalogisierte Ersatzteile, Zubehörartikel oder Verbrauchsmaterialien. Dokumente, Komplettgeräte und noch nicht eingeordnete Artikel werden separat geführt. Neun Miele-Familienhinweise zählen nicht als konkrete Geräte.
 
 Die Ziele sind getrennt: **100 echte Modellreferenzen und mindestens 100 katalogisierte Teile je Marke**. 655 von 1.000 gedeckelten Modellplätzen sind belegt. Acht von zehn Marken erreichen das Teileziel. Zusätzliche Artikel einer Marke füllen die Lücken einer anderen Marke nicht. Verkaufssets und Zubehör erzeugen keine weiteren Grundmodelle.
 
@@ -19,7 +19,7 @@ Die Ziele sind getrennt: **100 echte Modellreferenzen und mindestens 100 katalog
 | Rowenta | 272 | 272 | 100 | 0 | 75 |
 | Philips | 140 | 140 | 101 | 3 | 84 |
 | Siemens | 101 | 101 | 605 | 105 | 0 |
-| Samsung | 64 | 64 | 14 | 0 | 64 |
+| Samsung | 64 | 64 | 27 | 0 | 61 |
 | Hoover | 24 | 24 | 55 | 0 | 24 |
 | Vorwerk | 18 | 18 | 105 | 0 | 4 |
 
@@ -35,11 +35,11 @@ Die Startseite und die Zielübersicht zeigen fehlende Modellteile. Der Filter **
 
 ## Neue Herstellerdaten
 
-290 zusätzliche benannte Herstellerartikel ergänzen den bisherigen Bestand: Bosch +56, Rowenta +44, Philips +40, Vorwerk +81, Samsung +14 und Hoover +55. 51 zuvor leere Modelleinträge haben mindestens eine ausdrücklich belegte Teilezuordnung erhalten. Quellen und Ausführungsbedingungen bleiben am Artikel sichtbar. Ein 3D-Ersatzdeckel für einen Dampferzeuger wurde bei der Recherche ausgeschlossen.
+303 zusätzliche benannte Herstellerartikel ergänzen den bisherigen Bestand: Bosch +56, Rowenta +44, Philips +40, Vorwerk +81, Samsung +27 und Hoover +55. 54 zuvor leere Modelleinträge haben mindestens eine ausdrücklich belegte Teilezuordnung erhalten. Quellen und Ausführungsbedingungen bleiben am Artikel sichtbar. Ein 3D-Ersatzdeckel für einen Dampferzeuger wurde bei der Recherche ausgeschlossen.
 
-Samsung startet mit 64 Hersteller-Modellreferenzen, darunter archivierte deutsche Serviceeinträge und vollständige Codes aus einer deutschen Hersteller-Gerätetabelle. Die damalige Verkaufsaktion wird nicht angeboten. Zubehör für eine Clean Station wird nicht automatisch dem Staubsauger zugeordnet.
+Samsung enthält 64 Hersteller-Modellreferenzen. Für VS20B75BDR5/WD, VS20C95D2TK/WD und VS20B95C43W/WD sind die auf den deutschen Produktseiten ausdrücklich genannten optionalen Zubehörkennungen zugeordnet: 8, 10 und 11 Artikel. Überschneidungen ergeben 19 unterschiedliche zugeordnete Artikel; Clean-Station-Beutel und Wischverbrauchsmaterial behalten ihre zusätzliche Zubehörbedingung.
 
-Hoover startet mit 24 deutschen Hersteller-Modellen und deren achtstelligen Produktcodes. Die 55 Zubehörartikel stammen aus dem britischen Herstellerverzeichnis; dieser Quellenmarkt ist sichtbar. Deutsche Gerätezuordnungen, Preise und Lagerbestände werden daraus nicht abgeleitet. Samsung- und Hoover-Teile sind vorerst nicht automatisch einem Grundmodell zugeordnet.
+Hoover startet mit 24 deutschen Hersteller-Modellen und deren achtstelligen Produktcodes. Die 55 Zubehörartikel stammen aus dem britischen Herstellerverzeichnis; dieser Quellenmarkt ist sichtbar. Deutsche Gerätezuordnungen, Preise und Lagerbestände werden daraus nicht abgeleitet. Hoover-Teile sind vorerst nicht automatisch einem Grundmodell zugeordnet.
 
 Vorwerk enthält weiterhin 18 echte VK-/VT-/VB-Grundmodelle. Die 105 Artikel umfassen auch Teile für Elektrobürsten, Saugwischer und weitere Vorsätze. Deren eigene Kennung, etwa EB400, wird angezeigt. Abweichende Überschriften desselben Herstellerartikels erzeugen keine doppelten Einträge. Die Herstellerbezeichnungen werden nicht als erfundene numerische Artikelnummern dargestellt.
 
@@ -57,4 +57,4 @@ Der geschützte Marketplace-Server behält seinen bestehenden Vertrag mit 167 Mi
 
 36 App-Testgruppen prüfen unter anderem Kategorien, Artikelarten, Ladezustände, genaue Zielzahlen, Quellenidentitäten, Zubehörtypen, Kennungsgrenzen, Warenkorb, Sicherungen und Offline-Verhalten. Syntaxprüfungen und bytegenau reproduzierbare Haupt- und optionale Pakete gehören zur Veröffentlichung. Die Prüfsummen-geschützte Änderung wird vor GitHub Pages aus dem bisherigen Stand rekonstruiert; bestehende synthetische Serverprüfungen laufen ebenfalls in CI.
 
-Noch offen sind die Modellziele für sieben Marken, mindestens 86 weitere Samsung- und 45 weitere Hoover-Teile sowie vollständige gerätespezifische Teilelisten. 255 Modelleinträge haben noch keine konkrete Teilezuordnung. Einzelne Montageanleitungen, breitere belegte Nachbauten, aktuelle Gerätepreise und reale Geräteprüfungen bleiben Teil des Ausbaus. Kleine eigenständige Handsauger, Roboter und weitere Gerätekategorien werden nicht zum Auffüllen der Modellziele verwendet.
+Noch offen sind die Modellziele für sieben Marken, mindestens 73 weitere Samsung- und 45 weitere Hoover-Teile sowie vollständige gerätespezifische Teilelisten. 252 Modelleinträge haben noch keine konkrete Teilezuordnung. Einzelne Montageanleitungen, breitere belegte Nachbauten, aktuelle Gerätepreise und reale Geräteprüfungen bleiben Teil des Ausbaus. Kleine eigenständige Handsauger, Roboter und weitere Gerätekategorien werden nicht zum Auffüllen der Modellziele verwendet.

@@ -7,9 +7,9 @@ Abi hat den eigenständigen Ausbau des bestehenden Staubsaugerprojekts bis zum k
 | Nr. | Aufgabe | Budget | Startstatus |
 |---|---|---:|---|
 | 1 | Bestand, Dubletten und offene Modell-Teilelisten prüfen | 15 Min. | Erledigt / erster Release |
-| 2 | Samsung-Ersatzteile und Zubehör aus Herstellerquellen ergänzen | 45 Min. | Geplant |
+| 2 | Samsung-Ersatzteile und Zubehör aus Herstellerquellen ergänzen | 45 Min. | Teilstand v1.26.6 |
 | 3 | Hoover-Ersatzteile und Zubehör aus Herstellerquellen ergänzen | 40 Min. | Geplant |
-| 4 | Samsung-Artikel zu vollständig genannten Modellcodes zuordnen | 25 Min. | Geplant |
+| 4 | Samsung-Artikel zu vollständig genannten Modellcodes zuordnen | 25 Min. | 3 Modelle / v1.26.6 |
 | 5 | Hoover-Artikel zu deutschen Modellen und Produktcodes prüfen | 25 Min. | Geplant |
 | 6 | Weitere echte Miele-Modellreferenzen recherchieren und erfassen | 20 Min. | Geplant |
 | 7 | Weitere echte Bosch-Modellreferenzen recherchieren und erfassen | 20 Min. | Geplant |
@@ -85,4 +85,4 @@ Keine Auth-, Supabase-, Rollen-, Sicherheits- oder Zahlungsänderungen in diesem
 
 ## Erster geprüfter Nachtstand
 
-v1.26.4 und v1.26.5 wurden mit jeweils erfolgreichem Build und Deployment veröffentlicht. v1.26.5: 36 Testgruppen, Syntax, reproduzierbarer Build, sichtbarer GitHub-Entwurf, Pflichtfeld und Verwerfen alter Vorschauen geprüft. Die deutsche und englische Roadmap sind öffentlich gerendert. 81 aktuelle Source-Segmente wurden von GitHub zurückgelesen und verglichen; 124 Quelldateien lassen sich SHA-geprüft wiederherstellen. Die Katalogzahlen sind dabei unverändert. Nächste Datenpriorität: Samsung-Leads konkret bearbeiten, danach Hoover und weitere Teilelücken.
+v1.26.4 und v1.26.5 wurden mit jeweils erfolgreichem Build und Deployment veröffentlicht. v1.26.5: 36 Testgruppen, Syntax, reproduzierbarer Build, sichtbarer GitHub-Entwurf, Pflichtfeld und Verwerfen alter Vorschauen geprüft. Die deutsche und englische Roadmap sind öffentlich gerendert. 81 aktuelle Source-Segmente wurden von GitHub zurückgelesen und verglichen; 124 Quelldateien lassen sich SHA-geprüft wiederherstellen. In v1.26.6 wurden 13 zusätzliche Samsung-Artikel und 19 eindeutige Artikelzuordnungen für drei vollständige /WD-Gerätecodes vorbereitet und lokal vollständig geprüft. Nächste Datenpriorität nach der Veröffentlichung: Hoover und weitere Teilelücken.

@@ -2,6 +2,25 @@
 
 Release notes describe published changes. Plans live in the [German](ROADMAP.md) and [English](ROADMAP.en.md) roadmaps.
 
+## v1.26.6 — 8. Oktober 2026
+
+### Neu / new
+
+- **DE:** 13 weitere Samsung-Artikel aus deutschen Herstellerseiten; insgesamt 27 katalogisierte Samsung-Teile.
+- **EN:** 13 additional Samsung items from German manufacturer pages; 27 catalogued Samsung parts in total.
+- **DE:** 19 eindeutige Zubehörartikel sind drei vollständigen `/WD`-Modellcodes zugeordnet; die Modellseiten zeigen 8, 10 beziehungsweise 11 Artikel.
+- **EN:** 19 distinct accessories are assigned to three complete `/WD` model codes; their model pages show 8, 10 and 11 items respectively.
+
+### Verbessert / improved
+
+- **DE:** Akkus, Düsen, Filter, Beutel, Pflegemittel und Sets sind einheitlich eingeordnet. Wischmaterial und Clean-Station-Beutel behalten eine zusätzliche Zubehörbedingung; es wurden keine Preise erfunden.
+- **EN:** Batteries, nozzles, filters, bags, care items and kits use the shared taxonomy. Mop consumables and Clean Station bags retain an attachment requirement; no prices were invented.
+
+### Geprüft / checked
+
+- **DE:** 36 App-Testgruppen, Syntaxprüfung und bytegenau reproduzierbare Browserpakete bestanden.
+- **EN:** 36 app test groups, syntax checks and byte-for-byte reproducible browser bundles passed.
+
 ## v1.26.5 — 8. Oktober 2026
 
 ### Neu / new
