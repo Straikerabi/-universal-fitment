@@ -1,5 +1,13 @@
 # Universal Fitment — Patchnotes / patch notes
 
+## v1.28.1 — 8. Oktober 2026
+
+- **DE:** Zehn getrennte Samsung-Originalzubehörartikel direkt mit EAN/Typ über Samsung DE bestätigt: vier Ersatz-Akkus (Ladegerät und Kapazitätsvarianten separat) sowie sechs Bürsten-/Wischaufsatz-SKUs.
+- **DE:** Samsung: 36 → **46 physische** Zubehörartikel; gesamt **1.940 Katalogartikel, 1.822 physische Artikel**. Weiterhin 943 einzigartige Gerätemodelle, 954 Records, 730/1.000 Modellplätze.
+- **DE:** Familienkompatibilität ist keine gerätespezifische Passung. Daher **0 neue Geräte-/Teilebeziehungen** und keine unbelegten Preise, Lagerbestände oder Versandangaben.
+- **EN:** Adds 10 original Samsung accessory SKUs with German manufacturer evidence and explicitly no unverified exact-device compatibility. No fabricated commerce data.
+
+
 ## v1.28.0 — 8. Oktober 2026
 
 - **DE:** Samsung +8 Hersteller-belegte, eindeutig abgegrenzte Grundmodelle (69 → 77). Zwei ausdrücklich baugleiche Ultra-Farbvarianten zählen zusammen als ein Gerät, kein künstlicher Modellplatz.
