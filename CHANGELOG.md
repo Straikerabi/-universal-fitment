@@ -2,6 +2,18 @@
 
 Release notes describe published changes. Plans live in the [German](ROADMAP.md) and [English](ROADMAP.en.md) roadmaps.
 
+## v1.26.8 — 8. Oktober 2026
+
+### Behoben / fixed
+
+- **DE:** Hoover-Geräteseiten nennen die achtstellige Kennung jetzt korrekt „Hoover-Produktcode“ statt „Dyson-Produktnummer“. Dyson-Geräte behalten ihre eigene Bezeichnung.
+- **EN:** Hoover device pages now label the eight-digit identifier correctly as “Hoover product code” instead of “Dyson product number”. Dyson devices retain their own label.
+
+### Geprüft / checked
+
+- **DE:** Die neue Hoover-Zuordnungsdatei ist Teil der normalen Syntaxprüfung. 36 App-Testgruppen und die reproduzierbaren Browserpakete wurden lokal bestanden; Veröffentlichung und Live-Prüfung folgen separat.
+- **EN:** The new Hoover fitment file is now included in the standard syntax check. All 36 app test groups and reproducible browser bundles passed locally; publication and live verification follow separately.
+
 ## v1.26.7 — 8. Oktober 2026
 
 ### Neu / new

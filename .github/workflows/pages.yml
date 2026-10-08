@@ -1,4 +1,4 @@
-name: "Deploy v1.26.7 Verified Hoover HF2 product-code parts and fitment to GitHub Pages"
+name: "Deploy v1.26.8 Fix Hoover product-code label and include Hoover fitment in syntax checks to GitHub Pages"
 
 on:
   push:
@@ -267,6 +267,13 @@ jobs:
           cat .demo/v1.26.7-patch/part-* | base64 -d | gzip -d > update-v1.26.7.patch
           echo "e926f5e85ae5b65fa36c8418a0994e3c01bd04e46f891342d55f2daaa982deeb  update-v1.26.7.patch" | sha256sum -c -
           patch -p1 -d site < update-v1.26.7.patch
+
+      - name: "Apply v1.26.8 Fix Hoover product-code label and include Hoover fitment in syntax checks"
+        shell: bash
+        run: |
+          cat .demo/v1.26.8-patch/part-* | base64 -d | gzip -d > update-v1.26.8.patch
+          echo "85bc4a959997a4ca0e6c8ae119ab78ca42ce0306c6f347c3945062a9ef21dcc9  update-v1.26.8.patch" | sha256sum -c -
+          patch -p1 -d site < update-v1.26.8.patch
 
       - name: Verify reproducible app bundle
         run: |

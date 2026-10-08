@@ -232,10 +232,10 @@
   ],
   "active_run": {
     "worker": "night-0700-final-validation",
-    "stage": "tests",
+    "stage": "publish",
     "started_at": "2026-10-08T06:59:53+02:00",
     "base_commit": "d2bf674be8a2ce992e39eedc4e53173fefec64f6",
-    "note": "Letzter Nachtblock: v1.26.7 aus aktueller Quellsicherung wiederherstellen, unabhängig prüfen, klare Fehler beheben und Morgenbericht vorbereiten."
+    "note": "v1.26.7 aus aktueller Quellsicherung wiederhergestellt und geprüft; falsche Hoover-Kennung behoben. v1.26.8 wird paketiert und veröffentlicht."
   },
   "automations": {
     "worker": {
@@ -304,7 +304,7 @@
     "contact_url": "https://straikerabi.github.io/-universal-fitment/?v=1.26.5#contact"
   },
   "current_totals": {
-    "version": "1.26.7",
+    "version": "1.26.8",
     "articles": 1921,
     "physical_parts": 1803,
     "models_without_parts": 250

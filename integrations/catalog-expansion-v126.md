@@ -1,4 +1,4 @@
-# Katalogstand v1.26.7
+# Katalogstand v1.26.8
 
 ## Ergebnis
 
@@ -58,7 +58,7 @@ Weitere Originalquellen sind direkt am jeweiligen Modell und Artikel hinterlegt.
 
 ## Prüfung
 
-36 App-Testgruppen und Syntaxprüfung, reproduzierbare Browserpakete und bytegenaue Wiederherstellung des Veröffentlichungspatches. Neue Prüfungen umfassen gemeinsame Farben, Ersatzteil-/Zubehör-/Verbrauchsfilter, spezifische Bauteilnamen, das getrennte Teileziel, stabile Zahlen beim Nachladen, unverwechselbare Artikel, Vorsatztypen, unbekannte Preise und Samsung-/Hoover-Kennungsgrenzen. Physische Gerätepassung, echte Kameraerkennung und Produktionsmarktplätze werden dadurch nicht bestätigt.
+36 App-Testgruppen und Syntaxprüfung einschließlich der separaten Hoover-Zuordnungsdatei, reproduzierbare Browserpakete und bytegenaue Wiederherstellung des Veröffentlichungspatches. Neue Prüfungen umfassen gemeinsame Farben, Ersatzteil-/Zubehör-/Verbrauchsfilter, spezifische Bauteilnamen, das getrennte Teileziel, stabile Zahlen beim Nachladen, unverwechselbare Artikel, Vorsatztypen, unbekannte Preise, Samsung-/Hoover-Kennungsgrenzen und die markengerechte Beschriftung des Hoover-Produktcodes. Physische Gerätepassung, echte Kameraerkennung und Produktionsmarktplätze werden dadurch nicht bestätigt.
 
 Die Live-Prüfung ergänzte konkrete Fälle für Düsen mit Rohranschluss, Filterdichtungen, Bürstenleisten, Halter und Akkus mit Modellzusätzen. Teilnamen werden vor ihrer Gerätebeschreibung eingeordnet. Neue Prüfungen verhindern, dass solche Kontextbegriffe die Farbe des Artikels ändern.
 
