@@ -279,7 +279,7 @@ jobs:
         shell: bash
         run: |
           cat .demo/v1.26.9-patch/part-* | base64 -d | gzip -d > update-v1.26.9.patch
-          echo "6d5e0a5ff7043d261619ea2b03d531de2421f26e2154113b770c0251ea5e8  update-v1.26.9.patch" | sha256sum -c -
+          echo "6d5e0a5ff7043d261619ea2b03d531de2421f26e2154113b770c0251ea5fa5e8  update-v1.26.9.patch" | sha256sum -c -
           patch -p1 -d site < update-v1.26.9.patch
 
       - name: Build and verify app bundles from checked sources
