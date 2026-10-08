@@ -18,8 +18,8 @@ Release notes describe published changes. Plans live in the [German](ROADMAP.md)
 
 ### Geprüft / checked
 
-- **DE:** 36 App-Testgruppen, Syntaxprüfung und bytegenau reproduzierbare Browserpakete bestanden.
-- **EN:** 36 app test groups, syntax checks and byte-for-byte reproducible browser bundles passed.
+- **DE:** 36 App-Testgruppen, Syntaxprüfung, bytegenau reproduzierbare Browserpakete sowie GitHub-CI und Pages-Deployment bestanden. Samsung-Zahl, Modellkennung, Teilezahl, Gruppen und offene Preise wurden live geprüft.
+- **EN:** 36 app test groups, syntax checks, byte-for-byte reproducible browser bundles, GitHub CI and Pages deployment passed. Samsung count, model identifier, part count, groups and missing-price labels were checked live.
 
 ## v1.26.5 — 8. Oktober 2026
 

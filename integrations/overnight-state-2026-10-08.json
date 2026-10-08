@@ -256,8 +256,8 @@
     "Kontakt live geprüft: leere Nachricht blockiert; Eingabe erscheint als reiner Text; Weiterleitungslink korrekt kodiert; Änderungen verwerfen alte Vorschau. Es wurde kein GitHub-Beitrag und keine E-Mail versendet.",
     "81 Source-Segmente von GitHub mit dem lokalen Inhalt verglichen; Wiederherstellung der 124 Quelldateien SHA-geprüft.",
     "Morgenbericht und sechs begrenzte Nachtfortsetzungen vom Automationswerkzeug als aktiv bestätigt. Tagesüberblick unverändert deaktiviert.",
-    "v1.26.6 vorbereitet: 13 neue Samsung-Artikel; 19 eindeutige Artikel für VS20B75BDR5/WD, VS20C95D2TK/WD und VS20B95C43W/WD zugeordnet. Keine Preise übernommen; Wisch- und Clean-Station-Verbrauchsmaterial behält die zusätzliche Zubehörbedingung.",
-    "Lokale Prüfung v1.26.6: 36 App-Testgruppen, Syntax und reproduzierbarer Build bestanden. Veröffentlichung und Live-Prüfung folgen im selben Lauf."
+    "v1.26.6 veröffentlicht: 13 neue Samsung-Artikel; 19 eindeutige Artikel für VS20B75BDR5/WD, VS20C95D2TK/WD und VS20B95C43W/WD zugeordnet. Keine Preise übernommen; Wisch- und Clean-Station-Verbrauchsmaterial behält die zusätzliche Zubehörbedingung.",
+    "Prüfung v1.26.6: 36 App-Testgruppen, Syntax, reproduzierbarer Build, GitHub-CI und Pages-Deployment bestanden. Live geprüft: Versionsanzeige, 27 Samsung-Teile, 61 offene Samsung-Modelle, VS20B75BDR5/WD mit 8 Artikeln und aufklappbaren Gruppen."
   ],
   "blocked": [],
   "first_release": {
@@ -303,10 +303,32 @@
     "worker": "night-0200-samsung",
     "stage": "samsung_parts",
     "started_at": "2026-10-08T01:56:00+02:00",
-    "ended_at": "2026-10-08T02:05:14+02:00",
+    "ended_at": "2026-10-08T02:11:44+02:00",
     "base_commit": "9973d87563c0b90bcb5ce550cc863289b94b5cb9",
     "lease_commit": "2278a2b7514603c90a946e34ee99518db137291d",
-    "result": "13 zusätzliche Samsung-Artikel, 19 eindeutige Artikelzuordnungen an drei vollständigen /WD-Modellcodes; lokal geprüft, Veröffentlichung ausstehend."
+    "result": "v1.26.6 veröffentlicht: 13 zusätzliche Samsung-Artikel und 19 eindeutige Artikelzuordnungen an drei vollständigen /WD-Modellcodes; lokal, in GitHub-CI und live geprüft."
   },
-  "last_verified_at_utc": "2026-10-08T00:05:14+00:00"
+  "verified_release_v1266": {
+    "version": "1.26.6",
+    "commit": "1fe867f8d4e0ab5fd300286d2af34874a64952d7",
+    "ci_run": 37706250312,
+    "build": "success",
+    "deploy": "success",
+    "local_test_groups": 36,
+    "syntax": "passed",
+    "reproducible_build": "passed",
+    "source_checkpoint_segments": 81,
+    "source_files": 124,
+    "live_ui": {
+      "version": "1.26.6",
+      "samsung_physical_parts": 27,
+      "samsung_models_without_parts": 61,
+      "model": "VS20B75BDR5/WD",
+      "model_parts": 8,
+      "groups_expandable": "passed",
+      "missing_prices_visible": "passed"
+    },
+    "public_url": "https://straikerabi.github.io/-universal-fitment/?v=1.26.6#product/vac-samsung-model-vs20b75bdr5"
+  },
+  "last_verified_at_utc": "2026-10-08T00:11:44+00:00"
 }
