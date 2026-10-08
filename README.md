@@ -1,4 +1,4 @@
-# Universal Fitment v1.27.0 – Samsung-Zubehörlisten und geprüfte Hoover-Codes
+# Universal Fitment v1.27.1 – Samsung-Zubehörlisten und geprüfte Hoover-Codes
 
 [Roadmap · Deutsch](ROADMAP.md) · [Roadmap · English](ROADMAP.en.md) · [Patchnotes](CHANGELOG.md) · [Ideen & Kommentare](https://github.com/Straikerabi/-universal-fitment/issues)
 
@@ -6,9 +6,9 @@ Universal Fitment beginnt mit Staubsaugern für Deutschland. Unser langfristiges
 
 Der neue Kontaktbereich unter **Mehr → Kontakt & Roadmap** bereitet überprüfbare GitHub-Beiträge vor. Ein eigenes Supportpostfach und privater Versand sind noch offen; es werden keine E-Mails automatisch verschickt. Zentrale App-Nutzungszahlen sind bisher nicht erfasst.
 
-Der Staubsaugerkatalog enthält **893 Modellbezeichnungen in 904 konkreten Modelleinträgen** und **1.930 unterschiedliche Katalogartikel**. Davon zählen **1.812** als katalogisierte Ersatzteile, Zubehörartikel oder Verbrauchsmaterialien. Dokumente, Komplettgeräte und noch nicht eingeordnete Artikel werden separat geführt. Neun Miele-Familienhinweise zählen nicht als konkrete Geräte.
+Der Staubsaugerkatalog enthält **895 Modellbezeichnungen in 906 konkreten Modelleinträgen** und **1.930 unterschiedliche Katalogartikel**. Davon zählen **1.812** als katalogisierte Ersatzteile, Zubehörartikel oder Verbrauchsmaterialien. Dokumente, Komplettgeräte und noch nicht eingeordnete Artikel werden separat geführt. Neun Miele-Familienhinweise zählen nicht als konkrete Geräte.
 
-Die Ziele sind getrennt: **100 echte Modellreferenzen und mindestens 100 katalogisierte Teile je Marke**. 680 von 1.000 gedeckelten Modellplätzen sind belegt. Acht von zehn Marken erreichen das Teileziel. Zusätzliche Artikel einer Marke füllen die Lücken einer anderen Marke nicht. Verkaufssets und Zubehör erzeugen keine weiteren Grundmodelle.
+Die Ziele sind getrennt: **100 echte Modellreferenzen und mindestens 100 katalogisierte Teile je Marke**. 682 von 1.000 gedeckelten Modellplätzen sind belegt. Acht von zehn Marken erreichen das Teileziel. Zusätzliche Artikel einer Marke füllen die Lücken einer anderen Marke nicht. Verkaufssets und Zubehör erzeugen keine weiteren Grundmodelle.
 
 | Marke | Modellnamen | Modelleinträge | Physische Teile | Weitere Artikel | Modelle ohne Teilezuordnung |
 |---|---:|---:|---:|---:|---:|
@@ -19,7 +19,7 @@ Die Ziele sind getrennt: **100 echte Modellreferenzen und mindestens 100 katalog
 | Rowenta | 272 | 272 | 100 | 0 | 75 |
 | Philips | 140 | 140 | 101 | 3 | 84 |
 | Siemens | 101 | 101 | 605 | 105 | 0 |
-| Samsung | 67 | 67 | 36 | 0 | 47 |
+| Samsung | 69 | 69 | 36 | 0 | 49 |
 | Hoover | 24 | 24 | 60 | 0 | 22 |
 | Vorwerk | 18 | 18 | 105 | 0 | 4 |
 
@@ -45,7 +45,7 @@ Sechs Produktseiten nennen lediglich die neunstellige AEG-Produktnummer. Die feh
 
 317 zusätzliche benannte Herstellerartikel ergänzen den bisherigen Bestand: Bosch +56, Rowenta +44, Philips +40, Vorwerk +81, Samsung +36 und Hoover +60. 70 zuvor leere Modelleinträge haben mindestens eine ausdrücklich belegte Teilezuordnung erhalten. Quellen und Ausführungsbedingungen bleiben am Artikel sichtbar. Ein 3D-Ersatzdeckel für einen Dampferzeuger wurde bei der Recherche ausgeschlossen.
 
-Samsung enthält 67 Hersteller-Modellreferenzen. 20 genaue deutsche /WD- und /WA-Modelle verfügen jetzt über ausdrücklich gelistetes optionales Zubehör; bei den zuletzt ergänzten sechs Modellen sind das insgesamt 50 Nennungen und sieben zusätzliche unterschiedliche Artikelkennungen. Einschließlich der bisherigen Samsung-Zubehörlisten sind 29 unterschiedliche Artikel wenigstens einem Modell zugeordnet. Clean-Station-Beutel und Wischverbrauchsmaterial behalten zusätzliche Zubehörbedingungen. Eine Liste optionalen Zubehörs ist keine vollständige Ersatzteilliste oder automatische Passungsfreigabe.
+Samsung enthält 69 Hersteller-Modellreferenzen. 20 genaue deutsche /WD- und /WA-Modelle verfügen jetzt über ausdrücklich gelistetes optionales Zubehör; bei den zuletzt ergänzten sechs Modellen sind das insgesamt 50 Nennungen und sieben zusätzliche unterschiedliche Artikelkennungen. Einschließlich der bisherigen Samsung-Zubehörlisten sind 29 unterschiedliche Artikel wenigstens einem Modell zugeordnet. Clean-Station-Beutel und Wischverbrauchsmaterial behalten zusätzliche Zubehörbedingungen. Eine Liste optionalen Zubehörs ist keine vollständige Ersatzteilliste oder automatische Passungsfreigabe.
 
 
 
@@ -56,6 +56,9 @@ In **v1.26.11** wurden vier weitere, bereits vorhandene Samsung-Modelle mit zusa
 
 
 Mit **v1.26.12** wurden zwei existierende Bespoke-Jet-AI-Modelle um vier exakte optional gelistete Zubehörartikel ergänzt. Zudem kommt der konkrete **VS80F28EGS/WD** (Bespoke AI Jet Akku+ Wet & Clean) mit sechs Zubehörnennungen hinzu. Die neu getrennt erfasste **Slim LED+ Hartbodenbürste VCA-SABC97/GL** wurde ausschließlich den beiden ausdrücklich belegten Modellen zugeordnet. Wischpads erfordern ihren Wischaufsatz, Stationsbeutel die passende Clean Station. Quellen: [Samsung-Ausbau v1.26.12](integrations/samsung-evidence-v12612.json).
+
+
+**Modell-zuerst v1.27.1:** Zwei weitere offiziell benannte Geräte wurden ohne spekulative Teilepassung aufgenommen: Samsung Jet 95S **VS70H28HEK/WD** und Bespoke AI Jet CompleteClean **VS80F28EFP/WD**. Beide Geräte sind unter der vollständigen deutschen /WD-Kennung und mit direkten Herstellerseiten gespeichert; einzelne Zubehörnennungen der Herstellerseite werden bis zur separate Artikelprüfung nur als Forschungsliste geführt. [Exakte Herstellerseiten](integrations/samsung-model-first-v1271.json).
 
 Hoover enthält 24 deutsche Hersteller-Modelle und deren achtstellige Produktcodes. 55 Artikelstammsätze stammen aus dem britischen Herstellerverzeichnis; dieser Quellenmarkt bleibt sichtbar. Für HF202P 011 (39401035) und HF201H 011 (39401038) nennt der von Hoover Deutschland verlinkte EU-Ersatzteilservice 10 beziehungsweise 12 konkrete Artikel. Fünf dabei zusätzlich gefundene Teile erhöhen den Hoover-Bestand auf 60. Die im Service sichtbare italienische Preis-/Ländereinstellung wird nicht als deutscher Preis, Bestand oder deutsches Angebot übernommen. Hoover-Geräteseiten beschriften die achtstellige Kennung ausdrücklich als **Hoover-Produktcode**; die Dyson-Bezeichnung bleibt ausschließlich bei Dyson-Geräten.
 
@@ -75,5 +78,5 @@ Der geschützte Marketplace-Server behält seinen bestehenden Vertrag mit 167 Mi
 
 36 App-Testgruppen prüfen unter anderem Kategorien, Artikelarten, Ladezustände, genaue Zielzahlen, Quellenidentitäten, Zubehörtypen, Kennungsgrenzen, Warenkorb, Sicherungen und Offline-Verhalten. Syntaxprüfungen und bytegenau reproduzierbare Haupt- und optionale Pakete gehören zur Veröffentlichung. Die Prüfsummen-geschützte Änderung wird vor GitHub Pages aus dem bisherigen Stand rekonstruiert; bestehende synthetische Serverprüfungen laufen ebenfalls in CI.
 
-Noch offen sind die Modellziele für sechs Marken, mindestens 64 weitere Samsung- und 40 weitere Hoover-Teile sowie vollständige gerätespezifische Teilelisten. 258 Modelleinträge haben noch keine konkrete Teilezuordnung. Einzelne Montageanleitungen, breitere belegte Nachbauten, aktuelle Gerätepreise und reale Geräteprüfungen bleiben Teil des Ausbaus. Kleine eigenständige Handsauger, Roboter und weitere Gerätekategorien werden nicht zum Auffüllen der Modellziele verwendet.
+Noch offen sind die Modellziele für sechs Marken, mindestens 64 weitere Samsung- und 40 weitere Hoover-Teile sowie vollständige gerätespezifische Teilelisten. 260 Modelleinträge haben noch keine konkrete Teilezuordnung. Einzelne Montageanleitungen, breitere belegte Nachbauten, aktuelle Gerätepreise und reale Geräteprüfungen bleiben Teil des Ausbaus. Kleine eigenständige Handsauger, Roboter und weitere Gerätekategorien werden nicht zum Auffüllen der Modellziele verwendet.
 

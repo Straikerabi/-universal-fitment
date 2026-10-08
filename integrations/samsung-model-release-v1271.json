@@ -1,0 +1,33 @@
+{
+  "version": "1.27.1",
+  "source_date": "2026-10-08",
+  "new_model_source": "integrations/samsung-model-first-v1271.json",
+  "exact_new_model_codes": [
+    "VS70H28HEK/WD",
+    "VS80F28EFP/WD"
+  ],
+  "new_model_references": 2,
+  "new_articles": 0,
+  "new_fitment_claims": 0,
+  "samsung_models": 69,
+  "samsung_models_without_parts": 49,
+  "samsung_physical_articles": 36,
+  "all_model_names": 895,
+  "all_model_records": 906,
+  "all_catalog_articles": 1930,
+  "all_physical_articles": 1812,
+  "all_models_without_parts": 260,
+  "all_model_goal_slots": 682,
+  "validation": [
+    "36 app tests",
+    "syntax",
+    "byte-identical compiled bundles",
+    "SHA-verified release patch replay",
+    "SHA-verified source checkpoint"
+  ],
+  "limitations": [
+    "Manufacturer model listing is not a verified part-fitment matrix",
+    "Specific article listing must be checked before a part relationship may be added",
+    "No new price, availability, delivery, warranty or ranking claims"
+  ]
+}
