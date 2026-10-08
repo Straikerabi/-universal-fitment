@@ -48,6 +48,57 @@ class ParallelWorkGuardTests(unittest.TestCase):
         ])
         self.assertEqual(result["status"], "pass")
 
+    def test_second_wave_miele_dyson_hoover_isolation(self):
+        for brand, branch in [
+            ("miele", "work/model-miele-wave2"),
+            ("dyson", "work/model-dyson-wave2"),
+            ("hoover", "work/model-hoover-wave2"),
+        ]:
+            with self.subTest(brand=brand):
+                files = [
+                    row(f"integrations/{brand}-model-research-wave2.json", status="added"),
+                    row(f"integrations/import-{brand}-models-wave2.mjs", status="added"),
+                    row(f"integrations/{brand}-wave2.test.mjs", status="added"),
+                ]
+                result = guard.assess(branch, files)
+                self.assertTrue(result["managed"])
+                self.assertEqual(result["status"], "pass")
+                self.assertEqual(result["files_checked"], 3)
+                self.assertFalse(result["blocked"])
+                self.assertFalse(result["review"])
+
+    def test_second_wave_rejects_release_archives_and_cross_brand_data(self):
+        for own, other in [
+            ("miele", "dyson"),
+            ("dyson", "hoover"),
+            ("hoover", "miele"),
+        ]:
+            with self.subTest(own=own):
+                branch = f"work/model-{own}-wave2"
+                forbidden = guard.assess(branch, [
+                    row(f".demo/source-v1.28.0/part-002"),
+                    row("site/src/data/catalog.js"),
+                    row(".github/workflows/pages.yml"),
+                ])
+                self.assertEqual(forbidden["status"], "blocked")
+                self.assertEqual(len(forbidden["blocked"]), 3)
+                crossover = guard.assess(branch, [
+                    row(f"integrations/{other}-model-research-wave2.json")
+                ])
+                self.assertEqual(crossover["status"], "manual-review")
+                self.assertEqual(len(crossover["review"]), 1)
+
+    def test_old_work_branch_scopes_still_available(self):
+        self.assertEqual(guard.assess("work/model-samsung-next", [
+            row("integrations/samsung-models-next.json")
+        ])["status"], "pass")
+        self.assertEqual(guard.assess("work/model-bosch-next", [
+            row("integrations/bosch-models-next.json")
+        ])["status"], "pass")
+        self.assertEqual(guard.assess("work/ui-vacuum-detail-next", [
+            row("integrations/ui-vacuum-detail-patch.mjs")
+        ])["status"], "pass")
+
     def test_site_worktree_and_release_archives_blocked(self):
         for filename in [
             "site/src/app.js",
