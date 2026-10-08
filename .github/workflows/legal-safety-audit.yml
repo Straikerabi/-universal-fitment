@@ -76,13 +76,9 @@ jobs:
         run: |
           set -euo pipefail
           bash integrations/legal-compliance/private-preview-build.sh
-          python3 -m http.server 4173 --bind 127.0.0.1 --directory site > /tmp/uf-preview-smoke.log 2>&1 &
-          server_pid=$!
-          trap 'kill "$server_pid" 2>/dev/null || true' EXIT
-          for i in 1 2 3 4 5; do
-            curl -fsS http://127.0.0.1:4173/index.html -o /tmp/uf-preview-index.html && break
-            sleep 1
-          done
+          bash integrations/legal-compliance/private-preview-serve.sh
+          curl -fsS http://127.0.0.1:4173/index.html -o /tmp/uf-preview-index.html
+          bash integrations/legal-compliance/private-preview-serve.sh
           grep -q 'projekt-hinweise.html' /tmp/uf-preview-index.html
           grep -q 'Rechtshinweise' <(curl -fsS http://127.0.0.1:4173/projekt-hinweise.html)
           node --check site/src/core/pilot-client.js
