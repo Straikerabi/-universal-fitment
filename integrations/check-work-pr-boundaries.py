@@ -21,6 +21,9 @@ WORK_BRANCHES = {
     "work/model-miele-wave2": "miele",
     "work/model-dyson-wave2": "dyson",
     "work/model-hoover-wave2": "hoover",
+    "work/catalog-model-gap-wave3": "modelgap",
+    "work/parts-fitment-wave3": "partsfitment",
+    "work/catalog-media-wave3": "catalogmedia",
 }
 BRAND_ALIASES = {
     "samsung": ("samsung",),
@@ -29,6 +32,16 @@ BRAND_ALIASES = {
     "miele": ("miele",),
     "dyson": ("dyson",),
     "hoover": ("hoover", "candy", "haier"),
+    "modelgap": ("model-gap-wave3",),
+    "partsfitment": ("parts-fitment-wave3",),
+    "catalogmedia": ("catalog-media-wave3",),
+}
+# Wave 3 has strict ownership: cross-team edits must be removed and handed
+# to release management, rather than silently passing a warning-only audit.
+WAVE3_ALLOWED_PREFIXES = {
+    "modelgap": ("integrations/model-gap-wave3-", "integrations/import-model-gap-wave3-"),
+    "partsfitment": ("integrations/parts-fitment-wave3-", "integrations/import-parts-fitment-wave3-"),
+    "catalogmedia": ("integrations/catalog-media-wave3-",),
 }
 EXACT_RESTRICTED = {
     "README.md", "CHANGELOG.md", "ROADMAP.md", "ROADMAP.en.md",
@@ -121,6 +134,10 @@ def assess(branch: str, files: list[dict]) -> dict:
             actual_files.add(name)
             if _restricted(name):
                 blocked.add(name)
+            elif owner in WAVE3_ALLOWED_PREFIXES and not any(
+                name.startswith(prefix) for prefix in WAVE3_ALLOWED_PREFIXES[owner]
+            ):
+                blocked.add(name)
             elif not _belongs_to_owner(name, owner):
                 review.add(name)
     review.difference_update(blocked)
@@ -172,7 +189,7 @@ def run() -> int:
     head_repo = (head.get("repo") or {}).get("full_name")
     branch = str(head.get("ref") or "")
     target = str(base_data.get("ref") or "")
-    # This guard is designed for the three internal Work streams only.
+    # This guard is designed for the enumerated internal Work streams only.
     # Other PRs are deliberately not rejected by a project-specific policy.
     if branch not in WORK_BRANCHES or head_repo != repo or target != "main":
         line = f"Skipped unmanaged PR branch {branch!r} → {target!r} (source {head_repo!r})."
