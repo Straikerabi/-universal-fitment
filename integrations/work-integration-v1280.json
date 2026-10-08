@@ -1,0 +1,59 @@
+{
+  "version": "1.28.0",
+  "date": "2026-10-08",
+  "sources": [
+    {
+      "issue": 13,
+      "pr": 18,
+      "branch": "work/model-samsung-next",
+      "modelsAdded": 8,
+      "source": "integrations/samsung-model-research-next.json"
+    },
+    {
+      "issue": 14,
+      "pr": 20,
+      "branch": "work/model-bosch-next",
+      "modelsAdded": 40,
+      "source": "integrations/bosch-model-research-next.json"
+    },
+    {
+      "issue": 15,
+      "pr": 19,
+      "branch": "work/ui-vacuum-detail-next",
+      "modelsAdded": 0,
+      "source": "integrations/ui-vacuum-detail-next/manifest.json"
+    }
+  ],
+  "modelsBefore": 895,
+  "modelsAfter": 943,
+  "recordsBefore": 906,
+  "recordsAfter": 954,
+  "targetSlotsBefore": 682,
+  "targetSlotsAfter": 730,
+  "catalogArticles": 1930,
+  "physicalArticles": 1812,
+  "samsungModels": 77,
+  "boschModels": 100,
+  "aegModels": 100,
+  "modelRecordsWithoutParts": 308,
+  "partsFitmentAdded": 0,
+  "modelsAdded": 48,
+  "newUIAppTests": 2,
+  "technicalConstraints": [
+    "No invented device-to-part relationships or current retail offers",
+    "Samsung /WD, /XEG, /EG and exact support identifiers retained",
+    "Bosch /xx E-Nr must be read from source; no extra suffix tokens",
+    "No model code or spare part identity has been recycled",
+    "Unknown prices stay explicitly unknown in mobile UI"
+  ],
+  "validation": [
+    "Standalone Work teams verified source evidence and tests",
+    "Clean baseline restore and sequential Samsung/Bosch importer application",
+    "UI independently checksum-validated then source files merged",
+    "All 38 combined app tests and code checks",
+    "Browser bundle byte reproducibility",
+    "Exact SHA-256 patch replay",
+    "Source checkpoint SHA-256 restore"
+  ],
+  "visualMobileRetest": "Chromium proof from PR #19 on baseline; fully combined live Safari review not completed"
+}
