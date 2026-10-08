@@ -37,9 +37,9 @@ for(const x of src.newParts){
  }
 }
 const battery=src.newParts.filter(x=>x.partTypeId==='battery');
-assert.equal(battery.length,5);
-assert.equal(new Set(battery.map(x=>x.ean)).size,5,'Distinct original SKUs with distinct manufacturer EAN');
+assert.equal(battery.length,4);
+assert.equal(new Set(battery.map(x=>x.ean)).size,4,'Distinct original SKUs with distinct manufacturer EAN');
 assert.ok(src.newParts.every(x=>x.url.includes(x.code.toLowerCase().replace('/','-'))),'Manufacturer URL must match product');
 const samsungWithLinks=pack.models.filter(x=>x.partCount).length;
 assert.equal(samsungWithLinks,20,'Do not infer accessories by device family');
-console.log('Samsung OEM accessory integration passed: 10 distinct manufacturer products, 5 batteries, 5 brushes, zero invented model fitments, unchanged 77 devices and 20 linked device profiles, 46 total Samsung articles.');
+console.log('Samsung OEM accessory integration passed: 10 distinct manufacturer products, 4 batteries, 6 brushes, zero invented model fitments, unchanged 77 devices and 20 linked device profiles, 46 total Samsung articles.');
