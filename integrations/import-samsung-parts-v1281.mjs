@@ -28,6 +28,7 @@ assert.equal(manifest.partCount,36);
 assert.equal(manifest.physicalPartCount,36);
 assert.equal(data.newParts.length,10);
 const knownParts=new Set(pack.parts.map(x=>x.code));
+console.log(JSON.stringify({baselineSamsungSKUs:[...knownParts].sort(),newCandidateOverlaps:data.newParts.filter(x=>knownParts.has(x.code)).map(x=>x.code)}));
 assert.equal(knownParts.size,36);
 const originalModels=JSON.stringify(pack.models);
 const originalIndex=JSON.stringify(index);
