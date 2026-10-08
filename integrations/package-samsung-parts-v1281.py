@@ -37,7 +37,16 @@ elif phase=="update-tests":
  oldassert="assert.equal(samsungParts.length,36);"
  assert text.count(oldassert)==1,("Samsung article-count assertion not exactly once",text.count(oldassert))
  p.write_text(text.replace(oldassert,"assert.equal(samsungParts.length,46);",1))
- print("Samsung catalog article expectation 36 -> 46")
+ vorwerk=site/"tests/vorwerk-expansion.test.mjs"
+ t=vorwerk.read_text()
+ for before,after in [
+  ("assert.equal(new Set(partsCatalog.map(partIdentity)).size,1930);","assert.equal(new Set(partsCatalog.map(partIdentity)).size,1940);"),
+  ("assert.equal(partsCatalog.length,1930);","assert.equal(partsCatalog.length,1940);")
+ ]:
+  assert t.count(before)==1,(str(vorwerk),before,t.count(before))
+  t=t.replace(before,after,1)
+ vorwerk.write_text(t)
+ print("Samsung catalog article expectation 36 -> 46; global Vorwerk test total 1930 -> 1940")
 elif phase=="sync":
  p=site/"src/data/new-brands-index.js"
  t=p.read_text();tag="export const newBrandsManifest="
