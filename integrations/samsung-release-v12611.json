@@ -29,5 +29,12 @@
     "current price or inventory",
     "present-day bestseller ranking",
     "availability for purchase"
-  ]
+  ],
+  "verified_release": {
+    "commit": "b823cb2808effc64b9aab0885e27ff36ce71cc4f",
+    "github_actions_run": 37747978056,
+    "build_and_test": "success",
+    "pages_deployment": "success",
+    "browser_visual_review": "not_performed"
+  }
 }
