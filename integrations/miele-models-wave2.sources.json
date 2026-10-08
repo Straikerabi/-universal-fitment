@@ -1,0 +1,39 @@
+{
+  "issue": 22,
+  "verifiedAt": "2026-10-08T17:34:59.072113+00:00",
+  "researchSha256": "a6db44f3aea69e3aa89bc93ae33a51843cb110c34ba81d390b27c64bd50e408a",
+  "acceptedModelReferencesVerified": 25,
+  "sources": [
+    {
+      "sourceId": "catalog-2011",
+      "url": "https://www1.miele.de/ex/prospects/de/2011_10/9013391_Bodenpflege_FH/pdf/all.pdf",
+      "mode": "live-download",
+      "httpStatus": 200,
+      "bytes": 9390014,
+      "sha256": "a0b22d802bd66cb2fa13b8bfd1b6747e7b155d149c108f2ae8f895503da55c25",
+      "pageCount": 51,
+      "modelTablesVerified": 11
+    },
+    {
+      "sourceId": "catalog-2013",
+      "url": "https://www1.miele.de/ex/prospects/de/2013_04/121700_MMS120308_Staubsaugen_April2012/pdf/all.pdf",
+      "mode": "live-download",
+      "httpStatus": 200,
+      "bytes": 20769822,
+      "sha256": "b4160e666a0c26607950a76cd35088a58c05c0646e477c31ee4660b31a17a138",
+      "pageCount": 84,
+      "modelTablesVerified": 13
+    },
+    {
+      "sourceId": "catalog-2012-oct",
+      "url": "https://www1.miele.de/ex/prospects/de/2012_10/9013393_Bodenpflege/pdf/all.pdf",
+      "mode": "live-download",
+      "httpStatus": 200,
+      "bytes": 7952239,
+      "sha256": "1b28cfba25d44511d6b79f582cf09a3d4c9e5cd9588d2082d553c5385d75ba5f",
+      "pageCount": 45,
+      "modelTablesVerified": 8
+    }
+  ],
+  "popplerVersion": "pdftotext version 24.02.0"
+}

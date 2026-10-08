@@ -1,0 +1,58 @@
+{
+  "mainCommit": "9419d49419fd2d3257b910f49c9afd30f40de289",
+  "mainCheckpoint": {
+    "version": "1.28.2",
+    "segment_dir": ".demo/source-v1.28.2",
+    "segments": 85,
+    "archive_sha256": "bc272af5578364432f7ccd1279b600cc2afa086225c87be84ec748fc5379c378",
+    "archive_bytes": 636478,
+    "file_count": 131,
+    "compiled_assets_included": false
+  },
+  "changedSourceFilesSinceIssueBaseline": [
+    "index.html",
+    "package.json",
+    "src/app.js",
+    "src/data/new-brands-index.js",
+    "src/data/samsung-pack.js",
+    "styles.css",
+    "sw.js",
+    "tests/catalog-v126.test.mjs",
+    "tests/marketplaces.test.mjs",
+    "tests/miele-models.test.mjs",
+    "tests/miele-parts.test.mjs",
+    "tests/offline.test.mjs",
+    "tests/services.test.mjs",
+    "tests/static.test.mjs",
+    "tests/v16.test.mjs",
+    "tests/vorwerk-expansion.test.mjs"
+  ],
+  "catalogStats": {
+    "modelCount": 943,
+    "recordCount": 954,
+    "retrievedAt": "2026-10-07"
+  },
+  "mieleCoverage": {
+    "brand": "Miele",
+    "models": 57,
+    "records": 62,
+    "recordsWithParts": 62,
+    "recordsWithoutParts": 0,
+    "physicalParts": 167,
+    "parts": 167,
+    "loaded": true,
+    "manuals": 57,
+    "identity": "Materialnummer / Gerätetyp",
+    "note": "Katalog erweitert; weitere Baugruppen und Ausführungen offen."
+  },
+  "mieleModelsSha256": "cc256ef454bbf077f0e53bf7986556b55b4cd563e00a1268779752704898c0a2",
+  "mielePartsSha256": "4b1f490613489c1f4a7f0439981f370e5361c80cb43d036f672fbb3285469f36",
+  "mielePriceRecordsSha256": "3b3fb254ff2964407ba9b18cd28a06bde39ab5c6e577c308b8a92e8c9f503793",
+  "otherProductsSha256": "835bd0e5ded01b8aab4aee8c3381ee6487f7dd9033e26f50605ecab7aa04f859",
+  "mieleModelsUnchanged": true,
+  "mielePartsUnchanged": true,
+  "mielePricesUnchanged": true,
+  "otherProductsUnchanged": true,
+  "guardedImporterRefusesCurrentMainWithoutMutation": true,
+  "importerConflict": "Source conflict (no files written): index.html"
+}
