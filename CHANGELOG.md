@@ -1,5 +1,12 @@
 # Universal Fitment — Patchnotes / patch notes
 
+## v1.26.9 — 8. Oktober 2026
+
+- **DE:** Sechs Samsung-Modellen wurden 50 quellenbelegte optionale Zubehörbeziehungen zugeordnet. Zwei neue Jet-85S-/95S-Modelle und sieben zuvor fehlende Artikelkennungen wurden ergänzt: 66 Samsung-Modelle, 34 Teile, neun mit Hersteller-Zubehörliste.
+- **DE:** Herstellernennungen bestätigen nicht automatisch die Passform; Wischaufsatz-/Clean-Station-Bedingungen, unterschiedliche Suffixe und unbekannte Preise bleiben sichtbar.
+- **EN:** Six Samsung models gain 50 source-listed optional accessory relationships, including two new Jet 85S/95S models and seven new distinct accessory codes. No automatic fitment or live price claim.
+
+
 Release notes describe published changes. Plans live in the [German](ROADMAP.md) and [English](ROADMAP.en.md) roadmaps.
 
 ## v1.26.8 — 8. Oktober 2026

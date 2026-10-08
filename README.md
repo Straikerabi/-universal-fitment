@@ -1,4 +1,4 @@
-# Universal Fitment v1.26.8 – geprüfte Hoover-Produktcodes
+# Universal Fitment v1.26.9 – geprüfte Hoover-Produktcodes
 
 [Roadmap · Deutsch](ROADMAP.md) · [Roadmap · English](ROADMAP.en.md) · [Patchnotes](CHANGELOG.md) · [Ideen & Kommentare](https://github.com/Straikerabi/-universal-fitment/issues)
 
@@ -6,9 +6,9 @@ Universal Fitment beginnt mit Staubsaugern für Deutschland. Unser langfristiges
 
 Der neue Kontaktbereich unter **Mehr → Kontakt & Roadmap** bereitet überprüfbare GitHub-Beiträge vor. Ein eigenes Supportpostfach und privater Versand sind noch offen; es werden keine E-Mails automatisch verschickt. Zentrale App-Nutzungszahlen sind bisher nicht erfasst.
 
-Der Staubsaugerkatalog enthält **868 Modellbezeichnungen in 879 konkreten Modelleinträgen** und **1.921 unterschiedliche Katalogartikel**. Davon zählen **1.803** als katalogisierte Ersatzteile, Zubehörartikel oder Verbrauchsmaterialien. Dokumente, Komplettgeräte und noch nicht eingeordnete Artikel werden separat geführt. Neun Miele-Familienhinweise zählen nicht als konkrete Geräte.
+Der Staubsaugerkatalog enthält **870 Modellbezeichnungen in 881 konkreten Modelleinträgen** und **1.928 unterschiedliche Katalogartikel**. Davon zählen **1.810** als katalogisierte Ersatzteile, Zubehörartikel oder Verbrauchsmaterialien. Dokumente, Komplettgeräte und noch nicht eingeordnete Artikel werden separat geführt. Neun Miele-Familienhinweise zählen nicht als konkrete Geräte.
 
-Die Ziele sind getrennt: **100 echte Modellreferenzen und mindestens 100 katalogisierte Teile je Marke**. 655 von 1.000 gedeckelten Modellplätzen sind belegt. Acht von zehn Marken erreichen das Teileziel. Zusätzliche Artikel einer Marke füllen die Lücken einer anderen Marke nicht. Verkaufssets und Zubehör erzeugen keine weiteren Grundmodelle.
+Die Ziele sind getrennt: **100 echte Modellreferenzen und mindestens 100 katalogisierte Teile je Marke**. 657 von 1.000 gedeckelten Modellplätzen sind belegt. Acht von zehn Marken erreichen das Teileziel. Zusätzliche Artikel einer Marke füllen die Lücken einer anderen Marke nicht. Verkaufssets und Zubehör erzeugen keine weiteren Grundmodelle.
 
 | Marke | Modellnamen | Modelleinträge | Physische Teile | Weitere Artikel | Modelle ohne Teilezuordnung |
 |---|---:|---:|---:|---:|---:|
@@ -19,7 +19,7 @@ Die Ziele sind getrennt: **100 echte Modellreferenzen und mindestens 100 katalog
 | Rowenta | 272 | 272 | 100 | 0 | 75 |
 | Philips | 140 | 140 | 101 | 3 | 84 |
 | Siemens | 101 | 101 | 605 | 105 | 0 |
-| Samsung | 64 | 64 | 27 | 0 | 61 |
+| Samsung | 66 | 66 | 34 | 0 | 57 |
 | Hoover | 24 | 24 | 60 | 0 | 22 |
 | Vorwerk | 18 | 18 | 105 | 0 | 4 |
 
@@ -57,5 +57,5 @@ Der geschützte Marketplace-Server behält seinen bestehenden Vertrag mit 167 Mi
 
 36 App-Testgruppen prüfen unter anderem Kategorien, Artikelarten, Ladezustände, genaue Zielzahlen, Quellenidentitäten, Zubehörtypen, Kennungsgrenzen, Warenkorb, Sicherungen und Offline-Verhalten. Syntaxprüfungen und bytegenau reproduzierbare Haupt- und optionale Pakete gehören zur Veröffentlichung. Die Prüfsummen-geschützte Änderung wird vor GitHub Pages aus dem bisherigen Stand rekonstruiert; bestehende synthetische Serverprüfungen laufen ebenfalls in CI.
 
-Noch offen sind die Modellziele für sieben Marken, mindestens 73 weitere Samsung- und 40 weitere Hoover-Teile sowie vollständige gerätespezifische Teilelisten. 250 Modelleinträge haben noch keine konkrete Teilezuordnung. Einzelne Montageanleitungen, breitere belegte Nachbauten, aktuelle Gerätepreise und reale Geräteprüfungen bleiben Teil des Ausbaus. Kleine eigenständige Handsauger, Roboter und weitere Gerätekategorien werden nicht zum Auffüllen der Modellziele verwendet.
+Noch offen sind die Modellziele für sieben Marken, mindestens 66 weitere Samsung- und 40 weitere Hoover-Teile sowie vollständige gerätespezifische Teilelisten. 246 Modelleinträge haben noch keine konkrete Teilezuordnung. Einzelne Montageanleitungen, breitere belegte Nachbauten, aktuelle Gerätepreise und reale Geräteprüfungen bleiben Teil des Ausbaus. Kleine eigenständige Handsauger, Roboter und weitere Gerätekategorien werden nicht zum Auffüllen der Modellziele verwendet.
 
