@@ -46,9 +46,15 @@ elif phase=="sync":
     assert rest.count(anchor)==1
     payload,tail=rest.split(anchor,1)
     manifest=json.loads(payload)
-    assert manifest["Dyson"]["modelCount"]==92 and manifest["Dyson"]["recordCount"]==98
+    assert manifest["Dyson"]["modelCount"]==54 and manifest["Dyson"]["recordCount"]==60, "Static baseline is intentionally extended at module load"
     assert manifest["Dyson"]["physicalPartCount"]==185
-    manifest["Dyson"]["packBytes"]=(site/"catalog-dyson-v1.29.0.js").stat().st_size
+    # Dyson Work augments brandManifest at module-load time. The static base
+    # must remain at 54/60 or the 38 additions would be counted twice.
+    # Update the exact dynamic manifest assignment instead of the static JSON.
+    marker="packBytes:null,verifiedAdditionalModelCount:38"
+    assert tail.count(marker)==1, "Dyson dynamic manifest assignment not found"
+    dysonBytes=(site/"catalog-dyson-v1.29.0.js").stat().st_size
+    tail=tail.replace(marker,f"packBytes:{dysonBytes},verifiedAdditionalModelCount:38",1)
     f.write_text(before+tag+json.dumps(manifest,separators=(",",":"),ensure_ascii=False)+anchor+tail)
     f=site/"src/data/new-brands-index.js"
     t=f.read_text()
@@ -61,7 +67,7 @@ elif phase=="sync":
     m["Hoover"]["packBytes"]=(site/"catalog-hoover-v1.29.0.js").stat().st_size
     m["Samsung"]["packBytes"]=(site/"catalog-samsung-v1.29.0.js").stat().st_size
     f.write_text(before+tag+json.dumps(m,separators=(",",":"),ensure_ascii=False)+";\n")
-    print(json.dumps({"sync":"source pack bytes","dyson":manifest["Dyson"]["packBytes"],"hoover":m["Hoover"]["packBytes"],"samsung":m["Samsung"]["packBytes"]}))
+    print(json.dumps({"sync":"source pack bytes","dyson":dysonBytes,"hoover":m["Hoover"]["packBytes"],"samsung":m["Samsung"]["packBytes"]}))
 
 elif phase=="finish":
     report={
