@@ -18,8 +18,8 @@ Release notes describe published changes. Plans live in the [German](ROADMAP.md)
 
 ### Geprüft / checked
 
-- **DE:** 36 App-Testgruppen, Syntaxprüfung und bytegenau reproduzierbare Haupt- und optionale Browserpakete wurden lokal bestanden. Veröffentlichung und Live-Prüfung folgen separat.
-- **EN:** 36 app test groups, syntax checks and byte-for-byte reproducible main and optional browser bundles passed locally. Publication and live verification follow separately.
+- **DE:** 36 App-Testgruppen, Syntaxprüfung, bytegenau reproduzierbare Haupt- und optionale Browserpakete sowie GitHub-CI und Pages-Deployment bestanden. Beide Hoover-Modellseiten, Teilezahlen und aufklappbare Gruppen wurden live geprüft.
+- **EN:** 36 app test groups, syntax checks, byte-for-byte reproducible main and optional browser bundles, GitHub CI and Pages deployment passed. Both Hoover model pages, part counts and expandable groups were checked live.
 
 ## v1.26.6 — 8. Oktober 2026
 
