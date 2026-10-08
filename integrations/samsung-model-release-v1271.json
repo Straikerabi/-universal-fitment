@@ -29,5 +29,12 @@
     "Manufacturer model listing is not a verified part-fitment matrix",
     "Specific article listing must be checked before a part relationship may be added",
     "No new price, availability, delivery, warranty or ranking claims"
-  ]
+  ],
+  "verified_release": {
+    "commit": "5067fa64a543bb0f577aa796a061d22e141fc336",
+    "github_actions_run": 37755293126,
+    "build_and_test": "success",
+    "pages_deployment": "success",
+    "browser_visual_review": "not_performed"
+  }
 }

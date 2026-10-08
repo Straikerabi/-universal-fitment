@@ -55,9 +55,9 @@
     },
     {
       "brand": "Samsung",
-      "models": 67,
+      "models": 69,
       "physical_parts": 36,
-      "models_without_parts": 47
+      "models_without_parts": 49
     },
     {
       "brand": "Hoover",
@@ -265,7 +265,8 @@
     "v1.26.9 und v1.26.10 im GitHub-Pages-Hauptbranch veröffentlicht. Vier weitere Samsung-Modelle wurden in v1.26.10 mit insgesamt 35 herstellerseitig gelisteten optionalen Zubehörbeziehungen verknüpft. Es kamen keine neuen Artikel hinzu. 36 App-Testgruppen und Pages-Deployment erfolgreich.",
     "v1.26.11 Samsung-Zubehör veröffentlicht: vier bestehende /WD-/WA-Geräte mit 36 ausdrücklichen optionalen Herstellernennungen; VCA-SABA95 als eigenständige Bürste hinzugefügt. Vollständige GitHub-Actions-Prüfung und Pages-Deployment 37747978056 erfolgreich.",
     "v1.26.12 Samsung-Jet-AI-Release: zwei Modelle erstmals mit Zubehörlisten und ein neues konkretes Modell inkl. sechs Originalzubehörnennungen; eine neue Slim LED+ Bürste VCA-SABC97/GL. Alle App-/Serverchecks und GitHub Pages erfolgreich: Lauf 37749919586.",
-    "v1.27.0: AEG von 78 auf 100 echte Hersteller-Modellreferenzen erweitert (22 neu), 22 Geräte vorerst ohne gerätespezifische Ersatzteilliste. 6 Produktseiten nur mit neunstelliger PNC, nicht künstlich auf 11 Stellen verlängert. Vollständige App-Tests und Pages-Deployment 37754071931 erfolgreich."
+    "v1.27.0: AEG von 78 auf 100 echte Hersteller-Modellreferenzen erweitert (22 neu), 22 Geräte vorerst ohne gerätespezifische Ersatzteilliste. 6 Produktseiten nur mit neunstelliger PNC, nicht künstlich auf 11 Stellen verlängert. Vollständige App-Tests und Pages-Deployment 37754071931 erfolgreich.",
+    "v1.27.1 zwei exakte Samsung-Modelle VS70H28HEK/WD und VS80F28EFP/WD ohne ungeprüfte Teilbeziehungen aufgenommen. Modellabdeckung 682/1.000; Herstellerquellen geprüft; GitHub Pages Build und Deploy 37755293126 grün."
   ],
   "blocked": [],
   "first_release": {
@@ -302,13 +303,13 @@
     "contact_url": "https://straikerabi.github.io/-universal-fitment/?v=1.26.5#contact"
   },
   "current_totals": {
-    "version": "1.27.0",
-    "model_names": 893,
-    "model_records": 904,
+    "version": "1.27.1",
+    "model_names": 895,
+    "model_records": 906,
     "articles": 1930,
     "physical_parts": 1812,
-    "models_without_parts": 258,
-    "target_slots": 680
+    "models_without_parts": 260,
+    "target_slots": 682
   },
   "last_run": {
     "worker": "night-0600-hoover-release",
@@ -369,12 +370,13 @@
   },
   "last_verified_at_utc": "2026-10-08T04:14:04+00:00",
   "last_verified_chat_release": {
-    "version": "1.27.0",
-    "commit": "9f1a0d6839f0313eecf586bff3de3cda7656f598",
-    "run_id": 37754071931,
+    "version": "1.27.1",
+    "commit": "5067fa64a543bb0f577aa796a061d22e141fc336",
+    "run_id": 37755293126,
     "build": "success",
     "deploy": "success",
-    "extra_model_references": 22,
-    "new_parts": 0
+    "added_models": 2,
+    "added_parts": 0,
+    "added_fitment_links": 0
   }
 }
