@@ -41,6 +41,20 @@ class TestHardening(unittest.TestCase):
             for file in ('impressum.html','datenschutz.html'):(s/file).write_text('unfinished')
             self.assertFalse(mod.release_check(s)['ready'])
 
+    def test_login_guard_is_idempotent(self):
+        with TemporaryDirectory() as folder:
+            s=Path(folder)
+            (s/'index.html').write_text('<html><head></head><body></body></html>')
+            (s/'src/core').mkdir(parents=True)
+            p=s/'src/core/pilot-client.js'
+            p.write_text('async function run(auth,email,password){const signed=await auth.signInWithPassword({email,password});return signed;}')
+            self.assertTrue(mod.apply(s)['login_guard_added'])
+            guarded=p.read_text()
+            self.assertIn('UF_GITHUB_PAGES_LOGIN_DISABLED',guarded)
+            self.assertIn("hostname.toLowerCase().endsWith('.github.io')",guarded)
+            self.assertFalse(mod.apply(s)['login_guard_added'])
+            self.assertEqual(guarded,p.read_text())
+
     def test_inventory(self):
         with TemporaryDirectory() as folder:
             s=Path(folder)
