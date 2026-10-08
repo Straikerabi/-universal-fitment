@@ -5,7 +5,7 @@ Die aktuelle GitHub-Pages-Vorschau ist **öffentlich** und sollte vor der kommer
 ## Start in ca. 5 Klicks
 
 1. [Repository auf dem geprüften Vorschau-Branch öffnen](https://github.com/Straikerabi/-universal-fitment/tree/audit/legal-hardening-v1290) (nicht auf `main` arbeiten).
-2. Auf **Code** → **Codespaces** → **Create codespace on audit/legal-hardening-v1290** klicken. Ggf. im Branch-Dropdown den Vorschau-Branch ausdrücklich wählen. Der Codespace benötigt initial Zeit für Restore/Build/Tests.
+2. Auf **Code** → **Codespaces** → **Create codespace on audit/legal-hardening-v1290** klicken. Ggf. im Branch-Dropdown den Vorschau-Branch ausdrücklich wählen. Der Codespace benötigt initial kurz Zeit für Restore und Bundle-Build; die lange Test-Suite läuft getrennt in GitHub Actions, damit die Vorschau schneller startet.
 3. Wenn der Build abgeschlossen ist, unten **PORTS** öffnen. **Port 4173** wird angeboten. Im Kontextmenü **Port Visibility → Private** überprüfen, niemals Public auswählen.
 4. **Open in Browser** / Globus-Symbol bei Port 4173 anklicken – die tatsächlich gebaute, vollständige App öffnet sich unter `https://...-4173.app.github.dev`.
 5. Für iPhone/Android denselben Link öffnen, mit **deinem GitHub-Konto anmelden**. Bei Ablauf der Private-Port-Authentifizierung erneut anmelden. Tests von Suche, Filtern, Warenkorb, Verbindungen und mobiler Darstellung sind möglich.
@@ -31,7 +31,7 @@ Die Vorschau wird nur bei aktivem Codespace bedient. Bei Stop/Suspend ist ein HT
   ```bash
   bash integrations/legal-compliance/private-preview-build.sh
   ```
-  Dann Browser neu laden. Bei PWA-Caches gegebenenfalls DevTools → Application → Service Workers → Unregister und Site Data löschen. Keine Live-Veröffentlichung nötig.
+  Für die vollständigen Quelltests zusätzlich `bash integrations/legal-compliance/private-preview-build.sh --test` ausführen. Dann Browser neu laden. Bei PWA-Caches gegebenenfalls DevTools → Application → Service Workers → Unregister und Site Data löschen. Keine Live-Veröffentlichung nötig.
 - **Keine** Anmeldepasswörter eingeben: Die Pilot-Supabase-Anmeldung ist auf `.app.github.dev` im Vorschau-Build gesperrt. Die private Vorschau ist ein Funktionstest, kein produktives Kundenportal. Tests von echtem Login erfordern später einen gesondert geprüften Staging-Host.
 - Bei Bugs: genaue Gerätekennung, Klickpfad, Fehlermeldung und Screenshot ohne persönliche Daten notieren. Im Browser F12 → Console / Network für reproduzierbare Fehler nutzen.
 
