@@ -1,6 +1,6 @@
 {
   "checked_local_date": "2026-10-08",
-  "status": "primary pages opened; not yet applied",
+  "status": "three original /WD manufacturer accessory lists imported in v1.26.6; other leads remain separate",
   "pages": [
     {
       "model_code": "VS20B75BDR5",
@@ -68,5 +68,13 @@
     "Short filter codes in an optional list do not automatically resolve /VT or other complete article variants.",
     "Consumables for Wischaufsatz and All-in-One Clean Station need separate attachment context.",
     "Record explicit manufacturer optional-list relationship, not unconditional fitment."
-  ]
+  ],
+  "imported_in_version": "1.26.6",
+  "imported_full_references": [
+    "VS20B75BDR5/WD",
+    "VS20C95D2TK/WD",
+    "VS20B95C43W/WD"
+  ],
+  "follow_up_file": "integrations/samsung-accessory-evidence-2026-10-08.json",
+  "follow_up_status": "six newly researched candidate model references; model and article deduplication against app pending"
 }
