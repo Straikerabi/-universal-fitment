@@ -68,12 +68,15 @@ jobs:
                 echo "--- $file conflict context ---"
                 grep -n -C 3 '^<<<<<<<\\|^=======\\|^>>>>>>>' "$repo/$file" | head -110 || true
               done
-              while IFS= read -r conflict; do
-                test -n "$conflict" || continue
-                git -C "$repo" checkout --ours -- "$conflict"
-                git -C "$repo" add -- "$conflict"
-                echo "DIAGNOSTIC_ONLY_KEEP_OURS $name $conflict"
-              done < <(git -C "$repo" diff --name-only --diff-filter=U)
-              git -C "$repo" commit -qm "Diagnostic provisional merge of $name (not shippable)"
+              python3 integrations/resolve-wave2-merge-v1290.py "$repo" "$name"
+              git -C "$repo" commit -qm "Resolve verified $name brand source edits before full tests"
             fi
           done
+          rsync -a --delete --exclude='.git' "$repo/" "$GITHUB_WORKSPACE/site/"
+          echo "=== VERIFIED MERGED SOURCE INVENTORY ==="
+          (cd "$GITHUB_WORKSPACE/site" && node --check src/core/typeplate.js && node --check src/data/new-brands-index.js && node --check src/data/brand-index.js)
+          echo "=== MODEL EVIDENCE MATERIALIZED ==="
+          grep -n "modelCount" "$GITHUB_WORKSPACE/site/src/data/new-brands-index.js" | cut -c1-200
+          npm ci --prefix integrations/auth-sdk --ignore-scripts
+          node integrations/build-app.mjs
+          (cd site && npm test && npm run check)
