@@ -1,0 +1,80 @@
+{
+  "date": "2026-10-08",
+  "market": "DE",
+  "status": "primary_manufacturer_optional_accessory_specification",
+  "release_candidate": "1.26.11",
+  "source_scope": "Exact source model including /WD or /WA regional suffix. Accessory names are optional and do not assert a physical installation or compatibility guarantee.",
+  "warnings": [
+    "Complete model identifier required",
+    "VCA-SPW95 and VCA-SPW95/VT remain separate article identifiers",
+    "VCA-ADB952 requires the specific All-in-One Clean Station attachment",
+    "Wipe consumables require suitable Wischaufsatz/Spinning Sweeper",
+    "No fabricated price, stock or delivery data"
+  ],
+  "models": [
+    {
+      "model": "VS20C85G2TN/WD",
+      "label": "Jet 85 PetPRO",
+      "url": "https://www.samsung.com/de/vacuum-cleaners/stick/vs9500al-stick-more-advance-cleaning-performance-hexajet-motor-jet-cyclone-green-vs20c85g2tn-wd/",
+      "codes": [
+        "VCA-SBTA95/VT",
+        "VCA-SAPB95/WA",
+        "VCA-SABB95",
+        "VCA-WBA95/GL",
+        "VCA-SPA95/GL",
+        "VCA-SPW95/VT",
+        "VCA-SHF95B",
+        "VCA-SHF95N",
+        "VCA-SHF95W",
+        "VCA-SAK95/GL"
+      ]
+    },
+    {
+      "model": "VS20B95B43N/WD",
+      "label": "Bespoke Jet Plus 100",
+      "url": "https://www.samsung.com/de/vacuum-cleaners/stick/bespoke-jet-plus-210w-all-in-one-clean-station-woo-green-vs20b95b43n-wd/",
+      "codes": [
+        "VCA-SBTA95/VT",
+        "VCA-SAPB95/WA",
+        "VCA-WBA95/GL",
+        "VCA-ADB952",
+        "VCA-SPA95/GL",
+        "VCA-SPW95/VT",
+        "VCA-SHF95B",
+        "VCA-SHF95N",
+        "VCA-SHF95W",
+        "VCA-SHF95K",
+        "VCA-SAK95/GL"
+      ]
+    },
+    {
+      "model": "VS20B95B73B/WD",
+      "label": "Bespoke Jet Plus Akku+ Wet & Clean",
+      "url": "https://www.samsung.com/de/vacuum-cleaners/stick/bespoke-jet-plus-210w-all-in-one-clean-station-mid-blue-vs20b95b73b-wd/",
+      "codes": [
+        "VCA-SBTA95/VT",
+        "VCA-SAPB95/WA",
+        "VCA-SABB95",
+        "VCA-ADB952",
+        "VCA-SPA95/GL",
+        "VCA-SPW95/VT",
+        "VCA-SHF95B",
+        "VCA-SHF95N",
+        "VCA-SHF95W",
+        "VCA-SHF95K",
+        "VCA-SAK95/GL"
+      ]
+    },
+    {
+      "model": "VS20A95973B/WA",
+      "label": "Bespoke Jet PetPRO extra",
+      "url": "https://www.samsung.com/de/vacuum-cleaners/stick/vs9500al-vc-with-all-in-one-clean-station-blue-vs20a95973b-wa/",
+      "codes": [
+        "VCA-SPW95",
+        "VCA-SPA95/GL",
+        "VCA-SABA95",
+        "VCA-ADB952"
+      ]
+    }
+  ]
+}

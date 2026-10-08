@@ -1,0 +1,33 @@
+{
+  "version": "1.26.11",
+  "date": "2026-10-08",
+  "manufacturer_evidence": "integrations/samsung-evidence-v12611.json",
+  "added_exact_optional_relationships": 36,
+  "new_unique_article_codes": [
+    "VCA-SABA95"
+  ],
+  "newly_populated_models": 4,
+  "samsung_models": 66,
+  "samsung_articles": 35,
+  "samsung_models_with_parts": 17,
+  "samsung_models_without_parts": 49,
+  "all_model_names": 870,
+  "all_model_records": 881,
+  "all_catalog_articles": 1929,
+  "all_physical_articles": 1811,
+  "total_model_entries_without_parts": 238,
+  "model_target_slots": 657,
+  "validation": [
+    "full unit test suite",
+    "static syntax",
+    "reproducible main+optional bundles",
+    "SHA256 patch replay",
+    "SHA256 source checkpoint restore"
+  ],
+  "no_claims": [
+    "guaranteed physical fitment",
+    "current price or inventory",
+    "present-day bestseller ranking",
+    "availability for purchase"
+  ]
+}
