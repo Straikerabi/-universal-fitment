@@ -19,7 +19,11 @@
     },
     "vat_id_if_assigned": "",
     "regulated_profession": false,
-    "professional_regulator": ""
+    "professional_regulator": "",
+    "representative_if_company": "",
+    "has_vat_id": false,
+    "has_economic_id": false,
+    "economic_id_if_assigned": ""
   },
   "business": {
     "gewerbe_registration_confirmed": false,
