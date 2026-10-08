@@ -230,7 +230,13 @@
       "status": "done"
     }
   ],
-  "active_run": null,
+  "active_run": {
+    "worker": "night-0700-final-validation",
+    "stage": "tests",
+    "started_at": "2026-10-08T06:59:53+02:00",
+    "base_commit": "d2bf674be8a2ce992e39eedc4e53173fefec64f6",
+    "note": "Letzter Nachtblock: v1.26.7 aus aktueller Quellsicherung wiederherstellen, unabhängig prüfen, klare Fehler beheben und Morgenbericht vorbereiten."
+  },
   "automations": {
     "worker": {
       "id": "6ac6d322e8448191b621ec4839d783c6",
