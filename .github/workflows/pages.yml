@@ -1,4 +1,4 @@
-name: "Deploy v1.26.12 Samsung Bespoke Jet AI to GitHub Pages"
+name: "Deploy v1.27.0 verified AEG 100 models to GitHub Pages"
 
 on:
   push:
@@ -302,6 +302,13 @@ jobs:
           cat .demo/v1.26.12-patch/part-* | base64 -d | gzip -d > update-v1.26.12.patch
           echo "da180e9eb040b3e27a63714e2c4f53c30bf02e2622c28b1b5da92f89d4ecb570  update-v1.26.12.patch" | sha256sum -c -
           patch -p1 -d site < update-v1.26.12.patch
+
+      - name: "Apply v1.27.0 verified AEG 100-model patch"
+        shell: bash
+        run: |
+          cat .demo/v1.27.0-patch/part-* | base64 -d | gzip -d > update-v1.27.0.patch
+          echo "960f8bc5c6700609d944637f4ba55ed3045dc0edfd92f9ac2390baed2521eb2d  update-v1.27.0.patch" | sha256sum -c -
+          patch -p1 -d site < update-v1.27.0.patch
 
       - name: Build and verify app bundles from checked sources
         run: |
