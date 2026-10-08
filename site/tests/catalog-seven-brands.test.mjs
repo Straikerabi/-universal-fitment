@@ -15,7 +15,7 @@ import {buildHandoffPlan} from '../src/core/handoff.js';
 
 assert.deepEqual(catalogBrands,['Miele','Bosch','Dyson','AEG','Rowenta','Philips','Siemens','Samsung','Hoover','Vorwerk']);
 assert.deepEqual(new Set(optionalCatalogBrands),new Set(['AEG','Dyson','Rowenta','Philips','Siemens','Vorwerk','Samsung','Hoover']));
-assert.equal(catalogStats.modelCount,868);assert.equal(catalogStats.recordCount,879);
+assert.equal(catalogStats.modelCount,870);assert.equal(catalogStats.recordCount,881);
 assert.equal(philips.models.length,140);assert.equal(siemens.models.length,101);
 const refs=new Map(products.filter(p=>['Philips','Siemens'].includes(p.brand)).map(p=>[p.id,p]));
 assert.ok([...refs.values()].every(p=>p.catalogLoaded===false));
@@ -134,6 +134,6 @@ const restored=reviewBackup(JSON.stringify(createBackup({saved:[p.id,s.id]},[not
 assert.equal(restored.summary.devices,2);assert.equal(restored.cart.length,1);assert.equal(restored.cart[0].partId,filter.id);assert.equal(restored.cart[0].price,null);
 assert.equal(restored.cart[0].sourceUrl,filter.sourceUrl,'slash-containing part code preserves direct manufacturer handoff');
 const handoff=buildHandoffPlan(restored.cart);assert.equal(handoff.total,null);assert.equal(handoff.groups[0].lines[0].partNumber,'FC8003/01');
-const progress=catalogTargetProgress(catalogCoverage());assert.equal(progress.reduce((n,r)=>n+r.slots,0),655);assert.equal(progress.filter(p=>!p.active).length,0);
+const progress=catalogTargetProgress(catalogCoverage());assert.equal(progress.reduce((n,r)=>n+r.slots,0),657);assert.equal(progress.filter(p=>!p.active).length,0);
 
 console.log(`Catalog brand checks passed: 140 Philips / 101 Siemens references, ${philips.parts.length+siemens.parts.length} named original articles, full-index boundaries, manuals/drawings, device budgets, unknown-stock price gates and stable handoff/backup.`);
