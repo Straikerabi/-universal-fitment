@@ -230,7 +230,13 @@
       "status": "done"
     }
   ],
-  "active_run": null,
+  "active_run": {
+    "worker": "night-0300-hoover",
+    "stage": "hoover_fitment",
+    "started_at": "2026-10-08T02:57:53+02:00",
+    "base_commit": "2c49bc7f2ff3d9eb15fc89bb2ce4a13fc5666ff4",
+    "note": "Hoover-Primärquellen für konkrete deutsche Modell- und Produktcodes prüfen; GB-Artikel nicht ohne ausdrücklichen Nachweis als DE-Passung zuordnen."
+  },
   "automations": {
     "worker": {
       "id": "6ac6d322e8448191b621ec4839d783c6",
