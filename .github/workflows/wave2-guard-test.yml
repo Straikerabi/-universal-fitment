@@ -1,0 +1,23 @@
+name: Verify second-wave PR guard
+on:
+  push:
+    branches: ["work/qa-guard-wave2"]
+    paths:
+      - "integrations/check-work-pr-boundaries.py"
+      - "integrations/test-work-pr-boundaries.py"
+      - ".github/workflows/wave2-guard-test.yml"
+permissions:
+  contents: read
+jobs:
+  check-path-policies:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Verify policy syntax and all 14 isolation regression cases
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m py_compile integrations/check-work-pr-boundaries.py integrations/test-work-pr-boundaries.py
+          python3 integrations/test-work-pr-boundaries.py
