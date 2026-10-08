@@ -41,6 +41,7 @@ if phase=="prepare":
             ("catalogStats.recordCount,882","catalogStats.recordCount,904"),
             ("r.slots,0),658","r.slots,0),680")
         ]:exact(path,a,b)
+    exact(site/"tests/philips-expansion.test.mjs","['AEG',78,354]","['AEG',100,354]")
     expanded=site/"tests/catalog-expansion.test.mjs"
     marker="assert.deepEqual(catalogCoverage().map(r=>r.brand),['Miele','Bosch','Dyson','AEG','Rowenta','Philips','Siemens','Samsung','Hoover','Vorwerk']);"
     additions="""const aegNewCodes=new Set([
