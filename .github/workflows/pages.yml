@@ -1,4 +1,4 @@
-name: "Deploy v1.28.1 Samsung original batteries and brushes"
+name: "Deploy v1.28.2 mobile manufacturer parts links fix"
 
 on:
   push:
@@ -330,6 +330,13 @@ jobs:
           cat .demo/v1.28.1-patch/part-* | base64 -d | gzip -d > update-v1.28.1.patch
           echo "81a68066d1a25811db24888040143212b70117a64274a5f0c950e77bd7f0592b  update-v1.28.1.patch" | sha256sum -c -
           patch -p1 -d site < update-v1.28.1.patch
+
+      - name: "Apply v1.28.2 accessible mobile manufacturer link layout"
+        shell: bash
+        run: |
+          cat .demo/v1.28.2-patch/part-* | base64 -d | gzip -d > update-v1.28.2.patch
+          echo "a387edb0e78d0cf56cd751fa040895127d6f654debb103d409bc433c62c5c679  update-v1.28.2.patch" | sha256sum -c -
+          patch -p1 -d site < update-v1.28.2.patch
 
       - name: Build and verify app bundles from checked sources
         run: |
