@@ -64,6 +64,17 @@ class CommercialGateTests(unittest.TestCase):
             self.assertIn('site/datenschutz.html:needs-manual-content-review',a['missing'])
             self.assertIn('site/impressum.html:needs-manual-content-review',a['missing'])
 
+    def test_company_requires_registration_and_representative(self):
+        with TemporaryDirectory() as d:
+            cfg=copy.deepcopy(example)
+            cfg['operator']['legal_form']='gmbh'
+            cfg['operator']['commercial_register']['registered']=False
+            cfg['operator']['has_vat_id']=True
+            a=mod.assess(cfg,Path(d))
+            self.assertIn('operator.commercial_register.registered:company',a['missing'])
+            self.assertIn('operator.representative_if_company',a['missing'])
+            self.assertIn('operator.vat_id_if_assigned',a['missing'])
+
     def test_checkout_needs_own_legal_review(self):
         with TemporaryDirectory() as d:
             cfg=copy.deepcopy(example)
