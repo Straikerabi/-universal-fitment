@@ -7,3 +7,5 @@ Retry 2: update escaped regular-expression version references in static tests.
 Retry 3: handle JavaScript regex source strings with multiple literal escape backslashes.
 
 Retry 4: fixed indentation in temporary Python version migration.
+
+Retry 5: update model totals and catalog totals in global regression tests.
