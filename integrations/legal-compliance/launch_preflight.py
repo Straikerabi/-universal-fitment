@@ -49,6 +49,22 @@ def assess(config: dict, site: Path) -> dict:
     if legal_form not in ('individual','gbr','ug','gmbh','other_confirmed'):
         missing.append('operator.legal_form')
 
+    if legal_form in ('ug','gmbh'):
+        if not valid_text(get(config,'operator.representative_if_company')):
+            missing.append('operator.representative_if_company')
+        if get(config,'operator.commercial_register.registered') is not True:
+            missing.append('operator.commercial_register.registered:company')
+
+    for indicator,field in (
+        ('operator.has_vat_id','operator.vat_id_if_assigned'),
+        ('operator.has_economic_id','operator.economic_id_if_assigned'),
+    ):
+        issued=get(config,indicator)
+        if issued not in (True,False):
+            missing.append(indicator)
+        if issued is True and not valid_text(get(config,field),min_length=6):
+            missing.append(field)
+
     postal=get(config,'operator.business_address.postal_code')
     if not isinstance(postal,str) or not re.fullmatch(r'[0-9]{5}',postal):
         missing.append('operator.business_address.postal_code:format')
