@@ -9,3 +9,5 @@ Probe 4: rerun full app suite with independent model-only Work registrations and
 Probe 5: rebase Miele and Dyson audit tests to allow intentional cross-brand model changes, preserve original individual part hashes.
 
 Probe 6: Miele 9 historical family hints remain outside 87 concrete device rows, rerun all category tests.
+
+Probe 7: validate Hoover 98 unlinked base models and all Miele/Dyson model tests after source merge.
