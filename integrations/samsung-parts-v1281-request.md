@@ -5,3 +5,5 @@ Reconstruct v1.28.0, import 10 primary-source Samsung original article SKUs with
 Preflight: print exact 36 existing SKUs for collision-free import.
 
 Second-source preflight: prior SKU VCA-SAPF80/WA already catalogued; replaced with direct-source Pet Tool+ VCA-PTB95/AA. Repeat the release gate.
+
+Third preflight: fix test parser delimiter; official Samsung product SKU import succeeded, retest combined app and checksum package.
