@@ -1,5 +1,13 @@
 # Universal Fitment — Patchnotes / patch notes
 
+## v1.26.12 — 8. Oktober 2026
+
+- **DE:** Zwei vorhandene Bespoke Jet AI /WD-Modelle und das neu erfasste VS80F28EGS/WD erhalten 14 exakt quellenbelegte optionale Zubehörbeziehungen; Samsung: 67 Modelle, 36 verschiedene Artikel, 20 Modelle mit Artikelzuordnungen.
+- **DE:** Neu katalogisiert: Slim LED+ Hartbodenbürste VCA-SABC97/GL. Wisch-/Clean-Station-Bedingungen bleiben erhalten; kein erfundener Preis, Bestand oder pauschaler Passungsnachweis.
+- **EN:** Added 14 optional accessory listings across two existing and one new Samsung Bespoke AI Jet /WD model; one distinct brush SKU. Exact suffix and attachment prerequisites remain.
+- **Prüfung:** Vollständige Tests, SHA-geprüfter Patch-Replay, Quellen-Wiederherstellung und zusätzlicher GitHub-Pages-CI.
+
+
 ## v1.26.11 — 8. Oktober 2026
 
 - **DE:** Vier Samsung-Geräte mit 36 belegten optionalen Zubehörbeziehungen ergänzt. Jetzt 17 von 66 Samsung-Geräten mit expliziter Zubehörliste, noch 49 ohne Zuordnung.
