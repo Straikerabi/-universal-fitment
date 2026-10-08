@@ -17,5 +17,12 @@
     "Manufacturer optional list; not a technical fitment approval",
     "No prices, stock or shipping inferred",
     "Mop and Clean Station accessories still require corresponding attachment"
-  ]
+  ],
+  "verified_release": {
+    "commit": "23f529602d0a052fc53a696de7fd1a36e0928fdd",
+    "github_actions_run": 37743522857,
+    "build_and_test": "success",
+    "pages_deployment": "success",
+    "web_rendered_ui_review": "not_performed"
+  }
 }

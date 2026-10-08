@@ -5,7 +5,7 @@
 - **DE:** Vier vorhandene Samsung-Staubsauger erhalten 35 exakte optionale Zubehör-Zuordnungen aus den deutschen Herstellerseiten. Jetzt 13 von 66 Samsung-Modellen mit konkreter Zubehörliste; 53 bleiben offen.
 - **DE:** Bestehende Artikelkennungen wiederverwendet, ohne neue Teile zu erfinden. Samsung bleibt bei 34 verschiedenen Artikeln, der Gesamtkatalog bei 1.928.
 - **EN:** Added 35 manufacturer-listed optional accessory links to four existing Samsung models. No duplicate articles, prices, stock or guaranteed fitment inferred.
-- **Prüfung:** Tests, reproduzierbare Browserpakete, SHA-geprüftes Versionspatch und Quellarchiv vor Deployment. CI/Pages folgt gesondert.
+- **Prüfung:** Tests, reproduzierbare Browserpakete, SHA-geprüftes Versionspatch und Quellarchiv vor Deployment. CI/Pages erfolgreich (GitHub Actions 37743522857); eine gesonderte visuelle Live-Prüfung ist noch offen.
 
 
 ## v1.26.9 — 8. Oktober 2026
