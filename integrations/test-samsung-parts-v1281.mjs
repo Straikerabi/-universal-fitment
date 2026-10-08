@@ -5,7 +5,7 @@ const root=process.cwd();
 const src=JSON.parse(fs.readFileSync(path.join(root,'integrations/samsung-parts-wave1-v1281.json'),'utf8'));
 const pack=JSON.parse(fs.readFileSync(path.join(root,'site/src/data/samsung-pack.js'),'utf8').split('export const brandPack=')[1].trim().replace(/;\s*$/,''));
 const s=fs.readFileSync(path.join(root,'site/src/data/new-brands-index.js'),'utf8');
-const ix=JSON.parse(s.split('export const newBrandsIndex=')[1].split(';')[0]);
+const ix=JSON.parse(s.split('export const newBrandsIndex=')[1].split(';\nexport const newBrandsManifest=')[0]);
 const manifest=JSON.parse(s.split('export const newBrandsManifest=')[1].trim().replace(/;\s*$/,'')).Samsung;
 const codeSet=new Set(pack.parts.map(x=>x.code));
 assert.equal(pack.models.length,77);
