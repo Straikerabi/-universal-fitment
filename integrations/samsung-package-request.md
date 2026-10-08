@@ -5,3 +5,5 @@ Compile and test updated Samsung source, verify the release delta, checksum-chec
 Retry 2: update escaped regular-expression version references in static tests.
 
 Retry 3: handle JavaScript regex source strings with multiple literal escape backslashes.
+
+Retry 4: fixed indentation in temporary Python version migration.
