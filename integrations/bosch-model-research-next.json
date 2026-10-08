@@ -1,0 +1,4654 @@
+{
+  "schemaVersion": 1,
+  "manufacturer": "Bosch",
+  "baseCommit": "6545d9affb6b3c6c04b8d585084f2094a09e77b1",
+  "sourceCheckpointSha256": "656b9a487bdc5c13646de10b97b0a6793c49e6110b668e9b836c8fe338acff21",
+  "checkedAt": "2026-10-08",
+  "summary": {
+    "addedModels": 40,
+    "totalBoschModels": 100,
+    "verifiedProductPages": 40,
+    "verifiedENumberReferences": 36,
+    "modelsWithVerifiedIndex": 34,
+    "modelsWithOpenIndex": 6,
+    "newParts": 0,
+    "physicalBoschParts": 102,
+    "sitemapProductUrls": 141,
+    "sitemapUniqueCodes": 136,
+    "primaryPagesExamined": 145,
+    "baselinePagesVerified": 60,
+    "baselineDeviceMaterialsObserved": 58,
+    "unseenCandidatesExamined": 85,
+    "deferredCandidates": 45,
+    "deviceTypes": {
+      "bagged": 12,
+      "bagless": 12,
+      "cordless": 16
+    },
+    "codeCollisions": 0,
+    "gtinCollisions": 0,
+    "observedMaterialCollisions": 0,
+    "boschArticles": 103
+  },
+  "methodology": {
+    "discoveryUrl": "https://www.bosch-home.com/de/sitemap.xml",
+    "scope": "German Bosch floor and upright vacuum model references; no robots, standalone compact handhelds, attachments or article-count inflation.",
+    "identityRule": "One source-reported VIB/canonical base code plus a separately reported device material and distinct manufacturer GTIN; /xx indices, multiple URLs, colour labels and country suffixes never produce additional rows. All accepted sources report their own canonical code, not a shop alias.",
+    "indexRule": "Read the full E-Nr. from the Service page entrySectionData.variantId AND productId. A requested /xx URL, a 404 or a related model family is never evidence of that index. The checked index list is deliberately non-exhaustive.",
+    "partsRule": "No new parts or assignments. Each accepted model starts with 0 parts; preserved 102 physical Bosch articles plus 1 other article.",
+    "materialBoundary": "Manufacturer device-material metadata is used only for deduplication, not as a spare-part number, model ID or fitment approval. Two existing products do not expose this field; model-code and GTIN checks still cover all 60 baseline records.",
+    "ranking": "Selection is a documented catalogue intake, not a German bestseller ranking. No current price, stock or shipping data imported."
+  },
+  "baseline": {
+    "modelCodes": [
+      "BGL75X1PRQ",
+      "BGL8X329",
+      "BGL8XPER",
+      "BGB38HYG1",
+      "BGD38BU2",
+      "BGD41HYG",
+      "BGL6X3001",
+      "BGB75XSIL",
+      "BGLS2RD1",
+      "BGL6TPET",
+      "BGB41WH1",
+      "BGDS2CHAMP",
+      "BCS711EXT",
+      "BSS81POW1",
+      "BCH3ALL21",
+      "BTS1042WAC",
+      "BDS9BWHTE",
+      "BBS71BGREY",
+      "BBS71BHYG",
+      "BCS931TQC",
+      "BHH4WM28",
+      "BKS941PET",
+      "BTS942WQC",
+      "BSS712XHYG",
+      "BBS71BWHTE",
+      "BGC41LSIL",
+      "BGS7SIL1",
+      "BGC41XFMLY",
+      "BGS05A221",
+      "BGC41PET",
+      "BGS7MS64",
+      "BGC41XSIL",
+      "BGC21HYG1",
+      "BGD21BA3T",
+      "BGC41XHYG",
+      "BGS05WH2H",
+      "BGS21CAR",
+      "BGB6MPOW",
+      "BGB75X494",
+      "BGBS2X111",
+      "BGBS2LB1",
+      "BGS05A220",
+      "BGS05AAA1",
+      "BGS05BL1H",
+      "BBS611BSC",
+      "BBS611PCK",
+      "BBS611LAG",
+      "BCS611AM",
+      "BCS712E",
+      "BBS82BWHTE",
+      "BCS6111P",
+      "BGLS4SIL2",
+      "BGL8XALL",
+      "BGL8SIL0L",
+      "BGBS2BA1P",
+      "BGS7RCL",
+      "BGS7PET",
+      "BGL8XPERF",
+      "BGLS4A444",
+      "BGS41MPOW"
+    ],
+    "fileSha256": {
+      "src/data/bosch-records.js": "5f51fea9102016f1b16524b483cf3bc51412901a0ee58ab36fa4ee731a2a9f22",
+      "src/data/bosch-extra.js": "392cf5189071a210ea9fd17c326c8e40a59e7a0c6d055e3df9cb3c45dc71fc42"
+    },
+    "sourceIdentities": [
+      {
+        "code": "BGL75X1PRQ",
+        "observedModel": "BGL75X1PRQ",
+        "deviceMaterial": "00408683",
+        "ean": "4242005585465",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGL75X1PRQ",
+        "checkedAt": "2026-10-08T10:31:16.255403+00:00",
+        "httpStatus": 200,
+        "sha256": "a77d84eee73a6494b63a54cb63f91494928ad5e25c196888626f547a161e8905",
+        "status": "verified"
+      },
+      {
+        "code": "BGL8X329",
+        "observedModel": "BGL8X329",
+        "deviceMaterial": "00407529",
+        "ean": "4242005202805",
+        "url": "https://www.bosch-home.com/de/de/product/black-friday-haushaltsgeraete/staubsauger/BGL8X329",
+        "checkedAt": "2026-10-08T10:31:16.042381+00:00",
+        "httpStatus": 200,
+        "sha256": "19a3a2284d715cb96950c42da6d5be0c6b68626c739c70a20dc3132f18cc3796",
+        "status": "verified"
+      },
+      {
+        "code": "BGL8XPER",
+        "observedModel": "BGL8XPER",
+        "deviceMaterial": "00408431",
+        "ean": "4242005504985",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGL8XPER",
+        "checkedAt": "2026-10-08T10:31:16.436018+00:00",
+        "httpStatus": 200,
+        "sha256": "8ad3da8a9f0aa43b8b26800baddb7253e35056c825a7f28ee9c4e94f83b84303",
+        "status": "verified"
+      },
+      {
+        "code": "BGB38HYG1",
+        "observedModel": "BGB38HYG1",
+        "deviceMaterial": "00408110",
+        "ean": "4242005359349",
+        "url": "https://www.bosch-home.com/de/de/product/black-friday-haushaltsgeraete/staubsauger/BGB38HYG1",
+        "checkedAt": "2026-10-08T10:31:15.688522+00:00",
+        "httpStatus": 200,
+        "sha256": "e0adf3386c06c18e6df8e08162a1855b16b310104db84d409ed0b5bdc8f8c87e",
+        "status": "verified"
+      },
+      {
+        "code": "BGD38BU2",
+        "observedModel": "BGD38BU2",
+        "deviceMaterial": "00408111",
+        "ean": "4242005364022",
+        "url": "https://www.bosch-home.com/de/de/product/black-friday-haushaltsgeraete/staubsauger/BGD38BU2",
+        "checkedAt": "2026-10-08T10:31:23.067161+00:00",
+        "httpStatus": 200,
+        "sha256": "5f181ecf4997cfdda71b3ddaaa616395111224b3c0a9e6540d2f4b00f68d2e32",
+        "status": "verified"
+      },
+      {
+        "code": "BGD41HYG",
+        "observedModel": "BGD41HYG",
+        "deviceMaterial": "00408448",
+        "ean": "4242005484034",
+        "url": "https://www.bosch-home.com/de/de/product/black-friday-haushaltsgeraete/staubsauger/BGD41HYG",
+        "checkedAt": "2026-10-08T10:31:23.550337+00:00",
+        "httpStatus": 200,
+        "sha256": "3b16f8ec44d73e223ff6d060707d18c7430540dbad878f5060da08c217271f21",
+        "status": "verified"
+      },
+      {
+        "code": "BGL6X3001",
+        "observedModel": "BGL6X3001",
+        "deviceMaterial": "00407834",
+        "ean": "4242005288359",
+        "url": "https://www.bosch-home.com/de/de/product/black-friday-haushaltsgeraete/staubsauger/BGL6X3001",
+        "checkedAt": "2026-10-08T10:31:23.523227+00:00",
+        "httpStatus": 200,
+        "sha256": "926a7d5aa44780e9eb54a1ba9835afe0ac8d2aa2f79c6108acf9b0ab25eda5b7",
+        "status": "verified"
+      },
+      {
+        "code": "BGB75XSIL",
+        "observedModel": "BGB75XSIL",
+        "deviceMaterial": "00408169",
+        "ean": "4242005419807",
+        "url": "https://www.bosch-home.com/de/de/product/black-friday-haushaltsgeraete/staubsauger/BGB75XSIL",
+        "checkedAt": "2026-10-08T10:31:23.306266+00:00",
+        "httpStatus": 200,
+        "sha256": "900ca67b04c3e6e37e61bdc6f56c5e5d46a202e520132e07f28c9b924d22a5cd",
+        "status": "verified"
+      },
+      {
+        "code": "BGLS2RD1",
+        "observedModel": "BGLS2RD1",
+        "deviceMaterial": "00407941",
+        "ean": "4242005310968",
+        "url": "https://www.bosch-home.com/de/de/product/black-friday-haushaltsgeraete/staubsauger/BGLS2RD1",
+        "checkedAt": "2026-10-08T10:31:31.574370+00:00",
+        "httpStatus": 200,
+        "sha256": "a251d4acc6e4c179f5b2c739633d717005f447ebe304cc32734de64bcf2f5112",
+        "status": "verified"
+      },
+      {
+        "code": "BGL6TPET",
+        "observedModel": "BGL6TPET",
+        "deviceMaterial": "00407727",
+        "ean": "4242005258390",
+        "url": "https://www.bosch-home.com/de/de/product/black-friday-haushaltsgeraete/staubsauger/BGL6TPET",
+        "checkedAt": "2026-10-08T10:31:31.802132+00:00",
+        "httpStatus": 200,
+        "sha256": "4e93d3b0d6f96d5c019de1fea3282fbb057e0b808ba19ba917f8d9bf54ab1972",
+        "status": "verified"
+      },
+      {
+        "code": "BGB41WH1",
+        "observedModel": "BGB41WH1",
+        "deviceMaterial": "00408436",
+        "ean": "4242005484027",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGB41WH1",
+        "checkedAt": "2026-10-08T10:31:31.625187+00:00",
+        "httpStatus": 200,
+        "sha256": "1145b4b3772351def6fee70ddcc264f04df839ba2c97682a298fd589ead74be7",
+        "status": "verified"
+      },
+      {
+        "code": "BGDS2CHAMP",
+        "observedModel": "BGDS2CHAMP",
+        "deviceMaterial": "00408172",
+        "ean": "4242005416479",
+        "url": "https://www.bosch-home.com/de/de/product/black-friday-haushaltsgeraete/staubsauger/BGDS2CHAMP",
+        "checkedAt": "2026-10-08T10:31:31.263774+00:00",
+        "httpStatus": 200,
+        "sha256": "fefbb4abd168d792fd97c3d79536aade9f80efcdaaa7804cf287aa68b91d94e0",
+        "status": "verified"
+      },
+      {
+        "code": "BCS711EXT",
+        "observedModel": "BCS711EXT",
+        "deviceMaterial": "00407989",
+        "ean": "4242005306985",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-7/BCS711EXT",
+        "checkedAt": "2026-10-08T10:31:38.630411+00:00",
+        "httpStatus": 200,
+        "sha256": "033e92fa2ecaebffaf9b5737250bbda2a40c8399ad8eb0292d877a96cb61a258",
+        "status": "verified"
+      },
+      {
+        "code": "BSS81POW1",
+        "observedModel": "BSS81POW1",
+        "deviceMaterial": "00407662",
+        "ean": "4242005222063",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-8/BSS81POW1",
+        "checkedAt": "2026-10-08T10:31:37.851093+00:00",
+        "httpStatus": 200,
+        "sha256": "35d52a06cd3e47dd8ac9f6010100d1ec8100cb33f4b6a49ed68f4c9d8d80dabb",
+        "status": "verified"
+      },
+      {
+        "code": "BCH3ALL21",
+        "observedModel": "BCH3ALL21",
+        "deviceMaterial": "00407132",
+        "ean": "4242005110704",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/flexxo/BCH3ALL21",
+        "checkedAt": "2026-10-08T10:31:37.292504+00:00",
+        "httpStatus": 200,
+        "sha256": "60dc0a602b8f51c99f572d83798684c5226ad808c5459f2a202f7a275fc1ec90",
+        "status": "verified"
+      },
+      {
+        "code": "BTS1042WAC",
+        "observedModel": "BTS1042WAC",
+        "deviceMaterial": "00408570",
+        "ean": "4242005532551",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-10-akku-staubsauger/BTS1042WAC",
+        "checkedAt": "2026-10-08T10:31:36.862533+00:00",
+        "httpStatus": 200,
+        "sha256": "a339178ee51b977db769a690a0c98d09741d7e9d735141c8eec0331271a85e17",
+        "status": "verified"
+      },
+      {
+        "code": "BBS71BGREY",
+        "observedModel": "BBS71BGREY",
+        "deviceMaterial": "00408149",
+        "ean": "4242005388806",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-7/BBS71BGREY",
+        "checkedAt": "2026-10-08T10:31:45.156564+00:00",
+        "httpStatus": 200,
+        "sha256": "45d253a79ecaa33abbeef35ecc1577a11a81829ac3aee6f6ddbe2f311a3fca29",
+        "status": "verified"
+      },
+      {
+        "code": "BBS71BHYG",
+        "observedModel": "BBS71BHYG",
+        "deviceMaterial": "00408433",
+        "ean": "4242005503803",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-7/BBS71BHYG",
+        "checkedAt": "2026-10-08T10:31:45.491407+00:00",
+        "httpStatus": 200,
+        "sha256": "bad7a4b30495a1b01d6cbb6d87de04a24e4099b51c8e9af941d0cdfd946ab40a",
+        "status": "verified"
+      },
+      {
+        "code": "BCS931TQC",
+        "observedModel": "BCS931TQC",
+        "deviceMaterial": "00408534",
+        "ean": "4242005469222",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-9-akku-staubsauger/BCS931TQC",
+        "checkedAt": "2026-10-08T10:31:45.364140+00:00",
+        "httpStatus": 200,
+        "sha256": "ef5d0a4d838ad5a779067c9977cba064cc9bd67389d81dc295be049bd1eaecec",
+        "status": "verified"
+      },
+      {
+        "code": "BKS941PET",
+        "observedModel": "BKS941PET",
+        "deviceMaterial": "00408529",
+        "ean": "4242005469499",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-9-akku-staubsauger/BKS941PET",
+        "checkedAt": "2026-10-08T10:33:29.406702+00:00",
+        "httpStatus": 200,
+        "sha256": "72893b1559c04f919874d1c55fe5c7c8b218c169e66c337a1922750c09e5745e",
+        "status": "verified"
+      },
+      {
+        "code": "BTS942WQC",
+        "observedModel": "BTS942WQC",
+        "deviceMaterial": "00408638",
+        "ean": "4242005555918",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-9-akku-staubsauger/BTS942WQC",
+        "checkedAt": "2026-10-08T10:33:29.314680+00:00",
+        "httpStatus": 200,
+        "sha256": "9944dc619b092f7aecf9b2441b9298f6d0843a2f889f4bd8beaa5cbc69db8a5d",
+        "status": "verified"
+      },
+      {
+        "code": "BSS712XHYG",
+        "observedModel": "BSS712XHYG",
+        "deviceMaterial": "00408477",
+        "ean": "4242005517626",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-7/BSS712XHYG",
+        "checkedAt": "2026-10-08T10:33:28.761109+00:00",
+        "httpStatus": 200,
+        "sha256": "1b1015e7b7e84c510bbbf1caea13e65fd7a3f6551dcf105d4f17c4e6f602b3e0",
+        "status": "verified"
+      },
+      {
+        "code": "BBS71BWHTE",
+        "observedModel": "BBS71BWHTE",
+        "deviceMaterial": "00408147",
+        "ean": "4242005388837",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-7/BBS71BWHTE",
+        "checkedAt": "2026-10-08T10:33:36.879685+00:00",
+        "httpStatus": 200,
+        "sha256": "4d69b19bde6f8656461e3314f5393c4627466590afb3490b0ced9a121fddb190",
+        "status": "verified"
+      },
+      {
+        "code": "BGC41LSIL",
+        "observedModel": "BGC41LSIL",
+        "deviceMaterial": "00407604",
+        "ean": "4242005241613",
+        "url": "https://www.bosch-home.com/de/de/product/black-friday-haushaltsgeraete/staubsauger/BGC41LSIL",
+        "checkedAt": "2026-10-08T10:33:36.897902+00:00",
+        "httpStatus": 200,
+        "sha256": "4357288a2eb5c121cd40118ef03874cb07e79699ec03a663fc02d66061a331de",
+        "status": "verified"
+      },
+      {
+        "code": "BGS7SIL1",
+        "observedModel": "BGS7SIL1",
+        "deviceMaterial": "00407709",
+        "ean": "4242005255061",
+        "url": "https://www.bosch-home.com/de/de/product/black-friday-haushaltsgeraete/staubsauger/BGS7SIL1",
+        "checkedAt": "2026-10-08T10:33:36.052173+00:00",
+        "httpStatus": 200,
+        "sha256": "9ecba5398e7cfbb81883bfdb81f1b6314e8b3e2db8b5f18aa1e89ab504d7c9b6",
+        "status": "verified"
+      },
+      {
+        "code": "BGC41XFMLY",
+        "observedModel": "BGC41XFMLY",
+        "deviceMaterial": "00408310",
+        "ean": "4242005460403",
+        "url": "https://www.bosch-home.com/de/de/product/black-friday-haushaltsgeraete/staubsauger/BGC41XFMLY",
+        "checkedAt": "2026-10-08T10:33:36.968817+00:00",
+        "httpStatus": 200,
+        "sha256": "d094f158a996ab0b73d3b5a8c2cc2cb8b8fabb5f472f7eb6a5006d64d9205383",
+        "status": "verified"
+      },
+      {
+        "code": "BGS05A221",
+        "observedModel": "BGS05A221",
+        "deviceMaterial": "00406760",
+        "ean": "4242005076291",
+        "url": "https://www.bosch-home.com/de/de/product/black-friday-haushaltsgeraete/staubsauger/BGS05A221",
+        "checkedAt": "2026-10-08T10:33:45.597117+00:00",
+        "httpStatus": 200,
+        "sha256": "84d356e58e2041aff380bd519d7289cfed9d18d6feeac0b172e39928002b0064",
+        "status": "verified"
+      },
+      {
+        "code": "BGC41PET",
+        "observedModel": "BGC41PET",
+        "deviceMaterial": "00407602",
+        "ean": "4242005229574",
+        "url": "https://www.bosch-home.com/de/de/product/black-friday-haushaltsgeraete/staubsauger/BGC41PET",
+        "checkedAt": "2026-10-08T10:33:45.545509+00:00",
+        "httpStatus": 200,
+        "sha256": "5908a2d9220d3017cf5c005e0c210769ceaffb8c2f8d588410ff4ee9febd3c7c",
+        "status": "verified"
+      },
+      {
+        "code": "BGS7MS64",
+        "observedModel": "BGS7MS64",
+        "deviceMaterial": "00406632",
+        "ean": "4242005060818",
+        "url": "https://www.bosch-home.com/de/de/product/black-friday-haushaltsgeraete/staubsauger/BGS7MS64",
+        "checkedAt": "2026-10-08T10:33:46.826749+00:00",
+        "httpStatus": 200,
+        "sha256": "7b3bba1f24f3ced54bda57bca25af4ff808b2f091db01c8c447ac86e140fdac8",
+        "status": "verified"
+      },
+      {
+        "code": "BGC41XSIL",
+        "observedModel": "BGC41XSIL",
+        "deviceMaterial": "00407781",
+        "ean": "4242005282180",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/beutellose-staubsauger/BGC41XSIL",
+        "checkedAt": "2026-10-08T10:33:46.805820+00:00",
+        "httpStatus": 200,
+        "sha256": "54205db6766d1e31fb2b232d3377d12bc6dff4b1c2cbbac1a3d1c0b684e10198",
+        "status": "verified"
+      },
+      {
+        "code": "BGC21HYG1",
+        "observedModel": "BGC21HYG1",
+        "deviceMaterial": "00407884",
+        "ean": "4242005284580",
+        "url": "https://www.bosch-home.com/de/de/product/black-friday-haushaltsgeraete/staubsauger/BGC21HYG1",
+        "checkedAt": "2026-10-08T10:33:53.490693+00:00",
+        "httpStatus": 200,
+        "sha256": "a516fa5773002847433cedcda0448e46ea72927e45f6c8cc6fb476dfdddaf594",
+        "status": "verified"
+      },
+      {
+        "code": "BGD21BA3T",
+        "observedModel": "BGD21BA3T",
+        "deviceMaterial": "00408170",
+        "ean": "4242005427277",
+        "url": "https://www.bosch-home.com/de/de/product/black-friday-haushaltsgeraete/staubsauger/BGD21BA3T",
+        "checkedAt": "2026-10-08T10:33:53.911203+00:00",
+        "httpStatus": 200,
+        "sha256": "928fe41f8c247046b4220782a08e05485dc09f20a64876f51f8cd1a2974a035c",
+        "status": "verified"
+      },
+      {
+        "code": "BGC41XHYG",
+        "observedModel": "BGC41XHYG",
+        "deviceMaterial": "00408184",
+        "ean": "4242005419593",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/beutellose-staubsauger/BGC41XHYG",
+        "checkedAt": "2026-10-08T10:33:52.775337+00:00",
+        "httpStatus": 200,
+        "sha256": "9b25dc3cc485ee38034c2137604db3174e8857ce5d583ef622a8d67148af422c",
+        "status": "verified"
+      },
+      {
+        "code": "BGS05WH2H",
+        "observedModel": "BGS05WH2H",
+        "deviceMaterial": "00408864",
+        "ean": "4242005574636",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/beutellose-staubsauger/BGS05WH2H",
+        "checkedAt": "2026-10-08T10:33:53.552485+00:00",
+        "httpStatus": 200,
+        "sha256": "b169882041c5cf8015f66366ce0436d5ab7bb65057e288335cab9ff302a3c746",
+        "status": "verified"
+      },
+      {
+        "code": "BGS21CAR",
+        "observedModel": "BGS21CAR",
+        "deviceMaterial": "00408311",
+        "ean": "4242005453269",
+        "url": "https://www.bosch-home.com/de/de/product/black-friday-haushaltsgeraete/staubsauger/BGS21CAR",
+        "checkedAt": "2026-10-08T10:33:58.749583+00:00",
+        "httpStatus": 200,
+        "sha256": "39d5b9598858a57997bd470ddf4d1a189a6227754a68f879e288e3ddc1880bd0",
+        "status": "verified"
+      },
+      {
+        "code": "BGB6MPOW",
+        "observedModel": "BGB6MPOW",
+        "deviceMaterial": "00407635",
+        "ean": "4242005231454",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGB6MPOW",
+        "checkedAt": "2026-10-08T10:33:59.641751+00:00",
+        "httpStatus": 200,
+        "sha256": "252a3a9eac3f2321050d1841329f76b014cadd43002d3913533f1f0c29e4b512",
+        "status": "verified"
+      },
+      {
+        "code": "BGB75X494",
+        "observedModel": "BGB75X494",
+        "deviceMaterial": "00407569",
+        "ean": "4242005224814",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGB75X494",
+        "checkedAt": "2026-10-08T10:33:59.321841+00:00",
+        "httpStatus": 200,
+        "sha256": "59693d2fe0d3af1d247b80b6c9d7182eb54f591498367218ad1dad29fd59cb3f",
+        "status": "verified"
+      },
+      {
+        "code": "BGBS2X111",
+        "observedModel": "BGBS2X111",
+        "deviceMaterial": "00407956",
+        "ean": "4242005313754",
+        "url": "https://www.bosch-home.com/de/de/product/kunden-sortimente/BGBS2X111",
+        "checkedAt": "2026-10-08T10:33:58.488017+00:00",
+        "httpStatus": 200,
+        "sha256": "1cad99b5ea2809d892b6827ff669598c3f56c2fbac62fc3484c99e9404676b78",
+        "status": "verified"
+      },
+      {
+        "code": "BGBS2LB1",
+        "observedModel": "BGBS2LB1",
+        "deviceMaterial": "00407926",
+        "ean": "4242005310944",
+        "url": "https://www.bosch-home.com/de/de/product/kunden-sortimente/BGBS2LB1",
+        "checkedAt": "2026-10-08T10:34:06.678218+00:00",
+        "httpStatus": 200,
+        "sha256": "1cdf88a92ea4d5d557296c886442d31157a6a80291008f26e090019b50c3ee1f",
+        "status": "verified"
+      },
+      {
+        "code": "BGS05A220",
+        "observedModel": "BGS05A220",
+        "deviceMaterial": "00406759",
+        "ean": "4242005076277",
+        "url": "https://www.bosch-home.com/de/de/product/black-friday-haushaltsgeraete/staubsauger/BGS05A220",
+        "checkedAt": "2026-10-08T10:34:06.227644+00:00",
+        "httpStatus": 200,
+        "sha256": "d9f16b10abff10da86f02d6c734eac8bb9d2bf8faacae2f110509e7496f802b9",
+        "status": "verified"
+      },
+      {
+        "code": "BGS05AAA1",
+        "observedModel": "BGS05AAA1",
+        "deviceMaterial": "00407105",
+        "ean": "4242005134137",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/beutellose-staubsauger/BGS05AAA1",
+        "checkedAt": "2026-10-08T10:34:05.490946+00:00",
+        "httpStatus": 200,
+        "sha256": "1fda1e23bbb55695e4962cd2baeed6c4900f8943e6deba14316b3b9ea9aacd5c",
+        "status": "verified"
+      },
+      {
+        "code": "BGS05BL1H",
+        "observedModel": "BGS05BL1H",
+        "deviceMaterial": "00407965",
+        "ean": "4242005329885",
+        "url": "https://www.bosch-home.com/de/de/product/black-friday-haushaltsgeraete/staubsauger/BGS05BL1H",
+        "checkedAt": "2026-10-08T10:34:05.863311+00:00",
+        "httpStatus": 200,
+        "sha256": "209071e10fed7e523173839ec9d42befec91c54431ce1ddea08dcdae96045518",
+        "status": "verified"
+      },
+      {
+        "code": "BBS611BSC",
+        "observedModel": "BBS611BSC",
+        "deviceMaterial": "00407755",
+        "ean": "4242005260379",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-6/BBS611BSC",
+        "checkedAt": "2026-10-08T10:34:40.049938+00:00",
+        "httpStatus": 200,
+        "sha256": "97a109b4977ea74e40af0176da1f10bf41b5ad08ce24daa8608faa0ddf50a4ba",
+        "status": "verified"
+      },
+      {
+        "code": "BBS611PCK",
+        "observedModel": "BBS611PCK",
+        "deviceMaterial": "00407413",
+        "ean": "4242005182138",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-6/BBS611PCK",
+        "checkedAt": "2026-10-08T10:34:38.845463+00:00",
+        "httpStatus": 200,
+        "sha256": "1310f47c22f76c8b26ee1b70e7609ae7494c68de4ee14e6a22c50dad131dadc8",
+        "status": "verified"
+      },
+      {
+        "code": "BBS611LAG",
+        "observedModel": "BBS611LAG",
+        "deviceMaterial": "00407654",
+        "ean": "4242005238798",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-6/BBS611LAG",
+        "checkedAt": "2026-10-08T10:34:38.345463+00:00",
+        "httpStatus": 200,
+        "sha256": "35cac113f672a72488eb5f4d24f55e39eb37272dc907c96120ddb5a9be77787d",
+        "status": "verified"
+      },
+      {
+        "code": "BCS611AM",
+        "observedModel": "BCS611AM",
+        "deviceMaterial": "00407425",
+        "ean": "4242005182169",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-6/BCS611AM",
+        "checkedAt": "2026-10-08T10:34:38.487135+00:00",
+        "httpStatus": 200,
+        "sha256": "abf8692a18c8a31293d25ad3d6bfdd1cf0c3853c82b2e3953d08da15a6d3b053",
+        "status": "verified"
+      },
+      {
+        "code": "BCS712E",
+        "observedModel": "BCS712E",
+        "deviceMaterial": "00408299",
+        "ean": "4242005451685",
+        "url": "https://www.bosch-home.com/de/de/product/kunden-sortimente/BCS712E",
+        "checkedAt": "2026-10-08T10:34:46.337436+00:00",
+        "httpStatus": 200,
+        "sha256": "06ffc892866b098fb81313c265d5df78b8298ad5fa55bf25d14b168d47ecd42d",
+        "status": "verified"
+      },
+      {
+        "code": "BBS82BWHTE",
+        "observedModel": "BBS82BWHTE",
+        "deviceMaterial": "00407916",
+        "ean": "4242005310074",
+        "url": "https://www.bosch-home.com/de/de/product/BBS82BWHTE",
+        "checkedAt": "2026-10-08T10:34:46.386100+00:00",
+        "httpStatus": 200,
+        "sha256": "381765c59f9b00494957f22ab6af870985e0be3a15c02688e5e0471731451ff5",
+        "status": "verified"
+      },
+      {
+        "code": "BCS6111P",
+        "observedModel": "BCS6111P",
+        "deviceMaterial": "00407702",
+        "ean": "4242005240371",
+        "url": "https://www.bosch-home.com/de/de/product/BCS6111P",
+        "checkedAt": "2026-10-08T10:34:45.556306+00:00",
+        "httpStatus": 200,
+        "sha256": "410b8fd9bb4ae5f68274483ed4f5534e4c4c2e46a09d35aa7cef0596f54f8272",
+        "status": "verified"
+      },
+      {
+        "code": "BGLS4SIL2",
+        "observedModel": "BGLS4SIL2",
+        "deviceMaterial": "00407511",
+        "ean": "4242005221424",
+        "url": "https://www.bosch-home.com/de/de/product/BGLS4SIL2",
+        "checkedAt": "2026-10-08T10:34:45.402363+00:00",
+        "httpStatus": 200,
+        "sha256": "345f3223ba7284f9be84a7281a5a8b46fe44b771e6bd80d08bcd9208ec3252ac",
+        "status": "verified"
+      },
+      {
+        "code": "BGL8XALL",
+        "observedModel": "BGL8XALL",
+        "deviceMaterial": "00408046",
+        "ean": "4242005363100",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGL8XALL",
+        "checkedAt": "2026-10-08T10:34:52.889429+00:00",
+        "httpStatus": 200,
+        "sha256": "7fd2a16cb442a6d60f4363317ff3ddf559ecd043f86f5fbf9295d780ad92600f",
+        "status": "verified"
+      },
+      {
+        "code": "BGL8SIL0L",
+        "observedModel": "BGL8SIL0L",
+        "deviceMaterial": "00408720",
+        "ean": "4242005580842",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGL8SIL0L",
+        "checkedAt": "2026-10-08T10:34:52.976166+00:00",
+        "httpStatus": 200,
+        "sha256": "83d02b81f0653c7c271a0c0e33d9f50bb31db3d5b61e9b8ad72dfe7bc8ece0b0",
+        "status": "verified"
+      },
+      {
+        "code": "BGBS2BA1P",
+        "observedModel": "BGBS2BA1P",
+        "deviceMaterial": "00407927",
+        "ean": "4242005310913",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGBS2BA1P",
+        "checkedAt": "2026-10-08T10:34:52.828654+00:00",
+        "httpStatus": 200,
+        "sha256": "af164e06a671e19c816d3e1de7c85ff330d32ce76c908b61c44386b6cc42214c",
+        "status": "verified"
+      },
+      {
+        "code": "BGS7RCL",
+        "observedModel": "BGS7RCL",
+        "deviceMaterial": "00406463",
+        "ean": "4242002997933",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/beutellose-staubsauger/BGS7RCL",
+        "checkedAt": "2026-10-08T10:34:53.560531+00:00",
+        "httpStatus": 200,
+        "sha256": "a8d20972f5ac609c793daef4cd4f83d57d83ee4c54a5bcdd78fa91aaff88e90e",
+        "status": "verified"
+      },
+      {
+        "code": "BGS7PET",
+        "observedModel": "BGS7PET",
+        "deviceMaterial": "00407411",
+        "ean": "4242005203253",
+        "url": "https://www.bosch-home.com/de/de/product/BGS7PET",
+        "checkedAt": "2026-10-08T10:34:59.599285+00:00",
+        "httpStatus": 200,
+        "sha256": "0a3da45d44d76749607e63315ce918ac0649d14fe344b68c25c1b7710bc82539",
+        "status": "verified"
+      },
+      {
+        "code": "BGL8XPERF",
+        "observedModel": "BGL8XPERF",
+        "deviceMaterial": "00408283",
+        "ean": "4242005444243",
+        "url": "https://www.bosch-home.com/de/de/product/BGL8XPERF",
+        "checkedAt": "2026-10-08T10:34:59.435568+00:00",
+        "httpStatus": 200,
+        "sha256": "28d3094f81c718dc8fc34b3570882d8db07f488c0781eb757f20b5ad7502c04a",
+        "status": "verified"
+      },
+      {
+        "code": "BGLS4A444",
+        "observedModel": "BGLS4A444",
+        "deviceMaterial": "00407288",
+        "ean": "4242005172016",
+        "url": "https://www.bosch-home.com/de/de/product/staubsaugermitbeutel/BGLS4A444",
+        "checkedAt": "2026-10-08T10:35:00.292153+00:00",
+        "httpStatus": 200,
+        "sha256": "1e861d6b3fa4fa630179798735c4b0eba0ef5b694d78199fd74d434541504ca5",
+        "status": "verified"
+      },
+      {
+        "code": "BGS41MPOW",
+        "observedModel": "BGS41MPOW",
+        "deviceMaterial": "00407603",
+        "ean": "4242005229581",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/beutellose-staubsauger/BGS41MPOW",
+        "checkedAt": "2026-10-08T10:34:59.472215+00:00",
+        "httpStatus": 200,
+        "sha256": "c7368ce1f206590f8bdc2a78cb8464e9b2cdb775057a39b4e0c8f558282a00ec",
+        "status": "verified"
+      }
+    ]
+  },
+  "models": [
+    {
+      "manufacturer": "Bosch",
+      "baseModel": "BGB38BA1",
+      "name": "Serie 4 Staubsauger mit Beutel Schwarz",
+      "series": "Bosch Serie 4",
+      "deviceType": "bagged",
+      "color": "",
+      "manufacturerUrl": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGB38BA1",
+      "checkedAt": "2026-10-08T10:36:06.313329+00:00",
+      "status": "verified-model-reference",
+      "variants": [],
+      "manuals": [
+        {
+          "label": "Interaktive Gebrauchsanweisung",
+          "url": "https://www.bosch-home.com/de/manual/8001254429?productCode=BGB38BA1"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001346482_C.pdf"
+        },
+        {
+          "label": "Produktblatt",
+          "url": "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGB38BA1.pdf"
+        }
+      ],
+      "imageUrl": "https://media3.bsh-group.com/Product_Shots/19888964_BGB38BA1_STP_def.webp",
+      "sourceObservation": {
+        "observedModel": "BGB38BA1",
+        "canonicalModel": "BGB38BA1",
+        "deviceMaterial": "00408128",
+        "ean": "4242005359158",
+        "brand": "BOSCH",
+        "productType": "VIB",
+        "productFamily": "VaClCanister",
+        "name": "Serie 4 Staubsauger mit Beutel Schwarz",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGB38BA1",
+        "httpStatus": 200,
+        "sha256": "6e02dd6f7f392edb0ab973a009bae59ec0b2b7687c64f1c977623814fa9a8fb2",
+        "checkedAt": "2026-10-08T10:36:06.313329+00:00",
+        "manualUrls": [
+          "https://www.bosch-home.com/de/manual/8001254429?productCode=BGB38BA1",
+          "https://media3.bsh-group.com/Documents/8001346482_C.pdf",
+          "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGB38BA1.pdf",
+          "https://media3.bsh-group.com/Documents/legalcollection_BGB38BA1_de-DE.pdf",
+          "https://media3.bsh-group.com/Documents/8001273055_E.pdf",
+          "https://media3.bsh-group.com/Documents/8001384842_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001382472_B.pdf",
+          "https://media3.bsh-group.com/Documents/8001311722_C.pdf"
+        ],
+        "selectableColorVariants": [],
+        "selectableProductVariants": []
+      },
+      "duplicateCheck": {
+        "baseAbsent": true,
+        "canonicalMatchesBase": true,
+        "gtinAbsent": true,
+        "deviceMaterialAbsentInObservedBaseline": true
+      },
+      "partCount": 0,
+      "relationships": []
+    },
+    {
+      "manufacturer": "Bosch",
+      "baseModel": "BGB41POW1",
+      "name": "Serie 4 Staubsauger mit Beutel ProPower Schwarz",
+      "series": "Bosch Serie 4",
+      "deviceType": "bagged",
+      "color": "Schwarz",
+      "manufacturerUrl": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGB41POW1",
+      "checkedAt": "2026-10-08T10:36:06.323567+00:00",
+      "status": "verified-model-reference",
+      "variants": [],
+      "manuals": [
+        {
+          "label": "Interaktive Gebrauchsanweisung",
+          "url": "https://www.bosch-home.com/de/manual/8001307258?productCode=BGB41POW1"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001346484_D.pdf"
+        },
+        {
+          "label": "Produktblatt",
+          "url": "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGB41POW1.pdf"
+        }
+      ],
+      "imageUrl": "https://media3.bsh-group.com/Product_Shots/24793651_BGB41POW1_STP_def.webp",
+      "sourceObservation": {
+        "observedModel": "BGB41POW1",
+        "canonicalModel": "BGB41POW1",
+        "deviceMaterial": "00408440",
+        "ean": "4242005483990",
+        "brand": "BOSCH",
+        "productType": "VIB",
+        "productFamily": "VaClCanister",
+        "name": "Serie 4 Staubsauger mit Beutel ProPower Schwarz",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGB41POW1",
+        "httpStatus": 200,
+        "sha256": "be60ff896d3dca0ccdcc2583f8b6e3940b4b1e2ba96e6878674666781aa5a790",
+        "checkedAt": "2026-10-08T10:36:06.323567+00:00",
+        "manualUrls": [
+          "https://www.bosch-home.com/de/manual/8001307258?productCode=BGB41POW1",
+          "https://media3.bsh-group.com/Documents/8001346484_D.pdf",
+          "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGB41POW1.pdf",
+          "https://media3.bsh-group.com/Documents/legalcollection_BGB41POW1_de-DE.pdf",
+          "https://media3.bsh-group.com/Documents/8001273055_E.pdf",
+          "https://media3.bsh-group.com/Documents/8001384842_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001382472_B.pdf",
+          "https://media3.bsh-group.com/Documents/8001311722_C.pdf"
+        ],
+        "selectableColorVariants": [],
+        "selectableProductVariants": []
+      },
+      "duplicateCheck": {
+        "baseAbsent": true,
+        "canonicalMatchesBase": true,
+        "gtinAbsent": true,
+        "deviceMaterialAbsentInObservedBaseline": true
+      },
+      "partCount": 0,
+      "relationships": []
+    },
+    {
+      "manufacturer": "Bosch",
+      "baseModel": "BGB6SIL0L",
+      "name": "Serie 6 Staubsauger mit Beutel ProSilence Weiß",
+      "series": "Bosch Serie 6",
+      "deviceType": "bagged",
+      "color": "Weiß",
+      "manufacturerUrl": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGB6SIL0L",
+      "checkedAt": "2026-10-08T10:36:06.092337+00:00",
+      "status": "verified-model-reference",
+      "variants": [
+        {
+          "eNumber": "BGB6SIL0L/01",
+          "observedENumber": "BGB6SIL0L/01",
+          "productId": "BGB6SIL0L/01",
+          "url": "https://www.bosch-home.com/de/de/productservice/BGB6SIL0L-01",
+          "brand": "BOSCH",
+          "httpStatus": 200,
+          "sha256": "2dc3d99227e2a23556f5739c0c5c042875b53eaa13edd6e672a8addbbb6bee3b",
+          "checkedAt": "2026-10-08T10:35:51.218586+00:00"
+        }
+      ],
+      "manuals": [
+        {
+          "label": "Interaktive Gebrauchsanweisung",
+          "url": "https://www.bosch-home.com/de/manual/8001379885?productCode=BGB6SIL0L"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001374277_B.pdf"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001397014_A.pdf"
+        },
+        {
+          "label": "Produktblatt",
+          "url": "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGB6SIL0L.pdf"
+        }
+      ],
+      "imageUrl": "https://media3.bsh-group.com/Product_Shots/27892126_BGB6SIL0L_STP_def.webp",
+      "sourceObservation": {
+        "observedModel": "BGB6SIL0L",
+        "canonicalModel": "BGB6SIL0L",
+        "deviceMaterial": "00408702",
+        "ean": "4242005580828",
+        "brand": "BOSCH",
+        "productType": "VIB",
+        "productFamily": "VaClCanister",
+        "name": "Serie 6 Staubsauger mit Beutel ProSilence Weiß",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGB6SIL0L",
+        "httpStatus": 200,
+        "sha256": "5f9beda8977e19dc60d4835ccd41f6714dc3c3279747caeeb41e06f6372d151d",
+        "checkedAt": "2026-10-08T10:36:06.092337+00:00",
+        "manualUrls": [
+          "https://www.bosch-home.com/de/manual/8001379885?productCode=BGB6SIL0L",
+          "https://media3.bsh-group.com/Documents/8001374277_B.pdf",
+          "https://media3.bsh-group.com/Documents/8001397014_A.pdf",
+          "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGB6SIL0L.pdf",
+          "https://media3.bsh-group.com/Documents/legalcollection_BGB6SIL0L_de-DE.pdf",
+          "https://media3.bsh-group.com/Documents/8001384842_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001382472_B.pdf",
+          "https://media3.bsh-group.com/Documents/8001321931_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001311722_C.pdf",
+          "https://media3.bsh-group.com/Documents/8001273055_E.pdf"
+        ],
+        "selectableColorVariants": [],
+        "selectableProductVariants": []
+      },
+      "duplicateCheck": {
+        "baseAbsent": true,
+        "canonicalMatchesBase": true,
+        "gtinAbsent": true,
+        "deviceMaterialAbsentInObservedBaseline": true
+      },
+      "partCount": 0,
+      "relationships": []
+    },
+    {
+      "manufacturer": "Bosch",
+      "baseModel": "BGB6SIL1",
+      "name": "Serie 6 Staubsauger mit Beutel ProSilence Weiß",
+      "series": "Bosch Serie 6",
+      "deviceType": "bagged",
+      "color": "Weiß",
+      "manufacturerUrl": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGB6SIL1",
+      "checkedAt": "2026-10-08T10:36:06.651375+00:00",
+      "status": "verified-model-reference",
+      "variants": [
+        {
+          "eNumber": "BGB6SIL1/01",
+          "observedENumber": "BGB6SIL1/01",
+          "productId": "BGB6SIL1/01",
+          "url": "https://www.bosch-home.com/de/de/productservice/BGB6SIL1-01",
+          "brand": "BOSCH",
+          "httpStatus": 200,
+          "sha256": "460adc130da74bd7af57aeb4c68d15a6adb5679aa3201ce353a0ccf5a4a7a776",
+          "checkedAt": "2026-10-08T10:35:58.554652+00:00"
+        }
+      ],
+      "manuals": [
+        {
+          "label": "Interaktive Gebrauchsanweisung",
+          "url": "https://www.bosch-home.com/de/manual/8001250807?productCode=BGB6SIL1"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001345820_B.pdf"
+        },
+        {
+          "label": "Produktblatt",
+          "url": "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGB6SIL1.pdf"
+        }
+      ],
+      "imageUrl": "https://media3.bsh-group.com/Product_Shots/12768830_BGB6SIL1_STP_def.webp",
+      "sourceObservation": {
+        "observedModel": "BGB6SIL1",
+        "canonicalModel": "BGB6SIL1",
+        "deviceMaterial": "00407628",
+        "ean": "4242005227877",
+        "brand": "BOSCH",
+        "productType": "VIB",
+        "productFamily": "VaClCanister",
+        "name": "Serie 6 Staubsauger mit Beutel ProSilence Weiß",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGB6SIL1",
+        "httpStatus": 200,
+        "sha256": "26e1b5d9b044b75f2c0e5aa9353822313195b380c60883f8b1ade3272852d492",
+        "checkedAt": "2026-10-08T10:36:06.651375+00:00",
+        "manualUrls": [
+          "https://www.bosch-home.com/de/manual/8001250807?productCode=BGB6SIL1",
+          "https://media3.bsh-group.com/Documents/8001345820_B.pdf",
+          "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGB6SIL1.pdf",
+          "https://media3.bsh-group.com/Documents/legalcollection_BGB6SIL1_de-DE.pdf",
+          "https://media3.bsh-group.com/Documents/8001273055_E.pdf",
+          "https://media3.bsh-group.com/Documents/8001311722_C.pdf",
+          "https://media3.bsh-group.com/Documents/8001280550_C.pdf",
+          "https://media3.bsh-group.com/Documents/8001321931_A.pdf"
+        ],
+        "selectableColorVariants": [],
+        "selectableProductVariants": []
+      },
+      "duplicateCheck": {
+        "baseAbsent": true,
+        "canonicalMatchesBase": true,
+        "gtinAbsent": true,
+        "deviceMaterialAbsentInObservedBaseline": true
+      },
+      "partCount": 0,
+      "relationships": []
+    },
+    {
+      "manufacturer": "Bosch",
+      "baseModel": "BGB6X300",
+      "name": "Serie 6 Staubsauger mit Beutel Blau",
+      "series": "Bosch Serie 6",
+      "deviceType": "bagged",
+      "color": "Imperialblau",
+      "manufacturerUrl": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGB6X300",
+      "checkedAt": "2026-10-08T10:36:13.936987+00:00",
+      "status": "verified-model-reference",
+      "variants": [
+        {
+          "eNumber": "BGB6X300/01",
+          "observedENumber": "BGB6X300/01",
+          "productId": "BGB6X300/01",
+          "url": "https://www.bosch-home.com/de/de/productservice/BGB6X300-01",
+          "brand": "BOSCH",
+          "httpStatus": 200,
+          "sha256": "128871ce08984ebbb78417ea77f23cc80f26587ed5fb55e3a4686273e8387a8e",
+          "checkedAt": "2026-10-08T10:35:58.538452+00:00"
+        }
+      ],
+      "manuals": [
+        {
+          "label": "Interaktive Gebrauchsanweisung",
+          "url": "https://www.bosch-home.com/de/manual/8001251496?productCode=BGB6X300"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001345822_C.pdf"
+        },
+        {
+          "label": "Produktblatt",
+          "url": "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGB6X300.pdf"
+        }
+      ],
+      "imageUrl": "https://media3.bsh-group.com/Product_Shots/12768970_BGB6X300_STP_def.webp",
+      "sourceObservation": {
+        "observedModel": "BGB6X300",
+        "canonicalModel": "BGB6X300",
+        "deviceMaterial": "00407695",
+        "ean": "4242005231881",
+        "brand": "BOSCH",
+        "productType": "VIB",
+        "productFamily": "VaClCanister",
+        "name": "Serie 6 Staubsauger mit Beutel Blau",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGB6X300",
+        "httpStatus": 200,
+        "sha256": "09cc1b2b1f1e745d70b111e566462af7f2579f08afbf8195bda4eaf1ec9e725c",
+        "checkedAt": "2026-10-08T10:36:13.936987+00:00",
+        "manualUrls": [
+          "https://www.bosch-home.com/de/manual/8001251496?productCode=BGB6X300",
+          "https://media3.bsh-group.com/Documents/8001345822_C.pdf",
+          "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGB6X300.pdf",
+          "https://media3.bsh-group.com/Documents/legalcollection_BGB6X300_de-DE.pdf",
+          "https://media3.bsh-group.com/Documents/8001273055_E.pdf",
+          "https://media3.bsh-group.com/Documents/8001280550_C.pdf",
+          "https://media3.bsh-group.com/Documents/8001384842_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001382472_B.pdf",
+          "https://media3.bsh-group.com/Documents/8001311722_C.pdf"
+        ],
+        "selectableColorVariants": [],
+        "selectableProductVariants": []
+      },
+      "duplicateCheck": {
+        "baseAbsent": true,
+        "canonicalMatchesBase": true,
+        "gtinAbsent": true,
+        "deviceMaterialAbsentInObservedBaseline": true
+      },
+      "partCount": 0,
+      "relationships": []
+    },
+    {
+      "manufacturer": "Bosch",
+      "baseModel": "BGB6X320",
+      "name": "Serie 6 Staubsauger mit Beutel Schwarz",
+      "series": "Bosch Serie 6",
+      "deviceType": "bagged",
+      "color": "Schwarz",
+      "manufacturerUrl": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGB6X320",
+      "checkedAt": "2026-10-08T10:36:14.394525+00:00",
+      "status": "verified-model-reference",
+      "variants": [
+        {
+          "eNumber": "BGB6X320/01",
+          "observedENumber": "BGB6X320/01",
+          "productId": "BGB6X320/01",
+          "url": "https://www.bosch-home.com/de/de/productservice/BGB6X320-01",
+          "brand": "BOSCH",
+          "httpStatus": 200,
+          "sha256": "45e3946627df0ecf2864602f783cfe83de54f9745e30dd1d2b6f477bb74fa43d",
+          "checkedAt": "2026-10-08T10:35:58.777071+00:00"
+        }
+      ],
+      "manuals": [
+        {
+          "label": "Interaktive Gebrauchsanweisung",
+          "url": "https://www.bosch-home.com/de/manual/8001251496?productCode=BGB6X320"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001345822_C.pdf"
+        },
+        {
+          "label": "Produktblatt",
+          "url": "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGB6X320.pdf"
+        }
+      ],
+      "imageUrl": "https://media3.bsh-group.com/Product_Shots/13231570_BGB6X320_STP_def.webp",
+      "sourceObservation": {
+        "observedModel": "BGB6X320",
+        "canonicalModel": "BGB6X320",
+        "deviceMaterial": "00407696",
+        "ean": "4242005247400",
+        "brand": "BOSCH",
+        "productType": "VIB",
+        "productFamily": "VaClCanister",
+        "name": "Serie 6 Staubsauger mit Beutel Schwarz",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGB6X320",
+        "httpStatus": 200,
+        "sha256": "e419f15cd91a19e5f16bfe47d1dbd91432fb3e55f63615e061c0a95ec9c81164",
+        "checkedAt": "2026-10-08T10:36:14.394525+00:00",
+        "manualUrls": [
+          "https://www.bosch-home.com/de/manual/8001251496?productCode=BGB6X320",
+          "https://media3.bsh-group.com/Documents/8001345822_C.pdf",
+          "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGB6X320.pdf",
+          "https://media3.bsh-group.com/Documents/legalcollection_BGB6X320_de-DE.pdf",
+          "https://media3.bsh-group.com/Documents/8001273055_E.pdf",
+          "https://media3.bsh-group.com/Documents/8001311722_C.pdf",
+          "https://media3.bsh-group.com/Documents/8001280550_C.pdf",
+          "https://media3.bsh-group.com/Documents/8001384842_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001382472_B.pdf"
+        ],
+        "selectableColorVariants": [],
+        "selectableProductVariants": []
+      },
+      "duplicateCheck": {
+        "baseAbsent": true,
+        "canonicalMatchesBase": true,
+        "gtinAbsent": true,
+        "deviceMaterialAbsentInObservedBaseline": true
+      },
+      "partCount": 0,
+      "relationships": []
+    },
+    {
+      "manufacturer": "Bosch",
+      "baseModel": "BGB75X650",
+      "name": "Serie 8 Staubsauger mit Beutel Classic Schwarz",
+      "series": "Bosch Serie 8",
+      "deviceType": "bagged",
+      "color": "Schwarz",
+      "manufacturerUrl": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGB75X650",
+      "checkedAt": "2026-10-08T10:36:14.772148+00:00",
+      "status": "verified-model-reference",
+      "variants": [
+        {
+          "eNumber": "BGB75X650/01",
+          "observedENumber": "BGB75X650/01",
+          "productId": "BGB75X650/01",
+          "url": "https://www.bosch-home.com/de/de/productservice/BGB75X650-01",
+          "brand": "BOSCH",
+          "httpStatus": 200,
+          "sha256": "e0bf2845272e5e0a5a6dc9bb89e383373f368d5561f100df4281c867c75431ae",
+          "checkedAt": "2026-10-08T10:36:03.475080+00:00"
+        }
+      ],
+      "manuals": [
+        {
+          "label": "Interaktive Gebrauchsanweisung",
+          "url": "https://www.bosch-home.com/de/manual/8001250808?productCode=BGB75X650"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001352316_B.pdf"
+        },
+        {
+          "label": "Produktblatt",
+          "url": "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGB75X650.pdf"
+        }
+      ],
+      "imageUrl": "https://media3.bsh-group.com/Product_Shots/26622804_BGB75X650_STP_def.webp",
+      "sourceObservation": {
+        "observedModel": "BGB75X650",
+        "canonicalModel": "BGB75X650",
+        "deviceMaterial": "00408627",
+        "ean": "4242005550517",
+        "brand": "BOSCH",
+        "productType": "VIB",
+        "productFamily": "VaClCanister",
+        "name": "Serie 8 Staubsauger mit Beutel Classic Schwarz",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGB75X650",
+        "httpStatus": 200,
+        "sha256": "4938717d976c3d2be7fe0d396dd1e3d0d937bc006704c8ec48cf7566813f9826",
+        "checkedAt": "2026-10-08T10:36:14.772148+00:00",
+        "manualUrls": [
+          "https://www.bosch-home.com/de/manual/8001250808?productCode=BGB75X650",
+          "https://media3.bsh-group.com/Documents/8001352316_B.pdf",
+          "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGB75X650.pdf",
+          "https://media3.bsh-group.com/Documents/legalcollection_BGB75X650_de-DE.pdf",
+          "https://media3.bsh-group.com/Documents/8001273055_E.pdf",
+          "https://media3.bsh-group.com/Documents/8001384842_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001311722_C.pdf",
+          "https://media3.bsh-group.com/Documents/8001382472_B.pdf"
+        ],
+        "selectableColorVariants": [],
+        "selectableProductVariants": []
+      },
+      "duplicateCheck": {
+        "baseAbsent": true,
+        "canonicalMatchesBase": true,
+        "gtinAbsent": true,
+        "deviceMaterialAbsentInObservedBaseline": true
+      },
+      "partCount": 0,
+      "relationships": []
+    },
+    {
+      "manufacturer": "Bosch",
+      "baseModel": "BGDS2BA1",
+      "name": "Serie 2 Staubsauger mit Beutel Schwarz",
+      "series": "Bosch Serie 2",
+      "deviceType": "bagged",
+      "color": "Schwarz",
+      "manufacturerUrl": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGDS2BA1",
+      "checkedAt": "2026-10-08T10:36:49.702618+00:00",
+      "status": "verified-model-reference",
+      "variants": [
+        {
+          "eNumber": "BGDS2BA1/01",
+          "observedENumber": "BGDS2BA1/01",
+          "productId": "BGDS2BA1/01",
+          "url": "https://www.bosch-home.com/de/de/productservice/BGDS2BA1-01",
+          "brand": "BOSCH",
+          "httpStatus": 200,
+          "sha256": "abebe94cbdcfff1158761c4e48a88591fc089939f304c383a89f26abf418cdbd",
+          "checkedAt": "2026-10-08T10:36:03.625855+00:00"
+        }
+      ],
+      "manuals": [
+        {
+          "label": "Interaktive Gebrauchsanweisung",
+          "url": "https://www.bosch-home.com/de/manual/8001222184?productCode=BGDS2BA1"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001346480_C.pdf"
+        },
+        {
+          "label": "Produktblatt",
+          "url": "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGDS2BA1.pdf"
+        }
+      ],
+      "imageUrl": "https://media3.bsh-group.com/Product_Shots/22698250_BGDS2BA1_STP_def.webp",
+      "sourceObservation": {
+        "observedModel": "BGDS2BA1",
+        "canonicalModel": "BGDS2BA1",
+        "deviceMaterial": "00408281",
+        "ean": "4242005444236",
+        "brand": "BOSCH",
+        "productType": "VIB",
+        "productFamily": "VaClCanister",
+        "name": "Serie 2 Staubsauger mit Beutel Schwarz",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGDS2BA1",
+        "httpStatus": 200,
+        "sha256": "e31b3232dac97206cb5f3a452ab435691eb74a442511595d279fdb166e9e5c74",
+        "checkedAt": "2026-10-08T10:36:49.702618+00:00",
+        "manualUrls": [
+          "https://www.bosch-home.com/de/manual/8001222184?productCode=BGDS2BA1",
+          "https://media3.bsh-group.com/Documents/8001346480_C.pdf",
+          "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGDS2BA1.pdf",
+          "https://media3.bsh-group.com/Documents/legalcollection_BGDS2BA1_de-DE.pdf",
+          "https://media3.bsh-group.com/Documents/8001273055_E.pdf",
+          "https://media3.bsh-group.com/Documents/8001311722_C.pdf",
+          "https://media3.bsh-group.com/Documents/8001280550_C.pdf",
+          "https://media3.bsh-group.com/Documents/8001384842_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001382472_B.pdf"
+        ],
+        "selectableColorVariants": [],
+        "selectableProductVariants": []
+      },
+      "duplicateCheck": {
+        "baseAbsent": true,
+        "canonicalMatchesBase": true,
+        "gtinAbsent": true,
+        "deviceMaterialAbsentInObservedBaseline": true
+      },
+      "partCount": 0,
+      "relationships": []
+    },
+    {
+      "manufacturer": "Bosch",
+      "baseModel": "BGDS2BAL",
+      "name": "Serie 2 Staubsauger mit Beutel Schwarz",
+      "series": "Bosch Serie 2",
+      "deviceType": "bagged",
+      "color": "Schwarz",
+      "manufacturerUrl": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGDS2BAL",
+      "checkedAt": "2026-10-08T10:36:50.687717+00:00",
+      "status": "verified-model-reference",
+      "variants": [
+        {
+          "eNumber": "BGDS2BAL/01",
+          "observedENumber": "BGDS2BAL/01",
+          "productId": "BGDS2BAL/01",
+          "url": "https://www.bosch-home.com/de/de/productservice/BGDS2BAL-01",
+          "brand": "BOSCH",
+          "httpStatus": 200,
+          "sha256": "4c067979b5e9a2f7315db4644519d3d25d69ceb147ad025f150e0bdcd4e6a535",
+          "checkedAt": "2026-10-08T10:36:03.492416+00:00"
+        }
+      ],
+      "manuals": [
+        {
+          "label": "Interaktive Gebrauchsanweisung",
+          "url": "https://www.bosch-home.com/de/manual/8001222184?productCode=BGDS2BAL"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001379708_A.pdf"
+        },
+        {
+          "label": "Produktblatt",
+          "url": "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGDS2BAL.pdf"
+        }
+      ],
+      "imageUrl": "https://media3.bsh-group.com/Product_Shots/28204514_BGDS2BAL_STP_def.webp",
+      "sourceObservation": {
+        "observedModel": "BGDS2BAL",
+        "canonicalModel": "BGDS2BAL",
+        "deviceMaterial": "00408780",
+        "ean": "4242005591169",
+        "brand": "BOSCH",
+        "productType": "VIB",
+        "productFamily": "VaClCanister",
+        "name": "Serie 2 Staubsauger mit Beutel Schwarz",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGDS2BAL",
+        "httpStatus": 200,
+        "sha256": "215b87ca61f0590d21eaae0c0a8f20b1df8017a2d928bc27d6ae5f09cc36fff8",
+        "checkedAt": "2026-10-08T10:36:50.687717+00:00",
+        "manualUrls": [
+          "https://www.bosch-home.com/de/manual/8001222184?productCode=BGDS2BAL",
+          "https://media3.bsh-group.com/Documents/8001379708_A.pdf",
+          "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGDS2BAL.pdf",
+          "https://media3.bsh-group.com/Documents/legalcollection_BGDS2BAL_de-DE.pdf",
+          "https://media3.bsh-group.com/Documents/8001384842_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001382472_B.pdf",
+          "https://media3.bsh-group.com/Documents/8001311722_C.pdf",
+          "https://media3.bsh-group.com/Documents/8001273055_E.pdf"
+        ],
+        "selectableColorVariants": [],
+        "selectableProductVariants": []
+      },
+      "duplicateCheck": {
+        "baseAbsent": true,
+        "canonicalMatchesBase": true,
+        "gtinAbsent": true,
+        "deviceMaterialAbsentInObservedBaseline": true
+      },
+      "partCount": 0,
+      "relationships": []
+    },
+    {
+      "manufacturer": "Bosch",
+      "baseModel": "BGL6TSIL",
+      "name": "Serie 6 Staubsauger mit Beutel ProSilence Weiß",
+      "series": "Bosch Serie 6",
+      "deviceType": "bagged",
+      "color": "Weiß",
+      "manufacturerUrl": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGL6TSIL",
+      "checkedAt": "2026-10-08T10:36:50.799315+00:00",
+      "status": "verified-model-reference",
+      "variants": [
+        {
+          "eNumber": "BGL6TSIL/01",
+          "observedENumber": "BGL6TSIL/01",
+          "productId": "BGL6TSIL/01",
+          "url": "https://www.bosch-home.com/de/de/productservice/BGL6TSIL-01",
+          "brand": "BOSCH",
+          "httpStatus": 200,
+          "sha256": "1548ea8ce54f8d5ec13180cbea46ae06bab0c4fdccc673b34fa0075d8dc354ec",
+          "checkedAt": "2026-10-08T10:36:09.216015+00:00"
+        }
+      ],
+      "manuals": [
+        {
+          "label": "Interaktive Gebrauchsanweisung",
+          "url": "https://www.bosch-home.com/de/manual/8001250807?productCode=BGL6TSIL"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001396669_A.pdf"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001345820_B.pdf"
+        },
+        {
+          "label": "Produktblatt",
+          "url": "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGL6TSIL.pdf"
+        }
+      ],
+      "imageUrl": "https://media3.bsh-group.com/Product_Shots/12768844_BGL6TSIL_STP_def.webp",
+      "sourceObservation": {
+        "observedModel": "BGL6TSIL",
+        "canonicalModel": "BGL6TSIL",
+        "deviceMaterial": "00407632",
+        "ean": "4242005231461",
+        "brand": "BOSCH",
+        "productType": "VIB",
+        "productFamily": "VaClCanister",
+        "name": "Serie 6 Staubsauger mit Beutel ProSilence Weiß",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGL6TSIL",
+        "httpStatus": 200,
+        "sha256": "307752aed1b71d94e300b945c4ab34d2e1bb0bee94370ad20288136becbc00a4",
+        "checkedAt": "2026-10-08T10:36:50.799315+00:00",
+        "manualUrls": [
+          "https://www.bosch-home.com/de/manual/8001250807?productCode=BGL6TSIL",
+          "https://media3.bsh-group.com/Documents/8001396669_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001345820_B.pdf",
+          "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGL6TSIL.pdf",
+          "https://media3.bsh-group.com/Documents/legalcollection_BGL6TSIL_de-DE.pdf",
+          "https://media3.bsh-group.com/Documents/8001273055_E.pdf",
+          "https://media3.bsh-group.com/Documents/8001311722_C.pdf",
+          "https://media3.bsh-group.com/Documents/8001280550_C.pdf",
+          "https://media3.bsh-group.com/Documents/8001321931_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001384842_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001382472_B.pdf"
+        ],
+        "selectableColorVariants": [],
+        "selectableProductVariants": []
+      },
+      "duplicateCheck": {
+        "baseAbsent": true,
+        "canonicalMatchesBase": true,
+        "gtinAbsent": true,
+        "deviceMaterialAbsentInObservedBaseline": true
+      },
+      "partCount": 0,
+      "relationships": []
+    },
+    {
+      "manufacturer": "Bosch",
+      "baseModel": "BGL75XPRQ",
+      "name": "Serie 8 Staubsauger mit Beutel ProSilence Grau",
+      "series": "Bosch Serie 8",
+      "deviceType": "bagged",
+      "color": "",
+      "manufacturerUrl": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGL75XPRQ",
+      "checkedAt": "2026-10-08T10:36:49.958268+00:00",
+      "status": "verified-model-reference",
+      "variants": [],
+      "manuals": [
+        {
+          "label": "Interaktive Gebrauchsanweisung",
+          "url": "https://www.bosch-home.com/de/manual/8001250808?productCode=BGL75XPRQ"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001344770_A.pdf"
+        },
+        {
+          "label": "Produktblatt",
+          "url": "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGL75XPRQ.pdf"
+        }
+      ],
+      "imageUrl": "https://media3.bsh-group.com/Product_Shots/26015607_BGL75XPRQ__STP_def.webp",
+      "sourceObservation": {
+        "observedModel": "BGL75XPRQ",
+        "canonicalModel": "BGL75XPRQ",
+        "deviceMaterial": "00408572",
+        "ean": "4242005533688",
+        "brand": "BOSCH",
+        "productType": "VIB",
+        "productFamily": "VaClCanister",
+        "name": "Serie 8 Staubsauger mit Beutel ProSilence Grau",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGL75XPRQ",
+        "httpStatus": 200,
+        "sha256": "2ca9073a484df39e8b5777572be0061f83563ff83a0fda434eb62fb9fe9f83b9",
+        "checkedAt": "2026-10-08T10:36:49.958268+00:00",
+        "manualUrls": [
+          "https://www.bosch-home.com/de/manual/8001250808?productCode=BGL75XPRQ",
+          "https://media3.bsh-group.com/Documents/8001344770_A.pdf",
+          "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGL75XPRQ.pdf",
+          "https://media3.bsh-group.com/Documents/legalcollection_BGL75XPRQ_de-DE.pdf",
+          "https://media3.bsh-group.com/Documents/8001273055_E.pdf",
+          "https://media3.bsh-group.com/Documents/8001311722_C.pdf"
+        ],
+        "selectableColorVariants": [],
+        "selectableProductVariants": []
+      },
+      "duplicateCheck": {
+        "baseAbsent": true,
+        "canonicalMatchesBase": true,
+        "gtinAbsent": true,
+        "deviceMaterialAbsentInObservedBaseline": true
+      },
+      "partCount": 0,
+      "relationships": []
+    },
+    {
+      "manufacturer": "Bosch",
+      "baseModel": "BGL8SIL5",
+      "name": "Serie 8 Staubsauger mit Beutel ProSilence Weiß",
+      "series": "Bosch Serie 8",
+      "deviceType": "bagged",
+      "color": "",
+      "manufacturerUrl": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGL8SIL5",
+      "checkedAt": "2026-10-08T10:36:54.304304+00:00",
+      "status": "verified-model-reference",
+      "variants": [],
+      "manuals": [
+        {
+          "label": "Interaktive Gebrauchsanweisung",
+          "url": "https://www.bosch-home.com/de/manual/8001250808?productCode=BGL8SIL5"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001346246_C.pdf"
+        },
+        {
+          "label": "Produktblatt",
+          "url": "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGL8SIL5.pdf"
+        }
+      ],
+      "imageUrl": "https://media3.bsh-group.com/Product_Shots/MCSA03221760_J5077_2581222_BGL8SIL5_CMYK_def.webp",
+      "sourceObservation": {
+        "observedModel": "BGL8SIL5",
+        "canonicalModel": "BGL8SIL5",
+        "deviceMaterial": "00407518",
+        "ean": "4242005202843",
+        "brand": "BOSCH",
+        "productType": "VIB",
+        "productFamily": "VaClCanister",
+        "name": "Serie 8 Staubsauger mit Beutel ProSilence Weiß",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGL8SIL5",
+        "httpStatus": 200,
+        "sha256": "52f8be5be0b27a3b158184497e375149b25244db246cd2bba6cb5793f7989dbb",
+        "checkedAt": "2026-10-08T10:36:54.304304+00:00",
+        "manualUrls": [
+          "https://www.bosch-home.com/de/manual/8001250808?productCode=BGL8SIL5",
+          "https://media3.bsh-group.com/Documents/8001346246_C.pdf",
+          "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGL8SIL5.pdf",
+          "https://media3.bsh-group.com/Documents/8001273055_E.pdf",
+          "https://media3.bsh-group.com/Documents/8001280550_C.pdf",
+          "https://media3.bsh-group.com/Documents/8001311722_C.pdf"
+        ],
+        "selectableColorVariants": [],
+        "selectableProductVariants": []
+      },
+      "duplicateCheck": {
+        "baseAbsent": true,
+        "canonicalMatchesBase": true,
+        "gtinAbsent": true,
+        "deviceMaterialAbsentInObservedBaseline": true
+      },
+      "partCount": 0,
+      "relationships": []
+    },
+    {
+      "manufacturer": "Bosch",
+      "baseModel": "BGC05A220A",
+      "name": "Serie 2 Beutelloser Staubsauger Blau",
+      "series": "Bosch Serie 2",
+      "deviceType": "bagless",
+      "color": "Blau",
+      "manufacturerUrl": "https://www.bosch-home.com/de/de/product/staubsauger/beutellose-staubsauger/BGC05A220A",
+      "checkedAt": "2026-10-08T10:36:23.877908+00:00",
+      "status": "verified-model-reference",
+      "variants": [
+        {
+          "eNumber": "BGC05A220A/02",
+          "observedENumber": "BGC05A220A/02",
+          "productId": "BGC05A220A/02",
+          "url": "https://www.bosch-home.com/de/de/productservice/BGC05A220A-02",
+          "brand": "BOSCH",
+          "httpStatus": 200,
+          "sha256": "3c46f612c349364eb8c39f2201d67c3b21e5b49b7f52bfd0be728b3fc60c7da8",
+          "checkedAt": "2026-10-08T10:40:20.099401+00:00"
+        },
+        {
+          "eNumber": "BGC05A220A/03",
+          "observedENumber": "BGC05A220A/03",
+          "productId": "BGC05A220A/03",
+          "url": "https://www.bosch-home.com/de/de/productservice/BGC05A220A-03",
+          "brand": "BOSCH",
+          "httpStatus": 200,
+          "sha256": "381d53ead0191a2eb8c2d9bedd3c539c1a53b87d8b55db5bb7233d0ade5f1ff7",
+          "checkedAt": "2026-10-08T10:40:26.602838+00:00"
+        }
+      ],
+      "manuals": [
+        {
+          "label": "Interaktive Gebrauchsanweisung",
+          "url": "https://www.bosch-home.com/de/manual/8001278398?productCode=BGC05A220A"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001346320_B.pdf"
+        },
+        {
+          "label": "Produktblatt",
+          "url": "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGC05A220A.pdf"
+        }
+      ],
+      "imageUrl": "https://media3.bsh-group.com/Product_Shots/MCSA02340567_i1051_1742498_BGS05A220_korr_def.webp",
+      "sourceObservation": {
+        "observedModel": "BGC05A220A",
+        "canonicalModel": "BGC05A220A",
+        "deviceMaterial": "00407104",
+        "ean": "4242005134120",
+        "brand": "BOSCH",
+        "productType": "VIB",
+        "productFamily": "VaClCanister",
+        "name": "Serie 2 Beutelloser Staubsauger Blau",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/beutellose-staubsauger/BGC05A220A",
+        "httpStatus": 200,
+        "sha256": "cb9230a4ee63d02a616e4595881155f0927590e58547170f8ed93d5eb4aacef5",
+        "checkedAt": "2026-10-08T10:36:23.877908+00:00",
+        "manualUrls": [
+          "https://www.bosch-home.com/de/manual/8001278398?productCode=BGC05A220A",
+          "https://media3.bsh-group.com/Documents/8001346320_B.pdf",
+          "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGC05A220A.pdf",
+          "https://media3.bsh-group.com/Documents/legalcollection_BGC05A220A_de-DE.pdf",
+          "https://media3.bsh-group.com/Documents/8001273055_E.pdf",
+          "https://media3.bsh-group.com/Documents/8001280550_C.pdf"
+        ],
+        "selectableColorVariants": [],
+        "selectableProductVariants": []
+      },
+      "duplicateCheck": {
+        "baseAbsent": true,
+        "canonicalMatchesBase": true,
+        "gtinAbsent": true,
+        "deviceMaterialAbsentInObservedBaseline": true
+      },
+      "partCount": 0,
+      "relationships": []
+    },
+    {
+      "manufacturer": "Bosch",
+      "baseModel": "BGC05A322",
+      "name": "Serie 2 Beutelloser Staubsauger Rot",
+      "series": "Bosch Serie 2",
+      "deviceType": "bagless",
+      "color": "Chillirot",
+      "manufacturerUrl": "https://www.bosch-home.com/de/de/product/staubsauger/beutellose-staubsauger/BGC05A322",
+      "checkedAt": "2026-10-08T10:36:26.329269+00:00",
+      "status": "verified-model-reference",
+      "variants": [
+        {
+          "eNumber": "BGC05A322/01",
+          "observedENumber": "BGC05A322/01",
+          "productId": "BGC05A322/01",
+          "url": "https://www.bosch-home.com/de/de/productservice/BGC05A322-01",
+          "brand": "BOSCH",
+          "httpStatus": 200,
+          "sha256": "4fd5ac670c396bc3ceba62cec5644c1dfdb5a76758fb628e44224801108848bc",
+          "checkedAt": "2026-10-08T10:36:15.797073+00:00"
+        }
+      ],
+      "manuals": [
+        {
+          "label": "Interaktive Gebrauchsanweisung",
+          "url": "https://www.bosch-home.com/de/manual/8001278398?productCode=BGC05A322"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001346320_B.pdf"
+        },
+        {
+          "label": "Produktblatt",
+          "url": "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGC05A322.pdf"
+        }
+      ],
+      "imageUrl": "https://media3.bsh-group.com/Product_Shots/MCSA03060534_J3404_2376941_BGC05A322_korr_def.webp",
+      "sourceObservation": {
+        "observedModel": "BGC05A322",
+        "canonicalModel": "BGC05A322",
+        "deviceMaterial": "00407315",
+        "ean": "4242005162888",
+        "brand": "BOSCH",
+        "productType": "VIB",
+        "productFamily": "VaClCanister",
+        "name": "Serie 2 Beutelloser Staubsauger Rot",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/beutellose-staubsauger/BGC05A322",
+        "httpStatus": 200,
+        "sha256": "4735806eb4e2ea5438623bb63325d4108c5b70d5bf7e944b099ea5ed25c6a7b3",
+        "checkedAt": "2026-10-08T10:36:26.329269+00:00",
+        "manualUrls": [
+          "https://www.bosch-home.com/de/manual/8001278398?productCode=BGC05A322",
+          "https://media3.bsh-group.com/Documents/8001346320_B.pdf",
+          "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGC05A322.pdf",
+          "https://media3.bsh-group.com/Documents/legalcollection_BGC05A322_de-DE.pdf",
+          "https://media3.bsh-group.com/Documents/8001273055_E.pdf",
+          "https://media3.bsh-group.com/Documents/8001280550_C.pdf"
+        ],
+        "selectableColorVariants": [],
+        "selectableProductVariants": []
+      },
+      "duplicateCheck": {
+        "baseAbsent": true,
+        "canonicalMatchesBase": true,
+        "gtinAbsent": true,
+        "deviceMaterialAbsentInObservedBaseline": true
+      },
+      "partCount": 0,
+      "relationships": []
+    },
+    {
+      "manufacturer": "Bosch",
+      "baseModel": "BGC05LW2",
+      "name": "Serie 2 Beutelloser Staubsauger Weiß",
+      "series": "Bosch Serie 2",
+      "deviceType": "bagless",
+      "color": "Weiß",
+      "manufacturerUrl": "https://www.bosch-home.com/de/de/product/staubsauger/beutellose-staubsauger/BGC05LW2",
+      "checkedAt": "2026-10-08T10:36:23.789473+00:00",
+      "status": "verified-model-reference",
+      "variants": [
+        {
+          "eNumber": "BGC05LW2/01",
+          "observedENumber": "BGC05LW2/01",
+          "productId": "BGC05LW2/01",
+          "url": "https://www.bosch-home.com/de/de/productservice/BGC05LW2-01",
+          "brand": "BOSCH",
+          "httpStatus": 200,
+          "sha256": "187b726cfb41032025546e1112d7028146b3aa9bcd5d58edd4f34b20baca08bf",
+          "checkedAt": "2026-10-08T10:36:15.786178+00:00"
+        }
+      ],
+      "manuals": [
+        {
+          "label": "Interaktive Gebrauchsanweisung",
+          "url": "https://www.bosch-home.com/de/manual/8001365233?productCode=BGC05LW2"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001365231_B.pdf"
+        },
+        {
+          "label": "Produktblatt",
+          "url": "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGC05LW2.pdf"
+        }
+      ],
+      "imageUrl": "https://media3.bsh-group.com/Product_Shots/28174001_BGC05LW2_STP_def.webp",
+      "sourceObservation": {
+        "observedModel": "BGC05LW2",
+        "canonicalModel": "BGC05LW2",
+        "deviceMaterial": "00408861",
+        "ean": "4242005574360",
+        "brand": "BOSCH",
+        "productType": "VIB",
+        "productFamily": "VaClCanister",
+        "name": "Serie 2 Beutelloser Staubsauger Weiß",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/beutellose-staubsauger/BGC05LW2",
+        "httpStatus": 200,
+        "sha256": "88b70fe31b62afa7f95a3042fd2fa7a28c4af2ce522488ef95e1cab00f01d828",
+        "checkedAt": "2026-10-08T10:36:23.789473+00:00",
+        "manualUrls": [
+          "https://www.bosch-home.com/de/manual/8001365233?productCode=BGC05LW2",
+          "https://media3.bsh-group.com/Documents/8001365231_B.pdf",
+          "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGC05LW2.pdf",
+          "https://media3.bsh-group.com/Documents/legalcollection_BGC05LW2_de-DE.pdf"
+        ],
+        "selectableColorVariants": [],
+        "selectableProductVariants": []
+      },
+      "duplicateCheck": {
+        "baseAbsent": true,
+        "canonicalMatchesBase": true,
+        "gtinAbsent": true,
+        "deviceMaterialAbsentInObservedBaseline": true
+      },
+      "partCount": 0,
+      "relationships": []
+    },
+    {
+      "manufacturer": "Bosch",
+      "baseModel": "BGC21X300",
+      "name": "Serie 4 Beutelloser Staubsauger Schwarz",
+      "series": "Bosch Serie 4",
+      "deviceType": "bagless",
+      "color": "Schwarz",
+      "manufacturerUrl": "https://www.bosch-home.com/de/de/product/staubsauger/beutellose-staubsauger/BGC21X300",
+      "checkedAt": "2026-10-08T10:36:25.144710+00:00",
+      "status": "verified-model-reference",
+      "variants": [
+        {
+          "eNumber": "BGC21X300/01",
+          "observedENumber": "BGC21X300/01",
+          "productId": "BGC21X300/01",
+          "url": "https://www.bosch-home.com/de/de/productservice/BGC21X300-01",
+          "brand": "BOSCH",
+          "httpStatus": 200,
+          "sha256": "3841a3ef5637a63c1629263e7180038de8cb211230799c1ef471aa7af4115ab9",
+          "checkedAt": "2026-10-08T10:36:21.137487+00:00"
+        }
+      ],
+      "manuals": [
+        {
+          "label": "Interaktive Gebrauchsanweisung",
+          "url": "https://www.bosch-home.com/de/manual/8001217649?productCode=BGC21X300"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001279511_D.pdf"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001346297_C.pdf"
+        },
+        {
+          "label": "Produktblatt",
+          "url": "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGC21X300.pdf"
+        }
+      ],
+      "imageUrl": "https://media3.bsh-group.com/Product_Shots/16823027_BGC21X300_STP_def.webp",
+      "sourceObservation": {
+        "observedModel": "BGC21X300",
+        "canonicalModel": "BGC21X300",
+        "deviceMaterial": "00407885",
+        "ean": "4242005284191",
+        "brand": "BOSCH",
+        "productType": "VIB",
+        "productFamily": "VaClCanister",
+        "name": "Serie 4 Beutelloser Staubsauger Schwarz",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/beutellose-staubsauger/BGC21X300",
+        "httpStatus": 200,
+        "sha256": "e5ddd6fc9e1606420575c1e6beb98db4411f54e03e434d0c037edc0da3b1a863",
+        "checkedAt": "2026-10-08T10:36:25.144710+00:00",
+        "manualUrls": [
+          "https://www.bosch-home.com/de/manual/8001217649?productCode=BGC21X300",
+          "https://media3.bsh-group.com/Documents/8001279511_D.pdf",
+          "https://media3.bsh-group.com/Documents/8001346297_C.pdf",
+          "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGC21X300.pdf",
+          "https://media3.bsh-group.com/Documents/legalcollection_BGC21X300_de-DE.pdf",
+          "https://media3.bsh-group.com/Documents/8001273055_E.pdf",
+          "https://media3.bsh-group.com/Documents/8001384842_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001311722_C.pdf",
+          "https://media3.bsh-group.com/Documents/8001348772_A.pdf"
+        ],
+        "selectableColorVariants": [],
+        "selectableProductVariants": []
+      },
+      "duplicateCheck": {
+        "baseAbsent": true,
+        "canonicalMatchesBase": true,
+        "gtinAbsent": true,
+        "deviceMaterialAbsentInObservedBaseline": true
+      },
+      "partCount": 0,
+      "relationships": []
+    },
+    {
+      "manufacturer": "Bosch",
+      "baseModel": "BGC21X350",
+      "name": "Serie 4 Beutelloser Staubsauger Rot",
+      "series": "Bosch Serie 4",
+      "deviceType": "bagless",
+      "color": "Cranberry",
+      "manufacturerUrl": "https://www.bosch-home.com/de/de/product/staubsauger/beutellose-staubsauger/BGC21X350",
+      "checkedAt": "2026-10-08T10:36:33.349086+00:00",
+      "status": "verified-model-reference",
+      "variants": [
+        {
+          "eNumber": "BGC21X350/01",
+          "observedENumber": "BGC21X350/01",
+          "productId": "BGC21X350/01",
+          "url": "https://www.bosch-home.com/de/de/productservice/BGC21X350-01",
+          "brand": "BOSCH",
+          "httpStatus": 200,
+          "sha256": "69d0c6a33a7d2575ed5422bdabbe9c373e45d1e91c722e0efa72f970ed5f8dac",
+          "checkedAt": "2026-10-08T10:36:21.529527+00:00"
+        }
+      ],
+      "manuals": [
+        {
+          "label": "Interaktive Gebrauchsanweisung",
+          "url": "https://www.bosch-home.com/de/manual/8001217649?productCode=BGC21X350"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001346297_C.pdf"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001251519_A.pdf"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001279511_D.pdf"
+        },
+        {
+          "label": "Produktblatt",
+          "url": "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGC21X350.pdf"
+        }
+      ],
+      "imageUrl": "https://media3.bsh-group.com/Product_Shots/16823104_BGC21X350_STP_def.webp",
+      "sourceObservation": {
+        "observedModel": "BGC21X350",
+        "canonicalModel": "BGC21X350",
+        "deviceMaterial": "00407879",
+        "ean": "4242005284528",
+        "brand": "BOSCH",
+        "productType": "VIB",
+        "productFamily": "VaClCanister",
+        "name": "Serie 4 Beutelloser Staubsauger Rot",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/beutellose-staubsauger/BGC21X350",
+        "httpStatus": 200,
+        "sha256": "1840c7a2ce01e38d2b351b385884f581f3249bf3ea153e9bd7ef815150af9db0",
+        "checkedAt": "2026-10-08T10:36:33.349086+00:00",
+        "manualUrls": [
+          "https://www.bosch-home.com/de/manual/8001217649?productCode=BGC21X350",
+          "https://media3.bsh-group.com/Documents/8001346297_C.pdf",
+          "https://media3.bsh-group.com/Documents/8001251519_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001279511_D.pdf",
+          "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGC21X350.pdf",
+          "https://media3.bsh-group.com/Documents/legalcollection_BGC21X350_de-DE.pdf",
+          "https://media3.bsh-group.com/Documents/8001273055_E.pdf",
+          "https://media3.bsh-group.com/Documents/8001384842_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001311722_C.pdf",
+          "https://media3.bsh-group.com/Documents/8001348772_A.pdf"
+        ],
+        "selectableColorVariants": [],
+        "selectableProductVariants": []
+      },
+      "duplicateCheck": {
+        "baseAbsent": true,
+        "canonicalMatchesBase": true,
+        "gtinAbsent": true,
+        "deviceMaterialAbsentInObservedBaseline": true
+      },
+      "partCount": 0,
+      "relationships": []
+    },
+    {
+      "manufacturer": "Bosch",
+      "baseModel": "BGC41Q69",
+      "name": "Serie 6 Beutelloser Staubsauger ProSilence Rot",
+      "series": "Bosch Serie 6",
+      "deviceType": "bagless",
+      "color": "Kirschrot-metallic",
+      "manufacturerUrl": "https://www.bosch-home.com/de/de/product/staubsauger/beutellose-staubsauger/BGC41Q69",
+      "checkedAt": "2026-10-08T10:36:32.863461+00:00",
+      "status": "verified-model-reference",
+      "variants": [
+        {
+          "eNumber": "BGC41Q69/01",
+          "observedENumber": "BGC41Q69/01",
+          "productId": "BGC41Q69/01",
+          "url": "https://www.bosch-home.com/de/de/productservice/BGC41Q69-01",
+          "brand": "BOSCH",
+          "httpStatus": 200,
+          "sha256": "08289ee30c75f0156b22a0e69d5599c73facf721c93c804f13208cb1777032f4",
+          "checkedAt": "2026-10-08T10:36:21.831481+00:00"
+        }
+      ],
+      "manuals": [
+        {
+          "label": "Interaktive Gebrauchsanweisung",
+          "url": "https://www.bosch-home.com/de/manual/8001259468?productCode=BGC41Q69"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001259466_A.pdf"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001346301_D.pdf"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001373723_B.pdf"
+        },
+        {
+          "label": "Produktblatt",
+          "url": "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGC41Q69.pdf"
+        }
+      ],
+      "imageUrl": "https://media3.bsh-group.com/Product_Shots/MCSA02913405_J2572_2235656_BGC41Q69_27_KKorr_def.webp",
+      "sourceObservation": {
+        "observedModel": "BGC41Q69",
+        "canonicalModel": "BGC41Q69",
+        "deviceMaterial": "00407218",
+        "ean": "4242005168675",
+        "brand": "BOSCH",
+        "productType": "VIB",
+        "productFamily": "VaClCanister",
+        "name": "Serie 6 Beutelloser Staubsauger ProSilence Rot",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/beutellose-staubsauger/BGC41Q69",
+        "httpStatus": 200,
+        "sha256": "1576d5f19c19fbb6d9e0c3b55ac394cd5fdb7473dcfa13bbdeda6e488b476db9",
+        "checkedAt": "2026-10-08T10:36:32.863461+00:00",
+        "manualUrls": [
+          "https://www.bosch-home.com/de/manual/8001259468?productCode=BGC41Q69",
+          "https://media3.bsh-group.com/Documents/8001259466_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001346301_D.pdf",
+          "https://media3.bsh-group.com/Documents/8001373723_B.pdf",
+          "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGC41Q69.pdf",
+          "https://media3.bsh-group.com/Documents/legalcollection_BGC41Q69_de-DE.pdf",
+          "https://media3.bsh-group.com/Documents/8001273055_E.pdf",
+          "https://media3.bsh-group.com/Documents/8001384842_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001311722_C.pdf",
+          "https://media3.bsh-group.com/Documents/8001348772_A.pdf"
+        ],
+        "selectableColorVariants": [],
+        "selectableProductVariants": []
+      },
+      "duplicateCheck": {
+        "baseAbsent": true,
+        "canonicalMatchesBase": true,
+        "gtinAbsent": true,
+        "deviceMaterialAbsentInObservedBaseline": true
+      },
+      "partCount": 0,
+      "relationships": []
+    },
+    {
+      "manufacturer": "Bosch",
+      "baseModel": "BGC41X36",
+      "name": "Serie 6 Beutelloser Staubsauger Blau",
+      "series": "Bosch Serie 6",
+      "deviceType": "bagless",
+      "color": "Crystal blau",
+      "manufacturerUrl": "https://www.bosch-home.com/de/de/product/staubsauger/beutellose-staubsauger/BGC41X36",
+      "checkedAt": "2026-10-08T10:36:33.374142+00:00",
+      "status": "verified-model-reference",
+      "variants": [
+        {
+          "eNumber": "BGC41X36/01",
+          "observedENumber": "BGC41X36/01",
+          "productId": "BGC41X36/01",
+          "url": "https://www.bosch-home.com/de/de/productservice/BGC41X36-01",
+          "brand": "BOSCH",
+          "httpStatus": 200,
+          "sha256": "d73e71972cd292e5404291093ffe2ef710f2d71e57bd8a569cb1780547fd5c70",
+          "checkedAt": "2026-10-08T10:36:25.795894+00:00"
+        }
+      ],
+      "manuals": [
+        {
+          "label": "Interaktive Gebrauchsanweisung",
+          "url": "https://www.bosch-home.com/de/manual/8001259468?productCode=BGC41X36"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001346301_D.pdf"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001373723_B.pdf"
+        },
+        {
+          "label": "Produktblatt",
+          "url": "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGC41X36.pdf"
+        }
+      ],
+      "imageUrl": "https://media3.bsh-group.com/Product_Shots/MCSA02913296_J2571_2235567_BGS41K432_korr_def.webp",
+      "sourceObservation": {
+        "observedModel": "BGC41X36",
+        "canonicalModel": "BGC41X36",
+        "deviceMaterial": "00407514",
+        "ean": "4242005218837",
+        "brand": "BOSCH",
+        "productType": "VIB",
+        "productFamily": "VaClCanister",
+        "name": "Serie 6 Beutelloser Staubsauger Blau",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/beutellose-staubsauger/BGC41X36",
+        "httpStatus": 200,
+        "sha256": "5f64acb42308e1fd55c8fe812735fee5d8b6513b7edd0e86a09735094cd82b20",
+        "checkedAt": "2026-10-08T10:36:33.374142+00:00",
+        "manualUrls": [
+          "https://www.bosch-home.com/de/manual/8001259468?productCode=BGC41X36",
+          "https://media3.bsh-group.com/Documents/8001346301_D.pdf",
+          "https://media3.bsh-group.com/Documents/8001373723_B.pdf",
+          "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGC41X36.pdf",
+          "https://media3.bsh-group.com/Documents/legalcollection_BGC41X36_de-DE.pdf",
+          "https://media3.bsh-group.com/Documents/8001384842_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001348772_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001273055_E.pdf",
+          "https://media3.bsh-group.com/Documents/8001311722_C.pdf"
+        ],
+        "selectableColorVariants": [],
+        "selectableProductVariants": []
+      },
+      "duplicateCheck": {
+        "baseAbsent": true,
+        "canonicalMatchesBase": true,
+        "gtinAbsent": true,
+        "deviceMaterialAbsentInObservedBaseline": true
+      },
+      "partCount": 0,
+      "relationships": []
+    },
+    {
+      "manufacturer": "Bosch",
+      "baseModel": "BGC41XALL",
+      "name": "Serie 6 Beutelloser Staubsauger Weiß",
+      "series": "Bosch Serie 6",
+      "deviceType": "bagless",
+      "color": "Weiß",
+      "manufacturerUrl": "https://www.bosch-home.com/de/de/product/staubsauger/beutellose-staubsauger/BGC41XALL",
+      "checkedAt": "2026-10-08T10:36:32.766311+00:00",
+      "status": "verified-model-reference",
+      "variants": [
+        {
+          "eNumber": "BGC41XALL/01",
+          "observedENumber": "BGC41XALL/01",
+          "productId": "BGC41XALL/01",
+          "url": "https://www.bosch-home.com/de/de/productservice/BGC41XALL-01",
+          "brand": "BOSCH",
+          "httpStatus": 200,
+          "sha256": "6f39f8300004bd489d70ab68942ae46ac54073cf9eebd6aaadce5a49682c0cfd",
+          "checkedAt": "2026-10-08T10:36:26.252711+00:00"
+        }
+      ],
+      "manuals": [
+        {
+          "label": "Interaktive Gebrauchsanweisung",
+          "url": "https://www.bosch-home.com/de/manual/8001259468?productCode=BGC41XALL"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001346301_D.pdf"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001373723_B.pdf"
+        },
+        {
+          "label": "Produktblatt",
+          "url": "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGC41XALL.pdf"
+        }
+      ],
+      "imageUrl": "https://media3.bsh-group.com/Product_Shots/19456824_BGC41XALL_STP_def.webp",
+      "sourceObservation": {
+        "observedModel": "BGC41XALL",
+        "canonicalModel": "BGC41XALL",
+        "deviceMaterial": "00407977",
+        "ean": "4242005345816",
+        "brand": "BOSCH",
+        "productType": "VIB",
+        "productFamily": "VaClCanister",
+        "name": "Serie 6 Beutelloser Staubsauger Weiß",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/beutellose-staubsauger/BGC41XALL",
+        "httpStatus": 200,
+        "sha256": "e17a91d211e83d3aadcbaa174af14a5dbffc96b37942eebe8566c7a7d748944f",
+        "checkedAt": "2026-10-08T10:36:32.766311+00:00",
+        "manualUrls": [
+          "https://www.bosch-home.com/de/manual/8001259468?productCode=BGC41XALL",
+          "https://media3.bsh-group.com/Documents/8001346301_D.pdf",
+          "https://media3.bsh-group.com/Documents/8001373723_B.pdf",
+          "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGC41XALL.pdf",
+          "https://media3.bsh-group.com/Documents/legalcollection_BGC41XALL_de-DE.pdf",
+          "https://media3.bsh-group.com/Documents/8001384842_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001348772_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001311722_C.pdf",
+          "https://media3.bsh-group.com/Documents/8001273055_E.pdf"
+        ],
+        "selectableColorVariants": [],
+        "selectableProductVariants": []
+      },
+      "duplicateCheck": {
+        "baseAbsent": true,
+        "canonicalMatchesBase": true,
+        "gtinAbsent": true,
+        "deviceMaterialAbsentInObservedBaseline": true
+      },
+      "partCount": 0,
+      "relationships": []
+    },
+    {
+      "manufacturer": "Bosch",
+      "baseModel": "BGC41XECO",
+      "name": "Serie 6 Beutelloser Staubsauger Blau",
+      "series": "Bosch Serie 6",
+      "deviceType": "bagless",
+      "color": "Crystal blau",
+      "manufacturerUrl": "https://www.bosch-home.com/de/de/product/staubsauger/beutellose-staubsauger/BGC41XECO",
+      "checkedAt": "2026-10-08T10:36:45.532545+00:00",
+      "status": "verified-model-reference",
+      "variants": [],
+      "manuals": [
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001339610_A.pdf"
+        },
+        {
+          "label": "Produktblatt",
+          "url": "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGC41XECO.pdf"
+        }
+      ],
+      "imageUrl": "https://media3.bsh-group.com/Product_Shots/25775719_BGC41XECO_STP_def.webp",
+      "sourceObservation": {
+        "observedModel": "BGC41XECO",
+        "canonicalModel": "BGC41XECO",
+        "deviceMaterial": "00408561",
+        "ean": "4242005525423",
+        "brand": "BOSCH",
+        "productType": "VIB",
+        "productFamily": "VaClCanister",
+        "name": "Serie 6 Beutelloser Staubsauger Blau",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/beutellose-staubsauger/BGC41XECO",
+        "httpStatus": 200,
+        "sha256": "52a7844427ab052e92eba7a0119e9f4166bae16e9330a2d5be0d01eed8a3649b",
+        "checkedAt": "2026-10-08T10:36:45.532545+00:00",
+        "manualUrls": [
+          "https://media3.bsh-group.com/Documents/8001339610_A.pdf",
+          "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGC41XECO.pdf",
+          "https://media3.bsh-group.com/Documents/legalcollection_BGC41XECO_de-DE.pdf",
+          "https://media3.bsh-group.com/Documents/8001273055_E.pdf",
+          "https://media3.bsh-group.com/Documents/8001384842_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001311722_C.pdf",
+          "https://media3.bsh-group.com/Documents/8001348772_A.pdf"
+        ],
+        "selectableColorVariants": [],
+        "selectableProductVariants": []
+      },
+      "duplicateCheck": {
+        "baseAbsent": true,
+        "canonicalMatchesBase": true,
+        "gtinAbsent": true,
+        "deviceMaterialAbsentInObservedBaseline": true
+      },
+      "partCount": 0,
+      "relationships": []
+    },
+    {
+      "manufacturer": "Bosch",
+      "baseModel": "BGS05AM",
+      "name": "Serie 2 Beutelloser Staubsauger Blau",
+      "series": "Bosch Serie 2",
+      "deviceType": "bagless",
+      "color": "Dark navy",
+      "manufacturerUrl": "https://www.bosch-home.com/de/de/product/staubsauger/beutellose-staubsauger/BGS05AM",
+      "checkedAt": "2026-10-08T10:36:53.936743+00:00",
+      "status": "verified-model-reference",
+      "variants": [
+        {
+          "eNumber": "BGS05AM/01",
+          "observedENumber": "BGS05AM/01",
+          "productId": "BGS05AM/01",
+          "url": "https://www.bosch-home.com/de/de/productservice/BGS05AM-01",
+          "brand": "BOSCH",
+          "httpStatus": 200,
+          "sha256": "8582db5816b0f4ff2d915105f91f68ed85faa08ec1335c81bead8391facccb4a",
+          "checkedAt": "2026-10-08T10:36:30.644049+00:00"
+        }
+      ],
+      "manuals": [
+        {
+          "label": "Interaktive Gebrauchsanweisung",
+          "url": "https://www.bosch-home.com/de/manual/8001365233?productCode=BGS05AM"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001365231_B.pdf"
+        },
+        {
+          "label": "Produktblatt",
+          "url": "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGS05AM.pdf"
+        }
+      ],
+      "imageUrl": "https://media3.bsh-group.com/Product_Shots/27950672_BGS05AM_STP_def.webp",
+      "sourceObservation": {
+        "observedModel": "BGS05AM",
+        "canonicalModel": "BGS05AM",
+        "deviceMaterial": "00408854",
+        "ean": "4242005574629",
+        "brand": "BOSCH",
+        "productType": "VIB",
+        "productFamily": "VaClCanister",
+        "name": "Serie 2 Beutelloser Staubsauger Blau",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/beutellose-staubsauger/BGS05AM",
+        "httpStatus": 200,
+        "sha256": "f714006b69e82a361d3b06c3af47a9563524352b81bc8430e177c662d8b37b4d",
+        "checkedAt": "2026-10-08T10:36:53.936743+00:00",
+        "manualUrls": [
+          "https://www.bosch-home.com/de/manual/8001365233?productCode=BGS05AM",
+          "https://media3.bsh-group.com/Documents/8001365231_B.pdf",
+          "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGS05AM.pdf",
+          "https://media3.bsh-group.com/Documents/legalcollection_BGS05AM_de-DE.pdf"
+        ],
+        "selectableColorVariants": [],
+        "selectableProductVariants": []
+      },
+      "duplicateCheck": {
+        "baseAbsent": true,
+        "canonicalMatchesBase": true,
+        "gtinAbsent": true,
+        "deviceMaterialAbsentInObservedBaseline": true
+      },
+      "partCount": 0,
+      "relationships": []
+    },
+    {
+      "manufacturer": "Bosch",
+      "baseModel": "BGS05BA2TH",
+      "name": "Serie 2 Beutelloser Staubsauger Schwarz",
+      "series": "Bosch Serie 2",
+      "deviceType": "bagless",
+      "color": "Schwarz",
+      "manufacturerUrl": "https://www.bosch-home.com/de/de/product/staubsauger/beutellose-staubsauger/BGS05BA2TH",
+      "checkedAt": "2026-10-08T10:36:54.622611+00:00",
+      "status": "verified-model-reference",
+      "variants": [
+        {
+          "eNumber": "BGS05BA2TH/01",
+          "observedENumber": "BGS05BA2TH/01",
+          "productId": "BGS05BA2TH/01",
+          "url": "https://www.bosch-home.com/de/de/productservice/BGS05BA2TH-01",
+          "brand": "BOSCH",
+          "httpStatus": 200,
+          "sha256": "ff938b0eef4ef4682c3f6eda73067a8a144fe8d0c19096a628badfa063b81dba",
+          "checkedAt": "2026-10-08T10:36:30.727610+00:00"
+        }
+      ],
+      "manuals": [
+        {
+          "label": "Interaktive Gebrauchsanweisung",
+          "url": "https://www.bosch-home.com/de/manual/8001365233?productCode=BGS05BA2TH"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001365231_B.pdf"
+        },
+        {
+          "label": "Produktblatt",
+          "url": "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGS05BA2TH.pdf"
+        }
+      ],
+      "imageUrl": "https://media3.bsh-group.com/Product_Shots/27977389_BGS05BA2TH_STP_def.webp",
+      "sourceObservation": {
+        "observedModel": "BGS05BA2TH",
+        "canonicalModel": "BGS05BA2TH",
+        "deviceMaterial": "00408849",
+        "ean": "4242005574612",
+        "brand": "BOSCH",
+        "productType": "VIB",
+        "productFamily": "VaClCanister",
+        "name": "Serie 2 Beutelloser Staubsauger Schwarz",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/beutellose-staubsauger/BGS05BA2TH",
+        "httpStatus": 200,
+        "sha256": "2f48dc7bcfe1cc85e71ded9fa0835a526336513bc1c0b33370738b106f616c1c",
+        "checkedAt": "2026-10-08T10:36:54.622611+00:00",
+        "manualUrls": [
+          "https://www.bosch-home.com/de/manual/8001365233?productCode=BGS05BA2TH",
+          "https://media3.bsh-group.com/Documents/8001365231_B.pdf",
+          "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGS05BA2TH.pdf",
+          "https://media3.bsh-group.com/Documents/legalcollection_BGS05BA2TH_de-DE.pdf"
+        ],
+        "selectableColorVariants": [],
+        "selectableProductVariants": []
+      },
+      "duplicateCheck": {
+        "baseAbsent": true,
+        "canonicalMatchesBase": true,
+        "gtinAbsent": true,
+        "deviceMaterialAbsentInObservedBaseline": true
+      },
+      "partCount": 0,
+      "relationships": []
+    },
+    {
+      "manufacturer": "Bosch",
+      "baseModel": "BGS05LRD2",
+      "name": "Serie 2 Beutelloser Staubsauger Rot",
+      "series": "Bosch Serie 2",
+      "deviceType": "bagless",
+      "color": "Rot",
+      "manufacturerUrl": "https://www.bosch-home.com/de/de/product/staubsauger/beutellose-staubsauger/BGS05LRD2",
+      "checkedAt": "2026-10-08T10:36:53.903283+00:00",
+      "status": "verified-model-reference",
+      "variants": [
+        {
+          "eNumber": "BGS05LRD2/01",
+          "observedENumber": "BGS05LRD2/01",
+          "productId": "BGS05LRD2/01",
+          "url": "https://www.bosch-home.com/de/de/productservice/BGS05LRD2-01",
+          "brand": "BOSCH",
+          "httpStatus": 200,
+          "sha256": "735712b2e449e9eeb30ede1e25a09317e0a9dc9a5b5f98095c5ae4e4ee852b8d",
+          "checkedAt": "2026-10-08T10:36:30.728161+00:00"
+        }
+      ],
+      "manuals": [
+        {
+          "label": "Interaktive Gebrauchsanweisung",
+          "url": "https://www.bosch-home.com/de/manual/8001365233?productCode=BGS05LRD2"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001365231_B.pdf"
+        },
+        {
+          "label": "Produktblatt",
+          "url": "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGS05LRD2.pdf"
+        }
+      ],
+      "imageUrl": "https://media3.bsh-group.com/Product_Shots/28147818_BGS05LRD2_STP_def.webp",
+      "sourceObservation": {
+        "observedModel": "BGS05LRD2",
+        "canonicalModel": "BGS05LRD2",
+        "deviceMaterial": "00408860",
+        "ean": "4242005574605",
+        "brand": "BOSCH",
+        "productType": "VIB",
+        "productFamily": "VaClCanister",
+        "name": "Serie 2 Beutelloser Staubsauger Rot",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/beutellose-staubsauger/BGS05LRD2",
+        "httpStatus": 200,
+        "sha256": "87de24bdb344d36035153272517bc52258c95a03b7f7d01ade556b9e8e45988e",
+        "checkedAt": "2026-10-08T10:36:53.903283+00:00",
+        "manualUrls": [
+          "https://www.bosch-home.com/de/manual/8001365233?productCode=BGS05LRD2",
+          "https://media3.bsh-group.com/Documents/8001365231_B.pdf",
+          "https://media3.bsh-group.com/Documents/specsheet/de-DE/BGS05LRD2.pdf",
+          "https://media3.bsh-group.com/Documents/legalcollection_BGS05LRD2_de-DE.pdf"
+        ],
+        "selectableColorVariants": [],
+        "selectableProductVariants": []
+      },
+      "duplicateCheck": {
+        "baseAbsent": true,
+        "canonicalMatchesBase": true,
+        "gtinAbsent": true,
+        "deviceMaterialAbsentInObservedBaseline": true
+      },
+      "partCount": 0,
+      "relationships": []
+    },
+    {
+      "manufacturer": "Bosch",
+      "baseModel": "BBS1041GQC",
+      "name": "Akku-Staubsauger Unlimited 10 Grau",
+      "series": "Bosch Unlimited 10",
+      "deviceType": "cordless",
+      "color": "Dark cream",
+      "manufacturerUrl": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/BBS1041GQC",
+      "checkedAt": "2026-10-08T10:35:07.640288+00:00",
+      "status": "verified-model-reference",
+      "variants": [
+        {
+          "eNumber": "BBS1041GQC/01",
+          "observedENumber": "BBS1041GQC/01",
+          "productId": "BBS1041GQC/01",
+          "url": "https://www.bosch-home.com/de/de/productservice/BBS1041GQC-01",
+          "brand": "BOSCH",
+          "httpStatus": 200,
+          "sha256": "5e4cc23383529df3f6fb97c9a392dee2917568822997b9e4561682d3c6b9227e",
+          "checkedAt": "2026-10-08T10:36:35.687557+00:00"
+        }
+      ],
+      "manuals": [
+        {
+          "label": "Interaktive Gebrauchsanweisung",
+          "url": "https://www.bosch-home.com/de/manual/8001293734?productCode=BBS1041GQC"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001293783_B.pdf"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001300761_A.pdf"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001346295_B.pdf"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001293733_B.pdf"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001321093_B.pdf"
+        },
+        {
+          "label": "Produktblatt",
+          "url": "https://media3.bsh-group.com/Documents/specsheet/de-DE/BBS1041GQC.pdf"
+        }
+      ],
+      "imageUrl": "https://media3.bsh-group.com/Product_Shots/24415072_BBS1041GQC_STP_def.webp",
+      "sourceObservation": {
+        "observedModel": "BBS1041GQC",
+        "canonicalModel": "BBS1041GQC",
+        "deviceMaterial": "00408464",
+        "ean": "4242005469567",
+        "brand": "BOSCH",
+        "productType": "VIB",
+        "productFamily": "VaClRechargeable",
+        "name": "Akku-Staubsauger Unlimited 10 Grau",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/BBS1041GQC",
+        "httpStatus": 200,
+        "sha256": "8b416e82714829f8737bfb14a8b435b3be263d7e823922cd7ed525ed1296cabc",
+        "checkedAt": "2026-10-08T10:35:07.640288+00:00",
+        "manualUrls": [
+          "https://www.bosch-home.com/de/manual/8001293734?productCode=BBS1041GQC",
+          "https://media3.bsh-group.com/Documents/8001293783_B.pdf",
+          "https://media3.bsh-group.com/Documents/8001300761_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001346295_B.pdf",
+          "https://media3.bsh-group.com/Documents/8001293733_B.pdf",
+          "https://media3.bsh-group.com/Documents/8001321093_B.pdf",
+          "https://media3.bsh-group.com/Documents/specsheet/de-DE/BBS1041GQC.pdf",
+          "https://media3.bsh-group.com/Documents/8001326151_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001199553_C.pdf",
+          "https://media3.bsh-group.com/Documents/8001348774_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001384842_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001286170_C.pdf",
+          "https://media3.bsh-group.com/Documents/8001311809_A.pdf"
+        ],
+        "selectableColorVariants": [],
+        "selectableProductVariants": []
+      },
+      "duplicateCheck": {
+        "baseAbsent": true,
+        "canonicalMatchesBase": true,
+        "gtinAbsent": true,
+        "deviceMaterialAbsentInObservedBaseline": true
+      },
+      "partCount": 0,
+      "relationships": []
+    },
+    {
+      "manufacturer": "Bosch",
+      "baseModel": "BBS1041RBA",
+      "name": "Akku-Staubsauger Unlimited 10 Rosé",
+      "series": "Bosch Unlimited 10",
+      "deviceType": "cordless",
+      "color": "Rosé",
+      "manufacturerUrl": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/BBS1041RBA",
+      "checkedAt": "2026-10-08T10:35:07.503883+00:00",
+      "status": "verified-model-reference",
+      "variants": [
+        {
+          "eNumber": "BBS1041RBA/01",
+          "observedENumber": "BBS1041RBA/01",
+          "productId": "BBS1041RBA/01",
+          "url": "https://www.bosch-home.com/de/de/productservice/BBS1041RBA-01",
+          "brand": "BOSCH",
+          "httpStatus": 200,
+          "sha256": "67da91942900c7adb9eed75865257ffee2641884d53529ad7ee17fedbadea64e",
+          "checkedAt": "2026-10-08T10:36:35.672277+00:00"
+        }
+      ],
+      "manuals": [
+        {
+          "label": "Interaktive Gebrauchsanweisung",
+          "url": "https://www.bosch-home.com/de/manual/8001293734?productCode=BBS1041RBA"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001300761_A.pdf"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001346295_B.pdf"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001293733_B.pdf"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001321093_B.pdf"
+        },
+        {
+          "label": "Produktblatt",
+          "url": "https://media3.bsh-group.com/Documents/specsheet/de-DE/BBS1041RBA.pdf"
+        }
+      ],
+      "imageUrl": "https://media3.bsh-group.com/Product_Shots/24415077_BBS1041RBA_STP_def.webp",
+      "sourceObservation": {
+        "observedModel": "BBS1041RBA",
+        "canonicalModel": "BBS1041RBA",
+        "deviceMaterial": "00408469",
+        "ean": "4242005469574",
+        "brand": "BOSCH",
+        "productType": "VIB",
+        "productFamily": "VaClRechargeable",
+        "name": "Akku-Staubsauger Unlimited 10 Rosé",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/BBS1041RBA",
+        "httpStatus": 200,
+        "sha256": "a880b83b912b655a7a062e50d02ae9e2af21e05661ea28844c0e0a2ea869965d",
+        "checkedAt": "2026-10-08T10:35:07.503883+00:00",
+        "manualUrls": [
+          "https://www.bosch-home.com/de/manual/8001293734?productCode=BBS1041RBA",
+          "https://media3.bsh-group.com/Documents/8001300761_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001346295_B.pdf",
+          "https://media3.bsh-group.com/Documents/8001293733_B.pdf",
+          "https://media3.bsh-group.com/Documents/8001321093_B.pdf",
+          "https://media3.bsh-group.com/Documents/specsheet/de-DE/BBS1041RBA.pdf",
+          "https://media3.bsh-group.com/Documents/legalcollection_BBS1041RBA_de-DE.pdf",
+          "https://media3.bsh-group.com/Documents/8001326151_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001199551_D.pdf",
+          "https://media3.bsh-group.com/Documents/8001348774_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001384842_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001286170_C.pdf",
+          "https://media3.bsh-group.com/Documents/8001311809_A.pdf"
+        ],
+        "selectableColorVariants": [],
+        "selectableProductVariants": []
+      },
+      "duplicateCheck": {
+        "baseAbsent": true,
+        "canonicalMatchesBase": true,
+        "gtinAbsent": true,
+        "deviceMaterialAbsentInObservedBaseline": true
+      },
+      "partCount": 0,
+      "relationships": []
+    },
+    {
+      "manufacturer": "Bosch",
+      "baseModel": "BBS711ANM",
+      "name": "Akku-Staubsauger Unlimited 7 ProAnimal Rot",
+      "series": "Bosch Unlimited 7",
+      "deviceType": "cordless",
+      "color": "Tornadorot",
+      "manufacturerUrl": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-7/BBS711ANM",
+      "checkedAt": "2026-10-08T10:35:07.456057+00:00",
+      "status": "verified-model-reference",
+      "variants": [
+        {
+          "eNumber": "BBS711ANM/01",
+          "observedENumber": "BBS711ANM/01",
+          "productId": "BBS711ANM/01",
+          "url": "https://www.bosch-home.com/de/de/productservice/BBS711ANM-01",
+          "brand": "BOSCH",
+          "httpStatus": 200,
+          "sha256": "45b3c1f5baaffbe799a8e2f27b75717c4cf7d1795277b42c36922d71682bc4ff",
+          "checkedAt": "2026-10-08T10:36:35.675731+00:00"
+        }
+      ],
+      "manuals": [
+        {
+          "label": "Interaktive Gebrauchsanweisung",
+          "url": "https://www.bosch-home.com/de/manual/8001222557?productCode=BBS711ANM"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001346490_B.pdf"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001300761_A.pdf"
+        },
+        {
+          "label": "Produktblatt",
+          "url": "https://media3.bsh-group.com/Documents/specsheet/de-DE/BBS711ANM.pdf"
+        }
+      ],
+      "imageUrl": "https://media3.bsh-group.com/Product_Shots/17774278_BBS711ANM_STP_def.webp",
+      "sourceObservation": {
+        "observedModel": "BBS711ANM",
+        "canonicalModel": "BBS711ANM",
+        "deviceMaterial": "00407999",
+        "ean": "4242005306640",
+        "brand": "BOSCH",
+        "productType": "VIB",
+        "productFamily": "VaClRechargeable",
+        "name": "Akku-Staubsauger Unlimited 7 ProAnimal Rot",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-7/BBS711ANM",
+        "httpStatus": 200,
+        "sha256": "612a12af081cbd9a0b05ac34830c45b034465972e643e2b7ec60bdd84c64eb54",
+        "checkedAt": "2026-10-08T10:35:07.456057+00:00",
+        "manualUrls": [
+          "https://www.bosch-home.com/de/manual/8001222557?productCode=BBS711ANM",
+          "https://media3.bsh-group.com/Documents/8001346490_B.pdf",
+          "https://media3.bsh-group.com/Documents/8001300761_A.pdf",
+          "https://media3.bsh-group.com/Documents/specsheet/de-DE/BBS711ANM.pdf",
+          "https://media3.bsh-group.com/Documents/27698428_EU_DoC_BSH_VBASMUH7.pdf",
+          "https://media3.bsh-group.com/Documents/8001311809_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001199553_C.pdf",
+          "https://media3.bsh-group.com/Documents/8001273055_E.pdf",
+          "https://media3.bsh-group.com/Documents/8001384842_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001385154_B.pdf"
+        ],
+        "selectableColorVariants": [],
+        "selectableProductVariants": []
+      },
+      "duplicateCheck": {
+        "baseAbsent": true,
+        "canonicalMatchesBase": true,
+        "gtinAbsent": true,
+        "deviceMaterialAbsentInObservedBaseline": true
+      },
+      "partCount": 0,
+      "relationships": []
+    },
+    {
+      "manufacturer": "Bosch",
+      "baseModel": "BBS712A",
+      "name": "Akku-Staubsauger Unlimited 7 Grau",
+      "series": "Bosch Unlimited 7",
+      "deviceType": "cordless",
+      "color": "Dunkelgranit",
+      "manufacturerUrl": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-7/BBS712A",
+      "checkedAt": "2026-10-08T10:35:07.722732+00:00",
+      "status": "verified-model-reference",
+      "variants": [
+        {
+          "eNumber": "BBS712A/01",
+          "observedENumber": "BBS712A/01",
+          "productId": "BBS712A/01",
+          "url": "https://www.bosch-home.com/de/de/productservice/BBS712A-01",
+          "brand": "BOSCH",
+          "httpStatus": 200,
+          "sha256": "90b83a84bc0043f582fd4c834aa198b57581247baa00e12ef81a5a4ef3c9e071",
+          "checkedAt": "2026-10-08T10:36:45.028548+00:00"
+        }
+      ],
+      "manuals": [
+        {
+          "label": "Interaktive Gebrauchsanweisung",
+          "url": "https://www.bosch-home.com/de/manual/8001222557?productCode=BBS712A"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001300761_A.pdf"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001346490_B.pdf"
+        },
+        {
+          "label": "Produktblatt",
+          "url": "https://media3.bsh-group.com/Documents/specsheet/de-DE/BBS712A.pdf"
+        }
+      ],
+      "imageUrl": "https://media3.bsh-group.com/Product_Shots/17774324_BBS712A_STP_def.webp",
+      "sourceObservation": {
+        "observedModel": "BBS712A",
+        "canonicalModel": "BBS712A",
+        "deviceMaterial": "00407984",
+        "ean": "4242005306664",
+        "brand": "BOSCH",
+        "productType": "VIB",
+        "productFamily": "VaClRechargeable",
+        "name": "Akku-Staubsauger Unlimited 7 Grau",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-7/BBS712A",
+        "httpStatus": 200,
+        "sha256": "09505618f1497e6ecefbda113099376132d0ed54693889a2a4c0c06486f6b56b",
+        "checkedAt": "2026-10-08T10:35:07.722732+00:00",
+        "manualUrls": [
+          "https://www.bosch-home.com/de/manual/8001222557?productCode=BBS712A",
+          "https://media3.bsh-group.com/Documents/8001300761_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001346490_B.pdf",
+          "https://media3.bsh-group.com/Documents/specsheet/de-DE/BBS712A.pdf",
+          "https://media3.bsh-group.com/Documents/27698428_EU_DoC_BSH_VBASMUH7.pdf",
+          "https://media3.bsh-group.com/Documents/8001273055_E.pdf",
+          "https://media3.bsh-group.com/Documents/8001311809_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001199553_C.pdf",
+          "https://media3.bsh-group.com/Documents/8001384842_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001385154_B.pdf"
+        ],
+        "selectableColorVariants": [],
+        "selectableProductVariants": []
+      },
+      "duplicateCheck": {
+        "baseAbsent": true,
+        "canonicalMatchesBase": true,
+        "gtinAbsent": true,
+        "deviceMaterialAbsentInObservedBaseline": true
+      },
+      "partCount": 0,
+      "relationships": []
+    },
+    {
+      "manufacturer": "Bosch",
+      "baseModel": "BBS921TBA",
+      "name": "Akku-Staubsauger Unlimited 9 Grün",
+      "series": "Bosch Unlimited 9",
+      "deviceType": "cordless",
+      "color": "Tasman green",
+      "manufacturerUrl": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-9-akku-staubsauger/BBS921TBA",
+      "checkedAt": "2026-10-08T10:35:18.071420+00:00",
+      "status": "verified-model-reference",
+      "variants": [
+        {
+          "eNumber": "BBS921TBA/01",
+          "observedENumber": "BBS921TBA/01",
+          "productId": "BBS921TBA/01",
+          "url": "https://www.bosch-home.com/de/de/productservice/BBS921TBA-01",
+          "brand": "BOSCH",
+          "httpStatus": 200,
+          "sha256": "396e03eba5e7b7860ef9d4b587bd92f957f144cc1cf8c7a20f352cab489edc9b",
+          "checkedAt": "2026-10-08T10:36:45.050860+00:00"
+        }
+      ],
+      "manuals": [
+        {
+          "label": "Interaktive Gebrauchsanweisung",
+          "url": "https://www.bosch-home.com/de/manual/8001293732?productCode=BBS921TBA"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001329136_A.pdf"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001300761_A.pdf"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001346293_B.pdf"
+        },
+        {
+          "label": "Produktblatt",
+          "url": "https://media3.bsh-group.com/Documents/specsheet/de-DE/BBS921TBA.pdf"
+        }
+      ],
+      "imageUrl": "https://media3.bsh-group.com/Product_Shots/24415873_BBS921TBA_STP_def.webp",
+      "sourceObservation": {
+        "observedModel": "BBS921TBA",
+        "canonicalModel": "BBS921TBA",
+        "deviceMaterial": "00408535",
+        "ean": "4242005469482",
+        "brand": "BOSCH",
+        "productType": "VIB",
+        "productFamily": "VaClRechargeable",
+        "name": "Akku-Staubsauger Unlimited 9 Grün",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-9-akku-staubsauger/BBS921TBA",
+        "httpStatus": 200,
+        "sha256": "e7c60f22bf9dc8c85e9d5d9c946c800dad440bb6e54a963282d1186abfcf024c",
+        "checkedAt": "2026-10-08T10:35:18.071420+00:00",
+        "manualUrls": [
+          "https://www.bosch-home.com/de/manual/8001293732?productCode=BBS921TBA",
+          "https://media3.bsh-group.com/Documents/8001329136_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001300761_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001346293_B.pdf",
+          "https://media3.bsh-group.com/Documents/specsheet/de-DE/BBS921TBA.pdf",
+          "https://media3.bsh-group.com/Documents/legalcollection_BBS921TBA_de-DE.pdf",
+          "https://media3.bsh-group.com/Documents/8001326152_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001311809_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001199551_D.pdf",
+          "https://media3.bsh-group.com/Documents/8001348774_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001384842_A.pdf"
+        ],
+        "selectableColorVariants": [],
+        "selectableProductVariants": []
+      },
+      "duplicateCheck": {
+        "baseAbsent": true,
+        "canonicalMatchesBase": true,
+        "gtinAbsent": true,
+        "deviceMaterialAbsentInObservedBaseline": true
+      },
+      "partCount": 0,
+      "relationships": []
+    },
+    {
+      "manufacturer": "Bosch",
+      "baseModel": "BBS931PET",
+      "name": "Akku-Staubsauger Unlimited 9 ProAnimal Rot",
+      "series": "Bosch Unlimited 9",
+      "deviceType": "cordless",
+      "color": "Tornadorot",
+      "manufacturerUrl": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-9-akku-staubsauger/BBS931PET",
+      "checkedAt": "2026-10-08T10:35:24.032901+00:00",
+      "status": "verified-model-reference",
+      "variants": [
+        {
+          "eNumber": "BBS931PET/01",
+          "observedENumber": "BBS931PET/01",
+          "productId": "BBS931PET/01",
+          "url": "https://www.bosch-home.com/de/de/productservice/BBS931PET-01",
+          "brand": "BOSCH",
+          "httpStatus": 200,
+          "sha256": "efd38962c9c02f9879363e112332927e834301b8500969ffd730cf332b2087ff",
+          "checkedAt": "2026-10-08T10:36:45.674967+00:00"
+        }
+      ],
+      "manuals": [
+        {
+          "label": "Interaktive Gebrauchsanweisung",
+          "url": "https://www.bosch-home.com/de/manual/8001293732?productCode=BBS931PET"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001329136_A.pdf"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001300761_A.pdf"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001346293_B.pdf"
+        },
+        {
+          "label": "Produktblatt",
+          "url": "https://media3.bsh-group.com/Documents/specsheet/de-DE/BBS931PET.pdf"
+        }
+      ],
+      "imageUrl": "https://media3.bsh-group.com/Product_Shots/24415441_BBS931PET_STP_def.webp",
+      "sourceObservation": {
+        "observedModel": "BBS931PET",
+        "canonicalModel": "BBS931PET",
+        "deviceMaterial": "00408530",
+        "ean": "4242005468362",
+        "brand": "BOSCH",
+        "productType": "VIB",
+        "productFamily": "VaClRechargeable",
+        "name": "Akku-Staubsauger Unlimited 9 ProAnimal Rot",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-9-akku-staubsauger/BBS931PET",
+        "httpStatus": 200,
+        "sha256": "9b29de19331ee0ba0b14edb7201f56a8816bc4135047153482e213b027eb1e2c",
+        "checkedAt": "2026-10-08T10:35:24.032901+00:00",
+        "manualUrls": [
+          "https://www.bosch-home.com/de/manual/8001293732?productCode=BBS931PET",
+          "https://media3.bsh-group.com/Documents/8001329136_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001300761_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001346293_B.pdf",
+          "https://media3.bsh-group.com/Documents/specsheet/de-DE/BBS931PET.pdf",
+          "https://media3.bsh-group.com/Documents/legalcollection_BBS931PET_de-DE.pdf",
+          "https://media3.bsh-group.com/Documents/8001326152_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001199551_D.pdf",
+          "https://media3.bsh-group.com/Documents/8001348774_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001384842_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001311809_A.pdf"
+        ],
+        "selectableColorVariants": [],
+        "selectableProductVariants": []
+      },
+      "duplicateCheck": {
+        "baseAbsent": true,
+        "canonicalMatchesBase": true,
+        "gtinAbsent": true,
+        "deviceMaterialAbsentInObservedBaseline": true
+      },
+      "partCount": 0,
+      "relationships": []
+    },
+    {
+      "manufacturer": "Bosch",
+      "baseModel": "BBS931WBA",
+      "name": "Akku-Staubsauger Unlimited 9 Weiß",
+      "series": "Bosch Unlimited 9",
+      "deviceType": "cordless",
+      "color": "Weiß",
+      "manufacturerUrl": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-9-akku-staubsauger/BBS931WBA",
+      "checkedAt": "2026-10-08T10:35:24.781231+00:00",
+      "status": "verified-model-reference",
+      "variants": [
+        {
+          "eNumber": "BBS931WBA/01",
+          "observedENumber": "BBS931WBA/01",
+          "productId": "BBS931WBA/01",
+          "url": "https://www.bosch-home.com/de/de/productservice/BBS931WBA-01",
+          "brand": "BOSCH",
+          "httpStatus": 200,
+          "sha256": "596507fe4481112c6892f88d5a70483ec400cc9af9a95d3399fdf2028808e624",
+          "checkedAt": "2026-10-08T10:36:51.334271+00:00"
+        }
+      ],
+      "manuals": [
+        {
+          "label": "Interaktive Gebrauchsanweisung",
+          "url": "https://www.bosch-home.com/de/manual/8001293732?productCode=BBS931WBA"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001300761_A.pdf"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001346293_B.pdf"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001329136_A.pdf"
+        },
+        {
+          "label": "Produktblatt",
+          "url": "https://media3.bsh-group.com/Documents/specsheet/de-DE/BBS931WBA.pdf"
+        }
+      ],
+      "imageUrl": "https://media3.bsh-group.com/Product_Shots/24415445_BBS931WBA_STP_def.webp",
+      "sourceObservation": {
+        "observedModel": "BBS931WBA",
+        "canonicalModel": "BBS931WBA",
+        "deviceMaterial": "00408538",
+        "ean": "4242005469475",
+        "brand": "BOSCH",
+        "productType": "VIB",
+        "productFamily": "VaClRechargeable",
+        "name": "Akku-Staubsauger Unlimited 9 Weiß",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-9-akku-staubsauger/BBS931WBA",
+        "httpStatus": 200,
+        "sha256": "6b1868ff8e81c2bad17c1e3ac63fb7793bf6c2462191c2c90ddc6ea7e2697109",
+        "checkedAt": "2026-10-08T10:35:24.781231+00:00",
+        "manualUrls": [
+          "https://www.bosch-home.com/de/manual/8001293732?productCode=BBS931WBA",
+          "https://media3.bsh-group.com/Documents/8001300761_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001346293_B.pdf",
+          "https://media3.bsh-group.com/Documents/8001329136_A.pdf",
+          "https://media3.bsh-group.com/Documents/specsheet/de-DE/BBS931WBA.pdf",
+          "https://media3.bsh-group.com/Documents/8001326152_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001199551_D.pdf",
+          "https://media3.bsh-group.com/Documents/8001348774_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001384842_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001311809_A.pdf"
+        ],
+        "selectableColorVariants": [],
+        "selectableProductVariants": []
+      },
+      "duplicateCheck": {
+        "baseAbsent": true,
+        "canonicalMatchesBase": true,
+        "gtinAbsent": true,
+        "deviceMaterialAbsentInObservedBaseline": true
+      },
+      "partCount": 0,
+      "relationships": []
+    },
+    {
+      "manufacturer": "Bosch",
+      "baseModel": "BCH3K2852",
+      "name": "Serie 4 Akku-Staubsauger Flexxo Gen2 28Vmax Braun",
+      "series": "Bosch Serie 4",
+      "deviceType": "cordless",
+      "color": "Schokobraun metallic",
+      "manufacturerUrl": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/flexxo/BCH3K2852",
+      "checkedAt": "2026-10-08T10:35:24.850643+00:00",
+      "status": "verified-model-reference",
+      "variants": [],
+      "manuals": [
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001293124_B.pdf"
+        },
+        {
+          "label": "Produktblatt",
+          "url": "https://media3.bsh-group.com/Documents/specsheet/de-DE/BCH3K2852.pdf"
+        }
+      ],
+      "imageUrl": "https://media3.bsh-group.com/Product_Shots/16392240_BCH3K2852_STP_def.webp",
+      "sourceObservation": {
+        "observedModel": "BCH3K2852",
+        "canonicalModel": "BCH3K2852",
+        "deviceMaterial": "00407808",
+        "ean": "4242005278459",
+        "brand": "BOSCH",
+        "productType": "VIB",
+        "productFamily": "VaClRechargeable",
+        "name": "Serie 4 Akku-Staubsauger Flexxo Gen2 28Vmax Braun",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/flexxo/BCH3K2852",
+        "httpStatus": 200,
+        "sha256": "a6069fb3ad342821b018e909baa1071217439e3b99d1590488d71df1f21e1afa",
+        "checkedAt": "2026-10-08T10:35:24.850643+00:00",
+        "manualUrls": [
+          "https://media3.bsh-group.com/Documents/8001293124_B.pdf",
+          "https://media3.bsh-group.com/Documents/specsheet/de-DE/BCH3K2852.pdf",
+          "https://media3.bsh-group.com/Documents/legalcollection_BCH3K2852_de-DE.pdf",
+          "https://media3.bsh-group.com/Documents/8001323647_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001199571_C.pdf"
+        ],
+        "selectableColorVariants": [],
+        "selectableProductVariants": []
+      },
+      "duplicateCheck": {
+        "baseAbsent": true,
+        "canonicalMatchesBase": true,
+        "gtinAbsent": true,
+        "deviceMaterialAbsentInObservedBaseline": true
+      },
+      "partCount": 0,
+      "relationships": []
+    },
+    {
+      "manufacturer": "Bosch",
+      "baseModel": "BCH3P210",
+      "name": "Serie 4 Akku-Staubsauger Flexxo 21.6V Silber",
+      "series": "Bosch Serie 4",
+      "deviceType": "cordless",
+      "color": "Concrete silver",
+      "manufacturerUrl": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/flexxo/BCH3P210",
+      "checkedAt": "2026-10-08T10:35:24.731177+00:00",
+      "status": "verified-model-reference",
+      "variants": [
+        {
+          "eNumber": "BCH3P210/01",
+          "observedENumber": "BCH3P210/01",
+          "productId": "BCH3P210/01",
+          "url": "https://www.bosch-home.com/de/de/productservice/BCH3P210-01",
+          "brand": "BOSCH",
+          "httpStatus": 200,
+          "sha256": "ad5eb6a3f5cf52b810a5f71a7c1d43455da5615dc3eae3d34216d5e7f7efea59",
+          "checkedAt": "2026-10-08T10:36:52.068144+00:00"
+        }
+      ],
+      "manuals": [
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001293124_B.pdf"
+        },
+        {
+          "label": "Produktblatt",
+          "url": "https://media3.bsh-group.com/Documents/specsheet/de-DE/BCH3P210.pdf"
+        }
+      ],
+      "imageUrl": "https://media3.bsh-group.com/Product_Shots/MCSA02754966_i9368_2098867_BCH3P210_korr2_def.webp",
+      "sourceObservation": {
+        "observedModel": "BCH3P210",
+        "canonicalModel": "BCH3P210",
+        "deviceMaterial": "00407134",
+        "ean": "4242005110728",
+        "brand": "BOSCH",
+        "productType": "VIB",
+        "productFamily": "VaClRechargeable",
+        "name": "Serie 4 Akku-Staubsauger Flexxo 21.6V Silber",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/flexxo/BCH3P210",
+        "httpStatus": 200,
+        "sha256": "b59d6902a9a149322c46b09b7fb85e06031d109b68d662ba19ed4cf8a76f5d5e",
+        "checkedAt": "2026-10-08T10:35:24.731177+00:00",
+        "manualUrls": [
+          "https://media3.bsh-group.com/Documents/8001293124_B.pdf",
+          "https://media3.bsh-group.com/Documents/specsheet/de-DE/BCH3P210.pdf",
+          "https://media3.bsh-group.com/Documents/legalcollection_BCH3P210_de-DE.pdf",
+          "https://media3.bsh-group.com/Documents/8001323647_A.pdf"
+        ],
+        "selectableColorVariants": [],
+        "selectableProductVariants": []
+      },
+      "duplicateCheck": {
+        "baseAbsent": true,
+        "canonicalMatchesBase": true,
+        "gtinAbsent": true,
+        "deviceMaterialAbsentInObservedBaseline": true
+      },
+      "partCount": 0,
+      "relationships": []
+    },
+    {
+      "manufacturer": "Bosch",
+      "baseModel": "BCH6L2560",
+      "name": "Akku-Staubsauger Athlet 25.2V Weiß",
+      "series": "Bosch Athlet",
+      "deviceType": "cordless",
+      "color": "Weiß",
+      "manufacturerUrl": "https://www.bosch-home.com/de/de/product/kabellosehandstaubsauger/BCH6L2560",
+      "checkedAt": "2026-10-08T10:35:31.040987+00:00",
+      "status": "verified-model-reference",
+      "variants": [
+        {
+          "eNumber": "BCH6L2560/01",
+          "observedENumber": "BCH6L2560/01",
+          "productId": "BCH6L2560/01",
+          "url": "https://www.bosch-home.com/de/de/productservice/BCH6L2560-01",
+          "brand": "BOSCH",
+          "httpStatus": 200,
+          "sha256": "22e2a34671ec96c9694176f737c82c38acf165205deee74ea45ee9f9d571ceae",
+          "checkedAt": "2026-10-08T10:36:57.918385+00:00"
+        },
+        {
+          "eNumber": "BCH6L2560/03",
+          "observedENumber": "BCH6L2560/03",
+          "productId": "BCH6L2560/03",
+          "url": "https://www.bosch-home.com/de/de/productservice/BCH6L2560-03",
+          "brand": "BOSCH",
+          "httpStatus": 200,
+          "sha256": "43ee03e6d5762974b0d25fe62a217969964f614adcb61431d9ff9a88cffca8e7",
+          "checkedAt": "2026-10-08T10:40:53.006103+00:00"
+        }
+      ],
+      "manuals": [
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001015330_A.pdf"
+        },
+        {
+          "label": "Produktblatt",
+          "url": "https://media3.bsh-group.com/Documents/specsheet/de-DE/BCH6L2560.pdf"
+        }
+      ],
+      "imageUrl": "https://media3.bsh-group.com/Product_Shots/MCSA01030452_F7582_BCH6L2560_652142_def.webp",
+      "sourceObservation": {
+        "observedModel": "BCH6L2560",
+        "canonicalModel": "BCH6L2560",
+        "deviceMaterial": "00405720",
+        "ean": "4242002879277",
+        "brand": "BOSCH",
+        "productType": "VIB",
+        "productFamily": "VaClRechargeable",
+        "name": "Akku-Staubsauger Athlet 25.2V Weiß",
+        "url": "https://www.bosch-home.com/de/de/product/kabellosehandstaubsauger/BCH6L2560",
+        "httpStatus": 200,
+        "sha256": "5851e928646faf66b77b10bfee8fa93aa839c05816b2fd634982d2ab073af4db",
+        "checkedAt": "2026-10-08T10:35:31.040987+00:00",
+        "manualUrls": [
+          "https://media3.bsh-group.com/Documents/8001015330_A.pdf",
+          "https://media3.bsh-group.com/Documents/specsheet/de-DE/BCH6L2560.pdf",
+          "https://media3.bsh-group.com/Documents/legalcollection_BCH6L2560_de-DE.pdf",
+          "https://media3.bsh-group.com/Documents/8001273055_E.pdf",
+          "https://media3.bsh-group.com/Documents/8001262257_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001286170_C.pdf",
+          "https://media3.bsh-group.com/Documents/8001323646_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001199555_C.pdf"
+        ],
+        "selectableColorVariants": [],
+        "selectableProductVariants": []
+      },
+      "duplicateCheck": {
+        "baseAbsent": true,
+        "canonicalMatchesBase": true,
+        "gtinAbsent": true,
+        "deviceMaterialAbsentInObservedBaseline": true
+      },
+      "partCount": 0,
+      "relationships": []
+    },
+    {
+      "manufacturer": "Bosch",
+      "baseModel": "BCH85N",
+      "name": "Serie 6 Akku-Staubsauger Athlet 20Vmax Blau",
+      "series": "Bosch Serie 6",
+      "deviceType": "cordless",
+      "color": "Dark navy",
+      "manufacturerUrl": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/athlet/BCH85N",
+      "checkedAt": "2026-10-08T10:35:31.636635+00:00",
+      "status": "verified-model-reference",
+      "variants": [
+        {
+          "eNumber": "BCH85N/03",
+          "observedENumber": "BCH85N/03",
+          "productId": "BCH85N/03",
+          "url": "https://www.bosch-home.com/de/de/productservice/BCH85N-03",
+          "brand": "BOSCH",
+          "httpStatus": 200,
+          "sha256": "a10fa3dfeab69dba86e71495cf2de04ba732942feb250193bf2a4070dc41fb57",
+          "checkedAt": "2026-10-08T10:40:42.741034+00:00"
+        }
+      ],
+      "manuals": [
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001205248_D.pdf"
+        },
+        {
+          "label": "Produktblatt",
+          "url": "https://media3.bsh-group.com/Documents/specsheet/de-DE/BCH85N.pdf"
+        }
+      ],
+      "imageUrl": "https://media3.bsh-group.com/Product_Shots/MCSA03354779_J5948_2705769_BCH85N_korr2_def.webp",
+      "sourceObservation": {
+        "observedModel": "BCH85N",
+        "canonicalModel": "BCH85N",
+        "deviceMaterial": "00407656",
+        "ean": "4242005219674",
+        "brand": "BOSCH",
+        "productType": "VIB",
+        "productFamily": "VaClRechargeable",
+        "name": "Serie 6 Akku-Staubsauger Athlet 20Vmax Blau",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/athlet/BCH85N",
+        "httpStatus": 200,
+        "sha256": "10c3a55adc85d236168e99e009658d82f4865b8e76c191b485a6def779377064",
+        "checkedAt": "2026-10-08T10:35:31.636635+00:00",
+        "manualUrls": [
+          "https://media3.bsh-group.com/Documents/8001205248_D.pdf",
+          "https://media3.bsh-group.com/Documents/specsheet/de-DE/BCH85N.pdf",
+          "https://media3.bsh-group.com/Documents/legalcollection_BCH85N_de-DE.pdf",
+          "https://media3.bsh-group.com/Documents/8001273055_E.pdf",
+          "https://media3.bsh-group.com/Documents/8001262257_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001286170_C.pdf",
+          "https://media3.bsh-group.com/Documents/8001323646_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001199554_C.pdf"
+        ],
+        "selectableColorVariants": [],
+        "selectableProductVariants": []
+      },
+      "duplicateCheck": {
+        "baseAbsent": true,
+        "canonicalMatchesBase": true,
+        "gtinAbsent": true,
+        "deviceMaterialAbsentInObservedBaseline": true
+      },
+      "partCount": 0,
+      "relationships": []
+    },
+    {
+      "manufacturer": "Bosch",
+      "baseModel": "BCH86HYG1",
+      "name": "Serie 6 Akku-Staubsauger Athlet ProHygienic 28Vmax Weiß",
+      "series": "Bosch Serie 6",
+      "deviceType": "cordless",
+      "color": "Weiß",
+      "manufacturerUrl": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/athlet/BCH86HYG1",
+      "checkedAt": "2026-10-08T10:35:38.877602+00:00",
+      "status": "verified-model-reference",
+      "variants": [
+        {
+          "eNumber": "BCH86HYG1/03",
+          "observedENumber": "BCH86HYG1/03",
+          "productId": "BCH86HYG1/03",
+          "url": "https://www.bosch-home.com/de/de/productservice/BCH86HYG1-03",
+          "brand": "BOSCH",
+          "httpStatus": 200,
+          "sha256": "8b9ba57da29204a609433652c62ce1047cbe6d1896ba19fa45d55f46a3da4533",
+          "checkedAt": "2026-10-08T10:40:43.990339+00:00"
+        }
+      ],
+      "manuals": [
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001253598_A.pdf"
+        },
+        {
+          "label": "Produktblatt",
+          "url": "https://media3.bsh-group.com/Documents/specsheet/de-DE/BCH86HYG1.pdf"
+        }
+      ],
+      "imageUrl": "https://media3.bsh-group.com/Product_Shots/MCSA03354777_J5949_2705768_BCH86HYG1_korr2_def.webp",
+      "sourceObservation": {
+        "observedModel": "BCH86HYG1",
+        "canonicalModel": "BCH86HYG1",
+        "deviceMaterial": "00407692",
+        "ean": "4242005219681",
+        "brand": "BOSCH",
+        "productType": "VIB",
+        "productFamily": "VaClRechargeable",
+        "name": "Serie 6 Akku-Staubsauger Athlet ProHygienic 28Vmax Weiß",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/athlet/BCH86HYG1",
+        "httpStatus": 200,
+        "sha256": "9ac3eae320799b82c070d635a995f2908cf22e2025fc1cc85204ceba1ef7a65e",
+        "checkedAt": "2026-10-08T10:35:38.877602+00:00",
+        "manualUrls": [
+          "https://media3.bsh-group.com/Documents/8001253598_A.pdf",
+          "https://media3.bsh-group.com/Documents/specsheet/de-DE/BCH86HYG1.pdf",
+          "https://media3.bsh-group.com/Documents/legalcollection_BCH86HYG1_de-DE.pdf",
+          "https://media3.bsh-group.com/Documents/8001273055_E.pdf",
+          "https://media3.bsh-group.com/Documents/8001262257_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001286170_C.pdf",
+          "https://media3.bsh-group.com/Documents/8001323646_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001199555_C.pdf"
+        ],
+        "selectableColorVariants": [],
+        "selectableProductVariants": []
+      },
+      "duplicateCheck": {
+        "baseAbsent": true,
+        "canonicalMatchesBase": true,
+        "gtinAbsent": true,
+        "deviceMaterialAbsentInObservedBaseline": true
+      },
+      "partCount": 0,
+      "relationships": []
+    },
+    {
+      "manufacturer": "Bosch",
+      "baseModel": "BCH86HYG2",
+      "name": "Serie 6 Akku-Staubsauger Athlet ProHygienic 28Vmax Weiß",
+      "series": "Bosch Serie 6",
+      "deviceType": "cordless",
+      "color": "Weiß",
+      "manufacturerUrl": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/athlet/BCH86HYG2",
+      "checkedAt": "2026-10-08T10:35:39.148299+00:00",
+      "status": "verified-model-reference",
+      "variants": [
+        {
+          "eNumber": "BCH86HYG2/03",
+          "observedENumber": "BCH86HYG2/03",
+          "productId": "BCH86HYG2/03",
+          "url": "https://www.bosch-home.com/de/de/productservice/BCH86HYG2-03",
+          "brand": "BOSCH",
+          "httpStatus": 200,
+          "sha256": "8d65a3ea313e1c0c13f0f470df0dc9cb771e64ee21573587c3cdfb646b3f03f4",
+          "checkedAt": "2026-10-08T10:40:53.027243+00:00"
+        }
+      ],
+      "manuals": [
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001253598_A.pdf"
+        },
+        {
+          "label": "Produktblatt",
+          "url": "https://media3.bsh-group.com/Documents/specsheet/de-DE/BCH86HYG2.pdf"
+        }
+      ],
+      "imageUrl": "https://media3.bsh-group.com/Product_Shots/12524924_BCH86HYG2_STP_def.webp",
+      "sourceObservation": {
+        "observedModel": "BCH86HYG2",
+        "canonicalModel": "BCH86HYG2",
+        "deviceMaterial": "00407691",
+        "ean": "4242005231898",
+        "brand": "BOSCH",
+        "productType": "VIB",
+        "productFamily": "VaClRechargeable",
+        "name": "Serie 6 Akku-Staubsauger Athlet ProHygienic 28Vmax Weiß",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/athlet/BCH86HYG2",
+        "httpStatus": 200,
+        "sha256": "efb9d45a5e877f0bab4035a2da68b597bcd3d8b95f3222df15944683cb175916",
+        "checkedAt": "2026-10-08T10:35:39.148299+00:00",
+        "manualUrls": [
+          "https://media3.bsh-group.com/Documents/8001253598_A.pdf",
+          "https://media3.bsh-group.com/Documents/specsheet/de-DE/BCH86HYG2.pdf",
+          "https://media3.bsh-group.com/Documents/legalcollection_BCH86HYG2_de-DE.pdf",
+          "https://media3.bsh-group.com/Documents/8001273055_E.pdf",
+          "https://media3.bsh-group.com/Documents/8001262257_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001286170_C.pdf",
+          "https://media3.bsh-group.com/Documents/8001323646_A.pdf",
+          "https://media3.bsh-group.com/Documents/8001199555_C.pdf"
+        ],
+        "selectableColorVariants": [],
+        "selectableProductVariants": []
+      },
+      "duplicateCheck": {
+        "baseAbsent": true,
+        "canonicalMatchesBase": true,
+        "gtinAbsent": true,
+        "deviceMaterialAbsentInObservedBaseline": true
+      },
+      "partCount": 0,
+      "relationships": []
+    },
+    {
+      "manufacturer": "Bosch",
+      "baseModel": "BCHF216B",
+      "name": "Serie 2 Akku-Staubsauger Readyy'y 16Vmax Schwarz",
+      "series": "Bosch Serie 2",
+      "deviceType": "cordless",
+      "color": "Jet black injection",
+      "manufacturerUrl": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/readyyy/BCHF216B",
+      "checkedAt": "2026-10-08T10:35:38.845542+00:00",
+      "status": "verified-model-reference",
+      "variants": [
+        {
+          "eNumber": "BCHF216B/01",
+          "observedENumber": "BCHF216B/01",
+          "productId": "BCHF216B/01",
+          "url": "https://www.bosch-home.com/de/de/productservice/BCHF216B-01",
+          "brand": "BOSCH",
+          "httpStatus": 200,
+          "sha256": "f94620b91f332e3e057d80e1587d9f37cf85285d5f6f6c9fc28a4af48b537045",
+          "checkedAt": "2026-10-08T10:37:13.019401+00:00"
+        }
+      ],
+      "manuals": [
+        {
+          "label": "Interaktive Gebrauchsanweisung",
+          "url": "https://www.bosch-home.com/de/manual/8001293132?productCode=BCHF216B"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001293131_B.pdf"
+        },
+        {
+          "label": "Produktblatt",
+          "url": "https://media3.bsh-group.com/Documents/specsheet/de-DE/BCHF216B.pdf"
+        }
+      ],
+      "imageUrl": "https://media3.bsh-group.com/Product_Shots/MCSA03029318_J3132_2344671_BCHF216B_k_def.webp",
+      "sourceObservation": {
+        "observedModel": "BCHF216B",
+        "canonicalModel": "BCHF216B",
+        "deviceMaterial": "00407445",
+        "ean": "4242005183142",
+        "brand": "BOSCH",
+        "productType": "VIB",
+        "productFamily": "VaClRechargeable",
+        "name": "Serie 2 Akku-Staubsauger Readyy'y 16Vmax Schwarz",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/readyyy/BCHF216B",
+        "httpStatus": 200,
+        "sha256": "7198fb30f3c45933c1008f04640f7705de423d13adbea49e9fda84d82cef24a2",
+        "checkedAt": "2026-10-08T10:35:38.845542+00:00",
+        "manualUrls": [
+          "https://www.bosch-home.com/de/manual/8001293132?productCode=BCHF216B",
+          "https://media3.bsh-group.com/Documents/8001293131_B.pdf",
+          "https://media3.bsh-group.com/Documents/specsheet/de-DE/BCHF216B.pdf",
+          "https://media3.bsh-group.com/Documents/legalcollection_BCHF216B_de-DE.pdf",
+          "https://media3.bsh-group.com/Documents/8001323647_A.pdf"
+        ],
+        "selectableColorVariants": [],
+        "selectableProductVariants": []
+      },
+      "duplicateCheck": {
+        "baseAbsent": true,
+        "canonicalMatchesBase": true,
+        "gtinAbsent": true,
+        "deviceMaterialAbsentInObservedBaseline": true
+      },
+      "partCount": 0,
+      "relationships": []
+    },
+    {
+      "manufacturer": "Bosch",
+      "baseModel": "BCHF220B",
+      "name": "Serie 2 Akku-Staubsauger Readyy'y 20Vmax Schwarz",
+      "series": "Bosch Serie 2",
+      "deviceType": "cordless",
+      "color": "Jet black injection",
+      "manufacturerUrl": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/readyyy/BCHF220B",
+      "checkedAt": "2026-10-08T10:35:48.628821+00:00",
+      "status": "verified-model-reference",
+      "variants": [
+        {
+          "eNumber": "BCHF220B/01",
+          "observedENumber": "BCHF220B/01",
+          "productId": "BCHF220B/01",
+          "url": "https://www.bosch-home.com/de/de/productservice/BCHF220B-01",
+          "brand": "BOSCH",
+          "httpStatus": 200,
+          "sha256": "d9f679d8840554e69ba70665d564fb909fe0b64cae0305a46713b4372746d821",
+          "checkedAt": "2026-10-08T10:37:13.023289+00:00"
+        }
+      ],
+      "manuals": [
+        {
+          "label": "Interaktive Gebrauchsanweisung",
+          "url": "https://www.bosch-home.com/de/manual/8001293132?productCode=BCHF220B"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001293131_B.pdf"
+        },
+        {
+          "label": "Produktblatt",
+          "url": "https://media3.bsh-group.com/Documents/specsheet/de-DE/BCHF220B.pdf"
+        }
+      ],
+      "imageUrl": "https://media3.bsh-group.com/Product_Shots/MCSA03029398_J3136_2344752_BCHF220B_k_def.webp",
+      "sourceObservation": {
+        "observedModel": "BCHF220B",
+        "canonicalModel": "BCHF220B",
+        "deviceMaterial": "00407448",
+        "ean": "4242005183302",
+        "brand": "BOSCH",
+        "productType": "VIB",
+        "productFamily": "VaClRechargeable",
+        "name": "Serie 2 Akku-Staubsauger Readyy'y 20Vmax Schwarz",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/readyyy/BCHF220B",
+        "httpStatus": 200,
+        "sha256": "c943825af0c4aa4b01c4217230c9dc1447f5b58e42185d9689b20efd78a0b20b",
+        "checkedAt": "2026-10-08T10:35:48.628821+00:00",
+        "manualUrls": [
+          "https://www.bosch-home.com/de/manual/8001293132?productCode=BCHF220B",
+          "https://media3.bsh-group.com/Documents/8001293131_B.pdf",
+          "https://media3.bsh-group.com/Documents/specsheet/de-DE/BCHF220B.pdf",
+          "https://media3.bsh-group.com/Documents/legalcollection_BCHF220B_de-DE.pdf",
+          "https://media3.bsh-group.com/Documents/8001323647_A.pdf"
+        ],
+        "selectableColorVariants": [],
+        "selectableProductVariants": []
+      },
+      "duplicateCheck": {
+        "baseAbsent": true,
+        "canonicalMatchesBase": true,
+        "gtinAbsent": true,
+        "deviceMaterialAbsentInObservedBaseline": true
+      },
+      "partCount": 0,
+      "relationships": []
+    },
+    {
+      "manufacturer": "Bosch",
+      "baseModel": "BCHF2MX16",
+      "name": "Serie 2 Akku-Staubsauger Readyy'y 16Vmax Braun",
+      "series": "Bosch Serie 2",
+      "deviceType": "cordless",
+      "color": "Beige",
+      "manufacturerUrl": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/readyyy/BCHF2MX16",
+      "checkedAt": "2026-10-08T10:35:48.015237+00:00",
+      "status": "verified-model-reference",
+      "variants": [
+        {
+          "eNumber": "BCHF2MX16/01",
+          "observedENumber": "BCHF2MX16/01",
+          "productId": "BCHF2MX16/01",
+          "url": "https://www.bosch-home.com/de/de/productservice/BCHF2MX16-01",
+          "brand": "BOSCH",
+          "httpStatus": 200,
+          "sha256": "61c64f09ce7090d136c39d9ce5c5aea81125c3c430b36ed00a66900bcb280b7c",
+          "checkedAt": "2026-10-08T10:37:13.002394+00:00"
+        }
+      ],
+      "manuals": [
+        {
+          "label": "Interaktive Gebrauchsanweisung",
+          "url": "https://www.bosch-home.com/de/manual/8001293132?productCode=BCHF2MX16"
+        },
+        {
+          "label": "Gebrauchsanweisung",
+          "url": "https://media3.bsh-group.com/Documents/8001293131_B.pdf"
+        },
+        {
+          "label": "Produktblatt",
+          "url": "https://media3.bsh-group.com/Documents/specsheet/de-DE/BCHF2MX16.pdf"
+        }
+      ],
+      "imageUrl": "https://media3.bsh-group.com/Product_Shots/MCSA03029319_J3133_2344672_BCHF2MX16_k_def.webp",
+      "sourceObservation": {
+        "observedModel": "BCHF2MX16",
+        "canonicalModel": "BCHF2MX16",
+        "deviceMaterial": "00407446",
+        "ean": "4242005183159",
+        "brand": "BOSCH",
+        "productType": "VIB",
+        "productFamily": "VaClRechargeable",
+        "name": "Serie 2 Akku-Staubsauger Readyy'y 16Vmax Braun",
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/readyyy/BCHF2MX16",
+        "httpStatus": 200,
+        "sha256": "01c71f9071e2ebb04e165d66219fdc49e8045ae2fb47fd1ab52b3dafabf4bc7e",
+        "checkedAt": "2026-10-08T10:35:48.015237+00:00",
+        "manualUrls": [
+          "https://www.bosch-home.com/de/manual/8001293132?productCode=BCHF2MX16",
+          "https://media3.bsh-group.com/Documents/8001293131_B.pdf",
+          "https://media3.bsh-group.com/Documents/specsheet/de-DE/BCHF2MX16.pdf",
+          "https://media3.bsh-group.com/Documents/legalcollection_BCHF2MX16_de-DE.pdf",
+          "https://media3.bsh-group.com/Documents/8001323647_A.pdf"
+        ],
+        "selectableColorVariants": [],
+        "selectableProductVariants": []
+      },
+      "duplicateCheck": {
+        "baseAbsent": true,
+        "canonicalMatchesBase": true,
+        "gtinAbsent": true,
+        "deviceMaterialAbsentInObservedBaseline": true
+      },
+      "partCount": 0,
+      "relationships": []
+    }
+  ],
+  "candidateReview": [
+    {
+      "baseModel": "BBS1041GQC",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/BBS1041GQC",
+      "canonicalModel": "BBS1041GQC",
+      "deviceMaterial": "00408464",
+      "ean": "4242005469567",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:35:07.640288+00:00",
+      "status": "accepted"
+    },
+    {
+      "baseModel": "BBS1041RBA",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/BBS1041RBA",
+      "canonicalModel": "BBS1041RBA",
+      "deviceMaterial": "00408469",
+      "ean": "4242005469574",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:35:07.503883+00:00",
+      "status": "accepted"
+    },
+    {
+      "baseModel": "BBS711ANM",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-7/BBS711ANM",
+      "canonicalModel": "BBS711ANM",
+      "deviceMaterial": "00407999",
+      "ean": "4242005306640",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:35:07.456057+00:00",
+      "status": "accepted"
+    },
+    {
+      "baseModel": "BBS712A",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-7/BBS712A",
+      "canonicalModel": "BBS712A",
+      "deviceMaterial": "00407984",
+      "ean": "4242005306664",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:35:07.722732+00:00",
+      "status": "accepted"
+    },
+    {
+      "baseModel": "BBS71BBLCK",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-7/BBS71BBLCK",
+      "canonicalModel": "BBS71BBLCK",
+      "deviceMaterial": "00408146",
+      "ean": "4242005388790",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:35:17.182641+00:00",
+      "status": "deferred: not needed in this bounded intake; do not count as imported"
+    },
+    {
+      "baseModel": "BBS71BLAG",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-7/BBS71BLAG",
+      "canonicalModel": "BBS71BLAG",
+      "deviceMaterial": "00408148",
+      "ean": "4242005388813",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:35:16.991249+00:00",
+      "status": "deferred: not needed in this bounded intake; do not count as imported"
+    },
+    {
+      "baseModel": "BBS71BTRED",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-7/BBS71BTRED",
+      "canonicalModel": "BBS71BTRED",
+      "deviceMaterial": "00408150",
+      "ean": "4242005388820",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:35:16.219237+00:00",
+      "status": "deferred: not needed in this bounded intake; do not count as imported"
+    },
+    {
+      "baseModel": "BBS921TBA",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-9-akku-staubsauger/BBS921TBA",
+      "canonicalModel": "BBS921TBA",
+      "deviceMaterial": "00408535",
+      "ean": "4242005469482",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:35:18.071420+00:00",
+      "status": "accepted"
+    },
+    {
+      "baseModel": "BBS931PET",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-9-akku-staubsauger/BBS931PET",
+      "canonicalModel": "BBS931PET",
+      "deviceMaterial": "00408530",
+      "ean": "4242005468362",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:35:24.032901+00:00",
+      "status": "accepted"
+    },
+    {
+      "baseModel": "BBS931WBA",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-9-akku-staubsauger/BBS931WBA",
+      "canonicalModel": "BBS931WBA",
+      "deviceMaterial": "00408538",
+      "ean": "4242005469475",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:35:24.781231+00:00",
+      "status": "accepted"
+    },
+    {
+      "baseModel": "BCH3K2852",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/flexxo/BCH3K2852",
+      "canonicalModel": "BCH3K2852",
+      "deviceMaterial": "00407808",
+      "ean": "4242005278459",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:35:24.850643+00:00",
+      "status": "accepted"
+    },
+    {
+      "baseModel": "BCH3P210",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/flexxo/BCH3P210",
+      "canonicalModel": "BCH3P210",
+      "deviceMaterial": "00407134",
+      "ean": "4242005110728",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:35:24.731177+00:00",
+      "status": "accepted"
+    },
+    {
+      "baseModel": "BCH4FM28",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/flexxo/BCH4FM28",
+      "canonicalModel": "BCH4FM28",
+      "deviceMaterial": null,
+      "ean": "4242005545926",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:35:31.506314+00:00",
+      "status": "deferred: manufacturer page has no separate device material in its metadata"
+    },
+    {
+      "baseModel": "BCH4SM28",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/flexxo/BCH4SM28",
+      "canonicalModel": "BCH4SM28",
+      "deviceMaterial": null,
+      "ean": "4242005545919",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:35:30.987057+00:00",
+      "status": "deferred: manufacturer page has no separate device material in its metadata"
+    },
+    {
+      "baseModel": "BCH6L2560",
+      "url": "https://www.bosch-home.com/de/de/product/kabellosehandstaubsauger/BCH6L2560",
+      "canonicalModel": "BCH6L2560",
+      "deviceMaterial": "00405720",
+      "ean": "4242002879277",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:35:31.040987+00:00",
+      "status": "accepted"
+    },
+    {
+      "baseModel": "BCH85N",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/athlet/BCH85N",
+      "canonicalModel": "BCH85N",
+      "deviceMaterial": "00407656",
+      "ean": "4242005219674",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:35:31.636635+00:00",
+      "status": "accepted"
+    },
+    {
+      "baseModel": "BCH86HYG1",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/athlet/BCH86HYG1",
+      "canonicalModel": "BCH86HYG1",
+      "deviceMaterial": "00407692",
+      "ean": "4242005219681",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:35:38.877602+00:00",
+      "status": "accepted"
+    },
+    {
+      "baseModel": "BCH86HYG2",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/athlet/BCH86HYG2",
+      "canonicalModel": "BCH86HYG2",
+      "deviceMaterial": "00407691",
+      "ean": "4242005231898",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:35:39.148299+00:00",
+      "status": "accepted"
+    },
+    {
+      "baseModel": "BCHF216B",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/readyyy/BCHF216B",
+      "canonicalModel": "BCHF216B",
+      "deviceMaterial": "00407445",
+      "ean": "4242005183142",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:35:38.845542+00:00",
+      "status": "accepted"
+    },
+    {
+      "baseModel": "BCHF216S",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/readyyy/BCHF216S",
+      "canonicalModel": "BCHF216S",
+      "deviceMaterial": "00407444",
+      "ean": "4242005183166",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:35:38.950452+00:00",
+      "status": "deferred: not needed in this bounded intake; do not count as imported"
+    },
+    {
+      "baseModel": "BCHF220B",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/readyyy/BCHF220B",
+      "canonicalModel": "BCHF220B",
+      "deviceMaterial": "00407448",
+      "ean": "4242005183302",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:35:48.628821+00:00",
+      "status": "accepted"
+    },
+    {
+      "baseModel": "BCHF220T",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/readyyy/BCHF220T",
+      "canonicalModel": "BCHF220T",
+      "deviceMaterial": "00407450",
+      "ean": "4242005183289",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:35:48.621064+00:00",
+      "status": "deferred: not needed in this bounded intake; do not count as imported"
+    },
+    {
+      "baseModel": "BCHF2MX16",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/readyyy/BCHF2MX16",
+      "canonicalModel": "BCHF2MX16",
+      "deviceMaterial": "00407446",
+      "ean": "4242005183159",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:35:48.015237+00:00",
+      "status": "accepted"
+    },
+    {
+      "baseModel": "BCS711A",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-7/BCS711A",
+      "canonicalModel": "BCS711A",
+      "deviceMaterial": "00407979",
+      "ean": "4242005306978",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:35:48.846197+00:00",
+      "status": "deferred: not needed in this bounded intake; do not count as imported"
+    },
+    {
+      "baseModel": "BCS712XXL",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-7/BCS712XXL",
+      "canonicalModel": "BCS712XXL",
+      "deviceMaterial": "00408003",
+      "ean": "4242005307036",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:35:57.624763+00:00",
+      "status": "deferred: not needed in this bounded intake; do not count as imported"
+    },
+    {
+      "baseModel": "BCS71HYG1",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-7/BCS71HYG1",
+      "canonicalModel": "BCS71HYG1",
+      "deviceMaterial": "00408348",
+      "ean": "4242005349319",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:35:57.824384+00:00",
+      "status": "deferred: not needed in this bounded intake; do not count as imported"
+    },
+    {
+      "baseModel": "BCS8224PET",
+      "url": "https://www.bosch-home.com/de/de/product/kabellosehandstaubsauger/BCS8224PET",
+      "canonicalModel": "BCS8224PET",
+      "deviceMaterial": "00407784",
+      "ean": "4242005269044",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:35:57.804507+00:00",
+      "status": "deferred: not needed in this bounded intake; do not count as imported"
+    },
+    {
+      "baseModel": "BDS10BGRGE",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/BDS10BGRGE",
+      "canonicalModel": "BDS10BGRGE",
+      "deviceMaterial": "00408661",
+      "ean": "4242005557882",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:35:58.130269+00:00",
+      "status": "deferred: not needed in this bounded intake; do not count as imported"
+    },
+    {
+      "baseModel": "BGB38BA1",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGB38BA1",
+      "canonicalModel": "BGB38BA1",
+      "deviceMaterial": "00408128",
+      "ean": "4242005359158",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:36:06.313329+00:00",
+      "status": "accepted"
+    },
+    {
+      "baseModel": "BGB41POW1",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGB41POW1",
+      "canonicalModel": "BGB41POW1",
+      "deviceMaterial": "00408440",
+      "ean": "4242005483990",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:36:06.323567+00:00",
+      "status": "accepted"
+    },
+    {
+      "baseModel": "BGB6SIL0L",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGB6SIL0L",
+      "canonicalModel": "BGB6SIL0L",
+      "deviceMaterial": "00408702",
+      "ean": "4242005580828",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:36:06.092337+00:00",
+      "status": "accepted"
+    },
+    {
+      "baseModel": "BGB6SIL1",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGB6SIL1",
+      "canonicalModel": "BGB6SIL1",
+      "deviceMaterial": "00407628",
+      "ean": "4242005227877",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:36:06.651375+00:00",
+      "status": "accepted"
+    },
+    {
+      "baseModel": "BGB6X300",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGB6X300",
+      "canonicalModel": "BGB6X300",
+      "deviceMaterial": "00407695",
+      "ean": "4242005231881",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:36:13.936987+00:00",
+      "status": "accepted"
+    },
+    {
+      "baseModel": "BGB6X320",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGB6X320",
+      "canonicalModel": "BGB6X320",
+      "deviceMaterial": "00407696",
+      "ean": "4242005247400",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:36:14.394525+00:00",
+      "status": "accepted"
+    },
+    {
+      "baseModel": "BGB75X650",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGB75X650",
+      "canonicalModel": "BGB75X650",
+      "deviceMaterial": "00408627",
+      "ean": "4242005550517",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:36:14.772148+00:00",
+      "status": "accepted"
+    },
+    {
+      "baseModel": "BGBS2RD1",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGBS2RD1",
+      "canonicalModel": "BGBS2RD1",
+      "deviceMaterial": "00407931",
+      "ean": "4242005310951",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:36:14.385859+00:00",
+      "status": "deferred: not needed in this bounded intake; do not count as imported"
+    },
+    {
+      "baseModel": "BGC05A220A",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/beutellose-staubsauger/BGC05A220A",
+      "canonicalModel": "BGC05A220A",
+      "deviceMaterial": "00407104",
+      "ean": "4242005134120",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:36:23.877908+00:00",
+      "status": "accepted"
+    },
+    {
+      "baseModel": "BGC05A322",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/beutellose-staubsauger/BGC05A322",
+      "canonicalModel": "BGC05A322",
+      "deviceMaterial": "00407315",
+      "ean": "4242005162888",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:36:26.329269+00:00",
+      "status": "accepted"
+    },
+    {
+      "baseModel": "BGC05LW2",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/beutellose-staubsauger/BGC05LW2",
+      "canonicalModel": "BGC05LW2",
+      "deviceMaterial": "00408861",
+      "ean": "4242005574360",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:36:23.789473+00:00",
+      "status": "accepted"
+    },
+    {
+      "baseModel": "BGC21X300",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/beutellose-staubsauger/BGC21X300",
+      "canonicalModel": "BGC21X300",
+      "deviceMaterial": "00407885",
+      "ean": "4242005284191",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:36:25.144710+00:00",
+      "status": "accepted"
+    },
+    {
+      "baseModel": "BGC21X350",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/beutellose-staubsauger/BGC21X350",
+      "canonicalModel": "BGC21X350",
+      "deviceMaterial": "00407879",
+      "ean": "4242005284528",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:36:33.349086+00:00",
+      "status": "accepted"
+    },
+    {
+      "baseModel": "BGC41Q69",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/beutellose-staubsauger/BGC41Q69",
+      "canonicalModel": "BGC41Q69",
+      "deviceMaterial": "00407218",
+      "ean": "4242005168675",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:36:32.863461+00:00",
+      "status": "accepted"
+    },
+    {
+      "baseModel": "BGC41X36",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/beutellose-staubsauger/BGC41X36",
+      "canonicalModel": "BGC41X36",
+      "deviceMaterial": "00407514",
+      "ean": "4242005218837",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:36:33.374142+00:00",
+      "status": "accepted"
+    },
+    {
+      "baseModel": "BGC41XALL",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/beutellose-staubsauger/BGC41XALL",
+      "canonicalModel": "BGC41XALL",
+      "deviceMaterial": "00407977",
+      "ean": "4242005345816",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:36:32.766311+00:00",
+      "status": "accepted"
+    },
+    {
+      "baseModel": "BGC41XECO",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/beutellose-staubsauger/BGC41XECO",
+      "canonicalModel": "BGC41XECO",
+      "deviceMaterial": "00408561",
+      "ean": "4242005525423",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:36:45.532545+00:00",
+      "status": "accepted"
+    },
+    {
+      "baseModel": "BGD38RD1H",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGD38RD1H",
+      "canonicalModel": "BGD38RD1H",
+      "deviceMaterial": "00408107",
+      "ean": "4242005364039",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:36:45.585579+00:00",
+      "status": "deferred: not needed in this bounded intake; do not count as imported"
+    },
+    {
+      "baseModel": "BGD38WH2H",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGD38WH2H",
+      "canonicalModel": "BGD38WH2H",
+      "deviceMaterial": "00408101",
+      "ean": "4242005364046",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:36:46.184807+00:00",
+      "status": "deferred: not needed in this bounded intake; do not count as imported"
+    },
+    {
+      "baseModel": "BGD41MPOW",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGD41MPOW",
+      "canonicalModel": "BGD41MPOW",
+      "deviceMaterial": "00408441",
+      "ean": "4242005484041",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:36:45.429053+00:00",
+      "status": "deferred: not needed in this bounded intake; do not count as imported"
+    },
+    {
+      "baseModel": "BGDS2BA1",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGDS2BA1",
+      "canonicalModel": "BGDS2BA1",
+      "deviceMaterial": "00408281",
+      "ean": "4242005444236",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:36:49.702618+00:00",
+      "status": "accepted"
+    },
+    {
+      "baseModel": "BGDS2BAL",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGDS2BAL",
+      "canonicalModel": "BGDS2BAL",
+      "deviceMaterial": "00408780",
+      "ean": "4242005591169",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:36:50.687717+00:00",
+      "status": "accepted"
+    },
+    {
+      "baseModel": "BGL6TSIL",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGL6TSIL",
+      "canonicalModel": "BGL6TSIL",
+      "deviceMaterial": "00407632",
+      "ean": "4242005231461",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:36:50.799315+00:00",
+      "status": "accepted"
+    },
+    {
+      "baseModel": "BGL75XPRQ",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGL75XPRQ",
+      "canonicalModel": "BGL75XPRQ",
+      "deviceMaterial": "00408572",
+      "ean": "4242005533688",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:36:49.958268+00:00",
+      "status": "accepted"
+    },
+    {
+      "baseModel": "BGL8SIL5",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGL8SIL5",
+      "canonicalModel": "BGL8SIL5",
+      "deviceMaterial": "00407518",
+      "ean": "4242005202843",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:36:54.304304+00:00",
+      "status": "accepted"
+    },
+    {
+      "baseModel": "BGS05AM",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/beutellose-staubsauger/BGS05AM",
+      "canonicalModel": "BGS05AM",
+      "deviceMaterial": "00408854",
+      "ean": "4242005574629",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:36:53.936743+00:00",
+      "status": "accepted"
+    },
+    {
+      "baseModel": "BGS05BA2TH",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/beutellose-staubsauger/BGS05BA2TH",
+      "canonicalModel": "BGS05BA2TH",
+      "deviceMaterial": "00408849",
+      "ean": "4242005574612",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:36:54.622611+00:00",
+      "status": "accepted"
+    },
+    {
+      "baseModel": "BGS05LRD2",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/beutellose-staubsauger/BGS05LRD2",
+      "canonicalModel": "BGS05LRD2",
+      "deviceMaterial": "00408860",
+      "ean": "4242005574605",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:36:53.903283+00:00",
+      "status": "accepted"
+    },
+    {
+      "baseModel": "BHH4GN28",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/flexxo/BHH4GN28",
+      "canonicalModel": "BHH4GN28",
+      "deviceMaterial": null,
+      "ean": "4242005545841",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:36:59.790536+00:00",
+      "status": "deferred: manufacturer page has no separate device material in its metadata"
+    },
+    {
+      "baseModel": "BKS05MWHT",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/beutellose-staubsauger/BKS05MWHT",
+      "canonicalModel": "BKS05MWHT",
+      "deviceMaterial": "00408865",
+      "ean": "4242005587810",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:36:59.641887+00:00",
+      "status": "deferred: not needed in this bounded intake; do not count as imported"
+    },
+    {
+      "baseModel": "BKS05PARQ",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/beutellose-staubsauger/BKS05PARQ",
+      "canonicalModel": "BKS05PARQ",
+      "deviceMaterial": "00408851",
+      "ean": "4242005574681",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:36:59.516906+00:00",
+      "status": "deferred: not needed in this bounded intake; do not count as imported"
+    },
+    {
+      "baseModel": "BKS1041BM",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/BKS1041BM",
+      "canonicalModel": "BKS1041BM",
+      "deviceMaterial": "00408660",
+      "ean": "4242005555956",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:37:00.569281+00:00",
+      "status": "deferred: not needed in this bounded intake; do not count as imported"
+    },
+    {
+      "baseModel": "BKS1041RHF",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/BKS1041RHF",
+      "canonicalModel": "BKS1041RHF",
+      "deviceMaterial": "00408454",
+      "ean": "4242005469604",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:37:04.634192+00:00",
+      "status": "deferred: not needed in this bounded intake; do not count as imported"
+    },
+    {
+      "baseModel": "BKS1042GQC",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/BKS1042GQC",
+      "canonicalModel": "BKS1042GQC",
+      "deviceMaterial": "00408903",
+      "ean": "4242005601943",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:37:05.067419+00:00",
+      "status": "deferred: not needed in this bounded intake; do not count as imported"
+    },
+    {
+      "baseModel": "BKS1042POW",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/BKS1042POW",
+      "canonicalModel": "BKS1042POW",
+      "deviceMaterial": "00408904",
+      "ean": "4242005601936",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:37:04.575983+00:00",
+      "status": "deferred: not needed in this bounded intake; do not count as imported"
+    },
+    {
+      "baseModel": "BKS1051GQC",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/BKS1051GQC",
+      "canonicalModel": "BKS1051GQC",
+      "deviceMaterial": "00408466",
+      "ean": "4242005469581",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:37:04.609237+00:00",
+      "status": "deferred: not needed in this bounded intake; do not count as imported"
+    },
+    {
+      "baseModel": "BKS1051POW",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/BKS1051POW",
+      "canonicalModel": "BKS1051POW",
+      "deviceMaterial": "00408471",
+      "ean": "4242005469598",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:37:08.631487+00:00",
+      "status": "deferred: not needed in this bounded intake; do not count as imported"
+    },
+    {
+      "baseModel": "BKS6111P",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-6/BKS6111P",
+      "canonicalModel": "BKS6111P",
+      "deviceMaterial": "00407703",
+      "ean": "4242005240265",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:37:08.602072+00:00",
+      "status": "deferred: not needed in this bounded intake; do not count as imported"
+    },
+    {
+      "baseModel": "BKS611MALL",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-6/BKS611MALL",
+      "canonicalModel": "BKS611MALL",
+      "deviceMaterial": "00408449",
+      "ean": "4242005509379",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:37:08.819914+00:00",
+      "status": "deferred: not needed in this bounded intake; do not count as imported"
+    },
+    {
+      "baseModel": "BKS611MTB",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-6/BKS611MTB",
+      "canonicalModel": "BKS611MTB",
+      "deviceMaterial": "00407756",
+      "ean": "4242005257898",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:37:08.745748+00:00",
+      "status": "deferred: not needed in this bounded intake; do not count as imported"
+    },
+    {
+      "baseModel": "BKS711GH",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-7/BKS711GH",
+      "canonicalModel": "BKS711GH",
+      "deviceMaterial": "00408125",
+      "ean": "4242005363117",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:37:13.157449+00:00",
+      "status": "deferred: not needed in this bounded intake; do not count as imported"
+    },
+    {
+      "baseModel": "BKS711MALL",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-7/BKS711MALL",
+      "canonicalModel": "BKS711MALL",
+      "deviceMaterial": "00408004",
+      "ean": "4242005307050",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:37:13.211942+00:00",
+      "status": "deferred: not needed in this bounded intake; do not count as imported"
+    },
+    {
+      "baseModel": "BKS711MTB",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-7/BKS711MTB",
+      "canonicalModel": "BKS711MTB",
+      "deviceMaterial": "00408006",
+      "ean": "4242005307067",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:37:12.391610+00:00",
+      "status": "deferred: not needed in this bounded intake; do not count as imported"
+    },
+    {
+      "baseModel": "BKS711PET",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-7/BKS711PET",
+      "canonicalModel": "BKS711PET",
+      "deviceMaterial": "00408007",
+      "ean": "4242005307074",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:37:12.389808+00:00",
+      "status": "deferred: not needed in this bounded intake; do not count as imported"
+    },
+    {
+      "baseModel": "BKS711XXL",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-7/BKS711XXL",
+      "canonicalModel": "BKS711XXL",
+      "deviceMaterial": "00408008",
+      "ean": "4242005307081",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:37:20.796255+00:00",
+      "status": "deferred: not needed in this bounded intake; do not count as imported"
+    },
+    {
+      "baseModel": "BKS71HYG1",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-7/BKS71HYG1",
+      "canonicalModel": "BKS71HYG1",
+      "deviceMaterial": "00408351",
+      "ean": "4242005349357",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:37:20.735687+00:00",
+      "status": "deferred: not needed in this bounded intake; do not count as imported"
+    },
+    {
+      "baseModel": "BKS71HYG3",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-7/BKS71HYG3",
+      "canonicalModel": "BKS71HYG3",
+      "deviceMaterial": "00408350",
+      "ean": "4242005357529",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:37:20.684438+00:00",
+      "status": "deferred: not needed in this bounded intake; do not count as imported"
+    },
+    {
+      "baseModel": "BKS71HYG4",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-7/BKS71HYG4",
+      "canonicalModel": "BKS71HYG4",
+      "deviceMaterial": "00408590",
+      "ean": "4242005536832",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:37:20.822597+00:00",
+      "status": "deferred: not needed in this bounded intake; do not count as imported"
+    },
+    {
+      "baseModel": "BKS8214W",
+      "url": "https://www.bosch-home.com/de/de/product/kabellosehandstaubsauger/BKS8214W",
+      "canonicalModel": "BKS8214W",
+      "deviceMaterial": "00407785",
+      "ean": "4242005269136",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:37:26.651555+00:00",
+      "status": "deferred: not needed in this bounded intake; do not count as imported"
+    },
+    {
+      "baseModel": "BKS931BA",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-9-akku-staubsauger/BKS931BA",
+      "canonicalModel": "BKS931BA",
+      "deviceMaterial": "00408539",
+      "ean": "4242005469505",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:37:26.598330+00:00",
+      "status": "deferred: not needed in this bounded intake; do not count as imported"
+    },
+    {
+      "baseModel": "BSS71125AH",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-7/BSS71125AH",
+      "canonicalModel": "BSS71125AH",
+      "deviceMaterial": "00408011",
+      "ean": "4242005307098",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:37:27.134871+00:00",
+      "status": "deferred: not needed in this bounded intake; do not count as imported"
+    },
+    {
+      "baseModel": "BSS711W",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-7/BSS711W",
+      "canonicalModel": "BSS711W",
+      "deviceMaterial": "00408010",
+      "ean": "4242005307104",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:37:26.608736+00:00",
+      "status": "deferred: not needed in this bounded intake; do not count as imported"
+    },
+    {
+      "baseModel": "BSS715CARP",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-7/BSS715CARP",
+      "canonicalModel": "BSS715CARP",
+      "deviceMaterial": "00408134",
+      "ean": "4242005366903",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:37:32.784241+00:00",
+      "status": "deferred: not needed in this bounded intake; do not count as imported"
+    },
+    {
+      "baseModel": "BSS715FRSH",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-7/BSS715FRSH",
+      "canonicalModel": "BSS715FRSH",
+      "deviceMaterial": "00408432",
+      "ean": "4242005509386",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:37:32.396014+00:00",
+      "status": "deferred: not needed in this bounded intake; do not count as imported"
+    },
+    {
+      "baseModel": "BSS825ALL",
+      "url": "https://www.bosch-home.com/de/de/product/kabellosehandstaubsauger/BSS825ALL",
+      "canonicalModel": "BSS825ALL",
+      "deviceMaterial": "00407852",
+      "ean": "4242005293889",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:37:33.726564+00:00",
+      "status": "deferred: not needed in this bounded intake; do not count as imported"
+    },
+    {
+      "baseModel": "BSS825MULT",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-8/BSS825MULT",
+      "canonicalModel": "BSS825MULT",
+      "deviceMaterial": "00408140",
+      "ean": "4242005394654",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:37:32.640526+00:00",
+      "status": "deferred: not needed in this bounded intake; do not count as imported"
+    },
+    {
+      "baseModel": "BTS1042GQC",
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/BTS1042GQC",
+      "canonicalModel": "BTS1042GQC",
+      "deviceMaterial": "00408637",
+      "ean": "4242005555925",
+      "httpStatus": 200,
+      "checkedAt": "2026-10-08T10:37:39.508284+00:00",
+      "status": "deferred: not needed in this bounded intake; do not count as imported"
+    }
+  ],
+  "unconfirmedIndexChecks": [
+    {
+      "requestedReference": "BGB38BA1/01",
+      "url": "https://www.bosch-home.com/de/de/productservice/BGB38BA1-01",
+      "status": "not-confirmed",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "requestedReference": "BGB41POW1/01",
+      "url": "https://www.bosch-home.com/de/de/productservice/BGB41POW1-01",
+      "status": "not-confirmed",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "requestedReference": "BGL75XPRQ/01",
+      "url": "https://www.bosch-home.com/de/de/productservice/BGL75XPRQ-01",
+      "status": "not-confirmed",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "requestedReference": "BGL8SIL5/01",
+      "url": "https://www.bosch-home.com/de/de/productservice/BGL8SIL5-01",
+      "status": "not-confirmed",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "requestedReference": "BGC05A220A/01",
+      "url": "https://www.bosch-home.com/de/de/productservice/BGC05A220A-01",
+      "status": "not-confirmed",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "requestedReference": "BGC41XECO/01",
+      "url": "https://www.bosch-home.com/de/de/productservice/BGC41XECO-01",
+      "status": "not-confirmed",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "requestedReference": "BCH3K2852/01",
+      "url": "https://www.bosch-home.com/de/de/productservice/BCH3K2852-01",
+      "status": "not-confirmed",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "requestedReference": "BCH85N/01",
+      "url": "https://www.bosch-home.com/de/de/productservice/BCH85N-01",
+      "status": "not-confirmed",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "requestedReference": "BCH86HYG1/01",
+      "url": "https://www.bosch-home.com/de/de/productservice/BCH86HYG1-01",
+      "status": "not-confirmed",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "requestedReference": "BCH86HYG2/01",
+      "url": "https://www.bosch-home.com/de/de/productservice/BCH86HYG2-01",
+      "status": "not-confirmed",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "requestedReference": "BGB38BA1/02",
+      "url": "https://www.bosch-home.com/de/de/productservice/BGB38BA1-02",
+      "status": "not-confirmed",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "requestedReference": "BGB38BA1/03",
+      "url": "https://www.bosch-home.com/de/de/productservice/BGB38BA1-03",
+      "status": "not-confirmed",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "requestedReference": "BGB41POW1/02",
+      "url": "https://www.bosch-home.com/de/de/productservice/BGB41POW1-02",
+      "status": "not-confirmed",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "requestedReference": "BGB41POW1/03",
+      "url": "https://www.bosch-home.com/de/de/productservice/BGB41POW1-03",
+      "status": "not-confirmed",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "requestedReference": "BGL75XPRQ/02",
+      "url": "https://www.bosch-home.com/de/de/productservice/BGL75XPRQ-02",
+      "status": "not-confirmed",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "requestedReference": "BGL75XPRQ/03",
+      "url": "https://www.bosch-home.com/de/de/productservice/BGL75XPRQ-03",
+      "status": "not-confirmed",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "requestedReference": "BGL8SIL5/02",
+      "url": "https://www.bosch-home.com/de/de/productservice/BGL8SIL5-02",
+      "status": "not-confirmed",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "requestedReference": "BGL8SIL5/03",
+      "url": "https://www.bosch-home.com/de/de/productservice/BGL8SIL5-03",
+      "status": "not-confirmed",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "requestedReference": "BGC41XECO/02",
+      "url": "https://www.bosch-home.com/de/de/productservice/BGC41XECO-02",
+      "status": "not-confirmed",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "requestedReference": "BGC41XECO/03",
+      "url": "https://www.bosch-home.com/de/de/productservice/BGC41XECO-03",
+      "status": "not-confirmed",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "requestedReference": "BCH3K2852/02",
+      "url": "https://www.bosch-home.com/de/de/productservice/BCH3K2852-02",
+      "status": "not-confirmed",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "requestedReference": "BCH3K2852/03",
+      "url": "https://www.bosch-home.com/de/de/productservice/BCH3K2852-03",
+      "status": "not-confirmed",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "requestedReference": "BCH85N/02",
+      "url": "https://www.bosch-home.com/de/de/productservice/BCH85N-02",
+      "status": "not-confirmed",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "requestedReference": "BCH86HYG1/02",
+      "url": "https://www.bosch-home.com/de/de/productservice/BCH86HYG1-02",
+      "status": "not-confirmed",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "requestedReference": "BCH86HYG2/02",
+      "url": "https://www.bosch-home.com/de/de/productservice/BCH86HYG2-02",
+      "status": "not-confirmed",
+      "reason": "HTTP Error 404: Not Found"
+    }
+  ]
+}
