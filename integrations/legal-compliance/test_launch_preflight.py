@@ -31,6 +31,10 @@ class CommercialGateTests(unittest.TestCase):
             cfg['operator'].update(public_email='kontakt@betrieb.test',additional_immediate_contact='Rueckrufkontakt')
             cfg['hosting'].update(production_domain='betrieb.test',provider='Test Provider')
             cfg['business']['gewerbe_registration_confirmed']=True
+            cfg['business']['employment_side_activity_checked']=True
+            cfg['business']['employment_approval_if_needed_resolved']=True
+            cfg['business']['cross_border_affiliate_tax_reviewed']=True
+            cfg['business']['bookkeeping_ready']=True
             for key in cfg['hosting']:
                 if key.endswith('approved') or key.endswith('checked'):cfg['hosting'][key]=True
             for group in ('privacy','marketplace','content','launch'):
@@ -74,6 +78,15 @@ class CommercialGateTests(unittest.TestCase):
             self.assertIn('operator.commercial_register.registered:company',a['missing'])
             self.assertIn('operator.representative_if_company',a['missing'])
             self.assertIn('operator.vat_id_if_assigned',a['missing'])
+
+    def test_side_activity_and_eu_tax_are_release_blockers(self):
+        with TemporaryDirectory() as d:
+            cfg=copy.deepcopy(example)
+            status=mod.assess(cfg,Path(d))
+            self.assertIn('business.employment_side_activity_checked',status['missing'])
+            self.assertIn('business.employment_approval_if_needed_resolved',status['missing'])
+            self.assertIn('business.cross_border_affiliate_tax_reviewed',status['missing'])
+            self.assertIn('business.bookkeeping_ready',status['missing'])
 
     def test_checkout_needs_own_legal_review(self):
         with TemporaryDirectory() as d:
