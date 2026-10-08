@@ -50,7 +50,7 @@ for index, offset in enumerate(range(0, len(encoded), 10000)):
 (root/f'update-v{args.version}.patch').write_bytes(patch)
 workflow = root/'.github/workflows/pages.yml'
 text = workflow.read_text()
-marker = '      - name: Verify reproducible app bundle\n'
+marker = '      - name: Build and verify app bundles from checked sources\n'
 assert text.count(marker) == 1
 step = f'''      - name: {json.dumps('Apply v'+args.version+' '+args.description)}
         shell: bash

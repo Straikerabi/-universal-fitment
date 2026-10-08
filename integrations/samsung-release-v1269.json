@@ -1,0 +1,27 @@
+{
+  "version": "1.26.9",
+  "source_checked_date": "2026-10-08",
+  "model_count_total": 870,
+  "record_count_total": 881,
+  "catalog_articles_total": 1928,
+  "physical_articles_total": 1810,
+  "target_slots_occupied": 657,
+  "records_without_parts": 246,
+  "samsung_models": 66,
+  "samsung_articles": 34,
+  "samsung_models_with_parts": 9,
+  "samsung_models_without_parts": 57,
+  "new_model_references": 2,
+  "new_distinct_article_codes": 7,
+  "new_optional_accessory_relationships": 50,
+  "app_test_groups": 36,
+  "validation": [
+    "byte-identical source bundle",
+    "app unit tests",
+    "app syntax",
+    "SHA-verified and replayed patch",
+    "SHA-verified source checkpoint"
+  ],
+  "external_live_offer_check": "not_performed",
+  "physical_fitment_check": "not_performed"
+}
