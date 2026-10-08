@@ -275,9 +275,10 @@ jobs:
           echo "85bc4a959997a4ca0e6c8ae119ab78ca42ce0306c6f347c3945062a9ef21dcc9  update-v1.26.8.patch" | sha256sum -c -
           patch -p1 -d site < update-v1.26.8.patch
 
-      - name: Verify reproducible app bundle
+      - name: Build and verify app bundles from checked sources
         run: |
           npm ci --prefix integrations/auth-sdk --ignore-scripts
+          node integrations/build-app.mjs
           node integrations/build-app.mjs --check
 
       - name: Run checks
