@@ -41,6 +41,7 @@ if phase=="prepare":
         ("samsungParts.length,35","samsungParts.length,36"),
         ("p.modelIds.length).length,27","p.modelIds.length).length,29"),
         ("r.brand==='Samsung').recordsWithoutParts,49","r.brand==='Samsung').recordsWithoutParts,47"),
+        ("r.brand==='Samsung').models,66","r.brand==='Samsung').models,67"),
     ]: replace(tests,a,b)
     anchor="assert.equal(catalogCoverage().find(r=>r.brand==='Samsung').recordsWithoutParts,47);"
     checks="""const samsungJetAIVariants=[['VS28C97B4QK',4],['VS28C97B7QK',4],['VS80F28EGS',6]];
