@@ -100,7 +100,7 @@ elif phase=="finish":
       ("680 von 1.000","682 von 1.000"),
       ("| Samsung | 67 | 67 | 36 | 0 | 47 |","| Samsung | 69 | 69 | 36 | 0 | 49 |"),
       ("Samsung enthält 67 Hersteller-Modellreferenzen.","Samsung enthält 69 Hersteller-Modellreferenzen."),
-      ("236 Modelleinträge haben noch keine","260 Modelleinträge haben noch keine")
+      ("258 Modelleinträge haben noch keine","260 Modelleinträge haben noch keine")
     ]:exact(readme,a,b)
     t=readme.read_text()
     marker="\nHoover enthält 24 deutsche Hersteller-Modelle"
