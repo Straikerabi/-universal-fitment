@@ -24,7 +24,7 @@ for(const row of catalogCoverage()){
 }
 const progress=catalogTargetProgress(catalogCoverage());
 assert.equal(progress.filter(r=>r.parts>=100).length,8);
-assert.equal(progress.find(r=>r.brand==='Samsung').partsMissing,73);
+assert.equal(progress.find(r=>r.brand==='Samsung').partsMissing,66);
 assert.equal(progress.find(r=>r.brand==='Hoover').partsMissing,40);
 assert.equal(progress.find(r=>r.brand==='Vorwerk').models,18,'accessories and sales sets do not create main devices');
 const vp=partsCatalog.filter(p=>p.brand==='Vorwerk');
@@ -51,13 +51,36 @@ for(const part of hooverParts){
 }
 assert.ok(hooverParts.some(p=>p.sourceMarket==='GB / EU-Service'),'the original GB market remains visible on verified shared articles');
 const samsungParts=partsCatalog.filter(p=>p.brand==='Samsung');
-assert.equal(samsungParts.length,27);assert.equal(samsungParts.filter(p=>p.modelIds.length).length,19);
+assert.equal(samsungParts.length,34);assert.equal(samsungParts.filter(p=>p.modelIds.length).length,26);
 for(const [code,count] of [['VS20B75BDR5',8],['VS20C95D2TK',10],['VS20B95C43W',11]]){
  const model=products.find(p=>p.brand==='Samsung'&&p.identifiers.some(i=>i.value===code));
  assert.ok(model);assert.equal(model.parts.length,count);assert.equal(model.physicalPartCount,count);
  assert.ok(model.parts.every(p=>p.fitment.status==='variant_check_required'));
 }
-assert.equal(catalogCoverage().find(r=>r.brand==='Samsung').recordsWithoutParts,61);
+assert.equal(catalogCoverage().find(r=>r.brand==='Samsung').recordsWithoutParts,57);
+const addedSamsungModels=[
+ ['VS20B75BCR5',8],['VS20B75BGR1',9],['VS20C95E4TB',9],
+ ['VS20C85G4PB',10],['VS70H25XFT',7],['VS70H28HFC',7]
+];
+for(const [code,count] of addedSamsungModels){
+ const model=products.find(p=>p.brand==='Samsung'&&p.identifiers.some(id=>id.value===code));
+ assert.ok(model,`Samsung model ${code} must exist`);
+ assert.equal(model.parts.length,count,`optional parts for ${code}`);
+ assert.equal(model.physicalPartCount,count);
+ assert.ok(model.parts.every(p=>p.fitment.status==='variant_check_required'),'Optional list must not assert guaranteed fitment');
+}
+assert.equal(catalogCoverage().find(r=>r.brand==='Samsung').models,66);
+const samsungCodes=samsungParts.map(part=>part.identifiers.find(id=>id.value.startsWith('VCA-'))?.value).filter(Boolean);
+assert.equal(new Set(samsungCodes).size,samsungParts.length,'Samsung article codes are unique');
+for(const code of ['VCA-ADB90','VCA-SPW95']){
+ const accessory=samsungParts.find(p=>p.identifiers.some(id=>id.value===code));
+ assert.ok(accessory?.attachmentReferences.length,`${code} retains required separate attachment`);
+}
+for(const code of ['VCA-SHFF80T','VCA-SHFF80C','VCA-SBTD95','VCA-SAPF80/WA']){
+ assert.ok(samsungParts.some(p=>p.identifiers.some(id=>id.value===code)),`${code} is listed exactly`);
+}
+assert.ok(samsungParts.some(p=>p.identifiers.some(id=>id.value==='VCA-ADB90/VT')),'Keep /VT article distinct from unsuffixed VCA-ADB90');
+
 for(const part of samsungParts){assert.equal(quoteForPart(part),null);assert.equal(cartQuoteItem(part),null);assert.equal(installationTime(part).status,'unknown');}
 const samsungBattery=samsungParts.find(p=>p.identifiers.some(i=>i.value==='VCA-SAPB95/WA'));
 assert.ok(samsungBattery);assert.equal(samsungBattery.sourceQuote,null);assert.equal(samsungBattery.sourceCoverage.ean,'8806095344393');
