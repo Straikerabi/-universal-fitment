@@ -1,0 +1,160 @@
+{
+  "date": "2026-10-08",
+  "market": "DE",
+  "brand": "Samsung",
+  "stage": "source_checked_candidate_import",
+  "sourceType": "official_samsung_de_accessory_product_specifications",
+  "baseline": {
+    "version": "1.28.0",
+    "samsungModelCount": 77,
+    "samsungPartCount": 36,
+    "physicalPartsAllBrands": 1812,
+    "articleCountAllBrands": 1930
+  },
+  "sourceClaim": "Manufacturer-issued original accessory article/GTIN and named compatible families; exact device-and-revision fitment deliberately NOT inferred",
+  "newParts": [
+    {
+      "code": "VCA-SAPC97/WA",
+      "name": "Ersatz-Akku mit Ladestation für Bespoke AI Jet Ultra und Bespoke Jet AI (3970 mAh)",
+      "partTypeId": "battery",
+      "ean": "8806095344423",
+      "url": "https://www.samsung.com/de/home-appliance-accessories/jet-vc-renewal-accessory-battery3-vca-sapc97-wa/",
+      "compatibility": "Bespoke AI Jet Ultra / Bespoke Jet AI",
+      "notes": "Akku mit Ladegerät; 3970 mAh. Akku nicht mit 2200-mAh-Ausführung oder Akku ohne Ladegerät zusammenführen.",
+      "specifications": {
+        "capacityMah": 3970,
+        "includesCharger": true
+      }
+    },
+    {
+      "code": "VCA-SBTC97/GL",
+      "name": "Ersatz-Akku ohne Ladegerät für Bespoke AI Jet Ultra und Bespoke Jet AI (3970 mAh)",
+      "partTypeId": "battery",
+      "ean": "8806095344461",
+      "url": "https://www.samsung.com/de/home-appliance-accessories/jet-vc-renewal-accessory-battery3-vca-sbtc97-gl/",
+      "compatibility": "Bespoke AI Jet Ultra / Bespoke Jet AI",
+      "notes": "Akku ohne Ladegerät; 3970 mAh. Nicht identisch mit VCA-SAPC97/WA.",
+      "specifications": {
+        "capacityMah": 3970,
+        "includesCharger": false
+      }
+    },
+    {
+      "code": "VCA-SBTC97S/GL",
+      "name": "Ersatz-Akku ohne Ladegerät für Bespoke Jet AI (2200 mAh)",
+      "partTypeId": "battery",
+      "ean": "8806095344478",
+      "url": "https://www.samsung.com/de/home-appliance-accessories/jet-vc-renewal-accessory-battery2-vca-sbtc97s-gl/",
+      "compatibility": "Bespoke Jet AI",
+      "notes": "Akku ohne Ladegerät; 2200 mAh. Nicht identisch mit 3970-mAh-Ausführung.",
+      "specifications": {
+        "capacityMah": 2200,
+        "includesCharger": false
+      }
+    },
+    {
+      "code": "VCA-SAPC97S/WA",
+      "name": "Ersatz-Akku mit Ladegerät für Bespoke Jet AI (2200 mAh)",
+      "partTypeId": "battery",
+      "ean": "8806095344454",
+      "url": "https://www.samsung.com/de/home-appliance-accessories/jet-vc-renewal-accessory-battery2-vca-sapc97s-wa/",
+      "compatibility": "Bespoke Jet AI",
+      "notes": "Akku mit Ladegerät; 2200 mAh. Nicht identisch mit Akku ohne Ladegerät.",
+      "specifications": {
+        "capacityMah": 2200,
+        "includesCharger": true
+      }
+    },
+    {
+      "code": "VCA-SAPF80/WA",
+      "name": "Ersatz-Akku mit Ladestation für Bespoke AI Jet Ultra, Jet 95 und Jet 85 (2200 mAh)",
+      "partTypeId": "battery",
+      "ean": "8806097333074",
+      "url": "https://www.samsung.com/de/home-appliance-accessories/bespoke-ai-jet-accessory-battery-vca-sapf80-wa/",
+      "compatibility": "Bespoke AI Jet Ultra / Bespoke AI Jet / Bespoke Jet AI / Bespoke Jet Plus / Jet 95 / Jet 85",
+      "notes": "Akku mit Ladegerät; 2200 mAh. Hersteller nennt mehrere Familien, nicht jede Länder-/Revisionsexaktheit.",
+      "specifications": {
+        "capacityMah": 2200,
+        "includesCharger": true
+      }
+    },
+    {
+      "code": "VCA-SABC95",
+      "name": "Beleuchtete Slim LED Hartbodenbürste für Bespoke Jet Plus / Jet 95 / Jet 85",
+      "partTypeId": "nozzle",
+      "ean": "8806095364520",
+      "url": "https://www.samsung.com/de/home-appliance-accessories/jet-vc-renewal-accessory-slim-led-brush-vca-sabc95/",
+      "compatibility": "Bespoke Jet Plus / Jet 95S / Jet 85S / Jet 95 / Jet 85",
+      "notes": "Motorisierte beleuchtete Hartbodenbürste; getrennt von VCA-SABC97/GL Slim LED+.",
+      "specifications": {
+        "motorized": true,
+        "illuminated": true,
+        "bodenart": "Hartboden"
+      }
+    },
+    {
+      "code": "VCA-SAB92B",
+      "name": "Soft Action Bürste 2.0 für Jet 75E",
+      "partTypeId": "nozzle",
+      "ean": "8806095344362",
+      "url": "https://www.samsung.com/de/home-appliance-accessories/jet-vc-accessory-soft-action-brush-vca-sab92b/",
+      "compatibility": "Jet 75E",
+      "notes": "Motorisierte Hartbodenbürste mit antistatischen Fasern. Kein pauschaler Ersatz für andere Jet-75-Ausführungen.",
+      "specifications": {
+        "motorized": true,
+        "illuminated": false,
+        "bodenart": "Hartboden"
+      }
+    },
+    {
+      "code": "VCA-TAB90C",
+      "name": "Turbo Action Bürste für Jet 75E",
+      "partTypeId": "nozzle",
+      "ean": "8806095343037",
+      "url": "https://www.samsung.com/de/home-appliance-accessories/jet-vc-accessory-turbo-action-brush-vca-tab90c/",
+      "compatibility": "Jet 75E",
+      "notes": "Motorisierte Bürste für Hartboden und Teppich. Eigenständige Zubehörkennung gegenüber Soft Action Bürste.",
+      "specifications": {
+        "motorized": true,
+        "illuminated": false,
+        "bodenart": "Hartboden/Teppich"
+      }
+    },
+    {
+      "code": "VCA-TABC97/GL",
+      "name": "Beleuchtete Active Dual LED Bürste für Bespoke Jet AI",
+      "partTypeId": "nozzle",
+      "ean": "8806095343044",
+      "url": "https://www.samsung.com/de/home-appliance-accessories/jet-vc-renewal-accessory-active-dual-brush-vca-tabc97-gl/",
+      "compatibility": "Bespoke AI Jet Ultra / Bespoke Jet AI",
+      "notes": "Motorisierte beleuchtete Hart-/Teppichbodenbürste; nicht mit anderen VCA-TABA95-Codes gleichsetzen.",
+      "specifications": {
+        "motorized": true,
+        "illuminated": true,
+        "bodenart": "Hartboden/Teppich"
+      }
+    },
+    {
+      "code": "VCA-WB650B/GL",
+      "name": "Spinning Sweeper Wischaufsatz für Jet 75E",
+      "partTypeId": "nozzle",
+      "ean": "8806095343051",
+      "url": "https://www.samsung.com/de/home-appliance-accessories/jet-vc-renewal-accessory-spinning-action-brush-vca-wb650b-gl/",
+      "compatibility": "Jet 75E",
+      "notes": "Wischaufsatz, kein Saugroboter-Teil. Pads und Tücher brauchen eigenen Zubehörnachweis.",
+      "specifications": {
+        "bodenart": "Hartboden",
+        "attachment": "Spinning Sweeper"
+      }
+    }
+  ],
+  "strictRules": [
+    "No duplicate full SKU, including /WA and /GL suffixes",
+    "EAN is manufacturer-published per exact product page; no fabricated identifiers",
+    "Keep differences in battery mAh and included charger as different physical article SKUs",
+    "No generic family compatibility implies exact model fitment",
+    "New articles have zero direct model relationships, even when older catalog devices share a family",
+    "Do not offer live price, stock, delivery, sellers or confirmed individual fitment",
+    "No Jet Bot robot accessories; no floor-care devices outside initial vacuum scope"
+  ]
+}
