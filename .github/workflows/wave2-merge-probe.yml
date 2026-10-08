@@ -4,7 +4,7 @@ on:
     branches: ["release/models-wave2-v1290"]
     paths: ["integrations/wave2-merge-probe-request.md"]
 permissions:
-  contents: read
+  contents: write
 jobs:
   merge-probe:
     runs-on: ubuntu-latest
