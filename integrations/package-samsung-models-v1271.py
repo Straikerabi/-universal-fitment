@@ -41,7 +41,9 @@ if phase=="prepare":
         ]:exact(file,a,b)
     file=site/"tests/catalog-v126.test.mjs"
     exact(file,"r.brand==='Samsung').recordsWithoutParts,47","r.brand==='Samsung').recordsWithoutParts,49")
-    exact(file,"r.brand==='Samsung').models,67","r.brand==='Samsung').models,69")
+    t=file.read_text()
+    assert t.count("r.brand==='Samsung').models,67")==2,'Two existing model assertions expected'
+    file.write_text(t.replace("r.brand==='Samsung').models,67","r.brand==='Samsung').models,69"))
     anchor="assert.equal(catalogCoverage().find(r=>r.brand==='Samsung').recordsWithoutParts,49);"
     additions="""const newSamsungDeviceCodes=['VS70H28HEK','VS80F28EFP'];
 for(const code of newSamsungDeviceCodes){
