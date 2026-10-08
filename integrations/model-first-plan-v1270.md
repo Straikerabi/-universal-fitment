@@ -2,6 +2,8 @@
 
 ## Nächster Arbeitsabschnitt
 
+**v1.28.1 Originalteile-Charge:** Samsung enthält nun 46 von 100 angestrebten physischen Artikeln (+10 aus Samsung-DE-Artikelseiten, ohne unbewiesene gerätespezifische Fitments). 54 weitere physische Samsung-Artikelslots offen. Die anderen drei Modell-Works laufen unabhängig.
+
 **v1.28.0 abgeschlossen:** Samsung +8, Bosch +40 und Mobile UX aus den drei Work-Entwurfs-PRs integriert. Für 308 Modellrecords fehlen noch konkret geprüfte Ersatzteillisten; Modell- und Teileabdeckung bleiben bewusst getrennt.
 
 Vor weiteren großen Teileimporten bauen wir die **Gerätemodell-Abdeckung** aus. Ziel: je Marke bis zu 100 tatsächlich unterscheidbare Staubsauger-Grundmodelle mit Herkunftsbelegen. Es werden keine Zubehörteile, regional identischen Duplikate oder Marketing-Seriennamen als neue Staubsauger gezählt. Wenn ein Hersteller weniger als 100 unabhängige Grundmodelle anbietet, dokumentieren wir die echte Obergrenze statt Namen zu erfinden.
@@ -19,7 +21,7 @@ Vor weiteren großen Teileimporten bauen wir die **Gerätemodell-Abdeckung** aus
 | Philips | 140 | 0 | erfüllt |
 | Siemens | 101 | 0 | erfüllt |
 
-**Summe:** 730 von 1.000 gedeckelten Modellplätzen; 270 noch offen. 943 Modellbezeichnungen, 954 konkreten Modelleinträge und 1.930 Katalogartikel. 308 Modelleinträge aktuell ohne gelistete Teile.
+**Summe:** 730 von 1.000 gedeckelten Modellplätzen; 270 noch offen. 943 Modellbezeichnungen, 954 konkreten Modelleinträge und 1.940 Katalogartikel. 308 Modelleinträge aktuell ohne gelistete Teile.
 
 ## Verbindliche Datenregeln
 

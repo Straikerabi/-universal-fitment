@@ -28,5 +28,12 @@
     "SHA256 patch",
     "SHA256 source checkpoint"
   ],
-  "important": "SKU inclusion documents original accessory existence, not compatibility with a specific model revision or live salability"
+  "important": "SKU inclusion documents original accessory existence, not compatibility with a specific model revision or live salability",
+  "verified_release": {
+    "commit": "b3a0cf3ea090a6d4128097d1167bdc8272985bc3",
+    "github_actions_run": 37789006765,
+    "build_and_test": "success",
+    "pages_deployment": "success",
+    "live_browser_visual_review": "not_performed"
+  }
 }

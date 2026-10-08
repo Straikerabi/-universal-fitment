@@ -49,7 +49,7 @@ Sechs Produktseiten nennen lediglich die neunstellige AEG-Produktnummer. Die feh
 
 ## Neue Herstellerdaten
 
-317 zusätzliche benannte Herstellerartikel ergänzen den bisherigen Bestand: Bosch +56, Rowenta +44, Philips +40, Vorwerk +81, Samsung +36 und Hoover +60. 70 zuvor leere Modelleinträge haben mindestens eine ausdrücklich belegte Teilezuordnung erhalten. Quellen und Ausführungsbedingungen bleiben am Artikel sichtbar. Ein 3D-Ersatzdeckel für einen Dampferzeuger wurde bei der Recherche ausgeschlossen.
+327 zusätzliche benannte Herstellerartikel ergänzen den bisherigen Bestand: Bosch +56, Rowenta +44, Philips +40, Vorwerk +81, Samsung +46 und Hoover +60. 70 zuvor leere Modelleinträge haben mindestens eine ausdrücklich belegte Teilezuordnung erhalten. Quellen und Ausführungsbedingungen bleiben am Artikel sichtbar. Ein 3D-Ersatzdeckel für einen Dampferzeuger wurde bei der Recherche ausgeschlossen.
 
 Samsung enthält 77 Hersteller-Modellreferenzen. 20 genaue deutsche /WD- und /WA-Modelle verfügen jetzt über ausdrücklich gelistetes optionales Zubehör; bei den zuletzt ergänzten sechs Modellen sind das insgesamt 50 Nennungen und sieben zusätzliche unterschiedliche Artikelkennungen. Einschließlich der bisherigen Samsung-Zubehörlisten sind 29 unterschiedliche Artikel wenigstens einem Modell zugeordnet. Clean-Station-Beutel und Wischverbrauchsmaterial behalten zusätzliche Zubehörbedingungen. Eine Liste optionalen Zubehörs ist keine vollständige Ersatzteilliste oder automatische Passungsfreigabe.
 
@@ -82,7 +82,7 @@ Der geschützte Marketplace-Server behält seinen bestehenden Vertrag mit 167 Mi
 
 ## Prüfung und verbleibende Ziele
 
-36 App-Testgruppen prüfen unter anderem Kategorien, Artikelarten, Ladezustände, genaue Zielzahlen, Quellenidentitäten, Zubehörtypen, Kennungsgrenzen, Warenkorb, Sicherungen und Offline-Verhalten. Syntaxprüfungen und bytegenau reproduzierbare Haupt- und optionale Pakete gehören zur Veröffentlichung. Die Prüfsummen-geschützte Änderung wird vor GitHub Pages aus dem bisherigen Stand rekonstruiert; bestehende synthetische Serverprüfungen laufen ebenfalls in CI.
+38 App-Testgruppen prüfen unter anderem Kategorien, Artikelarten, Ladezustände, genaue Zielzahlen, Quellenidentitäten, Zubehörtypen, Kennungsgrenzen, Warenkorb, Sicherungen und Offline-Verhalten. Syntaxprüfungen und bytegenau reproduzierbare Haupt- und optionale Pakete gehören zur Veröffentlichung. Die Prüfsummen-geschützte Änderung wird vor GitHub Pages aus dem bisherigen Stand rekonstruiert; bestehende synthetische Serverprüfungen laufen ebenfalls in CI.
 
 Noch offen sind die Modellziele für sechs Marken, mindestens 64 weitere Samsung- und 40 weitere Hoover-Teile sowie vollständige gerätespezifische Teilelisten. 308 Modelleinträge haben noch keine konkrete Teilezuordnung. Einzelne Montageanleitungen, breitere belegte Nachbauten, aktuelle Gerätepreise und reale Geräteprüfungen bleiben Teil des Ausbaus. Kleine eigenständige Handsauger, Roboter und weitere Gerätekategorien werden nicht zum Auffüllen der Modellziele verwendet.
 
