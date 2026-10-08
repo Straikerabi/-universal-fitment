@@ -26,5 +26,12 @@
     "Reproducible browser bundles",
     "SHA-256 verified patch replay",
     "SHA-256 verified source checkpoint"
-  ]
+  ],
+  "verified_release": {
+    "commit": "d409853879acfc49a35631181636bf14761571a7",
+    "github_actions_run": 37749919586,
+    "build_and_test": "success",
+    "pages_deployment": "success",
+    "browser_visual_review": "not_performed"
+  }
 }
