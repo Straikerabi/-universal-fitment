@@ -1,5 +1,13 @@
 # Universal Fitment — Patchnotes / patch notes
 
+## v1.28.2 — 8. Oktober 2026
+
+- **DE:** Schwerer iPhone-Darstellungsfehler in „Weitere Ersatzteile anhand deines Geräts prüfen“ behoben. Sieben Hersteller-Links stehen auf schmalen Bildschirmen in getrennten, vollständig lesbaren Schaltflächen mit ausreichend Tippfläche und Abstand.
+- **DE:** Responsive CSS-Grid, normaler Umbruch, keine überlappenden oder abgeschnittenen Links. Offizielle Hersteller-Ziele und Linktexte bleiben unverändert.
+- **DE:** Keine Änderung an Staubsauger-Modellen, Artikelbestand, Passungen oder Händlerpreisen. Weiterhin 943 Modellnamen, 954 Records, 1.940 Katalogartikel und 1.822 physische Teile.
+- **EN:** Fixed stacked/overlapping external maker spare links on mobile screens with accessible single-column link layout. All seven original destinations unchanged.
+
+
 ## v1.28.1 — 8. Oktober 2026
 
 - **DE:** Zehn getrennte Samsung-Originalzubehörartikel direkt mit EAN/Typ über Samsung DE bestätigt: vier Ersatz-Akkus (Ladegerät und Kapazitätsvarianten separat) sowie sechs Bürsten-/Wischaufsatz-SKUs.
