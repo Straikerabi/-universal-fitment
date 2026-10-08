@@ -42,7 +42,7 @@ if(nextRegion!==region){
 }
 
 const marker='/* Mobile maker parts link controls — keep each manufacturer action in normal flow. */';
-const styles=String.raw\`
+const styles=String.raw`
 /* Mobile maker parts link controls — keep each manufacturer action in normal flow. */
 .catalog-coverage .maker-part-links {
   display: grid;
@@ -77,7 +77,7 @@ const styles=String.raw\`
     grid-template-columns: minmax(0, 1fr);
   }
 }
-\`;
+`;
 if(!css.includes(marker))fs.writeFileSync(cssPath,css+'\n'+styles);
 else assert.equal(css.split(marker).length,2,'Only one mobile maker links CSS rule group');
 console.log(JSON.stringify({changedLinks:nextRegion!==region,linkedManufacturers:labels,linkDestinationsUnchanged:true,styleReady:true,smallViewportColumns:1}));
