@@ -16,7 +16,33 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          python integrations/restore-source-checkpoint.py --target site
+          python3 - <<'PY'
+          from pathlib import Path
+          import subprocess
+          lines = Path(".github/workflows/pages.yml").read_text().splitlines()
+          count = 0
+          for i, line in enumerate(lines):
+              if not line.startswith("      - name: "):
+                  continue
+              title = line.split("- name: ", 1)[1].strip().strip('"')
+              if not (title.startswith("Rebuild ") or title.startswith("Apply ")):
+                  continue
+              j = i + 1
+              while j < len(lines) and not lines[j].startswith("      - name: "):
+                  if lines[j] == "        run: |":
+                      commands = []
+                      for command in lines[j+1:]:
+                          if not command.startswith("          "):
+                              break
+                          commands.append(command[10:])
+                      subprocess.run(["bash", "-e", "-o", "pipefail", "-c", "\n".join(commands)], check=True)
+                      count += 1
+                      break
+                  j += 1
+          assert count >= 35, f"Expected all historical patch rebuilds; got {count}"
+          assert (Path("site") / "src" / "app.js").exists()
+          print(f"Reconstructed site from {count} version-pinned CI steps")
+          PY
           echo "Available Samsung source modules:"
           find site/src -type f -iname '*samsung*' -print
           echo "Source checkpoint prepared."
