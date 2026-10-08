@@ -1,4 +1,4 @@
-# Universal Fitment v1.29.0 – Bosch 100, Samsung 77 und mobile Teileansicht
+# Universal Fitment v1.29.0 – Miele 82, Dyson 92 Referenzen, Hoover 100
 
 [Roadmap · Deutsch](ROADMAP.md) · [Roadmap · English](ROADMAP.en.md) · [Patchnotes](CHANGELOG.md) · [Ideen & Kommentare](https://github.com/Straikerabi/-universal-fitment/issues)
 
@@ -91,5 +91,5 @@ Der geschützte Marketplace-Server behält seinen bestehenden Vertrag mit 167 Mi
 
 38 App-Testgruppen prüfen unter anderem Kategorien, Artikelarten, Ladezustände, genaue Zielzahlen, Quellenidentitäten, Zubehörtypen, Kennungsgrenzen, Warenkorb, Sicherungen und Offline-Verhalten. Syntaxprüfungen und bytegenau reproduzierbare Haupt- und optionale Pakete gehören zur Veröffentlichung. Die Prüfsummen-geschützte Änderung wird vor GitHub Pages aus dem bisherigen Stand rekonstruiert; bestehende synthetische Serverprüfungen laufen ebenfalls in CI.
 
-Noch offen sind die Modellziele für vier Marken, mindestens 64 weitere Samsung- und 40 weitere Hoover-Teile sowie vollständige gerätespezifische Teilelisten. 447 Modelleinträge haben noch keine konkrete Teilezuordnung. Einzelne Montageanleitungen, breitere belegte Nachbauten, aktuelle Gerätepreise und reale Geräteprüfungen bleiben Teil des Ausbaus. Kleine eigenständige Handsauger, Roboter und weitere Gerätekategorien werden nicht zum Auffüllen der Modellziele verwendet.
+Noch offen sind die Modellziele für vier Marken, mindestens 54 weitere Samsung- und 40 weitere Hoover-Teile sowie vollständige gerätespezifische Teilelisten. 447 Modelleinträge haben noch keine konkrete Teilezuordnung. Einzelne Montageanleitungen, breitere belegte Nachbauten, aktuelle Gerätepreise und reale Geräteprüfungen bleiben Teil des Ausbaus. Kleine eigenständige Handsauger, Roboter und weitere Gerätekategorien werden nicht zum Auffüllen der Modellziele verwendet.
 
