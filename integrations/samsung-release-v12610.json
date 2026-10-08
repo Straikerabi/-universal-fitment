@@ -1,0 +1,21 @@
+{
+  "version": "1.26.10",
+  "source_date": "2026-10-08",
+  "samsung_models": 66,
+  "samsung_physical_articles": 34,
+  "new_optional_relationships": 35,
+  "new_distinct_articles": 0,
+  "samsung_models_with_parts": 13,
+  "samsung_models_without_parts": 53,
+  "catalog_articles": 1928,
+  "catalog_physical_articles": 1810,
+  "model_names": 870,
+  "model_records": 881,
+  "model_target_slots": 657,
+  "total_models_without_parts": 242,
+  "limitations": [
+    "Manufacturer optional list; not a technical fitment approval",
+    "No prices, stock or shipping inferred",
+    "Mop and Clean Station accessories still require corresponding attachment"
+  ]
+}
