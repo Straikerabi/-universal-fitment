@@ -199,9 +199,9 @@
       "deviceType": "cordless",
       "pnc": "90040205901",
       "pnc_quality": "full_11_digit",
-      "url": "https://www.smartgoods.de/filter-e12-fuer-staubsauger-electrolux-aeg-140283430019-feinfilter.html",
-      "source": "Independent distributor manufacturer PNC compatibility table; primary AEG model-page review still open",
-      "evidenceTier": "secondary_needs_primary_review"
+      "url": "https://shop.aeg.at/model/m/AP81P25GRN",
+      "source": "AEG Austria official model/PNC register",
+      "evidenceTier": "manufacturer"
     },
     {
       "code": "AP81P25ECO",
@@ -209,9 +209,9 @@
       "deviceType": "cordless",
       "pnc": "90040206001",
       "pnc_quality": "full_11_digit",
-      "url": "https://www.smartgoods.de/filter-e12-fuer-staubsauger-electrolux-aeg-140283430019-feinfilter.html",
-      "source": "Independent distributor manufacturer PNC compatibility table; primary AEG model-page review still open",
-      "evidenceTier": "secondary_needs_primary_review"
+      "url": "https://shop.aeg.at/model/m/AP81P25ECO",
+      "source": "AEG Austria official model/PNC register",
+      "evidenceTier": "manufacturer"
     },
     {
       "code": "AP81UP25DB",
@@ -219,22 +219,22 @@
       "deviceType": "cordless",
       "pnc": "90040204001",
       "pnc_quality": "full_11_digit",
-      "url": "https://www.smartgoods.de/filter-e12-fuer-staubsauger-electrolux-aeg-140283430019-feinfilter.html",
-      "source": "Independent distributor manufacturer PNC compatibility table; primary AEG model-page review still open",
-      "evidenceTier": "secondary_needs_primary_review"
+      "url": "https://shop.electrolux.de/model/m/AP81UP25DB",
+      "source": "Electrolux Group official model/PNC register (AEG-branded model)",
+      "evidenceTier": "manufacturer"
     }
   ],
   "sourceRules": [
+    "All 22 models source-linked to an AEG or Electrolux Group manufacturer model/product listing, including foreign-market AEG variants clearly identified by their source URLs",
     "Nine-digit product PNC from AEG retail page is not silently converted into an 11-digit repair PNC",
     "Brand shop model + PNC variant must match precisely",
-    "Secondary-sourced three rows remain explicitly provisional pending primary-source crosscheck",
     "No model receives any unverified part mappings; zero parts marked transparently",
     "No invented prices, rankings, offers or item availability"
   ],
   "summary": {
     "total": 22,
-    "manufacturerDirect": 19,
-    "secondaryProvisional": 3,
+    "manufacturerDirect": 22,
+    "secondaryProvisional": 0,
     "PNCPrefixesOnly": 6
   }
 }
