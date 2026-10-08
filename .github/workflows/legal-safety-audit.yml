@@ -60,6 +60,16 @@ jobs:
           status=$?
           set -e
           test "$status" -eq 2
+      - name: Assert commercial preflight rejects incomplete operator sample
+        shell: bash
+        run: |
+          set -euo pipefail
+          git check-ignore -q integrations/legal-compliance/operator-private.json
+          set +e
+          python3 integrations/legal-compliance/launch_preflight.py --config integrations/legal-compliance/operator.example.json --site site
+          status=$?
+          set -e
+          test "$status" -eq 2
       - name: Rebuild JavaScript and run full app tests without publishing
         shell: bash
         run: |
