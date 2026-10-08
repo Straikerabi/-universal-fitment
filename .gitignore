@@ -7,3 +7,6 @@ integrations/legal-compliance/generated/
 *.secret
 .env
 .env.*
+
+# Reconstructed preview source and generated JS; never commit by accident.
+site/
