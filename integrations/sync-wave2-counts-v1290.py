@@ -26,6 +26,8 @@ counts=[
 for test in ["tests/catalog-seven-brands.test.mjs","tests/vorwerk-expansion.test.mjs"]:
     changed(test,counts,"combined global model counters")
 
+changed("tests/catalog-v126.test.mjs",[(r"r\.brand==='Hoover'\)\.recordsWithoutParts,\s*22","r.brand==='Hoover').recordsWithoutParts,98")],"Hoover +76 zero-part model references")
+
 brands=[
  (r"\['Miele',\s*\d+,\s*167\]", "['Miele',82,167]"),
  (r"\['Dyson',\s*\d+,\s*191\]", "['Dyson',92,191]"),
