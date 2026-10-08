@@ -61,3 +61,52 @@ Priorität D: vollständige Datenschutz-/Impressum-/Gewerbefreigabe vor kommerzi
 Später: KI-Reparaturdiagnose, weitere Kategorien und B2B/OEM-Piloten nach Datenlage.
 
 Diese Datei konkretisiert Draft PR #44, verändert **nicht** den veröffentlichten App-Code und schaltet keine Zahlung/Abos/Partner ein.
+
+## Konkrete „Warum Universal Fitment?“-Hypothese – nicht nur ein weiterer Scanner
+
+**Beobachtete Wettbewerbsfunktionen (09.10.2026):** AUTODOC hat bereits Garage/FIN, KBA-/Modellsuche und optional PLUS-Expertenprüfung; iFixit hat bereits Fotoerkennung, FixBot, Geräteverwaltung und Kompatibilitätschecker. Diese Funktionen **niemals** allein als exklusives Alleinstellungsmerkmal behaupten.
+- https://help.autodoc.de/categories/13/240/1905
+- https://www.autodoc.de/
+- https://apps.apple.com/de/app/autodoc-autoteile-kfz-teile/id1014949597
+- https://www.ifixit.com/de-de/go/app
+- https://www.ifixit.com/Info/Part_Verification
+
+### Das konkrete „Wow“-Erlebnis: Reparatur-Mission + Teilabgleich vor Kauf
+
+Ausgang ist **das Problem** (z. B. „Staubsaugerbürste defekt“ oder „Wasserhahn tropft“), nicht das Händlerregal.
+
+**Flow A – normaler Kunde**
+1. „Was ist kaputt?“ → optional Foto/Symptom; keine ferndiagnostisch sichere Behauptung.
+2. Gerät anhand Foto des Typenschilds oder exakter Modellnummer identifizieren; Variationen/Revisionen *aktiv* unterscheiden.
+3. Typisierte Baugruppe („Bürstenwalze“) auswählen; **vor jedem Kauf** den Code auf dem defekten Originalteil oder kritische Merkmale bestätigen.
+4. Sofort sichtbar: **Belegte Passung**, **Ungeklärt – diese Information fehlt** oder **Belegt nicht passend**. Jeder Status hat prüfbare Begründung/Quelle, nicht nur eine erfundene „98 %“-Anzeige.
+5. Falls belegt: Händlerübergreifend **nur autorisierte konkrete Produkte** mit Zeitstempel, Versandkosten-/Retoureninformation und optional benötigten unkritischen Zusatzteilen vergleichen, statt zuerst Provisionsprodukte zu priorisieren.
+6. Für eine Reparatur-Mission eine teilbare, datensparsame Checkliste mit ausgewählten Teilen, Originalquellen und erledigten Schritten erzeugen. Keine ungeprüften KI-Reparaturanleitungen und keine Eingriffe an gefährlichen Systemen.
+
+**Flow B – Beispiel Autoteile, erst viel später nach OEM-/Teileberechtigung**
+- Nicht bloß Auto auswählen und sofort sämtliche Bremsen auflisten.
+- Konfiguration durch HSN/TSN und ggf. VIN/PR-/Bauteilkennung präzisieren, wenn die Teilevariante das erfordert; VIN allein ist keine Fitment-Garantie.
+- Spezifisch erklären, **welche unterscheidende Angabe fehlt**, bevor ein „passt“-Badge auftaucht.
+- Das funktioniert nur mit zugänglichen, rechtmäßig lizenzierten Fahrzeug-/OE-Daten. Keine Ersetzung von fachkundigem Teilekatalogwissen und keine unbewiesenen Sicherheits-Fitments.
+
+### UX-Wette: „Teil abgleichen“ statt nur „Teil finden“
+
+Bei jedem relevanten Produkt ein einziger dominanter Vorgang: **„Passt dieses Teil wirklich?“**. Der Nutzer kann Originalteilnummer oder verifizierten Referenzcode eingeben / scannen. Wir stellen Händlerartikel, Gerät, Serien-/Versionsbedingungen und Herstellerbelege **nebeneinander**. Wenn Daten fehlen, zeigen wir den konkreten nächsten Klärungsschritt und öffnen nicht blind einen Kaufbutton.
+
+**Die besondere Kombination** wäre: branchenoffener „problem → Variantenklärung → OEM-/Bauteilabgleich → **begründeter Kaufentscheid** → neutraler Händlervergleich“-Workflow. Jeder einzelne Schritt kann anderswo vorhanden sein; Exklusivität ist **nicht belegt**. Unser USP darf erst nach Benchmark und Kundentests als bestätigt gelten.
+
+### Harte Vertrauensstrategie gegen etablierte Firmen
+- Geschäftlich seriös sein, nicht Größe vorspiegeln: echte Rechtsform, Kontakt, transparente Betreiberangaben, belegte Datenlizenz, nachvollziehbare Updates, reale Supportzeiten und vernünftige Datenschutzpraxis.
+- Jede Variante und OEM-Quelle auditierbar, **kein** nicht nachprüfbares KI-Passungsversprechen.
+- Kein Trickpreis/keine voreingestellte kostenpflichtige Kaufoption; anzeigen, wenn Versand, Lieferzeit oder Preis nicht aktuell sind.
+- Unabhängige reale Nutzerbeispiele sammeln, keine fingierten Sterne/Bewertungen.
+- Typisch benutzte Geräte in 30–60 Sekunden *auf dem Handy* finden, statt eine App mit vielen Daten und verschachtelten Dropdowns zu erzwingen.
+
+### Experiment, bevor diese Vision implementiert wird
+- 10 verifizierte, tatsächlich vorhandene Staubsaugertypen mit mindestens zwei ähnlich benannten Varianten/Teilen; 10 normale eindeutige Fälle. Keine erfundenen Teile.
+- 5 unbekannte Tester lösen dieselben Aufgaben bei Universal Fitment, FixPart und iFixit; Reihenfolge zufällig mischen. AUTODOC nur in einer **separaten, späteren Kfz-Ausbaustufe** vergleichen.
+- Vorab Bewertung festlegen: richtig identifizierte Variante, belegte Fitmentantwort, Anteil falsch positiver Käufe, benötigte Klicks/Zeit, tatsächliche Beschaffbarkeit und „würdest du diese App weiterempfehlen?“.
+- Erfolgsziel **als Hypothese**, keine falsche Erfolgsmeldung: mindestens 90 % korrekte und begründete Antworten bei belegbaren Pilotfällen, **null** angezeigte Fehlpassungen in den 20 Fällen, weniger Eingaben und schnellere Entscheidung als die Vergleichsanbieter. Ergebnisse ehrlich protokollieren und ggf. Idee ändern.
+- Den neuen Workflow nicht starten, bevor Datenmodell und Rechts-/Fotofreigaben vorliegen; keine stille Migration des bestehenden Staubsaugerkatalogs.
+
+**Wichtig:** Ein größerer Händler kann einen visuellen Button kopieren. Schwerer kurzfristig kopierbar sind nachweisliche Variantendaten, eine wiederholbar geringe Fehlpassungsrate, mehrere autorisierte Bezugsquellen und Kundenvertrauen. Darauf Ressourcen priorisieren.
