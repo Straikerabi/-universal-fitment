@@ -100,8 +100,8 @@ def apply(site: Path) -> dict:
     if pilot_before is not None and guard_marker not in pilot_before:
         if pilot_before.count(needle)!=1:
             raise ValueError('Pilot login shape changed; refusing partial modifications')
-        replacement=("// UF_GITHUB_PAGES_LOGIN_DISABLED: no passwords in Pages preview.\\n"
-                     "          if(typeof window!=='undefined' && window.location.hostname.toLowerCase().endsWith('.github.io'))return {status:'access_required'};\\n"
+        replacement=("// UF_GITHUB_PAGES_LOGIN_DISABLED: no passwords in Pages preview.\n"
+                     "          if(typeof window!=='undefined' && window.location.hostname.toLowerCase().endsWith('.github.io'))return {status:'access_required'};\n"
                      "          "+needle)
         pilot_after=pilot_before.replace(needle,replacement,1)
     if new != original: index.write_text(new,encoding='utf-8')
