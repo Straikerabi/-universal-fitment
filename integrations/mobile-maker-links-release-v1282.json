@@ -1,0 +1,33 @@
+{
+  "version": "1.28.2",
+  "date": "2026-10-08",
+  "reason": "iPhone screenshot: 7 manufacturer spare parts links overlapped and clipped in card on catalog page",
+  "issue": 28,
+  "changedSource": [
+    "src/app.js",
+    "styles.css"
+  ],
+  "improvements": [
+    "Semantic manufacturer link navigation inside catalog coverage card",
+    "CSS grid with single vertical column at <=600px, auto-fit multiple columns at larger widths",
+    "Independent buttons, 48px minimum touch area, normal text wrapping, explicit gap and no overflow",
+    "All 7 existing manufacturer source links and labels retained"
+  ],
+  "catalogChanges": 0,
+  "newFitmentClaims": 0,
+  "modelNames": 943,
+  "modelRecords": 954,
+  "catalogArticles": 1940,
+  "physicalParts": 1822,
+  "modelTargetSlots": 730,
+  "samsungArticles": 46,
+  "validation": [
+    "All existing application test groups",
+    "JavaScript checks",
+    "manufacturer link DOM+CSS regression",
+    "byte-identical reproducible app bundles",
+    "SHA256 exact delta replay",
+    "SHA256 restored checkpoint"
+  ],
+  "iosPhysicalDeviceTest": "User screenshot established bug; physical iOS Safari verification after deployment remains recommended"
+}

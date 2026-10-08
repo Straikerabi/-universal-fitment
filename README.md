@@ -1,4 +1,4 @@
-# Universal Fitment v1.28.1 – Bosch 100, Samsung 77 und mobile Teileansicht
+# Universal Fitment v1.28.2 – Bosch 100, Samsung 77 und mobile Teileansicht
 
 [Roadmap · Deutsch](ROADMAP.md) · [Roadmap · English](ROADMAP.en.md) · [Patchnotes](CHANGELOG.md) · [Ideen & Kommentare](https://github.com/Straikerabi/-universal-fitment/issues)
 
@@ -30,6 +30,9 @@ Eine vorhandene Teilezuordnung bestätigt weder eine vollständige Teileliste no
 
 
 **Originalteile-Ausbau v1.28.1:** Samsung +10 herstellerseitig belegte Original-Zubehörartikel: vier unterschiedliche Wechselakku-SKUs (mit/ohne Ladestation, 2.200/3.970 mAh), fünf Bürsten und ein Spinning-Sweeper-Wischaufsatz. Jede Position enthält die konkrete Samsung-Artikelkennung, veröffentlichte EAN, Herstellerlink und geprüfte Gerätefamilie. **Keine der zehn neu aufgenommenen SKUs wurde einer bestimmten Geräteausführung ohne separaten Nachweis als passend zugewiesen.** Unbekannte Preis- und Lagerangaben bleiben unbekannt. [Herstellerquellen und Akkuvarianten](integrations/samsung-parts-wave1-v1281.json).
+
+
+**Mobile Darstellung v1.28.2:** Die sieben externen Hersteller-Links im Kasten „Weitere Ersatzteile anhand deines Geräts prüfen“ sind jetzt im responsiven Raster angeordnet; auf schmalen iPhone-Displays stehen sie untereinander. Lange Linktexte umbrechen innerhalb der Schaltfläche, mit mindestens 48 px Tippflächenhöhe und klarem vertikalen Abstand. Zieladressen/Bezeichnungen unverändert. Keine Änderung an Geräte-/Artikeldaten oder technischen Passungsbeziehungen. [Fehlerbeleg & Layoutprüfung](integrations/mobile-maker-links-release-v1282.json).
 
 ## Teile auf einen Blick
 
