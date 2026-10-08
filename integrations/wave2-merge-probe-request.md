@@ -7,3 +7,5 @@ Probe 3: multi-brand semantic merge of Miele Dyson Hoover, reject dangerous iden
 Probe 4: rerun full app suite with independent model-only Work registrations and updated brand totals.
 
 Probe 5: rebase Miele and Dyson audit tests to allow intentional cross-brand model changes, preserve original individual part hashes.
+
+Probe 6: Miele 9 historical family hints remain outside 87 concrete device rows, rerun all category tests.
