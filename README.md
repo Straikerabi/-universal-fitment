@@ -1,4 +1,4 @@
-# Universal Fitment v1.26.9 – Samsung-Zubehörlisten und geprüfte Hoover-Codes
+# Universal Fitment v1.26.10 – Samsung-Zubehörlisten und geprüfte Hoover-Codes
 
 [Roadmap · Deutsch](ROADMAP.md) · [Roadmap · English](ROADMAP.en.md) · [Patchnotes](CHANGELOG.md) · [Ideen & Kommentare](https://github.com/Straikerabi/-universal-fitment/issues)
 
@@ -19,7 +19,7 @@ Die Ziele sind getrennt: **100 echte Modellreferenzen und mindestens 100 katalog
 | Rowenta | 272 | 272 | 100 | 0 | 75 |
 | Philips | 140 | 140 | 101 | 3 | 84 |
 | Siemens | 101 | 101 | 605 | 105 | 0 |
-| Samsung | 66 | 66 | 34 | 0 | 57 |
+| Samsung | 66 | 66 | 34 | 0 | 53 |
 | Hoover | 24 | 24 | 60 | 0 | 22 |
 | Vorwerk | 18 | 18 | 105 | 0 | 4 |
 
@@ -35,9 +35,13 @@ Die Startseite und die Zielübersicht zeigen fehlende Modellteile. Der Filter **
 
 ## Neue Herstellerdaten
 
-315 zusätzliche benannte Herstellerartikel ergänzen den bisherigen Bestand: Bosch +56, Rowenta +44, Philips +40, Vorwerk +81, Samsung +34 und Hoover +60. 60 zuvor leere Modelleinträge haben mindestens eine ausdrücklich belegte Teilezuordnung erhalten. Quellen und Ausführungsbedingungen bleiben am Artikel sichtbar. Ein 3D-Ersatzdeckel für einen Dampferzeuger wurde bei der Recherche ausgeschlossen.
+315 zusätzliche benannte Herstellerartikel ergänzen den bisherigen Bestand: Bosch +56, Rowenta +44, Philips +40, Vorwerk +81, Samsung +34 und Hoover +60. 64 zuvor leere Modelleinträge haben mindestens eine ausdrücklich belegte Teilezuordnung erhalten. Quellen und Ausführungsbedingungen bleiben am Artikel sichtbar. Ein 3D-Ersatzdeckel für einen Dampferzeuger wurde bei der Recherche ausgeschlossen.
 
-Samsung enthält 66 Hersteller-Modellreferenzen. Neun genaue deutsche /WD-Modelle verfügen jetzt über ausdrücklich gelistetes optionales Zubehör; bei den zuletzt ergänzten sechs Modellen sind das insgesamt 50 Nennungen und sieben zusätzliche unterschiedliche Artikelkennungen. Einschließlich der bisherigen Samsung-Zubehörlisten sind 26 unterschiedliche Artikel wenigstens einem Modell zugeordnet. Clean-Station-Beutel und Wischverbrauchsmaterial behalten zusätzliche Zubehörbedingungen. Eine Liste optionalen Zubehörs ist keine vollständige Ersatzteilliste oder automatische Passungsfreigabe.
+Samsung enthält 66 Hersteller-Modellreferenzen. 13 genaue deutsche /WD-Modelle verfügen jetzt über ausdrücklich gelistetes optionales Zubehör; bei den zuletzt ergänzten sechs Modellen sind das insgesamt 50 Nennungen und sieben zusätzliche unterschiedliche Artikelkennungen. Einschließlich der bisherigen Samsung-Zubehörlisten sind 26 unterschiedliche Artikel wenigstens einem Modell zugeordnet. Clean-Station-Beutel und Wischverbrauchsmaterial behalten zusätzliche Zubehörbedingungen. Eine Liste optionalen Zubehörs ist keine vollständige Ersatzteilliste oder automatische Passungsfreigabe.
+
+
+
+Vier weitere genaue Samsung-Geräte erhalten in v1.26.10 zusammen **35** ausdrücklich auf den deutschen Herstellerseiten gelistete Zubehörbeziehungen. Die Artikelzahl erhöht sich nicht: alle 17 beteiligten Artikelkennungen sind bereits erfasst. Die zusätzlichen Modelle sind Jet 65 PetPRO, Jet 85 Wet & Clean, Jet 85 CompleteClean und Jet 95 Akku+ CompleteClean. Details: [Samsung-Quellen v1.26.10](integrations/samsung-optional-batch2-2026-10-08.json).
 
 Hoover enthält 24 deutsche Hersteller-Modelle und deren achtstellige Produktcodes. 55 Artikelstammsätze stammen aus dem britischen Herstellerverzeichnis; dieser Quellenmarkt bleibt sichtbar. Für HF202P 011 (39401035) und HF201H 011 (39401038) nennt der von Hoover Deutschland verlinkte EU-Ersatzteilservice 10 beziehungsweise 12 konkrete Artikel. Fünf dabei zusätzlich gefundene Teile erhöhen den Hoover-Bestand auf 60. Die im Service sichtbare italienische Preis-/Ländereinstellung wird nicht als deutscher Preis, Bestand oder deutsches Angebot übernommen. Hoover-Geräteseiten beschriften die achtstellige Kennung ausdrücklich als **Hoover-Produktcode**; die Dyson-Bezeichnung bleibt ausschließlich bei Dyson-Geräten.
 
@@ -57,5 +61,5 @@ Der geschützte Marketplace-Server behält seinen bestehenden Vertrag mit 167 Mi
 
 36 App-Testgruppen prüfen unter anderem Kategorien, Artikelarten, Ladezustände, genaue Zielzahlen, Quellenidentitäten, Zubehörtypen, Kennungsgrenzen, Warenkorb, Sicherungen und Offline-Verhalten. Syntaxprüfungen und bytegenau reproduzierbare Haupt- und optionale Pakete gehören zur Veröffentlichung. Die Prüfsummen-geschützte Änderung wird vor GitHub Pages aus dem bisherigen Stand rekonstruiert; bestehende synthetische Serverprüfungen laufen ebenfalls in CI.
 
-Noch offen sind die Modellziele für sieben Marken, mindestens 66 weitere Samsung- und 40 weitere Hoover-Teile sowie vollständige gerätespezifische Teilelisten. 246 Modelleinträge haben noch keine konkrete Teilezuordnung. Einzelne Montageanleitungen, breitere belegte Nachbauten, aktuelle Gerätepreise und reale Geräteprüfungen bleiben Teil des Ausbaus. Kleine eigenständige Handsauger, Roboter und weitere Gerätekategorien werden nicht zum Auffüllen der Modellziele verwendet.
+Noch offen sind die Modellziele für sieben Marken, mindestens 66 weitere Samsung- und 40 weitere Hoover-Teile sowie vollständige gerätespezifische Teilelisten. 242 Modelleinträge haben noch keine konkrete Teilezuordnung. Einzelne Montageanleitungen, breitere belegte Nachbauten, aktuelle Gerätepreise und reale Geräteprüfungen bleiben Teil des Ausbaus. Kleine eigenständige Handsauger, Roboter und weitere Gerätekategorien werden nicht zum Auffüllen der Modellziele verwendet.
 
