@@ -1,0 +1,79 @@
+{
+  "checked": "2026-10-08",
+  "market": "DE",
+  "basis": "Exact complete model /WD and explicitly named optional accessory codes on the German manufacturer product page",
+  "status": "reviewed_not_yet_imported",
+  "rules": [
+    "Use full /WD code not similar family model",
+    "Store part-to-model source with variant_check_required",
+    "No new article codes, list uses 34 existing Samsung articles",
+    "Optional accessories are not proven physical fitment or included in box",
+    "Wipe consumables require relevant mop attachment",
+    "Do not replace unknown prices, stock or installation times"
+  ],
+  "models": [
+    {
+      "model": "VS15A60BGR5/WD",
+      "label": "Jet 65 PetPRO",
+      "url": "https://www.samsung.com/de/vacuum-cleaners/stick/vs9000rl-stick-more-advance-cleaning-performance-digital-inverter-motor-jet-cyclone-silver-vs15a60bgr5-wd/",
+      "codes": [
+        "VCA-SBTA60",
+        "VCA-WBC652/GL",
+        "VCA-SPA75E/GL",
+        "VCA-SPW75E/VT",
+        "VCA-SHF90",
+        "VCA-SHF90A",
+        "VCA-SHF90B",
+        "VCA-SAK95/GL"
+      ]
+    },
+    {
+      "model": "VS20C85G7TB/WD",
+      "label": "Jet 85 Wet & Clean",
+      "url": "https://www.samsung.com/de/vacuum-cleaners/stick/vs9500al-stick-more-advance-cleaning-performance-hexajet-motor-jet-cyclone-blue-vs20c85g7tb-wd/",
+      "codes": [
+        "VCA-SBTA95/VT",
+        "VCA-SAPB95/WA",
+        "VCA-SABB95",
+        "VCA-SPA95/GL",
+        "VCA-SPW95/VT",
+        "VCA-SHF95B",
+        "VCA-SHF95N",
+        "VCA-SHF95W",
+        "VCA-SAK95/GL"
+      ]
+    },
+    {
+      "model": "VS20C95D4TK/WD",
+      "label": "Jet 95 Akku+ CompleteClean",
+      "url": "https://www.samsung.com/de/vacuum-cleaners/stick/vs9500al-stick-more-advance-cleaning-performance-hexajet-motor-jet-cyclone-black-vs20c95d4tk-wd/",
+      "codes": [
+        "VCA-WBA95/GL",
+        "VCA-SPA95/GL",
+        "VCA-SPW95/VT",
+        "VCA-SHF95B",
+        "VCA-SHF95N",
+        "VCA-SHF95W",
+        "VCA-SAK95/GL",
+        "VCA-SBTA95/VT",
+        "VCA-SAPB95/WA"
+      ]
+    },
+    {
+      "model": "VS20C85G4TB/WD",
+      "label": "Jet 85 CompleteClean",
+      "url": "https://www.samsung.com/de/vacuum-cleaners/stick/vs9500al-stick-more-advance-cleaning-performance-hexajet-motor-jet-cyclone-blue-vs20c85g4tb-wd/",
+      "codes": [
+        "VCA-SBTA95/VT",
+        "VCA-SAPB95/WA",
+        "VCA-WBA95/GL",
+        "VCA-SPA95/GL",
+        "VCA-SPW95/VT",
+        "VCA-SHF95B",
+        "VCA-SHF95N",
+        "VCA-SHF95W",
+        "VCA-SAK95/GL"
+      ]
+    }
+  ]
+}
