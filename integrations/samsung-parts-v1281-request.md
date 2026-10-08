@@ -3,3 +3,5 @@
 Reconstruct v1.28.0, import 10 primary-source Samsung original article SKUs with GTIN, zero unverified exact-device relationships and no fabricated prices. Require full tests, reproducible bundles, source archive and SHA-verified patch; no direct main edits from this branch.
 
 Preflight: print exact 36 existing SKUs for collision-free import.
+
+Second-source preflight: prior SKU VCA-SAPF80/WA already catalogued; replaced with direct-source Pet Tool+ VCA-PTB95/AA. Repeat the release gate.
