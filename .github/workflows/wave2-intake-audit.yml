@@ -1,0 +1,22 @@
+name: "Combined Wave-2 intake evidence audit on current v1.28.2"
+on:
+  push:
+    branches: ["release/model-wave2-integration"]
+    paths: ["integrations/wave2-audit-request.md"]
+permissions:
+  contents: read
+jobs:
+  verify-source-intake:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Restore current exact source and validate evidentiary scope
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 integrations/restore-source-checkpoint.py --target site
+          test "$(node -p "require('./site/package.json').version")" = "1.28.2"
+          node --check integrations/audit-wave2-current-v1282.mjs
+          node integrations/audit-wave2-current-v1282.mjs
