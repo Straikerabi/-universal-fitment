@@ -1,0 +1,38 @@
+name: Parallel Work PR Safety Guard
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened, ready_for_review]
+    branches: [main]
+  push:
+    branches: [work/qa-pr-guard]
+
+permissions:
+  contents: read
+  pull-requests: read
+
+concurrency:
+  group: parallel-work-guard-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check-worker-boundaries:
+    name: Check worker PR against release-only files
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout trusted branch - never check out untrusted PR code
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          ref: ${{ github.event_name == 'push' && github.ref_name || github.event.repository.default_branch }}
+      - name: Test PR path classification without network or credentials
+        shell: bash
+        run: python3 integrations/test-work-pr-boundaries.py
+      - name: Inspect changed PR filenames with read-only GitHub API
+        if: github.event_name == 'pull_request_target'
+        shell: bash
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: python3 integrations/check-work-pr-boundaries.py
