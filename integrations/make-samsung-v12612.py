@@ -39,7 +39,7 @@ if phase=="prepare":
     for a,b in [
         ("r.brand==='Samsung').partsMissing,65","r.brand==='Samsung').partsMissing,64"),
         ("samsungParts.length,35","samsungParts.length,36"),
-        ("p.modelIds.length).length,27","p.modelIds.length).length,28"),
+        ("p.modelIds.length).length,27","p.modelIds.length).length,29"),
         ("r.brand==='Samsung').recordsWithoutParts,49","r.brand==='Samsung').recordsWithoutParts,47"),
     ]: replace(tests,a,b)
     anchor="assert.equal(catalogCoverage().find(r=>r.brand==='Samsung').recordsWithoutParts,47);"
@@ -111,7 +111,7 @@ elif phase=="finish":
       ("Samsung +35","Samsung +36"),
       ("68 zuvor leere Modelleinträge","70 zuvor leere Modelleinträge"),
       ("Samsung enthält 66 Hersteller-Modellreferenzen. 17","Samsung enthält 67 Hersteller-Modellreferenzen. 20"),
-      ("27 unterschiedliche Artikel wenigstens einem Modell zugeordnet","28 unterschiedliche Artikel wenigstens einem Modell zugeordnet"),
+      ("27 unterschiedliche Artikel wenigstens einem Modell zugeordnet","29 unterschiedliche Artikel wenigstens einem Modell zugeordnet"),
       ("mindestens 65 weitere Samsung-","mindestens 64 weitere Samsung-"),
       ("238 Modelleinträge haben noch keine","236 Modelleinträge haben noch keine"),
     ]:replace(readme,a,b)
