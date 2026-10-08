@@ -1,0 +1,240 @@
+{
+  "checkedAt": "2026-10-08",
+  "release_candidate": "1.27.0",
+  "goal": "AEG from 78 to 100 distinct real vacuum model codes; no accessories counted as devices",
+  "models": [
+    {
+      "code": "AB61C1WP",
+      "series": "AB61",
+      "deviceType": "bagged",
+      "pnc": "900258716",
+      "pnc_quality": "manufacturer_nine_digit_prefix_only",
+      "url": "https://www.aeg.de/vacuums-home-comfort/vacuum-cleaners/vacuum-cleaners/vacuum-cleaners/vacuum-cleaner/ab61c1wp/",
+      "source": "AEG Germany official product page",
+      "evidenceTier": "manufacturer"
+    },
+    {
+      "code": "AB61H6SW",
+      "series": "AB61",
+      "deviceType": "bagged",
+      "pnc": "900258615",
+      "pnc_quality": "manufacturer_nine_digit_prefix_only",
+      "url": "https://www.aeg.de/vacuums-home-comfort/vacuum-cleaners/vacuum-cleaners/vacuum-cleaners/vacuum-cleaner/ab61h6sw/",
+      "source": "AEG Germany official product page",
+      "evidenceTier": "manufacturer"
+    },
+    {
+      "code": "AP72UB21ES",
+      "series": "AP72",
+      "deviceType": "cordless",
+      "pnc": "900402460",
+      "pnc_quality": "manufacturer_nine_digit_prefix_only",
+      "url": "https://www.aeg.de/vacuums-home-comfort/vacuum-cleaners/stick-vacuum-cleaners/cordless-sticks/ap72ub21es/",
+      "source": "AEG Germany official product page",
+      "evidenceTier": "manufacturer"
+    },
+    {
+      "code": "AP91HB21ES",
+      "series": "AP91",
+      "deviceType": "cordless",
+      "pnc": "900402491",
+      "pnc_quality": "manufacturer_nine_digit_prefix_only",
+      "url": "https://www.aeg.de/vacuums-home-comfort/vacuum-cleaners/stick-vacuum-cleaners/cordless-sticks/ap91hb21es/",
+      "source": "AEG Germany official product page",
+      "evidenceTier": "manufacturer"
+    },
+    {
+      "code": "AP72UB21DG",
+      "series": "AP72",
+      "deviceType": "cordless",
+      "pnc": "91000806800",
+      "pnc_quality": "full_11_digit",
+      "url": "https://www.aeg.de/vacuums-home-comfort/vacuum-cleaners/stick-vacuum-cleaners/cordless-sticks/ap72ub21dg/",
+      "source": "AEG Germany official product page",
+      "evidenceTier": "manufacturer"
+    },
+    {
+      "code": "AP61CB21OG",
+      "series": "AP61",
+      "deviceType": "cordless",
+      "pnc": "900402386",
+      "pnc_quality": "manufacturer_nine_digit_prefix_only",
+      "url": "https://www.aeg.de/vacuums-home-comfort/vacuum-cleaners/stick-vacuum-cleaners/cordless-sticks/ap61cb21og/",
+      "source": "AEG Germany official product page",
+      "evidenceTier": "manufacturer"
+    },
+    {
+      "code": "AB51C2DG",
+      "series": "AB51",
+      "deviceType": "bagged",
+      "pnc": "900258692",
+      "pnc_quality": "manufacturer_nine_digit_prefix_only",
+      "url": "https://www.aeg.de/vacuums-home-comfort/vacuum-cleaners/vacuum-cleaners/vacuum-cleaners/vacuum-cleaner/ab51c2dg/",
+      "source": "AEG Germany official product page",
+      "evidenceTier": "manufacturer"
+    },
+    {
+      "code": "AP82A25SHX",
+      "series": "AP82",
+      "deviceType": "cordless",
+      "pnc": "90040231100",
+      "pnc_quality": "full_11_digit",
+      "url": "https://www.aeg.de/vacuums-home-comfort/vacuum-cleaners/stick-vacuum-cleaners/cordless-sticks/ap82a25shx/",
+      "source": "AEG Germany official product page",
+      "evidenceTier": "manufacturer"
+    },
+    {
+      "code": "FX8-1-ECO",
+      "series": "FX8",
+      "deviceType": "cordless",
+      "pnc": "90040203700",
+      "pnc_quality": "full_11_digit",
+      "url": "https://shop.aeg.de/model/m/FX8-1-ECO",
+      "source": "AEG Germany official spare-parts model register",
+      "evidenceTier": "manufacturer"
+    },
+    {
+      "code": "AP81B25WET",
+      "series": "AP81",
+      "deviceType": "cordless",
+      "pnc": "90040206500",
+      "pnc_quality": "full_11_digit",
+      "url": "https://shop.aeg.de/model/m/AP81B25WET",
+      "source": "AEG Germany official spare-parts model register",
+      "evidenceTier": "manufacturer"
+    },
+    {
+      "code": "AP81UB25GG",
+      "series": "AP81",
+      "deviceType": "cordless",
+      "pnc": "90040203001",
+      "pnc_quality": "full_11_digit",
+      "url": "https://shop.aeg.de/model/m/AP81UB25GG",
+      "source": "AEG Germany official spare-parts model register",
+      "evidenceTier": "manufacturer"
+    },
+    {
+      "code": "AP82UB25SH",
+      "series": "AP82",
+      "deviceType": "cordless",
+      "pnc": "90040230900",
+      "pnc_quality": "full_11_digit",
+      "url": "https://shop.aeg.de/model/m/AP82UB25SH",
+      "source": "AEG Germany official spare-parts model register",
+      "evidenceTier": "manufacturer"
+    },
+    {
+      "code": "AP61AB21DG",
+      "series": "AP61",
+      "deviceType": "cordless",
+      "pnc": "90040232700",
+      "pnc_quality": "full_11_digit",
+      "url": "https://shop.aeg.de/model/m/AP61AB21DG",
+      "source": "AEG Germany official spare-parts model register",
+      "evidenceTier": "manufacturer"
+    },
+    {
+      "code": "AP61HB21SH",
+      "series": "AP61",
+      "deviceType": "cordless",
+      "pnc": "90040235600",
+      "pnc_quality": "full_11_digit",
+      "url": "https://shop.aeg.de/model/m/AP61HB21SH",
+      "source": "AEG Germany official spare-parts model register",
+      "evidenceTier": "manufacturer"
+    },
+    {
+      "code": "AP61CB21DB",
+      "series": "AP61",
+      "deviceType": "cordless",
+      "pnc": "90040237500",
+      "pnc_quality": "full_11_digit",
+      "url": "https://shop.aeg.de/model/m/AP61CB21DB",
+      "source": "AEG Germany official spare-parts model register",
+      "evidenceTier": "manufacturer"
+    },
+    {
+      "code": "AP61CB21RS",
+      "series": "AP61",
+      "deviceType": "cordless",
+      "pnc": "90040240100",
+      "pnc_quality": "full_11_digit",
+      "url": "https://shop.aeg.de/model/m/AP61CB21RS",
+      "source": "AEG Germany official spare-parts model register",
+      "evidenceTier": "manufacturer"
+    },
+    {
+      "code": "AP61AB21DB",
+      "series": "AP61",
+      "deviceType": "cordless",
+      "pnc": "90040237300",
+      "pnc_quality": "full_11_digit",
+      "url": "https://shop.aeg.de/model/m/AP61AB21DB",
+      "source": "AEG Germany official spare-parts model register",
+      "evidenceTier": "manufacturer"
+    },
+    {
+      "code": "AP61AB21SH",
+      "series": "AP61",
+      "deviceType": "cordless",
+      "pnc": "90040237700",
+      "pnc_quality": "full_11_digit",
+      "url": "https://shop.aeg.de/model/m/AP61AB21SH",
+      "source": "AEG Germany official spare-parts model register",
+      "evidenceTier": "manufacturer"
+    },
+    {
+      "code": "AP83A25XNX",
+      "series": "AP83",
+      "deviceType": "cordless",
+      "pnc": "90040231400",
+      "pnc_quality": "full_11_digit",
+      "url": "https://shop.aeg.de/model/m/AP83A25XNX",
+      "source": "AEG Germany official spare-parts model register",
+      "evidenceTier": "manufacturer"
+    },
+    {
+      "code": "AP81P25GRN",
+      "series": "AP81",
+      "deviceType": "cordless",
+      "pnc": "90040205901",
+      "pnc_quality": "full_11_digit",
+      "url": "https://www.smartgoods.de/filter-e12-fuer-staubsauger-electrolux-aeg-140283430019-feinfilter.html",
+      "source": "Independent distributor manufacturer PNC compatibility table; primary AEG model-page review still open",
+      "evidenceTier": "secondary_needs_primary_review"
+    },
+    {
+      "code": "AP81P25ECO",
+      "series": "AP81",
+      "deviceType": "cordless",
+      "pnc": "90040206001",
+      "pnc_quality": "full_11_digit",
+      "url": "https://www.smartgoods.de/filter-e12-fuer-staubsauger-electrolux-aeg-140283430019-feinfilter.html",
+      "source": "Independent distributor manufacturer PNC compatibility table; primary AEG model-page review still open",
+      "evidenceTier": "secondary_needs_primary_review"
+    },
+    {
+      "code": "AP81UP25DB",
+      "series": "AP81",
+      "deviceType": "cordless",
+      "pnc": "90040204001",
+      "pnc_quality": "full_11_digit",
+      "url": "https://www.smartgoods.de/filter-e12-fuer-staubsauger-electrolux-aeg-140283430019-feinfilter.html",
+      "source": "Independent distributor manufacturer PNC compatibility table; primary AEG model-page review still open",
+      "evidenceTier": "secondary_needs_primary_review"
+    }
+  ],
+  "sourceRules": [
+    "Nine-digit product PNC from AEG retail page is not silently converted into an 11-digit repair PNC",
+    "Brand shop model + PNC variant must match precisely",
+    "Secondary-sourced three rows remain explicitly provisional pending primary-source crosscheck",
+    "No model receives any unverified part mappings; zero parts marked transparently",
+    "No invented prices, rankings, offers or item availability"
+  ],
+  "summary": {
+    "total": 22,
+    "manufacturerDirect": 19,
+    "secondaryProvisional": 3,
+    "PNCPrefixesOnly": 6
+  }
+}
