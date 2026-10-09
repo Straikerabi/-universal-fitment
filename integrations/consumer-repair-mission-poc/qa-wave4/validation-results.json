@@ -1,0 +1,191 @@
+{
+  "issue": 63,
+  "checkedAt": "2026-10-09T21:15:28.157Z",
+  "branch": "work/consumer-mobile-ux-wave4",
+  "baseCommit": "52f056664ddbf1a6c263a3d86feac3ee0128c054",
+  "targetBranch": "integration/dual-platform-owner-review",
+  "scope": "integrations/consumer-repair-mission-poc/ only",
+  "consumerNodeTests": {
+    "passed": 41,
+    "failed": 0
+  },
+  "unchangedEngineAndOwnerBridgeTests": {
+    "passed": 101,
+    "failed": 0
+  },
+  "browser": {
+    "passed": 31,
+    "failed": 0,
+    "engine": "Chromium",
+    "version": "153.0.8010.0",
+    "playwright": "1.62.1",
+    "viewports": [
+      {
+        "width": 320,
+        "height": 740
+      },
+      {
+        "width": 375,
+        "height": 812
+      },
+      {
+        "width": 390,
+        "height": 844
+      },
+      {
+        "width": 430,
+        "height": 932
+      },
+      {
+        "width": 844,
+        "height": 390
+      },
+      {
+        "width": 768,
+        "height": 1024
+      },
+      {
+        "width": 1280,
+        "height": 900
+      }
+    ],
+    "largeText": "CSS root font size 200%, not physical iPhone pinch zoom",
+    "colorSchemes": [
+      "light",
+      "dark"
+    ],
+    "externalRequests": 0,
+    "runtimeErrors": 0
+  },
+  "automatedPilotTasks": 24,
+  "externalTestPeople": 0,
+  "physicalIPhone": false,
+  "safariWebkit": false,
+  "newRealFitments": 0,
+  "newParts": 0,
+  "newCommercialOffers": 0,
+  "realCatalogDevices": 11,
+  "realCatalogParts": 11,
+  "projectionCheck": "byte-identical; all 136 restored source files verified by unchanged build-catalog.mjs",
+  "offline": {
+    "warmReloadPassed": true,
+    "cacheName": "uf-consumer-mobile-wave4-6921bb28e02679887e66ee83",
+    "assetPaths": [
+      "/",
+      "/index.html",
+      "/styles.css",
+      "/app.mjs",
+      "/mission-state.mjs",
+      "/parts-view.mjs",
+      "/catalog-snapshot.mjs",
+      "/mobile-ui.mjs",
+      "/mock-fitment-adapter.mjs",
+      "/manifest.webmanifest",
+      "/app-icon.svg",
+      "/dual-platform-owner-review/bridge.mjs",
+      "/dual-platform-owner-review/ui-fixtures.mjs",
+      "/fitment-engine-v1-poc/contract.mjs",
+      "/fitment-engine-v1-poc/fixtures.mjs",
+      "/business-embed-poc/adapter.mjs",
+      "/offline-config.mjs"
+    ]
+  },
+  "uniqueCacheableAssetBytes": 128699,
+  "assetBudgetBytes": 300000,
+  "unchangedFileSha256": {
+    "integrations/consumer-repair-mission-poc/catalog-snapshot.mjs": "4b0f6fc17d22b0bc6f320b02eee5fdb39bb23d0083fadb3135e4bed38d3de9ae",
+    "integrations/consumer-repair-mission-poc/catalog-lock.json": "71a7566cddcdc8fcef7f58346ec2f666a94594d674917f9b678d5d6e9ac5d423",
+    "integrations/consumer-repair-mission-poc/build-catalog.mjs": "5b6bb3b3b24c31045fa60c1be497d0bb407a4936e0327c6cdf738f4d041ee7d9",
+    "integrations/consumer-repair-mission-poc/SOURCE-MANIFEST.md": "991cb5d84f7c581460d8bdb5317df3fcaf63e6e37affc1c4faaf4d1f4ba3ed13",
+    "integrations/consumer-repair-mission-poc/mock-fitment-adapter.mjs": "c4bd2acd84478af78a28ccf7f7fc2b185ed3e47e4532a92b7b97a7796e45b926",
+    "integrations/consumer-repair-mission-poc/pilot-cases.json": "b2c6ddfbf2526a1099c59c67bd35affc31cbad595a73d02a7d56dc82f0eef448",
+    "integrations/consumer-repair-mission-poc/PILOT-PROTOCOL.md": "c829116baef547d60c3d3bd5e537bb8dcdff105eb2a316d2445d1e755d734218",
+    "integrations/consumer-repair-mission-poc/pilot-results-template.json": "ee732c58d33ef4ca284ed13b88fca17e612da3066b018bd94a5fcdab5689e1ec",
+    "integrations/fitment-engine-v1-poc/contract.mjs": "f609d8c4a2d894632b46db76c28e83d581190dcfed0484a3aab3f12efb36e7b3",
+    "integrations/fitment-engine-v1-poc/fixtures.mjs": "b1a08deb58acf2b7be7319e61e838c2b5ef5cd7833068e368e41dbc79f3e97a9",
+    "integrations/dual-platform-owner-review/bridge.mjs": "d3cb61c0cd4e554585e28bf9b54d51c110c3bd85aefdc733a8578f2feb13cb6c",
+    "integrations/dual-platform-owner-review/ui-fixtures.mjs": "469f6ae04d4bd4ebb0fa6933b4b193a20ca79c20f2f2f367fcd3b5b5d69a9061",
+    "integrations/business-embed-poc/adapter.mjs": "7c2f97678fd24651ba917dcd7fd1480802c27e907430f23522122af156e0e73f"
+  },
+  "screenshots": [
+    {
+      "file": "01-identify-375.png",
+      "sha256": "c839af781a452413779fb45e2b888edaef8fd08243ae5b80003f83c3cb0e815b"
+    },
+    {
+      "file": "02-variant-375.png",
+      "sha256": "595333dcea082d524ad96082c1c8d6ca47382731215034bee3cbc68b6196a262"
+    },
+    {
+      "file": "03-assembly-375.png",
+      "sha256": "9e0ccdce3a40b5164fd6422338415e6108d8ab6d865f9b494725618db06b5beb"
+    },
+    {
+      "file": "04-real-unclear-375.png",
+      "sha256": "ff64b0fd631ee1f2c0eaa1bf19ef88c454ca980ca318d2c8d242ad823ac8d264"
+    },
+    {
+      "file": "05-checklist-375.png",
+      "sha256": "bf8105257c5fea68f7533acf1664cd6ef40479a700ddd9da58cb179787990704"
+    },
+    {
+      "file": "06-demo-supported-375.png",
+      "sha256": "e34e8bb04c9dead90198ab9cc4bd5df466c7bad7ef423debd4c7dfb570f69752"
+    },
+    {
+      "file": "07-demo-negative-375.png",
+      "sha256": "d1b79f4205fc93b05db351d48d9dcd134850534db178de5a550bca5455957756"
+    },
+    {
+      "file": "08-text-200-375.png",
+      "sha256": "cf95af3befed134c247c83396859d22f6ec6e597ea2dd138e11a0c9e838470d6"
+    },
+    {
+      "file": "09-dark-negative-375.png",
+      "sha256": "9f560b9fbde9d92c062087d608054dee212b908d11c343948c2a94cf834a832c"
+    },
+    {
+      "file": "10-desktop-assembly.png",
+      "sha256": "03a86d7690f5592b83566ac88aed31afbae8ee26543c75b36b39abab135a96ec"
+    },
+    {
+      "file": "11-accordion-hose-empty-320.png",
+      "sha256": "84a3bd72104be883f8bbcac07bc02d9d9a0d7a0086d9956c76a9ec1c90e4e937"
+    },
+    {
+      "file": "12-filter-energy-375.png",
+      "sha256": "350d7661f8ce42a086340b32ac5c8606aeb36bd9e6835231cdc2aee6423c5bfc"
+    },
+    {
+      "file": "13-filter-miss-375.png",
+      "sha256": "5e334b0e9f711c3a89c9444bead82fdcd88572d0b140680e14449213e47b6518"
+    },
+    {
+      "file": "14-checklist-grouped-375.png",
+      "sha256": "c5f96f1c73556ef7c3dc49e093c75502ce54d47541716e095d436ca8e95af224"
+    },
+    {
+      "file": "15-variant-gaps-430.png",
+      "sha256": "f20792e13cd79e202d9665082f716717b4cc9ee690856b754aaaf93c4b67989c"
+    },
+    {
+      "file": "16-expanded-text-200-375.png",
+      "sha256": "d1b69ae01142e04add3a918df1a25967e0831179111d295bd3906404e9da6b9a"
+    },
+    {
+      "file": "17-dark-filters-375.png",
+      "sha256": "e3df30f93e028e5e17d6c2d776812fb5995fdbef4dc35989b5ae8fb50678adfd"
+    },
+    {
+      "file": "18-offline-reloaded-390.png",
+      "sha256": "e59941a33c64e75dd3ba406d2a01238d6c46144d4130ab8b92a5b6a11fe31fd9"
+    },
+    {
+      "file": "19-hoover-source-region-375.png",
+      "sha256": "2cc72620eb5d818068c6c3849db480439b3def0add2dbdb5aee582ec70167d64"
+    }
+  ],
+  "deployment": false,
+  "mergeToMain": false,
+  "githubChecks": "No claim: existing owner workflow does not target PRs against the integration branch."
+}

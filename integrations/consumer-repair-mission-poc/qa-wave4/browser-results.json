@@ -1,0 +1,286 @@
+{
+  "checkedAt": "2026-10-09T21:15:28.157Z",
+  "passed": 31,
+  "engine": "Chromium",
+  "version": "153.0.8010.0",
+  "checks": [
+    "source-only initial screen; no automatic device and no network service",
+    "literal country code and EEM alias refuse a substituted device",
+    "real identity, missing revision, assembly and unconfirmed candidate",
+    "checklist autosave and download never approve a real fitment",
+    "return and variant change remove stale candidate",
+    "source URLs have explicit identity scope; no shopping actions",
+    "synthetic supported response stays visibly a demo",
+    "missing variant has no definitive response",
+    "negative revision and connector are blocked from synthetic parts list",
+    "missing kit component stays explicit; notes do not certify completeness",
+    "real and demo local missions cannot leak identifiers or approve one another",
+    "tampered cached response and stale fingerprint are rejected",
+    "no source record means open data, not not-sold or unavailable claims",
+    "320/375/390/430/844 landscape/768/1280: all five steps reflow",
+    "narrow demo warnings reflow for missing, negative and incomplete results",
+    "200% text, dark mode and reduced motion preserve warnings and reflow",
+    "all touch buttons are at least 44px; input text stays 16px",
+    "skip link appears only on keyboard focus; source details remain operable",
+    "hostile text is inert; copying fallback gives actionable feedback",
+    "five native accordion groups keep identity counts separate from confirmed parts",
+    "intersecting mobile filters preserve OEM codes and disable price sorting with a reason",
+    "alternative evidence produces a filter miss, not an unavailable part claim",
+    "hidden selected candidates stay in grouped checklist and can be explicitly removed",
+    "region and user variant disagreement stay visible through checklist without negative invention",
+    "Hoover GB article website stays distinct from the DE device source and never confirms fitment",
+    "open filter forms, accordion sources and grouped notes reflow at every required viewport",
+    "large text and dark mobile filters retain warnings and focused search",
+    "24 documented pilot tasks exercise only real unknown outcomes",
+    "desktop visual preview and no runtime or external network errors",
+    "warm local PWA reloads the exact cached UI/core offline without confirming a real fitment",
+    "blocked offline storage is explained and shipped local assets stay below 300 kB"
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "measurements": [
+    {
+      "caseId": "P01",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-real-core-decision",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 340
+    },
+    {
+      "caseId": "P02",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-real-core-decision",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 348
+    },
+    {
+      "caseId": "P03",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-real-core-decision",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 350
+    },
+    {
+      "caseId": "P04",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-real-core-decision",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 299
+    },
+    {
+      "caseId": "P05",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-real-core-decision",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 300
+    },
+    {
+      "caseId": "P06",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-real-core-decision",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 316
+    },
+    {
+      "caseId": "P07",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-real-core-decision",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 300
+    },
+    {
+      "caseId": "P08",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-real-core-decision",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 331
+    },
+    {
+      "caseId": "P09",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-real-core-decision",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 320
+    },
+    {
+      "caseId": "P10",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-real-core-decision",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 349
+    },
+    {
+      "caseId": "P11",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-real-core-decision",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 320
+    },
+    {
+      "caseId": "P12",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-real-core-decision",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 368
+    },
+    {
+      "caseId": "P13",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-real-core-decision",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 381
+    },
+    {
+      "caseId": "P14",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-real-core-decision",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 357
+    },
+    {
+      "caseId": "P15",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-real-core-decision",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 325
+    },
+    {
+      "caseId": "P16",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-real-core-decision",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 333
+    },
+    {
+      "caseId": "P17",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-real-core-decision",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 298
+    },
+    {
+      "caseId": "P18",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-real-core-decision",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 335
+    },
+    {
+      "caseId": "P19",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-real-core-decision",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 333
+    },
+    {
+      "caseId": "P20",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-real-core-decision",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 284
+    },
+    {
+      "caseId": "P21",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-real-core-decision",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 317
+    },
+    {
+      "caseId": "P22",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-real-core-decision",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 332
+    },
+    {
+      "caseId": "P23",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-real-core-decision",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 370
+    },
+    {
+      "caseId": "P24",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-real-core-decision",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 399
+    }
+  ],
+  "localAssetBytes": 128699,
+  "offline": {
+    "warmReloadPassed": true,
+    "cacheName": "uf-consumer-mobile-wave4-6921bb28e02679887e66ee83",
+    "assetPaths": [
+      "/",
+      "/index.html",
+      "/styles.css",
+      "/app.mjs",
+      "/mission-state.mjs",
+      "/parts-view.mjs",
+      "/catalog-snapshot.mjs",
+      "/mobile-ui.mjs",
+      "/mock-fitment-adapter.mjs",
+      "/manifest.webmanifest",
+      "/app-icon.svg",
+      "/dual-platform-owner-review/bridge.mjs",
+      "/dual-platform-owner-review/ui-fixtures.mjs",
+      "/fitment-engine-v1-poc/contract.mjs",
+      "/fitment-engine-v1-poc/fixtures.mjs",
+      "/business-embed-poc/adapter.mjs",
+      "/offline-config.mjs"
+    ]
+  },
+  "physicalIPhone": false,
+  "safariWebkit": false,
+  "externalTestPeople": 0
+}

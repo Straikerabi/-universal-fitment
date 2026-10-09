@@ -2,9 +2,10 @@ import assert from 'node:assert/strict';import fs from 'node:fs';import path fro
 const here=path.dirname(fileURLToPath(import.meta.url)),repo=path.resolve(here,'../..');
 const walk=p=>fs.readdirSync(p,{withFileTypes:true}).flatMap(x=>x.isDirectory()?walk(path.join(p,x.name)):x.name.endsWith('.mjs')?[path.join(p,x.name)]:[]);
 for(const file of walk(here))execFileSync(process.execPath,['--check',file]);
-assert.equal(execFileSync('git',['branch','--show-current'],{cwd:repo,encoding:'utf8'}).trim(),'work/consumer-repair-mission-poc');
-const diff=execFileSync('git',['diff','--name-only','71f7826ba936a1f3830c8b2a67e8085a9cfe234e'],{cwd:repo,encoding:'utf8'}).trim().split('\n').filter(Boolean);
+assert.equal(execFileSync('git',['branch','--show-current'],{cwd:repo,encoding:'utf8'}).trim(),'work/consumer-mobile-ux-wave4');
+const diff=execFileSync('git',['diff','--name-only','52f056664ddbf1a6c263a3d86feac3ee0128c054'],{cwd:repo,encoding:'utf8'}).trim().split('\n').filter(Boolean);
 assert.ok(diff.every(x=>x.startsWith('integrations/consumer-repair-mission-poc/')),'Out-of-scope tracked change');
 const untracked=execFileSync('git',['ls-files','--others','--exclude-standard'],{cwd:repo,encoding:'utf8'}).trim().split('\n').filter(Boolean);
 assert.ok(untracked.every(x=>x.startsWith('integrations/consumer-repair-mission-poc/')),'Out-of-scope untracked file');
-console.log(JSON.stringify({syntax:'passed',branch:'work/consumer-repair-mission-poc',changedTrackedPaths:diff.length,untrackedPaths:untracked.length,scope:'isolated'}));
+execFileSync(process.execPath,[path.join(here,'prepare-offline.mjs'),'--check']);
+console.log(JSON.stringify({syntax:'passed',branch:'work/consumer-mobile-ux-wave4',base:'52f056664ddbf1a6c263a3d86feac3ee0128c054',changedTrackedPaths:diff.length,untrackedPaths:untracked.length,scope:'isolated'}));
