@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-10-09T18:55:30.075Z",
+  "browser": "153.0.8010.0",
+  "checks": [
+    "desktop host and sandboxed iframe",
+    "tenant theme switch and private provenance",
+    "all six prerecorded decisions and safe selection reset",
+    "no-result search clears old confirmation",
+    "keyboard control, source disclosure and no purchase link",
+    "320/375/768 px, readable fallback states and no horizontal overflow",
+    "200% text retains result and controls",
+    "loaded demo operates with network offline",
+    "unknown tenant fails closed without default shop",
+    "cookies/storage/network and script errors"
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "limits": [
+    "Chromium emulation, not a physical device or screenreader audit.",
+    "Offline interaction after initial local load; offline reload and external embed deployment are not supported.",
+    "Client fixtures are public synthetic data; this does not demonstrate real server-side tenant secrecy."
+  ]
+}

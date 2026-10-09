@@ -1,0 +1,30 @@
+name: Fitment engine v1 private PoC tests
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'integrations/fitment-engine-v1-poc/**'
+      - '.github/workflows/fitment-engine-v1-poc.yml'
+  push:
+    branches: [work/fitment-engine-v1-poc]
+permissions:
+  contents: read
+concurrency:
+  group: fitment-engine-v1-poc-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  offline-contract-and-baseline:
+    if: github.event_name == 'push' || github.head_ref == 'work/fitment-engine-v1-poc'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Locked baseline build dependency
+        run: npm ci --prefix integrations/auth-sdk --ignore-scripts
+      - name: Offline contract, coverage goldens and unchanged app regression
+        run: node integrations/fitment-engine-v1-poc/verify.mjs --check --app

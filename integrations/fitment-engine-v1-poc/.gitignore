@@ -1,0 +1,3 @@
+# Complete, reproducible private test output. Golden digest is in baseline-report.json.
+coverage.json
+validation.log

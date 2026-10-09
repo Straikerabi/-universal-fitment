@@ -1,0 +1,34 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {buildCoverage,articleKey,createBaselineReport,serialize,sha,markdown} from './coverage.mjs';
+const data=()=>{
+  const part={id:'synthetic-part',brand:'Miele',tier:'oem',identifiers:[{type:'material-number',value:'TEST-ARTICLE'}],physical:true};
+  const model={id:'synthetic-model',brand:'Miele',model:'SYNTHETIC TEST ONLY',recordType:'model',identifiers:[],parts:[part],sources:[]};
+  return {products:[model],parts:[part],isPhysicalPart:p=>p.physical===true,partType:()=>({id:'filter'}),explicitEdges:new Map()};
+};
+test('status, confidence, brand and source URL alone do not produce explicit edge',()=>{const d=data();d.products[0].parts[0].fitment={status:'manufacturer_listed',confidence:1,evidence:[{type:'manufacturer',url:'https://www.miele.de/x',retrievedAt:'2026-10-06'}]};const c=buildCoverage(d).counts;assert.equal(c.mappedPhysicalEdges,1);assert.equal(c.explicitManufacturerRecordedEdges,0);assert.equal(c.confirmedFitments,0);});
+test('unassigned brand-catalog article stays unassigned',()=>{const d=data();d.products[0].parts=[];assert.equal(buildCoverage(d).counts.zero,1);assert.equal(buildCoverage(d).counts.mappedPhysicalEdges,0);});
+test('candidate is not a confirmed/mapped edge',()=>{const d=data();d.products[0].candidateParts=[...d.products[0].parts];d.products[0].parts=[];const r=buildCoverage(d);assert.equal(r.counts.zero,1);assert.equal(r.models[0].candidatePhysicalParts,1);assert.equal(r.counts.mappedPhysicalEdges,0);});
+test('physical associations deduplicate exact scoped identities',()=>{const d=data();d.products[0].parts.push({...d.parts[0],id:'alias'});assert.equal(buildCoverage(d).counts.mappedPhysicalEdges,1);});
+test('leading zeros, namespaces, issuer and aftermarket remain different identities',()=>{const p=data().parts[0];for(const other of [{...p,brand:'Bosch'},{...p,tier:'aftermarket'},{...p,identifiers:[{type:'manufacturer-designation',value:'TEST-ARTICLE'}]},{...p,identifiers:[{type:'material-number',value:'0TEST-ARTICLE'}]}])assert.notEqual(articleKey(p,'Miele'),articleKey(other,'Miele'));});
+test('document/device/unknown rows excluded by pinned physical taxonomy',()=>{const d=data();d.products[0].parts[0].physical=false;assert.equal(buildCoverage(d).counts.zero,1);assert.equal(buildCoverage(d).counts.physicalArticleRows,0);});
+test('family fallback never becomes a concrete model',()=>{const d=data();d.products.push({...d.products[0],id:'family',recordType:'family'});const c=buildCoverage(d).counts;assert.equal(c.modelRecords,1);assert.equal(c.familyFallbackRecords,1);});
+test('same model name distinct records counted transparently',()=>{const d=data();d.products.push({...d.products[0],id:'another-variant-record'});const c=buildCoverage(d).counts;assert.equal(c.modelRecords,2);assert.equal(c.modelNames,1);});
+test('duplicate model IDs rejected',()=>{const d=data();d.products.push(structuredClone(d.products[0]));assert.throws(()=>buildCoverage(d),/Duplicate/);});
+test('missing assemblies remain unknown, never not_sold_separately',()=>{const d=data();d.products[0].parts=[];const row=buildCoverage(d).models[0];assert.equal(row.missingCategoryStatus,'unknown');assert.equal(row.variantStatus,'exact-repair-variant-not-certified');assert.ok(row.missingCategoryIds.includes('electrical'));});
+test('structured recorded source edge needs proper first-party domain and date',()=>{const d=data();const key=JSON.stringify([d.products[0].id,articleKey(d.parts[0],'Miele')]);const claim={basis:'synthetic-test',articleReference:'TEST-ARTICLE',variantReference:'SYNTHETIC TEST ONLY',sources:[{type:'manufacturer',url:'https://miele.de.attacker.invalid/x',retrievedAt:'2026-10-06'}]};d.explicitEdges.set(key,[claim]);assert.equal(buildCoverage(d).counts.explicitManufacturerRecordedEdges,0);claim.sources[0].url='https://www.miele.de/x';claim.sources[0].retrievedAt='bad';assert.equal(buildCoverage(d).counts.explicitManufacturerRecordedEdges,0);claim.sources[0].retrievedAt='2026-10-06T21:38:57.061Z';const c=buildCoverage(d).counts;assert.equal(c.explicitManufacturerRecordedEdges,1);assert.equal(c.confirmedFitments,0);});
+test('brand mismatch on recorded source does not count manufacturer assertion',()=>{const d=data();d.explicitEdges.set(JSON.stringify([d.products[0].id,articleKey(d.parts[0],'Miele')]),[{sources:[{type:'manufacturer',url:'https://www.dyson.de/x',retrievedAt:'2026-10-06'}]}]);assert.equal(buildCoverage(d).counts.explicitManufacturerRecordedEdges,0);});
+test('source order independent catalog row ordering',()=>{const d=data();d.products.push({...d.products[0],id:'another'});const a=serialize(buildCoverage(d));d.products.reverse();assert.equal(serialize(buildCoverage(d)),a);});
+test('full fresh checkpoint baseline, every source hash, no mutation, byte deterministic golden',async()=>{
+  const a=await createBaselineReport(),b=await createBaselineReport();assert.equal(serialize(a),serialize(b));
+  assert.deepEqual(a.counts,{modelNames:1082,modelRecords:1093,familyFallbackRecords:9,articleRows:1940,distinctScopedArticleIdentities:1940,physicalArticleRows:1822,zero:447,one:116,multiple:530,mappedPhysicalEdges:8643,explicitManufacturerRecordedEdges:8021,confirmedFitments:0,independentlyReauditedSourceClaims:0,authorizedPurchasableParts:0});
+  assert.equal(a.exactOemReferenceExclusions.length,337);assert.ok(a.exactOemReferenceExclusions.some(e=>e.sourceArticleReference==='VZ46001(00)'));
+  const retained=new Set(a.manufacturerRecordedEdges.map(e=>JSON.stringify([e.modelId,e.articleKey])));
+  assert.equal(a.exactOemReferenceExclusions.filter(e=>!retained.has(JSON.stringify([e.modelId,e.articleKey]))).length,55);
+  assert.ok(Object.values(a.reconciliation).every(n=>n===0));assert.equal(a.sourceFiles.length,136);assert.equal(a.pendingIntegration.included,false);
+  const golden=JSON.parse(await readFile(new URL('./baseline-report.json',import.meta.url),'utf8'));assert.equal(sha(serialize(a)),golden.fullReportSha256);assert.equal(sha(serialize(a.sourceFiles)),golden.sourceFilesSha256);
+  assert.equal(markdown(a),await readFile(new URL('./coverage.md',import.meta.url),'utf8'));
+  const edge=a.manufacturerRecordedEdges.find(e=>e.modelId==='vac-miele-model-11602400'&&e.sourceClaims.some(s=>s.articleReference==='11805640'));assert.ok(edge);assert.equal(edge.confirmedInstallation,false);assert.ok(edge.sourceClaims[0].sources.some(s=>s.url.includes('/product/11805640/')));
+  const miele=a.models.find(m=>m.modelId==='vac-miele-model-11602400');assert.equal(miele.confirmedFitments,0);assert.equal(miele.variantStatus,'exact-repair-variant-not-certified');
+});

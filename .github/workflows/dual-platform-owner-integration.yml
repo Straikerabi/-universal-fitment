@@ -1,0 +1,73 @@
+name: Dual-platform owner conformance (private, no deployment)
+
+on:
+  push:
+    branches: [integration/dual-platform-owner-review]
+  pull_request:
+    branches: [main]
+    paths:
+      - 'integrations/dual-platform-owner-review/**'
+      - 'integrations/fitment-engine-v1-poc/**'
+      - 'integrations/consumer-repair-mission-poc/**'
+      - 'integrations/business-embed-poc/**'
+      - '.github/workflows/dual-platform-owner-integration.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  integration-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout isolated review branch
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Shared-core and cross-UI adapter tests
+        run: |
+          node --test integrations/fitment-engine-v1-poc/contract.test.mjs
+          node --test integrations/dual-platform-owner-review/bridge.test.mjs
+      - name: Consumer workflow Node tests and source checks
+        run: |
+          npm test --prefix integrations/consumer-repair-mission-poc
+          find integrations/consumer-repair-mission-poc -type f -name '*.mjs' -print0 | xargs -0 -n1 node --check
+          # The worker's check.mjs pins its own branch; do not weaken that guard here.
+      - name: Business embed Node tests and asset checks
+        run: |
+          node --test integrations/business-embed-poc/tests.mjs
+          node integrations/business-embed-poc/verify.mjs
+      - name: Install frozen build tool for read-only baseline verification
+        run: npm ci --prefix integrations/auth-sdk --ignore-scripts
+      - name: Shared-core pinned catalog coverage and baseline app QA
+        run: node integrations/fitment-engine-v1-poc/verify.mjs --check --app
+      - name: Browser regression on both actual locally served prototypes
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm install --prefix "${RUNNER_TEMP}/uf-playwright" --no-save playwright@1.62.1
+          export UF_PLAYWRIGHT_MODULE="${RUNNER_TEMP}/uf-playwright/node_modules/playwright/index.mjs"
+          BROWSER="$(command -v google-chrome || command -v chromium || command -v chromium-browser || true)"
+          if [ -n "$BROWSER" ]; then
+            export UF_CHROMIUM_EXECUTABLE="$BROWSER"
+          else
+            node "${RUNNER_TEMP}/uf-playwright/node_modules/playwright/cli.js" install chromium
+          fi
+          node integrations/business-embed-poc/browser-tests.mjs
+          npm run test:browser --prefix integrations/consumer-repair-mission-poc
+      - name: Never claim a live commercial release
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          path=Path('integrations/dual-platform-owner-review/bridge.mjs')
+          content=path.read_text()
+          assert "request.datasetKind!=='synthetic'" in content
+          assert "canConfirmPurchase!==false" in content
+          assert "rights:'synthetic-test-only'" in content
+          print('PASS: owner bridge is restricted to synthetic conformance tests, with no commerce permission')
+          PY

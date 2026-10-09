@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-10-09T18:55:45.995Z",
+  "node": "v24.19.0",
+  "nodeTests": 36,
+  "failures": 0,
+  "syntax": "all local mjs passed",
+  "delivery": "direct static files; no build dependencies",
+  "artifacts": {
+    "index.html": {
+      "bytes": 2652,
+      "sha256": "b8cc3f73b37cc5e421c6c2b686c64d80c7cb4ceaff6b5c595a0af7e466388fb0"
+    },
+    "embed.html": {
+      "bytes": 1598,
+      "sha256": "8388846154d6076bbffc2854d39eba087eed05448418cf8ebd3aee3da18ecea4"
+    },
+    "style.css": {
+      "bytes": 5917,
+      "sha256": "5578862d2d17417e6bdec15c6a822a0a0db6215f36384e5c6d8195af44538643"
+    },
+    "host.mjs": {
+      "bytes": 586,
+      "sha256": "e9c0628849f1c4353edd07af25b293f881959c80e9e15000d83664a01f89be23"
+    },
+    "widget.mjs": {
+      "bytes": 3687,
+      "sha256": "793776bbea0fc2697763423b3880225a4e3fb01f83d6ff56cc971c0c6ff47061"
+    },
+    "adapter.mjs": {
+      "bytes": 2879,
+      "sha256": "7c2f97678fd24651ba917dcd7fd1480802c27e907430f23522122af156e0e73f"
+    },
+    "fixtures.mjs": {
+      "bytes": 2967,
+      "sha256": "7e39eb1783f6ddda68498b4a4d090f8aa4c4598c6717098a2886366321723c0b"
+    },
+    "serve.mjs": {
+      "bytes": 1953,
+      "sha256": "6a56b7e75aa405b22f65445ca480da1695a05379af83544028cfa2ffb736ba22"
+    }
+  },
+  "limits": [
+    "Browser suite is separate.",
+    "#48 contract unavailable at initial check; adapter hook tests do not establish integration.",
+    "No actual interviews or pilot outcome."
+  ]
+}

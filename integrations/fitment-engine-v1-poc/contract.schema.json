@@ -1,0 +1,1541 @@
+{
+  "$defs": {
+    "FitmentRequest": {
+      "additionalProperties": false,
+      "properties": {
+        "assembly": {
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "maxLength": 2048,
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          "required": [
+            "id"
+          ],
+          "type": "object"
+        },
+        "asset": {
+          "additionalProperties": false,
+          "properties": {
+            "category": {
+              "maxLength": 2048,
+              "minLength": 1,
+              "type": "string"
+            },
+            "id": {
+              "maxLength": 2048,
+              "minLength": 1,
+              "type": "string"
+            },
+            "manufacturer": {
+              "maxLength": 2048,
+              "minLength": 1,
+              "type": "string"
+            },
+            "model": {
+              "maxLength": 2048,
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "category",
+            "manufacturer",
+            "model"
+          ],
+          "type": "object"
+        },
+        "context": {
+          "additionalProperties": false,
+          "properties": {
+            "usage": {
+              "enum": [
+                "private-test",
+                "b2c",
+                "b2b"
+              ]
+            }
+          },
+          "required": [
+            "usage"
+          ],
+          "type": "object"
+        },
+        "dataVersion": {
+          "maxLength": 2048,
+          "minLength": 1,
+          "type": "string"
+        },
+        "datasetKind": {
+          "enum": [
+            "catalog",
+            "synthetic"
+          ]
+        },
+        "evidence": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "assemblyId": {
+                "maxLength": 2048,
+                "minLength": 1,
+                "type": "string"
+              },
+              "assertion": {
+                "enum": [
+                  "compatible",
+                  "incompatible"
+                ]
+              },
+              "assetId": {
+                "maxLength": 2048,
+                "minLength": 1,
+                "type": "string"
+              },
+              "id": {
+                "maxLength": 2048,
+                "minLength": 1,
+                "type": "string"
+              },
+              "partId": {
+                "maxLength": 2048,
+                "minLength": 1,
+                "type": "string"
+              },
+              "partIdentifier": {
+                "additionalProperties": false,
+                "properties": {
+                  "issuer": {
+                    "maxLength": 2048,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "namespace": {
+                    "enum": [
+                      "manufacturer-model",
+                      "device-sku",
+                      "material-number",
+                      "manufacturer-article",
+                      "manufacturer-designation",
+                      "pnc",
+                      "e-number",
+                      "product-type",
+                      "supplier-article",
+                      "merchant-sku",
+                      "ean"
+                    ]
+                  },
+                  "value": {
+                    "maxLength": 2048,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "namespace",
+                  "issuer",
+                  "value"
+                ],
+                "type": "object"
+              },
+              "sourceIds": {
+                "items": {
+                  "maxLength": 2048,
+                  "minLength": 1,
+                  "type": "string"
+                },
+                "maxItems": 10000,
+                "minItems": 1,
+                "type": "array"
+              },
+              "variant": {
+                "additionalProperties": false,
+                "properties": {
+                  "identifiers": {
+                    "items": {
+                      "additionalProperties": false,
+                      "properties": {
+                        "issuer": {
+                          "maxLength": 2048,
+                          "minLength": 1,
+                          "type": "string"
+                        },
+                        "namespace": {
+                          "enum": [
+                            "manufacturer-model",
+                            "device-sku",
+                            "material-number",
+                            "manufacturer-article",
+                            "manufacturer-designation",
+                            "pnc",
+                            "e-number",
+                            "product-type",
+                            "supplier-article",
+                            "merchant-sku",
+                            "ean"
+                          ]
+                        },
+                        "value": {
+                          "maxLength": 2048,
+                          "minLength": 1,
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "namespace",
+                        "issuer",
+                        "value"
+                      ],
+                      "type": "object"
+                    },
+                    "maxItems": 10000,
+                    "minItems": 1,
+                    "type": "array"
+                  },
+                  "market": {
+                    "maxLength": 2048,
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "revision": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "mode": {
+                        "enum": [
+                          "exact",
+                          "any",
+                          "unknown"
+                        ]
+                      },
+                      "value": {
+                        "maxLength": 2048,
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "mode",
+                      "value"
+                    ],
+                    "type": "object"
+                  },
+                  "serial": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "max": {
+                        "maxLength": 2048,
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      },
+                      "min": {
+                        "maxLength": 2048,
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      },
+                      "mode": {
+                        "enum": [
+                          "any",
+                          "range",
+                          "unknown"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "mode",
+                      "min",
+                      "max"
+                    ],
+                    "type": "object"
+                  }
+                },
+                "required": [
+                  "identifiers",
+                  "market",
+                  "revision",
+                  "serial"
+                ],
+                "type": "object"
+              }
+            },
+            "required": [
+              "id",
+              "assetId",
+              "partId",
+              "partIdentifier",
+              "assemblyId",
+              "assertion",
+              "variant",
+              "sourceIds"
+            ],
+            "type": "object"
+          },
+          "maxItems": 10000,
+          "type": "array"
+        },
+        "interfaces": {
+          "additionalProperties": false,
+          "properties": {
+            "requirements": {
+              "items": {
+                "additionalProperties": false,
+                "properties": {
+                  "actual": {
+                    "type": [
+                      "string",
+                      "number",
+                      "boolean",
+                      "null"
+                    ]
+                  },
+                  "actualUnit": {
+                    "maxLength": 2048,
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "assemblyId": {
+                    "maxLength": 2048,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "expected": {
+                    "type": [
+                      "string",
+                      "number",
+                      "boolean",
+                      "null"
+                    ]
+                  },
+                  "id": {
+                    "maxLength": 2048,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "parameter": {
+                    "maxLength": 2048,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "sourceIds": {
+                    "items": {
+                      "maxLength": 2048,
+                      "minLength": 1,
+                      "type": "string"
+                    },
+                    "maxItems": 10000,
+                    "minItems": 1,
+                    "type": "array"
+                  },
+                  "unit": {
+                    "maxLength": 2048,
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                },
+                "required": [
+                  "id",
+                  "assemblyId",
+                  "parameter",
+                  "unit",
+                  "actualUnit",
+                  "expected",
+                  "actual",
+                  "sourceIds"
+                ],
+                "type": "object"
+              },
+              "maxItems": 10000,
+              "type": "array"
+            },
+            "reviewSourceIds": {
+              "items": {
+                "maxLength": 2048,
+                "minLength": 1,
+                "type": "string"
+              },
+              "maxItems": 10000,
+              "type": "array"
+            }
+          },
+          "required": [
+            "reviewSourceIds",
+            "requirements"
+          ],
+          "type": "object"
+        },
+        "part": {
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "maxLength": 2048,
+              "minLength": 1,
+              "type": "string"
+            },
+            "identifiers": {
+              "items": {
+                "additionalProperties": false,
+                "properties": {
+                  "issuer": {
+                    "maxLength": 2048,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "namespace": {
+                    "enum": [
+                      "manufacturer-model",
+                      "device-sku",
+                      "material-number",
+                      "manufacturer-article",
+                      "manufacturer-designation",
+                      "pnc",
+                      "e-number",
+                      "product-type",
+                      "supplier-article",
+                      "merchant-sku",
+                      "ean"
+                    ]
+                  },
+                  "value": {
+                    "maxLength": 2048,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "namespace",
+                  "issuer",
+                  "value"
+                ],
+                "type": "object"
+              },
+              "maxItems": 10000,
+              "minItems": 1,
+              "type": "array"
+            },
+            "kind": {
+              "enum": [
+                "physical",
+                "document",
+                "device",
+                "unknown"
+              ]
+            },
+            "manufacturer": {
+              "maxLength": 2048,
+              "minLength": 1,
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "manufacturer",
+            "identifiers",
+            "kind"
+          ],
+          "type": "object"
+        },
+        "policy": {
+          "additionalProperties": false,
+          "properties": {
+            "risk": {
+              "enum": [
+                "low",
+                "review-required",
+                "prohibited",
+                "unknown"
+              ]
+            }
+          },
+          "required": [
+            "risk"
+          ],
+          "type": "object"
+        },
+        "schemaVersion": {
+          "const": "1.0.0"
+        },
+        "sources": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "authoritySourceId": {
+                "maxLength": 2048,
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "checkedAt": {
+                "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+                "type": "string"
+              },
+              "digest": {
+                "pattern": "^[a-f0-9]{64}$",
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "id": {
+                "maxLength": 2048,
+                "minLength": 1,
+                "type": "string"
+              },
+              "kind": {
+                "enum": [
+                  "manufacturer",
+                  "manufacturer-linked",
+                  "synthetic"
+                ]
+              },
+              "locator": {
+                "maxLength": 2048,
+                "minLength": 1,
+                "type": "string"
+              },
+              "publisher": {
+                "maxLength": 2048,
+                "minLength": 1,
+                "type": "string"
+              },
+              "rights": {
+                "additionalProperties": false,
+                "properties": {
+                  "link": {
+                    "enum": [
+                      "granted",
+                      "unknown",
+                      "denied"
+                    ]
+                  },
+                  "privateTest": {
+                    "enum": [
+                      "granted",
+                      "unknown",
+                      "denied"
+                    ]
+                  },
+                  "reference": {
+                    "maxLength": 2048,
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "reuse": {
+                    "enum": [
+                      "granted",
+                      "unknown",
+                      "denied"
+                    ]
+                  }
+                },
+                "required": [
+                  "privateTest",
+                  "link",
+                  "reuse",
+                  "reference"
+                ],
+                "type": "object"
+              },
+              "status": {
+                "enum": [
+                  "verified",
+                  "unverified",
+                  "withdrawn"
+                ]
+              },
+              "url": {
+                "maxLength": 2048,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "url",
+              "publisher",
+              "kind",
+              "authoritySourceId",
+              "checkedAt",
+              "digest",
+              "locator",
+              "status",
+              "rights"
+            ],
+            "type": "object"
+          },
+          "maxItems": 10000,
+          "type": "array"
+        },
+        "variant": {
+          "additionalProperties": false,
+          "properties": {
+            "identifiers": {
+              "items": {
+                "additionalProperties": false,
+                "properties": {
+                  "issuer": {
+                    "maxLength": 2048,
+                    "minLength": 1,
+                    "type": "string"
+                  },
+                  "namespace": {
+                    "enum": [
+                      "manufacturer-model",
+                      "device-sku",
+                      "material-number",
+                      "manufacturer-article",
+                      "manufacturer-designation",
+                      "pnc",
+                      "e-number",
+                      "product-type",
+                      "supplier-article",
+                      "merchant-sku",
+                      "ean"
+                    ]
+                  },
+                  "value": {
+                    "maxLength": 2048,
+                    "minLength": 1,
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "namespace",
+                  "issuer",
+                  "value"
+                ],
+                "type": "object"
+              },
+              "maxItems": 10000,
+              "minItems": 1,
+              "type": "array"
+            },
+            "market": {
+              "maxLength": 2048,
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "revision": {
+              "maxLength": 2048,
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "serial": {
+              "maxLength": 2048,
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "identifiers",
+            "revision",
+            "market",
+            "serial"
+          ],
+          "type": "object"
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "dataVersion",
+        "datasetKind",
+        "context",
+        "asset",
+        "variant",
+        "assembly",
+        "part",
+        "sources",
+        "evidence",
+        "interfaces",
+        "policy"
+      ],
+      "type": "object"
+    },
+    "FitmentResponse": {
+      "additionalProperties": false,
+      "properties": {
+        "assemblyId": {
+          "maxLength": 2048,
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "assetId": {
+          "maxLength": 2048,
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "canConfirmFitment": {
+          "type": "boolean"
+        },
+        "canConfirmPurchase": {
+          "const": false
+        },
+        "dataVersion": {
+          "maxLength": 2048,
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "engineVersion": {
+          "const": "1.0.0"
+        },
+        "evidenceIds": {
+          "items": {
+            "maxLength": 2048,
+            "minLength": 1,
+            "type": "string"
+          },
+          "maxItems": 10000,
+          "type": "array"
+        },
+        "nextChecks": {
+          "items": {
+            "maxLength": 2048,
+            "minLength": 1,
+            "type": "string"
+          },
+          "maxItems": 10000,
+          "type": "array"
+        },
+        "partId": {
+          "maxLength": 2048,
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "policyVersion": {
+          "const": "vacuum-poc-1"
+        },
+        "reasons": {
+          "items": {
+            "maxLength": 2048,
+            "minLength": 1,
+            "type": "string"
+          },
+          "maxItems": 10000,
+          "type": "array"
+        },
+        "rights": {
+          "additionalProperties": false,
+          "properties": {
+            "reuseAllowed": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "reuseAllowed"
+          ],
+          "type": "object"
+        },
+        "schemaVersion": {
+          "const": "1.0.0"
+        },
+        "sourceIds": {
+          "items": {
+            "maxLength": 2048,
+            "minLength": 1,
+            "type": "string"
+          },
+          "maxItems": 10000,
+          "type": "array"
+        },
+        "sources": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "authoritySourceId": {
+                "maxLength": 2048,
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "checkedAt": {
+                "maxLength": 2048,
+                "minLength": 1,
+                "type": "string"
+              },
+              "digest": {
+                "maxLength": 2048,
+                "minLength": 1,
+                "type": "string"
+              },
+              "id": {
+                "maxLength": 2048,
+                "minLength": 1,
+                "type": "string"
+              },
+              "kind": {
+                "maxLength": 2048,
+                "minLength": 1,
+                "type": "string"
+              },
+              "locator": {
+                "maxLength": 2048,
+                "minLength": 1,
+                "type": "string"
+              },
+              "publisher": {
+                "maxLength": 2048,
+                "minLength": 1,
+                "type": "string"
+              },
+              "url": {
+                "maxLength": 2048,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "url",
+              "checkedAt",
+              "locator",
+              "publisher",
+              "kind",
+              "digest",
+              "authoritySourceId"
+            ],
+            "type": "object"
+          },
+          "maxItems": 10000,
+          "type": "array"
+        },
+        "status": {
+          "enum": [
+            "evidenced_compatible",
+            "unconfirmed",
+            "evidenced_incompatible"
+          ]
+        },
+        "testOnly": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "engineVersion",
+        "policyVersion",
+        "dataVersion",
+        "assetId",
+        "partId",
+        "assemblyId",
+        "status",
+        "testOnly",
+        "canConfirmFitment",
+        "canConfirmPurchase",
+        "reasons",
+        "nextChecks",
+        "evidenceIds",
+        "sourceIds",
+        "sources",
+        "rights"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:universal-fitment:contract:1.0.0",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "assembly": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "maxLength": 2048,
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "id"
+      ],
+      "type": "object"
+    },
+    "asset": {
+      "additionalProperties": false,
+      "properties": {
+        "category": {
+          "maxLength": 2048,
+          "minLength": 1,
+          "type": "string"
+        },
+        "id": {
+          "maxLength": 2048,
+          "minLength": 1,
+          "type": "string"
+        },
+        "manufacturer": {
+          "maxLength": 2048,
+          "minLength": 1,
+          "type": "string"
+        },
+        "model": {
+          "maxLength": 2048,
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "category",
+        "manufacturer",
+        "model"
+      ],
+      "type": "object"
+    },
+    "context": {
+      "additionalProperties": false,
+      "properties": {
+        "usage": {
+          "enum": [
+            "private-test",
+            "b2c",
+            "b2b"
+          ]
+        }
+      },
+      "required": [
+        "usage"
+      ],
+      "type": "object"
+    },
+    "dataVersion": {
+      "maxLength": 2048,
+      "minLength": 1,
+      "type": "string"
+    },
+    "datasetKind": {
+      "enum": [
+        "catalog",
+        "synthetic"
+      ]
+    },
+    "evidence": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "assemblyId": {
+            "maxLength": 2048,
+            "minLength": 1,
+            "type": "string"
+          },
+          "assertion": {
+            "enum": [
+              "compatible",
+              "incompatible"
+            ]
+          },
+          "assetId": {
+            "maxLength": 2048,
+            "minLength": 1,
+            "type": "string"
+          },
+          "id": {
+            "maxLength": 2048,
+            "minLength": 1,
+            "type": "string"
+          },
+          "partId": {
+            "maxLength": 2048,
+            "minLength": 1,
+            "type": "string"
+          },
+          "partIdentifier": {
+            "additionalProperties": false,
+            "properties": {
+              "issuer": {
+                "maxLength": 2048,
+                "minLength": 1,
+                "type": "string"
+              },
+              "namespace": {
+                "enum": [
+                  "manufacturer-model",
+                  "device-sku",
+                  "material-number",
+                  "manufacturer-article",
+                  "manufacturer-designation",
+                  "pnc",
+                  "e-number",
+                  "product-type",
+                  "supplier-article",
+                  "merchant-sku",
+                  "ean"
+                ]
+              },
+              "value": {
+                "maxLength": 2048,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "namespace",
+              "issuer",
+              "value"
+            ],
+            "type": "object"
+          },
+          "sourceIds": {
+            "items": {
+              "maxLength": 2048,
+              "minLength": 1,
+              "type": "string"
+            },
+            "maxItems": 10000,
+            "minItems": 1,
+            "type": "array"
+          },
+          "variant": {
+            "additionalProperties": false,
+            "properties": {
+              "identifiers": {
+                "items": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "issuer": {
+                      "maxLength": 2048,
+                      "minLength": 1,
+                      "type": "string"
+                    },
+                    "namespace": {
+                      "enum": [
+                        "manufacturer-model",
+                        "device-sku",
+                        "material-number",
+                        "manufacturer-article",
+                        "manufacturer-designation",
+                        "pnc",
+                        "e-number",
+                        "product-type",
+                        "supplier-article",
+                        "merchant-sku",
+                        "ean"
+                      ]
+                    },
+                    "value": {
+                      "maxLength": 2048,
+                      "minLength": 1,
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "namespace",
+                    "issuer",
+                    "value"
+                  ],
+                  "type": "object"
+                },
+                "maxItems": 10000,
+                "minItems": 1,
+                "type": "array"
+              },
+              "market": {
+                "maxLength": 2048,
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "revision": {
+                "additionalProperties": false,
+                "properties": {
+                  "mode": {
+                    "enum": [
+                      "exact",
+                      "any",
+                      "unknown"
+                    ]
+                  },
+                  "value": {
+                    "maxLength": 2048,
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                },
+                "required": [
+                  "mode",
+                  "value"
+                ],
+                "type": "object"
+              },
+              "serial": {
+                "additionalProperties": false,
+                "properties": {
+                  "max": {
+                    "maxLength": 2048,
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "min": {
+                    "maxLength": 2048,
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "mode": {
+                    "enum": [
+                      "any",
+                      "range",
+                      "unknown"
+                    ]
+                  }
+                },
+                "required": [
+                  "mode",
+                  "min",
+                  "max"
+                ],
+                "type": "object"
+              }
+            },
+            "required": [
+              "identifiers",
+              "market",
+              "revision",
+              "serial"
+            ],
+            "type": "object"
+          }
+        },
+        "required": [
+          "id",
+          "assetId",
+          "partId",
+          "partIdentifier",
+          "assemblyId",
+          "assertion",
+          "variant",
+          "sourceIds"
+        ],
+        "type": "object"
+      },
+      "maxItems": 10000,
+      "type": "array"
+    },
+    "interfaces": {
+      "additionalProperties": false,
+      "properties": {
+        "requirements": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "actual": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean",
+                  "null"
+                ]
+              },
+              "actualUnit": {
+                "maxLength": 2048,
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "assemblyId": {
+                "maxLength": 2048,
+                "minLength": 1,
+                "type": "string"
+              },
+              "expected": {
+                "type": [
+                  "string",
+                  "number",
+                  "boolean",
+                  "null"
+                ]
+              },
+              "id": {
+                "maxLength": 2048,
+                "minLength": 1,
+                "type": "string"
+              },
+              "parameter": {
+                "maxLength": 2048,
+                "minLength": 1,
+                "type": "string"
+              },
+              "sourceIds": {
+                "items": {
+                  "maxLength": 2048,
+                  "minLength": 1,
+                  "type": "string"
+                },
+                "maxItems": 10000,
+                "minItems": 1,
+                "type": "array"
+              },
+              "unit": {
+                "maxLength": 2048,
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "id",
+              "assemblyId",
+              "parameter",
+              "unit",
+              "actualUnit",
+              "expected",
+              "actual",
+              "sourceIds"
+            ],
+            "type": "object"
+          },
+          "maxItems": 10000,
+          "type": "array"
+        },
+        "reviewSourceIds": {
+          "items": {
+            "maxLength": 2048,
+            "minLength": 1,
+            "type": "string"
+          },
+          "maxItems": 10000,
+          "type": "array"
+        }
+      },
+      "required": [
+        "reviewSourceIds",
+        "requirements"
+      ],
+      "type": "object"
+    },
+    "part": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "maxLength": 2048,
+          "minLength": 1,
+          "type": "string"
+        },
+        "identifiers": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "issuer": {
+                "maxLength": 2048,
+                "minLength": 1,
+                "type": "string"
+              },
+              "namespace": {
+                "enum": [
+                  "manufacturer-model",
+                  "device-sku",
+                  "material-number",
+                  "manufacturer-article",
+                  "manufacturer-designation",
+                  "pnc",
+                  "e-number",
+                  "product-type",
+                  "supplier-article",
+                  "merchant-sku",
+                  "ean"
+                ]
+              },
+              "value": {
+                "maxLength": 2048,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "namespace",
+              "issuer",
+              "value"
+            ],
+            "type": "object"
+          },
+          "maxItems": 10000,
+          "minItems": 1,
+          "type": "array"
+        },
+        "kind": {
+          "enum": [
+            "physical",
+            "document",
+            "device",
+            "unknown"
+          ]
+        },
+        "manufacturer": {
+          "maxLength": 2048,
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "manufacturer",
+        "identifiers",
+        "kind"
+      ],
+      "type": "object"
+    },
+    "policy": {
+      "additionalProperties": false,
+      "properties": {
+        "risk": {
+          "enum": [
+            "low",
+            "review-required",
+            "prohibited",
+            "unknown"
+          ]
+        }
+      },
+      "required": [
+        "risk"
+      ],
+      "type": "object"
+    },
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "sources": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "authoritySourceId": {
+            "maxLength": 2048,
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "checkedAt": {
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+            "type": "string"
+          },
+          "digest": {
+            "pattern": "^[a-f0-9]{64}$",
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "id": {
+            "maxLength": 2048,
+            "minLength": 1,
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "manufacturer",
+              "manufacturer-linked",
+              "synthetic"
+            ]
+          },
+          "locator": {
+            "maxLength": 2048,
+            "minLength": 1,
+            "type": "string"
+          },
+          "publisher": {
+            "maxLength": 2048,
+            "minLength": 1,
+            "type": "string"
+          },
+          "rights": {
+            "additionalProperties": false,
+            "properties": {
+              "link": {
+                "enum": [
+                  "granted",
+                  "unknown",
+                  "denied"
+                ]
+              },
+              "privateTest": {
+                "enum": [
+                  "granted",
+                  "unknown",
+                  "denied"
+                ]
+              },
+              "reference": {
+                "maxLength": 2048,
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "reuse": {
+                "enum": [
+                  "granted",
+                  "unknown",
+                  "denied"
+                ]
+              }
+            },
+            "required": [
+              "privateTest",
+              "link",
+              "reuse",
+              "reference"
+            ],
+            "type": "object"
+          },
+          "status": {
+            "enum": [
+              "verified",
+              "unverified",
+              "withdrawn"
+            ]
+          },
+          "url": {
+            "maxLength": 2048,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "url",
+          "publisher",
+          "kind",
+          "authoritySourceId",
+          "checkedAt",
+          "digest",
+          "locator",
+          "status",
+          "rights"
+        ],
+        "type": "object"
+      },
+      "maxItems": 10000,
+      "type": "array"
+    },
+    "variant": {
+      "additionalProperties": false,
+      "properties": {
+        "identifiers": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "issuer": {
+                "maxLength": 2048,
+                "minLength": 1,
+                "type": "string"
+              },
+              "namespace": {
+                "enum": [
+                  "manufacturer-model",
+                  "device-sku",
+                  "material-number",
+                  "manufacturer-article",
+                  "manufacturer-designation",
+                  "pnc",
+                  "e-number",
+                  "product-type",
+                  "supplier-article",
+                  "merchant-sku",
+                  "ean"
+                ]
+              },
+              "value": {
+                "maxLength": 2048,
+                "minLength": 1,
+                "type": "string"
+              }
+            },
+            "required": [
+              "namespace",
+              "issuer",
+              "value"
+            ],
+            "type": "object"
+          },
+          "maxItems": 10000,
+          "minItems": 1,
+          "type": "array"
+        },
+        "market": {
+          "maxLength": 2048,
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "revision": {
+          "maxLength": 2048,
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "serial": {
+          "maxLength": 2048,
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "identifiers",
+        "revision",
+        "market",
+        "serial"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "dataVersion",
+    "datasetKind",
+    "context",
+    "asset",
+    "variant",
+    "assembly",
+    "part",
+    "sources",
+    "evidence",
+    "interfaces",
+    "policy"
+  ],
+  "title": "Shared FitmentRequest / FitmentResponse v1",
+  "type": "object"
+}
