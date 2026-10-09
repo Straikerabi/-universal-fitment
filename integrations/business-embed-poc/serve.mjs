@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 export const root=path.dirname(fileURLToPath(import.meta.url));
-const files={'/':'index.html','/index.html':'index.html','/embed.html':'embed.html','/style.css':'style.css','/host.mjs':'host.mjs','/widget.mjs':'widget.mjs','/adapter.mjs':'adapter.mjs','/fixtures.mjs':'fixtures.mjs'};
+const files={'/':'index.html','/index.html':'index.html','/embed.html':'embed.html','/style.css':'style.css','/pilot.css':'pilot.css','/host.mjs':'host.mjs','/widget.mjs':'widget.mjs','/adapter.mjs':'adapter.mjs','/fixtures.mjs':'fixtures.mjs','/shared-adapter.mjs':'shared-adapter.mjs','/access-lab.mjs':'access-lab.mjs'};
 const mime={html:'text/html; charset=utf-8',mjs:'text/javascript; charset=utf-8',css:'text/css; charset=utf-8'};
 const sharedFiles=Object.freeze({
  '/dual-platform-owner-review/bridge.mjs':'dual-platform-owner-review/bridge.mjs',
