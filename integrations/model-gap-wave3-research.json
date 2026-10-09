@@ -1,0 +1,1291 @@
+{
+  "schemaVersion": 1,
+  "issue": 37,
+  "branch": "work/catalog-model-gap-wave3",
+  "baselineCommit": "d4853c4e5245410630742f58aead661d77f42c32",
+  "checkedAt": "2026-10-09",
+  "scope": "Klassische Haushalts-Grundstaubsauger; keine Roboter, Industriegeräte oder Vorsatzgeräte.",
+  "sources": [
+    {
+      "id": "vorwerk-timeline",
+      "market": "DE",
+      "url": "https://www.vorwerk.com/de/de/c/dam-home/newsroom/downloads/kobold/Kobold-Zeitstrahl-1930-heute.pdf",
+      "format": "pdf",
+      "httpStatus": 200,
+      "responseBytes": 1859024,
+      "responseSha256": "9e65c3ae1eacef1f5ac594034ddd8d25769389ccd6ad2ee9b9bb07016c174a8c",
+      "pageCount": 4,
+      "checkedAt": "2026-10-09",
+      "verification": "downloaded_pdf_text_and_visual_checked"
+    },
+    {
+      "id": "vorwerk-ch-archive",
+      "market": "CH",
+      "url": "https://support-switzerland.vorwerk.com/hc/de-ch/articles/26524330442908-Kobold-Nicht-mehr-reparierbare-Modelle-im-%C3%9Cberblick",
+      "format": "html",
+      "httpStatus": 200,
+      "responseBytes": 58962,
+      "responseSha256": "31c9ac7ed8c26d4b35ea242fad1c8e896a5ba98cde9914c5647406c66b9e10c2",
+      "pageCount": null,
+      "checkedAt": "2026-10-09",
+      "verification": "downloaded_html_identity_checked"
+    },
+    {
+      "id": "vorwerk-history",
+      "market": "DE",
+      "url": "https://www.vorwerk.com/de/de/c/home/rezepte-und-ideen/ideenreich/kobold/wissen/kobold-handstaubsauger-effiziente-reinigung-seit-90-jahren",
+      "format": "html",
+      "httpStatus": 200,
+      "responseBytes": 438281,
+      "responseSha256": "1a7b07704ea21bda48e2743502ced2eb8758fbcb808e9959dc8c712ef85edb63",
+      "pageCount": null,
+      "checkedAt": "2026-10-09",
+      "verification": "downloaded_html_identity_checked"
+    },
+    {
+      "id": "miele-s4812",
+      "market": "SK",
+      "url": "https://www1.miele.de/ex/ejournal/sk/vysavace/soubory/assets/basic-html/page17.html",
+      "format": "html",
+      "httpStatus": 200,
+      "responseBytes": 32019,
+      "responseSha256": "8bb8ab0b17b44a2300a1a927d01308c18aaca9f0e068b2c044d09cce1fd47e8d",
+      "pageCount": null,
+      "checkedAt": "2026-10-09",
+      "verification": "downloaded_html_identity_checked"
+    },
+    {
+      "id": "miele-2011",
+      "market": "DE",
+      "url": "https://www1.miele.de/ex/prospects/de/2011_10/9013391_Bodenpflege_FH/pdf/all.pdf",
+      "format": "pdf",
+      "httpStatus": 200,
+      "responseBytes": 9390014,
+      "responseSha256": "a0b22d802bd66cb2fa13b8bfd1b6747e7b155d149c108f2ae8f895503da55c25",
+      "pageCount": 51,
+      "checkedAt": "2026-10-09",
+      "verification": "downloaded_pdf_text_and_visual_checked"
+    },
+    {
+      "id": "samsung-vc2500",
+      "market": "CH",
+      "url": "https://www.samsung.com/ch/vacuum-cleaners/canister/canister-gold-vc07m25m9wd-sw/",
+      "format": "html",
+      "httpStatus": 200,
+      "responseBytes": 800516,
+      "responseSha256": "0405fd900bf82fb9fe887e5f14017e490ce71faaba3c0d03294dd740d2161f7f",
+      "pageCount": null,
+      "checkedAt": "2026-10-09",
+      "verification": "downloaded_html_identity_checked"
+    },
+    {
+      "id": "samsung-sc52",
+      "market": "RU",
+      "url": "https://www.samsung.com/ru/support/model/VCC5241S3K/XEV/",
+      "format": "html",
+      "httpStatus": 200,
+      "responseBytes": 341605,
+      "responseSha256": "1bc44442f12be7bb20bbdb45a707b6726b84144037143abe0fcc4efcaa6a9e46",
+      "pageCount": null,
+      "checkedAt": "2026-10-09",
+      "verification": "downloaded_html_identity_checked"
+    },
+    {
+      "id": "dyson-dc14",
+      "market": "US",
+      "url": "https://www.dyson.com/support/vacuum-cleaners/uprights/dc14/clutched",
+      "format": "html",
+      "httpStatus": 200,
+      "responseBytes": 347545,
+      "responseSha256": "d0fa7691834d51e9b145a70a629249655edb449f07742c3a27d6397d2d01cd0d",
+      "pageCount": null,
+      "checkedAt": "2026-10-09",
+      "verification": "downloaded_html_identity_checked"
+    },
+    {
+      "id": "dyson-dc14-manual",
+      "market": "US",
+      "url": "https://www.dyson.com/content/dam/dyson/maintenance/user-guides/en_US/vacuumcleaners/upright-vacuums/dc14/09712-01.pdf",
+      "format": "pdf",
+      "httpStatus": 200,
+      "responseBytes": 22545057,
+      "responseSha256": "8d9af8ee0d3649da328ce710499632f6a1083375bd5a7c7bc64ded84382c6b36",
+      "pageCount": 15,
+      "checkedAt": "2026-10-09",
+      "verification": "downloaded_pdf_text_and_visual_checked"
+    },
+    {
+      "id": "dyson-dc17",
+      "market": "US",
+      "url": "https://www.dyson.com/support/vacuum-cleaners/uprights/dc17",
+      "format": "html",
+      "httpStatus": 200,
+      "responseBytes": 344492,
+      "responseSha256": "365aa66975203c815e62375fadad58169267eb2a9058fe509c900491713a618c",
+      "pageCount": null,
+      "checkedAt": "2026-10-09",
+      "verification": "downloaded_html_identity_checked"
+    },
+    {
+      "id": "dyson-dc17-manual",
+      "market": "US",
+      "url": "https://www.dyson.com/content/dam/dyson/maintenance/user-guides/en_US/vacuumcleaners/upright-vacuums/dc17/11643-01.pdf",
+      "format": "pdf",
+      "httpStatus": 200,
+      "responseBytes": 1226484,
+      "responseSha256": "469df5cec057745bb60a1516ae3c6b9718b9c8965d8f39f294ee8e30ca8b9210",
+      "pageCount": 10,
+      "checkedAt": "2026-10-09",
+      "verification": "downloaded_pdf_text_and_visual_checked"
+    },
+    {
+      "id": "dyson-dc27",
+      "market": "US",
+      "url": "https://www.dyson.com/support/vacuum-cleaners/uprights/dc27",
+      "format": "html",
+      "httpStatus": 200,
+      "responseBytes": 354690,
+      "responseSha256": "fa6b988059fa24cff81e8326adbfbf380f54ca4eb3f87278321c03744029b023",
+      "pageCount": null,
+      "checkedAt": "2026-10-09",
+      "verification": "downloaded_html_identity_checked"
+    },
+    {
+      "id": "dyson-dc27-manual",
+      "market": "US",
+      "url": "https://www.dyson.com/content/dam/dyson/maintenance/user-guides/en_US/vacuumcleaners/upright-vacuums/dc27/17181-01.pdf",
+      "format": "pdf",
+      "httpStatus": 200,
+      "responseBytes": 2271011,
+      "responseSha256": "3bb7d703f6e0b9249600ab8e5beeada954806355e8f1d3e97b74b5f411342a91",
+      "pageCount": 10,
+      "checkedAt": "2026-10-09",
+      "verification": "downloaded_pdf_text_and_visual_checked"
+    },
+    {
+      "id": "dyson-dc28",
+      "market": "US",
+      "url": "https://www.dyson.com/support/vacuum-cleaners/uprights/dc28",
+      "format": "html",
+      "httpStatus": 200,
+      "responseBytes": 354690,
+      "responseSha256": "3e21aaafe1ca09ffda2bc181df44c79b12250d285d6ad2c8166741b76836f32a",
+      "pageCount": null,
+      "checkedAt": "2026-10-09",
+      "verification": "downloaded_html_identity_checked"
+    },
+    {
+      "id": "dyson-dc28-manual",
+      "market": "US",
+      "url": "https://www.dyson.com/content/dam/dyson/maintenance/user-guides/en_US/vacuumcleaners/upright-vacuums/dc28/15804-01.pdf",
+      "format": "pdf",
+      "httpStatus": 200,
+      "responseBytes": 2142255,
+      "responseSha256": "87b2e832b272f7c52e5262f9af1c49668b0651c45fe90fb45d987323089e1978",
+      "pageCount": 12,
+      "checkedAt": "2026-10-09",
+      "verification": "downloaded_pdf_text_and_visual_checked"
+    }
+  ],
+  "candidates": [
+    {
+      "decision": "accepted",
+      "checkedAt": "2026-10-09",
+      "addedParts": 0,
+      "addedFitment": 0,
+      "variantStatus": "execution_open",
+      "typePlateCode": null,
+      "materialNumber": null,
+      "ean": null,
+      "constructionCountContribution": null,
+      "id": "vorwerk-kobold-30",
+      "brand": "Vorwerk",
+      "modelCode": "Kobold 30",
+      "modelName": "Kobold 30",
+      "observedLabel": "Kobold 30",
+      "identityClass": "historical-name-reference",
+      "baseDeviceKey": "vorwerk:kobold:30",
+      "market": "DE",
+      "deviceType": "floor",
+      "formFactor": "historical-household",
+      "series": "Historische Kobold-Grundgeräte",
+      "aliases": [],
+      "deviceReferences": [],
+      "sourceIds": [
+        "vorwerk-timeline"
+      ],
+      "locator": {
+        "pdfPage": 1
+      },
+      "independenceBasis": "Der Hersteller-Zeitstrahl bildet ein vollständiges historisches Haushalts-Grundgerät einzeln unter dieser Bezeichnung ab; keine Zubehörkennung und keine aus einem Bereich erzeugte Nummer.",
+      "duplicateDecision": "Kein identischer Name oder belegter Alias im v1.29.0-Bestand. Ein VK-Präfix, eine regionale Revision oder ein Elf-Alias wird nicht aus der Zahl konstruiert.",
+      "uncertainties": [
+        "Exakte historische Typenschildkennung nicht belegt; Hersteller-Modellname ist kein erfundener VK-Code.",
+        "Baugleiche regionale oder buchstabenbezeichnete Ausführungen bleiben offen; keine Teilepassung."
+      ]
+    },
+    {
+      "decision": "accepted",
+      "checkedAt": "2026-10-09",
+      "addedParts": 0,
+      "addedFitment": 0,
+      "variantStatus": "execution_open",
+      "typePlateCode": null,
+      "materialNumber": null,
+      "ean": null,
+      "constructionCountContribution": null,
+      "id": "vorwerk-kobold-32",
+      "brand": "Vorwerk",
+      "modelCode": "Kobold 32",
+      "modelName": "Kobold 32",
+      "observedLabel": "Kobold 32",
+      "identityClass": "historical-name-reference",
+      "baseDeviceKey": "vorwerk:kobold:32",
+      "market": "DE",
+      "deviceType": "floor",
+      "formFactor": "historical-household",
+      "series": "Historische Kobold-Grundgeräte",
+      "aliases": [],
+      "deviceReferences": [],
+      "sourceIds": [
+        "vorwerk-timeline"
+      ],
+      "locator": {
+        "pdfPage": 1
+      },
+      "independenceBasis": "Der Hersteller-Zeitstrahl bildet ein vollständiges historisches Haushalts-Grundgerät einzeln unter dieser Bezeichnung ab; keine Zubehörkennung und keine aus einem Bereich erzeugte Nummer.",
+      "duplicateDecision": "Kein identischer Name oder belegter Alias im v1.29.0-Bestand. Ein VK-Präfix, eine regionale Revision oder ein Elf-Alias wird nicht aus der Zahl konstruiert.",
+      "uncertainties": [
+        "Exakte historische Typenschildkennung nicht belegt; Hersteller-Modellname ist kein erfundener VK-Code.",
+        "Baugleiche regionale oder buchstabenbezeichnete Ausführungen bleiben offen; keine Teilepassung."
+      ]
+    },
+    {
+      "decision": "accepted",
+      "checkedAt": "2026-10-09",
+      "addedParts": 0,
+      "addedFitment": 0,
+      "variantStatus": "execution_open",
+      "typePlateCode": null,
+      "materialNumber": null,
+      "ean": null,
+      "constructionCountContribution": null,
+      "id": "vorwerk-kobold-33",
+      "brand": "Vorwerk",
+      "modelCode": "Kobold 33",
+      "modelName": "Kobold 33",
+      "observedLabel": "Kobold 33",
+      "identityClass": "historical-name-reference",
+      "baseDeviceKey": "vorwerk:kobold:33",
+      "market": "DE",
+      "deviceType": "floor",
+      "formFactor": "historical-household",
+      "series": "Historische Kobold-Grundgeräte",
+      "aliases": [],
+      "deviceReferences": [],
+      "sourceIds": [
+        "vorwerk-timeline"
+      ],
+      "locator": {
+        "pdfPage": 1
+      },
+      "independenceBasis": "Der Hersteller-Zeitstrahl bildet ein vollständiges historisches Haushalts-Grundgerät einzeln unter dieser Bezeichnung ab; keine Zubehörkennung und keine aus einem Bereich erzeugte Nummer.",
+      "duplicateDecision": "Kein identischer Name oder belegter Alias im v1.29.0-Bestand. Ein VK-Präfix, eine regionale Revision oder ein Elf-Alias wird nicht aus der Zahl konstruiert.",
+      "uncertainties": [
+        "Exakte historische Typenschildkennung nicht belegt; Hersteller-Modellname ist kein erfundener VK-Code.",
+        "Baugleiche regionale oder buchstabenbezeichnete Ausführungen bleiben offen; keine Teilepassung."
+      ]
+    },
+    {
+      "decision": "accepted",
+      "checkedAt": "2026-10-09",
+      "addedParts": 0,
+      "addedFitment": 0,
+      "variantStatus": "execution_open",
+      "typePlateCode": null,
+      "materialNumber": null,
+      "ean": null,
+      "constructionCountContribution": null,
+      "id": "vorwerk-kobold-35",
+      "brand": "Vorwerk",
+      "modelCode": "Kobold 35",
+      "modelName": "Kobold 35",
+      "observedLabel": "Kobold 35",
+      "identityClass": "historical-name-reference",
+      "baseDeviceKey": "vorwerk:kobold:35",
+      "market": "DE",
+      "deviceType": "floor",
+      "formFactor": "historical-household",
+      "series": "Historische Kobold-Grundgeräte",
+      "aliases": [],
+      "deviceReferences": [],
+      "sourceIds": [
+        "vorwerk-timeline"
+      ],
+      "locator": {
+        "pdfPage": 1
+      },
+      "independenceBasis": "Der Hersteller-Zeitstrahl bildet ein vollständiges historisches Haushalts-Grundgerät einzeln unter dieser Bezeichnung ab; keine Zubehörkennung und keine aus einem Bereich erzeugte Nummer.",
+      "duplicateDecision": "Kein identischer Name oder belegter Alias im v1.29.0-Bestand. Ein VK-Präfix, eine regionale Revision oder ein Elf-Alias wird nicht aus der Zahl konstruiert.",
+      "uncertainties": [
+        "Exakte historische Typenschildkennung nicht belegt; Hersteller-Modellname ist kein erfundener VK-Code.",
+        "Baugleiche regionale oder buchstabenbezeichnete Ausführungen bleiben offen; keine Teilepassung."
+      ]
+    },
+    {
+      "decision": "accepted",
+      "checkedAt": "2026-10-09",
+      "addedParts": 0,
+      "addedFitment": 0,
+      "variantStatus": "execution_open",
+      "typePlateCode": null,
+      "materialNumber": null,
+      "ean": null,
+      "constructionCountContribution": null,
+      "id": "vorwerk-kobold-38",
+      "brand": "Vorwerk",
+      "modelCode": "Kobold 38",
+      "modelName": "Kobold 38",
+      "observedLabel": "Kobold 38",
+      "identityClass": "historical-name-reference",
+      "baseDeviceKey": "vorwerk:kobold:38",
+      "market": "DE",
+      "deviceType": "floor",
+      "formFactor": "historical-household",
+      "series": "Historische Kobold-Grundgeräte",
+      "aliases": [],
+      "deviceReferences": [],
+      "sourceIds": [
+        "vorwerk-timeline"
+      ],
+      "locator": {
+        "pdfPage": 1
+      },
+      "independenceBasis": "Der Hersteller-Zeitstrahl bildet ein vollständiges historisches Haushalts-Grundgerät einzeln unter dieser Bezeichnung ab; keine Zubehörkennung und keine aus einem Bereich erzeugte Nummer.",
+      "duplicateDecision": "Kein identischer Name oder belegter Alias im v1.29.0-Bestand. Ein VK-Präfix, eine regionale Revision oder ein Elf-Alias wird nicht aus der Zahl konstruiert.",
+      "uncertainties": [
+        "Exakte historische Typenschildkennung nicht belegt; Hersteller-Modellname ist kein erfundener VK-Code.",
+        "Baugleiche regionale oder buchstabenbezeichnete Ausführungen bleiben offen; keine Teilepassung."
+      ]
+    },
+    {
+      "decision": "accepted",
+      "checkedAt": "2026-10-09",
+      "addedParts": 0,
+      "addedFitment": 0,
+      "variantStatus": "execution_open",
+      "typePlateCode": null,
+      "materialNumber": null,
+      "ean": null,
+      "constructionCountContribution": null,
+      "id": "vorwerk-kobold-52",
+      "brand": "Vorwerk",
+      "modelCode": "Kobold 52",
+      "modelName": "Kobold 52",
+      "observedLabel": "Kobold 52",
+      "identityClass": "historical-name-reference",
+      "baseDeviceKey": "vorwerk:kobold:52",
+      "market": "DE",
+      "deviceType": "floor",
+      "formFactor": "historical-household",
+      "series": "Historische Kobold-Grundgeräte",
+      "aliases": [],
+      "deviceReferences": [],
+      "sourceIds": [
+        "vorwerk-timeline"
+      ],
+      "locator": {
+        "pdfPage": 1
+      },
+      "independenceBasis": "Der Hersteller-Zeitstrahl bildet ein vollständiges historisches Haushalts-Grundgerät einzeln unter dieser Bezeichnung ab; keine Zubehörkennung und keine aus einem Bereich erzeugte Nummer.",
+      "duplicateDecision": "Kein identischer Name oder belegter Alias im v1.29.0-Bestand. Ein VK-Präfix, eine regionale Revision oder ein Elf-Alias wird nicht aus der Zahl konstruiert.",
+      "uncertainties": [
+        "Exakte historische Typenschildkennung nicht belegt; Hersteller-Modellname ist kein erfundener VK-Code.",
+        "Baugleiche regionale oder buchstabenbezeichnete Ausführungen bleiben offen; keine Teilepassung."
+      ]
+    },
+    {
+      "decision": "accepted",
+      "checkedAt": "2026-10-09",
+      "addedParts": 0,
+      "addedFitment": 0,
+      "variantStatus": "execution_open",
+      "typePlateCode": null,
+      "materialNumber": null,
+      "ean": null,
+      "constructionCountContribution": null,
+      "id": "vorwerk-kobold-53",
+      "brand": "Vorwerk",
+      "modelCode": "Kobold 53",
+      "modelName": "Kobold 53",
+      "observedLabel": "Kobold 53",
+      "identityClass": "historical-name-reference",
+      "baseDeviceKey": "vorwerk:kobold:53",
+      "market": "DE",
+      "deviceType": "floor",
+      "formFactor": "historical-household",
+      "series": "Historische Kobold-Grundgeräte",
+      "aliases": [],
+      "deviceReferences": [],
+      "sourceIds": [
+        "vorwerk-timeline"
+      ],
+      "locator": {
+        "pdfPage": 1
+      },
+      "independenceBasis": "Der Hersteller-Zeitstrahl bildet ein vollständiges historisches Haushalts-Grundgerät einzeln unter dieser Bezeichnung ab; keine Zubehörkennung und keine aus einem Bereich erzeugte Nummer.",
+      "duplicateDecision": "Kein identischer Name oder belegter Alias im v1.29.0-Bestand. Ein VK-Präfix, eine regionale Revision oder ein Elf-Alias wird nicht aus der Zahl konstruiert.",
+      "uncertainties": [
+        "Exakte historische Typenschildkennung nicht belegt; Hersteller-Modellname ist kein erfundener VK-Code.",
+        "Baugleiche regionale oder buchstabenbezeichnete Ausführungen bleiben offen; keine Teilepassung."
+      ]
+    },
+    {
+      "decision": "accepted",
+      "checkedAt": "2026-10-09",
+      "addedParts": 0,
+      "addedFitment": 0,
+      "variantStatus": "execution_open",
+      "typePlateCode": null,
+      "materialNumber": null,
+      "ean": null,
+      "constructionCountContribution": null,
+      "id": "vorwerk-kobold-114",
+      "brand": "Vorwerk",
+      "modelCode": "Kobold 114",
+      "modelName": "Kobold 114",
+      "observedLabel": "Kobold 114",
+      "identityClass": "historical-name-reference",
+      "baseDeviceKey": "vorwerk:kobold:114",
+      "market": "DE",
+      "deviceType": "floor",
+      "formFactor": "historical-household",
+      "series": "Historische Kobold-Grundgeräte",
+      "aliases": [],
+      "deviceReferences": [],
+      "sourceIds": [
+        "vorwerk-timeline"
+      ],
+      "locator": {
+        "pdfPage": 1
+      },
+      "independenceBasis": "Der Hersteller-Zeitstrahl bildet ein vollständiges historisches Haushalts-Grundgerät einzeln unter dieser Bezeichnung ab; keine Zubehörkennung und keine aus einem Bereich erzeugte Nummer.",
+      "duplicateDecision": "Kein identischer Name oder belegter Alias im v1.29.0-Bestand. Ein VK-Präfix, eine regionale Revision oder ein Elf-Alias wird nicht aus der Zahl konstruiert.",
+      "uncertainties": [
+        "Exakte historische Typenschildkennung nicht belegt; Hersteller-Modellname ist kein erfundener VK-Code.",
+        "Baugleiche regionale oder buchstabenbezeichnete Ausführungen bleiben offen; keine Teilepassung."
+      ]
+    },
+    {
+      "decision": "accepted",
+      "checkedAt": "2026-10-09",
+      "addedParts": 0,
+      "addedFitment": 0,
+      "variantStatus": "execution_open",
+      "typePlateCode": null,
+      "materialNumber": null,
+      "ean": null,
+      "constructionCountContribution": null,
+      "id": "vorwerk-kobold-116",
+      "brand": "Vorwerk",
+      "modelCode": "Kobold 116",
+      "modelName": "Kobold 116",
+      "observedLabel": "Kobold 116",
+      "identityClass": "historical-name-reference",
+      "baseDeviceKey": "vorwerk:kobold:116",
+      "market": "DE",
+      "deviceType": "floor",
+      "formFactor": "historical-household",
+      "series": "Historische Kobold-Grundgeräte",
+      "aliases": [],
+      "deviceReferences": [],
+      "sourceIds": [
+        "vorwerk-timeline"
+      ],
+      "locator": {
+        "pdfPage": 1
+      },
+      "independenceBasis": "Der Hersteller-Zeitstrahl bildet ein vollständiges historisches Haushalts-Grundgerät einzeln unter dieser Bezeichnung ab; keine Zubehörkennung und keine aus einem Bereich erzeugte Nummer.",
+      "duplicateDecision": "Kein identischer Name oder belegter Alias im v1.29.0-Bestand. Ein VK-Präfix, eine regionale Revision oder ein Elf-Alias wird nicht aus der Zahl konstruiert.",
+      "uncertainties": [
+        "Exakte historische Typenschildkennung nicht belegt; Hersteller-Modellname ist kein erfundener VK-Code.",
+        "Baugleiche regionale oder buchstabenbezeichnete Ausführungen bleiben offen; keine Teilepassung."
+      ]
+    },
+    {
+      "decision": "accepted",
+      "checkedAt": "2026-10-09",
+      "addedParts": 0,
+      "addedFitment": 0,
+      "variantStatus": "execution_open",
+      "typePlateCode": null,
+      "materialNumber": null,
+      "ean": null,
+      "constructionCountContribution": null,
+      "id": "vorwerk-kobold-117",
+      "brand": "Vorwerk",
+      "modelCode": "Kobold 117",
+      "modelName": "Kobold 117",
+      "observedLabel": "Kobold 117",
+      "identityClass": "historical-name-reference",
+      "baseDeviceKey": "vorwerk:kobold:117",
+      "market": "DE",
+      "deviceType": "floor",
+      "formFactor": "historical-household",
+      "series": "Historische Kobold-Grundgeräte",
+      "aliases": [],
+      "deviceReferences": [],
+      "sourceIds": [
+        "vorwerk-timeline"
+      ],
+      "locator": {
+        "pdfPage": 1
+      },
+      "independenceBasis": "Der Hersteller-Zeitstrahl bildet ein vollständiges historisches Haushalts-Grundgerät einzeln unter dieser Bezeichnung ab; keine Zubehörkennung und keine aus einem Bereich erzeugte Nummer.",
+      "duplicateDecision": "Kein identischer Name oder belegter Alias im v1.29.0-Bestand. Ein VK-Präfix, eine regionale Revision oder ein Elf-Alias wird nicht aus der Zahl konstruiert.",
+      "uncertainties": [
+        "Exakte historische Typenschildkennung nicht belegt; Hersteller-Modellname ist kein erfundener VK-Code.",
+        "Baugleiche regionale oder buchstabenbezeichnete Ausführungen bleiben offen; keine Teilepassung."
+      ]
+    },
+    {
+      "decision": "accepted",
+      "checkedAt": "2026-10-09",
+      "addedParts": 0,
+      "addedFitment": 0,
+      "variantStatus": "execution_open",
+      "typePlateCode": null,
+      "materialNumber": null,
+      "ean": null,
+      "constructionCountContribution": null,
+      "id": "vorwerk-kobold-118",
+      "brand": "Vorwerk",
+      "modelCode": "Kobold 118",
+      "modelName": "Kobold 118",
+      "observedLabel": "Kobold 118",
+      "identityClass": "historical-name-reference",
+      "baseDeviceKey": "vorwerk:kobold:118",
+      "market": "DE",
+      "deviceType": "floor",
+      "formFactor": "historical-household",
+      "series": "Historische Kobold-Grundgeräte",
+      "aliases": [],
+      "deviceReferences": [],
+      "sourceIds": [
+        "vorwerk-timeline"
+      ],
+      "locator": {
+        "pdfPage": 1
+      },
+      "independenceBasis": "Der Hersteller-Zeitstrahl bildet ein vollständiges historisches Haushalts-Grundgerät einzeln unter dieser Bezeichnung ab; keine Zubehörkennung und keine aus einem Bereich erzeugte Nummer.",
+      "duplicateDecision": "Kein identischer Name oder belegter Alias im v1.29.0-Bestand. Ein VK-Präfix, eine regionale Revision oder ein Elf-Alias wird nicht aus der Zahl konstruiert.",
+      "uncertainties": [
+        "Exakte historische Typenschildkennung nicht belegt; Hersteller-Modellname ist kein erfundener VK-Code.",
+        "Baugleiche regionale oder buchstabenbezeichnete Ausführungen bleiben offen; keine Teilepassung."
+      ]
+    },
+    {
+      "decision": "accepted",
+      "checkedAt": "2026-10-09",
+      "addedParts": 0,
+      "addedFitment": 0,
+      "variantStatus": "execution_open",
+      "typePlateCode": null,
+      "materialNumber": null,
+      "ean": null,
+      "constructionCountContribution": null,
+      "id": "vorwerk-kobold-119",
+      "brand": "Vorwerk",
+      "modelCode": "Kobold 119",
+      "modelName": "Kobold 119",
+      "observedLabel": "Kobold 119",
+      "identityClass": "historical-name-reference",
+      "baseDeviceKey": "vorwerk:kobold:119",
+      "market": "DE",
+      "deviceType": "floor",
+      "formFactor": "historical-household",
+      "series": "Historische Kobold-Grundgeräte",
+      "aliases": [],
+      "deviceReferences": [],
+      "sourceIds": [
+        "vorwerk-timeline"
+      ],
+      "locator": {
+        "pdfPage": 2
+      },
+      "independenceBasis": "Der Hersteller-Zeitstrahl bildet ein vollständiges historisches Haushalts-Grundgerät einzeln unter dieser Bezeichnung ab; keine Zubehörkennung und keine aus einem Bereich erzeugte Nummer.",
+      "duplicateDecision": "Kein identischer Name oder belegter Alias im v1.29.0-Bestand. Ein VK-Präfix, eine regionale Revision oder ein Elf-Alias wird nicht aus der Zahl konstruiert.",
+      "uncertainties": [
+        "Exakte historische Typenschildkennung nicht belegt; Hersteller-Modellname ist kein erfundener VK-Code.",
+        "Baugleiche regionale oder buchstabenbezeichnete Ausführungen bleiben offen; keine Teilepassung."
+      ]
+    },
+    {
+      "decision": "accepted",
+      "checkedAt": "2026-10-09",
+      "addedParts": 0,
+      "addedFitment": 0,
+      "variantStatus": "execution_open",
+      "typePlateCode": null,
+      "materialNumber": null,
+      "ean": null,
+      "constructionCountContribution": null,
+      "id": "vorwerk-vk240",
+      "brand": "Vorwerk",
+      "modelCode": "VK240",
+      "modelName": "Kobold VK 240",
+      "observedLabel": "Kobold VK 240",
+      "identityClass": "manufacturer-model-code-reference",
+      "baseDeviceKey": "vorwerk:vk240",
+      "market": "DE",
+      "deviceType": "floor",
+      "formFactor": "canister",
+      "series": "Historische Vorwerk-Bodenstaubsauger",
+      "aliases": [],
+      "deviceReferences": [
+        "VK240"
+      ],
+      "sourceIds": [
+        "vorwerk-timeline"
+      ],
+      "locator": {
+        "pdfPage": 1
+      },
+      "independenceBasis": "Einzeln als erster Vorwerk-Bodenstaubsauger im Hersteller-Zeitstrahl benannt; die gedruckte Kennung lautet VK 240, nicht VT 240.",
+      "duplicateDecision": "Kein VK240 oder VT240 im Bestand; das Präfix wird nicht auf die neuere Tiger-Nomenklatur umgeschrieben.",
+      "uncertainties": [
+        "Genaue Geräteausführung und Teileliste offen.",
+        "Die Quelle belegt keine aktuelle Reparierbarkeit oder deutschen Verkauf."
+      ]
+    },
+    {
+      "decision": "accepted",
+      "checkedAt": "2026-10-09",
+      "addedParts": 0,
+      "addedFitment": 0,
+      "variantStatus": "execution_open",
+      "typePlateCode": null,
+      "materialNumber": null,
+      "ean": null,
+      "constructionCountContribution": null,
+      "id": "vorwerk-vt250",
+      "brand": "Vorwerk",
+      "modelCode": "VT250",
+      "modelName": "Tiger 250",
+      "observedLabel": "Tiger 250",
+      "identityClass": "manufacturer-model-code-reference",
+      "baseDeviceKey": "vorwerk:vt250",
+      "market": "DE/CH",
+      "deviceType": "floor",
+      "formFactor": "canister",
+      "series": "Tiger / Kobold VT",
+      "aliases": [
+        "Tiger VT250"
+      ],
+      "deviceReferences": [
+        "VT250"
+      ],
+      "sourceIds": [
+        "vorwerk-timeline",
+        "vorwerk-ch-archive"
+      ],
+      "locator": {
+        "pdfPage": 2,
+        "corroboratingLabel": "Tiger VT 250"
+      },
+      "independenceBasis": "Tiger 250 steht einzeln im deutschen Hersteller-Zeitstrahl; das Schweizer Herstellerregister bestätigt ausdrücklich VT 250.",
+      "duplicateDecision": "Eigenständige historische Modellbezeichnung vor den vorhandenen VT251/252; DE- und CH-Nennung bilden genau ein Profil.",
+      "uncertainties": [
+        "Ausführung und Zubehöranschlüsse müssen am Gerät geprüft werden.",
+        "Das CH-Register meldet das Modell als nicht mehr reparierbar; keine Teileübernahme."
+      ]
+    },
+    {
+      "decision": "accepted",
+      "checkedAt": "2026-10-09",
+      "addedParts": 0,
+      "addedFitment": 0,
+      "variantStatus": "execution_open",
+      "typePlateCode": null,
+      "materialNumber": null,
+      "ean": null,
+      "constructionCountContribution": null,
+      "id": "miele-s5981",
+      "brand": "Miele",
+      "modelCode": "S 5981",
+      "modelName": "S 5981",
+      "observedLabel": "Bodenstaubsauger S 5981",
+      "identityClass": "manufacturer-model-code-reference",
+      "baseDeviceKey": "miele:historical:s5981",
+      "market": "DE",
+      "deviceType": "bagged",
+      "formFactor": "canister",
+      "series": "S5",
+      "aliases": [
+        "S5981"
+      ],
+      "deviceReferences": [
+        "S 5981"
+      ],
+      "sourceIds": [
+        "miele-2011"
+      ],
+      "locator": {
+        "pdfPage": 12,
+        "printedPages": "22–23"
+      },
+      "independenceBasis": "Eigene Geräteabbildung mit ungebündelter Bezeichnung auf gedruckten Seiten 22–23; nicht nur die zuvor zurückgestellte S5981+SEB217-Bundle-Spalte.",
+      "duplicateDecision": "Numerischer Code ist weder Bestand noch belegter aktueller Alias. Bundle/Hybrid-Synonym erzeugt kein zweites Gerät; die technische Eigenkonstruktionszahl innerhalb der Serie bleibt offen.",
+      "uncertainties": [
+        "Materialnummer, EAN und genaue Typenschild-Ausführung nicht belegt.",
+        "Keine generische Übernahme von Beuteln, Filtern, Düsen oder Akkus."
+      ]
+    },
+    {
+      "decision": "accepted",
+      "checkedAt": "2026-10-09",
+      "addedParts": 0,
+      "addedFitment": 0,
+      "variantStatus": "execution_open",
+      "typePlateCode": null,
+      "materialNumber": null,
+      "ean": null,
+      "constructionCountContribution": null,
+      "id": "miele-s4812",
+      "brand": "Miele",
+      "modelCode": "S 4812",
+      "modelName": "S 4812",
+      "observedLabel": "S 4812 Hybrid",
+      "identityClass": "manufacturer-model-code-reference",
+      "baseDeviceKey": "miele:historical:s4812",
+      "market": "SK",
+      "deviceType": "bagged",
+      "formFactor": "canister",
+      "series": "S4 Hybrid",
+      "aliases": [
+        "S4812",
+        "S 4812 Hybrid"
+      ],
+      "deviceReferences": [
+        "S 4812"
+      ],
+      "sourceIds": [
+        "miele-s4812"
+      ],
+      "locator": {
+        "htmlPage": 17,
+        "tableLabel": "Typ / označenie prístroja"
+      },
+      "independenceBasis": "Hersteller-Gerätetabelle benennt S4812Hybrid und beschreibt Netz-/Akkubetrieb eines vollständigen Haushalts-Bodenstaubsaugers; nicht nur der unpräzise Marketingname Miele Hybrid.",
+      "duplicateDecision": "Numerischer Code ist weder Bestand noch belegter aktueller Alias. Bundle/Hybrid-Synonym erzeugt kein zweites Gerät; die technische Eigenkonstruktionszahl innerhalb der Serie bleibt offen.",
+      "uncertainties": [
+        "Materialnummer, EAN und genaue Typenschild-Ausführung nicht belegt.",
+        "Keine generische Übernahme von Beuteln, Filtern, Düsen oder Akkus."
+      ]
+    },
+    {
+      "decision": "accepted",
+      "checkedAt": "2026-10-09",
+      "addedParts": 0,
+      "addedFitment": 0,
+      "variantStatus": "execution_open",
+      "typePlateCode": null,
+      "materialNumber": null,
+      "ean": null,
+      "constructionCountContribution": null,
+      "id": "dyson-dc14",
+      "brand": "Dyson",
+      "modelCode": "DC14",
+      "modelName": "DC14",
+      "observedLabel": "DC14",
+      "identityClass": "manufacturer-model-code-reference",
+      "baseDeviceKey": "dyson:dc14",
+      "market": "US",
+      "deviceType": "bagless",
+      "formFactor": "upright",
+      "series": "DC14",
+      "aliases": [],
+      "deviceReferences": [],
+      "sourceIds": [
+        "dyson-dc14",
+        "dyson-dc14-manual"
+      ],
+      "locator": {
+        "supportHeading": "Dyson DC14 upright vacuum",
+        "manualModelLabel": "DC14"
+      },
+      "independenceBasis": "Eigene modellbezogene US-Hersteller-Supportseite und offizielle Geräteanleitung, nicht nur Zubehörkompatibilität oder eine Farb-/Bundle-Bezeichnung.",
+      "duplicateDecision": "DC14 fehlt in den 98 bestehenden Dyson-Einträgen und ihren belegten Aliaskennungen. Clutched/Clutchless, All Floors, Absolute und weitere Ausstattung werden nicht als zusätzliche Grundgeräte gezählt.",
+      "uncertainties": [
+        "US-Referenz belegt keinen DE-Verkauf, keine deutsche Spannungsausführung und keine Produkt-SKU.",
+        "Nicht alle internationalen Dyson-Baukonstruktionen sind gegeneinander abgegrenzt; daher kein globaler Konstruktionen-Zähler."
+      ]
+    },
+    {
+      "decision": "accepted",
+      "checkedAt": "2026-10-09",
+      "addedParts": 0,
+      "addedFitment": 0,
+      "variantStatus": "execution_open",
+      "typePlateCode": null,
+      "materialNumber": null,
+      "ean": null,
+      "constructionCountContribution": null,
+      "id": "dyson-dc17",
+      "brand": "Dyson",
+      "modelCode": "DC17",
+      "modelName": "DC17",
+      "observedLabel": "DC17",
+      "identityClass": "manufacturer-model-code-reference",
+      "baseDeviceKey": "dyson:dc17",
+      "market": "US",
+      "deviceType": "bagless",
+      "formFactor": "upright",
+      "series": "DC17",
+      "aliases": [],
+      "deviceReferences": [],
+      "sourceIds": [
+        "dyson-dc17",
+        "dyson-dc17-manual"
+      ],
+      "locator": {
+        "supportHeading": "Dyson DC17 upright vacuum",
+        "manualModelLabel": "DC17"
+      },
+      "independenceBasis": "Eigene modellbezogene US-Hersteller-Supportseite und offizielle Geräteanleitung, nicht nur Zubehörkompatibilität oder eine Farb-/Bundle-Bezeichnung.",
+      "duplicateDecision": "DC17 fehlt in den 98 bestehenden Dyson-Einträgen und ihren belegten Aliaskennungen. Clutched/Clutchless, All Floors, Absolute und weitere Ausstattung werden nicht als zusätzliche Grundgeräte gezählt.",
+      "uncertainties": [
+        "US-Referenz belegt keinen DE-Verkauf, keine deutsche Spannungsausführung und keine Produkt-SKU.",
+        "Nicht alle internationalen Dyson-Baukonstruktionen sind gegeneinander abgegrenzt; daher kein globaler Konstruktionen-Zähler."
+      ]
+    },
+    {
+      "decision": "accepted",
+      "checkedAt": "2026-10-09",
+      "addedParts": 0,
+      "addedFitment": 0,
+      "variantStatus": "execution_open",
+      "typePlateCode": null,
+      "materialNumber": null,
+      "ean": null,
+      "constructionCountContribution": null,
+      "id": "dyson-dc27",
+      "brand": "Dyson",
+      "modelCode": "DC27",
+      "modelName": "DC27",
+      "observedLabel": "DC27",
+      "identityClass": "manufacturer-model-code-reference",
+      "baseDeviceKey": "dyson:dc27",
+      "market": "US",
+      "deviceType": "bagless",
+      "formFactor": "upright",
+      "series": "DC27",
+      "aliases": [],
+      "deviceReferences": [],
+      "sourceIds": [
+        "dyson-dc27",
+        "dyson-dc27-manual"
+      ],
+      "locator": {
+        "supportHeading": "Dyson DC27 upright vacuum",
+        "manualModelLabel": "DC27"
+      },
+      "independenceBasis": "Eigene modellbezogene US-Hersteller-Supportseite und offizielle Geräteanleitung, nicht nur Zubehörkompatibilität oder eine Farb-/Bundle-Bezeichnung.",
+      "duplicateDecision": "DC27 fehlt in den 98 bestehenden Dyson-Einträgen und ihren belegten Aliaskennungen. Clutched/Clutchless, All Floors, Absolute und weitere Ausstattung werden nicht als zusätzliche Grundgeräte gezählt.",
+      "uncertainties": [
+        "US-Referenz belegt keinen DE-Verkauf, keine deutsche Spannungsausführung und keine Produkt-SKU.",
+        "Nicht alle internationalen Dyson-Baukonstruktionen sind gegeneinander abgegrenzt; daher kein globaler Konstruktionen-Zähler."
+      ]
+    },
+    {
+      "decision": "accepted",
+      "checkedAt": "2026-10-09",
+      "addedParts": 0,
+      "addedFitment": 0,
+      "variantStatus": "execution_open",
+      "typePlateCode": null,
+      "materialNumber": null,
+      "ean": null,
+      "constructionCountContribution": null,
+      "id": "dyson-dc28",
+      "brand": "Dyson",
+      "modelCode": "DC28",
+      "modelName": "DC28",
+      "observedLabel": "DC28",
+      "identityClass": "manufacturer-model-code-reference",
+      "baseDeviceKey": "dyson:dc28",
+      "market": "US",
+      "deviceType": "bagless",
+      "formFactor": "upright",
+      "series": "DC28",
+      "aliases": [],
+      "deviceReferences": [],
+      "sourceIds": [
+        "dyson-dc28",
+        "dyson-dc28-manual"
+      ],
+      "locator": {
+        "supportHeading": "Dyson DC28 upright vacuum",
+        "manualModelLabel": "DC28"
+      },
+      "independenceBasis": "Eigene modellbezogene US-Hersteller-Supportseite und offizielle Geräteanleitung, nicht nur Zubehörkompatibilität oder eine Farb-/Bundle-Bezeichnung.",
+      "duplicateDecision": "DC28 fehlt in den 98 bestehenden Dyson-Einträgen und ihren belegten Aliaskennungen. Clutched/Clutchless, All Floors, Absolute und weitere Ausstattung werden nicht als zusätzliche Grundgeräte gezählt.",
+      "uncertainties": [
+        "US-Referenz belegt keinen DE-Verkauf, keine deutsche Spannungsausführung und keine Produkt-SKU.",
+        "Nicht alle internationalen Dyson-Baukonstruktionen sind gegeneinander abgegrenzt; daher kein globaler Konstruktionen-Zähler."
+      ]
+    },
+    {
+      "decision": "accepted",
+      "checkedAt": "2026-10-09",
+      "addedParts": 0,
+      "addedFitment": 0,
+      "variantStatus": "execution_open",
+      "typePlateCode": null,
+      "materialNumber": null,
+      "ean": null,
+      "constructionCountContribution": null,
+      "id": "samsung-vc07m25m9wd",
+      "brand": "Samsung",
+      "modelCode": "VC07M25M9WD",
+      "modelName": "VC07M25M9WD",
+      "observedLabel": "VC07M25M9WD/SW",
+      "identityClass": "family-representative",
+      "baseDeviceKey": "samsung:vc2500",
+      "market": "CH",
+      "deviceType": "bagged",
+      "formFactor": "canister",
+      "series": "VC2500",
+      "aliases": [],
+      "deviceReferences": [
+        "VC07M25M9WD/SW"
+      ],
+      "sourceIds": [
+        "samsung-vc2500"
+      ],
+      "locator": {
+        "fullModelCode": "VC07M25M9WD/SW",
+        "manufacturerSeries": "VC2500"
+      },
+      "independenceBasis": "Beutel-Bodenstaubsauger mit vollständigem Hersteller-Modellcode und eigener Hersteller-Serienbezeichnung; diese Modelllinie ist im Bestand noch nicht repräsentiert.",
+      "duplicateDecision": "Nur ein repräsentativer, exakt belegter Gerätecode für die neue Linie. Farb-, Leistung-, Zubehör- und weitere Ländervarianten werden nicht als zusätzliche Grundmodelle aufgefüllt.",
+      "uncertainties": [
+        "Quelle und Referenzmarkt CH sind sichtbar; kein deutscher Markt- oder Reparaturvarianten-Nachweis.",
+        "Technische Baugleichheit über alle internationalen Codes nicht abschließend belegt; keine Teilepassung."
+      ]
+    },
+    {
+      "decision": "accepted",
+      "checkedAt": "2026-10-09",
+      "addedParts": 0,
+      "addedFitment": 0,
+      "variantStatus": "execution_open",
+      "typePlateCode": null,
+      "materialNumber": null,
+      "ean": null,
+      "constructionCountContribution": null,
+      "id": "samsung-vcc5241s3k",
+      "brand": "Samsung",
+      "modelCode": "VCC5241S3K",
+      "modelName": "VCC5241S3K",
+      "observedLabel": "VCC5241S3K/XEV",
+      "identityClass": "family-representative",
+      "baseDeviceKey": "samsung:sc52",
+      "market": "RU",
+      "deviceType": "bagged",
+      "formFactor": "canister",
+      "series": "SC52",
+      "aliases": [
+        "SC5241"
+      ],
+      "deviceReferences": [
+        "VCC5241S3K/XEV"
+      ],
+      "sourceIds": [
+        "samsung-sc52"
+      ],
+      "locator": {
+        "fullModelCode": "VCC5241S3K/XEV",
+        "manufacturerSeries": "SC52"
+      },
+      "independenceBasis": "Beutel-Bodenstaubsauger mit vollständigem Hersteller-Modellcode und eigener Hersteller-Serienbezeichnung; diese Modelllinie ist im Bestand noch nicht repräsentiert.",
+      "duplicateDecision": "Nur ein repräsentativer, exakt belegter Gerätecode für die neue Linie. Farb-, Leistung-, Zubehör- und weitere Ländervarianten werden nicht als zusätzliche Grundmodelle aufgefüllt.",
+      "uncertainties": [
+        "Quelle und Referenzmarkt RU sind sichtbar; kein deutscher Markt- oder Reparaturvarianten-Nachweis.",
+        "Technische Baugleichheit über alle internationalen Codes nicht abschließend belegt; keine Teilepassung."
+      ]
+    },
+    {
+      "id": "vorwerk-decision-22",
+      "brand": "Vorwerk",
+      "modelName": "Modell 34",
+      "decision": "deferred",
+      "sourceIds": [
+        "vorwerk-ch-archive"
+      ],
+      "reason": "Hersteller nennt dieses historische Label, aber regionale Identität/Baugleichheit mit den bereits einzeln dokumentierten Kobold-Namen ist offen. Kein zusätzliches Profil ohne Aliasabgrenzung.",
+      "checkedAt": "2026-10-09",
+      "addedModelCount": 0
+    },
+    {
+      "id": "vorwerk-decision-23",
+      "brand": "Vorwerk",
+      "modelName": "Modell T",
+      "decision": "deferred",
+      "sourceIds": [
+        "vorwerk-ch-archive"
+      ],
+      "reason": "Hersteller nennt dieses historische Label, aber regionale Identität/Baugleichheit mit den bereits einzeln dokumentierten Kobold-Namen ist offen. Kein zusätzliches Profil ohne Aliasabgrenzung.",
+      "checkedAt": "2026-10-09",
+      "addedModelCount": 0
+    },
+    {
+      "id": "vorwerk-decision-24",
+      "brand": "Vorwerk",
+      "modelName": "Modell S",
+      "decision": "deferred",
+      "sourceIds": [
+        "vorwerk-ch-archive"
+      ],
+      "reason": "Hersteller nennt dieses historische Label, aber regionale Identität/Baugleichheit mit den bereits einzeln dokumentierten Kobold-Namen ist offen. Kein zusätzliches Profil ohne Aliasabgrenzung.",
+      "checkedAt": "2026-10-09",
+      "addedModelCount": 0
+    },
+    {
+      "id": "vorwerk-decision-25",
+      "brand": "Vorwerk",
+      "modelName": "Elf 52",
+      "decision": "deferred",
+      "sourceIds": [
+        "vorwerk-ch-archive"
+      ],
+      "reason": "Hersteller nennt dieses historische Label, aber regionale Identität/Baugleichheit mit den bereits einzeln dokumentierten Kobold-Namen ist offen. Kein zusätzliches Profil ohne Aliasabgrenzung.",
+      "checkedAt": "2026-10-09",
+      "addedModelCount": 0
+    },
+    {
+      "id": "vorwerk-decision-26",
+      "brand": "Vorwerk",
+      "modelName": "Elf 53",
+      "decision": "deferred",
+      "sourceIds": [
+        "vorwerk-ch-archive"
+      ],
+      "reason": "Hersteller nennt dieses historische Label, aber regionale Identität/Baugleichheit mit den bereits einzeln dokumentierten Kobold-Namen ist offen. Kein zusätzliches Profil ohne Aliasabgrenzung.",
+      "checkedAt": "2026-10-09",
+      "addedModelCount": 0
+    },
+    {
+      "id": "vorwerk-decision-27",
+      "brand": "Vorwerk",
+      "modelName": "Kobold 111–122",
+      "decision": "deferred",
+      "sourceIds": [
+        "vorwerk-ch-archive"
+      ],
+      "reason": "Ein Hersteller-Nummernbereich ist kein Einzelbeleg für jede Zwischenzahl. Vier bislang nicht einzeln belegte Plätze bleiben nur eine bedingte Archiv-Hülle, niemals Importdatensätze.",
+      "checkedAt": "2026-10-09",
+      "addedModelCount": 0
+    },
+    {
+      "id": "vorwerk-decision-28",
+      "brand": "Vorwerk",
+      "modelName": "EB / ET / VTF / SP / PB Vorsatzgeräte",
+      "decision": "rejected",
+      "sourceIds": [
+        "vorwerk-timeline",
+        "vorwerk-history"
+      ],
+      "reason": "Zubehör/Roboter außerhalb des Grundgeräteumfangs oder widersprüchliche Einzelkennung; kein zusätzliches vollständiges Staubsaugermodell importiert.",
+      "checkedAt": "2026-10-09",
+      "addedModelCount": 0
+    },
+    {
+      "id": "vorwerk-decision-29",
+      "brand": "Vorwerk",
+      "modelName": "VR100 / VR200 / VR300 Saugroboter",
+      "decision": "rejected",
+      "sourceIds": [
+        "vorwerk-timeline",
+        "vorwerk-history"
+      ],
+      "reason": "Zubehör/Roboter außerhalb des Grundgeräteumfangs oder widersprüchliche Einzelkennung; kein zusätzliches vollständiges Staubsaugermodell importiert.",
+      "checkedAt": "2026-10-09",
+      "addedModelCount": 0
+    },
+    {
+      "id": "vorwerk-decision-30",
+      "brand": "Vorwerk",
+      "modelName": "VB 100 (1970)",
+      "decision": "rejected",
+      "sourceIds": [
+        "vorwerk-timeline",
+        "vorwerk-history"
+      ],
+      "reason": "Die historische Timeline-Abbildung belegt hier kein zusätzliches Staubsauger-Grundgerät; nicht mit dem bereits vorhandenen Akku-Sauger VB100 (2018) verwechseln.",
+      "checkedAt": "2026-10-09",
+      "addedModelCount": 0
+    },
+    {
+      "id": "vorwerk-decision-31",
+      "brand": "Vorwerk",
+      "modelName": "VK188 im Historien-Fließtext",
+      "decision": "rejected",
+      "sourceIds": [
+        "vorwerk-timeline",
+        "vorwerk-history"
+      ],
+      "reason": "Zubehör/Roboter außerhalb des Grundgeräteumfangs oder widersprüchliche Einzelkennung; kein zusätzliches vollständiges Staubsaugermodell importiert.",
+      "checkedAt": "2026-10-09",
+      "addedModelCount": 0
+    },
+    {
+      "id": "miele-decision-32",
+      "brand": "Miele",
+      "modelName": "S5981 + SEB217",
+      "decision": "rejected",
+      "sourceIds": [
+        "miele-2011"
+      ],
+      "reason": "Beipack-Elektrobürste und Bundle sind kein weiteres Grundgerät neben dem einmal importierten S5981.",
+      "checkedAt": "2026-10-09",
+      "addedModelCount": 0
+    },
+    {
+      "id": "miele-decision-33",
+      "brand": "Miele",
+      "modelName": "Miele Hybrid / S4 Hybrid",
+      "decision": "rejected",
+      "sourceIds": [
+        "miele-s4812"
+      ],
+      "reason": "Marketing-/Serienname nicht zusätzlich neben dem belegten S4812 importieren; Alias bleibt auf ein Modell beschränkt.",
+      "checkedAt": "2026-10-09",
+      "addedModelCount": 0
+    },
+    {
+      "id": "miele-decision-34",
+      "brand": "Miele",
+      "modelName": "S6270 / S6290 / S6390 aus Zubehörzeilen",
+      "decision": "deferred",
+      "sourceIds": [
+        "miele-s4812"
+      ],
+      "reason": "Die untersuchten Broschürenseiten liefern dafür keine individuell geprüfte vollständige Gerätespalte. Zubehörlisten, Familienbereiche und fremde Händler reichen für diese Aufnahme nicht aus.",
+      "checkedAt": "2026-10-09",
+      "addedModelCount": 0
+    },
+    {
+      "id": "dyson-decision-35",
+      "brand": "Dyson",
+      "modelName": "DC14 Clutched / Clutchless / Complete / Drive / Full Kit",
+      "decision": "rejected",
+      "sourceIds": [
+        "dyson-dc14",
+        "dyson-dc14-manual"
+      ],
+      "reason": "Ausführungen und Ausstattung von DC14 werden nicht als zusätzliche Grundmodelle gezählt; die konkrete Ausführung bleibt am Gerät zu prüfen.",
+      "checkedAt": "2026-10-09",
+      "addedModelCount": 0
+    },
+    {
+      "id": "dyson-decision-36",
+      "brand": "Dyson",
+      "modelName": "DC41 / DC50 / UP14 / regionale Ball-Namen",
+      "decision": "deferred",
+      "sourceIds": [
+        "dyson-dc27"
+      ],
+      "reason": "Potenzielle internationale Aliase anderer bereits vorhandener Dyson-Generationen; die geprüften vier US-Modellquellen lösen diese Baugleichheit nicht auf. Keine Auffüllung bis100.",
+      "checkedAt": "2026-10-09",
+      "addedModelCount": 0
+    },
+    {
+      "id": "samsung-decision-37",
+      "brand": "Samsung",
+      "modelName": "Weitere VC2500-/SC52-Länder- oder Farbvarianten",
+      "decision": "deferred",
+      "sourceIds": [
+        "samsung-vc2500",
+        "samsung-sc52"
+      ],
+      "reason": "Keine zweite Modelllinie allein aus Farb-, Länder-, Leistungs- oder Zubehörsuffixen. Weitere Ausführungen brauchen einen gesonderten technischen Unterscheidungsbeleg.",
+      "checkedAt": "2026-10-09",
+      "addedModelCount": 0
+    },
+    {
+      "id": "samsung-decision-38",
+      "brand": "Samsung",
+      "modelName": "SC43 / SC45 / weitere Jet60-Varianten",
+      "decision": "deferred",
+      "sourceIds": [
+        "samsung-sc52"
+      ],
+      "reason": "Bestand enthält bereits Twin-Chamber-/Jet60-Geräte; unabhängige zusätzliche Grundkonstruktion in dieser Prüfung nicht sicher abgegrenzt.",
+      "checkedAt": "2026-10-09",
+      "addedModelCount": 0
+    }
+  ],
+  "result": {
+    "addedProfiles": 22,
+    "addedParts": 0,
+    "addedFitment": 0,
+    "finalModelNames": 1104,
+    "finalModelRows": 1115,
+    "cappedTargetSlots": 891,
+    "remainingTargetSlots": 109,
+    "byBrand": {
+      "Miele": {
+        "before": 82,
+        "added": 2,
+        "after": 84,
+        "remaining": 16
+      },
+      "Dyson": {
+        "before": 92,
+        "added": 4,
+        "after": 96,
+        "remaining": 4
+      },
+      "Samsung": {
+        "before": 77,
+        "added": 2,
+        "after": 79,
+        "remaining": 21
+      },
+      "Vorwerk": {
+        "before": 18,
+        "added": 14,
+        "after": 32,
+        "remaining": 68
+      }
+    },
+    "additionalNameOnlyHistoricalProfiles": 12,
+    "additionalManufacturerCodeProfiles": 8,
+    "additionalFamilyRepresentatives": 2,
+    "independentConstructionCount": null
+  },
+  "vorwerkBoundary": {
+    "scope": "Nur das hier geprüfte deutsche Timeline-/Historienarchiv und Schweizer Nicht-reparierbar-Register, keine behauptete vollständige Weltinventur.",
+    "existingProfiles": 18,
+    "individuallyGroundedAdditionalProfiles": 14,
+    "confirmedNamedProfiles": 32,
+    "unresolvedNamedLabels": [
+      "Modell 34",
+      "Modell T",
+      "Modell S",
+      "Elf 52",
+      "Elf 53"
+    ],
+    "range": {
+      "label": "Kobold 111–122",
+      "numericSlots": 12,
+      "individuallyGroundedSlots": 8,
+      "unprovedPotentialSlots": 4,
+      "expandedIntoModels": false
+    },
+    "conditionalArchiveLabelCeiling": 41,
+    "absoluteGlobalTechnicalMaximum": null,
+    "maximumCaveat": "32 bestätigte vollständige Geräteprofile; 41 ist nur die konservative obere Anzahl möglicher Labels im abgegrenzten Archiv-Universum (32+5+4). Keine Behauptung von41 existierenden, unabhängigen Konstruktionen. 100 ist durch diese Archive nicht belegt."
+  }
+}
