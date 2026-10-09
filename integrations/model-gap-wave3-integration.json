@@ -1,0 +1,123 @@
+{
+  "issue": 37,
+  "branch": "work/catalog-model-gap-wave3",
+  "baselineCommit": "d4853c4e5245410630742f58aead661d77f42c32",
+  "baseVersion": "1.29.0",
+  "centralChangesCommitted": false,
+  "localPatch": {
+    "sha256": "e6722a5474f700f3ba89f869f4e7ca30fca69ee9a16698baf42b16b82259cf79",
+    "bytes": 286939,
+    "generatedBy": "node integrations/model-gap-wave3-patch.mjs --target site --output <outside-repository>/model-gap-wave3-local.patch"
+  },
+  "changes": [
+    {
+      "path": "site/src/data/model-gap-wave3.js",
+      "beforeSha256": null,
+      "afterSha256": "5dc4283ec00444b12e3081585d88f3a928cd1c94ef8d6ad12af3c8127892d4df",
+      "bytes": 51725
+    },
+    {
+      "path": "site/src/data/miele-models.js",
+      "beforeSha256": "60c427c552a637e640ea9ee00f38bcd07d6f94cec0507c383eb869905cacfe98",
+      "afterSha256": "77a46c2b304a0916a8bfaed2358705a249f9404ceae2e47f504e7914e73aa5d2",
+      "bytes": 8397
+    },
+    {
+      "path": "site/src/data/dyson-pack.js",
+      "beforeSha256": "41bd2f116ca568ec9e4cb48acef343fb3c9f3fa94277e5d76c4c81432058d1f6",
+      "afterSha256": "7dcf11f593d7b4da92243130489ea613427e50f9cb7f6aae9cd64eda323fefbd",
+      "bytes": 270914
+    },
+    {
+      "path": "site/src/data/samsung-pack.js",
+      "beforeSha256": "b98ed6a953dfd39b64b93d96ce3f02602a309aa9946304ccc58c560f692ac2df",
+      "afterSha256": "b56c9e397730786ee9b1aa4339e8d8d0fb7ed29379828b799f66c65131940f1a",
+      "bytes": 192366
+    },
+    {
+      "path": "site/src/data/vorwerk-pack.js",
+      "beforeSha256": "c81171f5a1bcc5a308bb514cdbb1f6a0743386235ff8016b14203c4dc30d5d90",
+      "afterSha256": "27d13d723139cdaa63456d5c8e1ddad28d3eb35733d916cae37e6e1eea2f2698",
+      "bytes": 67550
+    },
+    {
+      "path": "site/src/data/brand-index.js",
+      "beforeSha256": "b9dfa4b0dee8f2a2343506190a6606ad9569be0d2336e82e192e3c246781bcf7",
+      "afterSha256": "e51a5fb3cf5cddafd2ae28ce2e81e84b2f1163281e560fa16225cf9188cfb844",
+      "bytes": 432629
+    },
+    {
+      "path": "site/src/core/typeplate.js",
+      "beforeSha256": "005d89be60aa1c6f4483f240d08341a12d9cf91dc5ff33d6ac4ad17e24322339",
+      "afterSha256": "1b6a7d9f709333c540667e631a2d4f193fa041550cf0315390482c09e76311d0",
+      "bytes": 18986
+    },
+    {
+      "path": "site/tests/catalog-seven-brands.test.mjs",
+      "beforeSha256": "42723eec5de90a0ffc60e9b29ac8dcaabd6741cbaee8f34b3952c2c00451aea0",
+      "afterSha256": "a9065470e005b4de6d36fc1bb29109e866af0fe0dd9c09d3d7b9dd3bcbdaa48a",
+      "bytes": 12209
+    },
+    {
+      "path": "site/tests/catalog-v126.test.mjs",
+      "beforeSha256": "5d112d14b98c13847a473ed62c779d05285143feb1386ec5b97c560f79ac759b",
+      "afterSha256": "75f04379f936c751e7960617981fcdc51723693458ca11fca865608903a7b197",
+      "bytes": 11273
+    },
+    {
+      "path": "site/tests/philips-expansion.test.mjs",
+      "beforeSha256": "1c47db953019ef75d433ec81891a0f411644e9c62f726d86f797df6f47a8f2a9",
+      "afterSha256": "650c349aa8cfcb7eb49ae1762ba3face18081e6fb6ed27dda263ce8b5c39c24e",
+      "bytes": 8737
+    },
+    {
+      "path": "site/tests/bosch-catalog.test.mjs",
+      "beforeSha256": "513ffa614c1357a0aee82523aec726bf010b16a775497ef11e03ce04a35c73b1",
+      "afterSha256": "b5a8ca39ab7578fe30de9fb265424ea9927c9d01b53adedf26b4c07adb988a4e",
+      "bytes": 5703
+    },
+    {
+      "path": "site/tests/vorwerk-expansion.test.mjs",
+      "beforeSha256": "175d832d251edbd9b8c4bed1805a743f5997afbb3f5412e74de878fbae5dcfb1",
+      "afterSha256": "8cc3646b7a09a59a1189cae368c21df8533d44edf4eca8ff437ecdb111e6c9ed",
+      "bytes": 9911
+    },
+    {
+      "path": "site/tests/miele-models-wave2.test.mjs",
+      "beforeSha256": "45ebb0dfb2f6da1159ce2581c571cc4629a6aa32d518a35f693fdbd6cb5cc83b",
+      "afterSha256": "feaa74401f8ac44d86569dd7d7f3b2012a9c2fc7d12dc49b93bb66198a1ad99e",
+      "bytes": 8729
+    },
+    {
+      "path": "site/tests/dyson-models-wave2.test.mjs",
+      "beforeSha256": "a56438eb57de4461faa3c737ebd32626cea2907d10805552cb08fdc165204f05",
+      "afterSha256": "63eb8ca5bd7c49eb28d75e7a24a72fd00deb5fc6d3f5799bacd1072ce4c9c3ba",
+      "bytes": 7253
+    },
+    {
+      "path": "site/tests/catalog-expansion.test.mjs",
+      "beforeSha256": "81bf27244181b3317ddc6add3419fb13dd3643bd856f610b7b09631c5e336373",
+      "afterSha256": "e4d572ef364aee7b979706b19bea0966006406cc9eb750e648906ddecdb8f288",
+      "bytes": 9784
+    },
+    {
+      "path": "site/tests/model-gap-wave3.test.mjs",
+      "beforeSha256": null,
+      "afterSha256": "f052c3d03b13938ef9cc40f5613f6c18f138fb728d1fd0ac5284d7721a805b91",
+      "bytes": 7032
+    },
+    {
+      "path": "site/package.json",
+      "beforeSha256": "acc86040e626bcff63e13ef45ff56c135f1ec909a2ca997f7894daf052bb9404",
+      "afterSha256": "cd85ea4abc5ad18a0c42bee80c5df0060e62abeee2a56b9fe18407287f90dd24",
+      "bytes": 4598
+    }
+  ],
+  "integrationOrder": [
+    "clean v1.29.0 restore",
+    "reviewed model-gap-wave3 import",
+    "release-owner-reviewed parts/media imports",
+    "new joint tests/build/checkpoint only by release owner"
+  ],
+  "requiresReleaseOwner": true
+}

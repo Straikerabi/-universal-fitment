@@ -1,0 +1,111 @@
+name: Wave3 Owner Composition QA (no deployment)
+
+on:
+  push:
+    branches: [integration/wave3-owner-review]
+  pull_request:
+    branches: [main]
+    paths:
+      - 'integrations/wave3-owner-merge.py'
+      - 'integrations/catalog-media-wave3-*'
+      - 'integrations/model-gap-wave3-*'
+      - 'integrations/import-model-gap-wave3-*'
+      - 'integrations/parts-fitment-wave3-*'
+      - 'integrations/import-parts-fitment-wave3-*'
+      - '.github/workflows/wave3-owner-composition.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  composition:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout owner integration branch
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Checkout unchanged Model Worker branch
+        uses: actions/checkout@v4
+        with:
+          ref: work/catalog-model-gap-wave3
+          path: workers/model
+          persist-credentials: false
+      - name: Checkout unchanged Parts Worker branch
+        uses: actions/checkout@v4
+        with:
+          ref: work/parts-fitment-wave3
+          path: workers/parts
+          persist-credentials: false
+      - name: Checkout unchanged Media Worker branch
+        uses: actions/checkout@v4
+        with:
+          ref: work/catalog-media-wave3
+          path: workers/media
+          persist-credentials: false
+      - name: Node 22 (no global dependency updates)
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check out exactly the reviewed worker HEAD commits and branch identities
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git -C workers/model rev-parse HEAD)" = "da0dcae52c2a0abc2fcd90df7636289a890f5e04"
+          test "$(git -C workers/parts rev-parse HEAD)" = "443489b39f57be28239dd2f1cafd637329eb0d4e"
+          test "$(git -C workers/media rev-parse HEAD)" = "2526e243eaf8425b91c8373ef4e5513ff4994a80"
+          test "$(git -C workers/model branch --show-current)" = "work/catalog-model-gap-wave3"
+          test "$(git -C workers/parts branch --show-current)" = "work/parts-fitment-wave3"
+          test "$(git -C workers/media branch --show-current)" = "work/catalog-media-wave3"
+      - name: Reproduce each guarded import on ITS OWN untouched Worker branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm ci --prefix workers/model/integrations/auth-sdk --ignore-scripts
+          for worker in model parts media; do
+            python3 "workers/$worker/integrations/restore-source-checkpoint.py" --target "workers/$worker/site"
+          done
+          node workers/model/integrations/import-model-gap-wave3-catalog.mjs --target "$(pwd)/workers/model/site"
+          node workers/model/integrations/import-model-gap-wave3-catalog.mjs --target "$(pwd)/workers/model/site" --check
+          node workers/parts/integrations/import-parts-fitment-wave3-oem.mjs --target "$(pwd)/workers/parts/site"
+          node workers/parts/integrations/import-parts-fitment-wave3-oem.mjs --target "$(pwd)/workers/parts/site" --check
+          node workers/media/integrations/catalog-media-wave3-import.mjs --target "$(pwd)/workers/media/site"
+          node workers/media/integrations/catalog-media-wave3-import.mjs --target "$(pwd)/workers/media/site" --check
+      - name: Reproduce exact baseline and attempt fail-closed three-way composition
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 integrations/restore-source-checkpoint.py --target "${RUNNER_TEMP}/wave3-baseline"
+          python3 integrations/wave3-owner-merge.py \
+            --baseline "${RUNNER_TEMP}/wave3-baseline" \
+            --model "$(pwd)/workers/model/site" \
+            --parts "$(pwd)/workers/parts/site" \
+            --media "$(pwd)/workers/media/site" \
+            --output "$(pwd)/site" \
+            --report "${RUNNER_TEMP}/wave3-merge-report.json"
+      - name: If clean, build, test all integrated source and repeat byte build
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm ci --prefix integrations/auth-sdk --ignore-scripts
+          node integrations/build-app.mjs
+          npm test --prefix site
+          npm run check --prefix site
+          node integrations/build-app.mjs --check
+      - name: Always show the evidence-based conflict/merge report
+        if: always()
+        shell: bash
+        run: |
+          if [ -f "${RUNNER_TEMP}/wave3-merge-report.json" ]; then
+            python3 - <<'PY'
+          import json,os
+          from pathlib import Path
+          p=Path(os.environ["RUNNER_TEMP"])/"wave3-merge-report.json"
+          data=json.loads(p.read_text())
+          print("Owner Wave3 accepted:",data["accepted"])
+          print("Per-Worker changes:",data["workerChanges"])
+          print("Conflicts:",json.dumps(data["conflicts"],ensure_ascii=False,indent=2))
+          print("Overlapping paths:",json.dumps({k:v for k,v in data["changedPaths"].items() if len(v)>1},ensure_ascii=False,indent=2))
+          PY
+          fi
