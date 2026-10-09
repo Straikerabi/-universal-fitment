@@ -1,0 +1,191 @@
+{
+  "baseline": {
+    "checkpointSha256": "c600a5c5a83a6f096ff5999e5ce5582c37ec424155919d487dfd6ca2221bd42b",
+    "commit": "71f7826ba936a1f3830c8b2a67e8085a9cfe234e",
+    "version": "1.29.0"
+  },
+  "brands": [
+    {
+      "articleRows": 354,
+      "brand": "AEG",
+      "confirmedFitments": 0,
+      "explicitManufacturerRecordedEdges": 2843,
+      "mappedPhysicalEdges": 2843,
+      "modelNames": 100,
+      "modelRecords": 100,
+      "multiple": 78,
+      "one": 0,
+      "physicalArticleRows": 351,
+      "zero": 22
+    },
+    {
+      "articleRows": 103,
+      "brand": "Bosch",
+      "confirmedFitments": 0,
+      "explicitManufacturerRecordedEdges": 641,
+      "mappedPhysicalEdges": 641,
+      "modelNames": 100,
+      "modelRecords": 100,
+      "multiple": 58,
+      "one": 0,
+      "physicalArticleRows": 102,
+      "zero": 42
+    },
+    {
+      "articleRows": 191,
+      "brand": "Dyson",
+      "confirmedFitments": 0,
+      "explicitManufacturerRecordedEdges": 747,
+      "mappedPhysicalEdges": 747,
+      "modelNames": 92,
+      "modelRecords": 98,
+      "multiple": 58,
+      "one": 0,
+      "physicalArticleRows": 185,
+      "zero": 40
+    },
+    {
+      "articleRows": 60,
+      "brand": "Hoover",
+      "confirmedFitments": 0,
+      "explicitManufacturerRecordedEdges": 0,
+      "mappedPhysicalEdges": 22,
+      "modelNames": 100,
+      "modelRecords": 100,
+      "multiple": 2,
+      "one": 0,
+      "physicalArticleRows": 60,
+      "zero": 98
+    },
+    {
+      "articleRows": 167,
+      "brand": "Miele",
+      "confirmedFitments": 0,
+      "explicitManufacturerRecordedEdges": 614,
+      "mappedPhysicalEdges": 1156,
+      "modelNames": 82,
+      "modelRecords": 87,
+      "multiple": 62,
+      "one": 0,
+      "physicalArticleRows": 167,
+      "zero": 25
+    },
+    {
+      "articleRows": 104,
+      "brand": "Philips",
+      "confirmedFitments": 0,
+      "explicitManufacturerRecordedEdges": 158,
+      "mappedPhysicalEdges": 161,
+      "modelNames": 140,
+      "modelRecords": 140,
+      "multiple": 35,
+      "one": 21,
+      "physicalArticleRows": 101,
+      "zero": 84
+    },
+    {
+      "articleRows": 100,
+      "brand": "Rowenta",
+      "confirmedFitments": 0,
+      "explicitManufacturerRecordedEdges": 402,
+      "mappedPhysicalEdges": 402,
+      "modelNames": 272,
+      "modelRecords": 272,
+      "multiple": 102,
+      "one": 95,
+      "physicalArticleRows": 100,
+      "zero": 75
+    },
+    {
+      "articleRows": 46,
+      "brand": "Samsung",
+      "confirmedFitments": 0,
+      "explicitManufacturerRecordedEdges": 164,
+      "mappedPhysicalEdges": 164,
+      "modelNames": 77,
+      "modelRecords": 77,
+      "multiple": 20,
+      "one": 0,
+      "physicalArticleRows": 46,
+      "zero": 57
+    },
+    {
+      "articleRows": 710,
+      "brand": "Siemens",
+      "confirmedFitments": 0,
+      "explicitManufacturerRecordedEdges": 2347,
+      "mappedPhysicalEdges": 2402,
+      "modelNames": 101,
+      "modelRecords": 101,
+      "multiple": 101,
+      "one": 0,
+      "physicalArticleRows": 605,
+      "zero": 0
+    },
+    {
+      "articleRows": 105,
+      "brand": "Vorwerk",
+      "confirmedFitments": 0,
+      "explicitManufacturerRecordedEdges": 105,
+      "mappedPhysicalEdges": 105,
+      "modelNames": 18,
+      "modelRecords": 18,
+      "multiple": 14,
+      "one": 0,
+      "physicalArticleRows": 105,
+      "zero": 4
+    }
+  ],
+  "contractVersion": "1.0.0",
+  "counts": {
+    "articleRows": 1940,
+    "authorizedPurchasableParts": 0,
+    "confirmedFitments": 0,
+    "distinctScopedArticleIdentities": 1940,
+    "explicitManufacturerRecordedEdges": 8021,
+    "familyFallbackRecords": 9,
+    "independentlyReauditedSourceClaims": 0,
+    "mappedPhysicalEdges": 8643,
+    "modelNames": 1082,
+    "modelRecords": 1093,
+    "multiple": 530,
+    "one": 116,
+    "physicalArticleRows": 1822,
+    "zero": 447
+  },
+  "definitions": {
+    "articles": "Rows and exact tier/issuer/identifier-namespace/value identities reported separately. Merchant SKUs, EAN and designations never become numeric OEM codes.",
+    "confirmedFitments": "Zero: baseline has no v1 reviewed variant+installation+rights evidence chain. Legacy status/confidence cannot authorize confirmation.",
+    "explicitManufacturerRecordedEdges": "Unique model-record/physical-article pairs supported by structured model-specific manufacturer listings in the pinned source. Source URLs and dates retained. Not an independent live re-audit, exact repair certification, permission grant or installation approval.",
+    "missingCategories": "Unknown coverage gaps; never evidence of not_sold_separately or incompatibility.",
+    "modelNames": "Distinct exact [brand, model] catalog labels; not a count of independent constructions.",
+    "modelRecords": "Concrete recordType=model identities; nine family fallback records excluded.",
+    "physicalParts": "Existing v1.29.0 taxonomy: spare/accessory/consumable. Document/device/unknown excluded."
+  },
+  "documentedBaseline": {
+    "articleRows": 1940,
+    "modelRecords": 1093,
+    "physicalArticleRows": 1822,
+    "recordsWithoutPhysicalParts": 447
+  },
+  "exactOemReferenceExclusionsCount": 337,
+  "fullReportSha256": "b57b720e7ba2d20d0cbb58f5ac72ab402c356e58204d0886ec92d647a6ae0d89",
+  "pendingIntegration": {
+    "included": false,
+    "note": "Wave-3 outputs are not imported. Future 1115 models/1961 articles/463 without physical parts are an unverified combined projection (447+22-6), not this baseline.",
+    "ownerIssue": 54,
+    "readOnlyPullRequests": [
+      51,
+      52,
+      53
+    ]
+  },
+  "reconciliation": {
+    "articleRowsDelta": 0,
+    "modelRecordsDelta": 0,
+    "physicalArticleRowsDelta": 0,
+    "recordsWithoutPhysicalPartsDelta": 0
+  },
+  "reportVersion": "1.0.0",
+  "sourceFilesSha256": "132394791e5a264aae86d59a82701d063d53299d858efa22aaaece3206266dd0"
+}
