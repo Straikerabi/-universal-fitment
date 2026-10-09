@@ -1,0 +1,252 @@
+{
+  "checkedAt": "2026-10-09T19:52:48.205Z",
+  "passed": 21,
+  "engine": "Chromium",
+  "version": "153.0.8010.0",
+  "checks": [
+    "source-only initial screen; no automatic device and no network service",
+    "literal country code and EEM alias refuse a substituted device",
+    "real identity, missing revision, assembly and unconfirmed candidate",
+    "checklist autosave and download never approve a real fitment",
+    "return and variant change remove stale candidate",
+    "source URLs have explicit identity scope; no shopping actions",
+    "synthetic supported response stays visibly a demo",
+    "missing variant has no definitive response",
+    "negative revision and connector are blocked from synthetic parts list",
+    "missing kit component stays explicit; notes do not certify completeness",
+    "real and demo local missions cannot leak identifiers or approve one another",
+    "tampered cached response and stale fingerprint are rejected",
+    "no source record means open data, not not-sold or unavailable claims",
+    "320/375/390/430/844 landscape/768/1280: all five steps reflow",
+    "narrow demo warnings reflow for missing, negative and incomplete results",
+    "200% text, dark mode and reduced motion preserve warnings and reflow",
+    "all touch buttons are at least 44px; input text stays 16px",
+    "skip link appears only on keyboard focus; source details remain operable",
+    "hostile text is inert; copying fallback gives actionable feedback",
+    "24 documented pilot tasks exercise only real unknown outcomes",
+    "desktop visual preview and no runtime or external network errors"
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "measurements": [
+    {
+      "caseId": "P01",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-engine",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 288
+    },
+    {
+      "caseId": "P02",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-engine",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 284
+    },
+    {
+      "caseId": "P03",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-engine",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 318
+    },
+    {
+      "caseId": "P04",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-engine",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 318
+    },
+    {
+      "caseId": "P05",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-engine",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 298
+    },
+    {
+      "caseId": "P06",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-engine",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 335
+    },
+    {
+      "caseId": "P07",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-engine",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 301
+    },
+    {
+      "caseId": "P08",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-engine",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 282
+    },
+    {
+      "caseId": "P09",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-engine",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 317
+    },
+    {
+      "caseId": "P10",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-engine",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 297
+    },
+    {
+      "caseId": "P11",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-engine",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 285
+    },
+    {
+      "caseId": "P12",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-engine",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 301
+    },
+    {
+      "caseId": "P13",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-engine",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 312
+    },
+    {
+      "caseId": "P14",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-engine",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 284
+    },
+    {
+      "caseId": "P15",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-engine",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 308
+    },
+    {
+      "caseId": "P16",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-engine",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 301
+    },
+    {
+      "caseId": "P17",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-engine",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 275
+    },
+    {
+      "caseId": "P18",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-engine",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 288
+    },
+    {
+      "caseId": "P19",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-engine",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 278
+    },
+    {
+      "caseId": "P20",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-engine",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 266
+    },
+    {
+      "caseId": "P21",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-engine",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 316
+    },
+    {
+      "caseId": "P22",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-engine",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 285
+    },
+    {
+      "caseId": "P23",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-engine",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 336
+    },
+    {
+      "caseId": "P24",
+      "automated": true,
+      "realHumanTest": false,
+      "expected": "unclear-no-engine",
+      "observed": "unclear",
+      "falsePositive": 0,
+      "elapsedMs": 380
+    }
+  ],
+  "physicalIPhone": false,
+  "safariWebkit": false,
+  "externalTestPeople": 0
+}
