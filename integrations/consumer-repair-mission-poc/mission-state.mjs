@@ -1,5 +1,7 @@
 import {catalogSnapshot} from './catalog-snapshot.mjs';
-import {mockScenarios,getSyntheticResponse,acceptSyntheticResponse} from './mock-fitment-adapter.mjs';
+import {mockScenarios} from './mock-fitment-adapter.mjs';
+import {buildSyntheticUiRequest} from '../dual-platform-owner-review/ui-fixtures.mjs';
+import {inspectOnBothSurfaces} from '../dual-platform-owner-review/bridge.mjs';
 export const assemblies=[{id:'filter',label:'Filter & Luftweg',hint:'Filter, Beutel und Luftführung',types:['filter','bag','hose']},{id:'brush',label:'Bürste & Bodendüse',hint:'Walze, Düse und Aufnahme',types:['roller','nozzle']},{id:'battery',label:'Akku & Energie',hint:'Akku, Ladegerät und Anschluss',types:['battery','charger','electrical']},{id:'body',label:'Gehäuse & Behälter',hint:'Behälter, Griff und Abdeckungen',types:['bin','mechanical','storage']}];
 export const problems=[{id:'suction',label:'Saugleistung lässt nach'},{id:'brush',label:'Bürste oder Düse prüfen'},{id:'power',label:'Akku oder Laden prüfen'},{id:'part',label:'Ein bestimmtes Teil finden'}];
 export const dataFingerprint=catalogSnapshot.checkpointSha256+':consumer-ui/1';
@@ -27,8 +29,19 @@ export function transition(state,action){
 export function assessment(state){
  if(state.mode==='synthetic'){
   const fixture=mockScenarios.find(x=>x.id===state.scenarioId);
-  if(!state.variantKnown&&fixture.variant)return {synthetic:true,status:'unclear',headline:'Passung unklar',reasons:['Die Ausführung wurde im Demo-Ablauf noch nicht ausgewählt.'],missing:['Ausführung auswählen oder als unbekannt weitergehen.'],evidence:[],purchaseAllowed:false,partCode:null,completeKit:false};
-  const request={mode:'synthetic',assetId:'demo:vacuum-a',variantId:fixture.variant||'unknown',assemblyId:state.assemblyId,scenarioId:fixture.id,requestId:'demo:request:'+fixture.id+':'+state.assemblyId};return acceptSyntheticResponse(getSyntheticResponse(request),request);
+  try{
+   const request=buildSyntheticUiRequest(state.scenarioId,{variantKnown:state.variantKnown,assemblyId:state.assemblyId||'unselected'});
+   const v=inspectOnBothSurfaces(request,{tenantId:'demo-consumer',caseId:'demo-'+state.scenarioId});
+   const sameAssembly=fixture?.assembly===state.assemblyId;
+   const status=v.consumer.status;
+   // The shared FitmentResponse decides the status; texts cannot grant compatibility.
+   const reasons=(sameAssembly&&state.variantKnown?[...fixture.reasons]:[]).concat(v.engine.reasons.map(x=>'Fitment v1 · '+x));
+   const missing=[...(sameAssembly?fixture.missing:[]),...v.engine.nextChecks];
+   if(!state.variantKnown)missing.unshift('Ausführung vom Typenschild auswählen oder als offen markieren.');
+   return {synthetic:true,status,headline:status==='supported'?'Belegt passend · nur synthetischer Test':status==='incompatible'?'Belegt nicht passend · nur synthetischer Test':'Passung unklar',reasons,missing,evidence:v.engine.sources.map(x=>({id:x.id,label:'Synthetische Testquelle · keine echte OEM-Freigabe',kind:'synthetic',url:null})),purchaseAllowed:false,partCode:sameAssembly?fixture.part:null,completeKit:false};
+  }catch {
+   return {synthetic:true,status:'unclear',headline:'Passung unklar',reasons:['Der gemeinsame Fitment-Vertrag hat diese Demoantwort nicht freigegeben.'],missing:['Testdaten und exakte Ausführung erneut prüfen.'],evidence:[],purchaseAllowed:false,partCode:null,completeKit:false};
+  }
  }
  const device=currentDevice(state);
  return {synthetic:false,status:'unclear',headline:'Passung noch nicht geprüft',reasons:['Die Geräteidentität stammt aus dem dokumentierten Bestandskatalog.','Für diese Mission liegt noch keine Antwort der gemeinsamen Passungsprüfung vor. Eine Katalogzuordnung allein bestätigt den Einbau nicht.'],missing:[...(!state.variantKnown?['Vollständige Gerätekennung und Ausführung vom Typenschild übernehmen.']:[]),...(device?.brand==='Bosch'?['Vollständige E-Nr. mit /xx-Index und passenden Herstellerbeleg prüfen.']:[]),...(device?.brand==='Hoover'?['Produktcode und regionalen Serien-/Revisionsbereich prüfen.']:[]),'Modellbezogene Passung sowie Anschluss-/Revisionsbedingungen anhand eines geeigneten Herstellerbelegs klären.'],evidence:[],purchaseAllowed:false,completeKit:false,partCode:null};
