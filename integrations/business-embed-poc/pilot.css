@@ -1,0 +1,4 @@
+.access-panel{border:1px solid #d6e2dd;border-radius:12px;background:#f6f9f7;padding:20px;margin:22px 0;font-size:12px;line-height:1.8}
+.access-panel summary{color:var(--accent);font-size:13px}.access-panel .notice{margin-top:16px;font-size:12px}.access-panel pre{max-height:280px;overflow:auto}.secondary{background:#e8eeeb;color:#294e43;border:1px solid #cddbd4}
+.workflow{display:flex;gap:8px;padding:0;margin:8px 0 22px;list-style:none;font-size:10px;line-height:1.7;color:#526c60}.workflow li{flex:1;border-bottom:2px solid #c5d8ce;padding:8px 0}.workflow strong{color:var(--accent);display:block}
+#accessResult{padding:10px 0;font-weight:700;overflow-wrap:anywhere}.access-panel input,.access-panel select{font-size:12px}

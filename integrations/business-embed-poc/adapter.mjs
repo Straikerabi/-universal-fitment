@@ -3,7 +3,8 @@ export const viewVersion='demo-view/1';
 const statuses=['confirmed','unknown','excluded'];
 const fields=['presentationVersion','tenantId','caseId','outcome','reason','next','evidence'];
 export function validateView(value,context) {
-  if(!value||typeof value!=='object'||Array.isArray(value)) throw Error('Invalid response');
+  if(!value||Object.getPrototypeOf(value)!==Object.prototype) throw Error('Invalid response');
+  if(fields.some(k=>!Object.hasOwn(value,k)))throw Error('Missing response field');
   if(Object.keys(value).some(k=>!fields.includes(k))) throw Error('Unmapped response field');
   if(value.presentationVersion!==viewVersion||value.tenantId!==context.tenantId||value.caseId!==context.caseId||!statuses.includes(value.outcome)) throw Error('Response boundary mismatch');
   for(const k of ['reason','next']) if(typeof value[k]!=='string'||!value[k].trim()||value[k].length>600) throw Error('Invalid display text');
@@ -24,10 +25,11 @@ export function createAdapter({invoke,validateContract,mapToView,timeoutMs=1500}
     let timer;const controller=new AbortController();
     try {
       // Capability/context must be supplied by the future trusted server, not query params.
-      if(!context?.tenantId||!context?.caseId||request.caseId!==context.caseId) throw Error('Invalid context');
-      const raw=await Promise.race([Promise.resolve().then(()=>invoke(structuredClone(request),{...context,signal:controller.signal})),new Promise((_,reject)=>{timer=setTimeout(()=>{controller.abort();reject(Error('Timeout'));},timeoutMs);})]);
-      if(validateContract(raw)!==true)throw Error('Contract rejected');
-      return {ok:true,view:validateView(mapToView(raw,context),context)};
+      const safeContext=structuredClone(context),safeRequest=structuredClone(request);
+      if(typeof safeContext?.tenantId!=='string'||typeof safeContext?.caseId!=='string'||!safeContext.tenantId||!safeContext.caseId||safeRequest.caseId!==safeContext.caseId) throw Error('Invalid context');
+      const raw=await Promise.race([Promise.resolve().then(()=>invoke(structuredClone(safeRequest),{...safeContext,signal:controller.signal})),new Promise((_,reject)=>{timer=setTimeout(()=>{controller.abort();reject(Error('Timeout'));},timeoutMs);})]);
+      if(validateContract(raw,safeRequest,safeContext)!==true)throw Error('Contract rejected');
+      return {ok:true,view:validateView(mapToView(raw,safeContext),safeContext)};
     }catch {
       // Never render malformed/private/raw error payloads or infer a positive fallback.
       return {ok:false,view:null,error:'Die Antwort ist nicht verfügbar oder nicht freigegeben. Keine Auswahlbestätigung.'};

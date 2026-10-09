@@ -1,15 +1,20 @@
 {
-  "checkedAt": "2026-10-09T18:55:30.075Z",
+  "checkedAt": "2026-10-09T20:58:18.202Z",
   "browser": "153.0.8010.0",
   "checks": [
     "desktop host and sandboxed iframe",
     "tenant theme switch and private provenance",
-    "all six prerecorded decisions and safe selection reset",
+    "all six shared-engine synthetic decisions and safe selection reset",
     "no-result search clears old confirmation",
     "keyboard control, source disclosure and no purchase link",
     "320/375/768 px, readable fallback states and no horizontal overflow",
     "200% text retains result and controls",
     "loaded demo operates with network offline",
+    "missing variant invalidates previous positive result",
+    "selection changed in flight cannot restore old positive",
+    "roles, cross-tenant feed, expired token and audit privacy",
+    "budget refuses ninth permitted local request and reset clears state",
+    "expanded access lab at 320/375/768 px and 200% text stays within viewport",
     "unknown tenant fails closed without default shop",
     "cookies/storage/network and script errors"
   ],
