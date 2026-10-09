@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#123d35">
+  <title>Reparaturmission · Universal Fitment</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.mjs"></script>
+</head>
+<body>
+  <a class="skip" href="#workspace">Zum Reparaturablauf</a>
+  <header class="topbar"><div class="brand"><span class="brand-mark" aria-hidden="true">uf</span><span>universal <strong>fitment</strong><small>DEIN GERÄT. DEIN NÄCHSTER SCHRITT.</small></span></div><button id="savedMission" class="icon-button" aria-label="Gespeicherte Mission öffnen">Meine Mission <span aria-hidden="true">↗</span></button></header>
+  <div class="app-layout">
+    <aside class="rail"><p class="eyebrow">REPAIR MISSION / 01</p><h1>Weiter nutzen.<br><em>Selbst verstehen.</em></h1><p class="rail-copy">Finde heraus, welches Teil zu deiner Ausführung gehört – und was du dafür noch klären musst.</p><div id="railGraphic"></div><p class="graphic-caption">Eigene schematische Orientierung.<br>Keine Herstellerzeichnung.</p><div class="rail-note"><span aria-hidden="true">↗</span><div><strong>Wissen vor dem Kauf.</strong><p>Quellen, offene Angaben und deine Prüfliste bleiben zusammen.</p></div></div></aside>
+    <div class="workspace-shell"><nav class="mode-switch" aria-label="Datenmodus"><button id="realMode" aria-pressed="true">Echte Kataloggeräte</button><button id="demoMode" aria-pressed="false">Synthetische Demo</button></nav><div id="modeNotice" class="mode-notice"></div><nav id="progress" class="progress" aria-label="Reparaturschritte"></nav><main id="workspace" tabindex="-1"></main><div id="feedback" class="feedback" role="status" aria-live="polite"></div><footer class="privacy-note">Ohne Anmeldung. Nur auf diesem Gerät gespeichert. <button id="eraseMission" class="text-button">Mission löschen</button></footer></div>
+  </div>
+  <noscript>Dieser lokale Prototyp benötigt JavaScript. Keine Daten werden an eine Cloud gesendet.</noscript>
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "checkedAt": "2026-10-09T19:52:24.775Z",
+  "validProjection": "byte-identical",
+  "tamperedCheckpoint": "rejected-before-module-import",
+  "outputFilesUnchanged": true,
+  "assignedBranch": "work/consumer-repair-mission-poc"
+}

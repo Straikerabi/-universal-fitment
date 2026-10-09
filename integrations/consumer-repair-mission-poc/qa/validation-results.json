@@ -1,0 +1,76 @@
+{
+  "checkedAt": "2026-10-09T19:54:26.611Z",
+  "branch": "work/consumer-repair-mission-poc",
+  "baseCommit": "71f7826ba936a1f3830c8b2a67e8085a9cfe234e",
+  "scope": "integrations/consumer-repair-mission-poc/**",
+  "nodeVersion": "v24.19.0",
+  "playwrightVersion": "1.62.1",
+  "browser": {
+    "engine": "Chromium",
+    "version": "153.0.8010.0",
+    "checkedAt": "2026-10-09T19:52:48.205Z",
+    "groupsPassed": 21
+  },
+  "nodeTests": {
+    "passed": 25,
+    "failed": 0,
+    "skipped": 0
+  },
+  "sourceIdentityProjection": {
+    "devices": 11,
+    "parts": 11,
+    "newFitments": 0,
+    "sourceFilesPinned": 136
+  },
+  "automatedPilotTasks": 24,
+  "automatedRealPositiveApprovals": 0,
+  "physicalIPhone": false,
+  "safariWebkit": false,
+  "externalParticipants": 0,
+  "humanComparisonMeasurements": 0,
+  "fieldAcceptanceComplete": false,
+  "visualScreenshots": [
+    "01-identify-375.png",
+    "02-variant-375.png",
+    "03-assembly-375.png",
+    "04-real-unclear-375.png",
+    "05-checklist-375.png",
+    "06-demo-supported-375.png",
+    "07-demo-negative-375.png",
+    "08-text-200-375.png",
+    "09-dark-negative-375.png",
+    "10-desktop-assembly.png"
+  ],
+  "sha256": {
+    "index.html": "18ee559bf5bae4c7731c4441beec94ef02d9aab63f9ba9dfd9e9c29f21845de3",
+    "styles.css": "08126454eb183bfbcdc60126a59405520420634ce74e6b487ca6041214733a53",
+    "app.mjs": "7bc62b8595edc933773277eec461876b0339ac990c55e9618cf9a8dfdbe23041",
+    "mission-state.mjs": "3fb3382a416a6a83f8e909f496302c9e5b36784b6eeaa86bf7ae1cf837e255aa",
+    "mock-fitment-adapter.mjs": "c4bd2acd84478af78a28ccf7f7fc2b185ed3e47e4532a92b7b97a7796e45b926",
+    "serve.mjs": "8654b74948073e3b217ceaddba699b4f8313f5fb07d8ebd90aa129e0c86e53df",
+    "build-catalog.mjs": "5b6bb3b3b24c31045fa60c1be497d0bb407a4936e0327c6cdf738f4d041ee7d9",
+    "check.mjs": "6f803a2d3596e050dff89f169fc66c740b3ab7ae9c3b8d23e2d8e0f6943658ab",
+    "catalog-snapshot.mjs": "4b0f6fc17d22b0bc6f320b02eee5fdb39bb23d0083fadb3135e4bed38d3de9ae",
+    "catalog-lock.json": "71a7566cddcdc8fcef7f58346ec2f666a94594d674917f9b678d5d6e9ac5d423",
+    "pilot-cases.json": "b2c6ddfbf2526a1099c59c67bd35affc31cbad595a73d02a7d56dc82f0eef448",
+    "tests/state.test.mjs": "5d6a51b9ee387dba00ccb43a0102e5911b2dc3b5fa93e1e9af4b1f4513d45077",
+    "tests/snapshot.test.mjs": "4f673150a0c21974e3389750e2ba731f60c3985420eb70fce88ca80f90e3b966",
+    "tests/server.test.mjs": "1d080969d5383d5cce490755dce90ee14af19bd4b212ac51d9186dc30d8d2a6f",
+    "tests/browser.mjs": "ff572d88d3b717d75575d0ea1923a65daac2d20a9997a0a22ff4623e41143427",
+    "qa/01-identify-375.png": "02dc14e247eb2aa0ef2d49425d33ee379a4ee9e7abb471a2d675b30709614dc3",
+    "qa/02-variant-375.png": "a50b17d2297e29b1be4c667b12ca022d81a39b7c55c9d1cd12fe0038683df589",
+    "qa/03-assembly-375.png": "06408895aeb173986980f120c1002b960032253e7833a098cb391d9957cbd6b4",
+    "qa/04-real-unclear-375.png": "5464e1dd7542ce979cd2d5fefdfc0c5892f81606b3a1cfe7de47c8eb97ce168e",
+    "qa/05-checklist-375.png": "5367bc19fd2e8b75027f53cb88eb0c3595b91f9c50c859d6f29f0b6894202ede",
+    "qa/06-demo-supported-375.png": "1f585d64ef7dc11d4d1767f585b55ae2832bbd81a4374c6f93deae417c5b2880",
+    "qa/07-demo-negative-375.png": "8991845510a4812f0fc9759aae7a8e058808de3c83abb05474785d9fe7cd417b",
+    "qa/08-text-200-375.png": "aa907607bec676c94ec75ac063626165279fb73a6fdf3f99c5a6e01c988f3300",
+    "qa/09-dark-negative-375.png": "17950a16d1c5dc99733d3ad1c095b9e07e88c0bc4f22a21871711c0821df2890",
+    "qa/10-desktop-assembly.png": "df6a8db34fcbdf6edcbfbc8e9e3cfc981990875bf9286565d342353f3cdfae7b"
+  },
+  "limitations": [
+    "Chromium mobile viewport simulation, not physical iPhone Safari",
+    "Five external people and blind comparison still pending",
+    "No real shared-engine answers and no Wave3 import"
+  ]
+}
