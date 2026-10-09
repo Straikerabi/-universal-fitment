@@ -72,5 +72,5 @@ test('revision or selected assembly changes invalidate report payload and its di
  const changed=transition(s,{type:'assembly',value:'brush'});
  const r2=JSON.parse(await exportRepairPassport(changed,fixed));
  assert.notEqual(r.integrity.sha256,r2.integrity.sha256);
- assert.equal(r2.verdict.realInstallationApproved,false);
+ assert.equal(r2.payload.verdict.realInstallationApproved,false);
 });
