@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {createHash} from 'node:crypto';
+import {spawnSync} from 'node:child_process';
+import {root} from './serve.mjs';
+const run=(args)=>{const r=spawnSync(process.execPath,args,{encoding:'utf8',maxBuffer:4e6});if(r.status!==0)throw Error(r.stdout+r.stderr);return r.stdout;};
+for(const f of fs.readdirSync(root).filter(f=>f.endsWith('.mjs')))run(['--check',path.join(root,f)]);
+const tests=run(['--test',path.join(root,'tests.mjs')]);if(!/pass 36/.test(tests)||!/fail 0/.test(tests))throw Error('Unexpected test totals');
+const files=['index.html','embed.html','style.css','host.mjs','widget.mjs','adapter.mjs','fixtures.mjs','serve.mjs'];
+const artifacts=Object.fromEntries(files.map(f=>{const b=fs.readFileSync(path.join(root,f));return [f,{bytes:b.length,sha256:createHash('sha256').update(b).digest('hex')}];}));
+fs.writeFileSync(path.join(root,'validation.json'),JSON.stringify({checkedAt:new Date().toISOString(),node:process.version,nodeTests:36,failures:0,syntax:'all local mjs passed',delivery:'direct static files; no build dependencies',artifacts,limits:['Browser suite is separate.','#48 contract unavailable at initial check; adapter hook tests do not establish integration.','No actual interviews or pilot outcome.']},null,2)+'\n');
+console.log('36 Node tests, syntax and SHA256 delivery manifest passed.');
