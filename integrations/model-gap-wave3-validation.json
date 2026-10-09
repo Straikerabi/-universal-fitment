@@ -1,0 +1,913 @@
+{
+  "issue": 37,
+  "branch": "work/catalog-model-gap-wave3",
+  "baselineCommit": "d4853c4e5245410630742f58aead661d77f42c32",
+  "version": "1.29.0",
+  "verifiedAt": "2026-10-09T14:47:35.965Z",
+  "passed": true,
+  "isolatedImporterTests": 22,
+  "applicationTestGroups": 41,
+  "sourceGuards": 136,
+  "independentFreshBuilds": 2,
+  "allSourcesAndBuildsByteIdentical": true,
+  "localPatch": {
+    "sha256": "e6722a5474f700f3ba89f869f4e7ca30fca69ee9a16698baf42b16b82259cf79",
+    "applyCheckPassed": true,
+    "appliedBytesEqualImporter": true,
+    "notCommitted": true
+  },
+  "sourceVerification": {
+    "issue": 37,
+    "verifiedSources": 15,
+    "groundedProfiles": 22,
+    "observations": [
+      {
+        "id": "vorwerk-timeline",
+        "sha256": "9e65c3ae1eacef1f5ac594034ddd8d25769389ccd6ad2ee9b9bb07016c174a8c",
+        "bytes": 1859024
+      },
+      {
+        "id": "vorwerk-ch-archive",
+        "sha256": "31c9ac7ed8c26d4b35ea242fad1c8e896a5ba98cde9914c5647406c66b9e10c2",
+        "bytes": 58962
+      },
+      {
+        "id": "vorwerk-history",
+        "sha256": "1a7b07704ea21bda48e2743502ced2eb8758fbcb808e9959dc8c712ef85edb63",
+        "bytes": 438281
+      },
+      {
+        "id": "miele-s4812",
+        "sha256": "8bb8ab0b17b44a2300a1a927d01308c18aaca9f0e068b2c044d09cce1fd47e8d",
+        "bytes": 32019
+      },
+      {
+        "id": "miele-2011",
+        "sha256": "a0b22d802bd66cb2fa13b8bfd1b6747e7b155d149c108f2ae8f895503da55c25",
+        "bytes": 9390014
+      },
+      {
+        "id": "samsung-vc2500",
+        "sha256": "0405fd900bf82fb9fe887e5f14017e490ce71faaba3c0d03294dd740d2161f7f",
+        "bytes": 800516
+      },
+      {
+        "id": "samsung-sc52",
+        "sha256": "1bc44442f12be7bb20bbdb45a707b6726b84144037143abe0fcc4efcaa6a9e46",
+        "bytes": 341605
+      },
+      {
+        "id": "dyson-dc14",
+        "sha256": "d0fa7691834d51e9b145a70a629249655edb449f07742c3a27d6397d2d01cd0d",
+        "bytes": 347545
+      },
+      {
+        "id": "dyson-dc14-manual",
+        "sha256": "8d9af8ee0d3649da328ce710499632f6a1083375bd5a7c7bc64ded84382c6b36",
+        "bytes": 22545057
+      },
+      {
+        "id": "dyson-dc17",
+        "sha256": "365aa66975203c815e62375fadad58169267eb2a9058fe509c900491713a618c",
+        "bytes": 344492
+      },
+      {
+        "id": "dyson-dc17-manual",
+        "sha256": "469df5cec057745bb60a1516ae3c6b9718b9c8965d8f39f294ee8e30ca8b9210",
+        "bytes": 1226484
+      },
+      {
+        "id": "dyson-dc27",
+        "sha256": "fa6b988059fa24cff81e8326adbfbf380f54ca4eb3f87278321c03744029b023",
+        "bytes": 354690
+      },
+      {
+        "id": "dyson-dc27-manual",
+        "sha256": "3bb7d703f6e0b9249600ab8e5beeada954806355e8f1d3e97b74b5f411342a91",
+        "bytes": 2271011
+      },
+      {
+        "id": "dyson-dc28",
+        "sha256": "3e21aaafe1ca09ffda2bc181df44c79b12250d285d6ad2c8166741b76836f32a",
+        "bytes": 354690
+      },
+      {
+        "id": "dyson-dc28-manual",
+        "sha256": "87b2e832b272f7c52e5262f9af1c49668b0651c45fe90fb45d987323089e1978",
+        "bytes": 2142255
+      }
+    ]
+  },
+  "result": {
+    "addedProfiles": 22,
+    "addedParts": 0,
+    "addedFitment": 0,
+    "finalModelNames": 1104,
+    "finalModelRows": 1115,
+    "cappedTargetSlots": 891,
+    "remainingTargetSlots": 109,
+    "byBrand": {
+      "Miele": {
+        "before": 82,
+        "added": 2,
+        "after": 84,
+        "remaining": 16
+      },
+      "Dyson": {
+        "before": 92,
+        "added": 4,
+        "after": 96,
+        "remaining": 4
+      },
+      "Samsung": {
+        "before": 77,
+        "added": 2,
+        "after": 79,
+        "remaining": 21
+      },
+      "Vorwerk": {
+        "before": 18,
+        "added": 14,
+        "after": 32,
+        "remaining": 68
+      }
+    },
+    "additionalNameOnlyHistoricalProfiles": 12,
+    "additionalManufacturerCodeProfiles": 8,
+    "additionalFamilyRepresentatives": 2,
+    "independentConstructionCount": null
+  },
+  "vorwerkBoundary": {
+    "scope": "Nur das hier geprüfte deutsche Timeline-/Historienarchiv und Schweizer Nicht-reparierbar-Register, keine behauptete vollständige Weltinventur.",
+    "existingProfiles": 18,
+    "individuallyGroundedAdditionalProfiles": 14,
+    "confirmedNamedProfiles": 32,
+    "unresolvedNamedLabels": [
+      "Modell 34",
+      "Modell T",
+      "Modell S",
+      "Elf 52",
+      "Elf 53"
+    ],
+    "range": {
+      "label": "Kobold 111–122",
+      "numericSlots": 12,
+      "individuallyGroundedSlots": 8,
+      "unprovedPotentialSlots": 4,
+      "expandedIntoModels": false
+    },
+    "conditionalArchiveLabelCeiling": 41,
+    "absoluteGlobalTechnicalMaximum": null,
+    "maximumCaveat": "32 bestätigte vollständige Geräteprofile; 41 ist nur die konservative obere Anzahl möglicher Labels im abgegrenzten Archiv-Universum (32+5+4). Keine Behauptung von41 existierenden, unabhängigen Konstruktionen. 100 ist durch diese Archive nicht belegt."
+  },
+  "preservation": {
+    "oldModelRows": 1093,
+    "oldHydratedArticles": 1940,
+    "hydratedProductsSha256": "402bd55d057566f2740daf6faf13dc4453ec6a208e522324d7e4462026c86b89",
+    "hydratedPartsSha256": "f77ceb1f2371b5befdf2af483b762d5ec00d8b9a45e64081fc71f11ef199503f",
+    "addedFitments": 0
+  },
+  "localIntegrationPaths": [
+    "package.json",
+    "src/core/typeplate.js",
+    "src/data/brand-index.js",
+    "src/data/dyson-pack.js",
+    "src/data/miele-models.js",
+    "src/data/model-gap-wave3.js",
+    "src/data/samsung-pack.js",
+    "src/data/vorwerk-pack.js",
+    "tests/bosch-catalog.test.mjs",
+    "tests/catalog-expansion.test.mjs",
+    "tests/catalog-seven-brands.test.mjs",
+    "tests/catalog-v126.test.mjs",
+    "tests/dyson-models-wave2.test.mjs",
+    "tests/miele-models-wave2.test.mjs",
+    "tests/model-gap-wave3.test.mjs",
+    "tests/philips-expansion.test.mjs",
+    "tests/vorwerk-expansion.test.mjs"
+  ],
+  "compiledArtifacts": {
+    "app-v1.29.0.js": {
+      "sha256": "bc068a2e498c6578c0443c99c9f3536be418067370ab5f3a777e2508d7461b51",
+      "bytes": 1901908
+    },
+    "catalog-aeg-v1.29.0.js": {
+      "sha256": "78db9817f4f437d2ddf65a910bfadb190e849990a8b35a67a3f420ed69ad8422",
+      "bytes": 725910
+    },
+    "catalog-dyson-v1.29.0.js": {
+      "sha256": "7828999449ff04d652eb667b60fb96c5cded75b43b9220a64652240adcad124a",
+      "bytes": 308106
+    },
+    "catalog-hoover-v1.29.0.js": {
+      "sha256": "974befde66feb0b3e78e830df852b619092243d2ccc36fb3a55c65f13154bf0a",
+      "bytes": 187679
+    },
+    "catalog-philips-v1.29.0.js": {
+      "sha256": "28f2ba1da41522658a86df8db5b43efe8eaec7240a21a84e9813846511391e22",
+      "bytes": 352773
+    },
+    "catalog-rowenta-v1.29.0.js": {
+      "sha256": "ab2ad6dbaacb32d625e02987faa81d32f0a59fa171f45d170d1322b8e7e0c898",
+      "bytes": 502458
+    },
+    "catalog-samsung-v1.29.0.js": {
+      "sha256": "0c6b43d7e11a82d66bfe08ae1b3e039d496322910f7f128fd05a6ff9eb392841",
+      "bytes": 192810
+    },
+    "catalog-siemens-v1.29.0.js": {
+      "sha256": "80a968bb58b1f9ed06b26f42562e6c1c260935df274bd97122897d4465e15ba8",
+      "bytes": 1234312
+    },
+    "catalog-vorwerk-v1.29.0.js": {
+      "sha256": "aa197c7fc39c4f91da6547bb1e88b592eb1832e5b08a45cbd8d6f83d5a88f6d0",
+      "bytes": 137692
+    },
+    "services-v1.29.0.js": {
+      "sha256": "accc35b5028711192c011ab4bce9a27c7a85da1fd75c10366d2d585f3a78741d",
+      "bytes": 3331
+    }
+  },
+  "commands": [
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --test --test-reporter=tap integrations/import-model-gap-wave3-catalog.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e0e695e0e0e2731ece65008d5d525f44a1ef8fad189b4cd37ed2874a9068962d"
+    },
+    {
+      "command": "python3 <repository>/integrations/restore-source-checkpoint.py --target <temporary>/first/site",
+      "exitCode": 0,
+      "outputSha256": "d18c77772a944e445afca465ae02ea3e9b9e8fa0ad0554407811194167b4b5ff"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node <temporary>/first/integrations/build-app.mjs",
+      "exitCode": 0,
+      "outputSha256": "e6ccee8ecfbd76592e2a247ff33ddd56fe778b727759f84c78b6efd2529a13d4"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node <temporary>/first/integrations/build-app.mjs --check",
+      "exitCode": 0,
+      "outputSha256": "229ea8d0f6e8a1d861fe0c214e888ae94eb3f07021e92b56cb3aa7e787535a99"
+    },
+    {
+      "command": "npm test --prefix <temporary>/first/site",
+      "exitCode": 0,
+      "outputSha256": "ea1da7fb4ffadd9245c5eb31b48ae6c1239a2f53d2d14225d97f32954728b975"
+    },
+    {
+      "command": "npm run check --prefix <temporary>/first/site",
+      "exitCode": 0,
+      "outputSha256": "5af944e4fb5e696b2f11e0ba32051f16311330a1f153d2dceff11bf7f1a94ba9"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/app.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/backup.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/bosch-context.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/bosch-identity.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/brand-identity.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/cart.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/catalog-loader.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/device-comparison.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/feedback.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/handoff.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/identifiers.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/local-state.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/marketplaces.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/matcher.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/model-parts-view.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/normalization.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/photo-policy.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/pilot-client.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/pilot-config.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/pilot-readiness.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/preferences.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/quantity.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/ranking.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/scanner.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/services.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/storage.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/typeplate.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/vehicle.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/aeg-pack.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/bosch-extra.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/bosch-models-next.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/bosch-records.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/bosch-vacuum.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/brand-index.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/brand-products.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/catalog-extensions.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/catalog-plan.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/catalog.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/coffee-support.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/demo-products.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/dyson-models-wave2.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/dyson-pack.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/faq.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/hoover-fitment.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/hoover-pack.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/job-guidance.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/miele-aftermarket.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/miele-commerce-records.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/miele-commerce.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/miele-guides.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/miele-installation-times.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/miele-model-records.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/miele-models-wave2.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/miele-models.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/miele-parts.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/miele-spare-records.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/miele-vacuum.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/model-gap-wave3.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/new-brands-index.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/part-taxonomy.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/philips-extra.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/philips-pack.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/product-resolver.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/rowenta-extra.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/rowenta-pack.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/samsung-pack.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/services.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/siemens-pack.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/verified-products.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/vorwerk-extra.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/vorwerk-index.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/vorwerk-pack.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/vendor/supabase.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/sw.js",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/backup.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/bosch-boundaries.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/bosch-catalog.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/bosch-models-next.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/bosch-workflow.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/catalog-expansion.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/catalog-goal.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/catalog-seven-brands.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/catalog-v126.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/coffee-live.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/commerce.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/core.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/data.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/device-comparison.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/dyson-models-wave2.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/handoff.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/identifier.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/identity-boundaries.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/jobs.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/local-data.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/marketplaces.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/miele-models-wave2.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/miele-models.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/miele-parts.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/miele-pilot.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/model-gap-wave3.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/model-parts-view.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/offline.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/part-taxonomy.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/philips-expansion.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/photo-policy.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/pilot-client.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/pilot-readiness.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/resolver.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/rowenta-expansion.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/scanner-lifecycle.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/scanner-ocr.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/services.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/static.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/typeplate.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/v16.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/verified-data.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/vorwerk-expansion.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "python3 <repository>/integrations/restore-source-checkpoint.py --target <temporary>/second/site",
+      "exitCode": 0,
+      "outputSha256": "80f17ca826bc59a33b8c773723de0f92ee8398c5f478f73609d569ac7720aa57"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node <temporary>/second/integrations/build-app.mjs",
+      "exitCode": 0,
+      "outputSha256": "e6ccee8ecfbd76592e2a247ff33ddd56fe778b727759f84c78b6efd2529a13d4"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node <temporary>/second/integrations/build-app.mjs --check",
+      "exitCode": 0,
+      "outputSha256": "229ea8d0f6e8a1d861fe0c214e888ae94eb3f07021e92b56cb3aa7e787535a99"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node integrations/model-gap-wave3-patch.mjs --target <temporary>/first/site --output <temporary>/model-gap-wave3-local.patch",
+      "exitCode": 0,
+      "outputSha256": "4b8b926dce9d90dd7dc27be42b2719501cf69476b2fe873e7580ab5272fb9c49"
+    },
+    {
+      "command": "python3 <repository>/integrations/restore-source-checkpoint.py --target <temporary>/patch-check/site",
+      "exitCode": 0,
+      "outputSha256": "3a04683a048fa814d8e24f3e756f97f090205bf89167a25a5ad4ce7e2c180c38"
+    },
+    {
+      "command": "git apply --check <temporary>/model-gap-wave3-local.patch",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "git apply <temporary>/model-gap-wave3-local.patch",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check integrations/import-model-gap-wave3-catalog.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check integrations/import-model-gap-wave3-sources.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check integrations/import-model-gap-wave3-catalog.test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check integrations/model-gap-wave3-app-test.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check integrations/model-gap-wave3-verify.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check integrations/model-gap-wave3-patch.mjs",
+      "exitCode": 0,
+      "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ]
+}

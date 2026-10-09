@@ -1,0 +1,65 @@
+{
+  "issue": 37,
+  "checkedAt": "2026-10-09",
+  "priorInputs": [
+    {
+      "path": "integrations/model-first-plan-v1270.md",
+      "sha256": "36eaf46a081638d05fb8cfb01400aa27278b9f5716b482561d15594fc405cdb0"
+    },
+    {
+      "path": "integrations/miele-model-research-wave2.json",
+      "sha256": "a6db44f3aea69e3aa89bc93ae33a51843cb110c34ba81d390b27c64bd50e408a"
+    },
+    {
+      "path": "integrations/dyson-model-research-wave2.json",
+      "sha256": "81cf181d4ba5b93a2b3ae5d6cb9253ca4c09ab5b9007fbf9cc7801dcc44cc956"
+    },
+    {
+      "path": "integrations/samsung-model-research-next.json",
+      "sha256": "c7d30ae89b438d6695cf1e2c00d56eeefb1a556a64ef109786086bba95640fe7"
+    }
+  ],
+  "resolutions": [
+    {
+      "prior": "miele-model-research-wave2.json",
+      "identity": "S5981 + SEB217",
+      "previous": "deferred",
+      "now": "accept S5981 only",
+      "newBasis": "Unbundled full-device image caption, PDF page12, printed22–23; never create a SEB217-bundle device."
+    },
+    {
+      "prior": "miele-model-research-wave2.json",
+      "identity": "Miele Hybrid",
+      "previous": "deferred",
+      "now": "accept S4812 only",
+      "newBasis": "SK manufacturer table explicitly names S4812Hybrid; no inferred material/EAN/typeplate code."
+    },
+    {
+      "prior": "dyson-model-research-wave2.json",
+      "identity": "DC17 / DC27 / DC28",
+      "previous": "deferred for missing independent DE source",
+      "now": "US model references accepted with own support pages and official manuals",
+      "newBasis": "International scope now explicit; DE execution and voltage remain unproved."
+    },
+    {
+      "prior": "samsung-model-research-next.json",
+      "identity": "International variants and historical VC codes",
+      "previous": "regional or variant candidates unresolved",
+      "now": "Only one VC2500 and one SC52 representative",
+      "newBasis": "CH product page and RU support model header with full /SW and /XEV codes; do not expand colors or suffixes."
+    }
+  ],
+  "mainRecheck": {
+    "commit": "71f7826ba936a1f3830c8b2a67e8085a9cfe234e",
+    "baselineCommit": "d4853c4e5245410630742f58aead661d77f42c32",
+    "changedPaths": [
+      ".github/workflows/parallel-work-guard.yml",
+      "integrations/check-work-pr-boundaries.py",
+      "integrations/test-work-pr-boundaries.py"
+    ],
+    "sourceCheckpointChanged": false,
+    "builderChanged": false,
+    "restorerChanged": false,
+    "branchNotRebased": true
+  }
+}

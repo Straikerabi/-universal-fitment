@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-09T14:33:31.046Z",
+  "browser": "153.0.8010.0",
+  "checks": 8,
+  "results": [
+    "375px licensed photo loads, credit/alt/responsive sizes and stable controls",
+    "320/375/768/1280px and 200% text do not overflow",
+    "missing model asset restores local vacuum fallback; search remains usable",
+    "unapproved legacy model/part images are never requested",
+    "part image error keeps persistent SVG and working filters (synthetic event)",
+    "on-demand keyboard photo load does not navigate or bypass review",
+    "successful part image load hides SVG; error restores it (synthetic lifecycle)",
+    "warm PWA offline reload has usable model/filters and SVG; media not cached"
+  ],
+  "pageErrors": [],
+  "externalImageRequests": [],
+  "limits": [
+    "Chromium emulation; no physical iPhone/VoiceOver test.",
+    "Part photo lifecycle uses synthetic events; no real spare image was approved."
+  ]
+}
