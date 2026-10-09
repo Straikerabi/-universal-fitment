@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-10-09",
+  "authorityChains": [
+    {
+      "brand": "Samsung",
+      "publisher": "Samsung",
+      "relationship": "brand-owned DE product and accessory pages",
+      "allowedHost": "www.samsung.com",
+      "allowedPathPrefix": "/de/",
+      "pricesImported": false
+    },
+    {
+      "brand": "Hoover",
+      "publisher": "Screwfix Spares / 4ourhouse",
+      "relationship": "manufacturer-linked original-parts service, not a Hoover-owned shop",
+      "manufacturerEntryUrl": "https://service.hoover.co.uk/",
+      "resolvedUrl": "https://service.hoover.co.uk/",
+      "httpStatus": 200,
+      "bodySha256": "0dc0acf9124be1942a58e4df7d3b9c0e59cbd12786b3755a2f51802eaca57fc1",
+      "observedShopLinks": [
+        "https://www.hooverspares.co.uk/?utm_source=hoover.uk&utm_medium=referral&utm_campaign=service.header",
+        "https://www.hooverspares.co.uk/?utm_source=hoover.uk&utm_medium=referral&utm_campaign=service.banner",
+        "https://www.hooverspares.co.uk/?utm_source=hoover.uk&utm_medium=referral&utm_campaign=service.banner",
+        "https://www.hooverspares.co.uk/?utm_source=hoover.uk&utm_medium=referral&utm_campaign=service.footer"
+      ],
+      "market": "GB",
+      "checkedAt": "2026-10-09",
+      "deFitmentInferred": false,
+      "deAvailabilityInferred": false
+    }
+  ],
+  "drawingReview": {
+    "sourceUrl": "https://res.cloudinary.com/dnnqfsqiu/image/upload//v1780431233/illustrations/ck5hb30ok3nxvj8mptbw.pdf",
+    "linkedFrom": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/catalogue.pl?path=600307&model_ref=14737057&illustration_ref=11774346",
+    "bodySha256": "0488ae75e4b8eae4e291ce37b1c623e598386253c1a944e5325ab2317b519940",
+    "checkedAt": "2026-10-09",
+    "review": "visual PDF inspection",
+    "oemNumbersConfirmed": 0,
+    "imagesPublished": false
+  },
+  "sourceStatusNote": "Accepted OEM numbers and fitments use live HTTP-200 page-content observations. Indexed search snippets without a matching live OEM number were not imported. Body hashes record the fetched response, not a claim of byte-stable future web pages."
+}
