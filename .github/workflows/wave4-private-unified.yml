@@ -102,6 +102,14 @@ jobs:
           set -euo pipefail
           node --test integrations/fitment-engine-v1-poc/contract.test.mjs integrations/dual-platform-owner-review/bridge.test.mjs
           node integrations/fitment-engine-v1-poc/verify.mjs --check --app
+      - name: Regenerate Wave4 offline manifest (review candidate, never publish)
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run offline:prepare --prefix integrations/consumer-repair-mission-poc
+          echo 'UF-OFFLINE-CONFIG-BEGIN'
+          cat integrations/consumer-repair-mission-poc/offline-config.mjs
+          echo 'UF-OFFLINE-CONFIG-END'
       - name: Consumer Wave4 and Business Wave4 Node and source integrity tests
         shell: bash
         run: |
