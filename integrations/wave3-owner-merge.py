@@ -16,6 +16,7 @@ from pathlib import Path
 import shutil
 import subprocess
 import tempfile
+from wave3_owner_resolutions import resolve as resolve_reviewed_conflict
 
 
 def sha(data: bytes | None) -> str | None:
@@ -109,6 +110,13 @@ def main() -> int:
                 continue
             if before is not None:
                 result, resolution = merge_bytes(rel, before, ours, after)
+                if result is None and name == "parts" and changed.get(rel) == ["model", "parts"]:
+                    try:
+                        result = resolve_reviewed_conflict(rel, before, ours, after)
+                        if result is not None:
+                            resolution = "explicit-owner-reviewed-model-and-parts-merge"
+                    except (ValueError, UnicodeDecodeError) as error:
+                        resolution = "reviewed-resolution-rejected: " + str(error)
                 resolutions.setdefault(rel, []).append(f"{name}:{resolution}")
                 if result is None:
                     conflicts.append(dict(path=rel, worker=name, reason=resolution,
