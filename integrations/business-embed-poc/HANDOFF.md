@@ -1,18 +1,13 @@
-# Übergabe an Projektleitung
+# Owner-Handoff — Issue #64
 
-Issue #50: isolierter White-Label-Embed-Demonstrator auf `work/business-embed-poc`, Basis `71f7826ba936a1f3830c8b2a67e8085a9cfe234e`. Scope ausschließlich `integrations/business-embed-poc/`. Keine Änderungen an App, Katalog, #48, Wave-3-PRs #51–#53, gemeinsamer Integration #54 oder Release.
+Branch `work/business-pilot-readiness-wave4`, zugewiesene Basis `52f056664ddbf1a6c263a3d86feac3ee0128c054`, Draft-Ziel `integration/dual-platform-owner-review`. Alle Änderungen ausschließlich `integrations/business-embed-poc/`; gemeinsame Engine, Owner-Brücke, Consumer und Katalog unverändert. Lock überprüft vier gemeinsame Module.
 
-Geliefert: lokal lauffähiger Shop-Host + eigenständiger Finder, zwei synthetische Händler, sechs Testfälle, sichtbare Unsicherheit/Ausschlüsse, getrennte Händlerartikel/Herkunft, austauschbare Vertragsgrenze, Negativ-/Mandanten-/Server-/Browser-Tests und Dokumentation. Alle Testdaten sind erfunden und ausdrücklich markiert. Keine echten Kontakte, Preise, Kunden, OEM-Belege, Verträge, APIs, Zahlungen oder Kosten verursacht.
+Geliefert: White-Label-Teileworkflow mit expliziter Variantenangabe, deutscher Reason-Code-Erklärung, Herkunft/SKU-Trennung, gemeinsamen #48-Validatoren, gebundenem Adapter und Schutz vor Stale-Antworten. Lokales Rollen-/Scope-/Feed-/Expiry-/Budget-/Audit-Labor statt echter Auth/API. Minimale tenantgefilterte Events, klarer Reset, keine dauerhafte Speicherung. 5–8 Interviews vorbereitet; Kosten-/Tier- und Händlernutzenmessung konkretisiert, Ergebnisfelder leer.
 
-36 Node-Tests und 10 Browserprüfungen bestanden; Browserergebnisse und Screenshots in diesem Ordner, Browserversion/Beobachtungsgrenzen in `browser-evidence.json`. SHA-/Syntax-/Testprotokoll in `validation.json`. Kein physischer Mobil-/Screenreader-Test oder produktiver Sicherheitsnachweis. Kein CI-Erfolg wird vor einem tatsächlichen Lauf behauptet.
+Verifikation: **95 Business-Tests + 101 unveränderte gemeinsame Regressionstests = 196 bestanden**, alle lokalen MJS-Syntaxprüfungen, Quelllock, Auslieferungshashes. **15 Browserprüfungen bestanden**, keine JS-Seitenfehler/externen Requests, 320/375/768 px und 200 % Text auch bei offenem Zugriffslabor; vier Screenshots visuell geprüft. Tatsächliche Belege: `validation.json`, `browser-evidence.json`. Kein bereits erfolgter CI-Erfolg behauptet, keine gemeinsamen Workflows geändert.
 
-Offene, ehrlich dokumentierte Abnahmen:
+Reproduktion und lokale Demo: [README.md](README.md). Review: exakte Testantwort → Revision fehlt → Ausschluss/SKU/Anschluss → Rechte-Labor mit Fremdfeed/Token/Role → Budget/Reset → Tenantwechsel. Audit lesen als Admin, danach Rollenwechsel muss Inhalt entfernen. Rechte-Labor ist vollständig synthetisch und clientseitig, nicht als produktives IAM akzeptieren.
 
-1. #48 liefert den gemeinsamen Vertrag. Hook-Grenze vorbereitet, Originalvalidator/Mapping noch nicht verbunden; keine eigene Fitment-Engine.
-2. Interviews wurden **nicht** geführt. Leitfaden, 5–8 anonyme Slots, KPI- und Go/No-Go-Vorlagen vorbereitet; Bedarfsauswertung und Markt-/Preisvalidierung bleiben ausstehend.
-3. Server-Tenant-Isolation, IAM, Rate-Limits, verschlüsselte private Datenspeicherung und produktive Audit-Logs sind Architekturkonzept, nicht vorhandene SaaS-Funktionen.
-4. Kein Pilot-Go ohne Gewerbe-/Rechts-/Datenfreigaben und Zustimmung. Öffentliche Repo-Dateien sind kein Geheimnisraum. Keine tatsächliche B2B-Lizenz-/Datenschutzkonformität behauptet.
+Offen: echte Interviews/Bedarf, Kosten/Zahlungsbereitschaft, rechtmäßige realen Daten und Gewerbe-/Rechts-/Teilnehmerfreigabe; Server-IAM, DB-/Cache-Isolation, sichere Credentials und manipulationsgeschützter Auditdienst. **Kein Go für echten Pilot** ohne separate Owner-Abnahme. Keine echten Kontakte, Verträge, Preise, APIs oder Zahlungen; kein Merge/Deployment.
 
-Review-Schritte: lokalen Server starten; Host-/Tenantwechsel, exakten Fall, unbekannte Revision, Ausschluss, SKU und Beleg auf Desktop/Mobil testen. Node-/Browserbefehle aus README reproduzieren. Bei Vertragsveröffentlichung nur lesend prüfen, separat gemappte Konformitätstests ergänzen und Owner entscheiden lassen. Keine zweite Engine hinzufügen. Danach — nur mit Zustimmung — Discovery durchführen und dokumentierte Entscheidung treffen.
-
-Lesende Quellen: Issue #50 samt Freigabe-Kommentar 09.10.2026 18:37 UTC; Issue #48 und Branchstand oben; [Dual-B2C/B2B-Strategie](https://github.com/Straikerabi/-universal-fitment/blob/research/affiliate-specialists-wave1/integrations/affiliate-specialists/B2C-B2B-DEFENSIBLE-ROADMAP-2026.md). Anforderungen „vollständig privat“ werden als kein laufender externer Dienst umgesetzt; Veröffentlichung synthetischen Codes im Draft-PR wurde ausdrücklich angefordert.
+Quellen: Issue #64, vorhandener #48-Vertrag und Owner-Integration an zugewiesener Basis, DSGVO-Primärquelle in [PILOT-READINESS.md](PILOT-READINESS.md). Artikel-/Modellzahlen aus anderen Arbeitspaketen werden nicht als Business-Erfolg verkauft.

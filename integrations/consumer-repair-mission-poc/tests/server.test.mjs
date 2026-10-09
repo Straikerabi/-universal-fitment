@@ -7,8 +7,8 @@ async function withServer(run){
  const server=createPreviewServer();
  await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
  const port=server.address().port;
- const request=(target,method='GET')=>new Promise((resolve,reject)=>{
-  const req=http.request({hostname:'127.0.0.1',port,path:target,method},res=>{
+ const request=(target,method='GET',headers={})=>new Promise((resolve,reject)=>{
+  const req=http.request({hostname:'127.0.0.1',port,path:target,method,headers},res=>{
    const chunks=[];res.on('data',x=>chunks.push(x));
    res.on('end',()=>resolve({status:res.statusCode,headers:res.headers,body:Buffer.concat(chunks).toString('utf8')}));
   });req.on('error',reject);req.end();
@@ -25,6 +25,24 @@ test('preview serves local UI with a policy that prevents network services and e
   assert.equal(page.headers['x-content-type-options'],'nosniff');
   const script=await request('/app.mjs');assert.equal(script.status,200);assert.match(script.headers['content-type'],/javascript/);
   const head=await request('/styles.css','HEAD');assert.equal(head.status,200);assert.equal(head.body,'');
+ });
+});
+
+test('local preview refuses foreign hosts, origins and absolute proxy targets',async()=>{
+ await withServer(async request=>{
+  assert.equal((await request('/','GET',{Host:'example.invalid'})).status,403);
+  assert.equal((await request('/','GET',{Origin:'https://example.invalid'})).status,403);
+  assert.equal((await request('http://example.invalid/index.html')).status,403);
+ });
+});
+
+test('offline worker can fetch only same-origin assets; page cannot call network services',async()=>{
+ await withServer(async request=>{
+  const worker=await request('/offline-worker.mjs');assert.equal(worker.status,200);
+  assert.match(worker.headers['content-security-policy'],/connect-src 'self'/);
+  assert.match((await request('/')).headers['content-security-policy'],/connect-src 'none'/);
+  assert.match((await request('/manifest.webmanifest')).headers['content-type'],/manifest\+json/);
+  for(const file of ['/prepare-offline.mjs','/parts-view.mjs/../package.json','/fitment-engine-v1-poc/coverage.mjs','/dual-platform-owner-review/README.md'])assert.equal((await request(file)).status,404);
  });
 });
 

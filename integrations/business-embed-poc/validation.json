@@ -1,47 +1,72 @@
 {
-  "checkedAt": "2026-10-09T18:55:45.995Z",
+  "checkedAt": "2026-10-09T20:58:56.686Z",
+  "baseCommit": "52f056664ddbf1a6c263a3d86feac3ee0128c054",
   "node": "v24.19.0",
-  "nodeTests": 36,
+  "businessTests": 95,
+  "sharedRegressionTests": 101,
+  "nodeTests": 196,
   "failures": 0,
   "syntax": "all local mjs passed",
   "delivery": "direct static files; no build dependencies",
   "artifacts": {
     "index.html": {
-      "bytes": 2652,
-      "sha256": "b8cc3f73b37cc5e421c6c2b686c64d80c7cb4ceaff6b5c595a0af7e466388fb0"
+      "bytes": 2775,
+      "sha256": "6c3a51e001d15e4a556dcfa42eba6b42a59691361429d561c396417724d2f93c"
     },
     "embed.html": {
-      "bytes": 1598,
-      "sha256": "8388846154d6076bbffc2854d39eba087eed05448418cf8ebd3aee3da18ecea4"
+      "bytes": 3984,
+      "sha256": "3b4b164fc027af5a0cd63fc5222ee58edad198a4de7269c0eb13d8f102d18df0"
     },
     "style.css": {
       "bytes": 5917,
       "sha256": "5578862d2d17417e6bdec15c6a822a0a0db6215f36384e5c6d8195af44538643"
+    },
+    "pilot.css": {
+      "bytes": 728,
+      "sha256": "d41b1c386368e91c8ea704a580b7d0fe5faf5b1d28b3baecd0b702fb39fba0d4"
     },
     "host.mjs": {
       "bytes": 586,
       "sha256": "e9c0628849f1c4353edd07af25b293f881959c80e9e15000d83664a01f89be23"
     },
     "widget.mjs": {
-      "bytes": 3687,
-      "sha256": "793776bbea0fc2697763423b3880225a4e3fb01f83d6ff56cc971c0c6ff47061"
+      "bytes": 6141,
+      "sha256": "7f69ef979799785bef711e20c3ccfacee84b5dc8383de44c26fbc1083355682c"
     },
     "adapter.mjs": {
-      "bytes": 2879,
-      "sha256": "7c2f97678fd24651ba917dcd7fd1480802c27e907430f23522122af156e0e73f"
+      "bytes": 3186,
+      "sha256": "92d41346810d9874f43ec6e986867052d1740c6ab5f4916779789e0596f68d92"
+    },
+    "shared-adapter.mjs": {
+      "bytes": 4435,
+      "sha256": "dffeb413644d6ec000c54ca18fce2ea8fa7c0a81eb2e9c631afb0e2f14c77c12"
+    },
+    "access-lab.mjs": {
+      "bytes": 4104,
+      "sha256": "f5afd4d8f868bbd7d04496c99886e3254d6a56bbdad48a486c323d8cb6ca3154"
     },
     "fixtures.mjs": {
       "bytes": 2967,
       "sha256": "7e39eb1783f6ddda68498b4a4d090f8aa4c4598c6717098a2886366321723c0b"
     },
     "serve.mjs": {
-      "bytes": 1953,
-      "sha256": "6a56b7e75aa405b22f65445ca480da1695a05379af83544028cfa2ffb736ba22"
+      "bytes": 2655,
+      "sha256": "e1a4f1a480112ccad2263a7d8fe959681ae282a9d6ea2c1b4442356ef2209d63"
+    }
+  },
+  "sharedSourceLock": {
+    "baseCommit": "52f056664ddbf1a6c263a3d86feac3ee0128c054",
+    "schemaVersion": "1.0.0",
+    "files": {
+      "fitment-engine-v1-poc/contract.mjs": "f609d8c4a2d894632b46db76c28e83d581190dcfed0484a3aab3f12efb36e7b3",
+      "fitment-engine-v1-poc/fixtures.mjs": "b1a08deb58acf2b7be7319e61e838c2b5ef5cd7833068e368e41dbc79f3e97a9",
+      "dual-platform-owner-review/bridge.mjs": "d3cb61c0cd4e554585e28bf9b54d51c110c3bd85aefdc733a8578f2feb13cb6c",
+      "dual-platform-owner-review/ui-fixtures.mjs": "469f6ae04d4bd4ebb0fa6933b4b193a20ca79c20f2f2f367fcd3b5b5d69a9061"
     }
   },
   "limits": [
     "Browser suite is separate.",
-    "#48 contract unavailable at initial check; adapter hook tests do not establish integration.",
-    "No actual interviews or pilot outcome."
+    "Client access lab is not server IAM or production secrecy.",
+    "No actual interviews, prices, API or pilot outcome."
   ]
 }

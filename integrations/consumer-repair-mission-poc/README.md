@@ -1,71 +1,82 @@
-# Consumer-Reparaturmission · isolierter Prototyp für #49
+# Consumer-Reparaturmission · mobile UX Wave 4
 
-Ein lokaler mobiler Ablauf führt von der Gerätekennung über Ausführung und Baugruppe zu einer begründeten Prüfansicht und einer gespeicherten Checkliste. Die Oberfläche nutzt eigene SVG-Grafiken, Systemschriften und vorhandene, quellengebundene Identitäten. Alle Änderungen liegen ausschließlich in diesem Verzeichnis auf `work/consumer-repair-mission-poc`.
+Der lokale Consumer-Prototyp führt von der Gerätekennung über Ausführung und Baugruppe zur begründeten Prüfansicht und einer gespeicherten Checkliste. [#63](https://github.com/Straikerabi/-universal-fitment/issues/63) ergänzt aufklappbare Baugruppen, Teilefilter, stabile Sortierung und getrennte Listen für offene Angaben, vorgemerkte Kandidaten und Vorbereitung. Alle Änderungen liegen in diesem Verzeichnis auf `work/consumer-mobile-ux-wave4`; Reviewziel ist `integration/dual-platform-owner-review` ab `52f056664ddbf1a6c263a3d86feac3ee0128c054`.
 
-**Echte Passungen werden noch nicht entschieden.** Die gemeinsame Engine aus [#48](https://github.com/Straikerabi/-universal-fitment/issues/48) ist nicht integriert. Positive und negative Ergebnisse erscheinen ausschließlich in einem getrennten, sichtbar synthetischen Demomodus. Dieser Draft erfüllt den am 09.10.2026 freigegebenen isolierten UI-Umfang; die vollständige Feldabnahme von [#49](https://github.com/Straikerabi/-universal-fitment/issues/49) bleibt offen.
+**Reale Passungen bleiben unbestätigt.** Die Owner-Integration aus [Draft #59](https://github.com/Straikerabi/-universal-fitment/pull/59) verbindet die synthetischen UI-Testfälle bereits mit der gemeinsamen v1-Engine. Diese Anbindung bleibt erhalten; es gibt keinen zweiten Consumer-Core. Ein positives Demoergebnis ist keine reale OEM-Freigabe. Die Datenintegration aus [#61](https://github.com/Straikerabi/-universal-fitment/issues/61) bleibt beim Owner und ist in diesem historischen Pilot-Snapshot nicht enthalten.
 
 ## Lokal starten
 
-Node.js 22 oder neuer; keine Laufzeitpakete, kein Build, kein Konto.
+Node.js 22 oder neuer; keine Laufzeitpakete, kein Build und kein Konto:
 
 ```bash
 npm start --prefix integrations/consumer-repair-mission-poc
 ```
 
-Vorschau: `http://127.0.0.1:4179`. Der Server bindet ausschließlich an Loopback, erlaubt GET/HEAD und liefert nur die sechs UI-Dateien aus. Die Content Security Policy blockiert Netzwerkdienste, Frames und Formulare. Es werden keine Händlerfeeds, Analysen, OEM-Bilder oder Cloud-Services geladen. Herstellerlinks werden nur auf ausdrücklichen Klick geöffnet und tragen den Geltungsbereich „Identität“.
+Vorschau: `http://127.0.0.1:4179`. Der Server bindet ausschließlich an Loopback. Seine feste Dateiliste enthält die Consumer-Oberfläche und die fünf bereits verwendeten Shared-Module aus #59. GET/HEAD sind erlaubt; fremde Hosts/Origins, private Dateien und Proxyanfragen werden abgewiesen. Die Seiten-CSP blockiert Netzwerkdienste, Frames und Formulare. Nur der lokale Offline-Worker darf die freigegebenen lokalen Ressourcen speichern. Keine Händlerfeeds, Analysen, OEM-Bilder oder Cloud-Services werden geladen.
 
 ## Ablauf
 
-1. **Gerät:** Modell, Materialnummer oder vollständige Kennung suchen und einen Eintrag ausdrücklich wählen. Kein automatischer Ersatz durch ein ähnliches Modell. Die Reparaturfrage bleibt als Kontext erhalten.
-2. **Ausführung:** ursprüngliche Quellenkennung, Markt und vorhandenen Produktcode vergleichen; eigene Kennung optional lokal notieren. Fehlende Revisionen und Zusätze bleiben offen. Abweichende Eingaben werden erklärt.
-3. **Baugruppe:** vier interaktive Bereiche mit eigener neutraler Orientierung und Zahl der vorhandenen Prüfkandidaten. Die Grafik stellt kein konkretes Gerät oder dessen Einbaupositionen dar.
-4. **Passung:** Gründe, fehlende Informationen und belegte Identitäten getrennt ansehen. Reale Kandidaten bleiben unbestätigt. Keine Kaufbuttons, Preise, Bestände oder Lieferzusagen.
-5. **Checkliste:** offene Angaben und ausgewählte Prüfkandidaten vormerken, lokale Notizen abhaken und Text inklusive Quellen und unverändertem Prüfstatus kopieren oder herunterladen. Abhaken bestätigt weder Passung noch Vollständigkeit.
+1. **Gerät:** genaue Modell-/Materialkennung suchen und einen Eintrag ausdrücklich wählen. Ähnliche Modelle werden nicht automatisch übernommen.
+2. **Ausführung:** Quellenkennung, Markt und vorhandenen Produktcode vergleichen; eigene Kennung optional lokal notieren. Länderzusätze, Revisionen und abweichende Angaben bleiben sichtbar und ungeprüft.
+3. **Baugruppe:** Filter/Beutel, Bürsten/Düsen, Akku/Elektrik, Schläuche und Gehäuse als native aufklappbare Bereiche. Jede Gruppe trennt belegte Identitätskandidaten von **0 bestätigten realen Teilen**. Die eigene neutrale SVG dient nur der Orientierung, nicht als modellgenaues Diagramm.
+4. **Passung:** Gründe, fehlende Angaben und Identitätsbelege getrennt ansehen. Kandidaten nach wörtlichem Namen/Teilecode, Baugruppe, Teileart und Identitätsnachweis eingrenzen; innerhalb der Gruppe nach Name oder Code sortieren. Preise sind mit sichtbarer Begründung deaktiviert. Es gibt keine Kaufbuttons, Angebote oder Lieferzusagen.
+5. **Checkliste:** „Noch zu klären“, „Vorgemerkte Prüfkandidaten“ und „Gerät & Belege“ behalten Quellen und Prüfstatus. Kandidaten lassen sich ausdrücklich entfernen. Text kopieren/herunterladen enthält weiterhin unbestätigte Passungen. Abhaken bestätigt weder Einbau noch Vollständigkeit.
 
-Geräte-, Varianten- oder Baugruppenwechsel verwerfen alte Teileauswahl und Erledigt-Markierungen. Die lokalen Speicher für echte Daten und Demo sind getrennt. Veraltete, fremde oder manipulierte gespeicherte Antworten werden verworfen. Speicherung ist optional; bei gesperrtem Local Storage bleibt der laufende Ablauf nutzbar und bietet einen Textexport.
+Filter verändern keine Passung und löschen keine vorgemerkten Kandidaten. Eine ausgeblendete Auswahl bleibt in der Checkliste. Geräte-, Varianten- und Baugruppenwechsel verwerfen kontextfremde Auswahl/Erledigt-Markierungen; erneutes Auswählen derselben Baugruppe erhält sie. Eine Liste ohne Filtertreffer unterscheidet sich von einem Bereich ohne dokumentierten Artikel. Beides behauptet keine Nichtverfügbarkeit.
 
-## Daten und Grenzen
+## Daten und Quellen
 
-| Umfang | Stand dieses Drafts |
+| Umfang | Stand dieser UI |
 | --- | --- |
-| Baseline | main `71f7826ba936a1f3830c8b2a67e8085a9cfe234e`, App v1.29.0 |
+| Review-Basis | Owner-Integration #59, Commit `52f056664ddbf1a6c263a3d86feac3ee0128c054` |
+| Identitäts-Snapshot | unveränderter v1.29.0-Checkpoint aus `71f7826ba936a1f3830c8b2a67e8085a9cfe234e` |
 | Checkpoint | SHA-256 `c600a5c5a83a6f096ff5999e5ce5582c37ec424155919d487dfd6ca2221bd42b`, 136 Dateien |
-| Ausgewählte Identitäten | 11 Geräte, 11 vorhandene Originalteil-Identitäten; Miele, Bosch, Samsung, Hoover, Dyson |
-| Quellenstand | ursprüngliche Katalogbeobachtungen 06./08.10.2026; keine Behauptung einer neuen Live-Verifikation |
-| Neue reale Fitments | 0 |
-| Shared Engine / Wave3 | beide nicht integriert |
-| Synthetische Antworten | fünf statische Fixtures mit `demo:`-/`DEMO-`-Kennungen |
+| Reale Identitäten | 11 Geräte und 11 vorhandene Originalteil-Identitäten; Miele, Bosch, Samsung, Hoover, Dyson |
+| Quellenbeobachtungen | 06./08.10.2026; keine neue Live-Verifikation durch #63 |
+| Bestätigte reale Teile / neue Fitments | 0 / 0 |
+| Gemeinsame v1-Engine | bestehende Anbindung für fünf ausdrücklich synthetische Demo-Szenen |
+| Wave3-Datenmigration | noch nicht enthalten; getrennte Owner-Aufgabe #61 |
 
-Die vollständige Zuordnung von Identität, Region, Datum und Originalquelle steht in [SOURCE-MANIFEST.md](SOURCE-MANIFEST.md); die unveränderten IDs und Originalkennungen stehen in `catalog-snapshot.mjs`. `legacyStatus` und `candidatePartIds` beschreiben frühere Katalogeinträge, keine hier neu erteilte Passungsfreigabe. EEK wird nicht aus EEM abgeleitet, `/WA` wird nicht auf `/WD` übertragen und ein gemeinsamer Miele-Gerätetyp wählt kein Modell automatisch. Der Samsung-Artikelcode `VCA-SAPB95/WA` bleibt als Artikelkennung erhalten und ersetzt keine Geräte-Länderkennung.
+[SOURCE-MANIFEST.md](SOURCE-MANIFEST.md) dokumentiert unveränderte Originalquellen und Identitätsgrenzen. `catalog-snapshot.mjs`, `catalog-lock.json` und der Projektionsimporter bleiben bytegleich zur Review-Basis. Die historischen Felder `engineIntegrated: false` und `wave3Integrated: false` beschreiben den Snapshot, nicht die spätere synthetische Owner-Anbindung. `candidatePartIds` sind bestehende Katalogmitgliedschaften, keine neu bestätigten Fitments.
 
-Hoover Y81 / `35602897` wurde bewusst ausgelassen: im Baseline-Datensatz steht hierfür nur eine allgemeine Zubehör-Collection als Quelle. GB-Artikelquellen werden nicht als DE-Fitment benutzt. Bei Bosch fehlen vollständige `/xx`-Indizes, bei Hoover regionale Serien-/Revisionsbereiche; diese Lücken sind sichtbar. Ein leerer Bereich bedeutet ausschließlich „im Pilotbestand nicht dokumentiert“.
+„Originalteil-Identität belegt“ bedeutet ausschließlich Hersteller-Artikelidentität mit vorhandenem Originalbeleg und Kennung. Es gibt keine belegten Alternativteile in diesem Ausschnitt; der entsprechende Filter liefert einen erklärten leeren Zustand. Die Teileart „Akku / Elektrik“ fasst bestehende elektrische Kategorien zusammen, ohne die historische Taxonomie umzuschreiben. Preise, Verfügbarkeit, Bilder und alternative Artikel werden nicht ergänzt.
 
-Die zentrale Wave3-Integration gehört [#54](https://github.com/Straikerabi/-universal-fitment/issues/54). Dieser Branch übernimmt keine Änderungen aus #51/#52/#53, führt keinen Wave3-Importer aus und verändert weder Checkpoint, Produktdaten, Produktionsoberfläche, Shared Tests, Workflows noch Media-/Build-Pipeline. Die spätere Übergabe ist in [INTEGRATION.md](INTEGRATION.md) beschrieben.
+EEK wird nicht aus EEM abgeleitet, `/WA` nicht auf `/WD` übertragen und ein gemeinsamer Miele-Gerätetyp wählt kein Modell automatisch. `VCA-SAPB95/WA` bleibt ein Artikelcode. Hoover U112 / `35602893` hat einen GB-Webbeleg (`en_GB`), während das ausgewählte HF202P 011 im DE-Katalog steht: Beide Quellenregionen sind ausdrücklich sichtbar, eine grenzüberschreitende Passung wird nicht angenommen. Y81 / `35602897` bleibt mangels genauer Artikelquelle ausgelassen.
 
-## Identitätssnapshot reproduzieren
+## Lokale Speicherung und Offline-Vorschau
 
-Vom Repository-Root aus einen **neuen** Zielordner außerhalb des Repositories verwenden:
+Notizen liegen nur im Browser; reale Mission und synthetische Demo haben getrennte Speicher. Schema 2 und ein Fingerprint aus Identitätsdaten, bestehendem Shared-Core und Demo-Fixtures weisen alte oder manipulierte gespeicherte Antworten ab. Keine FitmentResponse wird gespeichert. Nach Wiederherstellung werden Antworten aus dem aktuellen Kontext neu abgeleitet. Schema-1-Notizen werden zurückgesetzt; vorherige Exporte bleiben nutzbar.
+
+Nach einem erfolgreichen Online-Start kann der lokale Service Worker genau 17 freigegebene URL-Pfade atomar speichern. Er hält UI, Identitätssnapshot und unveränderte Shared-Module derselben Version zusammen. Es gibt keine dynamischen Daten- oder OEM-Seiten-Caches. Ein kalter, nicht gespeicherter Offline-Start benötigt eine Verbindung. Die Statusanzeige unterscheidet gespeicherte Vorschau, laufende Sitzung und gesperrten Speicher; externe Herstellerbelege lassen sich offline nicht neu öffnen.
+
+„Offline-Vorschau entfernen“ löscht nur den eigenen Vorschau-Cache und dessen Worker, nicht die Prüfliste. „Mission löschen“ betrifft nur den aktuellen Datenmodus. Bei gesperrtem Local Storage bleibt die laufende Sitzung samt Textexport nutzbar. Keine Aufrufe an Tracking-, Kauf- oder Cloud-Dienste.
+
+Nach UI-/Worker-/Server-Änderungen:
+
+```bash
+npm run offline:prepare --prefix integrations/consumer-repair-mission-poc
+npm run offline:check --prefix integrations/consumer-repair-mission-poc
+```
+
+## Reproduktion und Tests
+
+Die Datenprojektion lässt sich unverändert und ohne Schreibzugriff prüfen. Vom Repository-Root einen neuen Zielordner außerhalb des Repositories verwenden:
 
 ```bash
 python3 integrations/restore-source-checkpoint.py --target /tmp/uf-mission-baseline
 node integrations/consumer-repair-mission-poc/build-catalog.mjs --source /tmp/uf-mission-baseline --check
-```
-
-Ohne `--check` schreibt das Projektionsskript ausschließlich `catalog-snapshot.mjs` und `catalog-lock.json` in diesem Prototypverzeichnis. Vor dem Laden der Baseline-Module prüft es die gepinnte Archivsumme und alle 136 restaurierten Dateien gegen die Archivbytes. Veränderte Quellen werden abgewiesen. Die Projektion liest Identitäten und bestehende Katalogmitgliedschaften; sie berechnet keine Passung, importiert keine neuen Artikel und greift nicht auf das Netzwerk zu.
-
-## Tests und Review
-
-```bash
 npm test --prefix integrations/consumer-repair-mission-poc
 npm run check --prefix integrations/consumer-repair-mission-poc
 ```
 
-Browserprüfungen benötigen eine separat installierte Playwright-Version und deren Chromium; im Repository gibt es keine neuen Shared Dependencies. `UF_PLAYWRIGHT_MODULE` bezeichnet optional einen absoluten Pfad zum Playwright-Modul, `UF_CHROMIUM_EXECUTABLE` optional den ausführbaren Chromium-Pfad, `UF_MISSION_QA_DIR` optional einen Ausgabeordner. Beispiel nach einer lokalen Playwright-Installation:
+Der bestehende Datenimporter bleibt für Schreibvorgänge an seinen ursprünglichen Branch gebunden. #63 führt ihn ausschließlich mit `--check` aus. Er prüft die Archivsumme und alle 136 restaurierten Dateien vor dem Laden von Datenmodulen. Kein Netzwerkzugriff oder neue Kompatibilitätsberechnung.
+
+Browserprüfungen benötigen separat Playwright 1.62.1 und Chromium; keine Shared Dependencies werden hinzugefügt:
 
 ```bash
-UF_PLAYWRIGHT_MODULE=/absoluter/pfad/node_modules/playwright/index.mjs npm run test:browser --prefix integrations/consumer-repair-mission-poc
+UF_PLAYWRIGHT_MODULE=/absoluter/pfad/node_modules/playwright/index.mjs UF_CHROMIUM_EXECUTABLE=/absoluter/pfad/chromium npm run test:browser --prefix integrations/consumer-repair-mission-poc
 ```
 
-Ergebnisse und Einschränkungen: [VALIDATION.md](VALIDATION.md). Die PNGs unter `qa/` zeigen ausschließlich diese eigene Oberfläche. [pilot-cases.json](pilot-cases.json) enthält 24 vorbereitete Aufgaben mit echten Katalogidentitäten, darunter 18 schwierige Fälle; sie behaupten keine erhobenen Reparaturereignisse. [PILOT-PROTOCOL.md](PILOT-PROTOCOL.md) und [pilot-results-template.json](pilot-results-template.json) bereiten die noch ausstehenden fünf externen iPhone-Personen, Blindbewertung und Vergleichsmessungen vor. Unbeobachtete Resultate bleiben `null`.
+Standardausgabe ist `qa-wave4/`; `UF_MISSION_QA_DIR` kann einen anderen Ausgabeordner wählen. Aktuelle Ergebnisse, Screenshots und Grenzen stehen in [WAVE4-VALIDATION.md](WAVE4-VALIDATION.md). [VALIDATION.md](VALIDATION.md) und `qa/` bleiben als historische #49-Prüfung erhalten. Die 24 Pilotaufgaben sind automatisierte Ablaufprüfungen mit vorhandenen Identitäten, keine erhobenen Reparaturereignisse oder Tests mit externen Personen. Das unveränderte [PILOT-PROTOCOL.md](PILOT-PROTOCOL.md) beschreibt die spätere Feldprüfung.
 
-Kein Merge, kein Deployment, keine vollständige Issue-Abnahme durch diesen Draft.
+Kein Merge, kein Deployment. Die Grenzen zur Owner-Integration stehen in [INTEGRATION.md](INTEGRATION.md).
