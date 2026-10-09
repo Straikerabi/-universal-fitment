@@ -1,0 +1,600 @@
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --test --test-reporter=tap integrations/import-model-gap-wave3-catalog.test.mjs
+TAP version 13
+# Subtest: reviewed22 profiles,39 decisions, official evidence and archive boundary
+ok 1 - reviewed22 profiles,39 decisions, official evidence and archive boundary
+  ---
+  duration_ms: 4.458977
+  type: 'test'
+  ...
+# Subtest: reject duplicate decision ID
+ok 2 - reject duplicate decision ID
+  ---
+  duration_ms: 1.395961
+  type: 'test'
+  ...
+# Subtest: reject duplicate historical base group
+ok 3 - reject duplicate historical base group
+  ---
+  duration_ms: 0.759233
+  type: 'test'
+  ...
+# Subtest: reject existing model alias
+ok 4 - reject existing model alias
+  ---
+  duration_ms: 0.693574
+  type: 'test'
+  ...
+# Subtest: reject unsupported manufacturer source
+ok 5 - reject unsupported manufacturer source
+  ---
+  duration_ms: 5.04898
+  type: 'test'
+  ...
+# Subtest: reject unreviewed real-looking historical number
+ok 6 - reject unreviewed real-looking historical number
+  ---
+  duration_ms: 0.878723
+  type: 'test'
+  ...
+# Subtest: reject fake extra parts
+ok 7 - reject fake extra parts
+  ---
+  duration_ms: 1.049731
+  type: 'test'
+  ...
+# Subtest: reject fake EAN
+ok 8 - reject fake EAN
+  ---
+  duration_ms: 0.885103
+  type: 'test'
+  ...
+# Subtest: reject invented typeplate code
+ok 9 - reject invented typeplate code
+  ---
+  duration_ms: 0.858893
+  type: 'test'
+  ...
+# Subtest: reject wrong country suffix
+ok 10 - reject wrong country suffix
+  ---
+  duration_ms: 1.271133
+  type: 'test'
+  ...
+# Subtest: reject robot introduced under accepted name
+ok 11 - reject robot introduced under accepted name
+  ---
+  duration_ms: 1.31548
+  type: 'test'
+  ...
+# Subtest: reject unreviewed exact source response
+ok 12 - reject unreviewed exact source response
+  ---
+  duration_ms: 1.032013
+  type: 'test'
+  ...
+# Subtest: reject silent candidate removal
+ok 13 - reject silent candidate removal
+  ---
+  duration_ms: 0.917912
+  type: 'test'
+  ...
+# Subtest: reject wrong baseline
+ok 14 - reject wrong baseline
+  ---
+  duration_ms: 0.528766
+  type: 'test'
+  ...
+# Subtest: deterministic clean import, idempotence, dry-run and --check do not mutate
+ok 15 - deterministic clean import, idempotence, dry-run and --check do not mutate
+  ---
+  duration_ms: 1188.666691
+  type: 'test'
+  ...
+# Subtest: unrelated source drift refuses the complete transaction
+ok 16 - unrelated source drift refuses the complete transaction
+  ---
+  duration_ms: 257.188181
+  type: 'test'
+  ...
+# Subtest: new generated module collision never overwrites
+ok 17 - new generated module collision never overwrites
+  ---
+  duration_ms: 276.603193
+  type: 'test'
+  ...
+# Subtest: partial import refuses mixed rows
+ok 18 - partial import refuses mixed rows
+  ---
+  duration_ms: 417.507188
+  type: 'test'
+  ...
+# Subtest: file, dangling and root ancestor symlinks refused
+ok 19 - file, dangling and root ancestor symlinks refused
+  ---
+  duration_ms: 312.692964
+  type: 'test'
+  ...
+# Subtest: exclusive lock, failure rollback and retry
+ok 20 - exclusive lock, failure rollback and retry
+  ---
+  duration_ms: 443.939783
+  type: 'test'
+  ...
+# Subtest: staging race refused before any source writes
+ok 21 - staging race refused before any source writes
+  ---
+  duration_ms: 272.527542
+  type: 'test'
+  ...
+# Subtest: all136 source guards pinned, no root/global/release output
+ok 22 - all136 source guards pinned, no root/global/release output
+  ---
+  duration_ms: 0.668826
+  type: 'test'
+  ...
+1..22
+# tests 22
+# suites 0
+# pass 22
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 3304.750812
+
+$ python3 <repository>/integrations/restore-source-checkpoint.py --target <temporary>/first/site
+{"restored": true, "version": "1.29.0", "source_files": 136, "target": "/tmp/uf-wave3-verify-5cxxoV/first/site"}
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node <temporary>/first/integrations/build-app.mjs
+App 1.29.0: 1901908 bytes; bundle written.
+Optional services: 3331 bytes; loaded on demand.
+Optional dyson catalog: 308106 bytes; loaded on demand.
+Optional aeg catalog: 725910 bytes; loaded on demand.
+Optional rowenta catalog: 502458 bytes; loaded on demand.
+Optional philips catalog: 352773 bytes; loaded on demand.
+Optional siemens catalog: 1234312 bytes; loaded on demand.
+Optional vorwerk catalog: 137692 bytes; loaded on demand.
+Optional samsung catalog: 192810 bytes; loaded on demand.
+Optional hoover catalog: 187679 bytes; loaded on demand.
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node <temporary>/first/integrations/build-app.mjs --check
+App 1.29.0: 1901908 bytes; reproducible artifact verified.
+Optional services: 3331 bytes; loaded on demand.
+Optional dyson catalog: 308106 bytes; loaded on demand.
+Optional aeg catalog: 725910 bytes; loaded on demand.
+Optional rowenta catalog: 502458 bytes; loaded on demand.
+Optional philips catalog: 352773 bytes; loaded on demand.
+Optional siemens catalog: 1234312 bytes; loaded on demand.
+Optional vorwerk catalog: 137692 bytes; loaded on demand.
+Optional samsung catalog: 192810 bytes; loaded on demand.
+Optional hoover catalog: 187679 bytes; loaded on demand.
+
+$ npm test --prefix <temporary>/first/site
+
+> universal-fitment-prototype@1.29.0 test
+> node tests/core.test.mjs && node tests/data.test.mjs && node tests/static.test.mjs && node tests/resolver.test.mjs && node tests/jobs.test.mjs && node tests/identifier.test.mjs && node tests/v16.test.mjs && node tests/miele-pilot.test.mjs && node tests/miele-models.test.mjs && node tests/miele-parts.test.mjs && node tests/commerce.test.mjs && node tests/marketplaces.test.mjs && node tests/handoff.test.mjs && node tests/pilot-client.test.mjs && node tests/local-data.test.mjs && node tests/backup.test.mjs && node tests/scanner-lifecycle.test.mjs && node tests/offline.test.mjs && node tests/pilot-readiness.test.mjs && node tests/scanner-ocr.test.mjs && node tests/typeplate.test.mjs && node tests/identity-boundaries.test.mjs && node tests/device-comparison.test.mjs && node tests/bosch-catalog.test.mjs && node tests/bosch-boundaries.test.mjs && node tests/bosch-workflow.test.mjs && node tests/services.test.mjs && node tests/photo-policy.test.mjs && node tests/catalog-expansion.test.mjs && node tests/catalog-goal.test.mjs && node tests/catalog-seven-brands.test.mjs && node tests/rowenta-expansion.test.mjs && node tests/philips-expansion.test.mjs && node tests/vorwerk-expansion.test.mjs && node tests/part-taxonomy.test.mjs && node tests/catalog-v126.test.mjs && node tests/bosch-models-next.test.mjs && node tests/model-parts-view.test.mjs && node tests/miele-models-wave2.test.mjs && node tests/dyson-models-wave2.test.mjs && node tests/model-gap-wave3.test.mjs
+
+All core tests passed.
+All demo data invariants passed.
+All static/PWA checks passed.
+All resolver checks passed.
+All job-kit / smart-stock checks passed.
+All identifier-classification checks passed.
+All current feature checks passed.
+All Miele pilot checks passed.
+Miele model checks passed: 84 models, 89 variants, exact identifier matching, compatible parts, filter combinations and OCR.
+Miele spare-parts checks passed: 167 unique parts, 109 vacuum spares, 10 supplier-linked alternatives, restricted fitment and honest installation coverage.
+Commerce checks passed: own-part sources, gross/currency/quantity handling, basket shipping thresholds, price age, unavailable parts and active installation estimates.
+Marketplace checks passed: 167 part searches, condition semantics, device boundaries, open-price cart notes, distinct sellers, mock isolation, price age, API failures and deadlines.
+Handoff checks passed: exact part links, search/reference distinction, quantities and copied list, separate merchants, source-price age, open totals, safe URLs and no cart transfer/payment/order side effects.
+Pilot client checks passed: guest gate, verified login, JWT request, API gates, listing validation, logout race and no auth caching. Synthetic requests only.
+Local-data checks passed: malformed records, memory fallback, bounded quantities, preferences, quote age/variant checks and flexible part-number search.
+Backup checks passed: schema round trip, exact device/part boundaries, canonical search links, forged/open/stale prices, schema 2 compatibility and no account credentials.
+Scanner lifecycle checks passed: playback failure, repeated stop, cancelled pending detection and bitmap cleanup. No camera or network used.
+Offline checks passed: versioned entry/CSS cached, old caches removed, offline navigation and Auth/API exclusion. Simulated network only.
+Pilot-readiness checks passed: guest health, typed access gates, expiry/logout, late-login SDK cleanup, unsupported responses and non-personal diagnostic report. Synthetic Auth only.
+Scanner/OCR cancellation, late worker cleanup, recognition failure and engine-download retry checks passed. Synthetic mocks only; no camera or network used.
+Type-plate checks passed: all 62 device variants, shared types, family fallback, foreign brands, serial exclusion, contradictory identifiers, part-only codes and bounded OCR text. Synthetic fixtures only.
+Identity boundary checks passed: typed lookup input, exact returned barcode, malformed responses, cancellation without fallbacks, bounded request/body and explanatory search labels. No external request made.
+Device comparison checks passed: all catalog variants, 2–4 distinct concrete devices, source facts, differences and explicit missing values; no inferred compatibility or price.
+Bosch catalog checks passed: 60 source-linked model references, 101 unique original articles, 2 narrow Swirl sources, manufacturer-list relationships, brand filters and explicit open indices.
+Bosch boundary checks passed: /xx parsing, all model references, brand conflicts, FD/serial exclusion, every captured part code, tiered shipping and unresolved cart/backup handoff.
+Bosch workflow checks passed: all Bosch model-reference indices, brand confirmation, conflicts, immediate invalidation, device-route isolation, discard/reload, part-copy membership, unchanged cart gate and brand-scoped filter choices.
+Service checks passed: all catalog devices, brand/category boundaries, local search, rental scope and optional pack.
+Photo checks passed: default list, detail, explicit loading, invalid preference and shared parts policy.
+Catalog expansion checks passed: 202 new references, 545 source articles, maker/category boundaries, PNC/SKU checks, lazy retry, stable backup objects and open fitment.
+Catalog goal checks passed: 272 grouped Rowenta references, 24 device price snapshots, all three budgets, variant review, source/cart boundaries, and ten-brand target gaps.
+Catalog brand checks passed: 140 Philips / 101 Siemens references, 814 named original articles, full-index boundaries, manuals/drawings, device budgets, unknown-stock price gates and stable handoff/backup.
+Rowenta expansion passed: country-reference fitment boundaries, article coverage, reference prices, separate seller shipping, readable external manuals, internal motor guidance and unpriced shop handoff.
+Philips expansion passed: all ten catalog brands, explicit /xx/R boundaries, separate battery series, actual recall model/code scope, five unknown-stock source prices, external illustrated filter care, stable backup and honest maker-list handoff.
+Vorwerk passed: 18 actual main devices, 105 manufacturer designations, 12 direct manuals, lazy/offline-ready hydration, separate accessory types, serial/brand boundaries, source-only prices, backup and shopping list. Ten brands retain 1,921 distinct articles.
+Part taxonomy passed: shared brand colors, purpose filters, named component boundaries, documents/devices excluded from the physical-part goal.
+Catalog 1.26 passed: ten active brands, eight physical-part targets, exact gaps before/after hydration, preserved article identities, accessory-only scope and Samsung/Hoover identity boundaries.
+Bosch next passed: 40 new bases, 100 unique models, 36 observed E-Nr. references, 6 open indices, 0 inferred parts, brand/serial/conflict boundaries, stable backup IDs and unchanged lazy loading.
+Model parts UI passed: German price ranges, unknown prices last, natural codes, relevance, status/tier/type filters, empty/unloaded/hydrated devices and immutable data.
+Miele wave2 passed: 25 historical code profiles, 84 model names / 89 rows; 167 unchanged articles; no invented EAN, variant, parts, quote or photo; index/detail, OCR, typeplate, backup and offline boundaries.
+Dyson wave2 passed: 38 new references, 60 legacy records and 191 articles unchanged; 185 physical parts, atomic lazy load, backup, filters, coverage, SKU separation and OCR boundaries.
+Wave3 app passed: 22 new manufacturer profiles,891/1000 target slots,1104 names/1115 rows; ALL1940 articles, all old models and fitment unchanged; regional/serial/typeplate/OCR/offline/backup boundaries, no invented variants or parts.
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+$ npm run check --prefix <temporary>/first/site
+
+> universal-fitment-prototype@1.29.0 check
+> node --check src/app.js && node --check src/core/feedback.js && node --check src/core/normalization.js && node --check src/core/matcher.js && node --check src/core/ranking.js && node --check src/core/storage.js && node --check src/core/scanner.js && node --check src/core/identifiers.js && node --check src/data/demo-products.js && node --check src/data/product-resolver.js && node --check src/data/verified-products.js && node --check src/data/coffee-support.js && node --check src/data/catalog.js && node --check src/data/miele-vacuum.js && node --check src/core/cart.js && node --check src/core/preferences.js && node --check src/core/vehicle.js && node --check src/data/faq.js && node --check src/data/job-guidance.js && node --check src/data/miele-models.js && node --check src/data/miele-model-records.js && node --check src/data/miele-parts.js && node --check src/data/miele-spare-records.js && node --check src/data/miele-aftermarket.js && node --check src/data/miele-guides.js && node --check src/data/miele-commerce.js && node --check src/data/miele-commerce-records.js && node --check src/data/miele-installation-times.js && node --check src/core/marketplaces.js && node --check src/core/handoff.js && node --check src/core/pilot-client.js && node --check src/core/local-state.js && node --check src/core/quantity.js && node --check src/core/backup.js && node --check src/core/pilot-readiness.js && node --check src/core/pilot-config.js && node --check src/core/typeplate.js && node --check src/core/device-comparison.js && node --check src/core/bosch-identity.js && node --check src/data/bosch-vacuum.js && node --check src/data/bosch-records.js && node --check src/core/bosch-context.js && node --check src/core/services.js && node --check src/core/photo-policy.js && node --check src/data/services.js && node --check src/core/catalog-loader.js && node --check src/core/brand-identity.js && node --check src/data/brand-products.js && node --check src/data/brand-index.js && node --check src/data/aeg-pack.js && node --check src/data/dyson-pack.js && node --check src/data/rowenta-pack.js && node --check src/data/catalog-plan.js && node --check src/data/philips-pack.js && node --check src/data/siemens-pack.js && node --check src/data/vorwerk-pack.js && node --check src/data/vorwerk-index.js && node --check src/data/part-taxonomy.js && node --check src/data/catalog-extensions.js && node --check src/data/rowenta-extra.js && node --check src/data/philips-extra.js && node --check src/data/vorwerk-extra.js && node --check src/data/bosch-extra.js && node --check src/data/new-brands-index.js && node --check src/data/samsung-pack.js && node --check src/data/hoover-pack.js && node --check src/data/hoover-fitment.js && node --check src/data/bosch-models-next.js && node --check src/core/model-parts-view.js && node --check src/data/miele-models-wave2.js && node --check src/data/dyson-models-wave2.js && node --check tests/dyson-models-wave2.test.mjs
+
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/app.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/backup.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/bosch-context.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/bosch-identity.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/brand-identity.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/cart.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/catalog-loader.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/device-comparison.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/feedback.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/handoff.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/identifiers.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/local-state.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/marketplaces.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/matcher.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/model-parts-view.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/normalization.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/photo-policy.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/pilot-client.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/pilot-config.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/pilot-readiness.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/preferences.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/quantity.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/ranking.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/scanner.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/services.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/storage.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/typeplate.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/core/vehicle.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/aeg-pack.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/bosch-extra.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/bosch-models-next.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/bosch-records.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/bosch-vacuum.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/brand-index.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/brand-products.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/catalog-extensions.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/catalog-plan.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/catalog.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/coffee-support.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/demo-products.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/dyson-models-wave2.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/dyson-pack.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/faq.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/hoover-fitment.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/hoover-pack.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/job-guidance.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/miele-aftermarket.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/miele-commerce-records.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/miele-commerce.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/miele-guides.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/miele-installation-times.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/miele-model-records.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/miele-models-wave2.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/miele-models.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/miele-parts.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/miele-spare-records.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/miele-vacuum.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/model-gap-wave3.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/new-brands-index.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/part-taxonomy.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/philips-extra.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/philips-pack.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/product-resolver.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/rowenta-extra.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/rowenta-pack.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/samsung-pack.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/services.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/siemens-pack.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/verified-products.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/vorwerk-extra.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/vorwerk-index.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/data/vorwerk-pack.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/src/vendor/supabase.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/sw.js
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/backup.test.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/bosch-boundaries.test.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/bosch-catalog.test.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/bosch-models-next.test.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/bosch-workflow.test.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/catalog-expansion.test.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/catalog-goal.test.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/catalog-seven-brands.test.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/catalog-v126.test.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/coffee-live.test.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/commerce.test.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/core.test.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/data.test.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/device-comparison.test.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/dyson-models-wave2.test.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/handoff.test.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/identifier.test.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/identity-boundaries.test.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/jobs.test.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/local-data.test.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/marketplaces.test.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/miele-models-wave2.test.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/miele-models.test.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/miele-parts.test.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/miele-pilot.test.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/model-gap-wave3.test.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/model-parts-view.test.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/offline.test.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/part-taxonomy.test.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/philips-expansion.test.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/photo-policy.test.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/pilot-client.test.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/pilot-readiness.test.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/resolver.test.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/rowenta-expansion.test.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/scanner-lifecycle.test.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/scanner-ocr.test.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/services.test.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/static.test.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/typeplate.test.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/v16.test.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/verified-data.test.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check <temporary>/first/site/tests/vorwerk-expansion.test.mjs
+
+$ python3 <repository>/integrations/restore-source-checkpoint.py --target <temporary>/second/site
+{"restored": true, "version": "1.29.0", "source_files": 136, "target": "/tmp/uf-wave3-verify-5cxxoV/second/site"}
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node <temporary>/second/integrations/build-app.mjs
+App 1.29.0: 1901908 bytes; bundle written.
+Optional services: 3331 bytes; loaded on demand.
+Optional dyson catalog: 308106 bytes; loaded on demand.
+Optional aeg catalog: 725910 bytes; loaded on demand.
+Optional rowenta catalog: 502458 bytes; loaded on demand.
+Optional philips catalog: 352773 bytes; loaded on demand.
+Optional siemens catalog: 1234312 bytes; loaded on demand.
+Optional vorwerk catalog: 137692 bytes; loaded on demand.
+Optional samsung catalog: 192810 bytes; loaded on demand.
+Optional hoover catalog: 187679 bytes; loaded on demand.
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node <temporary>/second/integrations/build-app.mjs --check
+App 1.29.0: 1901908 bytes; reproducible artifact verified.
+Optional services: 3331 bytes; loaded on demand.
+Optional dyson catalog: 308106 bytes; loaded on demand.
+Optional aeg catalog: 725910 bytes; loaded on demand.
+Optional rowenta catalog: 502458 bytes; loaded on demand.
+Optional philips catalog: 352773 bytes; loaded on demand.
+Optional siemens catalog: 1234312 bytes; loaded on demand.
+Optional vorwerk catalog: 137692 bytes; loaded on demand.
+Optional samsung catalog: 192810 bytes; loaded on demand.
+Optional hoover catalog: 187679 bytes; loaded on demand.
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node integrations/model-gap-wave3-patch.mjs --target <temporary>/first/site --output <temporary>/model-gap-wave3-local.patch
+{
+  "issue": 37,
+  "patchSha256": "e6722a5474f700f3ba89f869f4e7ca30fca69ee9a16698baf42b16b82259cf79",
+  "patchBytes": 286939,
+  "changedSourceFiles": [
+    {
+      "path": "site/src/data/model-gap-wave3.js",
+      "beforeSha256": null,
+      "afterSha256": "5dc4283ec00444b12e3081585d88f3a928cd1c94ef8d6ad12af3c8127892d4df"
+    },
+    {
+      "path": "site/src/data/miele-models.js",
+      "beforeSha256": "60c427c552a637e640ea9ee00f38bcd07d6f94cec0507c383eb869905cacfe98",
+      "afterSha256": "77a46c2b304a0916a8bfaed2358705a249f9404ceae2e47f504e7914e73aa5d2"
+    },
+    {
+      "path": "site/src/data/dyson-pack.js",
+      "beforeSha256": "41bd2f116ca568ec9e4cb48acef343fb3c9f3fa94277e5d76c4c81432058d1f6",
+      "afterSha256": "7dcf11f593d7b4da92243130489ea613427e50f9cb7f6aae9cd64eda323fefbd"
+    },
+    {
+      "path": "site/src/data/samsung-pack.js",
+      "beforeSha256": "b98ed6a953dfd39b64b93d96ce3f02602a309aa9946304ccc58c560f692ac2df",
+      "afterSha256": "b56c9e397730786ee9b1aa4339e8d8d0fb7ed29379828b799f66c65131940f1a"
+    },
+    {
+      "path": "site/src/data/vorwerk-pack.js",
+      "beforeSha256": "c81171f5a1bcc5a308bb514cdbb1f6a0743386235ff8016b14203c4dc30d5d90",
+      "afterSha256": "27d13d723139cdaa63456d5c8e1ddad28d3eb35733d916cae37e6e1eea2f2698"
+    },
+    {
+      "path": "site/src/data/brand-index.js",
+      "beforeSha256": "b9dfa4b0dee8f2a2343506190a6606ad9569be0d2336e82e192e3c246781bcf7",
+      "afterSha256": "e51a5fb3cf5cddafd2ae28ce2e81e84b2f1163281e560fa16225cf9188cfb844"
+    },
+    {
+      "path": "site/src/core/typeplate.js",
+      "beforeSha256": "005d89be60aa1c6f4483f240d08341a12d9cf91dc5ff33d6ac4ad17e24322339",
+      "afterSha256": "1b6a7d9f709333c540667e631a2d4f193fa041550cf0315390482c09e76311d0"
+    },
+    {
+      "path": "site/tests/catalog-seven-brands.test.mjs",
+      "beforeSha256": "42723eec5de90a0ffc60e9b29ac8dcaabd6741cbaee8f34b3952c2c00451aea0",
+      "afterSha256": "a9065470e005b4de6d36fc1bb29109e866af0fe0dd9c09d3d7b9dd3bcbdaa48a"
+    },
+    {
+      "path": "site/tests/catalog-v126.test.mjs",
+      "beforeSha256": "5d112d14b98c13847a473ed62c779d05285143feb1386ec5b97c560f79ac759b",
+      "afterSha256": "75f04379f936c751e7960617981fcdc51723693458ca11fca865608903a7b197"
+    },
+    {
+      "path": "site/tests/philips-expansion.test.mjs",
+      "beforeSha256": "1c47db953019ef75d433ec81891a0f411644e9c62f726d86f797df6f47a8f2a9",
+      "afterSha256": "650c349aa8cfcb7eb49ae1762ba3face18081e6fb6ed27dda263ce8b5c39c24e"
+    },
+    {
+      "path": "site/tests/bosch-catalog.test.mjs",
+      "beforeSha256": "513ffa614c1357a0aee82523aec726bf010b16a775497ef11e03ce04a35c73b1",
+      "afterSha256": "b5a8ca39ab7578fe30de9fb265424ea9927c9d01b53adedf26b4c07adb988a4e"
+    },
+    {
+      "path": "site/tests/vorwerk-expansion.test.mjs",
+      "beforeSha256": "175d832d251edbd9b8c4bed1805a743f5997afbb3f5412e74de878fbae5dcfb1",
+      "afterSha256": "8cc3646b7a09a59a1189cae368c21df8533d44edf4eca8ff437ecdb111e6c9ed"
+    },
+    {
+      "path": "site/tests/miele-models-wave2.test.mjs",
+      "beforeSha256": "45ebb0dfb2f6da1159ce2581c571cc4629a6aa32d518a35f693fdbd6cb5cc83b",
+      "afterSha256": "feaa74401f8ac44d86569dd7d7f3b2012a9c2fc7d12dc49b93bb66198a1ad99e"
+    },
+    {
+      "path": "site/tests/dyson-models-wave2.test.mjs",
+      "beforeSha256": "a56438eb57de4461faa3c737ebd32626cea2907d10805552cb08fdc165204f05",
+      "afterSha256": "63eb8ca5bd7c49eb28d75e7a24a72fd00deb5fc6d3f5799bacd1072ce4c9c3ba"
+    },
+    {
+      "path": "site/tests/catalog-expansion.test.mjs",
+      "beforeSha256": "81bf27244181b3317ddc6add3419fb13dd3643bd856f610b7b09631c5e336373",
+      "afterSha256": "e4d572ef364aee7b979706b19bea0966006406cc9eb750e648906ddecdb8f288"
+    },
+    {
+      "path": "site/tests/model-gap-wave3.test.mjs",
+      "beforeSha256": null,
+      "afterSha256": "f052c3d03b13938ef9cc40f5613f6c18f138fb728d1fd0ac5284d7721a805b91"
+    },
+    {
+      "path": "site/package.json",
+      "beforeSha256": "acc86040e626bcff63e13ef45ff56c135f1ec909a2ca997f7894daf052bb9404",
+      "afterSha256": "cd85ea4abc5ad18a0c42bee80c5df0060e62abeee2a56b9fe18407287f90dd24"
+    }
+  ],
+  "notCommitted": true
+}
+
+$ python3 <repository>/integrations/restore-source-checkpoint.py --target <temporary>/patch-check/site
+{"restored": true, "version": "1.29.0", "source_files": 136, "target": "/tmp/uf-wave3-verify-5cxxoV/patch-check/site"}
+
+$ git apply --check <temporary>/model-gap-wave3-local.patch
+
+$ git apply <temporary>/model-gap-wave3-local.patch
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check integrations/import-model-gap-wave3-catalog.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check integrations/import-model-gap-wave3-sources.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check integrations/import-model-gap-wave3-catalog.test.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check integrations/model-gap-wave3-app-test.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check integrations/model-gap-wave3-verify.mjs
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node --check integrations/model-gap-wave3-patch.mjs

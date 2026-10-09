@@ -1,0 +1,1208 @@
+{
+  "schemaVersion": 1,
+  "issue": 39,
+  "branch": "work/catalog-media-wave3",
+  "baseCommit": "d4853c4e5245410630742f58aead661d77f42c32",
+  "version": "1.29.0",
+  "checkedAt": "2026-10-08",
+  "policy": {
+    "automaticDownloads": "Only the reviewed CC0 DC19 image was downloaded after licence and identity checks. No image body from other candidates was fetched.",
+    "gate": "Both image-specific rights and exact entity/identifier binding must be reviewed; unsupported/unknown rights never become approved.",
+    "commercialPurpose": "Commercial catalogue use and redistribution required; editorial-only permission is insufficient.",
+    "batches": "First batch: one model and one original-article source per brand; three ambiguous Vorwerk Commons candidates and one cleared Dyson Commons image."
+  },
+  "rightsSources": [
+    {
+      "url": "https://www.dyson.de/einblicke-in-dyson/bedingungen/agb",
+      "section": "14 Urheberrechte",
+      "conclusion": "Manufacturer-hosted Dyson images require explicit permission; none supplied for this project."
+    },
+    {
+      "url": "https://www.philips.de/a-w/nutzungsbedingungen.html",
+      "section": "9/10 copyright and website intellectual property",
+      "conclusion": "No image-specific commercial redistribution grant established for Philips/Versuni assets."
+    },
+    {
+      "url": "https://commons.wikimedia.org/w/index.php?title=File:Dyson_DC19_vacuum_cleaner.jpg&oldid=1054412410",
+      "section": "Licensing and author upload record",
+      "conclusion": "CC0 image-specific grant reviewed for DC19."
+    },
+    {
+      "url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "section": "CC0 deed",
+      "conclusion": "Copyright waiver permits commercial copying; trademark and endorsement implications remain separate."
+    }
+  ],
+  "summary": {
+    "candidates": 24,
+    "approved": 1,
+    "pending": 23,
+    "approvedModels": 1,
+    "approvedParts": 0,
+    "manufacturerImageRightsCleared": 0,
+    "legacyManufacturerUrlsUnapproved": 1211
+  },
+  "candidates": [
+    {
+      "mediaId": "candidate-vac-miele-model-12560300",
+      "kind": "model",
+      "entityId": "vac-miele-model-12560300",
+      "brand": "Miele",
+      "model": "Guard M1 Cat & Dog",
+      "articleName": null,
+      "binding": [
+        {
+          "type": "material-number",
+          "value": "12560300"
+        },
+        {
+          "type": "ean",
+          "value": "4002516795247"
+        },
+        {
+          "type": "product-type",
+          "value": "SVZF0"
+        }
+      ],
+      "manufacturerSourceUrl": "https://www.miele.de/product/12560300/bodenstaubsauger-mit-beutel-guard-m1-cat-und-dog-obsidianschwarz",
+      "sourcePageUrl": "https://www.miele.de/product/12560300/bodenstaubsauger-mit-beutel-guard-m1-cat-und-dog-obsidianschwarz",
+      "originalUrl": "https://media.miele.com/dam/adad04b2-7a81-474b-9d59-b3bb006f8852/20000214225_HighresDigitalRGB.png",
+      "checkedAt": "2026-10-08",
+      "region": "DE catalogue source; exact image region unverified",
+      "identityConfidence": "catalogue-only pending image review",
+      "imageIdentityVerified": false,
+      "rights": {
+        "status": "not_documented",
+        "license": null,
+        "licenseUrl": null,
+        "commercialUse": false,
+        "redistribution": false,
+        "attribution": null,
+        "evidenceUrl": null
+      },
+      "approval": "pending",
+      "decisionReason": "No image-specific publication/hotlink/rehost grant documented. Public source availability and source-linked provenance are not permission.",
+      "width": null,
+      "height": null,
+      "alt": null,
+      "pageProbe": {
+        "url": "https://www.miele.de/product/12560300/bodenstaubsauger-mit-beutel-guard-m1-cat-und-dog-obsidianschwarz",
+        "method": "GET HTML metadata only",
+        "status": 200,
+        "title": "Miele - Guard M1 Cat & Dog Obsidianschwarz – Staubsauger",
+        "pageSha256": "cfe0862c77416e0a355d6f363ae6c9185b836d1638b63cca8709a8a834163abd",
+        "observedImageUrl": null,
+        "bodyIsImage": false
+      },
+      "imageBytesDownloaded": 0
+    },
+    {
+      "mediaId": "candidate-miele-part-10132491",
+      "kind": "part",
+      "entityId": "miele-part-10132491",
+      "brand": "Miele",
+      "model": null,
+      "articleName": "Miele Filterrahmen Zyklonabscheider",
+      "binding": [
+        {
+          "type": "material-number",
+          "value": "10132491"
+        },
+        {
+          "type": "ean",
+          "value": "4002515804605"
+        }
+      ],
+      "manufacturerSourceUrl": "https://www.miele.de/product/10132491/filterrahmen-zyklonabscheider-filterrahmen-zyklonabscheider",
+      "sourcePageUrl": "https://www.miele.de/product/10132491/filterrahmen-zyklonabscheider-filterrahmen-zyklonabscheider",
+      "originalUrl": "https://media.miele.com/dam/56141afe-d424-47cf-b33f-b3ba01863440/20000201913_HighresDigitalRGB.png",
+      "checkedAt": "2026-10-08",
+      "region": "DE catalogue source; exact image region unverified",
+      "identityConfidence": "catalogue-only pending image review",
+      "imageIdentityVerified": false,
+      "rights": {
+        "status": "not_documented",
+        "license": null,
+        "licenseUrl": null,
+        "commercialUse": false,
+        "redistribution": false,
+        "attribution": null,
+        "evidenceUrl": null
+      },
+      "approval": "pending",
+      "decisionReason": "No image-specific publication/hotlink/rehost grant documented. Public source availability and source-linked provenance are not permission.",
+      "width": null,
+      "height": null,
+      "alt": null,
+      "pageProbe": {
+        "url": "https://www.miele.de/product/10132491/filterrahmen-zyklonabscheider-filterrahmen-zyklonabscheider",
+        "method": "GET HTML metadata only",
+        "status": 200,
+        "title": "Miele - Filterrahmen Zyklonabscheider – Ersatzteile Staubsauger",
+        "pageSha256": "083db899e5e0ae5cc84fe1812f8d121843c382dc7c8c9430b07cc39e0c656f2f",
+        "observedImageUrl": null,
+        "bodyIsImage": false
+      },
+      "imageBytesDownloaded": 0
+    },
+    {
+      "mediaId": "candidate-vac-bosch-model-bbs611bsc",
+      "kind": "model",
+      "entityId": "vac-bosch-model-bbs611bsc",
+      "brand": "Bosch",
+      "model": "BBS611BSC",
+      "articleName": null,
+      "binding": [
+        {
+          "type": "manufacturer-model",
+          "value": "BBS611BSC"
+        },
+        {
+          "type": "ean",
+          "value": "4242005260379"
+        }
+      ],
+      "manufacturerSourceUrl": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-6/BBS611BSC",
+      "sourcePageUrl": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-6/BBS611BSC",
+      "originalUrl": "https://media3.bsh-group.com/Product_Shots/22059597_BSH-EN-BO_HC_T17_BBS611BSC_General_Website_SecImg-01_plain_3200x1800_def.webp",
+      "checkedAt": "2026-10-08",
+      "region": "DE catalogue source; exact image region unverified",
+      "identityConfidence": "catalogue-only pending image review",
+      "imageIdentityVerified": false,
+      "rights": {
+        "status": "not_documented",
+        "license": null,
+        "licenseUrl": null,
+        "commercialUse": false,
+        "redistribution": false,
+        "attribution": null,
+        "evidenceUrl": null
+      },
+      "approval": "pending",
+      "decisionReason": "No image-specific publication/hotlink/rehost grant documented. Public source availability and source-linked provenance are not permission.",
+      "width": null,
+      "height": null,
+      "alt": null,
+      "pageProbe": {
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/unlimited/unlimited-6/BBS611BSC",
+        "method": "GET HTML metadata only",
+        "status": 200,
+        "title": "BBS611BSC Akku-Staubsauger | Bosch Hausgeräte DE",
+        "pageSha256": "4b89eca6f1cc3b9b274ecc3df151e31a2f5ea9339138f304ecdb449cb3d00856",
+        "observedImageUrl": "https://media3.bsh-group.com/Product_Shots/22059597_BSH-EN-BO_HC_T17_BBS611BSC_General_Website_SecImg-01_plain_3200x1800_def.webp",
+        "bodyIsImage": false
+      },
+      "imageBytesDownloaded": 0
+    },
+    {
+      "mediaId": "candidate-bosch-part-00460431",
+      "kind": "part",
+      "entityId": "bosch-part-00460431",
+      "brand": "Bosch",
+      "model": null,
+      "articleName": "Bosch Polsterdüse Turbobürste für Polster",
+      "binding": [
+        {
+          "type": "material-number",
+          "value": "00460431"
+        },
+        {
+          "type": "manufacturer-article",
+          "value": "00460431"
+        }
+      ],
+      "manufacturerSourceUrl": "https://www.bosch-home.com/de/de/product/staubsauger/zubehoer-staubsauger/buersten-duesen/polsterduesen/00460431",
+      "sourcePageUrl": "https://www.bosch-home.com/de/de/product/staubsauger/zubehoer-staubsauger/buersten-duesen/polsterduesen/00460431",
+      "originalUrl": "https://media3.bsh-group.com/Product_Shots/MCSA01868113_00460431_def.webp",
+      "checkedAt": "2026-10-08",
+      "region": "DE catalogue source; exact image region unverified",
+      "identityConfidence": "catalogue-only pending image review",
+      "imageIdentityVerified": false,
+      "rights": {
+        "status": "not_documented",
+        "license": null,
+        "licenseUrl": null,
+        "commercialUse": false,
+        "redistribution": false,
+        "attribution": null,
+        "evidenceUrl": null
+      },
+      "approval": "pending",
+      "decisionReason": "No image-specific publication/hotlink/rehost grant documented. Public source availability and source-linked provenance are not permission.",
+      "width": null,
+      "height": null,
+      "alt": null,
+      "pageProbe": {
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/zubehoer-staubsauger/buersten-duesen/polsterduesen/00460431",
+        "method": "GET HTML metadata only",
+        "status": 200,
+        "title": "00460431 Polsterdüse | Bosch Hausgeräte DE",
+        "pageSha256": "dbf4ff017c5eefe4ef1af6d1ee2f131ed1c4c9182cbfce973377cd864c484294",
+        "observedImageUrl": "https://media3.bsh-group.com/Product_Shots/MCSA01868113_00460431_def.webp",
+        "bodyIsImage": false
+      },
+      "imageBytesDownloaded": 0
+    },
+    {
+      "mediaId": "candidate-vac-dyson-model-369535-01",
+      "kind": "model",
+      "entityId": "vac-dyson-model-369535-01",
+      "brand": "Dyson",
+      "model": "V15 Detect Absolute",
+      "articleName": null,
+      "binding": [
+        {
+          "type": "manufacturer-model",
+          "value": "V15 Detect Absolute"
+        },
+        {
+          "type": "device-sku",
+          "value": "369535-01"
+        }
+      ],
+      "manufacturerSourceUrl": "https://www.dyson.de/support/journey/replacement-parts/search.369535-01",
+      "sourcePageUrl": "https://www.dyson.de/support/journey/replacement-parts/search.369535-01",
+      "originalUrl": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/primary-locale/de_DE/369535-01.png?$responsive$",
+      "checkedAt": "2026-10-08",
+      "region": "DE catalogue source; exact image region unverified",
+      "identityConfidence": "catalogue-only pending image review",
+      "imageIdentityVerified": false,
+      "rights": {
+        "status": "not_documented",
+        "license": null,
+        "licenseUrl": null,
+        "commercialUse": false,
+        "redistribution": false,
+        "attribution": null,
+        "evidenceUrl": null
+      },
+      "approval": "pending",
+      "decisionReason": "No image-specific publication/hotlink/rehost grant documented. Public source availability and source-linked provenance are not permission.",
+      "width": null,
+      "height": null,
+      "alt": null,
+      "pageProbe": {
+        "url": "https://www.dyson.de/support/journey/replacement-parts/search.369535-01",
+        "method": "GET HTML metadata only",
+        "status": 200,
+        "title": "Dyson V15 Detect Absolute | Ersatzteile und Zubehör | Dyson Dyson",
+        "pageSha256": "18330bdd6735d52b275dfd87c66a783d3139bf8d919c4f1dcce6057f6d24f03d",
+        "observedImageUrl": null,
+        "bodyIsImage": false
+      },
+      "imageBytesDownloaded": 0
+    },
+    {
+      "mediaId": "candidate-dyson-part-965633-01",
+      "kind": "part",
+      "entityId": "dyson-part-965633-01",
+      "brand": "Dyson",
+      "model": null,
+      "articleName": "Dyson Bürstenleiste",
+      "binding": [
+        {
+          "type": "manufacturer-article",
+          "value": "965633-01"
+        }
+      ],
+      "manufacturerSourceUrl": "https://www.dyson.de/support/journey/spare-details.965633-01.492963-01",
+      "sourcePageUrl": "https://www.dyson.de/support/journey/spare-details.965633-01.492963-01",
+      "originalUrl": "https://dyson-h.assetsadobe2.com/is/image/content/dam/dyson/images/products/spareslisting/965633-01.png?$responsive$",
+      "checkedAt": "2026-10-08",
+      "region": "DE catalogue source; exact image region unverified",
+      "identityConfidence": "catalogue-only pending image review",
+      "imageIdentityVerified": false,
+      "rights": {
+        "status": "not_documented",
+        "license": null,
+        "licenseUrl": null,
+        "commercialUse": false,
+        "redistribution": false,
+        "attribution": null,
+        "evidenceUrl": null
+      },
+      "approval": "pending",
+      "decisionReason": "No image-specific publication/hotlink/rehost grant documented. Public source availability and source-linked provenance are not permission.",
+      "width": null,
+      "height": null,
+      "alt": null,
+      "pageProbe": {
+        "url": "https://www.dyson.de/support/journey/spare-details.965633-01.492963-01",
+        "method": "GET HTML metadata only",
+        "status": 200,
+        "title": "Bürstenleiste 965633-01 | Dyson Dyson.de",
+        "pageSha256": "1008b58e15d8917ce5b9cabcfd3eb66a42095010033dfe8c9b7beb90daedf73f",
+        "observedImageUrl": null,
+        "bodyIsImage": false
+      },
+      "imageBytesDownloaded": 0
+    },
+    {
+      "mediaId": "candidate-vac-aeg-model-al61a4ug",
+      "kind": "model",
+      "entityId": "vac-aeg-model-al61a4ug",
+      "brand": "AEG",
+      "model": "AL61A4UG",
+      "articleName": null,
+      "binding": [
+        {
+          "type": "manufacturer-model",
+          "value": "AL61A4UG"
+        },
+        {
+          "type": "pnc",
+          "value": "90025855700"
+        },
+        {
+          "type": "pnc",
+          "value": "90025856400"
+        }
+      ],
+      "manufacturerSourceUrl": "https://shop.aeg.de/model/m/AL61A4UG",
+      "sourcePageUrl": "https://shop.aeg.de/model/m/AL61A4UG",
+      "originalUrl": "https://shop.aeg.de/assets/WebShopHeroImage.webp",
+      "checkedAt": "2026-10-08",
+      "region": "DE catalogue source; exact image region unverified",
+      "identityConfidence": "catalogue-only pending image review",
+      "imageIdentityVerified": false,
+      "rights": {
+        "status": "not_documented",
+        "license": null,
+        "licenseUrl": null,
+        "commercialUse": false,
+        "redistribution": false,
+        "attribution": null,
+        "evidenceUrl": null
+      },
+      "approval": "pending",
+      "decisionReason": "No image-specific publication/hotlink/rehost grant documented. Public source availability and source-linked provenance are not permission.",
+      "width": null,
+      "height": null,
+      "alt": null,
+      "pageProbe": {
+        "url": "https://shop.aeg.de/model/m/AL61A4UG",
+        "method": "GET HTML metadata only",
+        "status": 200,
+        "title": "Modell AL61A4UG – Ersatzteile & Zubehör - AEG",
+        "pageSha256": "a827e93ad680aa45c951485934050260ab39368d0811b16cfe3cc3bbcc278c95",
+        "observedImageUrl": "https://shop.aeg.de/assets/WebShopHeroImage.webp",
+        "bodyIsImage": false
+      },
+      "imageBytesDownloaded": 0
+    },
+    {
+      "mediaId": "candidate-aeg-part-9001677690",
+      "kind": "part",
+      "entityId": "aeg-part-9001677690",
+      "brand": "AEG",
+      "model": null,
+      "articleName": "AEG AFS1W Allergy Plus® s-filter® waschbar für Air Max, UltraSilencer",
+      "binding": [
+        {
+          "type": "manufacturer-article",
+          "value": "9001677690"
+        },
+        {
+          "type": "supplier-model",
+          "value": "AFS1W"
+        }
+      ],
+      "manufacturerSourceUrl": "https://shop.aeg.de/raumpflege/staubsauger/filter/afs1w-allergy-plus-s-filter-waschbar-fur-air-max-ultrasilencer/p/9001677690",
+      "sourcePageUrl": "https://shop.aeg.de/raumpflege/staubsauger/filter/afs1w-allergy-plus-s-filter-waschbar-fur-air-max-ultrasilencer/p/9001677690",
+      "originalUrl": "https://electrolux.bynder.com/transform/PR/53245fe0-ffb8-4441-bafa-272addbb4118/2017283007-jpg",
+      "checkedAt": "2026-10-08",
+      "region": "DE catalogue source; exact image region unverified",
+      "identityConfidence": "catalogue-only pending image review",
+      "imageIdentityVerified": false,
+      "rights": {
+        "status": "not_documented",
+        "license": null,
+        "licenseUrl": null,
+        "commercialUse": false,
+        "redistribution": false,
+        "attribution": null,
+        "evidenceUrl": null
+      },
+      "approval": "pending",
+      "decisionReason": "No image-specific publication/hotlink/rehost grant documented. Public source availability and source-linked provenance are not permission.",
+      "width": null,
+      "height": null,
+      "alt": null,
+      "pageProbe": {
+        "url": "https://shop.aeg.de/raumpflege/staubsauger/filter/afs1w-allergy-plus-s-filter-waschbar-fur-air-max-ultrasilencer/p/9001677690",
+        "method": "GET HTML metadata only",
+        "status": 200,
+        "title": "AFS1W Allergy Plus® s-filter® waschbar für Air Max, UltraSilencer für Staubsauger - 9001677690 AEG",
+        "pageSha256": "1d6ccf1b80f18c3df472b615afef3cedb7d9cc7535bd0c8971d7c62247dee12b",
+        "observedImageUrl": "https://electrolux.bynder.com/transform/PR/53245fe0-ffb8-4441-bafa-272addbb4118/2017283007-jpg",
+        "bodyIsImage": false
+      },
+      "imageBytesDownloaded": 0
+    },
+    {
+      "mediaId": "candidate-vac-rowenta-model-ro2913",
+      "kind": "model",
+      "entityId": "vac-rowenta-model-ro2913",
+      "brand": "Rowenta",
+      "model": "Swift Power Cyclonic · RO2913",
+      "articleName": null,
+      "binding": [
+        {
+          "type": "manufacturer-model",
+          "value": "Swift Power Cyclonic · RO2913"
+        },
+        {
+          "type": "manufacturer-model",
+          "value": "RO2913"
+        },
+        {
+          "type": "manufacturer-model",
+          "value": "RO2913EA"
+        },
+        {
+          "type": "manufacturer-model",
+          "value": "RO2913EA/AM0"
+        }
+      ],
+      "manufacturerSourceUrl": "https://www.rowenta.de/Zubeh%C3%B6r-Shop/Staubsauger/Staubsauger-ohne-Beutel/csc/Bagless_Vacuum",
+      "sourcePageUrl": "https://www.rowenta.de/Zubeh%C3%B6r-Shop/Staubsauger/Staubsauger-ohne-Beutel/csc/Bagless_Vacuum",
+      "originalUrl": null,
+      "checkedAt": "2026-10-08",
+      "region": "DE catalogue source; exact image region unverified",
+      "identityConfidence": "catalogue-only pending image review",
+      "imageIdentityVerified": false,
+      "rights": {
+        "status": "not_documented",
+        "license": null,
+        "licenseUrl": null,
+        "commercialUse": false,
+        "redistribution": false,
+        "attribution": null,
+        "evidenceUrl": null
+      },
+      "approval": "pending",
+      "decisionReason": "No image-specific publication/hotlink/rehost grant documented. Public source availability and source-linked provenance are not permission.",
+      "width": null,
+      "height": null,
+      "alt": null,
+      "pageProbe": {
+        "url": "https://www.rowenta.de/Zubeh%C3%B6r-Shop/Staubsauger/Staubsauger-ohne-Beutel/csc/Bagless_Vacuum",
+        "method": "GET HTML metadata only",
+        "status": 200,
+        "title": "Ersatzteile & Zubehör Onlineshop für Staubsauger ohne Beutel  | Rowenta",
+        "pageSha256": "a2403c08ae5547cf9b0645cf41ddab71c8c7abf82df0a1402e2729df4505c8c1",
+        "observedImageUrl": null,
+        "bodyIsImage": false
+      },
+      "imageBytesDownloaded": 0
+    },
+    {
+      "mediaId": "candidate-rowenta-part-rs-2230001440",
+      "kind": "part",
+      "entityId": "rowenta-part-rs-2230001440",
+      "brand": "Rowenta",
+      "model": null,
+      "articleName": "Rowenta Schlauch RS-2230001440",
+      "binding": [
+        {
+          "type": "manufacturer-article",
+          "value": "RS-2230001440"
+        }
+      ],
+      "manufacturerSourceUrl": "https://www.rowenta.de/Zubeh%C3%B6r-Shop/schlauch-rs-2230001440/a/2230001440",
+      "sourcePageUrl": "https://www.rowenta.de/Zubeh%C3%B6r-Shop/schlauch-rs-2230001440/a/2230001440",
+      "originalUrl": null,
+      "checkedAt": "2026-10-08",
+      "region": "DE catalogue source; exact image region unverified",
+      "identityConfidence": "catalogue-only pending image review",
+      "imageIdentityVerified": false,
+      "rights": {
+        "status": "not_documented",
+        "license": null,
+        "licenseUrl": null,
+        "commercialUse": false,
+        "redistribution": false,
+        "attribution": null,
+        "evidenceUrl": null
+      },
+      "approval": "pending",
+      "decisionReason": "No image-specific publication/hotlink/rehost grant documented. Public source availability and source-linked provenance are not permission.",
+      "width": null,
+      "height": null,
+      "alt": null,
+      "pageProbe": {
+        "url": "https://www.rowenta.de/Zubeh%C3%B6r-Shop/schlauch-rs-2230001440/a/2230001440",
+        "method": "GET HTML metadata only",
+        "status": 200,
+        "title": "Schlauch RS-2230001440 | Rowenta",
+        "pageSha256": "1d4cd38d1151deb0ca156ae3ff09ab29d08d0ba7dd57e3b91d5157a0711c523a",
+        "observedImageUrl": null,
+        "bodyIsImage": false
+      },
+      "imageBytesDownloaded": 0
+    },
+    {
+      "mediaId": "candidate-vac-philips-model-fc8244",
+      "kind": "model",
+      "entityId": "vac-philips-model-fc8244",
+      "brand": "Philips",
+      "model": "FC8244",
+      "articleName": null,
+      "binding": [
+        {
+          "type": "manufacturer-model",
+          "value": "FC8244"
+        },
+        {
+          "type": "manufacturer-model",
+          "value": "FC8244/09"
+        },
+        {
+          "type": "manufacturer-model",
+          "value": "FC8244/09R1"
+        }
+      ],
+      "manufacturerSourceUrl": "https://www.home.id/de-DE/FC8244",
+      "sourcePageUrl": "https://www.home.id/de-DE/FC8244",
+      "originalUrl": "https://dam.versuni.com/transform/png1024x1024/bf93cf7d-3280-4f72-9b34-0447ca925c9d/Standard-Product-Photo-Philips-2000-Series-Bagged-vacuum-cleaner-FC8244_09",
+      "checkedAt": "2026-10-08",
+      "region": "DE catalogue source; exact image region unverified",
+      "identityConfidence": "catalogue-only pending image review",
+      "imageIdentityVerified": false,
+      "rights": {
+        "status": "not_documented",
+        "license": null,
+        "licenseUrl": null,
+        "commercialUse": false,
+        "redistribution": false,
+        "attribution": null,
+        "evidenceUrl": null
+      },
+      "approval": "pending",
+      "decisionReason": "No image-specific publication/hotlink/rehost grant documented. Public source availability and source-linked provenance are not permission.",
+      "width": null,
+      "height": null,
+      "alt": null,
+      "pageProbe": {
+        "url": "https://www.home.id/de-DE/FC8244",
+        "method": "GET HTML metadata only",
+        "status": 200,
+        "title": "2000 Series Staubsauger mit Beutel FC8244 Unterstützung | Home.ID",
+        "pageSha256": "e373ef795cc7a167fb3f5641b12cb3f8c768363ebd87b503bdceab2eb902ae68",
+        "observedImageUrl": null,
+        "bodyIsImage": false
+      },
+      "imageBytesDownloaded": 0
+    },
+    {
+      "mediaId": "candidate-philips-part-cp0128_2F01",
+      "kind": "part",
+      "entityId": "philips-part-cp0128_2F01",
+      "brand": "Philips",
+      "model": null,
+      "articleName": "Philips Mikrofaser-Polierpad · Super-Parkettbürste",
+      "binding": [
+        {
+          "type": "manufacturer-article",
+          "value": "CP0128/01"
+        }
+      ],
+      "manufacturerSourceUrl": "https://www.philips.de/c-p/FC9190_01/performerpro-staubsauger-mit-beutel-und-triactive-plus-duese",
+      "sourcePageUrl": "https://www.philips.de/c-p/FC9190_01/performerpro-staubsauger-mit-beutel-und-triactive-plus-duese",
+      "originalUrl": "https://images.philips.com/is/image/philipsconsumer/vrs_d6893564_3ffe_4893_adf369a47041f5ce?$png$&wid=1200&hei=630",
+      "checkedAt": "2026-10-08",
+      "region": "DE catalogue source; exact image region unverified",
+      "identityConfidence": "catalogue-only pending image review",
+      "imageIdentityVerified": false,
+      "rights": {
+        "status": "not_documented",
+        "license": null,
+        "licenseUrl": null,
+        "commercialUse": false,
+        "redistribution": false,
+        "attribution": null,
+        "evidenceUrl": null
+      },
+      "approval": "pending",
+      "decisionReason": "No image-specific publication/hotlink/rehost grant documented. Public source availability and source-linked provenance are not permission.",
+      "width": null,
+      "height": null,
+      "alt": null,
+      "pageProbe": {
+        "url": "https://www.philips.de/c-p/FC9190_01/performerpro-staubsauger-mit-beutel-und-triactive-plus-duese",
+        "method": "GET HTML metadata only",
+        "status": 200,
+        "title": "PerformerPro Staubsauger mit Beutel FC9190/01 | Philips",
+        "pageSha256": "e1325bb1bf574ef2fa5209cceb2f663a41234849a4c58add32c4fd0c041d4dc6",
+        "observedImageUrl": "https://images.philips.com/is/image/philipsconsumer/vrs_d6893564_3ffe_4893_adf369a47041f5ce?$png$&wid=1200&hei=630",
+        "bodyIsImage": false
+      },
+      "imageBytesDownloaded": 0
+    },
+    {
+      "mediaId": "candidate-vac-siemens-model-vs01e2000",
+      "kind": "model",
+      "entityId": "vac-siemens-model-vs01e2000",
+      "brand": "Siemens",
+      "model": "VS01E2000",
+      "articleName": null,
+      "binding": [
+        {
+          "type": "manufacturer-model",
+          "value": "VS01E2000"
+        },
+        {
+          "type": "manufacturer-model",
+          "value": "VS01E2000/01"
+        }
+      ],
+      "manufacturerSourceUrl": "https://www.siemens-home.bsh-group.com/de/de/productservice/VS01E2000-01",
+      "sourcePageUrl": "https://www.siemens-home.bsh-group.com/de/de/productservice/VS01E2000-01",
+      "originalUrl": "https://media3.bsh-group.com/Product_Shots/400x/MCSA024984_VS01E2000_def.webp",
+      "checkedAt": "2026-10-08",
+      "region": "DE catalogue source; exact image region unverified",
+      "identityConfidence": "catalogue-only pending image review",
+      "imageIdentityVerified": false,
+      "rights": {
+        "status": "not_documented",
+        "license": null,
+        "licenseUrl": null,
+        "commercialUse": false,
+        "redistribution": false,
+        "attribution": null,
+        "evidenceUrl": null
+      },
+      "approval": "pending",
+      "decisionReason": "No image-specific publication/hotlink/rehost grant documented. Public source availability and source-linked provenance are not permission.",
+      "width": null,
+      "height": null,
+      "alt": null,
+      "pageProbe": {
+        "url": "https://www.siemens-home.bsh-group.com/de/de/productservice/VS01E2000-01",
+        "method": "GET HTML metadata only",
+        "status": 200,
+        "title": "Service Assistance - VS01E2000/01 | SIEMENS DE",
+        "pageSha256": "6c046dabcc4df83c6d36b67a6bef11b194a37db6f570aa55392c3e2f16e422d7",
+        "observedImageUrl": null,
+        "bodyIsImage": false
+      },
+      "imageBytesDownloaded": 0
+    },
+    {
+      "mediaId": "candidate-siemens-part-00019983",
+      "kind": "part",
+      "entityId": "siemens-part-00019983",
+      "brand": "Siemens",
+      "model": null,
+      "articleName": "Siemens Befestigungsteil f.Rad",
+      "binding": [
+        {
+          "type": "manufacturer-article",
+          "value": "00019983"
+        }
+      ],
+      "manufacturerSourceUrl": "https://www.siemens-home.bsh-group.com/de/de/product/00019983",
+      "sourcePageUrl": "https://www.siemens-home.bsh-group.com/de/de/product/00019983",
+      "originalUrl": null,
+      "checkedAt": "2026-10-08",
+      "region": "DE catalogue source; exact image region unverified",
+      "identityConfidence": "catalogue-only pending image review",
+      "imageIdentityVerified": false,
+      "rights": {
+        "status": "not_documented",
+        "license": null,
+        "licenseUrl": null,
+        "commercialUse": false,
+        "redistribution": false,
+        "attribution": null,
+        "evidenceUrl": null
+      },
+      "approval": "pending",
+      "decisionReason": "No image-specific publication/hotlink/rehost grant documented. Public source availability and source-linked provenance are not permission.",
+      "width": null,
+      "height": null,
+      "alt": null,
+      "pageProbe": {
+        "url": "https://www.siemens-home.bsh-group.com/de/de/product/00019983",
+        "method": "GET HTML metadata only",
+        "status": 200,
+        "title": "00019983 Befestigungsteil | Siemens Hausgeräte DE",
+        "pageSha256": "e658c73cadc0123466859b668983e53fae2deaab15b3f61ce9f22b861321b1fb",
+        "observedImageUrl": null,
+        "bodyIsImage": false
+      },
+      "imageBytesDownloaded": 0
+    },
+    {
+      "mediaId": "candidate-vac-samsung-model-vs20c95d4tk",
+      "kind": "model",
+      "entityId": "vac-samsung-model-vs20c95d4tk",
+      "brand": "Samsung",
+      "model": "VS20C95D4TK",
+      "articleName": null,
+      "binding": [
+        {
+          "type": "manufacturer-model",
+          "value": "VS20C95D4TK"
+        },
+        {
+          "type": "manufacturer-model",
+          "value": "VS20C95D4TK/WD"
+        },
+        {
+          "type": "ean",
+          "value": "8806095053127"
+        }
+      ],
+      "manufacturerSourceUrl": "https://www.samsung.com/de/vacuum-cleaners/stick/vs9500al-stick-more-advance-cleaning-performance-hexajet-motor-jet-cyclone-black-vs20c95d4tk-wd/",
+      "sourcePageUrl": "https://www.samsung.com/de/vacuum-cleaners/stick/vs9500al-stick-more-advance-cleaning-performance-hexajet-motor-jet-cyclone-black-vs20c95d4tk-wd/",
+      "originalUrl": "https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/images/logo-square-letter.png",
+      "checkedAt": "2026-10-08",
+      "region": "DE catalogue source; exact image region unverified",
+      "identityConfidence": "catalogue-only pending image review",
+      "imageIdentityVerified": false,
+      "rights": {
+        "status": "not_documented",
+        "license": null,
+        "licenseUrl": null,
+        "commercialUse": false,
+        "redistribution": false,
+        "attribution": null,
+        "evidenceUrl": null
+      },
+      "approval": "pending",
+      "decisionReason": "No image-specific publication/hotlink/rehost grant documented. Public source availability and source-linked provenance are not permission.",
+      "width": null,
+      "height": null,
+      "alt": null,
+      "pageProbe": {
+        "url": "https://www.samsung.com/de/vacuum-cleaners/stick/vs9500al-stick-more-advance-cleaning-performance-hexajet-motor-jet-cyclone-black-vs20c95d4tk-wd/",
+        "method": "GET HTML metadata only",
+        "status": 200,
+        "title": "VS20C95D4TK/WD, Jet 95 Akku+ CompleteClean Black | Samsung DE",
+        "pageSha256": "16a86cb0b36b92d60991b639050965afb06bed7a389e563eaec735e0c615aef2",
+        "observedImageUrl": "https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/images/logo-square-letter.png",
+        "bodyIsImage": false
+      },
+      "imageBytesDownloaded": 0
+    },
+    {
+      "mediaId": "candidate-samsung-part-vca-shf95w",
+      "kind": "part",
+      "entityId": "samsung-part-vca-shf95w",
+      "brand": "Samsung",
+      "model": null,
+      "articleName": "Samsung Jet Feinstaubfilter VCA-SHF95W VCA-SHF95W",
+      "binding": [
+        {
+          "type": "manufacturer-article",
+          "value": "VCA-SHF95W"
+        }
+      ],
+      "manufacturerSourceUrl": "https://www.samsung.com/de/home-appliance-accessories/vs9500-vca-shf95w/",
+      "sourcePageUrl": "https://www.samsung.com/de/home-appliance-accessories/vs9500-vca-shf95w/",
+      "originalUrl": "https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/images/logo-square-letter.png",
+      "checkedAt": "2026-10-08",
+      "region": "DE catalogue source; exact image region unverified",
+      "identityConfidence": "catalogue-only pending image review",
+      "imageIdentityVerified": false,
+      "rights": {
+        "status": "not_documented",
+        "license": null,
+        "licenseUrl": null,
+        "commercialUse": false,
+        "redistribution": false,
+        "attribution": null,
+        "evidenceUrl": null
+      },
+      "approval": "pending",
+      "decisionReason": "No image-specific publication/hotlink/rehost grant documented. Public source availability and source-linked provenance are not permission.",
+      "width": null,
+      "height": null,
+      "alt": null,
+      "pageProbe": {
+        "url": "https://www.samsung.com/de/home-appliance-accessories/vs9500-vca-shf95w/",
+        "method": "GET HTML metadata only",
+        "status": 200,
+        "title": "Jet Feinstaubfilter VCA-SHF95W VCA-SHF95W | Samsung DE",
+        "pageSha256": "75d8d0f2bca5dfd34e944eb1b9a40e3c26bbd8a8e3e3b8c7a461031fffd38227",
+        "observedImageUrl": "https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-common/resources/images/logo-square-letter.png",
+        "bodyIsImage": false
+      },
+      "imageBytesDownloaded": 0
+    },
+    {
+      "mediaId": "candidate-vac-hoover-model-hf202p011",
+      "kind": "model",
+      "entityId": "vac-hoover-model-hf202p011",
+      "brand": "Hoover",
+      "model": "HF202P 011",
+      "articleName": null,
+      "binding": [
+        {
+          "type": "manufacturer-model",
+          "value": "HF202P 011"
+        },
+        {
+          "type": "manufacturer-model",
+          "value": "HF202P011"
+        },
+        {
+          "type": "device-sku",
+          "value": "39401035"
+        }
+      ],
+      "manufacturerSourceUrl": "https://www.hoover-home.com/de_DE/akkusauger/39401035/hf202p-011/",
+      "sourcePageUrl": "https://www.hoover-home.com/de_DE/akkusauger/39401035/hf202p-011/",
+      "originalUrl": "https://www.hoover-home.com/h-image/haier-product/2024/2/17083559/640-3_39401035_1081_01_l_hf202p%2520011-M.jpg?w=1200&h=1200&q=60&s=YrZSIVYGGCV-Us7l",
+      "checkedAt": "2026-10-08",
+      "region": "DE catalogue source; exact image region unverified",
+      "identityConfidence": "catalogue-only pending image review",
+      "imageIdentityVerified": false,
+      "rights": {
+        "status": "not_documented",
+        "license": null,
+        "licenseUrl": null,
+        "commercialUse": false,
+        "redistribution": false,
+        "attribution": null,
+        "evidenceUrl": null
+      },
+      "approval": "pending",
+      "decisionReason": "No image-specific publication/hotlink/rehost grant documented. Public source availability and source-linked provenance are not permission.",
+      "width": null,
+      "height": null,
+      "alt": null,
+      "pageProbe": {
+        "url": "https://www.hoover-home.com/de_DE/akkusauger/39401035/hf202p-011/",
+        "method": "GET HTML metadata only",
+        "status": 200,
+        "title": "HF202P 011 | Akkusauger HF2 | Hoover",
+        "pageSha256": "f40fab5d27787d9390746820eecc71f89ba93202466d107c2549c6ff3b6f0163",
+        "observedImageUrl": "https://www.hoover-home.com/h-image/haier-product/2024/2/17083559/640-3_39401035_1081_01_l_hf202p%2520011-M.jpg?w=1200&h=1200&q=60&s=YrZSIVYGGCV-Us7l",
+        "bodyIsImage": false
+      },
+      "imageBytesDownloaded": 0
+    },
+    {
+      "mediaId": "candidate-hoover-part-35602734",
+      "kind": "part",
+      "entityId": "hoover-part-35602734",
+      "brand": "Hoover",
+      "model": null,
+      "articleName": "Hoover Staubsaugerbeutel · Epa bags - H90 - 35602734 EPA Bag",
+      "binding": [
+        {
+          "type": "manufacturer-article",
+          "value": "35602734"
+        }
+      ],
+      "manufacturerSourceUrl": "https://www.hoover-home.com/en_GB/collections/accessories-consumables",
+      "sourcePageUrl": "https://www.hoover-home.com/en_GB/collections/accessories-consumables",
+      "originalUrl": null,
+      "checkedAt": "2026-10-08",
+      "region": "GB",
+      "identityConfidence": "catalogue-only pending image review",
+      "imageIdentityVerified": false,
+      "rights": {
+        "status": "not_documented",
+        "license": null,
+        "licenseUrl": null,
+        "commercialUse": false,
+        "redistribution": false,
+        "attribution": null,
+        "evidenceUrl": null
+      },
+      "approval": "pending",
+      "decisionReason": "No image-specific publication/hotlink/rehost grant documented. Public source availability and source-linked provenance are not permission.",
+      "width": null,
+      "height": null,
+      "alt": null,
+      "pageProbe": {
+        "url": "https://www.hoover-home.com/en_GB/collections/accessories-consumables",
+        "method": "GET HTML metadata only",
+        "status": 200,
+        "title": "Accessories & Consumables | Hoover Attachments and Accessories – Hoover UK",
+        "pageSha256": "156859580be283d60e285c1a5545a215f95cb9e01030b8c91f776d9c7b0c66ff",
+        "observedImageUrl": null,
+        "bodyIsImage": false
+      },
+      "imageBytesDownloaded": 0
+    },
+    {
+      "mediaId": "candidate-vac-vorwerk-model-vk7",
+      "kind": "model",
+      "entityId": "vac-vorwerk-model-vk7",
+      "brand": "Vorwerk",
+      "model": "Kobold VK7",
+      "articleName": null,
+      "binding": [
+        {
+          "type": "manufacturer-model",
+          "value": "Kobold VK7"
+        },
+        {
+          "type": "manufacturer-model",
+          "value": "VK7"
+        }
+      ],
+      "manufacturerSourceUrl": "https://www.vorwerk.com/de/de/c/home/service/kobold/gebrauchsanleitungen/akku-staubsauger",
+      "sourcePageUrl": "https://www.vorwerk.com/de/de/c/home/service/kobold/gebrauchsanleitungen/akku-staubsauger",
+      "originalUrl": "https://media.vorwerk.com/is/image/vorwerk/Vorwerk_Logo_BIMI_Square?wid=980&hei=490",
+      "checkedAt": "2026-10-08",
+      "region": "DE catalogue source; exact image region unverified",
+      "identityConfidence": "catalogue-only pending image review",
+      "imageIdentityVerified": false,
+      "rights": {
+        "status": "not_documented",
+        "license": null,
+        "licenseUrl": null,
+        "commercialUse": false,
+        "redistribution": false,
+        "attribution": null,
+        "evidenceUrl": null
+      },
+      "approval": "pending",
+      "decisionReason": "No image-specific publication/hotlink/rehost grant documented. Public source availability and source-linked provenance are not permission.",
+      "width": null,
+      "height": null,
+      "alt": null,
+      "pageProbe": {
+        "url": "https://www.vorwerk.com/de/de/c/home/service/kobold/gebrauchsanleitungen/akku-staubsauger",
+        "method": "GET HTML metadata only",
+        "status": 200,
+        "title": "Gebrauchsanleitungen ►Akku-Staubsauger | Vorwerk Kobold",
+        "pageSha256": "890d4a72d6ac49913bfd520e8a2b6e574e0ddf22d0254a3206d1fb9d43f7c57b",
+        "observedImageUrl": "https://media.vorwerk.com/is/image/vorwerk/Vorwerk_Logo_BIMI_Square?wid=980&hei=490",
+        "bodyIsImage": false
+      },
+      "imageBytesDownloaded": 0
+    },
+    {
+      "mediaId": "candidate-vorwerk-part-fp7_20premium_20filtert_C3_BCten_20set_20(12_20stk.)",
+      "kind": "part",
+      "entityId": "vorwerk-part-fp7_20premium_20filtert_C3_BCten_20set_20(12_20stk.)",
+      "brand": "Vorwerk",
+      "model": null,
+      "articleName": "Vorwerk Kobold FP7 Premium Filtertüten Set (12 Stk.)",
+      "binding": [
+        {
+          "type": "manufacturer-designation",
+          "value": "FP7 Premium Filtertüten Set (12 Stk.)"
+        }
+      ],
+      "manufacturerSourceUrl": "https://www.vorwerk.com/de/de/s/shop/kobold-fp7-premium-filtertueten-set-12stk-de",
+      "sourcePageUrl": "https://www.vorwerk.com/de/de/s/shop/kobold-fp7-premium-filtertueten-set-12stk-de",
+      "originalUrl": "https://media.vorwerk.com/is/image/vorwerk/KS_FP7_01.834_12x_b-1:1x1?wid=768&hei=384&fmt=webp-alpha",
+      "checkedAt": "2026-10-08",
+      "region": "DE catalogue source; exact image region unverified",
+      "identityConfidence": "catalogue-only pending image review",
+      "imageIdentityVerified": false,
+      "rights": {
+        "status": "not_documented",
+        "license": null,
+        "licenseUrl": null,
+        "commercialUse": false,
+        "redistribution": false,
+        "attribution": null,
+        "evidenceUrl": null
+      },
+      "approval": "pending",
+      "decisionReason": "No image-specific publication/hotlink/rehost grant documented. Public source availability and source-linked provenance are not permission.",
+      "width": null,
+      "height": null,
+      "alt": null,
+      "pageProbe": {
+        "url": "https://www.vorwerk.com/de/de/s/shop/kobold-fp7-premium-filtertueten-set-12stk-de",
+        "method": "GET HTML metadata only",
+        "status": 200,
+        "title": "FP7 Premium-Filtertüten Set (2 x 6 Stk.) für den VK7 online kaufen | Vorwerk Kobold",
+        "pageSha256": "a063222788ee7368391202d6d272d1142319c78c79cfca18a5ae4d8b2381345e",
+        "observedImageUrl": "https://media.vorwerk.com/is/image/vorwerk/KS_FP7_01.834_12x_b-1:1x1?wid=768&hei=384&fmt=webp-alpha",
+        "bodyIsImage": false
+      },
+      "imageBytesDownloaded": 0
+    },
+    {
+      "mediaId": "dyson-dc19-cc0",
+      "kind": "model",
+      "entityId": "vac-dyson-model-dc19",
+      "brand": "Dyson",
+      "model": "DC19",
+      "articleName": null,
+      "binding": [
+        {
+          "type": "manufacturer-model",
+          "value": "DC19"
+        }
+      ],
+      "manufacturerSourceUrl": "https://www.dyson.de/support/vacuum-cleaners/cylinders/dc19",
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Dyson_DC19_vacuum_cleaner.jpg",
+      "sourcePermanentUrl": "https://commons.wikimedia.org/w/index.php?title=File:Dyson_DC19_vacuum_cleaner.jpg&oldid=1054412410",
+      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Dyson_DC19_vacuum_cleaner.jpg",
+      "checkedAt": "2026-10-08",
+      "region": "unspecified; model-reference only, not a DE SKU/colour/equipment claim",
+      "identityConfidence": "reviewed-model-reference",
+      "imageIdentityVerified": true,
+      "identityReview": {
+        "manufacturerObservedModel": "DC19",
+        "imageDescriptionObservedModel": "DC19",
+        "visualReview": "Real cylinder vacuum with Dyson branding; file description identifies DC19. Does not identify a technical revision or exact sales SKU.",
+        "scope": "Only existing DC19 model-reference record; never DC19T2, accessories or another variant."
+      },
+      "rights": {
+        "status": "verified",
+        "license": "CC0-1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "commercialUse": true,
+        "redistribution": true,
+        "attribution": "Alexx.net / Wikimedia Commons",
+        "author": "Alexx.net",
+        "evidenceUrl": "https://commons.wikimedia.org/w/index.php?title=File:Dyson_DC19_vacuum_cleaner.jpg&oldid=1054412410",
+        "review": "File description records author-uploaded photography dedicated under CC0; checked with the CC0 deed. No manufacturer endorsement or trademark licence implied.",
+        "changes": "Resized with Lanczos and JPEG re-encoded (quality 82); metadata removed. No crop, watermark removal or invented product details."
+      },
+      "approval": "approved",
+      "decisionReason": "Exact catalogue model reference and reviewed CC0 photo; only one binding, with explicit scope and visible credit.",
+      "width": 830,
+      "height": 1193,
+      "originalSha256": "e9ed0369c957eb573cc4f4f5838b37c0e7b639b1a7a02b595a56549998ba808c",
+      "originalSha1": "4b2a1a1fc718b0c9aaa99db6e70fa73fa422c1a0",
+      "originalBytes": 550408,
+      "alt": "Dyson DC19 Bodenstaubsauger – reale Aufnahme als Modellreferenz; Ausführung am Gerät prüfen",
+      "variants": [
+        {
+          "file": "integrations/catalog-media-wave3-dyson-dc19-320.jpg",
+          "width": 320,
+          "height": 460,
+          "bytes": 22719,
+          "sha256": "1824c729ba683bef4930ede0f509eeb1bb9bede393750d28eb9587b1099b69bc",
+          "mime": "image/jpeg"
+        },
+        {
+          "file": "integrations/catalog-media-wave3-dyson-dc19-640.jpg",
+          "width": 640,
+          "height": 920,
+          "bytes": 68070,
+          "sha256": "8ff2930410c21f9d72db850761c3593e629de23c38aee4495db95fee84bdd1ef",
+          "mime": "image/jpeg"
+        }
+      ],
+      "imageBytesDownloaded": 550408
+    },
+    {
+      "mediaId": "candidate-commons-vk136",
+      "kind": "model",
+      "entityId": "vac-vorwerk-model-vk136",
+      "brand": "Vorwerk",
+      "model": "Kobold VK136",
+      "binding": [
+        {
+          "type": "manufacturer-model",
+          "value": "Kobold VK136"
+        },
+        {
+          "type": "manufacturer-model",
+          "value": "VK136"
+        }
+      ],
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Vorwerk_Folletto_VK136.jpg",
+      "manufacturerSourceUrl": "https://www.vorwerk.com/de/de/c/home/service/kobold/gebrauchsanleitungen/handstaubsauger",
+      "originalUrl": null,
+      "checkedAt": "2026-10-08",
+      "region": "IT depiction; DE applicability not established",
+      "identityConfidence": "ambiguous",
+      "imageIdentityVerified": false,
+      "rights": {
+        "status": "reviewed-candidate",
+        "license": "CC-BY-SA-3.0",
+        "commercialUse": true,
+        "redistribution": true,
+        "evidenceUrl": "https://commons.wikimedia.org/wiki/File:Vorwerk_Folletto_VK136.jpg",
+        "attribution": null
+      },
+      "approval": "pending",
+      "decisionReason": "Image description names 135/136 together; exact target model cannot be distinguished.",
+      "width": null,
+      "height": null,
+      "alt": null,
+      "imageBytesDownloaded": 0
+    },
+    {
+      "mediaId": "candidate-commons-vk140",
+      "kind": "model",
+      "entityId": "vac-vorwerk-model-vk140",
+      "brand": "Vorwerk",
+      "model": "Kobold VK140",
+      "binding": [
+        {
+          "type": "manufacturer-model",
+          "value": "Kobold VK140"
+        },
+        {
+          "type": "manufacturer-model",
+          "value": "VK140"
+        }
+      ],
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Sistema_Folletto_VK140_Vorwerk.jpg",
+      "manufacturerSourceUrl": "https://www.vorwerk.com/de/de/c/home/service/kobold/gebrauchsanleitungen/handstaubsauger",
+      "originalUrl": null,
+      "checkedAt": "2026-10-08",
+      "region": "IT depiction; DE applicability not established",
+      "identityConfidence": "ambiguous",
+      "imageIdentityVerified": false,
+      "rights": {
+        "status": "reviewed-candidate",
+        "license": "attribution-only / VRT permission",
+        "commercialUse": true,
+        "redistribution": true,
+        "evidenceUrl": "https://commons.wikimedia.org/wiki/File:Sistema_Folletto_VK140_Vorwerk.jpg",
+        "attribution": null
+      },
+      "approval": "pending",
+      "decisionReason": "Italian accessory system/set, not an exact DE base-device/SKU image; no accessory equivalence inferred.",
+      "width": null,
+      "height": null,
+      "alt": null,
+      "imageBytesDownloaded": 0
+    },
+    {
+      "mediaId": "candidate-commons-vk150",
+      "kind": "model",
+      "entityId": "vac-vorwerk-model-vk150",
+      "brand": "Vorwerk",
+      "model": "Kobold VK150",
+      "binding": [
+        {
+          "type": "manufacturer-model",
+          "value": "Kobold VK150"
+        },
+        {
+          "type": "manufacturer-model",
+          "value": "VK150"
+        }
+      ],
+      "sourcePageUrl": "https://commons.wikimedia.org/wiki/File:Sistema_Folletto_VK150_Vorwerk.jpg",
+      "manufacturerSourceUrl": "https://www.vorwerk.com/de/de/c/home/service/kobold/gebrauchsanleitungen/handstaubsauger",
+      "originalUrl": null,
+      "checkedAt": "2026-10-08",
+      "region": "IT depiction; DE applicability not established",
+      "identityConfidence": "ambiguous",
+      "imageIdentityVerified": false,
+      "rights": {
+        "status": "not_documented",
+        "license": "not independently reviewed",
+        "commercialUse": false,
+        "redistribution": false,
+        "evidenceUrl": "https://commons.wikimedia.org/wiki/File:Sistema_Folletto_VK150_Vorwerk.jpg",
+        "attribution": null
+      },
+      "approval": "pending",
+      "decisionReason": "System/set depiction and image-specific licence review incomplete.",
+      "width": null,
+      "height": null,
+      "alt": null,
+      "imageBytesDownloaded": 0
+    }
+  ]
+}

@@ -1,0 +1,475 @@
+{
+  "schemaVersion": 1,
+  "issue": 38,
+  "branch": "work/parts-fitment-wave3",
+  "checkedAt": "2026-10-09T14:57:38.541Z",
+  "baseCommit": "d4853c4e5245410630742f58aead661d77f42c32",
+  "appVersion": "1.29.0",
+  "sourceCheckpointSha256": "c600a5c5a83a6f096ff5999e5ce5582c37ec424155919d487dfd6ca2221bd42b",
+  "runtime": {
+    "node": "v24.19.0",
+    "npm": "11.9.0",
+    "esbuild": "0.25.12"
+  },
+  "intake": {
+    "passed": true,
+    "negativeCases": 64,
+    "newArticles": 21,
+    "newRelationships": 36,
+    "freshCheck": "read-only",
+    "freshReplay": "byte-identical",
+    "idempotent": true,
+    "rollback": true,
+    "allLegacyArticlesAndFitmentsPreserved": true
+  },
+  "sourceObservations": 55,
+  "newPhysicalArticles": 21,
+  "newExactConditionalRelationships": 36,
+  "deferredCandidates": 66,
+  "coverage": [
+    {
+      "brand": "Miele",
+      "models": 82,
+      "records": 87,
+      "before": {
+        "parts": 167,
+        "physicalParts": 167,
+        "recordsWithParts": 62,
+        "recordsWithoutParts": 25
+      },
+      "after": {
+        "parts": 167,
+        "physicalParts": 167,
+        "recordsWithParts": 62,
+        "recordsWithoutParts": 25
+      },
+      "newPhysicalParts": 0,
+      "newRelationships": 0,
+      "zeroToParts": 0
+    },
+    {
+      "brand": "Bosch",
+      "models": 100,
+      "records": 100,
+      "before": {
+        "parts": 103,
+        "physicalParts": 102,
+        "recordsWithParts": 58,
+        "recordsWithoutParts": 42
+      },
+      "after": {
+        "parts": 103,
+        "physicalParts": 102,
+        "recordsWithParts": 58,
+        "recordsWithoutParts": 42
+      },
+      "newPhysicalParts": 0,
+      "newRelationships": 0,
+      "zeroToParts": 0
+    },
+    {
+      "brand": "Dyson",
+      "models": 92,
+      "records": 98,
+      "before": {
+        "parts": 191,
+        "physicalParts": 185,
+        "recordsWithParts": 58,
+        "recordsWithoutParts": 40
+      },
+      "after": {
+        "parts": 191,
+        "physicalParts": 185,
+        "recordsWithParts": 58,
+        "recordsWithoutParts": 40
+      },
+      "newPhysicalParts": 0,
+      "newRelationships": 0,
+      "zeroToParts": 0
+    },
+    {
+      "brand": "AEG",
+      "models": 100,
+      "records": 100,
+      "before": {
+        "parts": 354,
+        "physicalParts": 351,
+        "recordsWithParts": 78,
+        "recordsWithoutParts": 22
+      },
+      "after": {
+        "parts": 354,
+        "physicalParts": 351,
+        "recordsWithParts": 78,
+        "recordsWithoutParts": 22
+      },
+      "newPhysicalParts": 0,
+      "newRelationships": 0,
+      "zeroToParts": 0
+    },
+    {
+      "brand": "Rowenta",
+      "models": 272,
+      "records": 272,
+      "before": {
+        "parts": 100,
+        "physicalParts": 100,
+        "recordsWithParts": 197,
+        "recordsWithoutParts": 75
+      },
+      "after": {
+        "parts": 100,
+        "physicalParts": 100,
+        "recordsWithParts": 197,
+        "recordsWithoutParts": 75
+      },
+      "newPhysicalParts": 0,
+      "newRelationships": 0,
+      "zeroToParts": 0
+    },
+    {
+      "brand": "Philips",
+      "models": 140,
+      "records": 140,
+      "before": {
+        "parts": 104,
+        "physicalParts": 101,
+        "recordsWithParts": 56,
+        "recordsWithoutParts": 84
+      },
+      "after": {
+        "parts": 104,
+        "physicalParts": 101,
+        "recordsWithParts": 56,
+        "recordsWithoutParts": 84
+      },
+      "newPhysicalParts": 0,
+      "newRelationships": 0,
+      "zeroToParts": 0
+    },
+    {
+      "brand": "Siemens",
+      "models": 101,
+      "records": 101,
+      "before": {
+        "parts": 710,
+        "physicalParts": 605,
+        "recordsWithParts": 101,
+        "recordsWithoutParts": 0
+      },
+      "after": {
+        "parts": 710,
+        "physicalParts": 605,
+        "recordsWithParts": 101,
+        "recordsWithoutParts": 0
+      },
+      "newPhysicalParts": 0,
+      "newRelationships": 0,
+      "zeroToParts": 0
+    },
+    {
+      "brand": "Samsung",
+      "models": 77,
+      "records": 77,
+      "before": {
+        "parts": 46,
+        "physicalParts": 46,
+        "recordsWithParts": 20,
+        "recordsWithoutParts": 57
+      },
+      "after": {
+        "parts": 51,
+        "physicalParts": 51,
+        "recordsWithParts": 23,
+        "recordsWithoutParts": 54
+      },
+      "newPhysicalParts": 5,
+      "newRelationships": 18,
+      "zeroToParts": 3
+    },
+    {
+      "brand": "Hoover",
+      "models": 100,
+      "records": 100,
+      "before": {
+        "parts": 60,
+        "physicalParts": 60,
+        "recordsWithParts": 2,
+        "recordsWithoutParts": 98
+      },
+      "after": {
+        "parts": 76,
+        "physicalParts": 76,
+        "recordsWithParts": 5,
+        "recordsWithoutParts": 95
+      },
+      "newPhysicalParts": 16,
+      "newRelationships": 18,
+      "zeroToParts": 3
+    },
+    {
+      "brand": "Vorwerk",
+      "models": 18,
+      "records": 18,
+      "before": {
+        "parts": 105,
+        "physicalParts": 105,
+        "recordsWithParts": 14,
+        "recordsWithoutParts": 4
+      },
+      "after": {
+        "parts": 105,
+        "physicalParts": 105,
+        "recordsWithParts": 14,
+        "recordsWithoutParts": 4
+      },
+      "newPhysicalParts": 0,
+      "newRelationships": 0,
+      "zeroToParts": 0
+    }
+  ],
+  "totals": {
+    "before": {
+      "articles": 1940,
+      "physicalArticles": 1822,
+      "modelRecords": 1093,
+      "recordsWithoutParts": 447
+    },
+    "after": {
+      "articles": 1961,
+      "physicalArticles": 1843,
+      "modelRecords": 1093,
+      "recordsWithoutParts": 441
+    }
+  },
+  "commands": [
+    {
+      "command": "node integrations/parts-fitment-wave3-importer.test.mjs",
+      "exitCode": 0,
+      "assertions": 64
+    },
+    {
+      "command": "node integrations/import-parts-fitment-wave3-oem.mjs --check",
+      "exitCode": 0,
+      "result": {
+        "state": "already-integrated",
+        "Samsung": {
+          "parts": 51,
+          "withParts": 23,
+          "withoutParts": 54
+        },
+        "Hoover": {
+          "parts": 76,
+          "withParts": 5,
+          "withoutParts": 95
+        },
+        "newArticles": 21,
+        "newRelationships": 36,
+        "changedFiles": []
+      }
+    },
+    {
+      "command": "UF_ESBUILD_MODULE=<existing-esbuild> node integrations/build-app.mjs",
+      "exitCode": 0
+    },
+    {
+      "command": "UF_ESBUILD_MODULE=<existing-esbuild> node integrations/build-app.mjs --check",
+      "exitCode": 0,
+      "reproducible": true
+    },
+    {
+      "command": "npm test",
+      "cwd": "site",
+      "exitCode": 0,
+      "testFiles": 41,
+      "includes": "tests/parts-fitment-wave3.test.mjs"
+    },
+    {
+      "command": "npm run check",
+      "cwd": "site",
+      "exitCode": 0
+    },
+    {
+      "command": "node --check integrations/import-parts-fitment-wave3-oem.mjs && node --check integrations/parts-fitment-wave3-importer.test.mjs && node --check integrations/parts-fitment-wave3-app.test.template.mjs",
+      "exitCode": 0
+    }
+  ],
+  "legacyPreservation": {
+    "oldArticles": 1940,
+    "allArticleIdentifiers": true,
+    "allOldRelationships": true,
+    "oldModelMemberships": true,
+    "commercialFieldsAndPhotoPolicyUnchanged": true,
+    "modelIdentityAndVersionUnchanged": true
+  },
+  "scopeAudit": {
+    "guardSourceCommit": "71f7826ba936a1f3830c8b2a67e8085a9cfe234e",
+    "status": "pass",
+    "filesChecked": 9,
+    "blocked": [],
+    "review": [],
+    "allowedPrefixes": [
+      "integrations/parts-fitment-wave3-",
+      "integrations/import-parts-fitment-wave3-"
+    ]
+  },
+  "generatedLocalSource": [
+    {
+      "path": "site/src/data/parts-fitment-wave3.js",
+      "sha256": "21693c0f87a0094058db79b8c7dbd825b6ceb059831b25134faf7acd25a8f108"
+    },
+    {
+      "path": "site/src/data/parts-fitment-wave3-index.js",
+      "sha256": "037180c0e0031d0b3e7716021fbf3061b1e3c9083baff5b55aeaa3d38c54c50c"
+    },
+    {
+      "path": "site/src/data/samsung-pack.js",
+      "sha256": "a4905ed7bbc59e4ab76b4fb6253c9c4f7f01345c4042dd42455e991925c7d04c"
+    },
+    {
+      "path": "site/src/data/hoover-pack.js",
+      "sha256": "1e6ad9bbd0b373f73eb49c931806d783b7ded565a33b2fe371ebdd65db57159d"
+    },
+    {
+      "path": "site/src/data/brand-index.js",
+      "sha256": "67799513611343aef1d266719bfb860c0d127de6a28bafb9f909ca7faf7f71fe"
+    },
+    {
+      "path": "site/src/data/brand-products.js",
+      "sha256": "44df0629dd1cba6ff800dfb3d65c792d843482af1dd7b7109dfc5aa92a9557ca"
+    },
+    {
+      "path": "site/tests/catalog-v126.test.mjs",
+      "sha256": "1a8553e63915ea9207f0fb51898bbf477aa0c5fb8ce2215ce0500b42cc69dcff"
+    },
+    {
+      "path": "site/tests/vorwerk-expansion.test.mjs",
+      "sha256": "fb24bea8d0128fa5b7ff0810cb95d3dc79a4405a072e89dcd9b4747f826e3329"
+    },
+    {
+      "path": "site/tests/parts-fitment-wave3.test.mjs",
+      "sha256": "1e8bf8543a4d4dc4757729c4747504cf445d1ac47782fa697ace6dae308cf9cf"
+    },
+    {
+      "path": "site/package.json",
+      "sha256": "d530121904ee19ebfd015d423fa08c7d1df8bde3ebc5038a79272def5ef488a8"
+    }
+  ],
+  "generatedLocalState": {
+    "path": "site/src/data/parts-fitment-wave3-state.json",
+    "sha256": "750e57be44fc2766a432bfd4d9e9ef60a7833d2cb2e573ed797e5782cdc5c15f"
+  },
+  "bundles": [
+    {
+      "path": "site/app-v1.29.0.js",
+      "bytes": 1856335,
+      "sha256": "a5ebb188491696a4e1ffb252f423657cab1be3368e4fbd7291220a21b5d6f221"
+    },
+    {
+      "path": "site/catalog-aeg-v1.29.0.js",
+      "bytes": 725910,
+      "sha256": "78db9817f4f437d2ddf65a910bfadb190e849990a8b35a67a3f420ed69ad8422"
+    },
+    {
+      "path": "site/catalog-dyson-v1.29.0.js",
+      "bytes": 300258,
+      "sha256": "3be40672676abc99088d4340689efde33b92bf0abd98d8bdbb02e7f5e18cb436"
+    },
+    {
+      "path": "site/catalog-hoover-v1.29.0.js",
+      "bytes": 229174,
+      "sha256": "c95e006729518327c04d51ad183a66215a37a838fe1013869c18240a08455847"
+    },
+    {
+      "path": "site/catalog-philips-v1.29.0.js",
+      "bytes": 352773,
+      "sha256": "28f2ba1da41522658a86df8db5b43efe8eaec7240a21a84e9813846511391e22"
+    },
+    {
+      "path": "site/catalog-rowenta-v1.29.0.js",
+      "bytes": 502458,
+      "sha256": "ab2ad6dbaacb32d625e02987faa81d32f0a59fa171f45d170d1322b8e7e0c898"
+    },
+    {
+      "path": "site/catalog-samsung-v1.29.0.js",
+      "bytes": 230404,
+      "sha256": "4cb4986b538ae87ed6e22aff6c535f697622d446a63fdbe2a49edb37c608b924"
+    },
+    {
+      "path": "site/catalog-siemens-v1.29.0.js",
+      "bytes": 1234312,
+      "sha256": "80a968bb58b1f9ed06b26f42562e6c1c260935df274bd97122897d4465e15ba8"
+    },
+    {
+      "path": "site/catalog-vorwerk-v1.29.0.js",
+      "bytes": 108090,
+      "sha256": "b9c6084b4841eebc30c367c1136dd88881f6f6d2a7ee89e6f4111255a2bb490e"
+    },
+    {
+      "path": "site/services-v1.29.0.js",
+      "bytes": 3331,
+      "sha256": "accc35b5028711192c011ab4bce9a27c7a85da1fd75c10366d2d585f3a78741d"
+    }
+  ],
+  "artifactHashes": {
+    "integrations/import-parts-fitment-wave3-oem.mjs": "41e9dbc130d59a7345290ec448a1c1abd8e544f9d5b12c288e68a97147a9d8fb",
+    "integrations/parts-fitment-wave3-app.test.template.mjs": "1e8bf8543a4d4dc4757729c4747504cf445d1ac47782fa697ace6dae308cf9cf",
+    "integrations/parts-fitment-wave3-baseline.json": "509655bcd5567d434a95ee98d22206a4322923eae17814d42a3567559f641c37",
+    "integrations/parts-fitment-wave3-evidence.json": "9b610d64d2edcf1485c7e05ca5295db79253995a799e5218ee37c5ef4858d1d3",
+    "integrations/parts-fitment-wave3-importer.test.mjs": "cd470020074895349684c9ba7ab33731c7c95ad16eaa6be2012af95644886763",
+    "integrations/parts-fitment-wave3-pack.template.js": "617dbf0832d02cc19d4a0e541617f1a3be31b3d26edcd7283002acc09f20bf70",
+    "integrations/parts-fitment-wave3-report.md": "6e4b1489b97672abca4db2dc5d3f76104c73c065df242b6941c8f45d7e0d8a1c",
+    "integrations/parts-fitment-wave3-source-audit.json": "c6086b848be8e166263c5b57044e7daa8f19d876aeaa9a959cf212c4ec997af5"
+  },
+  "logs": [
+    {
+      "name": "wave3-tests.log",
+      "sha256": "7030294c38b63652ca5b1a43c1b94021c9adf0a1246879529e6344d30d940692"
+    },
+    {
+      "name": "wave3-syntax.log",
+      "sha256": "fbc5b0f768c341d0ec00fcb6ca1ac5b8fa06b2b61617d7704fc7046f985157f1"
+    },
+    {
+      "name": "wave3-build.log",
+      "sha256": "dda4054845eac1653a7e5fee1029fe72765c580ba8c3c19c8998d62f89e1ad55"
+    },
+    {
+      "name": "wave3-build-replay.log",
+      "sha256": "7be654705fba0140d67bc35e43b98c5aee2f0a6fa3632bb6910a92261729e35d"
+    },
+    {
+      "name": "wave3-importer-tests.log",
+      "sha256": "2a0a44c4c944d8ef44ce2a042c42c53b4b472d2f8249a0ffb629d3b5b9733105"
+    },
+    {
+      "name": "wave3-check.log",
+      "sha256": "94ed2a7bc0ddb42dac42978c93a391d4745918c7b3062466067c020eb193f972"
+    }
+  ],
+  "safety": {
+    "newPartsStatus": "catalog_only",
+    "newRelationshipsStatus": "variant_check_required",
+    "newPrices": 0,
+    "newStockClaims": 0,
+    "newShippingClaims": 0,
+    "unknownSerialRevisionScopesNotApproved": true,
+    "regionalTransfers": 0,
+    "newBrandsBeyondSamsungHoover": 0,
+    "mainMerged": false,
+    "deployed": false,
+    "releaseVersionChanged": false,
+    "sharedTrackedFilesChanged": false,
+    "trackedSiteFilesChanged": false,
+    "manufacturerImagesPublished": false
+  },
+  "handoff": {
+    "ownerIssue": 12,
+    "sourceIntegration": "Run importer locally; shared checkpoint/build/release edits remain release-owned.",
+    "unmetTargets": {
+      "Samsung": 49,
+      "Hoover": 24
+    },
+    "unverifiedCandidatesNotImported": true
+  }
+}

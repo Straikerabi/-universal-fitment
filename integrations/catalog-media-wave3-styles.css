@@ -1,0 +1,12 @@
+/* Reviewed media stays independent of search, hydration and offline navigation. */
+.media-frame{flex:none;min-width:0;max-width:100%;width:min-content}
+.media-frame .product-photo,.media-frame .part-photo{position:relative;isolation:isolate}
+.media-frame [data-catalog-media-photo]{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;padding:4px;opacity:0}
+.media-frame [data-media-state="loaded"] [data-catalog-media-photo]{opacity:1}
+.media-frame [data-media-fallback][hidden]{display:none}
+.media-frame .part-symbol{display:grid;place-items:center;max-width:100%}
+.media-frame .media-credit{display:block;max-width:220px;margin-top:4px;font-size:.65rem;line-height:1.35;overflow-wrap:anywhere}
+.media-frame .media-credit span{display:block}
+.media-frame .media-status{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.media-frame .photo-load{z-index:2}
+@media(max-width:440px){.media-frame .media-credit{max-width:110px}}

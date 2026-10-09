@@ -1,0 +1,3343 @@
+{
+  "schemaVersion": 1,
+  "issue": 38,
+  "branch": "work/parts-fitment-wave3",
+  "baseCommit": "d4853c4e5245410630742f58aead661d77f42c32",
+  "appVersion": "1.29.0",
+  "checkedAt": "2026-10-09",
+  "sourceCheckpointSha256": "c600a5c5a83a6f096ff5999e5ce5582c37ec424155919d487dfd6ca2221bd42b",
+  "sources": [
+    {
+      "id": "samsung-article:VCA-SHFF90K",
+      "kind": "samsung-article",
+      "brand": "Samsung",
+      "market": "DE",
+      "url": "https://www.samsung.com/de/home-appliance-accessories/bespoke-ai-jet-ultra-hepa-filter-vca-shff90k/",
+      "checkedAt": "2026-10-09",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "705c18c10c3abd9c1b54a8fe910a84648375d544a23f72d9405d28bea0621adf",
+      "httpStatus": 200,
+      "title": "HEPA-Filter für Bespoke AI Jet Ultra, Satin Black VCA-SHFF90K | Samsung DE",
+      "oemCode": "VCA-SHFF90K",
+      "ean": "8806097333111",
+      "modelCodeFields": [
+        "VCA-SHFF90K",
+        "Satin Black"
+      ],
+      "specifications": {
+        "Kompatibilität": "Bespoke AI Jet Ultra",
+        "Serie": "Zubehör",
+        "EAN": "8806097333111",
+        "Produkttyp": "HEPA-Filter",
+        "Modellcode": "VCA-SHFF90K",
+        "Farbe": "Satin Black",
+        "Gerätemaße (B x H x T) (mm)": "92 x 100 x 92",
+        "Verpackungsmaße (B x H x T) (mm)": "120 x 98 x 96",
+        "Gewicht netto (kg)": "0,15",
+        "Gewicht brutto (kg)": "0,19"
+      },
+      "observationSha256": "861af80a99655d64d17d5e40917a9cb329e0b278cc4453230634defc6a726393"
+    },
+    {
+      "id": "samsung-article:VCA-SHFF90M",
+      "kind": "samsung-article",
+      "brand": "Samsung",
+      "market": "DE",
+      "url": "https://www.samsung.com/de/home-appliance-accessories/bespoke-ai-jet-ultra-hepa-filter-vca-shff90m/",
+      "checkedAt": "2026-10-09",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "84fdea2cccd62baa0ec27e72d6290d67c3d3866704dc8c57fb7026b0516ed012",
+      "httpStatus": 200,
+      "title": "HEPA-Filter für Bespoke AI Jet Ultra, Satin Mint VCA-SHFF90M | Samsung DE",
+      "oemCode": "VCA-SHFF90M",
+      "ean": "8806097333128",
+      "modelCodeFields": [
+        "VCA-SHFF90M",
+        "Satin Mint"
+      ],
+      "specifications": {
+        "Kompatibilität": "Bespoke AI Jet Ultra",
+        "Serie": "Zubehör",
+        "EAN": "8806097333128",
+        "Produkttyp": "HEPA-Filter",
+        "Modellcode": "VCA-SHFF90M",
+        "Farbe": "Satin Mint",
+        "Gerätemaße (B x H x T) (mm)": "92 x 100 x 92",
+        "Verpackungsmaße (B x H x T) (mm)": "120 x 98 x 96",
+        "Gewicht netto (kg)": "0,15",
+        "Gewicht brutto (kg)": "0,19"
+      },
+      "observationSha256": "cc06e69c384143808000ea56e9af07fbec8af5c86dcdc6531eee5de115c794a9"
+    },
+    {
+      "id": "samsung-article:VCA-SHFF80P",
+      "kind": "samsung-article",
+      "brand": "Samsung",
+      "market": "DE",
+      "url": "https://www.samsung.com/de/home-appliance-accessories/bespoke-ai-jet-hepa-filter-vca-shff80p/",
+      "checkedAt": "2026-10-09",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "861a73f29e028c0b4c9e8c568e8d045814588fcd9f3469d730669936be303198",
+      "httpStatus": 200,
+      "title": "HEPA-Filter für Bespoke AI Jet, Pebble Grey VCA-SHFF80P | Samsung DE",
+      "oemCode": "VCA-SHFF80P",
+      "ean": "8806097333104",
+      "modelCodeFields": [
+        "HEPA-Filter",
+        "VCA-SHFF80P"
+      ],
+      "specifications": {
+        "Kompatibilität": "Bespoke AI Jet",
+        "Serie": "Zubehör",
+        "EAN": "8806097333104",
+        "Modellcode": "HEPA-Filter",
+        "Farbe": "VCA-SHFF80P",
+        "Farbe normiert": "Pebble Gray",
+        "Gerätemaße (B x H x T) (mm)": "107 x 50 x 107",
+        "Verpackungsmaße (B x H x T) (mm)": "116 x 116 x 59",
+        "Gewicht netto (kg)": "0,08",
+        "Gewicht brutto (kg)": "0,13"
+      },
+      "observationSha256": "0cbce12e27a96950b6912796a5e2852caa9fb0312a60c761dfe21f1a13a0d6fa"
+    },
+    {
+      "id": "samsung-article:VCA-TABF95",
+      "kind": "samsung-article",
+      "brand": "Samsung",
+      "market": "DE",
+      "url": "https://www.samsung.com/de/home-appliance-accessories/bespoke-jet-dual-brush-vca-tabf95/",
+      "checkedAt": "2026-10-09",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "e23ce5aa5a24ff4b07ef8b61cf2c5013d3a5d5cbe8ec30f413eb8f98212d4530",
+      "httpStatus": 200,
+      "title": "Jet Dual+ Bürste für Bespoke AI Jet, Bespoke Jet Plus, Jet 95 & Jet 85 VCA-TABF95 | Samsung DE",
+      "oemCode": "VCA-TABF95",
+      "ean": "8806097333135",
+      "modelCodeFields": [
+        "VCA-TABF95",
+        "Schwarz"
+      ],
+      "specifications": {
+        "Kompatibilität": "Bespoke AI Jet / Bespoke Jet Plus / Jet 95S / Jet 85S / Jet 95 / Jet 85",
+        "Serie": "Bespoke AI Jet / Bespoke Jet Plus / Jet 95 / Jet 85",
+        "EAN": "8806097333135",
+        "Modellcode": "VCA-TABF95",
+        "Farbe": "Schwarz",
+        "Gerätemaße (B x H x T) (mm)": "250 x 71 x 262",
+        "Verpackungsmaße (B x H x T) (mm)": "265 x 280 x 80",
+        "Gewicht netto (kg)": "0,95",
+        "Gewicht brutto (kg)": "1,1"
+      },
+      "observationSha256": "4da5f7c66ef786601c200aac87879a61febf3420b2df65a5b17eaf141431ec54"
+    },
+    {
+      "id": "samsung-article:VCA-SHFF80K",
+      "kind": "samsung-article",
+      "brand": "Samsung",
+      "market": "DE",
+      "url": "https://www.samsung.com/de/home-appliance-accessories/vs70h28-accessory-hepa-filtration-vca-shff80k/",
+      "checkedAt": "2026-10-09",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "2b6cf48d6e0a3221134b12066e436f9dcdbc46bddabb4b8f5bdbca4558bcefe9",
+      "httpStatus": 200,
+      "title": "VCA-SHFF80K HEPA Filter | Samsung Deutschland",
+      "oemCode": "VCA-SHFF80K",
+      "ean": "8806099133504",
+      "modelCodeFields": [
+        "VCA-SHFF80K",
+        "Satin Black"
+      ],
+      "specifications": {
+        "Serie": "Zubehör",
+        "EAN": "8806099133504",
+        "Produkttyp": "HEPA-Filter",
+        "Modellcode": "VCA-SHFF80K",
+        "Farbe": "Satin Black",
+        "Kompatibilität": "Bespoke Jet Plus/Jet 95S/Jet 85S/Jet 95/Jet 85",
+        "Gerätemaße (B x H x T) (mm)": "108 x 51 x 108",
+        "Verpackungsmaße (B x H x T) (mm)": "118 x 120 x 59",
+        "Gewicht netto (kg)": "0.082",
+        "Gewicht brutto (kg)": "0.125"
+      },
+      "observationSha256": "77a2c56c0343a489d8ed77037096758ad6dc6045345675b5b91d157d66aadbd8"
+    },
+    {
+      "id": "samsung-model:VS20C95D4TK/WD",
+      "kind": "samsung-model-options",
+      "brand": "Samsung",
+      "market": "DE",
+      "url": "https://www.samsung.com/de/vacuum-cleaners/stick/vs9500al-stick-more-advance-cleaning-performance-hexajet-motor-jet-cyclone-black-vs20c95d4tk-wd/",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "23905cedf01c930294ecbc85d44b28137c94a3e7b3b393b6aa76f08ead9a8f01",
+      "httpStatus": 200,
+      "title": "VS20C95D4TK/WD, Jet 95 Akku+ CompleteClean Black | Samsung DE",
+      "modelCode": "VS20C95D4TK",
+      "reference": "VS20C95D4TK/WD",
+      "partCodes": [
+        "VCA-WBA95/GL",
+        "VCA-SPA95/GL",
+        "VCA-SPW95/VT",
+        "VCA-SHF95B",
+        "VCA-SHF95N",
+        "VCA-SHF95W",
+        "VCA-SAK95/GL",
+        "VCA-SBTA95/VT",
+        "VCA-SAPB95/WA"
+      ],
+      "observationSha256": "95b6a1e556d9f400848a17afa17a76f65d456ff04b5b257cb53d7d04c5ebc1ba"
+    },
+    {
+      "id": "samsung-model:VS20C95D2TK/WD",
+      "kind": "samsung-model-options",
+      "brand": "Samsung",
+      "market": "DE",
+      "url": "https://www.samsung.com/de/vacuum-cleaners/stick/vs9500al-stick-more-advance-cleaning-performance-hexajet-motor-jet-cyclone-black-vs20c95d2tk-wd/",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "2c996239990c45414c5f91c5d5ac192bf64aaa3c9ab74055676e0e273f643044",
+      "httpStatus": 200,
+      "title": "VS20C95D2TK Jet 95 Akku+ PetPRO Black | Samsung DE",
+      "modelCode": "VS20C95D2TK",
+      "reference": "VS20C95D2TK/WD",
+      "partCodes": [
+        "VCA-SABB95",
+        "VCA-WBA95/GL",
+        "VCA-SPA95/GL",
+        "VCA-SPW95/VT",
+        "VCA-SHF95B",
+        "VCA-SHF95N",
+        "VCA-SHF95W",
+        "VCA-SAK95/GL",
+        "VCA-SBTA95/VT",
+        "VCA-SAPB95/WA"
+      ],
+      "observationSha256": "ad2c8de40d5dea933068106106f06b53b5b55355c17803038144e6c23f9c5503"
+    },
+    {
+      "id": "samsung-model:VS20C95E4TB/WD",
+      "kind": "samsung-model-options",
+      "brand": "Samsung",
+      "market": "DE",
+      "url": "https://www.samsung.com/de/vacuum-cleaners/stick/vs9500al-stick-more-advance-cleaning-performance-hexajet-motor-jet-cyclone-blue-vs20c95e4tb-wd/",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "a81cb19967a7712af456fd45d9900e4c1daccc47b53b1611fdbc82dd9f9b37f6",
+      "httpStatus": 200,
+      "title": "VS20C95E4TB/WD, Jet 95 CompleteClean Blue | Samsung DE",
+      "modelCode": "VS20C95E4TB",
+      "reference": "VS20C95E4TB/WD",
+      "partCodes": [
+        "VCA-SBTA95/VT",
+        "VCA-SAPB95/WA",
+        "VCA-WBA95/GL",
+        "VCA-SPA95/GL",
+        "VCA-SPW95/VT",
+        "VCA-SHF95B",
+        "VCA-SHF95N",
+        "VCA-SHF95W",
+        "VCA-SAK95/GL"
+      ],
+      "observationSha256": "0a23a59309225c014ba44ea9e7d3d16b0c47f5bb405bf9e1bf190fdf81b473b4"
+    },
+    {
+      "id": "samsung-model:VS20C85G4PB/WD",
+      "kind": "samsung-model-options",
+      "brand": "Samsung",
+      "market": "DE",
+      "url": "https://www.samsung.com/de/vacuum-cleaners/stick/vs9500al-stick-more-advance-cleaning-performance-hexajet-motor-jet-cyclone-blue-vs20c85g4pb-wd/",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "ef87fa0f7eca84162b4eff2c1c2a7f9bb254f3fffbdbf99efa58b8ec5744e3bf",
+      "httpStatus": 200,
+      "title": "VS20C85G4PB/WD Jet 85 CompleteClean Blue | Samsung DE",
+      "modelCode": "VS20C85G4PB",
+      "reference": "VS20C85G4PB/WD",
+      "partCodes": [
+        "VCA-SBTA95/VT",
+        "VCA-SAPB95/WA",
+        "VCA-ADB90",
+        "VCA-WBA95/GL",
+        "VCA-SPA95/GL",
+        "VCA-SPW95/VT",
+        "VCA-SHF95B",
+        "VCA-SHF95N",
+        "VCA-SHF95W",
+        "VCA-SAK95/GL"
+      ],
+      "observationSha256": "26fe84917acfabe386cef0b825f4068cfbc8900ec8ef0b7aa6eb703606a38731"
+    },
+    {
+      "id": "samsung-model:VS20C85G7TB/WD",
+      "kind": "samsung-model-options",
+      "brand": "Samsung",
+      "market": "DE",
+      "url": "https://www.samsung.com/de/vacuum-cleaners/stick/vs9500al-stick-more-advance-cleaning-performance-hexajet-motor-jet-cyclone-blue-vs20c85g7tb-wd/",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "1b225d7935f5d1f444e9a71e698df778432a79998f1db02a22f2b634f3db6471",
+      "httpStatus": 200,
+      "title": "VS20C85G7TB/WD, Jet 85 Wet&Clean Blue | Samsung DE",
+      "modelCode": "VS20C85G7TB",
+      "reference": "VS20C85G7TB/WD",
+      "partCodes": [
+        "VCA-SBTA95/VT",
+        "VCA-SAPB95/WA",
+        "VCA-SABB95",
+        "VCA-SPA95/GL",
+        "VCA-SPW95/VT",
+        "VCA-SHF95B",
+        "VCA-SHF95N",
+        "VCA-SHF95W",
+        "VCA-SAK95/GL"
+      ],
+      "observationSha256": "3f345ac8de301a555af5098b29d067fe2d3666ea66bb726c79418b31fd054726"
+    },
+    {
+      "id": "samsung-model:VS20C85G4TB/WD",
+      "kind": "samsung-model-options",
+      "brand": "Samsung",
+      "market": "DE",
+      "url": "https://www.samsung.com/de/vacuum-cleaners/stick/vs9500al-stick-more-advance-cleaning-performance-hexajet-motor-jet-cyclone-blue-vs20c85g4tb-wd/",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "504a6de719020be3dfa99d248a6f1c00403c3e562165e8d3cf51a42719b8492c",
+      "httpStatus": 200,
+      "title": "VS20C85G4TB Jet 85 CompleteClean Blue | Samsung DE",
+      "modelCode": "VS20C85G4TB",
+      "reference": "VS20C85G4TB/WD",
+      "partCodes": [
+        "VCA-SBTA95/VT",
+        "VCA-SAPB95/WA",
+        "VCA-WBA95/GL",
+        "VCA-SPA95/GL",
+        "VCA-SPW95/VT",
+        "VCA-SHF95B",
+        "VCA-SHF95N",
+        "VCA-SHF95W",
+        "VCA-SAK95/GL"
+      ],
+      "observationSha256": "bc9d27501f5a9befd75d524ba0d17835d01c5e0f17dd0acaef6207d954458127"
+    },
+    {
+      "id": "samsung-model:VS20C85G2TN/WD",
+      "kind": "samsung-model-options",
+      "brand": "Samsung",
+      "market": "DE",
+      "url": "https://www.samsung.com/de/vacuum-cleaners/stick/vs9500al-stick-more-advance-cleaning-performance-hexajet-motor-jet-cyclone-green-vs20c85g2tn-wd/",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "588a0d2630906394cc64f8eb17880f6d2e05451932f7b66962daec3d94be6e12",
+      "httpStatus": 200,
+      "title": "VS20C85G2TN/WD, Jet 85 PetPRO Green | Samsung DE",
+      "modelCode": "VS20C85G2TN",
+      "reference": "VS20C85G2TN/WD",
+      "partCodes": [
+        "VCA-SBTA95/VT",
+        "VCA-SAPB95/WA",
+        "VCA-SABB95",
+        "VCA-WBA95/GL",
+        "VCA-SPA95/GL",
+        "VCA-SPW95/VT",
+        "VCA-SHF95B",
+        "VCA-SHF95N",
+        "VCA-SHF95W",
+        "VCA-SAK95/GL"
+      ],
+      "observationSha256": "a5dc0d12a144ee546859626e352fd87cd4ea3ccd34623b9b33ee9b0dbe31a937"
+    },
+    {
+      "id": "samsung-model:VS20B75BDR5/WD",
+      "kind": "samsung-model-options",
+      "brand": "Samsung",
+      "market": "DE",
+      "url": "https://www.samsung.com/de/vacuum-cleaners/stick/vs9000rl-stick-more-advance-cleaning-performance-digital-inverter-motor-jet-cyclone-silver-vs20b75bdr5-wd/",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "d885983b32b9ff229963f4df915ea9c9fbd5fe15fb7766d896af3906f0a98c64",
+      "httpStatus": 200,
+      "title": "VS20B75BDR5/WD Silver | Samsung DE",
+      "modelCode": "VS20B75BDR5",
+      "reference": "VS20B75BDR5/WD",
+      "partCodes": [
+        "VCA-SBTA60",
+        "VCA-SABC75E/GL",
+        "VCA-SPA75E/GL",
+        "VCA-SPW75E/VT",
+        "VCA-SHF90",
+        "VCA-SHF90A",
+        "VCA-SHF90B",
+        "VCA-SAK95/GL"
+      ],
+      "observationSha256": "7c8560904f9d9dda9a8adb8a46373d1162d4c6ffe05eab3c84d8afd4cecc8ec2"
+    },
+    {
+      "id": "samsung-model:VS20B75BCR5/WD",
+      "kind": "samsung-model-options",
+      "brand": "Samsung",
+      "market": "DE",
+      "url": "https://www.samsung.com/de/vacuum-cleaners/stick/vs9000rl-stick-more-advance-cleaning-performance-digital-inverter-motor-jet-cyclone-silver-vs20b75bcr5-wd/",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "7a365f56ce9bc2dae09db0ed93b878278c1525feab6ee9b7615859aaa736bd7a",
+      "httpStatus": 200,
+      "title": "VS20B75BCR5 Jet 75E CompleteClean Silver | Samsung DE",
+      "modelCode": "VS20B75BCR5",
+      "reference": "VS20B75BCR5/WD",
+      "partCodes": [
+        "VCA-SBTA60",
+        "VCA-WBC652/GL",
+        "VCA-SPA75E/GL",
+        "VCA-SPW75E/VT",
+        "VCA-SHF90",
+        "VCA-SHF90A",
+        "VCA-SHF90B",
+        "VCA-SAK95/GL"
+      ],
+      "observationSha256": "337abcd658c45b7bd7b750c22ae2820edac845b3df1ed3adc810f984e3dd7d9b"
+    },
+    {
+      "id": "samsung-model:VS20B75BGR1/WD",
+      "kind": "samsung-model-options",
+      "brand": "Samsung",
+      "market": "DE",
+      "url": "https://www.samsung.com/de/vacuum-cleaners/stick/vs9000rl-stick-more-advance-cleaning-performance-digital-inverter-motor-jet-cyclone-mint-vs20b75bgr1-wd/",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "ed3e46950618f011724fa49037251857de2bfa34a03af8b5d0e5ca9488292beb",
+      "httpStatus": 200,
+      "title": "VS20B75BGR1/WD, Jet 75E PetPRO Mint | Samsung DE",
+      "modelCode": "VS20B75BGR1",
+      "reference": "VS20B75BGR1/WD",
+      "partCodes": [
+        "VCA-SBTA60",
+        "VCA-SABC75E/GL",
+        "VCA-WBC652/GL",
+        "VCA-SPA75E/GL",
+        "VCA-SPW75E/VT",
+        "VCA-SHF90",
+        "VCA-SHF90A",
+        "VCA-SHF90B",
+        "VCA-SAK95/GL"
+      ],
+      "observationSha256": "03093532d8baf4f4677efcfb4ca48e3c5a9aeeb8054fb41f7d0f7457a2a35880"
+    },
+    {
+      "id": "samsung-model:VS15A60BGR5/WD",
+      "kind": "samsung-model-options",
+      "brand": "Samsung",
+      "market": "DE",
+      "url": "https://www.samsung.com/de/vacuum-cleaners/stick/vs9000rl-stick-more-advance-cleaning-performance-digital-inverter-motor-jet-cyclone-silver-vs15a60bgr5-wd/",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "a6d17bb0c88d10d0da66f8ec92ad471bc599c924cb9010fbff2a541a4506516b",
+      "httpStatus": 200,
+      "title": "VS15A60BGR5/WD, Jet 65 PetPRO Silver | Samsung DE",
+      "modelCode": "VS15A60BGR5",
+      "reference": "VS15A60BGR5/WD",
+      "partCodes": [
+        "VCA-SBTA60",
+        "VCA-WBC652/GL",
+        "VCA-SPA75E/GL",
+        "VCA-SPW75E/VT",
+        "VCA-SHF90",
+        "VCA-SHF90A",
+        "VCA-SHF90B",
+        "VCA-SAK95/GL"
+      ],
+      "observationSha256": "9042ad3e008685d0319082999c457f58e60ea80eee12384196a58a0c2ae7d36a"
+    },
+    {
+      "id": "samsung-model:VS28C97B7QK/WD",
+      "kind": "samsung-model-options",
+      "brand": "Samsung",
+      "market": "DE",
+      "url": "https://www.samsung.com/de/vacuum-cleaners/stick/bespoke-jet-ai-black-vs28c97b7qk-wd/",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "e9b49934317aa0932f19d2920e6cdc68248c3d6560f81c8a329e6b468b397e23",
+      "httpStatus": 200,
+      "title": "BESPOKE Jet AI Akku+ Wet&Clean mit AI Cleaning Mode | Samsung DE",
+      "modelCode": "VS28C97B7QK",
+      "reference": "VS28C97B7QK/WD",
+      "partCodes": [
+        "VCA-SABC97/GL",
+        "VCA-ADB952",
+        "VCA-SPW95/VT",
+        "VCA-SPA95/GL"
+      ],
+      "observationSha256": "2664b979cf9b400c82e4f23706479639ef0daa8b52d48d46862030a79777ff44"
+    },
+    {
+      "id": "samsung-model:VS28C97B4QK/WD",
+      "kind": "samsung-model-options",
+      "brand": "Samsung",
+      "market": "DE",
+      "url": "https://www.samsung.com/de/vacuum-cleaners/stick/bespoke-jet-ai-black-vs28c97b4qk-wd/",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "29909af50b434381eb919e1fe77030025681db4637465a353d1d71eb2b63fd2b",
+      "httpStatus": 200,
+      "title": "BESPOKE Jet AI Akku+ CompleteClean mit AI Cleaning Mode | Samsung DE",
+      "modelCode": "VS28C97B4QK",
+      "reference": "VS28C97B4QK/WD",
+      "partCodes": [
+        "VCA-WBA95/GL",
+        "VCA-ADB952",
+        "VCA-SPW95/VT",
+        "VCA-SPA95/GL"
+      ],
+      "observationSha256": "60ad2d2c37fcafbeacccd015fa02d147511753837707300d3641e50fd1c47247"
+    },
+    {
+      "id": "samsung-model:VS20B95B73B/WD",
+      "kind": "samsung-model-options",
+      "brand": "Samsung",
+      "market": "DE",
+      "url": "https://www.samsung.com/de/vacuum-cleaners/stick/bespoke-jet-plus-210w-all-in-one-clean-station-mid-blue-vs20b95b73b-wd/",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "361f485f6e884849fdb47e48d2b1d92941d03b97ec8f8c9a745b2bbc3a98dc0a",
+      "httpStatus": 200,
+      "title": "VS20B95B73B/WD Blue | Samsung DE",
+      "modelCode": "VS20B95B73B",
+      "reference": "VS20B95B73B/WD",
+      "partCodes": [
+        "VCA-SBTA95/VT",
+        "VCA-SAPB95/WA",
+        "VCA-SABB95",
+        "VCA-ADB952",
+        "VCA-SPA95/GL",
+        "VCA-SPW95/VT",
+        "VCA-SHF95B",
+        "VCA-SHF95N",
+        "VCA-SHF95W",
+        "VCA-SHF95K",
+        "VCA-SAK95/GL"
+      ],
+      "observationSha256": "ff5aba9dfcd2d4cc38275aec3aa267c5894321a7c9eeb71aa90a7d4751c352e9"
+    },
+    {
+      "id": "samsung-model:VS20B95B43N/WD",
+      "kind": "samsung-model-options",
+      "brand": "Samsung",
+      "market": "DE",
+      "url": "https://www.samsung.com/de/vacuum-cleaners/stick/bespoke-jet-plus-210w-all-in-one-clean-station-woo-green-vs20b95b43n-wd/",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "7104a733e66d148b43dca201703aca23ba847b83cd86b73a4182d4a693f5bfdf",
+      "httpStatus": 200,
+      "title": "VS20B95B43N/WD Green | Samsung DE",
+      "modelCode": "VS20B95B43N",
+      "reference": "VS20B95B43N/WD",
+      "partCodes": [
+        "VCA-SBTA95/VT",
+        "VCA-SAPB95/WA",
+        "VCA-WBA95/GL",
+        "VCA-ADB952",
+        "VCA-SPA95/GL",
+        "VCA-SPW95/VT",
+        "VCA-SHF95B",
+        "VCA-SHF95N",
+        "VCA-SHF95W",
+        "VCA-SHF95K",
+        "VCA-SAK95/GL"
+      ],
+      "observationSha256": "0a4a7e8a0a87f64016b20de86a7fd5f5d324e8cf5ff0df72bbe81e7bb2300937"
+    },
+    {
+      "id": "samsung-model:VS20B95C43W/WD",
+      "kind": "samsung-model-options",
+      "brand": "Samsung",
+      "market": "DE",
+      "url": "https://www.samsung.com/de/vacuum-cleaners/stick/bespoke-jet-plus-210w-all-in-one-clean-station-mis-white-vs20b95c43w-wd/",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "2bdedf33ef1f00a6ad0e82545b8ecb3710cfbf68ffac96c7f710cb02619d62a4",
+      "httpStatus": 200,
+      "title": "VS20B95C43W/WD White | Samsung DE",
+      "modelCode": "VS20B95C43W",
+      "reference": "VS20B95C43W/WD",
+      "partCodes": [
+        "VCA-SBTA95/VT",
+        "VCA-SAPB95/WA",
+        "VCA-WBA95/GL",
+        "VCA-ADB952",
+        "VCA-SPA95/GL",
+        "VCA-SPW95/VT",
+        "VCA-SHF95B",
+        "VCA-SHF95N",
+        "VCA-SHF95W",
+        "VCA-SHF95K",
+        "VCA-SAK95/GL"
+      ],
+      "observationSha256": "00821ef487c3d183a60b028969bb26c71abe30892b2a2147355d6638b3a83610"
+    },
+    {
+      "id": "samsung-model:VS20A95973B/WA",
+      "kind": "samsung-model-options",
+      "brand": "Samsung",
+      "market": "DE",
+      "url": "https://www.samsung.com/de/vacuum-cleaners/stick/vs9500al-vc-with-all-in-one-clean-station-blue-vs20a95973b-wa/",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "140f00345ee078d6c0a60e96705dd3fd94d35ffde5e05945b837e6111f92fed0",
+      "httpStatus": 200,
+      "title": "Bespoke Jet One pro extra 210W kaufen (VS20A95973B) | Samsung DE",
+      "modelCode": "VS20A95973B",
+      "reference": "VS20A95973B/WA",
+      "partCodes": [
+        "VCA-SPW95",
+        "VCA-SPA95/GL",
+        "VCA-SABA95",
+        "VCA-ADB952"
+      ],
+      "observationSha256": "75e9f9fc974a2ae0638c5d3cd565ebe73589f346f8326a7d7ad737d3580b8441"
+    },
+    {
+      "id": "samsung-model:VS70H25XFT/WD",
+      "kind": "samsung-model-options",
+      "brand": "Samsung",
+      "market": "DE",
+      "url": "https://www.samsung.com/de/vacuum-cleaners/stick/jet-85s-stick-vacuum-cleaner-jet-85s-stick-vacuum-cleaner-phantom-green-vs70h25xft-wd/",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "d6ad24d7c5c5660ccd34e2d9c560b61a06a65a40ad47dff8a891df381c5498a1",
+      "httpStatus": 200,
+      "title": "Jet 85S CompleteClean mit 2-in-1 Ladestation, 770 W Motorleistung Teal Green | Samsung DE",
+      "modelCode": "VS70H25XFT",
+      "reference": "VS70H25XFT/WD",
+      "partCodes": [
+        "VCA-WBA95/GL",
+        "VCA-SHFF80T",
+        "VCA-SBTD95",
+        "VCA-SAPF80/WA",
+        "VCA-SPW95",
+        "VCA-SPA95/GL",
+        "VCA-SAK95/GL"
+      ],
+      "observationSha256": "0229bc7ec46d3b49f7f721f15395b6ca2fb33474fdd32201cd9f7eb1433b8d16"
+    },
+    {
+      "id": "samsung-model:VS70H28HFC/WD",
+      "kind": "samsung-model-options",
+      "brand": "Samsung",
+      "market": "DE",
+      "url": "https://www.samsung.com/de/vacuum-cleaners/stick/jet-95s-stick-vacuum-cleaner-jet-95s-stick-vacuum-cleaner-soapstone-charcoal-vs70h28hfc-wd/",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "dfb761235eff3bbbb116338e2dd8b58a7764fb90c35c0eaca3017c2bbcba8608",
+      "httpStatus": 200,
+      "title": "Jet 95S CompleteClean mit Standing Station, 770 W Motorleistung Soapstone Charcoal | Samsung DE",
+      "modelCode": "VS70H28HFC",
+      "reference": "VS70H28HFC/WD",
+      "partCodes": [
+        "VCA-WBA95/GL",
+        "VCA-SHFF80C",
+        "VCA-SBTD95",
+        "VCA-SAPF80/WA",
+        "VCA-SPW95",
+        "VCA-SPA95/GL",
+        "VCA-SAK95/GL"
+      ],
+      "observationSha256": "fbe4c88f70320250a95e7de46eafbd5b1b438390439c1f4e4e24a1098219916e"
+    },
+    {
+      "id": "samsung-model:VS80F28EGS/WD",
+      "kind": "samsung-model-options",
+      "brand": "Samsung",
+      "market": "DE",
+      "url": "https://www.samsung.com/de/vacuum-cleaners/stick/stick-vc-with-light-powerful-jet-ailite-280w-bespoke-jet-ai-lite-280w-vs9500al-beige-vs80f28egs-wd/",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "fbcc5239fec12ca3c48589679545db28f14060524e8a0b987ee1a24abfba4420",
+      "httpStatus": 200,
+      "title": "Bespoke AI Jet Akku+ Wet & Clean mit Spray Spinning Sweeper, 770 W Motorleistung, Santorini Beige Beige | Samsung DE",
+      "modelCode": "VS80F28EGS",
+      "reference": "VS80F28EGS/WD",
+      "partCodes": [
+        "VCA-SABC97/GL",
+        "VCA-ADB952",
+        "VCA-SPA95/GL",
+        "VCA-SPW95/VT",
+        "VCA-SHFF80E",
+        "VCA-SAK95/GL"
+      ],
+      "observationSha256": "8da282fc869ba5a15be3950dab68f5cce3f6209b474405e13546f61abe1f107c"
+    },
+    {
+      "id": "samsung-model:VS70H28HEK/WD",
+      "kind": "samsung-model-options",
+      "brand": "Samsung",
+      "market": "DE",
+      "url": "https://www.samsung.com/de/vacuum-cleaners/stick/jet-95s-stick-vacuum-cleaner-jet-95s-stick-vacuum-cleaner-satin-black-vs70h28hek-wd/",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "afe75b02a73f813d0d626be99e064c7a1c47ccdf2e80b38bd029964150ffbb9a",
+      "httpStatus": 200,
+      "title": "Jet 95S Akku+ CompleteClean mit Standing Station, 770 W Motorleistung Satin Black | Samsung DE",
+      "modelCode": "VS70H28HEK",
+      "reference": "VS70H28HEK/WD",
+      "partCodes": [
+        "VCA-WBA95/GL",
+        "VCA-SHFF80K",
+        "VCA-SPW95",
+        "VCA-SPA95/GL",
+        "VCA-SAK95/GL"
+      ],
+      "observationSha256": "e9bf735a6d2b4f0816757df7a706525cf8ce5bf666cbe34f9fa12c586ed37134"
+    },
+    {
+      "id": "samsung-model:VS80F28EFP/WD",
+      "kind": "samsung-model-options",
+      "brand": "Samsung",
+      "market": "DE",
+      "url": "https://www.samsung.com/de/vacuum-cleaners/stick/stick-vc-with-light-powerful-jet-ailite-280w-bespoke-jet-ai-lite-280w-vs9500al-gray-vs80f28efp-wd/",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "f0cbfb26c83e171476b20c0e64bc8f3f77191cc51080e408e7885e2c38b4dfa1",
+      "httpStatus": 200,
+      "title": "Bespoke AI Jet CompleteClean mit All-in-One Clean Station, 770 W Motorleistung, Pebble Gray Gray | Samsung DE",
+      "modelCode": "VS80F28EFP",
+      "reference": "VS80F28EFP/WD",
+      "partCodes": [
+        "VCA-SBTD95",
+        "VCA-SAPF80/WA",
+        "VCA-WBA95/GL",
+        "VCA-ADB952",
+        "VCA-SPA95/GL",
+        "VCA-SPW95/VT",
+        "VCA-SHFF80P",
+        "VCA-SAK95/GL"
+      ],
+      "observationSha256": "e2b7e72c0c2f9c9f25d8b6e42f6d1008fd00dc8bcd56a1fd5beba4a54bb44186"
+    },
+    {
+      "id": "samsung-model:VS90F40EEK/WD",
+      "kind": "samsung-model-options",
+      "brand": "Samsung",
+      "market": "DE",
+      "url": "https://www.samsung.com/de/vacuum-cleaners/stick/vc9700cl-stick-vc-with-most-powerful-jet-aiultra-400w-black-vs90f40eek-wd/",
+      "checkedAt": "2026-10-09",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "1f733d1deb647108b467e5a07af7b4c3fd0d5db668e6c99ab29b8523864ba8e1",
+      "httpStatus": 200,
+      "title": "2025 Bespoke AI Jet Ultra | Schwarz | VS90F40EEK/WD | Samsung DE",
+      "modelCode": "VS90F40EEK",
+      "reference": "VS90F40EEK/WD",
+      "partCodes": [
+        "VCA-WBA95/GL",
+        "VCA-SHFF90K",
+        "VCA-ADB952",
+        "VCA-SPW95",
+        "VCA-SPA95/GL"
+      ],
+      "observationSha256": "5eb8672414fcf54090fa34c30ae6e6dbebd247fc1fef64006e3fbe1db8ffea5f"
+    },
+    {
+      "id": "samsung-model:VS90F40EEM/WD",
+      "kind": "samsung-model-options",
+      "brand": "Samsung",
+      "market": "DE",
+      "url": "https://www.samsung.com/de/vacuum-cleaners/stick/vc9700cl-stick-vc-with-most-powerful-jet-aiultra-400w-mint-vs90f40eem-wd/",
+      "checkedAt": "2026-10-09",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "2af021be3901c90df64edd5c386483f80c168bc6640aa269bd976a5f4a179399",
+      "httpStatus": 200,
+      "title": "2025 Bespoke AI Jet Ultra | Mint | VS90F40EEM/WD | Samsung DE",
+      "modelCode": "VS90F40EEM",
+      "reference": "VS90F40EEM/WD",
+      "partCodes": [
+        "VCA-WBA95/GL",
+        "VCA-SHFF90M",
+        "VCA-ADB952",
+        "VCA-SPW95",
+        "VCA-SPA95/GL"
+      ],
+      "observationSha256": "c5711db1066968020df3e69d6cc98bc695662fcde30f77af76d9f7c23607c6ef"
+    },
+    {
+      "id": "hoover-article:5234494",
+      "kind": "hoover-article",
+      "brand": "Hoover",
+      "market": "GB",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/t113-exhaust-filter/product.pl?pid=5234494&path=1056568,1056551&model_ref=11873381",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "52bcbf0342f2f06cf8bde1750972c5845a3661643c5b829b386bf119e80eca66",
+      "httpStatus": 200,
+      "title": "Hoover FD22G 001 T113 Exhaust Filter",
+      "pid": "5234494",
+      "oemCode": "35601731",
+      "ean": "8016361926561",
+      "genuine": true,
+      "specifications": "Type: T113 Washable Manufacturers Part Number 35601731 EAN 8016361926561",
+      "observationSha256": "55597d8df9a633f5310dae36296a2b85cbdb6ab439a1e6dfd2f3d0bd45f278b2"
+    },
+    {
+      "id": "hoover-article:5254613",
+      "kind": "hoover-article",
+      "brand": "Hoover",
+      "market": "GB",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/crevice-tool/product.pl?pid=5254613&path=1056568,1056551&model_ref=11873381",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "ff35c58f99ae3e3b8b8e6800b1ee30ad3f01890749ea936befaf2c30fb0d5cd0",
+      "httpStatus": 200,
+      "title": "Hoover FD22G 001 Crevice Tool",
+      "pid": "5254613",
+      "oemCode": "48021590",
+      "ean": "8057166547445",
+      "genuine": true,
+      "specifications": "Push fit Diameter: 30mm Length: 240mm Colour: Black Manufacturers Part Number 48021590 EAN 8057166547445",
+      "observationSha256": "3682cec8d49ab31e929f1346aee9145ed9ca97e6531a52e4a39626b8486a1d00"
+    },
+    {
+      "id": "hoover-article:5234495",
+      "kind": "hoover-article",
+      "brand": "Hoover",
+      "market": "GB",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/y38-agitator-brushbar/product.pl?pid=5234495&path=1056568,1056551&model_ref=11873381",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "241d97d44980d23a37f6ec1f26d719626835549f98b8a68f2fbbb885cdbd75e4",
+      "httpStatus": 200,
+      "title": "Hoover FD22G 001 Y38 Agitator Brushbar",
+      "pid": "5234495",
+      "oemCode": "35601730",
+      "ean": "8016361926554",
+      "genuine": true,
+      "specifications": "Type: Y38 Manufacturers Part Number 35601730 EAN 8016361926554",
+      "observationSha256": "51b356b87f21f41467e54b51d521b2be8000c5ef44abd80d82ff8fc0c5be84f0"
+    },
+    {
+      "id": "hoover-article:5239936",
+      "kind": "hoover-article",
+      "brand": "Hoover",
+      "market": "GB",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/uk-battery-charger-yls0121a-u260040-input-100v-to-240v-output-26v/product.pl?pid=5239936&path=1056568,1056551&model_ref=11873381",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "2a7565159b2569a11681ef2482aaad9b85df478d0b5dfdd4f600151434180794",
+      "httpStatus": 200,
+      "title": "Hoover FD22G 001 UK Battery Charger : YLS0121A-U260040 : Input 100v To 240v Output 26v",
+      "pid": "5239936",
+      "oemCode": "49037664",
+      "ean": "8032768200646",
+      "genuine": true,
+      "specifications": "Output: 26V Input: 100-240V 50/60 Hz Manufacturers Part Number 49037664 EAN 8032768200646",
+      "observationSha256": "eadd8a8fb0620ad8bcdc8dd80f4bbbd59a76718474e95fadb46e714e686b96ee"
+    },
+    {
+      "id": "hoover-article:5278751",
+      "kind": "hoover-article",
+      "brand": "Hoover",
+      "market": "GB",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/cyclonic-unit-assembly/product.pl?pid=5278751&path=1056568,1056551&model_ref=11873381",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "a52f2da1d02cc6c7742618b25c9d07635585e87014c0a5157058796ceacbaba0",
+      "httpStatus": 200,
+      "title": "Hoover FD22G 001 Cyclonic Unit Assembly",
+      "pid": "5278751",
+      "oemCode": "48022207",
+      "ean": "8057166547513",
+      "genuine": true,
+      "specifications": null,
+      "observationSha256": "7e45d1886c36053769456b86bb9aad6787b6d70e92646e17522e6bd99ac088f2"
+    },
+    {
+      "id": "hoover-article:5238728",
+      "kind": "hoover-article",
+      "brand": "Hoover",
+      "market": "GB",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/mesh-filter/product.pl?pid=5238728&path=1056568,1056551&model_ref=11873381",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "98c2cd0f9bbe5f2849ea69fae2e9c9ce1d47563d0dc9c254a4124f996b06a766",
+      "httpStatus": 200,
+      "title": "Hoover FD22G 001 Mesh Filter",
+      "pid": "5238728",
+      "oemCode": "48021583",
+      "ean": "8057166547438",
+      "genuine": true,
+      "specifications": null,
+      "observationSha256": "345cb6c656b037e6235b1c5b96eed401f1afc140c951e29704fcc48601a33d5c"
+    },
+    {
+      "id": "hoover-article:5288198",
+      "kind": "hoover-article",
+      "brand": "Hoover",
+      "market": "GB",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/parquet-floor-tool-with-power-brush/product.pl?pid=5288198&path=1056568,1056551&model_ref=11873381",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "a439946c646d1b551c94d67c4a7f3013b229be502b5ee2b2cfe61678b546b5aa",
+      "httpStatus": 200,
+      "title": "Hoover FD22G 001 Parquet Floor Tool With Power Brush",
+      "pid": "5288198",
+      "oemCode": "48022206",
+      "ean": "8057166547506",
+      "genuine": true,
+      "specifications": "Clip Fit Diameter: 32mm Width: 255mm Length: 160mm Colour:Black Manufacturers Part Number 48022206 EAN 8057166547506",
+      "observationSha256": "5d74c2d183d13e1ca66ce3d19f72d822c978c72535f415d6b6a0abb4b13605c4"
+    },
+    {
+      "id": "hoover-article:5281800",
+      "kind": "hoover-article",
+      "brand": "Hoover",
+      "market": "GB",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/wall-bracket-assembly/product.pl?pid=5281800&path=1056568,1056551&model_ref=11873381",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "05d0dc2bdfc92660d2a61ec846ff99b61e4369fd692a6f692cd27dcce8e672aa",
+      "httpStatus": 200,
+      "title": "Hoover FD22G 001 Wall Bracket Assembly",
+      "pid": "5281800",
+      "oemCode": "48022191",
+      "ean": "8032768214513",
+      "genuine": true,
+      "specifications": null,
+      "observationSha256": "c1683452d147184fe194c88a44a6605cdf8e72a3433a0374c2de225ecc8d4b24"
+    },
+    {
+      "id": "hoover-article:5217281",
+      "kind": "hoover-article",
+      "brand": "Hoover",
+      "market": "GB",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/b001-lithium-ion-rechargeable-battery/product.pl?pid=5217281&path=1056568,1056551&model_ref=11873381",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "63bcf639adae4ef2587e5dedd94d33e9f96832be5fa6a2c8163b70744cfb2d3a",
+      "httpStatus": 200,
+      "title": "Hoover FD22G 001 B001 Lithium-Ion Rechargeable Battery",
+      "pid": "5217281",
+      "oemCode": "35601729",
+      "ean": "8016361926547",
+      "genuine": true,
+      "specifications": "Type: B001 Capacity: 2000 (mAH) 22.2 volts 44.4 Wh Manufacturers Part Number 35601729 EAN 8016361926547",
+      "observationSha256": "ebe63a06c6ce2c1d7d2d38d42f76abc0b7df5aec5c00a1f3c28a2e871e640249"
+    },
+    {
+      "id": "hoover-article:5240288",
+      "kind": "hoover-article",
+      "brand": "Hoover",
+      "market": "GB",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/j63-mini-turbo-nozzle/product.pl?pid=5240288&path=1056568,1056551&model_ref=11873381",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "30c1b820ad631f21c33d19d8cb8001fddf6e1c470ccea75ef0dca9f0d987dff2",
+      "httpStatus": 200,
+      "title": "Hoover FD22G 001 J63 Mini Turbo Nozzle",
+      "pid": "5240288",
+      "oemCode": "35601796",
+      "ean": "8016361743410",
+      "genuine": true,
+      "specifications": "Type: J63 Clip fit Diameter: 32mm Width: 130mm Length: 120mm Colour: Metallic grey Manufacturers Part Number 35601796 EAN 8016361743410",
+      "observationSha256": "849c5847e1259de14830998d23b188b9a2d91c10e06fad987b33422903cf0422"
+    },
+    {
+      "id": "hoover-article:5281818",
+      "kind": "hoover-article",
+      "brand": "Hoover",
+      "market": "GB",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/charger-uk-plug-kptec-k12s260050b-input-100-240v-035a-output-260v-05a/product.pl?pid=5281818&path=1056568,1056551&model_ref=12058177",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "a0b193aeafd102a2c8f1c8b9a4f9997ea265afb3856c5d0eb65aa15c15da6ceb",
+      "httpStatus": 200,
+      "title": "Hoover DS22G 001 Charger - UK Plug : KPTEC K12S260050B Input 100-240V 0.35A Output 26.0V 0.5A",
+      "pid": "5281818",
+      "oemCode": "48023954",
+      "ean": "8057166547650",
+      "genuine": true,
+      "specifications": "3 Pin UK Plug Fitting Manufacturers Part Number 48023954 EAN 8057166547650",
+      "observationSha256": "6bb62ea9044c93152fe75d5f28990ce0fce5076a3c6387248a942b3aa711bfff"
+    },
+    {
+      "id": "hoover-article:5272800",
+      "kind": "hoover-article",
+      "brand": "Hoover",
+      "market": "GB",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/j64-mini-turbo-nozzle/product.pl?pid=5272800&path=1056568,1056551&model_ref=12058177",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "d4940e07a719714b2e9f5aca9cf6d777e1e13a13246d81aa8bff9540b7ccea3b",
+      "httpStatus": 200,
+      "title": "Hoover DS22G 001 J64 Mini Turbo Nozzle",
+      "pid": "5272800",
+      "oemCode": "35601876",
+      "ean": "8016361948723",
+      "genuine": true,
+      "specifications": "Type: J64 Manufacturers Part Number 35601876 EAN 8016361948723",
+      "observationSha256": "5707dd371dec02b4939310b27ff6af3a4f7bf703ac609bcea1f35f29d3808378"
+    },
+    {
+      "id": "hoover-article:5149557",
+      "kind": "hoover-article",
+      "brand": "Hoover",
+      "market": "GB",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/vacuum-cleaner-agitator-brush/product.pl?pid=5149557&path=1056568,1056551&model_ref=12058177",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "047c989a0f713a292734e20bc16a852c6012aa2e8f0675243ff062c665e73dd5",
+      "httpStatus": 200,
+      "title": "Hoover DS22G 001 Vacuum Cleaner Agitator Brush",
+      "pid": "5149557",
+      "oemCode": "35601687",
+      "ean": "8016361908253",
+      "genuine": true,
+      "specifications": null,
+      "observationSha256": "08fd536f08759798be2f13303b8c09326fecf3bbc1084315281dee44ba84f1ea"
+    },
+    {
+      "id": "hoover-article:5288242",
+      "kind": "hoover-article",
+      "brand": "Hoover",
+      "market": "GB",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/lithium-ion-rechargeable-battery/product.pl?pid=5288242&path=1056568,1056551&model_ref=12058177",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "2de5d7eb0a8929264b88cfdf84010b1916a081e637c36ab95e99892d0f413b33",
+      "httpStatus": 200,
+      "title": "Hoover DS22G 001 Lithium-Ion Rechargeable Battery",
+      "pid": "5288242",
+      "oemCode": "39800043",
+      "ean": "8016361949522",
+      "genuine": true,
+      "specifications": "21.6 volts 2000 mAh Manufacturers Part Number 39800043 EAN 8016361949522",
+      "observationSha256": "fa99d74acd6c7928982bd465beab269e363740edce7fd69b1fb53e175aaa3b93"
+    },
+    {
+      "id": "hoover-article:5363530",
+      "kind": "hoover-article",
+      "brand": "Hoover",
+      "market": "GB",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/y62-brushbar/product.pl?pid=5363530&path=600307&model_ref=14737057",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "72d033e74ec46dd8d8deefeba6bea3c7e279abf0c22923922d93920137435929",
+      "httpStatus": 200,
+      "title": "Hoover HU300RHM 001 Y62 Brushbar",
+      "pid": "5363530",
+      "oemCode": "35602487",
+      "ean": null,
+      "genuine": true,
+      "specifications": "Type: Y62 Manufacturers Part Number 35602487",
+      "observationSha256": "8480a27f1f86331422d7c538ad683a75e1a04b85f169ca872f9b98cb191fca7b"
+    },
+    {
+      "id": "hoover-article:5366775",
+      "kind": "hoover-article",
+      "brand": "Hoover",
+      "market": "GB",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/d186-hose-assembly/product.pl?pid=5366775&path=600307&model_ref=14737057",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "ebd59f2a31e93f80b950e9cc12632f723e55ff165d3fb856eca778013365bc5e",
+      "httpStatus": 200,
+      "title": "Hoover HU300RHM 001 D186 Hose Assembly",
+      "pid": "5366775",
+      "oemCode": "35602489",
+      "ean": null,
+      "genuine": true,
+      "specifications": "Type: D186 Manufacturers Part Number 35602489",
+      "observationSha256": "416e3da0fec9d9f3cce0e5412d6c02c9191b45883f4f502bfb202283a3f1d5d8"
+    },
+    {
+      "id": "hoover-article:5365353",
+      "kind": "hoover-article",
+      "brand": "Hoover",
+      "market": "GB",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/u100-filter-kit/product.pl?pid=5365353&path=600307&model_ref=14737057",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "189a9861f70092550fe7946db83ca32e3611bcd0a68afa995ded5de6be61995f",
+      "httpStatus": 200,
+      "title": "Hoover HU300RHM 001 U100 Filter Kit",
+      "pid": "5365353",
+      "oemCode": "35602491",
+      "ean": null,
+      "genuine": true,
+      "specifications": "Type: U100 Manufacturers Part Number 35602491",
+      "observationSha256": "940ffd560165ec1c7a2e1930769cf0e45513c685c14b2a5e0560cb71809562bf"
+    },
+    {
+      "id": "hoover-article:5375795",
+      "kind": "hoover-article",
+      "brand": "Hoover",
+      "market": "GB",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/crevice-tool-extended/product.pl?pid=5375795&path=600307&model_ref=14737057",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "860070bd7793a7431d95b1a36141f61db3b059630f81b2b8ecf4e45097bae5cb",
+      "httpStatus": 200,
+      "title": "Hoover HU300RHM 001 Crevice Tool Extended",
+      "pid": "5375795",
+      "oemCode": "49125117",
+      "ean": null,
+      "genuine": true,
+      "specifications": null,
+      "observationSha256": "0eea4b636f74ef1de2b15c8cb83aebf9aca939cd6434ce5bba31a29dcb3c3346"
+    },
+    {
+      "id": "hoover-model:FD22G:1",
+      "kind": "hoover-product-code-list",
+      "brand": "Hoover",
+      "market": "GB",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/catalogue.pl?path=1056568%2C1056551&model_ref=11873381",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "44373422de23a014aeb4d1166dadd9beab8e6caf951b74075d5b5f5c1662caae",
+      "httpStatus": 200,
+      "title": "Hoover FD22G 001 (39400273) : 1 - 12 of 19",
+      "modelCode": "FD22G",
+      "reference": "FD22G 001 (39400273)",
+      "productCode": "39400273",
+      "partListings": [
+        {
+          "pid": "5234494",
+          "name": "Hoover FD22G 001 T113 Exhaust Filter",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/t113-exhaust-filter/product.pl?pid=5234494&path=1056568,1056551&model_ref=11873381",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/catalogue.pl?path=1056568%2C1056551&model_ref=11873381"
+        },
+        {
+          "pid": "5254613",
+          "name": "Hoover FD22G 001 Crevice Tool",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/crevice-tool/product.pl?pid=5254613&path=1056568,1056551&model_ref=11873381",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/catalogue.pl?path=1056568%2C1056551&model_ref=11873381"
+        },
+        {
+          "pid": "5234495",
+          "name": "Hoover FD22G 001 Y38 Agitator Brushbar",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/y38-agitator-brushbar/product.pl?pid=5234495&path=1056568,1056551&model_ref=11873381",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/catalogue.pl?path=1056568%2C1056551&model_ref=11873381"
+        },
+        {
+          "pid": "5239936",
+          "name": "Hoover FD22G 001 UK Battery Charger : YLS0121A-U260040 : Input 100v To 240v Output 26v",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/uk-battery-charger-yls0121a-u260040-input-100v-to-240v-output-26v/product.pl?pid=5239936&path=1056568,1056551&model_ref=11873381",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/catalogue.pl?path=1056568%2C1056551&model_ref=11873381"
+        },
+        {
+          "pid": "5278751",
+          "name": "Hoover FD22G 001 Cyclonic Unit Assembly",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/cyclonic-unit-assembly/product.pl?pid=5278751&path=1056568,1056551&model_ref=11873381",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/catalogue.pl?path=1056568%2C1056551&model_ref=11873381"
+        },
+        {
+          "pid": "5238728",
+          "name": "Hoover FD22G 001 Mesh Filter",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/mesh-filter/product.pl?pid=5238728&path=1056568,1056551&model_ref=11873381",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/catalogue.pl?path=1056568%2C1056551&model_ref=11873381"
+        },
+        {
+          "pid": "5288198",
+          "name": "Hoover FD22G 001 Parquet Floor Tool With Power Brush",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/parquet-floor-tool-with-power-brush/product.pl?pid=5288198&path=1056568,1056551&model_ref=11873381",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/catalogue.pl?path=1056568%2C1056551&model_ref=11873381"
+        },
+        {
+          "pid": "5281800",
+          "name": "Hoover FD22G 001 Wall Bracket Assembly",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/wall-bracket-assembly/product.pl?pid=5281800&path=1056568,1056551&model_ref=11873381",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/catalogue.pl?path=1056568%2C1056551&model_ref=11873381"
+        },
+        {
+          "pid": "5217281",
+          "name": "Hoover FD22G 001 B001 Lithium-Ion Rechargeable Battery",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/b001-lithium-ion-rechargeable-battery/product.pl?pid=5217281&path=1056568,1056551&model_ref=11873381",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/catalogue.pl?path=1056568%2C1056551&model_ref=11873381"
+        },
+        {
+          "pid": "5277457",
+          "name": "Hoover FD22G 001 Body Unit",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/body-unit/product.pl?pid=5277457&path=1056568,1056551&model_ref=11873381",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/catalogue.pl?path=1056568%2C1056551&model_ref=11873381"
+        },
+        {
+          "pid": "5281798",
+          "name": "Hoover FD22G 001 Filter Cover",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/filter-cover/product.pl?pid=5281798&path=1056568,1056551&model_ref=11873381",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/catalogue.pl?path=1056568%2C1056551&model_ref=11873381"
+        },
+        {
+          "pid": "5240288",
+          "name": "Hoover FD22G 001 J63 Mini Turbo Nozzle",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/j63-mini-turbo-nozzle/product.pl?pid=5240288&path=1056568,1056551&model_ref=11873381",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/catalogue.pl?path=1056568%2C1056551&model_ref=11873381"
+        }
+      ],
+      "serialWarning": false,
+      "serialScope": "unresolved",
+      "drawingOptions": [],
+      "observationSha256": "930bb3a57277a25998b21e2087320b62c1655178c491686561068be851a81511"
+    },
+    {
+      "id": "hoover-model:FD22G:2",
+      "kind": "hoover-product-code-list",
+      "brand": "Hoover",
+      "market": "GB",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/catalogue.pl?path=1056568,1056551&model_ref=11873381&page=2",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "ca7998400ededff14983f08546507574f725758b784e63763df4608df7d37d99",
+      "httpStatus": 200,
+      "title": "Hoover FD22G 001 (39400273) : 13 - 19 of 19",
+      "modelCode": "FD22G",
+      "reference": "FD22G 001 (39400273)",
+      "productCode": "39400273",
+      "partListings": [
+        {
+          "pid": "5282720",
+          "name": "Hoover FD22G 001 Extension Tube",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/extension-tube/product.pl?pid=5282720&path=1056568,1056551&model_ref=11873381",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/catalogue.pl?path=1056568,1056551&model_ref=11873381&page=2"
+        },
+        {
+          "pid": "5234493",
+          "name": "Hoover FD22G 001 G162 Furniture Nozzle",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/g162-furniture-nozzle/product.pl?pid=5234493&path=1056568,1056551&model_ref=11873381",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/catalogue.pl?path=1056568,1056551&model_ref=11873381&page=2"
+        },
+        {
+          "pid": "5288283",
+          "name": "Hoover FD22G 001 Adapter",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/adapter/product.pl?pid=5288283&path=1056568,1056551&model_ref=11873381",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/catalogue.pl?path=1056568,1056551&model_ref=11873381&page=2"
+        },
+        {
+          "pid": "5253566",
+          "name": "Hoover FD22G 001 Ceiling Crevice Tool",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/ceiling-crevice-tool/product.pl?pid=5253566&path=1056568,1056551&model_ref=11873381",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/catalogue.pl?path=1056568,1056551&model_ref=11873381&page=2"
+        },
+        {
+          "pid": "5240617",
+          "name": "Hoover FD22G 001 G166 Deep Cleaning Brush & Adaptor",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/g166-deep-cleaning-brush-adaptor/product.pl?pid=5240617&path=1056568,1056551&model_ref=11873381",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/catalogue.pl?path=1056568,1056551&model_ref=11873381&page=2"
+        },
+        {
+          "pid": "5253565",
+          "name": "Hoover FD22G 001 Radiator Brush",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/radiator-brush/product.pl?pid=5253565&path=1056568,1056551&model_ref=11873381",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/catalogue.pl?path=1056568,1056551&model_ref=11873381&page=2"
+        },
+        {
+          "pid": "5217500",
+          "name": "Hoover FD22G 001 G161 Parquet Brush",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/g161-parquet-brush/product.pl?pid=5217500&path=1056568,1056551&model_ref=11873381",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/catalogue.pl?path=1056568,1056551&model_ref=11873381&page=2"
+        }
+      ],
+      "serialWarning": false,
+      "serialScope": "unresolved",
+      "drawingOptions": [],
+      "observationSha256": "266ef72d5b5c708de0f6f7dfb2a253f0f23008eb65ae251e117b4fbbe0bb4768"
+    },
+    {
+      "id": "hoover-model:DS22G:1",
+      "kind": "hoover-product-code-list",
+      "brand": "Hoover",
+      "market": "GB",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/catalogue.pl?model_ref=12058177&path=1056568%2C1056551",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "f1751b6e111d0c30950b03d8adf7374fe7a4c7256d9c5f6a20337a053e0dad64",
+      "httpStatus": 200,
+      "title": "Hoover DS22G 001 (39400303) : 1 - 12 of 28",
+      "modelCode": "DS22G",
+      "reference": "DS22G 001 (39400303)",
+      "productCode": "39400303",
+      "partListings": [
+        {
+          "pid": "5281818",
+          "name": "Hoover DS22G 001 Charger - UK Plug : KPTEC K12S260050B Input 100-240V 0.35A Output 26.0V 0.5A",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/charger-uk-plug-kptec-k12s260050b-input-100-240v-035a-output-260v-05a/product.pl?pid=5281818&path=1056568,1056551&model_ref=12058177",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/catalogue.pl?model_ref=12058177&path=1056568%2C1056551"
+        },
+        {
+          "pid": "5272800",
+          "name": "Hoover DS22G 001 J64 Mini Turbo Nozzle",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/j64-mini-turbo-nozzle/product.pl?pid=5272800&path=1056568,1056551&model_ref=12058177",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/catalogue.pl?model_ref=12058177&path=1056568%2C1056551"
+        },
+        {
+          "pid": "5149557",
+          "name": "Hoover DS22G 001 Vacuum Cleaner Agitator Brush",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/vacuum-cleaner-agitator-brush/product.pl?pid=5149557&path=1056568,1056551&model_ref=12058177",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/catalogue.pl?model_ref=12058177&path=1056568%2C1056551"
+        },
+        {
+          "pid": "5288242",
+          "name": "Hoover DS22G 001 Lithium-Ion Rechargeable Battery",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/lithium-ion-rechargeable-battery/product.pl?pid=5288242&path=1056568,1056551&model_ref=12058177",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/catalogue.pl?model_ref=12058177&path=1056568%2C1056551"
+        },
+        {
+          "pid": "5276044",
+          "name": "Hoover DS22G 001 Pre Motor Filter",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/pre-motor-filter/product.pl?pid=5276044&path=1056568,1056551&model_ref=12058177",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/catalogue.pl?model_ref=12058177&path=1056568%2C1056551"
+        },
+        {
+          "pid": "5276169",
+          "name": "Hoover DS22G 001 T114 Exhaust Filter",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/t114-exhaust-filter/product.pl?pid=5276169&path=1056568,1056551&model_ref=12058177",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/catalogue.pl?model_ref=12058177&path=1056568%2C1056551"
+        },
+        {
+          "pid": "5291501",
+          "name": "Hoover DS22G 001 Pre-Motor Filter",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/pre-motor-filter/product.pl?pid=5291501&path=1056568,1056551&model_ref=12058177",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/catalogue.pl?model_ref=12058177&path=1056568%2C1056551"
+        },
+        {
+          "pid": "5288211",
+          "name": "Hoover DS22G 001 Wheel Kit - Pack Of 2",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/wheel-kit-pack-of-2/product.pl?pid=5288211&path=1056568,1056551&model_ref=12058177",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/catalogue.pl?model_ref=12058177&path=1056568%2C1056551"
+        },
+        {
+          "pid": "5288218",
+          "name": "Hoover DS22G 001 End Cap",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/end-cap/product.pl?pid=5288218&path=1056568,1056551&model_ref=12058177",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/catalogue.pl?model_ref=12058177&path=1056568%2C1056551"
+        },
+        {
+          "pid": "5276168",
+          "name": "Hoover DS22G 001 S123A Pre-Motor Mesh Filter",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/s123a-pre-motor-mesh-filter/product.pl?pid=5276168&path=1056568,1056551&model_ref=12058177",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/catalogue.pl?model_ref=12058177&path=1056568%2C1056551"
+        },
+        {
+          "pid": "5354576",
+          "name": "Hoover DS22G 001 Supporting Bracket Assemby",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/supporting-bracket-assemby/product.pl?pid=5354576&path=1056568,1056551&model_ref=12058177",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/catalogue.pl?model_ref=12058177&path=1056568%2C1056551"
+        },
+        {
+          "pid": "5288200",
+          "name": "Hoover DS22G 001 Body Unit",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/body-unit/product.pl?pid=5288200&path=1056568,1056551&model_ref=12058177",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/catalogue.pl?model_ref=12058177&path=1056568%2C1056551"
+        }
+      ],
+      "serialWarning": true,
+      "serialWarningBasis": {
+        "method": "indexed-primary-page-observation",
+        "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/catalogue.pl?model_ref=12058177&path=1056568%2C1056551",
+        "checkedAt": "2026-10-09",
+        "indexCrawlReported": "last month",
+        "observation": "Der indexierte Inhalt derselben Hersteller-Service-Modellliste weist ausdrücklich auf mehrere Seriennummern und seriennummernspezifische Teile hin. Die live erfasste HTTP-Seite zeigte diesen Hinweis nicht; deshalb konservativ Serienbereich ungeklärt, keine Freigabe aller Revisionen."
+      },
+      "serialScope": "unresolved",
+      "drawingOptions": [],
+      "observationSha256": "8b37022f5f6942318bcc33ad143752e234f1233b6e65b413e22e44d3d8c5f781"
+    },
+    {
+      "id": "hoover-model:DS22G:2",
+      "kind": "hoover-product-code-list",
+      "brand": "Hoover",
+      "market": "GB",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/catalogue.pl?path=1056568,1056551&model_ref=12058177&page=2",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "4a69e0ce7d5d6cc0bcd8aec5c0985b0549fc598274d17d12423dea05df342d82",
+      "httpStatus": 200,
+      "title": "Hoover DS22G 001 (39400303) : 13 - 24 of 28",
+      "modelCode": "DS22G",
+      "reference": "DS22G 001 (39400303)",
+      "productCode": "39400303",
+      "partListings": [
+        {
+          "pid": "5287760",
+          "name": "Hoover DS22G 001 Vacuum Cleaner Hard Floor / Carpet Nozzle",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/vacuum-cleaner-hard-floor-carpet-nozzle/product.pl?pid=5287760&path=1056568,1056551&model_ref=12058177",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/catalogue.pl?path=1056568,1056551&model_ref=12058177&page=2"
+        },
+        {
+          "pid": "5288210",
+          "name": "Hoover DS22G 001 Hard Floor And Carpet Nozzle",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/hard-floor-and-carpet-nozzle/product.pl?pid=5288210&path=1056568,1056551&model_ref=12058177",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/catalogue.pl?path=1056568,1056551&model_ref=12058177&page=2"
+        },
+        {
+          "pid": "5288245",
+          "name": "Hoover DS22G 001 Filter Bulkhead",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/filter-bulkhead/product.pl?pid=5288245&path=1056568,1056551&model_ref=12058177",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/catalogue.pl?path=1056568,1056551&model_ref=12058177&page=2"
+        },
+        {
+          "pid": "5360697",
+          "name": "Hoover DS22G 001 Programmed Control PCB Module",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/programmed-control-pcb-module/product.pl?pid=5360697&path=1056568,1056551&model_ref=12058177",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/catalogue.pl?path=1056568,1056551&model_ref=12058177&page=2"
+        },
+        {
+          "pid": "5281823",
+          "name": "Hoover DS22G 001 Extension Tube",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/extension-tube/product.pl?pid=5281823&path=1056568,1056551&model_ref=12058177",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/catalogue.pl?path=1056568,1056551&model_ref=12058177&page=2"
+        },
+        {
+          "pid": "5281777",
+          "name": "Hoover DS22G 001 Filter Cover Latch",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/filter-cover-latch/product.pl?pid=5281777&path=1056568,1056551&model_ref=12058177",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/catalogue.pl?path=1056568,1056551&model_ref=12058177&page=2"
+        },
+        {
+          "pid": "5278939",
+          "name": "Hoover DS22G 001 Nozzle Cleanout Tool",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/nozzle-cleanout-tool/product.pl?pid=5278939&path=1056568,1056551&model_ref=12058177",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/catalogue.pl?path=1056568,1056551&model_ref=12058177&page=2"
+        },
+        {
+          "pid": "5281778",
+          "name": "Hoover DS22G 001 Cyclonic Unit Assembly",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/cyclonic-unit-assembly/product.pl?pid=5281778&path=1056568,1056551&model_ref=12058177",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/catalogue.pl?path=1056568,1056551&model_ref=12058177&page=2"
+        },
+        {
+          "pid": "5281822",
+          "name": "Hoover DS22G 001 Carry Bag",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/carry-bag/product.pl?pid=5281822&path=1056568,1056551&model_ref=12058177",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/catalogue.pl?path=1056568,1056551&model_ref=12058177&page=2"
+        },
+        {
+          "pid": "5278940",
+          "name": "Hoover DS22G 001 Wheels Kit",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/wheels-kit/product.pl?pid=5278940&path=1056568,1056551&model_ref=12058177",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/catalogue.pl?path=1056568,1056551&model_ref=12058177&page=2"
+        },
+        {
+          "pid": "5281773",
+          "name": "Hoover DS22G 001 Adapter",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/adapter/product.pl?pid=5281773&path=1056568,1056551&model_ref=12058177",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/catalogue.pl?path=1056568,1056551&model_ref=12058177&page=2"
+        },
+        {
+          "pid": "5319285",
+          "name": "Hoover DS22G 001 Bearing",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/bearing/product.pl?pid=5319285&path=1056568,1056551&model_ref=12058177",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/catalogue.pl?path=1056568,1056551&model_ref=12058177&page=2"
+        }
+      ],
+      "serialWarning": true,
+      "serialWarningBasis": {
+        "method": "indexed-primary-page-observation",
+        "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/catalogue.pl?model_ref=12058177&path=1056568%2C1056551",
+        "checkedAt": "2026-10-09",
+        "indexCrawlReported": "last month",
+        "observation": "Der indexierte Inhalt derselben Hersteller-Service-Modellliste weist ausdrücklich auf mehrere Seriennummern und seriennummernspezifische Teile hin. Die live erfasste HTTP-Seite zeigte diesen Hinweis nicht; deshalb konservativ Serienbereich ungeklärt, keine Freigabe aller Revisionen."
+      },
+      "serialScope": "unresolved",
+      "drawingOptions": [],
+      "observationSha256": "89de86ff0961dd6367545e4d8162f3c95c06f6990a590e18f4d5935e7351fccd"
+    },
+    {
+      "id": "hoover-model:DS22G:3",
+      "kind": "hoover-product-code-list",
+      "brand": "Hoover",
+      "market": "GB",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/catalogue.pl?path=1056568,1056551&model_ref=12058177&page=3",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "9da07ebfc4987dcc5bd0b78cf0ea8ad6226c2f672d2dfcaf73e8cbfad0fc01a0",
+      "httpStatus": 200,
+      "title": "Hoover DS22G 001 (39400303) : 25 - 28 of 28",
+      "modelCode": "DS22G",
+      "reference": "DS22G 001 (39400303)",
+      "productCode": "39400303",
+      "partListings": [
+        {
+          "pid": "5272799",
+          "name": "Hoover DS22G 001 32mm G92PC Parquet Nozzle Floor Tool",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/32mm-g92pc-parquet-nozzle-floor-tool/product.pl?pid=5272799&path=1056568,1056551&model_ref=12058177",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/catalogue.pl?path=1056568,1056551&model_ref=12058177&page=3"
+        },
+        {
+          "pid": "5291665",
+          "name": "Hoover DS22G 001 Accessory Kit",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/accessory-kit/product.pl?pid=5291665&path=1056568,1056551&model_ref=12058177",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/catalogue.pl?path=1056568,1056551&model_ref=12058177&page=3"
+        },
+        {
+          "pid": "5278932",
+          "name": "Hoover DS22G 001 G167 Furniture Nozzle/Crevice Tool",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/g167-furniture-nozzlecrevice-tool/product.pl?pid=5278932&path=1056568,1056551&model_ref=12058177",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/catalogue.pl?path=1056568,1056551&model_ref=12058177&page=3"
+        },
+        {
+          "pid": "5272801",
+          "name": "Hoover DS22G 001 G168 Mini Furniture Brush",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/g168-mini-furniture-brush/product.pl?pid=5272801&path=1056568,1056551&model_ref=12058177",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/catalogue.pl?path=1056568,1056551&model_ref=12058177&page=3"
+        }
+      ],
+      "serialWarning": true,
+      "serialWarningBasis": {
+        "method": "indexed-primary-page-observation",
+        "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/catalogue.pl?model_ref=12058177&path=1056568%2C1056551",
+        "checkedAt": "2026-10-09",
+        "indexCrawlReported": "last month",
+        "observation": "Der indexierte Inhalt derselben Hersteller-Service-Modellliste weist ausdrücklich auf mehrere Seriennummern und seriennummernspezifische Teile hin. Die live erfasste HTTP-Seite zeigte diesen Hinweis nicht; deshalb konservativ Serienbereich ungeklärt, keine Freigabe aller Revisionen."
+      },
+      "serialScope": "unresolved",
+      "drawingOptions": [],
+      "observationSha256": "ad6b4504132603a4b21d0fb6a501ae2b920e8d38b151c349a9f4732d053cdded"
+    },
+    {
+      "id": "hoover-model:HU300RHM001:1",
+      "kind": "hoover-product-code-list",
+      "brand": "Hoover",
+      "market": "GB",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/catalogue.pl?path=600307&model_ref=14737057",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "c0f1d62626d35dea61c1f576618859e0157e0b088d99dbf8981988131b03027f",
+      "httpStatus": 200,
+      "title": "Hoover HU300RHM 001 (39101032) : 1 - 12 of 15",
+      "modelCode": "HU300RHM001",
+      "reference": "HU300RHM 001 (39101032)",
+      "productCode": "39101032",
+      "partListings": [
+        {
+          "pid": "5363530",
+          "name": "Hoover HU300RHM 001 Y62 Brushbar",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/y62-brushbar/product.pl?pid=5363530&path=600307&model_ref=14737057",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/catalogue.pl?path=600307&model_ref=14737057"
+        },
+        {
+          "pid": "5366775",
+          "name": "Hoover HU300RHM 001 D186 Hose Assembly",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/d186-hose-assembly/product.pl?pid=5366775&path=600307&model_ref=14737057",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/catalogue.pl?path=600307&model_ref=14737057"
+        },
+        {
+          "pid": "5365353",
+          "name": "Hoover HU300RHM 001 U100 Filter Kit",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/u100-filter-kit/product.pl?pid=5365353&path=600307&model_ref=14737057",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/catalogue.pl?path=600307&model_ref=14737057"
+        },
+        {
+          "pid": "5375795",
+          "name": "Hoover HU300RHM 001 Crevice Tool Extended",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/crevice-tool-extended/product.pl?pid=5375795&path=600307&model_ref=14737057",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/catalogue.pl?path=600307&model_ref=14737057"
+        },
+        {
+          "pid": "5371386",
+          "name": "Hoover HU300RHM 001 G194 3in1 Multi-Function Tool",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/g194-3in1-multi-function-tool/product.pl?pid=5371386&path=600307&model_ref=14737057",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/catalogue.pl?path=600307&model_ref=14737057"
+        },
+        {
+          "pid": "5371768",
+          "name": "Hoover HU300RHM 001 Agitator Belt",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/agitator-belt/product.pl?pid=5371768&path=600307&model_ref=14737057",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/catalogue.pl?path=600307&model_ref=14737057"
+        },
+        {
+          "pid": "5371387",
+          "name": "Hoover HU300RHM 001 G195 Dusting Brush",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/g195-dusting-brush/product.pl?pid=5371387&path=600307&model_ref=14737057",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/catalogue.pl?path=600307&model_ref=14737057"
+        },
+        {
+          "pid": "5373158",
+          "name": "Hoover HU300RHM 001 Duct Seal",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/duct-seal/product.pl?pid=5373158&path=600307&model_ref=14737057",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/catalogue.pl?path=600307&model_ref=14737057"
+        },
+        {
+          "pid": "5373847",
+          "name": "Hoover HU300RHM 001 Handle Grip C/W Tube",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/handle-grip-cw-tube/product.pl?pid=5373847&path=600307&model_ref=14737057",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/catalogue.pl?path=600307&model_ref=14737057"
+        },
+        {
+          "pid": "5355042",
+          "name": "Hoover HU300RHM 001 Crevice Tool",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/crevice-tool/product.pl?pid=5355042&path=600307&model_ref=14737057",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/catalogue.pl?path=600307&model_ref=14737057"
+        },
+        {
+          "pid": "5668932",
+          "name": "Hoover HU300RHM 001 Omc Nozzle Soleplate",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/omc-nozzle-soleplate/product.pl?pid=5668932&path=600307&model_ref=14737057",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/catalogue.pl?path=600307&model_ref=14737057"
+        },
+        {
+          "pid": "5371388",
+          "name": "Hoover HU300RHM 001 Mini Turbo Nozzle",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/mini-turbo-nozzle/product.pl?pid=5371388&path=600307&model_ref=14737057",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/catalogue.pl?path=600307&model_ref=14737057"
+        }
+      ],
+      "serialWarning": false,
+      "serialScope": "unresolved",
+      "drawingOptions": [
+        [
+          "0",
+          ""
+        ],
+        [
+          "11774346",
+          "39101032_EXPLODED_HU300RHM 001_RIGHT CLEANERS"
+        ]
+      ],
+      "observationSha256": "2f27e556c0c0d94a40e644848e3844e47a5ef92317fc99830eaab9c6529cce79"
+    },
+    {
+      "id": "hoover-model:HU300RHM001:2",
+      "kind": "hoover-product-code-list",
+      "brand": "Hoover",
+      "market": "GB",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/catalogue.pl?path=600307&model_ref=14737057&page=2",
+      "checkedAt": "2026-10-08",
+      "status": "retrieved",
+      "method": "public-http-get",
+      "bodySha256": "8c111c5eb8600d202ba991cccd4be561b2b47c295d86a542542bb4481beeea67",
+      "httpStatus": 200,
+      "title": "Hoover HU300RHM 001 (39101032) : 13 - 15 of 15",
+      "modelCode": "HU300RHM001",
+      "reference": "HU300RHM 001 (39101032)",
+      "productCode": "39101032",
+      "partListings": [
+        {
+          "pid": "5435368",
+          "name": "Hoover HU300RHM 001 Cyclonic Unit Assy",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/cyclonic-unit-assy/product.pl?pid=5435368&path=600307&model_ref=14737057",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/catalogue.pl?path=600307&model_ref=14737057&page=2"
+        },
+        {
+          "pid": "5374579",
+          "name": "Hoover HU300RHM 001 Cyclone Lock Cover Assy",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/cyclone-lock-cover-assy/product.pl?pid=5374579&path=600307&model_ref=14737057",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/catalogue.pl?path=600307&model_ref=14737057&page=2"
+        },
+        {
+          "pid": "5406335",
+          "name": "Hoover HU300RHM 001 Handle Plug",
+          "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/handle-plug/product.pl?pid=5406335&path=600307&model_ref=14737057",
+          "genuine": true,
+          "catalogueUrl": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/catalogue.pl?path=600307&model_ref=14737057&page=2"
+        }
+      ],
+      "serialWarning": false,
+      "serialScope": "unresolved",
+      "drawingOptions": [
+        [
+          "0",
+          ""
+        ],
+        [
+          "11774346",
+          "39101032_EXPLODED_HU300RHM 001_RIGHT CLEANERS"
+        ]
+      ],
+      "observationSha256": "5c63fd677d06d6e25674937aa6341ebc2891cf1c6958de4e74d458d002877df7"
+    },
+    {
+      "id": "hoover-drawing:39101032",
+      "kind": "manufacturer-linked-drawing",
+      "brand": "Hoover",
+      "market": "GB",
+      "url": "https://res.cloudinary.com/dnnqfsqiu/image/upload//v1780431233/illustrations/ck5hb30ok3nxvj8mptbw.pdf",
+      "linkedFrom": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/catalogue.pl?path=600307&model_ref=14737057&illustration_ref=11774346",
+      "checkedAt": "2026-10-09",
+      "status": "retrieved",
+      "method": "public-http-get-and-visual-pdf-review",
+      "httpStatus": 200,
+      "bodySha256": "0488ae75e4b8eae4e291ce37b1c623e598386253c1a944e5325ab2317b519940",
+      "productCode": "39101032",
+      "drawingReference": "11774346",
+      "observedPositions": [
+        "20",
+        "50",
+        "52",
+        "55",
+        "55c",
+        "70a",
+        "279",
+        "299a",
+        "349",
+        "548",
+        "595a",
+        "635",
+        "643",
+        "710",
+        "1114",
+        "1169",
+        "1202"
+      ],
+      "oemCodes": [],
+      "note": "Visuell geprüft: Positionen, aber keine achtstelligen OEM-Nummern. Keine Nummer und keine bildbasierte Passung daraus abgeleitet; Zeichnung nicht veröffentlicht.",
+      "observationSha256": "61dc1c215bef2db576d70e320bf0977222481f2706d894d4b6f641e6daab8b5e"
+    }
+  ],
+  "articles": [
+    {
+      "brand": "Samsung",
+      "code": "VCA-SHFF90K",
+      "name": "HEPA-Filter für Bespoke AI Jet Ultra · Satin Black",
+      "partTypeId": "filter",
+      "region": "DE",
+      "ean": "8806097333111",
+      "materialNumber": null,
+      "identitySourceId": "samsung-article:VCA-SHFF90K",
+      "attachmentReferences": [],
+      "restrictions": [
+        "Vollständige Gerätekennung und Zubehörvariante am eigenen Gerät prüfen; keine Freigabe aus Seriennamen."
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "code": "VCA-SHFF90M",
+      "name": "HEPA-Filter für Bespoke AI Jet Ultra · Satin Mint",
+      "partTypeId": "filter",
+      "region": "DE",
+      "ean": "8806097333128",
+      "materialNumber": null,
+      "identitySourceId": "samsung-article:VCA-SHFF90M",
+      "attachmentReferences": [],
+      "restrictions": [
+        "Vollständige Gerätekennung und Zubehörvariante am eigenen Gerät prüfen; keine Freigabe aus Seriennamen."
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "code": "VCA-SHFF80P",
+      "name": "HEPA-Filter für Bespoke AI Jet · Pebble Grey",
+      "partTypeId": "filter",
+      "region": "DE",
+      "ean": "8806097333104",
+      "materialNumber": null,
+      "identitySourceId": "samsung-article:VCA-SHFF80P",
+      "attachmentReferences": [],
+      "restrictions": [
+        "Vollständige Gerätekennung und Zubehörvariante am eigenen Gerät prüfen; keine Freigabe aus Seriennamen."
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "code": "VCA-TABF95",
+      "name": "Jet Dual+ Bürste",
+      "partTypeId": "nozzle",
+      "region": "DE",
+      "ean": "8806097333135",
+      "materialNumber": null,
+      "identitySourceId": "samsung-article:VCA-TABF95",
+      "attachmentReferences": [],
+      "restrictions": [
+        "Vollständige Gerätekennung und Zubehörvariante am eigenen Gerät prüfen; keine Freigabe aus Seriennamen."
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "code": "VCA-SHFF80K",
+      "name": "HEPA-Filter für Jet 85S / Jet 95S · Satin Black",
+      "partTypeId": "filter",
+      "region": "DE",
+      "ean": "8806099133504",
+      "materialNumber": null,
+      "identitySourceId": "samsung-article:VCA-SHFF80K",
+      "attachmentReferences": [],
+      "restrictions": [
+        "Vollständige Gerätekennung und Zubehörvariante am eigenen Gerät prüfen; keine Freigabe aus Seriennamen."
+      ]
+    },
+    {
+      "brand": "Hoover",
+      "code": "35601731",
+      "name": "T113 Exhaust Filter",
+      "partTypeId": "filter",
+      "region": "GB",
+      "ean": "8016361926561",
+      "materialNumber": null,
+      "identitySourceId": "hoover-article:5234494",
+      "attachmentReferences": [],
+      "restrictions": [
+        "Britische Hersteller-Servicequelle; keine DE-Passung oder DE-Verfügbarkeit abgeleitet."
+      ]
+    },
+    {
+      "brand": "Hoover",
+      "code": "48021590",
+      "name": "Crevice Tool",
+      "partTypeId": "nozzle",
+      "region": "GB",
+      "ean": "8057166547445",
+      "materialNumber": null,
+      "identitySourceId": "hoover-article:5254613",
+      "attachmentReferences": [],
+      "restrictions": [
+        "Britische Hersteller-Servicequelle; keine DE-Passung oder DE-Verfügbarkeit abgeleitet."
+      ]
+    },
+    {
+      "brand": "Hoover",
+      "code": "35601730",
+      "name": "Y38 Agitator Brushbar",
+      "partTypeId": "roller",
+      "region": "GB",
+      "ean": "8016361926554",
+      "materialNumber": null,
+      "identitySourceId": "hoover-article:5234495",
+      "attachmentReferences": [],
+      "restrictions": [
+        "Britische Hersteller-Servicequelle; keine DE-Passung oder DE-Verfügbarkeit abgeleitet."
+      ]
+    },
+    {
+      "brand": "Hoover",
+      "code": "49037664",
+      "name": "UK Battery Charger : YLS0121A-U260040 : Input 100v To 240v Output 26v",
+      "partTypeId": "charger",
+      "region": "GB",
+      "ean": "8032768200646",
+      "materialNumber": null,
+      "identitySourceId": "hoover-article:5239936",
+      "attachmentReferences": [],
+      "restrictions": [
+        "Britische Hersteller-Servicequelle; keine DE-Passung oder DE-Verfügbarkeit abgeleitet.",
+        "UK-Netzstecker; nicht als deutsche Ladegerät-Ausführung behandeln."
+      ]
+    },
+    {
+      "brand": "Hoover",
+      "code": "48022207",
+      "name": "Cyclonic Unit Assembly",
+      "partTypeId": "bin",
+      "region": "GB",
+      "ean": "8057166547513",
+      "materialNumber": null,
+      "identitySourceId": "hoover-article:5278751",
+      "attachmentReferences": [],
+      "restrictions": [
+        "Britische Hersteller-Servicequelle; keine DE-Passung oder DE-Verfügbarkeit abgeleitet."
+      ]
+    },
+    {
+      "brand": "Hoover",
+      "code": "48021583",
+      "name": "Mesh Filter",
+      "partTypeId": "filter",
+      "region": "GB",
+      "ean": "8057166547438",
+      "materialNumber": null,
+      "identitySourceId": "hoover-article:5238728",
+      "attachmentReferences": [],
+      "restrictions": [
+        "Britische Hersteller-Servicequelle; keine DE-Passung oder DE-Verfügbarkeit abgeleitet."
+      ]
+    },
+    {
+      "brand": "Hoover",
+      "code": "48022206",
+      "name": "Parquet Floor Tool With Power Brush",
+      "partTypeId": "nozzle",
+      "region": "GB",
+      "ean": "8057166547506",
+      "materialNumber": null,
+      "identitySourceId": "hoover-article:5288198",
+      "attachmentReferences": [],
+      "restrictions": [
+        "Britische Hersteller-Servicequelle; keine DE-Passung oder DE-Verfügbarkeit abgeleitet."
+      ]
+    },
+    {
+      "brand": "Hoover",
+      "code": "48022191",
+      "name": "Wall Bracket Assembly",
+      "partTypeId": "storage",
+      "region": "GB",
+      "ean": "8032768214513",
+      "materialNumber": null,
+      "identitySourceId": "hoover-article:5281800",
+      "attachmentReferences": [],
+      "restrictions": [
+        "Britische Hersteller-Servicequelle; keine DE-Passung oder DE-Verfügbarkeit abgeleitet."
+      ]
+    },
+    {
+      "brand": "Hoover",
+      "code": "35601796",
+      "name": "J63 Mini Turbo Nozzle",
+      "partTypeId": "nozzle",
+      "region": "GB",
+      "ean": "8016361743410",
+      "materialNumber": null,
+      "identitySourceId": "hoover-article:5240288",
+      "attachmentReferences": [],
+      "restrictions": [
+        "Britische Hersteller-Servicequelle; keine DE-Passung oder DE-Verfügbarkeit abgeleitet."
+      ]
+    },
+    {
+      "brand": "Hoover",
+      "code": "48023954",
+      "name": "Charger - UK Plug : KPTEC K12S260050B Input 100-240V 0.35A Output 26.0V 0.5A",
+      "partTypeId": "charger",
+      "region": "GB",
+      "ean": "8057166547650",
+      "materialNumber": null,
+      "identitySourceId": "hoover-article:5281818",
+      "attachmentReferences": [],
+      "restrictions": [
+        "Britische Hersteller-Servicequelle; keine DE-Passung oder DE-Verfügbarkeit abgeleitet.",
+        "UK-Netzstecker; nicht als deutsche Ladegerät-Ausführung behandeln."
+      ]
+    },
+    {
+      "brand": "Hoover",
+      "code": "35601876",
+      "name": "J64 Mini Turbo Nozzle",
+      "partTypeId": "nozzle",
+      "region": "GB",
+      "ean": "8016361948723",
+      "materialNumber": null,
+      "identitySourceId": "hoover-article:5272800",
+      "attachmentReferences": [],
+      "restrictions": [
+        "Britische Hersteller-Servicequelle; keine DE-Passung oder DE-Verfügbarkeit abgeleitet."
+      ]
+    },
+    {
+      "brand": "Hoover",
+      "code": "35601687",
+      "name": "Vacuum Cleaner Agitator Brush",
+      "partTypeId": "roller",
+      "region": "GB",
+      "ean": "8016361908253",
+      "materialNumber": null,
+      "identitySourceId": "hoover-article:5149557",
+      "attachmentReferences": [],
+      "restrictions": [
+        "Britische Hersteller-Servicequelle; keine DE-Passung oder DE-Verfügbarkeit abgeleitet."
+      ]
+    },
+    {
+      "brand": "Hoover",
+      "code": "39800043",
+      "name": "Lithium-Ion Rechargeable Battery",
+      "partTypeId": "battery",
+      "region": "GB",
+      "ean": "8016361949522",
+      "materialNumber": null,
+      "identitySourceId": "hoover-article:5288242",
+      "attachmentReferences": [],
+      "restrictions": [
+        "Britische Hersteller-Servicequelle; keine DE-Passung oder DE-Verfügbarkeit abgeleitet."
+      ]
+    },
+    {
+      "brand": "Hoover",
+      "code": "35602487",
+      "name": "Y62 Brushbar",
+      "partTypeId": "roller",
+      "region": "GB",
+      "ean": null,
+      "materialNumber": null,
+      "identitySourceId": "hoover-article:5363530",
+      "attachmentReferences": [],
+      "restrictions": [
+        "Britische Hersteller-Servicequelle; keine DE-Passung oder DE-Verfügbarkeit abgeleitet."
+      ]
+    },
+    {
+      "brand": "Hoover",
+      "code": "35602491",
+      "name": "U100 Filter Kit",
+      "partTypeId": "filter",
+      "region": "GB",
+      "ean": null,
+      "materialNumber": null,
+      "identitySourceId": "hoover-article:5365353",
+      "attachmentReferences": [],
+      "restrictions": [
+        "Britische Hersteller-Servicequelle; keine DE-Passung oder DE-Verfügbarkeit abgeleitet."
+      ]
+    },
+    {
+      "brand": "Hoover",
+      "code": "49125117",
+      "name": "Crevice Tool Extended",
+      "partTypeId": "nozzle",
+      "region": "GB",
+      "ean": null,
+      "materialNumber": null,
+      "identitySourceId": "hoover-article:5375795",
+      "attachmentReferences": [],
+      "restrictions": [
+        "Britische Hersteller-Servicequelle; keine DE-Passung oder DE-Verfügbarkeit abgeleitet."
+      ]
+    }
+  ],
+  "fitments": [
+    {
+      "brand": "Samsung",
+      "partCode": "VCA-WBA95/GL",
+      "modelCode": "VS70H28HEK",
+      "reference": "VS70H28HEK/WD",
+      "productCode": null,
+      "region": "DE",
+      "basis": "exact-model-optional-accessory-list",
+      "sourceId": "samsung-model:VS70H28HEK/WD",
+      "conditions": [
+        "Nur die explizit gelistete Geräteausführung VS70H28HEK/WD; andere /WD-, /WA- und Länderkennungen bleiben offen."
+      ],
+      "serialScope": "not-published",
+      "revisionScope": "full-model-code"
+    },
+    {
+      "brand": "Samsung",
+      "partCode": "VCA-SHFF80K",
+      "modelCode": "VS70H28HEK",
+      "reference": "VS70H28HEK/WD",
+      "productCode": null,
+      "region": "DE",
+      "basis": "exact-model-optional-accessory-list",
+      "sourceId": "samsung-model:VS70H28HEK/WD",
+      "conditions": [
+        "Nur die explizit gelistete Geräteausführung VS70H28HEK/WD; andere /WD-, /WA- und Länderkennungen bleiben offen."
+      ],
+      "serialScope": "not-published",
+      "revisionScope": "full-model-code"
+    },
+    {
+      "brand": "Samsung",
+      "partCode": "VCA-SPW95",
+      "modelCode": "VS70H28HEK",
+      "reference": "VS70H28HEK/WD",
+      "productCode": null,
+      "region": "DE",
+      "basis": "exact-model-optional-accessory-list",
+      "sourceId": "samsung-model:VS70H28HEK/WD",
+      "conditions": [
+        "Nur die explizit gelistete Geräteausführung VS70H28HEK/WD; andere /WD-, /WA- und Länderkennungen bleiben offen.",
+        "Nur bei vorhandenem, passendem Spray Spinning Sweeper; Pads/Tücher sind keine Grundgerät-Bauteile."
+      ],
+      "serialScope": "not-published",
+      "revisionScope": "full-model-code"
+    },
+    {
+      "brand": "Samsung",
+      "partCode": "VCA-SPA95/GL",
+      "modelCode": "VS70H28HEK",
+      "reference": "VS70H28HEK/WD",
+      "productCode": null,
+      "region": "DE",
+      "basis": "exact-model-optional-accessory-list",
+      "sourceId": "samsung-model:VS70H28HEK/WD",
+      "conditions": [
+        "Nur die explizit gelistete Geräteausführung VS70H28HEK/WD; andere /WD-, /WA- und Länderkennungen bleiben offen.",
+        "Nur bei vorhandenem, passendem Spray Spinning Sweeper; Pads/Tücher sind keine Grundgerät-Bauteile."
+      ],
+      "serialScope": "not-published",
+      "revisionScope": "full-model-code"
+    },
+    {
+      "brand": "Samsung",
+      "partCode": "VCA-SAK95/GL",
+      "modelCode": "VS70H28HEK",
+      "reference": "VS70H28HEK/WD",
+      "productCode": null,
+      "region": "DE",
+      "basis": "exact-model-optional-accessory-list",
+      "sourceId": "samsung-model:VS70H28HEK/WD",
+      "conditions": [
+        "Nur die explizit gelistete Geräteausführung VS70H28HEK/WD; andere /WD-, /WA- und Länderkennungen bleiben offen."
+      ],
+      "serialScope": "not-published",
+      "revisionScope": "full-model-code"
+    },
+    {
+      "brand": "Samsung",
+      "partCode": "VCA-SBTD95",
+      "modelCode": "VS80F28EFP",
+      "reference": "VS80F28EFP/WD",
+      "productCode": null,
+      "region": "DE",
+      "basis": "exact-model-optional-accessory-list",
+      "sourceId": "samsung-model:VS80F28EFP/WD",
+      "conditions": [
+        "Nur die explizit gelistete Geräteausführung VS80F28EFP/WD; andere /WD-, /WA- und Länderkennungen bleiben offen.",
+        "Exakte Akku-SKU und Lieferumfang (mit/ohne Ladestation) prüfen; ähnliche Kapazität ist kein Passungsbeweis."
+      ],
+      "serialScope": "not-published",
+      "revisionScope": "full-model-code"
+    },
+    {
+      "brand": "Samsung",
+      "partCode": "VCA-SAPF80/WA",
+      "modelCode": "VS80F28EFP",
+      "reference": "VS80F28EFP/WD",
+      "productCode": null,
+      "region": "DE",
+      "basis": "exact-model-optional-accessory-list",
+      "sourceId": "samsung-model:VS80F28EFP/WD",
+      "conditions": [
+        "Nur die explizit gelistete Geräteausführung VS80F28EFP/WD; andere /WD-, /WA- und Länderkennungen bleiben offen.",
+        "Exakte Akku-SKU und Lieferumfang (mit/ohne Ladestation) prüfen; ähnliche Kapazität ist kein Passungsbeweis."
+      ],
+      "serialScope": "not-published",
+      "revisionScope": "full-model-code"
+    },
+    {
+      "brand": "Samsung",
+      "partCode": "VCA-WBA95/GL",
+      "modelCode": "VS80F28EFP",
+      "reference": "VS80F28EFP/WD",
+      "productCode": null,
+      "region": "DE",
+      "basis": "exact-model-optional-accessory-list",
+      "sourceId": "samsung-model:VS80F28EFP/WD",
+      "conditions": [
+        "Nur die explizit gelistete Geräteausführung VS80F28EFP/WD; andere /WD-, /WA- und Länderkennungen bleiben offen."
+      ],
+      "serialScope": "not-published",
+      "revisionScope": "full-model-code"
+    },
+    {
+      "brand": "Samsung",
+      "partCode": "VCA-ADB952",
+      "modelCode": "VS80F28EFP",
+      "reference": "VS80F28EFP/WD",
+      "productCode": null,
+      "region": "DE",
+      "basis": "exact-model-optional-accessory-list",
+      "sourceId": "samsung-model:VS80F28EFP/WD",
+      "conditions": [
+        "Nur die explizit gelistete Geräteausführung VS80F28EFP/WD; andere /WD-, /WA- und Länderkennungen bleiben offen.",
+        "Nur für die zum Gerät gehörige All-in-One Clean Station; Stationsausführung und Beutelanschluss separat prüfen."
+      ],
+      "serialScope": "not-published",
+      "revisionScope": "full-model-code"
+    },
+    {
+      "brand": "Samsung",
+      "partCode": "VCA-SPA95/GL",
+      "modelCode": "VS80F28EFP",
+      "reference": "VS80F28EFP/WD",
+      "productCode": null,
+      "region": "DE",
+      "basis": "exact-model-optional-accessory-list",
+      "sourceId": "samsung-model:VS80F28EFP/WD",
+      "conditions": [
+        "Nur die explizit gelistete Geräteausführung VS80F28EFP/WD; andere /WD-, /WA- und Länderkennungen bleiben offen.",
+        "Nur bei vorhandenem, passendem Spray Spinning Sweeper; Pads/Tücher sind keine Grundgerät-Bauteile."
+      ],
+      "serialScope": "not-published",
+      "revisionScope": "full-model-code"
+    },
+    {
+      "brand": "Samsung",
+      "partCode": "VCA-SPW95/VT",
+      "modelCode": "VS80F28EFP",
+      "reference": "VS80F28EFP/WD",
+      "productCode": null,
+      "region": "DE",
+      "basis": "exact-model-optional-accessory-list",
+      "sourceId": "samsung-model:VS80F28EFP/WD",
+      "conditions": [
+        "Nur die explizit gelistete Geräteausführung VS80F28EFP/WD; andere /WD-, /WA- und Länderkennungen bleiben offen.",
+        "Nur bei vorhandenem, passendem Spray Spinning Sweeper; Pads/Tücher sind keine Grundgerät-Bauteile."
+      ],
+      "serialScope": "not-published",
+      "revisionScope": "full-model-code"
+    },
+    {
+      "brand": "Samsung",
+      "partCode": "VCA-SHFF80P",
+      "modelCode": "VS80F28EFP",
+      "reference": "VS80F28EFP/WD",
+      "productCode": null,
+      "region": "DE",
+      "basis": "exact-model-optional-accessory-list",
+      "sourceId": "samsung-model:VS80F28EFP/WD",
+      "conditions": [
+        "Nur die explizit gelistete Geräteausführung VS80F28EFP/WD; andere /WD-, /WA- und Länderkennungen bleiben offen."
+      ],
+      "serialScope": "not-published",
+      "revisionScope": "full-model-code"
+    },
+    {
+      "brand": "Samsung",
+      "partCode": "VCA-SAK95/GL",
+      "modelCode": "VS80F28EFP",
+      "reference": "VS80F28EFP/WD",
+      "productCode": null,
+      "region": "DE",
+      "basis": "exact-model-optional-accessory-list",
+      "sourceId": "samsung-model:VS80F28EFP/WD",
+      "conditions": [
+        "Nur die explizit gelistete Geräteausführung VS80F28EFP/WD; andere /WD-, /WA- und Länderkennungen bleiben offen."
+      ],
+      "serialScope": "not-published",
+      "revisionScope": "full-model-code"
+    },
+    {
+      "brand": "Samsung",
+      "partCode": "VCA-WBA95/GL",
+      "modelCode": "VS90F40EEK",
+      "reference": "VS90F40EEK/WD",
+      "productCode": null,
+      "region": "DE",
+      "basis": "exact-model-optional-accessory-list",
+      "sourceId": "samsung-model:VS90F40EEK/WD",
+      "conditions": [
+        "Nur die explizit gelistete Geräteausführung VS90F40EEK/WD; andere /WD-, /WA- und Länderkennungen bleiben offen."
+      ],
+      "serialScope": "not-published",
+      "revisionScope": "full-model-code"
+    },
+    {
+      "brand": "Samsung",
+      "partCode": "VCA-SHFF90K",
+      "modelCode": "VS90F40EEK",
+      "reference": "VS90F40EEK/WD",
+      "productCode": null,
+      "region": "DE",
+      "basis": "exact-model-optional-accessory-list",
+      "sourceId": "samsung-model:VS90F40EEK/WD",
+      "conditions": [
+        "Nur die explizit gelistete Geräteausführung VS90F40EEK/WD; andere /WD-, /WA- und Länderkennungen bleiben offen."
+      ],
+      "serialScope": "not-published",
+      "revisionScope": "full-model-code"
+    },
+    {
+      "brand": "Samsung",
+      "partCode": "VCA-ADB952",
+      "modelCode": "VS90F40EEK",
+      "reference": "VS90F40EEK/WD",
+      "productCode": null,
+      "region": "DE",
+      "basis": "exact-model-optional-accessory-list",
+      "sourceId": "samsung-model:VS90F40EEK/WD",
+      "conditions": [
+        "Nur die explizit gelistete Geräteausführung VS90F40EEK/WD; andere /WD-, /WA- und Länderkennungen bleiben offen.",
+        "Nur für die zum Gerät gehörige All-in-One Clean Station; Stationsausführung und Beutelanschluss separat prüfen."
+      ],
+      "serialScope": "not-published",
+      "revisionScope": "full-model-code"
+    },
+    {
+      "brand": "Samsung",
+      "partCode": "VCA-SPW95",
+      "modelCode": "VS90F40EEK",
+      "reference": "VS90F40EEK/WD",
+      "productCode": null,
+      "region": "DE",
+      "basis": "exact-model-optional-accessory-list",
+      "sourceId": "samsung-model:VS90F40EEK/WD",
+      "conditions": [
+        "Nur die explizit gelistete Geräteausführung VS90F40EEK/WD; andere /WD-, /WA- und Länderkennungen bleiben offen.",
+        "Nur bei vorhandenem, passendem Spray Spinning Sweeper; Pads/Tücher sind keine Grundgerät-Bauteile."
+      ],
+      "serialScope": "not-published",
+      "revisionScope": "full-model-code"
+    },
+    {
+      "brand": "Samsung",
+      "partCode": "VCA-SPA95/GL",
+      "modelCode": "VS90F40EEK",
+      "reference": "VS90F40EEK/WD",
+      "productCode": null,
+      "region": "DE",
+      "basis": "exact-model-optional-accessory-list",
+      "sourceId": "samsung-model:VS90F40EEK/WD",
+      "conditions": [
+        "Nur die explizit gelistete Geräteausführung VS90F40EEK/WD; andere /WD-, /WA- und Länderkennungen bleiben offen.",
+        "Nur bei vorhandenem, passendem Spray Spinning Sweeper; Pads/Tücher sind keine Grundgerät-Bauteile."
+      ],
+      "serialScope": "not-published",
+      "revisionScope": "full-model-code"
+    },
+    {
+      "brand": "Hoover",
+      "partCode": "35601731",
+      "modelCode": "FD22G",
+      "reference": "FD22G 001 (39400273)",
+      "productCode": "39400273",
+      "region": "GB",
+      "basis": "exact-product-code-service-list",
+      "sourceId": "hoover-model:FD22G:1",
+      "identitySourceId": "hoover-article:5234494",
+      "conditions": [
+        "Nur das ausdrücklich gelistete Gerät 39400273 (FD22G); keine Übertragung auf andere Produktcodes oder deutsche Geräte.",
+        "Anschluss, Revision und Serien-/Baustand am eigenen Gerät und im Service prüfen."
+      ],
+      "serialScope": "unresolved",
+      "revisionScope": "product-code-only"
+    },
+    {
+      "brand": "Hoover",
+      "partCode": "48021590",
+      "modelCode": "FD22G",
+      "reference": "FD22G 001 (39400273)",
+      "productCode": "39400273",
+      "region": "GB",
+      "basis": "exact-product-code-service-list",
+      "sourceId": "hoover-model:FD22G:1",
+      "identitySourceId": "hoover-article:5254613",
+      "conditions": [
+        "Nur das ausdrücklich gelistete Gerät 39400273 (FD22G); keine Übertragung auf andere Produktcodes oder deutsche Geräte.",
+        "Anschluss, Revision und Serien-/Baustand am eigenen Gerät und im Service prüfen."
+      ],
+      "serialScope": "unresolved",
+      "revisionScope": "product-code-only"
+    },
+    {
+      "brand": "Hoover",
+      "partCode": "35601730",
+      "modelCode": "FD22G",
+      "reference": "FD22G 001 (39400273)",
+      "productCode": "39400273",
+      "region": "GB",
+      "basis": "exact-product-code-service-list",
+      "sourceId": "hoover-model:FD22G:1",
+      "identitySourceId": "hoover-article:5234495",
+      "conditions": [
+        "Nur das ausdrücklich gelistete Gerät 39400273 (FD22G); keine Übertragung auf andere Produktcodes oder deutsche Geräte.",
+        "Anschluss, Revision und Serien-/Baustand am eigenen Gerät und im Service prüfen."
+      ],
+      "serialScope": "unresolved",
+      "revisionScope": "product-code-only"
+    },
+    {
+      "brand": "Hoover",
+      "partCode": "49037664",
+      "modelCode": "FD22G",
+      "reference": "FD22G 001 (39400273)",
+      "productCode": "39400273",
+      "region": "GB",
+      "basis": "exact-product-code-service-list",
+      "sourceId": "hoover-model:FD22G:1",
+      "identitySourceId": "hoover-article:5239936",
+      "conditions": [
+        "Nur das ausdrücklich gelistete Gerät 39400273 (FD22G); keine Übertragung auf andere Produktcodes oder deutsche Geräte.",
+        "Anschluss, Revision und Serien-/Baustand am eigenen Gerät und im Service prüfen.",
+        "UK-Netzstecker und exakte Netzteilnummer prüfen; kein DE-Ladegerät.",
+        "Nur die gelistete Akku-Artikelnummer und deren elektrische/Anschluss-Ausführung; Spannung allein bestätigt keine Passung."
+      ],
+      "serialScope": "unresolved",
+      "revisionScope": "product-code-only"
+    },
+    {
+      "brand": "Hoover",
+      "partCode": "48022207",
+      "modelCode": "FD22G",
+      "reference": "FD22G 001 (39400273)",
+      "productCode": "39400273",
+      "region": "GB",
+      "basis": "exact-product-code-service-list",
+      "sourceId": "hoover-model:FD22G:1",
+      "identitySourceId": "hoover-article:5278751",
+      "conditions": [
+        "Nur das ausdrücklich gelistete Gerät 39400273 (FD22G); keine Übertragung auf andere Produktcodes oder deutsche Geräte.",
+        "Anschluss, Revision und Serien-/Baustand am eigenen Gerät und im Service prüfen."
+      ],
+      "serialScope": "unresolved",
+      "revisionScope": "product-code-only"
+    },
+    {
+      "brand": "Hoover",
+      "partCode": "48021583",
+      "modelCode": "FD22G",
+      "reference": "FD22G 001 (39400273)",
+      "productCode": "39400273",
+      "region": "GB",
+      "basis": "exact-product-code-service-list",
+      "sourceId": "hoover-model:FD22G:1",
+      "identitySourceId": "hoover-article:5238728",
+      "conditions": [
+        "Nur das ausdrücklich gelistete Gerät 39400273 (FD22G); keine Übertragung auf andere Produktcodes oder deutsche Geräte.",
+        "Anschluss, Revision und Serien-/Baustand am eigenen Gerät und im Service prüfen."
+      ],
+      "serialScope": "unresolved",
+      "revisionScope": "product-code-only"
+    },
+    {
+      "brand": "Hoover",
+      "partCode": "48022206",
+      "modelCode": "FD22G",
+      "reference": "FD22G 001 (39400273)",
+      "productCode": "39400273",
+      "region": "GB",
+      "basis": "exact-product-code-service-list",
+      "sourceId": "hoover-model:FD22G:1",
+      "identitySourceId": "hoover-article:5288198",
+      "conditions": [
+        "Nur das ausdrücklich gelistete Gerät 39400273 (FD22G); keine Übertragung auf andere Produktcodes oder deutsche Geräte.",
+        "Anschluss, Revision und Serien-/Baustand am eigenen Gerät und im Service prüfen."
+      ],
+      "serialScope": "unresolved",
+      "revisionScope": "product-code-only"
+    },
+    {
+      "brand": "Hoover",
+      "partCode": "48022191",
+      "modelCode": "FD22G",
+      "reference": "FD22G 001 (39400273)",
+      "productCode": "39400273",
+      "region": "GB",
+      "basis": "exact-product-code-service-list",
+      "sourceId": "hoover-model:FD22G:1",
+      "identitySourceId": "hoover-article:5281800",
+      "conditions": [
+        "Nur das ausdrücklich gelistete Gerät 39400273 (FD22G); keine Übertragung auf andere Produktcodes oder deutsche Geräte.",
+        "Anschluss, Revision und Serien-/Baustand am eigenen Gerät und im Service prüfen."
+      ],
+      "serialScope": "unresolved",
+      "revisionScope": "product-code-only"
+    },
+    {
+      "brand": "Hoover",
+      "partCode": "35601729",
+      "modelCode": "FD22G",
+      "reference": "FD22G 001 (39400273)",
+      "productCode": "39400273",
+      "region": "GB",
+      "basis": "exact-product-code-service-list",
+      "sourceId": "hoover-model:FD22G:1",
+      "identitySourceId": "hoover-article:5217281",
+      "conditions": [
+        "Nur das ausdrücklich gelistete Gerät 39400273 (FD22G); keine Übertragung auf andere Produktcodes oder deutsche Geräte.",
+        "Anschluss, Revision und Serien-/Baustand am eigenen Gerät und im Service prüfen.",
+        "Nur die gelistete Akku-Artikelnummer und deren elektrische/Anschluss-Ausführung; Spannung allein bestätigt keine Passung."
+      ],
+      "serialScope": "unresolved",
+      "revisionScope": "product-code-only"
+    },
+    {
+      "brand": "Hoover",
+      "partCode": "35601796",
+      "modelCode": "FD22G",
+      "reference": "FD22G 001 (39400273)",
+      "productCode": "39400273",
+      "region": "GB",
+      "basis": "exact-product-code-service-list",
+      "sourceId": "hoover-model:FD22G:1",
+      "identitySourceId": "hoover-article:5240288",
+      "conditions": [
+        "Nur das ausdrücklich gelistete Gerät 39400273 (FD22G); keine Übertragung auf andere Produktcodes oder deutsche Geräte.",
+        "Anschluss, Revision und Serien-/Baustand am eigenen Gerät und im Service prüfen."
+      ],
+      "serialScope": "unresolved",
+      "revisionScope": "product-code-only"
+    },
+    {
+      "brand": "Hoover",
+      "partCode": "48023954",
+      "modelCode": "DS22G",
+      "reference": "DS22G 001 (39400303)",
+      "productCode": "39400303",
+      "region": "GB",
+      "basis": "exact-product-code-service-list",
+      "sourceId": "hoover-model:DS22G:1",
+      "identitySourceId": "hoover-article:5281818",
+      "conditions": [
+        "Nur das ausdrücklich gelistete Gerät 39400303 (DS22G); keine Übertragung auf andere Produktcodes oder deutsche Geräte.",
+        "Der Service weist auf seriennummernspezifische Teile hin. Serien-/Baustand vor Bestellung im Service prüfen; keine Freigabe aller Serienbereiche.",
+        "UK-Netzstecker und exakte Netzteilnummer prüfen; kein DE-Ladegerät."
+      ],
+      "serialScope": "unresolved",
+      "revisionScope": "product-code-only"
+    },
+    {
+      "brand": "Hoover",
+      "partCode": "35601876",
+      "modelCode": "DS22G",
+      "reference": "DS22G 001 (39400303)",
+      "productCode": "39400303",
+      "region": "GB",
+      "basis": "exact-product-code-service-list",
+      "sourceId": "hoover-model:DS22G:1",
+      "identitySourceId": "hoover-article:5272800",
+      "conditions": [
+        "Nur das ausdrücklich gelistete Gerät 39400303 (DS22G); keine Übertragung auf andere Produktcodes oder deutsche Geräte.",
+        "Der Service weist auf seriennummernspezifische Teile hin. Serien-/Baustand vor Bestellung im Service prüfen; keine Freigabe aller Serienbereiche."
+      ],
+      "serialScope": "unresolved",
+      "revisionScope": "product-code-only"
+    },
+    {
+      "brand": "Hoover",
+      "partCode": "35601687",
+      "modelCode": "DS22G",
+      "reference": "DS22G 001 (39400303)",
+      "productCode": "39400303",
+      "region": "GB",
+      "basis": "exact-product-code-service-list",
+      "sourceId": "hoover-model:DS22G:1",
+      "identitySourceId": "hoover-article:5149557",
+      "conditions": [
+        "Nur das ausdrücklich gelistete Gerät 39400303 (DS22G); keine Übertragung auf andere Produktcodes oder deutsche Geräte.",
+        "Der Service weist auf seriennummernspezifische Teile hin. Serien-/Baustand vor Bestellung im Service prüfen; keine Freigabe aller Serienbereiche."
+      ],
+      "serialScope": "unresolved",
+      "revisionScope": "product-code-only"
+    },
+    {
+      "brand": "Hoover",
+      "partCode": "39800043",
+      "modelCode": "DS22G",
+      "reference": "DS22G 001 (39400303)",
+      "productCode": "39400303",
+      "region": "GB",
+      "basis": "exact-product-code-service-list",
+      "sourceId": "hoover-model:DS22G:1",
+      "identitySourceId": "hoover-article:5288242",
+      "conditions": [
+        "Nur das ausdrücklich gelistete Gerät 39400303 (DS22G); keine Übertragung auf andere Produktcodes oder deutsche Geräte.",
+        "Der Service weist auf seriennummernspezifische Teile hin. Serien-/Baustand vor Bestellung im Service prüfen; keine Freigabe aller Serienbereiche.",
+        "Nur die gelistete Akku-Artikelnummer und deren elektrische/Anschluss-Ausführung; Spannung allein bestätigt keine Passung."
+      ],
+      "serialScope": "unresolved",
+      "revisionScope": "product-code-only"
+    },
+    {
+      "brand": "Hoover",
+      "partCode": "35602487",
+      "modelCode": "HU300RHM001",
+      "reference": "HU300RHM 001 (39101032)",
+      "productCode": "39101032",
+      "region": "GB",
+      "basis": "exact-product-code-service-list",
+      "sourceId": "hoover-model:HU300RHM001:1",
+      "identitySourceId": "hoover-article:5363530",
+      "conditions": [
+        "Nur das ausdrücklich gelistete Gerät 39101032 (HU300RHM 001); keine Übertragung auf andere Produktcodes oder deutsche Geräte.",
+        "Anschluss, Revision und Serien-/Baustand am eigenen Gerät und im Service prüfen."
+      ],
+      "serialScope": "unresolved",
+      "revisionScope": "product-code-only"
+    },
+    {
+      "brand": "Hoover",
+      "partCode": "35602489",
+      "modelCode": "HU300RHM001",
+      "reference": "HU300RHM 001 (39101032)",
+      "productCode": "39101032",
+      "region": "GB",
+      "basis": "exact-product-code-service-list",
+      "sourceId": "hoover-model:HU300RHM001:1",
+      "identitySourceId": "hoover-article:5366775",
+      "conditions": [
+        "Nur das ausdrücklich gelistete Gerät 39101032 (HU300RHM 001); keine Übertragung auf andere Produktcodes oder deutsche Geräte.",
+        "Anschluss, Revision und Serien-/Baustand am eigenen Gerät und im Service prüfen."
+      ],
+      "serialScope": "unresolved",
+      "revisionScope": "product-code-only"
+    },
+    {
+      "brand": "Hoover",
+      "partCode": "35602491",
+      "modelCode": "HU300RHM001",
+      "reference": "HU300RHM 001 (39101032)",
+      "productCode": "39101032",
+      "region": "GB",
+      "basis": "exact-product-code-service-list",
+      "sourceId": "hoover-model:HU300RHM001:1",
+      "identitySourceId": "hoover-article:5365353",
+      "conditions": [
+        "Nur das ausdrücklich gelistete Gerät 39101032 (HU300RHM 001); keine Übertragung auf andere Produktcodes oder deutsche Geräte.",
+        "Anschluss, Revision und Serien-/Baustand am eigenen Gerät und im Service prüfen."
+      ],
+      "serialScope": "unresolved",
+      "revisionScope": "product-code-only"
+    },
+    {
+      "brand": "Hoover",
+      "partCode": "49125117",
+      "modelCode": "HU300RHM001",
+      "reference": "HU300RHM 001 (39101032)",
+      "productCode": "39101032",
+      "region": "GB",
+      "basis": "exact-product-code-service-list",
+      "sourceId": "hoover-model:HU300RHM001:1",
+      "identitySourceId": "hoover-article:5375795",
+      "conditions": [
+        "Nur das ausdrücklich gelistete Gerät 39101032 (HU300RHM 001); keine Übertragung auf andere Produktcodes oder deutsche Geräte.",
+        "Anschluss, Revision und Serien-/Baustand am eigenen Gerät und im Service prüfen."
+      ],
+      "serialScope": "unresolved",
+      "revisionScope": "product-code-only"
+    }
+  ],
+  "deferred": [
+    {
+      "id": "samsung-model:VS90F40EEM/WD",
+      "brand": "Samsung",
+      "modelCode": "VS90F40EEM",
+      "region": "DE",
+      "status": "deferred",
+      "url": "https://www.samsung.com/de/vacuum-cleaners/stick/vc9700cl-stick-vc-with-most-powerful-jet-aiultra-400w-mint-vs90f40eem-wd/",
+      "reason": "Vorhandener Record VS90F40EEK trägt zwar einen EEM-Alias, aber die explizite Teileliste gilt für VS90F40EEM/WD. Keine EEM-Passung an den EEK-Grundcode übertragen; separater Modellrecord ist außerhalb dieses Teile-Work-Auftrags."
+    },
+    {
+      "id": "hoover:39400273:5277457",
+      "brand": "Hoover",
+      "modelCode": "FD22G",
+      "productCode": "39400273",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/body-unit/product.pl?pid=5277457&path=1056568,1056551&model_ref=11873381",
+      "reason": "Keine Originalteilnummer im live abgerufenen Artikeltext; Shop-PID/Stock No wird nicht als OEM-Nummer übernommen."
+    },
+    {
+      "id": "hoover:39400273:5281798",
+      "brand": "Hoover",
+      "modelCode": "FD22G",
+      "productCode": "39400273",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/filter-cover/product.pl?pid=5281798&path=1056568,1056551&model_ref=11873381",
+      "reason": "Keine Originalteilnummer im live abgerufenen Artikeltext; Shop-PID/Stock No wird nicht als OEM-Nummer übernommen."
+    },
+    {
+      "id": "hoover:39400273:5282720",
+      "brand": "Hoover",
+      "modelCode": "FD22G",
+      "productCode": "39400273",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/extension-tube/product.pl?pid=5282720&path=1056568,1056551&model_ref=11873381",
+      "reason": "Keine Originalteilnummer im live abgerufenen Artikeltext; Shop-PID/Stock No wird nicht als OEM-Nummer übernommen."
+    },
+    {
+      "id": "hoover:39400273:5234493",
+      "brand": "Hoover",
+      "modelCode": "FD22G",
+      "productCode": "39400273",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/g162-furniture-nozzle/product.pl?pid=5234493&path=1056568,1056551&model_ref=11873381",
+      "reason": "Keine Originalteilnummer im live abgerufenen Artikeltext; Shop-PID/Stock No wird nicht als OEM-Nummer übernommen."
+    },
+    {
+      "id": "hoover:39400273:5288283",
+      "brand": "Hoover",
+      "modelCode": "FD22G",
+      "productCode": "39400273",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/adapter/product.pl?pid=5288283&path=1056568,1056551&model_ref=11873381",
+      "reason": "Keine Originalteilnummer im live abgerufenen Artikeltext; Shop-PID/Stock No wird nicht als OEM-Nummer übernommen."
+    },
+    {
+      "id": "hoover:39400273:5253566",
+      "brand": "Hoover",
+      "modelCode": "FD22G",
+      "productCode": "39400273",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/ceiling-crevice-tool/product.pl?pid=5253566&path=1056568,1056551&model_ref=11873381",
+      "reason": "Keine Originalteilnummer im live abgerufenen Artikeltext; Shop-PID/Stock No wird nicht als OEM-Nummer übernommen."
+    },
+    {
+      "id": "hoover:39400273:5240617",
+      "brand": "Hoover",
+      "modelCode": "FD22G",
+      "productCode": "39400273",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/g166-deep-cleaning-brush-adaptor/product.pl?pid=5240617&path=1056568,1056551&model_ref=11873381",
+      "reason": "Keine Originalteilnummer im live abgerufenen Artikeltext; Shop-PID/Stock No wird nicht als OEM-Nummer übernommen."
+    },
+    {
+      "id": "hoover:39400273:5253565",
+      "brand": "Hoover",
+      "modelCode": "FD22G",
+      "productCode": "39400273",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/radiator-brush/product.pl?pid=5253565&path=1056568,1056551&model_ref=11873381",
+      "reason": "Keine Originalteilnummer im live abgerufenen Artikeltext; Shop-PID/Stock No wird nicht als OEM-Nummer übernommen."
+    },
+    {
+      "id": "hoover:39400273:5217500",
+      "brand": "Hoover",
+      "modelCode": "FD22G",
+      "productCode": "39400273",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/fd22g-001-39400273/g161-parquet-brush/product.pl?pid=5217500&path=1056568,1056551&model_ref=11873381",
+      "reason": "Keine Originalteilnummer im live abgerufenen Artikeltext; Shop-PID/Stock No wird nicht als OEM-Nummer übernommen."
+    },
+    {
+      "id": "hoover:39400303:5276044",
+      "brand": "Hoover",
+      "modelCode": "DS22G",
+      "productCode": "39400303",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/pre-motor-filter/product.pl?pid=5276044&path=1056568,1056551&model_ref=12058177",
+      "reason": "Keine Originalteilnummer im live abgerufenen Artikeltext; Shop-PID/Stock No wird nicht als OEM-Nummer übernommen."
+    },
+    {
+      "id": "hoover:39400303:5276169",
+      "brand": "Hoover",
+      "modelCode": "DS22G",
+      "productCode": "39400303",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/t114-exhaust-filter/product.pl?pid=5276169&path=1056568,1056551&model_ref=12058177",
+      "reason": "Keine Originalteilnummer im live abgerufenen Artikeltext; Shop-PID/Stock No wird nicht als OEM-Nummer übernommen."
+    },
+    {
+      "id": "hoover:39400303:5291501",
+      "brand": "Hoover",
+      "modelCode": "DS22G",
+      "productCode": "39400303",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/pre-motor-filter/product.pl?pid=5291501&path=1056568,1056551&model_ref=12058177",
+      "reason": "Keine Originalteilnummer im live abgerufenen Artikeltext; Shop-PID/Stock No wird nicht als OEM-Nummer übernommen."
+    },
+    {
+      "id": "hoover:39400303:5288211",
+      "brand": "Hoover",
+      "modelCode": "DS22G",
+      "productCode": "39400303",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/wheel-kit-pack-of-2/product.pl?pid=5288211&path=1056568,1056551&model_ref=12058177",
+      "reason": "Keine Originalteilnummer im live abgerufenen Artikeltext; Shop-PID/Stock No wird nicht als OEM-Nummer übernommen."
+    },
+    {
+      "id": "hoover:39400303:5288218",
+      "brand": "Hoover",
+      "modelCode": "DS22G",
+      "productCode": "39400303",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/end-cap/product.pl?pid=5288218&path=1056568,1056551&model_ref=12058177",
+      "reason": "Keine Originalteilnummer im live abgerufenen Artikeltext; Shop-PID/Stock No wird nicht als OEM-Nummer übernommen."
+    },
+    {
+      "id": "hoover:39400303:5276168",
+      "brand": "Hoover",
+      "modelCode": "DS22G",
+      "productCode": "39400303",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/s123a-pre-motor-mesh-filter/product.pl?pid=5276168&path=1056568,1056551&model_ref=12058177",
+      "reason": "Keine Originalteilnummer im live abgerufenen Artikeltext; Shop-PID/Stock No wird nicht als OEM-Nummer übernommen."
+    },
+    {
+      "id": "hoover:39400303:5354576",
+      "brand": "Hoover",
+      "modelCode": "DS22G",
+      "productCode": "39400303",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/supporting-bracket-assemby/product.pl?pid=5354576&path=1056568,1056551&model_ref=12058177",
+      "reason": "Keine Originalteilnummer im live abgerufenen Artikeltext; Shop-PID/Stock No wird nicht als OEM-Nummer übernommen."
+    },
+    {
+      "id": "hoover:39400303:5288200",
+      "brand": "Hoover",
+      "modelCode": "DS22G",
+      "productCode": "39400303",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/body-unit/product.pl?pid=5288200&path=1056568,1056551&model_ref=12058177",
+      "reason": "Keine Originalteilnummer im live abgerufenen Artikeltext; Shop-PID/Stock No wird nicht als OEM-Nummer übernommen."
+    },
+    {
+      "id": "hoover:39400303:5287760",
+      "brand": "Hoover",
+      "modelCode": "DS22G",
+      "productCode": "39400303",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/vacuum-cleaner-hard-floor-carpet-nozzle/product.pl?pid=5287760&path=1056568,1056551&model_ref=12058177",
+      "reason": "Keine Originalteilnummer im live abgerufenen Artikeltext; Shop-PID/Stock No wird nicht als OEM-Nummer übernommen."
+    },
+    {
+      "id": "hoover:39400303:5288210",
+      "brand": "Hoover",
+      "modelCode": "DS22G",
+      "productCode": "39400303",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/hard-floor-and-carpet-nozzle/product.pl?pid=5288210&path=1056568,1056551&model_ref=12058177",
+      "reason": "Keine Originalteilnummer im live abgerufenen Artikeltext; Shop-PID/Stock No wird nicht als OEM-Nummer übernommen."
+    },
+    {
+      "id": "hoover:39400303:5288245",
+      "brand": "Hoover",
+      "modelCode": "DS22G",
+      "productCode": "39400303",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/filter-bulkhead/product.pl?pid=5288245&path=1056568,1056551&model_ref=12058177",
+      "reason": "Keine Originalteilnummer im live abgerufenen Artikeltext; Shop-PID/Stock No wird nicht als OEM-Nummer übernommen."
+    },
+    {
+      "id": "hoover:39400303:5360697",
+      "brand": "Hoover",
+      "modelCode": "DS22G",
+      "productCode": "39400303",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/programmed-control-pcb-module/product.pl?pid=5360697&path=1056568,1056551&model_ref=12058177",
+      "reason": "Keine Originalteilnummer im live abgerufenen Artikeltext; Shop-PID/Stock No wird nicht als OEM-Nummer übernommen."
+    },
+    {
+      "id": "hoover:39400303:5281823",
+      "brand": "Hoover",
+      "modelCode": "DS22G",
+      "productCode": "39400303",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/extension-tube/product.pl?pid=5281823&path=1056568,1056551&model_ref=12058177",
+      "reason": "Keine Originalteilnummer im live abgerufenen Artikeltext; Shop-PID/Stock No wird nicht als OEM-Nummer übernommen."
+    },
+    {
+      "id": "hoover:39400303:5281777",
+      "brand": "Hoover",
+      "modelCode": "DS22G",
+      "productCode": "39400303",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/filter-cover-latch/product.pl?pid=5281777&path=1056568,1056551&model_ref=12058177",
+      "reason": "Keine Originalteilnummer im live abgerufenen Artikeltext; Shop-PID/Stock No wird nicht als OEM-Nummer übernommen."
+    },
+    {
+      "id": "hoover:39400303:5278939",
+      "brand": "Hoover",
+      "modelCode": "DS22G",
+      "productCode": "39400303",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/nozzle-cleanout-tool/product.pl?pid=5278939&path=1056568,1056551&model_ref=12058177",
+      "reason": "Keine Originalteilnummer im live abgerufenen Artikeltext; Shop-PID/Stock No wird nicht als OEM-Nummer übernommen."
+    },
+    {
+      "id": "hoover:39400303:5281778",
+      "brand": "Hoover",
+      "modelCode": "DS22G",
+      "productCode": "39400303",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/cyclonic-unit-assembly/product.pl?pid=5281778&path=1056568,1056551&model_ref=12058177",
+      "reason": "Keine Originalteilnummer im live abgerufenen Artikeltext; Shop-PID/Stock No wird nicht als OEM-Nummer übernommen."
+    },
+    {
+      "id": "hoover:39400303:5281822",
+      "brand": "Hoover",
+      "modelCode": "DS22G",
+      "productCode": "39400303",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/carry-bag/product.pl?pid=5281822&path=1056568,1056551&model_ref=12058177",
+      "reason": "Keine Originalteilnummer im live abgerufenen Artikeltext; Shop-PID/Stock No wird nicht als OEM-Nummer übernommen."
+    },
+    {
+      "id": "hoover:39400303:5278940",
+      "brand": "Hoover",
+      "modelCode": "DS22G",
+      "productCode": "39400303",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/wheels-kit/product.pl?pid=5278940&path=1056568,1056551&model_ref=12058177",
+      "reason": "Keine Originalteilnummer im live abgerufenen Artikeltext; Shop-PID/Stock No wird nicht als OEM-Nummer übernommen."
+    },
+    {
+      "id": "hoover:39400303:5281773",
+      "brand": "Hoover",
+      "modelCode": "DS22G",
+      "productCode": "39400303",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/adapter/product.pl?pid=5281773&path=1056568,1056551&model_ref=12058177",
+      "reason": "Keine Originalteilnummer im live abgerufenen Artikeltext; Shop-PID/Stock No wird nicht als OEM-Nummer übernommen."
+    },
+    {
+      "id": "hoover:39400303:5319285",
+      "brand": "Hoover",
+      "modelCode": "DS22G",
+      "productCode": "39400303",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/bearing/product.pl?pid=5319285&path=1056568,1056551&model_ref=12058177",
+      "reason": "Keine Originalteilnummer im live abgerufenen Artikeltext; Shop-PID/Stock No wird nicht als OEM-Nummer übernommen."
+    },
+    {
+      "id": "hoover:39400303:5272799",
+      "brand": "Hoover",
+      "modelCode": "DS22G",
+      "productCode": "39400303",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/32mm-g92pc-parquet-nozzle-floor-tool/product.pl?pid=5272799&path=1056568,1056551&model_ref=12058177",
+      "reason": "Keine Originalteilnummer im live abgerufenen Artikeltext; Shop-PID/Stock No wird nicht als OEM-Nummer übernommen."
+    },
+    {
+      "id": "hoover:39400303:5291665",
+      "brand": "Hoover",
+      "modelCode": "DS22G",
+      "productCode": "39400303",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/accessory-kit/product.pl?pid=5291665&path=1056568,1056551&model_ref=12058177",
+      "reason": "Keine Originalteilnummer im live abgerufenen Artikeltext; Shop-PID/Stock No wird nicht als OEM-Nummer übernommen."
+    },
+    {
+      "id": "hoover:39400303:5278932",
+      "brand": "Hoover",
+      "modelCode": "DS22G",
+      "productCode": "39400303",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/g167-furniture-nozzlecrevice-tool/product.pl?pid=5278932&path=1056568,1056551&model_ref=12058177",
+      "reason": "Keine Originalteilnummer im live abgerufenen Artikeltext; Shop-PID/Stock No wird nicht als OEM-Nummer übernommen."
+    },
+    {
+      "id": "hoover:39400303:5272801",
+      "brand": "Hoover",
+      "modelCode": "DS22G",
+      "productCode": "39400303",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/ds22g-001-39400303/g168-mini-furniture-brush/product.pl?pid=5272801&path=1056568,1056551&model_ref=12058177",
+      "reason": "Keine Originalteilnummer im live abgerufenen Artikeltext; Shop-PID/Stock No wird nicht als OEM-Nummer übernommen."
+    },
+    {
+      "id": "hoover:39101032:5371386",
+      "brand": "Hoover",
+      "modelCode": "HU300RHM001",
+      "productCode": "39101032",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/g194-3in1-multi-function-tool/product.pl?pid=5371386&path=600307&model_ref=14737057",
+      "reason": "Keine Originalteilnummer im live abgerufenen Artikeltext; Shop-PID/Stock No wird nicht als OEM-Nummer übernommen."
+    },
+    {
+      "id": "hoover:39101032:5371768",
+      "brand": "Hoover",
+      "modelCode": "HU300RHM001",
+      "productCode": "39101032",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/agitator-belt/product.pl?pid=5371768&path=600307&model_ref=14737057",
+      "reason": "HTTP Error 404: Not Found"
+    },
+    {
+      "id": "hoover:39101032:5371387",
+      "brand": "Hoover",
+      "modelCode": "HU300RHM001",
+      "productCode": "39101032",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/g195-dusting-brush/product.pl?pid=5371387&path=600307&model_ref=14737057",
+      "reason": "Keine Originalteilnummer im live abgerufenen Artikeltext; Shop-PID/Stock No wird nicht als OEM-Nummer übernommen."
+    },
+    {
+      "id": "hoover:39101032:5373158",
+      "brand": "Hoover",
+      "modelCode": "HU300RHM001",
+      "productCode": "39101032",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/duct-seal/product.pl?pid=5373158&path=600307&model_ref=14737057",
+      "reason": "Keine Originalteilnummer im live abgerufenen Artikeltext; Shop-PID/Stock No wird nicht als OEM-Nummer übernommen."
+    },
+    {
+      "id": "hoover:39101032:5373847",
+      "brand": "Hoover",
+      "modelCode": "HU300RHM001",
+      "productCode": "39101032",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/handle-grip-cw-tube/product.pl?pid=5373847&path=600307&model_ref=14737057",
+      "reason": "Keine Originalteilnummer im live abgerufenen Artikeltext; Shop-PID/Stock No wird nicht als OEM-Nummer übernommen."
+    },
+    {
+      "id": "hoover:39101032:5355042",
+      "brand": "Hoover",
+      "modelCode": "HU300RHM001",
+      "productCode": "39101032",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/crevice-tool/product.pl?pid=5355042&path=600307&model_ref=14737057",
+      "reason": "Keine Originalteilnummer im live abgerufenen Artikeltext; Shop-PID/Stock No wird nicht als OEM-Nummer übernommen."
+    },
+    {
+      "id": "hoover:39101032:5668932",
+      "brand": "Hoover",
+      "modelCode": "HU300RHM001",
+      "productCode": "39101032",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/omc-nozzle-soleplate/product.pl?pid=5668932&path=600307&model_ref=14737057",
+      "reason": "Keine Originalteilnummer im live abgerufenen Artikeltext; Shop-PID/Stock No wird nicht als OEM-Nummer übernommen."
+    },
+    {
+      "id": "hoover:39101032:5371388",
+      "brand": "Hoover",
+      "modelCode": "HU300RHM001",
+      "productCode": "39101032",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/mini-turbo-nozzle/product.pl?pid=5371388&path=600307&model_ref=14737057",
+      "reason": "Keine Originalteilnummer im live abgerufenen Artikeltext; Shop-PID/Stock No wird nicht als OEM-Nummer übernommen."
+    },
+    {
+      "id": "hoover:39101032:5435368",
+      "brand": "Hoover",
+      "modelCode": "HU300RHM001",
+      "productCode": "39101032",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/cyclonic-unit-assy/product.pl?pid=5435368&path=600307&model_ref=14737057",
+      "reason": "Keine Originalteilnummer im live abgerufenen Artikeltext; Shop-PID/Stock No wird nicht als OEM-Nummer übernommen."
+    },
+    {
+      "id": "hoover:39101032:5374579",
+      "brand": "Hoover",
+      "modelCode": "HU300RHM001",
+      "productCode": "39101032",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/cyclone-lock-cover-assy/product.pl?pid=5374579&path=600307&model_ref=14737057",
+      "reason": "Keine Originalteilnummer im live abgerufenen Artikeltext; Shop-PID/Stock No wird nicht als OEM-Nummer übernommen."
+    },
+    {
+      "id": "hoover:39101032:5406335",
+      "brand": "Hoover",
+      "modelCode": "HU300RHM001",
+      "productCode": "39101032",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hu300rhm-001-39101032/handle-plug/product.pl?pid=5406335&path=600307&model_ref=14737057",
+      "reason": "Keine Originalteilnummer im live abgerufenen Artikeltext; Shop-PID/Stock No wird nicht als OEM-Nummer übernommen."
+    },
+    {
+      "id": "hoover:39400912:catalog",
+      "brand": "Hoover",
+      "modelCode": "HF222RH001",
+      "productCode": "39400912",
+      "region": "GB",
+      "status": "deferred",
+      "url": "https://www.hooverspares.co.uk/vacuum-cleaner-floorcare/hf222rh-39400912/catalogue.pl?model_ref=14947494&path=1056568%2C1056551",
+      "reason": "Live-Inhalt liefert allgemeinen Katalog (9706 Artikel), nicht das ausgewählte Produkt. Modellcode im URL-Pfad und indexierte Treffer ersetzen keine bestätigte aktuelle Modellliste."
+    },
+    {
+      "id": "samsung:VCA-SAK95K/GL",
+      "brand": "Samsung",
+      "partCode": "VCA-SAK95K/GL",
+      "region": "DE",
+      "status": "deferred",
+      "url": "https://www.samsung.com/de/home-appliance-accessories/vca-sak95k-vca-sak95k-gl/",
+      "reason": "Artikel bleibt vorhanden; Serien-/Familienangabe liefert keinen vollständigen /WD-/WA-/Revisionsnachweis."
+    },
+    {
+      "id": "samsung:VCA-SHF90/VT",
+      "brand": "Samsung",
+      "partCode": "VCA-SHF90/VT",
+      "region": "DE",
+      "status": "deferred",
+      "url": "https://www.samsung.com/de/home-appliance-accessories/vacuum-cleaner-vca-shf90-vt/",
+      "reason": "Artikel bleibt vorhanden; Serien-/Familienangabe liefert keinen vollständigen /WD-/WA-/Revisionsnachweis."
+    },
+    {
+      "id": "samsung:VCA-ADB90/VT",
+      "brand": "Samsung",
+      "partCode": "VCA-ADB90/VT",
+      "region": "DE",
+      "status": "deferred",
+      "url": "https://www.samsung.com/de/home-appliance-accessories/vacuum-cleaner-vca-adb90-vt/",
+      "reason": "Artikel bleibt vorhanden; Serien-/Familienangabe liefert keinen vollständigen /WD-/WA-/Revisionsnachweis."
+    },
+    {
+      "id": "samsung:VCA-SHF90A/VT",
+      "brand": "Samsung",
+      "partCode": "VCA-SHF90A/VT",
+      "region": "DE",
+      "status": "deferred",
+      "url": "https://www.samsung.com/de/home-appliance-accessories/vacuum-cleaner-hepa-filtration-vca-shf90a-vt/",
+      "reason": "Artikel bleibt vorhanden; Serien-/Familienangabe liefert keinen vollständigen /WD-/WA-/Revisionsnachweis."
+    },
+    {
+      "id": "samsung:VCA-PTA95/VT",
+      "brand": "Samsung",
+      "partCode": "VCA-PTA95/VT",
+      "region": "DE",
+      "status": "deferred",
+      "url": "https://www.samsung.com/de/home-appliance-accessories/jet-75e-accessory-pet-tool-vca-pta95-vt/",
+      "reason": "Artikel bleibt vorhanden; Serien-/Familienangabe liefert keinen vollständigen /WD-/WA-/Revisionsnachweis."
+    },
+    {
+      "id": "samsung:VCA-AHF90",
+      "brand": "Samsung",
+      "partCode": "VCA-AHF90",
+      "region": "DE",
+      "status": "deferred",
+      "url": "https://www.samsung.com/de/home-appliance-accessories/vacuum-cleaner-vca-ahf90/",
+      "reason": "Artikel bleibt vorhanden; Serien-/Familienangabe liefert keinen vollständigen /WD-/WA-/Revisionsnachweis."
+    },
+    {
+      "id": "samsung:VCA-TABA95",
+      "brand": "Samsung",
+      "partCode": "VCA-TABA95",
+      "region": "DE",
+      "status": "deferred",
+      "url": "https://www.samsung.com/de/home-appliance-accessories/bespoke-jet-dual-brush-vca-taba95/",
+      "reason": "Artikel bleibt vorhanden; Serien-/Familienangabe liefert keinen vollständigen /WD-/WA-/Revisionsnachweis."
+    },
+    {
+      "id": "samsung:VCA-SAPC97/WA",
+      "brand": "Samsung",
+      "partCode": "VCA-SAPC97/WA",
+      "region": "DE",
+      "status": "deferred",
+      "url": "https://www.samsung.com/de/home-appliance-accessories/jet-vc-renewal-accessory-battery3-vca-sapc97-wa/",
+      "reason": "Artikel bleibt vorhanden; Serien-/Familienangabe liefert keinen vollständigen /WD-/WA-/Revisionsnachweis."
+    },
+    {
+      "id": "samsung:VCA-SBTC97/GL",
+      "brand": "Samsung",
+      "partCode": "VCA-SBTC97/GL",
+      "region": "DE",
+      "status": "deferred",
+      "url": "https://www.samsung.com/de/home-appliance-accessories/jet-vc-renewal-accessory-battery3-vca-sbtc97-gl/",
+      "reason": "Artikel bleibt vorhanden; Serien-/Familienangabe liefert keinen vollständigen /WD-/WA-/Revisionsnachweis."
+    },
+    {
+      "id": "samsung:VCA-SBTC97S/GL",
+      "brand": "Samsung",
+      "partCode": "VCA-SBTC97S/GL",
+      "region": "DE",
+      "status": "deferred",
+      "url": "https://www.samsung.com/de/home-appliance-accessories/jet-vc-renewal-accessory-battery2-vca-sbtc97s-gl/",
+      "reason": "Artikel bleibt vorhanden; Serien-/Familienangabe liefert keinen vollständigen /WD-/WA-/Revisionsnachweis."
+    },
+    {
+      "id": "samsung:VCA-SAPC97S/WA",
+      "brand": "Samsung",
+      "partCode": "VCA-SAPC97S/WA",
+      "region": "DE",
+      "status": "deferred",
+      "url": "https://www.samsung.com/de/home-appliance-accessories/jet-vc-renewal-accessory-battery2-vca-sapc97s-wa/",
+      "reason": "Artikel bleibt vorhanden; Serien-/Familienangabe liefert keinen vollständigen /WD-/WA-/Revisionsnachweis."
+    },
+    {
+      "id": "samsung:VCA-PTB95/AA",
+      "brand": "Samsung",
+      "partCode": "VCA-PTB95/AA",
+      "region": "DE",
+      "status": "deferred",
+      "url": "https://www.samsung.com/de/home-appliance-accessories/jet-vc-renewal-accessory-pet-tool-plus-vca-ptb95-aa/",
+      "reason": "Artikel bleibt vorhanden; Serien-/Familienangabe liefert keinen vollständigen /WD-/WA-/Revisionsnachweis."
+    },
+    {
+      "id": "samsung:VCA-SABC95",
+      "brand": "Samsung",
+      "partCode": "VCA-SABC95",
+      "region": "DE",
+      "status": "deferred",
+      "url": "https://www.samsung.com/de/home-appliance-accessories/jet-vc-renewal-accessory-slim-led-brush-vca-sabc95/",
+      "reason": "Artikel bleibt vorhanden; Serien-/Familienangabe liefert keinen vollständigen /WD-/WA-/Revisionsnachweis."
+    },
+    {
+      "id": "samsung:VCA-SAB92B",
+      "brand": "Samsung",
+      "partCode": "VCA-SAB92B",
+      "region": "DE",
+      "status": "deferred",
+      "url": "https://www.samsung.com/de/home-appliance-accessories/jet-vc-accessory-soft-action-brush-vca-sab92b/",
+      "reason": "Artikel bleibt vorhanden; Serien-/Familienangabe liefert keinen vollständigen /WD-/WA-/Revisionsnachweis."
+    },
+    {
+      "id": "samsung:VCA-TAB90C",
+      "brand": "Samsung",
+      "partCode": "VCA-TAB90C",
+      "region": "DE",
+      "status": "deferred",
+      "url": "https://www.samsung.com/de/home-appliance-accessories/jet-vc-accessory-turbo-action-brush-vca-tab90c/",
+      "reason": "Artikel bleibt vorhanden; Serien-/Familienangabe liefert keinen vollständigen /WD-/WA-/Revisionsnachweis."
+    },
+    {
+      "id": "samsung:VCA-TABC97/GL",
+      "brand": "Samsung",
+      "partCode": "VCA-TABC97/GL",
+      "region": "DE",
+      "status": "deferred",
+      "url": "https://www.samsung.com/de/home-appliance-accessories/jet-vc-renewal-accessory-active-dual-brush-vca-tabc97-gl/",
+      "reason": "Artikel bleibt vorhanden; Serien-/Familienangabe liefert keinen vollständigen /WD-/WA-/Revisionsnachweis."
+    },
+    {
+      "id": "samsung:VCA-WB650B/GL",
+      "brand": "Samsung",
+      "partCode": "VCA-WB650B/GL",
+      "region": "DE",
+      "status": "deferred",
+      "url": "https://www.samsung.com/de/home-appliance-accessories/jet-vc-renewal-accessory-spinning-action-brush-vca-wb650b-gl/",
+      "reason": "Artikel bleibt vorhanden; Serien-/Familienangabe liefert keinen vollständigen /WD-/WA-/Revisionsnachweis."
+    },
+    {
+      "id": "Bosch:BCH3ALL21",
+      "brand": "Bosch",
+      "code": "BCH3ALL21",
+      "status": "deferred",
+      "observation": {
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/flexxo/BCH3ALL21",
+        "resolvedUrl": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/flexxo/BCH3ALL21",
+        "retrievedAt": "2026-10-09",
+        "method": "public-http-get",
+        "httpStatus": 200,
+        "bodySha256": "2d1ab925bfba7261469c3291d3ea65c59814d994c99724a90d4121c6846390be",
+        "title": "BCH3ALL21 Akku-Staubsauger | Bosch Hausgeräte DE"
+      },
+      "reason": "Keine explizite OEM-Artikelnummer mit vollständiger Geräte-/Revisionszuordnung aus der abgerufenen Quelle bestätigt.",
+      "region": "DE"
+    },
+    {
+      "id": "Dyson:419634-01",
+      "brand": "Dyson",
+      "code": "419634-01",
+      "status": "deferred",
+      "observation": {
+        "url": "https://www.dyson.de/support/journey/replacement-parts/search.419634-01",
+        "resolvedUrl": "https://www.dyson.de/support/journey/replacement-parts/search.419634-01",
+        "retrievedAt": "2026-10-09",
+        "method": "public-http-get",
+        "httpStatus": 200,
+        "bodySha256": "c4d2bb995aac9a830fd4f66444285045a2667088b0ec6ab5220763292e21a291",
+        "title": "Dyson V10 Konical™ Staubsauger | Ersatzteile und Zubehör | Dyson Dyson"
+      },
+      "reason": "Keine explizite OEM-Artikelnummer mit vollständiger Geräte-/Revisionszuordnung aus der abgerufenen Quelle bestätigt.",
+      "region": "DE"
+    },
+    {
+      "id": "Miele:S192",
+      "brand": "Miele",
+      "code": "S192",
+      "url": "https://www.miele.de/support/customer-assistance/staubsauger-1245/alle_kategorien.htm",
+      "status": "deferred",
+      "reason": "HTTP Error 404: Not Found",
+      "region": "DE"
+    }
+  ]
+}
