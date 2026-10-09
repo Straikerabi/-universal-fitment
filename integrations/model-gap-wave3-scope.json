@@ -1,0 +1,29 @@
+{
+  "issue": 37,
+  "guardFromMain": "71f7826ba936a1f3830c8b2a67e8085a9cfe234e",
+  "assessedFiles": [
+    "integrations/import-model-gap-wave3-catalog.mjs",
+    "integrations/import-model-gap-wave3-catalog.test.mjs",
+    "integrations/import-model-gap-wave3-sources.mjs",
+    "integrations/model-gap-wave3-README.md",
+    "integrations/model-gap-wave3-app-test.mjs",
+    "integrations/model-gap-wave3-baseline.json",
+    "integrations/model-gap-wave3-integration.json",
+    "integrations/model-gap-wave3-patch.mjs",
+    "integrations/model-gap-wave3-prior-audit.json",
+    "integrations/model-gap-wave3-research.json",
+    "integrations/model-gap-wave3-scope.json",
+    "integrations/model-gap-wave3-validation.json",
+    "integrations/model-gap-wave3-validation.log",
+    "integrations/model-gap-wave3-verify.mjs"
+  ],
+  "assessment": {
+    "branch": "work/catalog-model-gap-wave3",
+    "managed": true,
+    "status": "pass",
+    "files_checked": 14,
+    "blocked": [],
+    "review": [],
+    "invalid_records": 0
+  }
+}
