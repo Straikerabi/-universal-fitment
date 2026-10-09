@@ -1,0 +1,1009 @@
+[
+  {
+    "id": "boost-list",
+    "source": "miele-boost",
+    "recipe": {
+      "kind": "miele-accessories",
+      "requires": [
+        "11602400",
+        "SNCF0"
+      ],
+      "scope": "11602400"
+    },
+    "observed": {
+      "scope": "11602400",
+      "articles": [
+        "10455360",
+        "11607230",
+        "11639210",
+        "11639250",
+        "11805640",
+        "12789670",
+        "13191460",
+        "7101160",
+        "7252100",
+        "9730770"
+      ]
+    }
+  },
+  {
+    "id": "c3-list",
+    "source": "miele-c3",
+    "recipe": {
+      "kind": "miele-accessories",
+      "requires": [
+        "12031660",
+        "SGSK5"
+      ],
+      "scope": "12031660"
+    },
+    "observed": {
+      "scope": "12031660",
+      "articles": [
+        "10455360",
+        "11607230",
+        "11805640",
+        "12421170",
+        "12497870",
+        "12498270",
+        "12785390",
+        "12789670",
+        "12868930",
+        "3944711"
+      ]
+    }
+  },
+  {
+    "id": "bosch-list",
+    "source": "bosch-model",
+    "recipe": {
+      "kind": "bsh-accessories",
+      "requires": [
+        "BGL75X1PRQ"
+      ],
+      "scope": "BGL75X1PRQ"
+    },
+    "observed": {
+      "scope": "BGL75X1PRQ",
+      "articles": [
+        "00460431",
+        "00577549",
+        "BBZ02MPF",
+        "BBZ123HD",
+        "BBZ124HD",
+        "BBZ130SA",
+        "BBZ131SA",
+        "BBZ132SA",
+        "BBZ154HF",
+        "BBZ154UF",
+        "BBZ16GALL",
+        "BBZ41FGALL",
+        "BBZAFGALL",
+        "BHZUMAT"
+      ]
+    }
+  },
+  {
+    "id": "vs06-list",
+    "source": "siemens-vs06-list",
+    "recipe": {
+      "kind": "bsh-bom",
+      "requires": [
+        "VS06A110/03"
+      ],
+      "scope": "VS06A110/03"
+    },
+    "observed": {
+      "scope": "VS06A110/03",
+      "articles": [
+        {
+          "code": "00641456",
+          "position": "0101"
+        },
+        {
+          "code": "00427225",
+          "position": "0103"
+        },
+        {
+          "code": "00577227",
+          "position": "0105"
+        },
+        {
+          "code": "00495701",
+          "position": "0106"
+        },
+        {
+          "code": "11006360",
+          "position": "0107"
+        },
+        {
+          "code": "00442634",
+          "position": "0108"
+        },
+        {
+          "code": "00027606",
+          "position": "0109"
+        },
+        {
+          "code": "17000816",
+          "position": "0110"
+        },
+        {
+          "code": "00633906",
+          "position": "0112"
+        },
+        {
+          "code": "11007298",
+          "position": "0113"
+        },
+        {
+          "code": "12005800",
+          "position": "0201"
+        },
+        {
+          "code": "00751933",
+          "position": "0202"
+        },
+        {
+          "code": "12008417",
+          "position": "0203"
+        },
+        {
+          "code": "00465581",
+          "position": "0301"
+        },
+        {
+          "code": "00577342",
+          "position": "0302"
+        },
+        {
+          "code": "00462577",
+          "position": "0303"
+        },
+        {
+          "code": "00461406",
+          "position": "0304"
+        },
+        {
+          "code": "00570317",
+          "position": "0305"
+        },
+        {
+          "code": "00465633",
+          "position": "0306"
+        },
+        {
+          "code": "00552829",
+          "position": "0308"
+        },
+        {
+          "code": "00480788",
+          "position": "8000"
+        },
+        {
+          "code": "VZ153HFB(00)",
+          "position": "8001"
+        },
+        {
+          "code": "VZ01MSF(00)",
+          "position": "8003"
+        },
+        {
+          "code": "VZ41FGALL(00)",
+          "position": "8100"
+        },
+        {
+          "code": "VZ123HD(00)",
+          "position": "8101"
+        },
+        {
+          "code": "VZ124HD(00)",
+          "position": "8102"
+        },
+        {
+          "code": "VZ16GALL(00)",
+          "position": "8103"
+        },
+        {
+          "code": "VZ46001(00)",
+          "position": "8104"
+        },
+        {
+          "code": "VZ02MSF(00)",
+          "position": "8105"
+        },
+        {
+          "code": "18009769",
+          "position": "8400"
+        },
+        {
+          "code": "00405171",
+          "position": "8800"
+        }
+      ]
+    }
+  },
+  {
+    "id": "vsz4-list",
+    "source": "siemens-vsz4-list",
+    "recipe": {
+      "kind": "bsh-bom",
+      "requires": [
+        "VSZ4G1400/01"
+      ],
+      "scope": "VSZ4G1400/01"
+    },
+    "observed": {
+      "scope": "VSZ4G1400/01",
+      "articles": [
+        {
+          "code": "00744163",
+          "position": "0101"
+        },
+        {
+          "code": "00751048",
+          "position": "0102"
+        },
+        {
+          "code": "00744164",
+          "position": "0106"
+        },
+        {
+          "code": "00751049",
+          "position": "0107"
+        },
+        {
+          "code": "00751047",
+          "position": "0108"
+        },
+        {
+          "code": "17000816",
+          "position": "0109"
+        },
+        {
+          "code": "00574727",
+          "position": "0110"
+        },
+        {
+          "code": "00027606",
+          "position": "0111"
+        },
+        {
+          "code": "00744165",
+          "position": "0201"
+        },
+        {
+          "code": "00657996",
+          "position": "0202"
+        },
+        {
+          "code": "00751083",
+          "position": "0203"
+        },
+        {
+          "code": "00751050",
+          "position": "0204"
+        },
+        {
+          "code": "12008417",
+          "position": "0205"
+        },
+        {
+          "code": "00619188",
+          "position": "0206"
+        },
+        {
+          "code": "00625481",
+          "position": "0208"
+        },
+        {
+          "code": "00625482",
+          "position": "0209"
+        },
+        {
+          "code": "00657998",
+          "position": "0210"
+        },
+        {
+          "code": "00657997",
+          "position": "0211"
+        },
+        {
+          "code": "00462054",
+          "position": "0301"
+        },
+        {
+          "code": "00574692",
+          "position": "0302"
+        },
+        {
+          "code": "00570317",
+          "position": "0303"
+        },
+        {
+          "code": "00445166",
+          "position": "0304"
+        },
+        {
+          "code": "00265510",
+          "position": "0305"
+        },
+        {
+          "code": "00170462",
+          "position": "0306"
+        },
+        {
+          "code": "00480788",
+          "position": "8000"
+        },
+        {
+          "code": "VZ082BD(00)",
+          "position": "8001"
+        },
+        {
+          "code": "VZ102TBB(00)",
+          "position": "8002"
+        },
+        {
+          "code": "VZ10TFG(00)",
+          "position": "8003"
+        },
+        {
+          "code": "VZ123HD(00)",
+          "position": "8005"
+        },
+        {
+          "code": "VZ124HD(00)",
+          "position": "8006"
+        },
+        {
+          "code": "VZ156HFB(00)",
+          "position": "8007"
+        },
+        {
+          "code": "VZ46001(00)",
+          "position": "8008"
+        },
+        {
+          "code": "VZ41FGALL(00)",
+          "position": "8100"
+        },
+        {
+          "code": "00762613",
+          "position": "8400"
+        },
+        {
+          "code": "00403439",
+          "position": "8800"
+        }
+      ]
+    }
+  },
+  {
+    "id": "aeg-list",
+    "source": "aeg-pnc",
+    "recipe": {
+      "kind": "aeg-pnc-cards",
+      "requires": [
+        "900 258 638 00",
+        "AB61C3GG",
+        "Kompatible Teile für Ihr Gerät"
+      ],
+      "scope": "90025863800"
+    },
+    "observed": {
+      "scope": "90025863800",
+      "articles": [
+        "1099172296",
+        "140004527036",
+        "140010201121",
+        "140019431026",
+        "140019433030",
+        "140025651047",
+        "140025651104",
+        "140030390094",
+        "140122509049",
+        "140220593010",
+        "4055322301",
+        "6680981708",
+        "9001677690",
+        "9001684746",
+        "9001684753",
+        "9001684779",
+        "9001688242",
+        "9009229668",
+        "9009233553",
+        "9009233579"
+      ]
+    }
+  },
+  {
+    "id": "v8-list",
+    "source": "dyson-v8",
+    "recipe": {
+      "kind": "dyson-spares",
+      "requires": [
+        "V8 Absolute Pro"
+      ],
+      "scope": "227312-01"
+    },
+    "observed": {
+      "scope": "227312-01",
+      "articles": [
+        "966492-01",
+        "967477-03",
+        "967477-05",
+        "967477-06",
+        "967477-07",
+        "967477-08",
+        "967477-09",
+        "967479-01",
+        "967480-01",
+        "967482-01",
+        "967483-01",
+        "967485-01",
+        "967612-01",
+        "967698-17",
+        "967699-01",
+        "967741-01",
+        "967812-01",
+        "967813-03",
+        "967834-07",
+        "970129-01"
+      ]
+    }
+  },
+  {
+    "id": "v11-list",
+    "source": "dyson-v11",
+    "recipe": {
+      "kind": "dyson-spares",
+      "requires": [
+        "Generation 2019"
+      ],
+      "scope": "268700-01"
+    },
+    "observed": {
+      "scope": "268700-01",
+      "articles": [
+        "967479-05",
+        "967482-01",
+        "967483-05",
+        "967612-01",
+        "967766-01",
+        "969109-01",
+        "969109-04",
+        "969350-03",
+        "969569-01",
+        "970011-01",
+        "970129-01",
+        "970135-01",
+        "970142-01",
+        "970145-06",
+        "970175-01"
+      ]
+    }
+  },
+  {
+    "id": "samsung-list",
+    "source": "samsung-model",
+    "recipe": {
+      "kind": "samsung-optional",
+      "requires": [
+        "VS90F40EEK/WD",
+        "Gewicht netto (kg) 3,18",
+        "Gewicht Handstück (kg) 1,9"
+      ],
+      "scope": "VS90F40EEK/WD"
+    },
+    "observed": {
+      "scope": "VS90F40EEK/WD",
+      "articles": [
+        "VCA-ADB952",
+        "VCA-SHFF90K",
+        "VCA-SPA95/GL",
+        "VCA-SPW95",
+        "VCA-WBA95/GL"
+      ]
+    }
+  },
+  {
+    "id": "samsung-mint-list",
+    "source": "samsung-mint",
+    "recipe": {
+      "kind": "samsung-optional",
+      "requires": [
+        "VS90F40EEM/WD"
+      ],
+      "scope": "VS90F40EEM/WD"
+    },
+    "observed": {
+      "scope": "VS90F40EEM/WD",
+      "articles": [
+        "VCA-ADB952",
+        "VCA-SHFF90M",
+        "VCA-SPA95/GL",
+        "VCA-SPW95",
+        "VCA-WBA95/GL"
+      ]
+    }
+  },
+  {
+    "id": "ha60-id",
+    "source": "miele-ha60",
+    "recipe": {
+      "kind": "visible",
+      "requires": [
+        "11639210",
+        "SF-HA 60",
+        "Boost CX1"
+      ]
+    },
+    "observed": {
+      "assertions": [
+        "11639210",
+        "SF-HA 60",
+        "Boost CX1"
+      ]
+    }
+  },
+  {
+    "id": "cxfsf-id",
+    "source": "miele-cxfsf",
+    "recipe": {
+      "kind": "visible",
+      "requires": [
+        "11639250",
+        "CX FSF",
+        "Boost CX1"
+      ]
+    },
+    "observed": {
+      "assertions": [
+        "11639250",
+        "CX FSF",
+        "Boost CX1"
+      ]
+    }
+  },
+  {
+    "id": "gn-id",
+    "source": "miele-gn",
+    "recipe": {
+      "kind": "visible",
+      "requires": [
+        "12498270",
+        "GN XXL HyClean Pure",
+        "Complete C3"
+      ]
+    },
+    "observed": {
+      "assertions": [
+        "12498270",
+        "GN XXL HyClean Pure",
+        "Complete C3"
+      ]
+    }
+  },
+  {
+    "id": "ha50-id",
+    "source": "miele-ha50",
+    "recipe": {
+      "kind": "visible",
+      "requires": [
+        "12785390",
+        "SF-HA 50-1",
+        "Complete C2, C3"
+      ]
+    },
+    "observed": {
+      "assertions": [
+        "12785390",
+        "SF-HA 50-1",
+        "Complete C2, C3"
+      ]
+    }
+  },
+  {
+    "id": "bosch-bag-id",
+    "source": "bosch-bags",
+    "recipe": {
+      "kind": "visible",
+      "requires": [
+        "00577549",
+        "BBZ51FGALL"
+      ]
+    },
+    "observed": {
+      "assertions": [
+        "00577549",
+        "BBZ51FGALL"
+      ]
+    }
+  },
+  {
+    "id": "bosch-nozzle-id",
+    "source": "bosch-nozzle",
+    "recipe": {
+      "kind": "visible",
+      "requires": [
+        "00460431",
+        "BBZ42TBUC"
+      ]
+    },
+    "observed": {
+      "assertions": [
+        "00460431",
+        "BBZ42TBUC"
+      ]
+    }
+  },
+  {
+    "id": "wheel-id",
+    "source": "siemens-reel",
+    "recipe": {
+      "kind": "visible",
+      "requires": [
+        "00027606",
+        "Laufrolle"
+      ]
+    },
+    "observed": {
+      "assertions": [
+        "00027606",
+        "Laufrolle"
+      ]
+    }
+  },
+  {
+    "id": "textile-id",
+    "source": "siemens-bag",
+    "recipe": {
+      "kind": "visible",
+      "requires": [
+        "00086180",
+        "VZ10TFG"
+      ]
+    },
+    "observed": {
+      "assertions": [
+        "00086180",
+        "VZ10TFG"
+      ]
+    }
+  },
+  {
+    "id": "aeg-filter-id",
+    "source": "aeg-filter",
+    "recipe": {
+      "kind": "visible",
+      "requires": [
+        "9001677690",
+        "AFS1W"
+      ]
+    },
+    "observed": {
+      "assertions": [
+        "9001677690",
+        "AFS1W"
+      ]
+    }
+  },
+  {
+    "id": "aeg-bag-id",
+    "source": "aeg-bags",
+    "recipe": {
+      "kind": "visible",
+      "requires": [
+        "9001684746",
+        "GR201S"
+      ]
+    },
+    "observed": {
+      "assertions": [
+        "9001684746",
+        "GR201S"
+      ]
+    }
+  },
+  {
+    "id": "v8-battery-id",
+    "source": "dyson-v8-battery",
+    "recipe": {
+      "kind": "visible",
+      "requires": [
+        "Akku E"
+      ],
+      "canonical": "https://www.dyson.de/support/journey/tools/967834-07"
+    },
+    "observed": {
+      "assertions": [
+        "Akku E"
+      ]
+    }
+  },
+  {
+    "id": "v11-battery-id",
+    "source": "dyson-screw-correct",
+    "recipe": {
+      "kind": "visible",
+      "requires": [
+        "970145-06",
+        "V11"
+      ]
+    },
+    "observed": {
+      "assertions": [
+        "970145-06",
+        "V11"
+      ]
+    }
+  },
+  {
+    "id": "samsung-filter-id",
+    "source": "samsung-filter-correct",
+    "recipe": {
+      "kind": "visible",
+      "requires": [
+        "VCA-SHFF90K",
+        "Bespoke AI Jet Ultra"
+      ]
+    },
+    "observed": {
+      "assertions": [
+        "VCA-SHFF90K",
+        "Bespoke AI Jet Ultra"
+      ]
+    }
+  },
+  {
+    "id": "fp7-id",
+    "source": "vorwerk-fp7",
+    "recipe": {
+      "kind": "visible",
+      "requires": [
+        "FP7",
+        "VK7"
+      ]
+    },
+    "observed": {
+      "assertions": [
+        "FP7",
+        "VK7"
+      ]
+    }
+  },
+  {
+    "id": "mf7-id",
+    "source": "vorwerk-mf7",
+    "recipe": {
+      "kind": "visible",
+      "requires": [
+        "MF7",
+        "VK7"
+      ]
+    },
+    "observed": {
+      "assertions": [
+        "MF7",
+        "VK7"
+      ]
+    }
+  },
+  {
+    "id": "v8-yh5",
+    "source": "dyson-v8-battery",
+    "recipe": {
+      "kind": "visible",
+      "requires": [
+        "YH5 als erste drei",
+        "müssen Sie Akku D kaufen"
+      ],
+      "canonical": "https://www.dyson.de/support/journey/tools/967834-07"
+    },
+    "observed": {
+      "assertions": [
+        "YH5 als erste drei",
+        "müssen Sie Akku D kaufen"
+      ]
+    }
+  },
+  {
+    "id": "v11-click-condition",
+    "source": "dyson-click",
+    "recipe": {
+      "kind": "visible",
+      "requires": [
+        "große rote Taste",
+        "Standardakku zum Einschrauben",
+        "V11™ (zum Einklicken)"
+      ],
+      "canonical": "https://www.dyson.de/support/journey/tools/970938-01"
+    },
+    "observed": {
+      "assertions": [
+        "große rote Taste",
+        "Standardakku zum Einschrauben",
+        "V11™ (zum Einklicken)"
+      ]
+    }
+  },
+  {
+    "id": "bosch-exclusion",
+    "source": "bosch-bags",
+    "recipe": {
+      "kind": "visible",
+      "requires": [
+        "ausgenommen VS08... und VS01..."
+      ]
+    },
+    "observed": {
+      "assertions": [
+        "ausgenommen VS08... und VS01..."
+      ]
+    }
+  },
+  {
+    "id": "vs06-other",
+    "source": "siemens-vs06-other",
+    "recipe": {
+      "kind": "visible",
+      "requires": [
+        "VS06A110/12"
+      ]
+    },
+    "observed": {
+      "assertions": [
+        "VS06A110/12"
+      ]
+    }
+  },
+  {
+    "id": "boost-care",
+    "source": "miele-boost-care",
+    "recipe": {
+      "kind": "visible",
+      "requires": [
+        "24 Stunden",
+        "weiche Seite"
+      ]
+    },
+    "observed": {
+      "assertions": [
+        "24 Stunden",
+        "weiche Seite"
+      ]
+    }
+  },
+  {
+    "id": "aeg-clean",
+    "source": "aeg-filter",
+    "recipe": {
+      "kind": "visible",
+      "requires": [
+        "Wasser",
+        "trocknen"
+      ]
+    },
+    "observed": {
+      "assertions": [
+        "Wasser",
+        "trocknen"
+      ]
+    }
+  },
+  {
+    "id": "vk7-identity",
+    "source": "vorwerk-vk7",
+    "recipe": {
+      "kind": "visible",
+      "requires": [
+        "VK7"
+      ]
+    },
+    "observed": {
+      "assertions": [
+        "VK7"
+      ]
+    }
+  },
+  {
+    "id": "vk7-exclusion",
+    "source": "vorwerk-manual",
+    "recipe": {
+      "kind": "pdf-page",
+      "requires": [
+        "kompatibel mit Vorwerk Netzspannungs-Staubsaugern",
+        "elektrisch angetriebenem Zubehör"
+      ],
+      "page": 14
+    },
+    "observed": {
+      "assertions": [
+        "kompatibel mit Vorwerk Netzspannungs-Staubsaugern",
+        "elektrisch angetriebenem Zubehör"
+      ],
+      "page": 14
+    }
+  },
+  {
+    "id": "vk7-bag-change",
+    "source": "vorwerk-manual",
+    "recipe": {
+      "kind": "pdf-page",
+      "requires": [
+        "ausgeschaltet",
+        "Filterdeckel"
+      ],
+      "page": 39
+    },
+    "observed": {
+      "assertions": [
+        "ausgeschaltet",
+        "Filterdeckel"
+      ],
+      "page": 39
+    }
+  },
+  {
+    "id": "vk7-filter-dry",
+    "source": "vorwerk-manual",
+    "recipe": {
+      "kind": "pdf-page",
+      "requires": [
+        "kaltem fließendem",
+        "24 Stunden"
+      ],
+      "page": 42
+    },
+    "observed": {
+      "assertions": [
+        "kaltem fließendem",
+        "24 Stunden"
+      ],
+      "page": 42
+    }
+  },
+  {
+    "id": "boost-filter-care",
+    "source": "miele-boost-manual",
+    "recipe": {
+      "kind": "pdf-page",
+      "requires": [
+        "mindestens 24 Stunden",
+        "weiche Seite",
+        "kein Spülmittel"
+      ],
+      "page": 17
+    },
+    "observed": {
+      "assertions": [
+        "mindestens 24 Stunden",
+        "weiche Seite",
+        "kein Spülmittel"
+      ],
+      "page": 17
+    }
+  },
+  {
+    "id": "c3-filter-conversion",
+    "source": "miele-c3-manual",
+    "recipe": {
+      "kind": "pdf-page",
+      "requires": [
+        "ein Abluftfilter eingesetzt ist.",
+        "Filtergitter",
+        "timestrip"
+      ],
+      "page": 25
+    },
+    "observed": {
+      "assertions": [
+        "ein Abluftfilter eingesetzt ist.",
+        "Filtergitter",
+        "timestrip"
+      ],
+      "page": 25
+    }
+  }
+]

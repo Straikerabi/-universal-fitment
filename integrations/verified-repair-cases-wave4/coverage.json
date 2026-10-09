@@ -1,0 +1,10 @@
+{
+  "models": 10,
+  "brands": 7,
+  "reviewedAssemblies": 30,
+  "manufacturerListedOemEdges": 18,
+  "sourceBackedConditionalNegatives": 4,
+  "explicitUnknownCases": 13,
+  "variantAmbiguousCases": 10,
+  "fullyV1EligibleRealFitments": 0
+}
