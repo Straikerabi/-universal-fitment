@@ -16,7 +16,7 @@ from pathlib import Path
 import shutil
 import subprocess
 import tempfile
-from wave3_owner_resolutions import resolve as resolve_reviewed_conflict
+from wave3_owner_resolutions import resolve as resolve_reviewed_conflict, adapt_combined_regression_tests
 
 
 def sha(data: bytes | None) -> str | None:
@@ -144,6 +144,7 @@ def main() -> int:
     if conflicts:
         print("NOT INTEGRATED: explicit source-level owner review required for all conflicts.")
         return 2
+    merged = adapt_combined_regression_tests(merged)
     output.mkdir(parents=True)
     for rel, data in sorted(merged.items()):
         dst = output / rel
