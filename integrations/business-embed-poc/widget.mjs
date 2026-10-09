@@ -23,7 +23,7 @@ if(!Object.hasOwn(tenants,requested)){
   mapToView:(r,context)=>{
    const c=scenarios.find(s=>s.id===context.caseId);
    if(!c||!r.view)throw Error('No authorized demo view');
-   const evidence=r.view.evidence.map(e=>c.id==='private'?{...e,scope:'tenant',tenantId:context.tenantId}:{...e});
+   const evidence=r.view.evidence.map(e=>c.id==='private'?{...e,id:'SYN-'+context.tenantId+'-PRIVATE',scope:'tenant',tenantId:context.tenantId,text:e.text+' · Fitment-v1-Quellkennung: '+e.id}:{...e});
    return {...r.view,tenantId:context.tenantId,caseId:context.caseId,evidence};
   }
  });
