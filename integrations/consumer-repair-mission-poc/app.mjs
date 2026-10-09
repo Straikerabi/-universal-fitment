@@ -3,7 +3,7 @@ import {mockScenarios} from './mock-fitment-adapter.mjs';
 import {defaultFilters,browseParts,sourceRegion} from './parts-view.mjs';
 import {filtersMarkup,browseSummary,groupsMarkup,activePartsMarkup,checklistMarkup,variantMarkup} from './mobile-ui.mjs';
 import {cacheName} from './offline-config.mjs';
-import {assemblies,problems,freshMission,currentDevice,searchDevices,candidateParts,transition,assessment,checklist,exportMission,saveMission,loadMission,storageKey} from './mission-state.mjs';
+import {assemblies,problems,freshMission,currentDevice,searchDevices,candidateParts,transition,assessment,checklist,exportMission,exportRepairPassport,saveMission,loadMission,storageKey} from './mission-state.mjs';
 const $=s=>document.querySelector(s),esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const labels=['Gerät','Ausführung','Baugruppe','Passung','Checkliste'];
 let storage;try{storage=localStorage;}catch{storage={getItem:()=>null,setItem:()=>{throw Error('Unavailable');},removeItem:()=>{}};}
@@ -53,7 +53,7 @@ function stepFour(){
 function stepFive(){
  return heading('Eine klare Liste für deinen nächsten Schritt.','Offene Angaben, Teilekandidaten und Belege bleiben getrennt und jederzeit wieder auffindbar.')+pass()+
  `<p class="notice ${state.mode==='synthetic'?'':'neutral'}">${state.mode==='synthetic'?'SYNTHETISCHE DEMO – keine echte Reparatur- oder Einkaufsliste.':'Prüfliste, kein vollständiges Reparaturset. Auch erledigte Notizen bestätigen keine Passung.'}</p>`+checklistMarkup(state,sourceBox)+
- `<div class="save-actions"><button id="copyMission" class="primary">Text kopieren <span aria-hidden="true">↗</span></button><button id="downloadMission" class="secondary">Textdatei sichern</button></div><p class="footer-context">${saveFailed?'Lokales Speichern nicht möglich. Text sichern, bevor du die Seite schließt.':'Automatisch nur in diesem Browser gespeichert. Kein Konto, kein Cloud-Upload.'}</p>`+actions();
+ `<div class="save-actions"><button id="copyMission" class="primary">Text kopieren <span aria-hidden="true">↗</span></button><button id="downloadMission" class="secondary">Textdatei sichern</button><button id="downloadPassport" class="secondary">Prüfpass (JSON)</button></div><p class="footer-context">${saveFailed?'Lokales Speichern nicht möglich. Text sichern, bevor du die Seite schließt.':'Automatisch nur in diesem Browser gespeichert. Kein Konto, kein Cloud-Upload.'}</p>`+actions();
 }
 function mismatch(){if(!$('#variantMismatch'))return;const d=currentDevice(state),value=state.observedCode.toLocaleUpperCase('de-DE'),expected=d.reference.toLocaleUpperCase('de-DE');$('#variantMismatch').innerHTML=value&&value!==expected?'<p class="notice">Die eigene Angabe weicht von der Quellenkennung ab. Für diese Angabe liegt hier kein Nachweis vor; es erfolgt keine Übernahme einer ähnlichen Variante.</p>':'';}
 function render(focus=false){
@@ -74,6 +74,16 @@ document.addEventListener('click',async e=>{
  else if(b.id==='savedMission'){state=loadMission(storage,state.mode);if(!currentDevice(state)){feedback('Noch kein Gerät in dieser Mission gespeichert.');return;}render(true);feedback('Lokale Mission geöffnet; Passungsstatus unverändert.');}
  else if(b.id==='eraseMission'){try{storage.removeItem(storageKey(state.mode));}catch{}state=freshMission(state.mode);resetBrowse();render(true);feedback('Mission in diesem Datenmodus gelöscht.');}
  else if(b.id==='copyMission'){try{await navigator.clipboard.writeText(exportMission(state));feedback('Prüfliste kopiert.');}catch{feedback('Kopieren nicht möglich. Nutze „Textdatei sichern“.',true);}}
+ else if(b.id==='downloadPassport'){
+   try{
+    const passport=await exportRepairPassport(state);
+    const blob=new Blob([passport],{type:'application/json;charset=utf-8'});
+    const url=URL.createObjectURL(blob),a=document.createElement('a');
+    a.href=url;a.download=state.mode==='synthetic'?'SYNTHETISCHE-DEMO-Pruefpass.json':'Universal-Fitment-Pruefpass.json';
+    a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+    feedback('Prüfpass lokal erstellt: Quellen und offene Fragen, keine Einbau- oder Kauf-Freigabe.');
+   }catch{feedback('Prüfpass derzeit nicht verfügbar. Nutze die Textdatei.',true);}
+ }
  else if(b.id==='downloadMission'){const blob=new Blob([exportMission(state)],{type:'text/plain;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=state.mode==='synthetic'?'SYNTHETISCHE-DEMO-Pruefliste.txt':'Universal-Fitment-Pruefliste.txt';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);feedback('Textdatei mit unverändertem Prüfstatus vorbereitet.');}
 });
 document.addEventListener('input',e=>{

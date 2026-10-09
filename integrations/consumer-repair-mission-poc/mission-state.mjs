@@ -86,3 +86,72 @@ export function restoreMission(raw,mode='real'){
 }
 export function saveMission(storage,state){try{storage.setItem(storageKey(state.mode),JSON.stringify(state));return true;}catch{return false;}}
 export function loadMission(storage,mode='real'){try{return restoreMission(storage.getItem(storageKey(mode)),mode);}catch{return freshMission(mode);}}
+
+
+/**
+ * Portable evidence record, NOT an OEM fitment certificate.
+ * Same factual Consumer source IDs can later be mapped to a B2B review workflow.
+ * Creating/exporting it never mutates a mission or grants any compatibility.
+ */
+export function buildRepairPassport(state,{issuedAt=new Date().toISOString()}={}){
+ const device=currentDevice(state);
+ if(!device)throw new Error('Gerät muss vor dem Prüfpass ausgewählt werden.');
+ if(!Number.isFinite(Date.parse(issuedAt)))throw new Error('Ungültiger Berichtszeitpunkt.');
+ const a=assessment(state);
+ const isDemo=state.mode==='synthetic';
+ const parts=isDemo?[]:candidateParts(state).filter(p=>state.selectedPartIds.includes(p.id)).map(p=>({
+  id:p.id,manufacturer:p.brand,name:p.name,originalCode:p.code,assembly:p.assembly,
+  articleIdentitySource:{url:p.source.url,observedAt:p.source.checkedAt,scope:p.source.scope},
+  installationFitment:'unconfirmed',physicalFitApproved:false
+ }));
+ const open=checklist(state).filter(x=>x.kind==='missing'||x.id==='fitment').map(x=>({id:x.id,question:x.label}));
+ return {
+  schema:'uf.repair-review-passport/1',
+  recordType:isDemo?'synthetic-test-only':'real-catalog-research',
+  issuedAt,
+  provenance:{catalogVersion:catalogSnapshot.appVersion,baselineCommit:catalogSnapshot.baseCommit,
+   checkpointSha256:catalogSnapshot.checkpointSha256,catalogSnapshotVersion:catalogSnapshot.version,
+   dataFingerprint,consumerWave3Integrated:catalogSnapshot.wave3Integrated===true},
+  device:{
+   catalogId:device.id,manufacturer:device.brand,model:device.model,sourceReference:device.reference,
+   sourceMarket:isDemo?null:device.market||null,productCode:isDemo?null:device.productCode||null,
+   referenceEnteredByUser:state.observedCode||null,userClaimsVariantKnown:state.variantKnown===true,
+   variantIndependentlyVerified:false,
+   manufacturerIdentitySource:isDemo?null:{url:device.source.url,observedAt:device.source.checkedAt,scope:device.source.scope}
+  },
+  repair:{problem:problems.find(p=>p.id===state.problemId)?.label||'Offen',
+   assembly:assemblies.find(x=>x.id===state.assemblyId)?.label||null,
+   candidateParts:parts,openChecks:open,
+   markedNotes:checklist(state).filter(x=>state.done.includes(x.id)).map(x=>x.id)},
+  verdict:{status:isDemo?'synthetic-demo-only':'unconfirmed',
+   syntheticEngineOutcome:isDemo?a.status:null,
+   sourceBasedIdentityOnly:!isDemo,realInstallationApproved:false,
+   completeRepairKit:false,purchaseAllowed:false,
+   reasons:a.reasons,missingInformation:a.missing},
+  limitations:[
+   'Keine verifizierte Einbau-, Anschluss-, Serien- oder Revisionsfreigabe für reale Teile.',
+   'Abgehakte Notizen und Katalogmitgliedschaft sind keine Passungsnachweise.',
+   'Kein aktueller Preis, Lagerbestand, Händlerangebot oder Gewährleistungsversprechen.',
+   'Prüfpass dokumentiert den lokalen Arbeitsstand; keine Herstellerbescheinigung.'
+  ]
+ };
+}
+export async function exportRepairPassport(state,options={}){
+ const payload=buildRepairPassport(state,options);
+ if(!globalThis.crypto?.subtle)throw new Error('SHA-256 benötigt einen sicheren lokalen Browserkontext.');
+ const bytes=new TextEncoder().encode(JSON.stringify(payload));
+ const hash=await globalThis.crypto.subtle.digest('SHA-256',bytes);
+ const sha256=[...new Uint8Array(hash)].map(x=>x.toString(16).padStart(2,'0')).join('');
+ return JSON.stringify({payload,integrity:{algorithm:'SHA-256',sha256,
+  meaning:'Nur Prüfsumme gegen versehentliche Änderungen; keine Signatur, keine OEM-Freigabe.'}},null,2)+'\n';
+}
+export async function verifyRepairPassportJson(input){
+ try{
+  const x=typeof input==='string'?JSON.parse(input):input;
+  if(!x||x.payload?.schema!=='uf.repair-review-passport/1'||x.integrity?.algorithm!=='SHA-256'
+   ||typeof x.integrity.sha256!=='string'||!/^[0-9a-f]{64}$/.test(x.integrity.sha256))return false;
+  if(!globalThis.crypto?.subtle)return false;
+  const h=await globalThis.crypto.subtle.digest('SHA-256',new TextEncoder().encode(JSON.stringify(x.payload)));
+  return [...new Uint8Array(h)].map(v=>v.toString(16).padStart(2,'0')).join('')===x.integrity.sha256;
+ }catch{return false;}
+}
