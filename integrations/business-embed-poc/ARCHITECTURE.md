@@ -1,6 +1,6 @@
 # Architektur, Datenschutz und wirtschaftliche Optionen
 
-Status: Konzept für Issue #50, keine SaaS-/Rechts-/Compliance-Zusage, keine implementierte externe API. Dokument geprüft am 09.10.2026 gegen die [interne Strategie](https://github.com/Straikerabi/-universal-fitment/blob/research/affiliate-specialists-wave1/integrations/affiliate-specialists/B2C-B2B-DEFENSIBLE-ROADMAP-2026.md) und [#48](https://github.com/Straikerabi/-universal-fitment/issues/48). Das [Release-Gate #42](https://github.com/Straikerabi/-universal-fitment/issues/42) bleibt bestehen.
+Status: Konzept für Issue #64 auf Basis des lokalen #50-Demonstrators, keine SaaS-/Rechts-/Compliance-Zusage, keine implementierte externe API. Aktuelle testbare Grenzen und Pilot-Gates stehen in [PILOT-READINESS.md](PILOT-READINESS.md). Der gemeinsame #48-Kern ist jetzt lokal verbunden. Dokument geprüft am 09.10.2026 gegen die [interne Strategie](https://github.com/Straikerabi/-universal-fitment/blob/research/affiliate-specialists-wave1/integrations/affiliate-specialists/B2C-B2B-DEFENSIBLE-ROADMAP-2026.md). Das [Release-Gate #42](https://github.com/Straikerabi/-universal-fitment/issues/42) bleibt bestehen.
 
 ## Heute implementiert / später erforderlich
 
@@ -8,10 +8,10 @@ Status: Konzept für Issue #50, keine SaaS-/Rechts-/Compliance-Zusage, keine imp
 | --- | --- | --- |
 | Mandant | Allowlist zweier frei wählbarer Testmandanten; Adapter verweigert fremde Antworten/Belege | Serverseitig authentifizierte Identität; Tenant aus Session/Token, niemals URL-/Body-Angabe vertrauen |
 | Daten | Ausschließlich synthetische öffentliche/private Marker | Berechtigte, lizenzierte Daten außerhalb öffentlich zugänglicher Repos/Assets |
-| Zugriff | Keine Accounts, keine Geheimnisse; iframe ist keine Tenant-Sicherheitsgrenze | Rollenprüfung vor Lesen, Bewertung, Projektion, Export und Caching |
-| Fitment | Exakter Lookup vorbereiteter Antworten; keine technische Bewertung | Ein gemeinsamer #48-Kern für B2C/B2B, keine kopierten Regeln |
+| Zugriff | Lokales Rollen-/Scope-Labor, keine Accounts/Geheimnisse; iframe ist keine Tenant-Sicherheitsgrenze | Authentisierte Rollenprüfung vor Lesen, Bewertung, Projektion, Export und Caching |
+| Fitment | Lokaler gemeinsamer #48-Kern und Owner-Projektion, synthetisch/private-test | Berechtigter Datenintake und produktive Freigabe, keine kopierten Regeln |
 | Transporte | Loopback-Staticserver, feste Dateiallowlist, Host-Prüfung, CSP, keine API | Separater authentifizierter Backenddienst, TLS, Origin-Allowlist, Rate-Limits, Monitoring |
-| Logs | Keine Anfrage-/Benutzerlogs, keine Metriken erfunden | Feldminimiertes Audit-/Kostenprotokoll mit Zweck, Zugriff, Löschfrist |
+| Logs | Minimale synthetische Zugriffsevents im Arbeitsspeicher, keine Server-/Benutzerlogs oder Nutzungsmetriken | Feldminimiertes manipulationsgeschütztes Audit-/Kostenprotokoll mit Zweck, Zugriff, Löschfrist |
 
 Die Client-Testfixtures enthalten beide Händler und sind einsehbar. Ein query parameter wechselt bewusst zwischen den synthetischen Shops. Das ist **keine** Zugriffskontrolle für echte Daten. Tests sichern die Adapterprojektion, nicht eine vorhandene produktive Datenbankisolation. Auch die iframe-Sandbox mit allow-scripts/allow-same-origin im gleichen lokalen Origin ist keine Grenze gegen bösartigen eingebetteten Code. Eine spätere Einbettung benötigt einen eigenen kontrollierten Widget-Origin und minimale Sandboxrechte; die Demo-CSP erlaubt nur den eigenen lokalen Parent, keine fremden Shops.
 

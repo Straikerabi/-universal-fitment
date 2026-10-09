@@ -1,0 +1,10 @@
+{
+  "baseCommit": "52f056664ddbf1a6c263a3d86feac3ee0128c054",
+  "schemaVersion": "1.0.0",
+  "files": {
+    "fitment-engine-v1-poc/contract.mjs": "f609d8c4a2d894632b46db76c28e83d581190dcfed0484a3aab3f12efb36e7b3",
+    "fitment-engine-v1-poc/fixtures.mjs": "b1a08deb58acf2b7be7319e61e838c2b5ef5cd7833068e368e41dbc79f3e97a9",
+    "dual-platform-owner-review/bridge.mjs": "d3cb61c0cd4e554585e28bf9b54d51c110c3bd85aefdc733a8578f2feb13cb6c",
+    "dual-platform-owner-review/ui-fixtures.mjs": "469f6ae04d4bd4ebb0fa6933b4b193a20ca79c20f2f2f367fcd3b5b5d69a9061"
+  }
+}

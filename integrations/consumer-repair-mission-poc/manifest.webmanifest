@@ -1,0 +1,12 @@
+{
+  "id": "/",
+  "name": "Universal Fitment · Reparaturmission",
+  "short_name": "Reparaturmission",
+  "lang": "de",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f0f3eb",
+  "theme_color": "#123d35",
+  "icons": [{"src": "app-icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any"}]
+}

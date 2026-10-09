@@ -1,0 +1,1074 @@
+{
+  "schemaVersion": "repair-case-evidence/1.0.0",
+  "baselineCommit": "71f7826ba936a1f3830c8b2a67e8085a9cfe234e",
+  "branch": "work/verified-repair-cases-wave4",
+  "integrationBoundary": "Evidence intake only; no engine adapter or installation approval.",
+  "cases": [
+    {
+      "id": "miele-boost",
+      "brand": "Miele",
+      "name": "Boost CX1 Parquet PowerLine",
+      "market": "DE",
+      "scope": "11602400",
+      "identifiers": {
+        "material": "11602400",
+        "type": "SNCF0"
+      },
+      "catalogId": "vac-miele-model-11602400",
+      "identityProof": "boost-list",
+      "selection": "Beutelloser Bodenstaubsauger; kompakte aktuelle Produktfamilie.",
+      "ambiguities": [
+        "SNCF0 allein ersetzt weder Materialnummer noch Serienprüfung."
+      ],
+      "observedDevice": {
+        "serial": null,
+        "revision": null,
+        "connectorInspection": null
+      },
+      "assemblies": [
+        {
+          "id": "exhaust",
+          "name": "HEPA-Abluftfilter",
+          "completeness": "partial",
+          "unknowns": [
+            "Gehäusesitz / Serienänderungen nicht am Gerät geprüft."
+          ]
+        },
+        {
+          "id": "fine",
+          "name": "Feinstaubfilter mit Filtermatte",
+          "completeness": "partial",
+          "unknowns": [
+            "Matten-Unterartikelnummer und vollständige Baugruppe unbekannt."
+          ]
+        },
+        {
+          "id": "motor",
+          "name": "Motor / Elektronik",
+          "completeness": "partial",
+          "unknowns": [
+            "Originalartikel, Spannungs-/Steckerdaten, Seriengrenzen und sichere Serviceprozedur nicht bestimmt."
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "assembly": "exhaust",
+          "part": {
+            "issuer": "Miele",
+            "namespace": "material",
+            "code": "11639210",
+            "name": "SF-HA 60",
+            "aliases": []
+          },
+          "scope": "11602400",
+          "status": "manufacturer_listing",
+          "listingProof": "boost-list",
+          "identityProof": "ha60-id",
+          "position": null,
+          "connection": "unknown",
+          "deviceInspection": "unknown",
+          "reusePermission": "unknown",
+          "release": "unconfirmed"
+        },
+        {
+          "assembly": "fine",
+          "part": {
+            "issuer": "Miele",
+            "namespace": "material",
+            "code": "11639250",
+            "name": "CX FSF",
+            "aliases": []
+          },
+          "scope": "11602400",
+          "status": "manufacturer_listing",
+          "listingProof": "boost-list",
+          "identityProof": "cxfsf-id",
+          "position": null,
+          "connection": "unknown",
+          "deviceInspection": "unknown",
+          "reusePermission": "unknown",
+          "release": "unconfirmed"
+        }
+      ],
+      "conditions": [
+        {
+          "id": "boost-dry",
+          "assembly": "fine",
+          "text": "Plissierte Seite und Matte kalt reinigen, ohne Spülmittel oder Spülbürste; beide mindestens 24 h trocknen. Matte weich nach oben, Entnahmeöse sichtbar. Gilt nicht automatisch für HEPA.",
+          "proof": "boost-filter-care"
+        }
+      ],
+      "negativeCases": [],
+      "unknownCases": [
+        {
+          "id": "boost-transfer",
+          "assembly": "exhaust",
+          "target": "C3 / SF-HA 50-1",
+          "status": "unknown",
+          "text": "Boost- und C3-Filterfamilien sind getrennt gelistet; kein belegter Kreuztausch."
+        }
+      ]
+    },
+    {
+      "id": "miele-c3",
+      "brand": "Miele",
+      "name": "Complete C3 Silence",
+      "market": "DE",
+      "scope": "12031660",
+      "identifiers": {
+        "material": "12031660",
+        "type": "SGSK5"
+      },
+      "catalogId": "vac-miele-model-12031660",
+      "identityProof": "c3-list",
+      "selection": "Leiser Beutel-Bodenstaubsauger; etabliertes Complete-C3-System.",
+      "ambiguities": [
+        "Serienmäßiger Silence-Filter ist nicht jede optionale Filterkonfiguration."
+      ],
+      "observedDevice": {
+        "serial": null,
+        "revision": null,
+        "connectorInspection": null
+      },
+      "assemblies": [
+        {
+          "id": "bag",
+          "name": "Beutelaufnahme",
+          "completeness": "partial",
+          "unknowns": [
+            "Aufnahme/Deckelzustand, Dichtfläche nicht am Gerät geprüft."
+          ]
+        },
+        {
+          "id": "exhaust",
+          "name": "Abluftfilter / Filtergitter",
+          "completeness": "partial",
+          "unknowns": [
+            "Tatsächlich eingebauter Filter und erforderliches Filtergitter offen."
+          ]
+        },
+        {
+          "id": "motor",
+          "name": "Motor / Elektronik",
+          "completeness": "partial",
+          "unknowns": [
+            "Originalartikel, Spannungs-/Steckerdaten, Seriengrenzen und sichere Serviceprozedur nicht bestimmt."
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "assembly": "bag",
+          "part": {
+            "issuer": "Miele",
+            "namespace": "material",
+            "code": "12498270",
+            "name": "GN XXL HyClean Pure (16 Beutel)",
+            "aliases": []
+          },
+          "scope": "12031660",
+          "status": "manufacturer_listing",
+          "listingProof": "c3-list",
+          "identityProof": "gn-id",
+          "position": null,
+          "connection": "unknown",
+          "deviceInspection": "unknown",
+          "reusePermission": "unknown",
+          "release": "unconfirmed"
+        },
+        {
+          "assembly": "exhaust",
+          "part": {
+            "issuer": "Miele",
+            "namespace": "material",
+            "code": "12785390",
+            "name": "SF-HA 50-1",
+            "aliases": []
+          },
+          "scope": "12031660",
+          "status": "manufacturer_listing",
+          "listingProof": "c3-list",
+          "identityProof": "ha50-id",
+          "position": null,
+          "connection": "unknown",
+          "deviceInspection": "unknown",
+          "reusePermission": "unknown",
+          "release": "unconfirmed"
+        }
+      ],
+      "conditions": [
+        {
+          "id": "c3-filter-rule",
+          "assembly": "exhaust",
+          "text": "Nur ein Abluftfilter. Wechsel vom AirClean-Flachfilter zu einem 50er-Filter verlangt Entfernen des Filtergitters; Rückwechsel braucht Gitter. Anleitung behandelt Filterarten, nicht automatisch jede neue Artikelrevision.",
+          "proof": "c3-filter-conversion"
+        }
+      ],
+      "negativeCases": [],
+      "unknownCases": [
+        {
+          "id": "c3-hepa-revision",
+          "assembly": "exhaust",
+          "target": "50 vs 50-1",
+          "status": "unknown",
+          "text": "Aktuelle Artikellistung belegt SF-HA 50-1; ältere Anleitung nennt HEPA AirClean 50. Revisionsgeschichte und Gerätedetails nicht vollständig dokumentiert."
+        }
+      ]
+    },
+    {
+      "id": "bosch-bgl75",
+      "brand": "Bosch",
+      "name": "Serie 8 ProSilence BGL75X1PRQ",
+      "market": "DE",
+      "scope": "BGL75X1PRQ",
+      "identifiers": {
+        "model": "BGL75X1PRQ",
+        "eNrIndex": null
+      },
+      "catalogId": "vac-bosch-model-bgl75x1prq",
+      "identityProof": "bosch-list",
+      "selection": "Serie-8-/ProSilence-Positionierung als Premium-Stichprobe; kein überprüfter aktueller Preisrang.",
+      "ambiguities": [
+        "Produktseite enthält keinen sicheren /xx-E-Nr.-Index."
+      ],
+      "observedDevice": {
+        "serial": null,
+        "revision": null,
+        "connectorInspection": null
+      },
+      "assemblies": [
+        {
+          "id": "bag",
+          "name": "Staubbeutelaufnahme",
+          "completeness": "partial",
+          "unknowns": [
+            "E-Nr./xx und Beutelhalter/Dichtung unbesichtigt."
+          ]
+        },
+        {
+          "id": "nozzle",
+          "name": "Turbo-Polsterdüse / Rohranschluss",
+          "completeness": "partial",
+          "unknowns": [
+            "Rohrdurchmesser, Verriegelung, elektrische Eigenschaften nicht belegt."
+          ]
+        },
+        {
+          "id": "motor",
+          "name": "Motor / Elektronik",
+          "completeness": "partial",
+          "unknowns": [
+            "Originalartikel, Spannungs-/Steckerdaten, Seriengrenzen und sichere Serviceprozedur nicht bestimmt."
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "assembly": "bag",
+          "part": {
+            "issuer": "Bosch",
+            "namespace": "article",
+            "code": "00577549",
+            "name": "PowerProtect Beutelset",
+            "aliases": [
+              "BBZ51FGALL"
+            ]
+          },
+          "scope": "BGL75X1PRQ",
+          "status": "manufacturer_listing",
+          "listingProof": "bosch-list",
+          "identityProof": "bosch-bag-id",
+          "position": null,
+          "connection": "unknown",
+          "deviceInspection": "unknown",
+          "reusePermission": "unknown",
+          "release": "unconfirmed"
+        },
+        {
+          "assembly": "nozzle",
+          "part": {
+            "issuer": "Bosch",
+            "namespace": "article",
+            "code": "00460431",
+            "name": "Turbo-Polsterdüse",
+            "aliases": [
+              "BBZ42TBUC"
+            ]
+          },
+          "scope": "BGL75X1PRQ",
+          "status": "manufacturer_listing",
+          "listingProof": "bosch-list",
+          "identityProof": "bosch-nozzle-id",
+          "position": null,
+          "connection": "unknown",
+          "deviceInspection": "unknown",
+          "reusePermission": "unknown",
+          "release": "unconfirmed"
+        }
+      ],
+      "conditions": [],
+      "negativeCases": [
+        {
+          "id": "bosch-vs08",
+          "assembly": "bag",
+          "target": "00577549",
+          "when": "Gerät gehört zur VS08... oder VS01... Serie",
+          "status": "excluded",
+          "text": "Hersteller nimmt diese Serien von der allgemeinen Beutel-Eignung aus; keine pauschale G-ALL-Freigabe.",
+          "proof": "bosch-exclusion"
+        }
+      ],
+      "unknownCases": [
+        {
+          "id": "bosch-index-transfer",
+          "assembly": "nozzle",
+          "target": "BGL75X1PRQ/xx",
+          "status": "unknown",
+          "text": "Basis-Produktzubehör ist keine vollständig revisionsgeprüfte E-Nr.-Stückliste. 35 mm werden nicht erfunden."
+        }
+      ]
+    },
+    {
+      "id": "siemens-vs06",
+      "brand": "Siemens",
+      "name": "synchropower VS06A110/03",
+      "market": "DE",
+      "scope": "VS06A110/03",
+      "identifiers": {
+        "eNr": "VS06A110/03"
+      },
+      "catalogId": "vac-siemens-model-vs06a110",
+      "identityProof": "vs06-list",
+      "selection": "Klassischer Beutel-Bodenstaubsauger; revisionsgenaue Service-Stichprobe.",
+      "ambiguities": [
+        "Offizieller Support führt außerdem /12; kein automatischer Revisionstransfer."
+      ],
+      "observedDevice": {
+        "serial": null,
+        "revision": null,
+        "connectorInspection": null
+      },
+      "assemblies": [
+        {
+          "id": "wheel",
+          "name": "Vordere Laufrolle / Achse",
+          "completeness": "partial",
+          "unknowns": [
+            "BOM-Position bestimmt; Achs-/Halterausführung und Montage unbesichtigt."
+          ]
+        },
+        {
+          "id": "exhaust",
+          "name": "Abluftfilter",
+          "completeness": "partial",
+          "unknowns": [
+            "Quelle nennt VZ153HFB(00); Bestellalias und kompletter Sitz nicht aufgelöst."
+          ]
+        },
+        {
+          "id": "motor",
+          "name": "Motor / Elektronik",
+          "completeness": "partial",
+          "unknowns": [
+            "Originalartikel, Spannungs-/Steckerdaten, Seriengrenzen und sichere Serviceprozedur nicht bestimmt."
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "assembly": "wheel",
+          "part": {
+            "issuer": "Siemens",
+            "namespace": "article",
+            "code": "00027606",
+            "name": "Laufrolle vorne",
+            "aliases": []
+          },
+          "scope": "VS06A110/03",
+          "status": "manufacturer_listing",
+          "listingProof": "vs06-list",
+          "identityProof": "wheel-id",
+          "position": "0109",
+          "connection": "unknown",
+          "deviceInspection": "unknown",
+          "reusePermission": "unknown",
+          "release": "unconfirmed"
+        }
+      ],
+      "conditions": [],
+      "negativeCases": [],
+      "unknownCases": [
+        {
+          "id": "vs06-revision-transfer",
+          "assembly": "wheel",
+          "target": "VS06A110/12",
+          "status": "unknown",
+          "text": "Eigenständige offizielle Revision; /03-BOM wird nicht übertragen."
+        },
+        {
+          "id": "vs06-filter-alias",
+          "assembly": "exhaust",
+          "target": "VZ153HFB(00)",
+          "status": "unknown",
+          "text": "Originaler BOM-Bezeichner bleibt erhalten; ohne Aliasbeleg kein eigener bestellbarer OEM-Artikel."
+        }
+      ]
+    },
+    {
+      "id": "siemens-vsz4",
+      "brand": "Siemens",
+      "name": "Z4 VSZ4G1400/01",
+      "market": "DE",
+      "scope": "VSZ4G1400/01",
+      "identifiers": {
+        "eNr": "VSZ4G1400/01"
+      },
+      "catalogId": "vac-siemens-model-vsz4g1400",
+      "identityProof": "vsz4-list",
+      "selection": "Älteres Z4-Serviceprofil, keine Behauptung eines überprüften Baujahrs.",
+      "ambiguities": [
+        "BOM VZ10TFG(00) ist nicht nachgewiesen identisch mit VZ10TFG / 00086180."
+      ],
+      "observedDevice": {
+        "serial": null,
+        "revision": null,
+        "connectorInspection": null
+      },
+      "assemblies": [
+        {
+          "id": "wheel",
+          "name": "Vordere Laufrolle / Achse",
+          "completeness": "partial",
+          "unknowns": [
+            "Einbau-/Serienzustand offen."
+          ]
+        },
+        {
+          "id": "textile",
+          "name": "Dauertextilfilter",
+          "completeness": "partial",
+          "unknowns": [
+            "BOM-Code vorhanden; numerische Bestellartikel-Aliaszuordnung ungeklärt."
+          ]
+        },
+        {
+          "id": "motor",
+          "name": "Motor / Elektronik",
+          "completeness": "partial",
+          "unknowns": [
+            "Originalartikel, Spannungs-/Steckerdaten, Seriengrenzen und sichere Serviceprozedur nicht bestimmt."
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "assembly": "wheel",
+          "part": {
+            "issuer": "Siemens",
+            "namespace": "article",
+            "code": "00027606",
+            "name": "Laufrolle vorne",
+            "aliases": []
+          },
+          "scope": "VSZ4G1400/01",
+          "status": "manufacturer_listing",
+          "listingProof": "vsz4-list",
+          "identityProof": "wheel-id",
+          "position": "0111",
+          "connection": "unknown",
+          "deviceInspection": "unknown",
+          "reusePermission": "unknown",
+          "release": "unconfirmed"
+        }
+      ],
+      "conditions": [],
+      "negativeCases": [],
+      "unknownCases": [
+        {
+          "id": "vsz4-alias",
+          "assembly": "textile",
+          "target": "VZ10TFG(00) → 00086180",
+          "status": "unknown",
+          "text": "BOM-Position 8003 nennt VZ10TFG(00). Teilepage nennt 00086180 und VZ10TFG ohne (00). Suffix darf nicht abgeschnitten werden."
+        },
+        {
+          "id": "vsz4-wheel-position",
+          "assembly": "wheel",
+          "target": "VS06A110/03 Position 0109",
+          "status": "unknown",
+          "text": "Gleicher Artikel wird dort an anderer Position gelistet; Position 0111 gehört nur zur VSZ4-/01-BOM."
+        }
+      ]
+    },
+    {
+      "id": "aeg-ab61",
+      "brand": "AEG",
+      "name": "6000 AB61C3GG",
+      "market": "DE",
+      "scope": "90025863800",
+      "identifiers": {
+        "model": "AB61C3GG",
+        "pnc": "90025863800"
+      },
+      "catalogId": "vac-aeg-model-ab61c3gg",
+      "identityProof": "aeg-list",
+      "selection": "Beutel-Bodenstaubsauger; PNC-geprüfte Filter-/Beutel-Stichprobe.",
+      "ambiguities": [
+        "9-stelliger PNC-Stamm 900258638 ist keine 11-stellige Geräteausführung."
+      ],
+      "observedDevice": {
+        "serial": null,
+        "revision": null,
+        "connectorInspection": null
+      },
+      "assemblies": [
+        {
+          "id": "filter",
+          "name": "Abluftfilter / Filterhalter",
+          "completeness": "partial",
+          "unknowns": [
+            "Gerätehalter, Dichtsitz und Einbauzustand unbekannt."
+          ]
+        },
+        {
+          "id": "bag",
+          "name": "S-bag / Aufnahme",
+          "completeness": "partial",
+          "unknowns": [
+            "Aufnahmebaugruppe und Seriengrenzen unbekannt."
+          ]
+        },
+        {
+          "id": "motor",
+          "name": "Motor / Elektronik",
+          "completeness": "partial",
+          "unknowns": [
+            "Originalartikel, Spannungs-/Steckerdaten, Seriengrenzen und sichere Serviceprozedur nicht bestimmt."
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "assembly": "filter",
+          "part": {
+            "issuer": "AEG",
+            "namespace": "article",
+            "code": "9001677690",
+            "name": "AFS1W Allergy Plus s-filter",
+            "aliases": [
+              "AFS1W"
+            ]
+          },
+          "scope": "90025863800",
+          "status": "manufacturer_listing",
+          "listingProof": "aeg-list",
+          "identityProof": "aeg-filter-id",
+          "position": null,
+          "connection": "unknown",
+          "deviceInspection": "unknown",
+          "reusePermission": "unknown",
+          "release": "unconfirmed"
+        },
+        {
+          "assembly": "bag",
+          "part": {
+            "issuer": "AEG",
+            "namespace": "article",
+            "code": "9001684746",
+            "name": "GR201S s-bag Classic Long Performance",
+            "aliases": [
+              "GR201S"
+            ]
+          },
+          "scope": "90025863800",
+          "status": "manufacturer_listing",
+          "listingProof": "aeg-list",
+          "identityProof": "aeg-bag-id",
+          "position": null,
+          "connection": "unknown",
+          "deviceInspection": "unknown",
+          "reusePermission": "unknown",
+          "release": "unconfirmed"
+        }
+      ],
+      "conditions": [
+        {
+          "id": "aeg-filter-dry",
+          "assembly": "filter",
+          "text": "Hersteller beschreibt waschbaren Filter; nach Reinigung vollständig trocknen. Keine 24-h-Vorgabe aus fremder Anleitung übertragen.",
+          "proof": "aeg-clean"
+        }
+      ],
+      "negativeCases": [],
+      "unknownCases": [
+        {
+          "id": "aeg-pnc-transfer",
+          "assembly": "filter",
+          "target": "900258638 / andere Endziffern",
+          "status": "unknown",
+          "text": "Nur der volle recherchierte PNC 90025863800 trägt diese Gerätelistung. Die 10-stellige Artikelnummer ist kein Geräte-PNC."
+        }
+      ]
+    },
+    {
+      "id": "dyson-v8",
+      "brand": "Dyson",
+      "name": "V8 Absolute Pro",
+      "market": "DE",
+      "scope": "227312-01",
+      "identifiers": {
+        "productSku": "227312-01"
+      },
+      "catalogId": "vac-dyson-model-227312-01",
+      "identityProof": "v8-list",
+      "selection": "Älteres Akku-Hand-/Stielgerät; Gewicht wird hier nicht geschätzt.",
+      "ambiguities": [
+        "V8 Akku D/E und Serienpräfix YH5; tatsächliche Seriennummer fehlt."
+      ],
+      "observedDevice": {
+        "serial": null,
+        "revision": null,
+        "connectorInspection": null
+      },
+      "assemblies": [
+        {
+          "id": "battery",
+          "name": "Akku / Befestigung",
+          "completeness": "partial",
+          "unknowns": [
+            "D/E-Montageform, Seriennummer und Kontakte nicht beobachtet."
+          ]
+        },
+        {
+          "id": "charger",
+          "name": "Ladegerät / Buchse",
+          "completeness": "partial",
+          "unknowns": [
+            "Elektrische Ausgangswerte, Stecker-/Länderzustand offen."
+          ]
+        },
+        {
+          "id": "motor",
+          "name": "Motor / Elektronik",
+          "completeness": "partial",
+          "unknowns": [
+            "Originalartikel, Spannungs-/Steckerdaten, Seriengrenzen und sichere Serviceprozedur nicht bestimmt."
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "assembly": "battery",
+          "part": {
+            "issuer": "Dyson",
+            "namespace": "article",
+            "code": "967834-07",
+            "name": "Dyson V8 Akku E",
+            "aliases": []
+          },
+          "scope": "227312-01",
+          "status": "manufacturer_listing",
+          "listingProof": "v8-list",
+          "identityProof": "v8-battery-id",
+          "position": null,
+          "connection": "unknown",
+          "deviceInspection": "unknown",
+          "reusePermission": "unknown",
+          "release": "unconfirmed"
+        },
+        {
+          "assembly": "charger",
+          "part": {
+            "issuer": "Dyson",
+            "namespace": "article",
+            "code": "967813-03",
+            "name": "Ladegerät",
+            "aliases": []
+          },
+          "scope": "227312-01",
+          "status": "manufacturer_listing",
+          "listingProof": "v8-list",
+          "identityProof": "v8-list",
+          "position": null,
+          "connection": "unknown",
+          "deviceInspection": "unknown",
+          "reusePermission": "unknown",
+          "release": "unconfirmed"
+        }
+      ],
+      "conditions": [
+        {
+          "id": "v8-mount",
+          "assembly": "battery",
+          "text": "Artikelpage verlangt Vergleich der Montageform mit Herstellerabbildung. Widersprüchlicher E-Verweis im Seitentext löst D/E nicht auf; keine abgeleitete Geometrie.",
+          "proof": "v8-battery-id"
+        }
+      ],
+      "negativeCases": [
+        {
+          "id": "v8-yh5-exclusion",
+          "assembly": "battery",
+          "target": "967834-07",
+          "when": "Serienpräfix YH5",
+          "status": "excluded",
+          "text": "Hersteller verlangt dann Akku D. Akku E wird für diesen Negativfall nicht freigegeben; D-Artikelnummer hier nicht bestimmt.",
+          "proof": "v8-yh5"
+        }
+      ],
+      "unknownCases": [
+        {
+          "id": "v8-no-serial",
+          "assembly": "battery",
+          "target": "D/E bei fehlender Seriennummer",
+          "status": "unknown",
+          "text": "Akku E steht in der Modellliste; ohne Serien-/Montageprüfung keine positive Freigabe."
+        }
+      ]
+    },
+    {
+      "id": "dyson-v11",
+      "brand": "Dyson",
+      "name": "V11 Absolute Generation 2019 Nickel/Blau",
+      "market": "DE",
+      "scope": "268700-01",
+      "identifiers": {
+        "productSku": "268700-01",
+        "generation": "2019"
+      },
+      "catalogId": "vac-dyson-model-268700-01",
+      "identityProof": "v11-list",
+      "selection": "Explizit alte Generation 2019; Akku-Hand-/Stielgerät.",
+      "ambiguities": [
+        "V11 Click-in und Schraubakku sind unterschiedliche Ausführungen."
+      ],
+      "observedDevice": {
+        "serial": null,
+        "revision": null,
+        "connectorInspection": null
+      },
+      "assemblies": [
+        {
+          "id": "battery",
+          "name": "Akku / Handgriffverbindung",
+          "completeness": "partial",
+          "unknowns": [
+            "Große rote Akkutaste, Schraubbefestigung und Serienzustand nicht beobachtet."
+          ]
+        },
+        {
+          "id": "wand",
+          "name": "Saugrohr / Verriegelung",
+          "completeness": "partial",
+          "unknowns": [
+            "Anschlussform und Kontaktzustand nicht beobachtet."
+          ]
+        },
+        {
+          "id": "motor",
+          "name": "Motor / Elektronik",
+          "completeness": "partial",
+          "unknowns": [
+            "Originalartikel, Spannungs-/Steckerdaten, Seriengrenzen und sichere Serviceprozedur nicht bestimmt."
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "assembly": "battery",
+          "part": {
+            "issuer": "Dyson",
+            "namespace": "article",
+            "code": "970145-06",
+            "name": "Dyson V11 Akku",
+            "aliases": []
+          },
+          "scope": "268700-01",
+          "status": "manufacturer_listing",
+          "listingProof": "v11-list",
+          "identityProof": "v11-battery-id",
+          "position": null,
+          "connection": "unknown",
+          "deviceInspection": "unknown",
+          "reusePermission": "unknown",
+          "release": "unconfirmed"
+        },
+        {
+          "assembly": "wand",
+          "part": {
+            "issuer": "Dyson",
+            "namespace": "article",
+            "code": "969109-04",
+            "name": "Saugrohr Violett",
+            "aliases": []
+          },
+          "scope": "268700-01",
+          "status": "manufacturer_listing",
+          "listingProof": "v11-list",
+          "identityProof": "v11-list",
+          "position": null,
+          "connection": "unknown",
+          "deviceInspection": "unknown",
+          "reusePermission": "unknown",
+          "release": "unconfirmed"
+        }
+      ],
+      "conditions": [
+        {
+          "id": "v11-click-rule",
+          "assembly": "battery",
+          "text": "Große rote Akku-Entriegelung am Handgriff kennzeichnet Click-in; ohne diese Taste verlangt Hersteller Standardakku zum Einschrauben.",
+          "proof": "v11-click-condition"
+        }
+      ],
+      "negativeCases": [
+        {
+          "id": "v11-screw-exclusion",
+          "assembly": "battery",
+          "target": "970938-01",
+          "when": "Schraubakku-Ausführung ohne große rote Entriegelungstaste",
+          "status": "excluded",
+          "text": "Click-in-Akku ist laut Hersteller für Click-in-Ausführung; Schraubgerät erhält diesen Akku nicht freigegeben.",
+          "proof": "v11-click-condition"
+        }
+      ],
+      "unknownCases": [
+        {
+          "id": "v11-transfer",
+          "assembly": "battery",
+          "target": "Alle V11-Generationen",
+          "status": "unknown",
+          "text": "Modellliste nennt 970145-06, ersetzt aber keine Prüfung der tatsächlichen Akkuverbindung."
+        }
+      ]
+    },
+    {
+      "id": "samsung-ultra",
+      "brand": "Samsung",
+      "name": "2025 Bespoke AI Jet Ultra Satin Black",
+      "market": "DE",
+      "scope": "VS90F40EEK/WD",
+      "identifiers": {
+        "modelCode": "VS90F40EEK/WD"
+      },
+      "catalogId": "vac-samsung-model-vs90f40eek",
+      "identityProof": "samsung-list",
+      "selection": "Neues 2025-Premium-Akkugerät mit Station. Leichte Handstück-Stichprobe: Hersteller nennt Handstück 1,9 kg und Gerät netto 3,18 kg; nicht das Gesamtpaket mit Station. Premium ist Herstellerpositionierung, keine aktuelle Preisrangliste.",
+      "ambiguities": [
+        "Satin Mint EEM/WD nennt VCA-SHFF90M statt K; baugleiches Gerät bedeutet nicht Zubehörtausch.",
+        "Region /WD bleibt Bestandteil der Identität."
+      ],
+      "observedDevice": {
+        "serial": null,
+        "revision": null,
+        "connectorInspection": null
+      },
+      "assemblies": [
+        {
+          "id": "hepa",
+          "name": "HEPA-Filter / Aufnahme",
+          "completeness": "partial",
+          "unknowns": [
+            "Sitz, Dichtung, Gehäuserevision, Waschbarkeit offen."
+          ]
+        },
+        {
+          "id": "station",
+          "name": "Clean Station / Staubbeutel",
+          "completeness": "partial",
+          "unknowns": [
+            "Stations-Untertyp, Dichtung und Serienausführung offen."
+          ]
+        },
+        {
+          "id": "motor",
+          "name": "Motor / Elektronik",
+          "completeness": "partial",
+          "unknowns": [
+            "Originalartikel, Spannungs-/Steckerdaten, Seriengrenzen und sichere Serviceprozedur nicht bestimmt."
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "assembly": "hepa",
+          "part": {
+            "issuer": "Samsung",
+            "namespace": "designation",
+            "code": "VCA-SHFF90K",
+            "name": "HEPA-Filter Satin Black",
+            "aliases": []
+          },
+          "scope": "VS90F40EEK/WD",
+          "status": "manufacturer_listing",
+          "listingProof": "samsung-list",
+          "identityProof": "samsung-filter-id",
+          "position": null,
+          "connection": "unknown",
+          "deviceInspection": "unknown",
+          "reusePermission": "unknown",
+          "release": "unconfirmed"
+        },
+        {
+          "assembly": "station",
+          "part": {
+            "issuer": "Samsung",
+            "namespace": "designation",
+            "code": "VCA-ADB952",
+            "name": "Staubbeutel All-in-One Clean Station",
+            "aliases": []
+          },
+          "scope": "VS90F40EEK/WD",
+          "status": "manufacturer_listing",
+          "listingProof": "samsung-list",
+          "identityProof": "samsung-list",
+          "position": null,
+          "connection": "unknown",
+          "deviceInspection": "unknown",
+          "reusePermission": "unknown",
+          "release": "unconfirmed"
+        }
+      ],
+      "conditions": [],
+      "negativeCases": [],
+      "unknownCases": [
+        {
+          "id": "samsung-color-transfer",
+          "assembly": "hepa",
+          "target": "VCA-SHFF90M / VS90F40EEM/WD",
+          "status": "unknown",
+          "text": "K und M sind verschieden gelistet. Keine belegte Unpassung, aber auch keine artikelgenaue Austauschfreigabe."
+        },
+        {
+          "id": "samsung-region-transfer",
+          "assembly": "hepa",
+          "target": "Andere Länderkennung als /WD",
+          "status": "unknown",
+          "text": "Kein Transfer in /AA oder andere regionale Modellcodes."
+        }
+      ]
+    },
+    {
+      "id": "vorwerk-vk7",
+      "brand": "Vorwerk",
+      "name": "Kobold VK7",
+      "market": "DE",
+      "scope": "VK7",
+      "identifiers": {
+        "system": "VK7",
+        "manualEdition": "26302-04 / 0824 DE AT CH Benelux"
+      },
+      "catalogId": "vac-vorwerk-model-vk7",
+      "identityProof": "vk7-identity",
+      "selection": "Aktuelles modulares Premium-Akkusystem; Vorsatz ist eigene Baugruppe.",
+      "ambiguities": [
+        "Basissauger VK7, elektrischer Vorsatz und Filterartikel getrennt; Serien-/Revisionsdaten fehlen."
+      ],
+      "observedDevice": {
+        "serial": null,
+        "revision": null,
+        "connectorInspection": null
+      },
+      "assemblies": [
+        {
+          "id": "bag",
+          "name": "Premium-Filtertüte / Deckel",
+          "completeness": "partial",
+          "unknowns": [
+            "FP7-Herstellerbezeichnung belegt; separate numerische OEM-Nummer nicht bestimmt."
+          ]
+        },
+        {
+          "id": "filter",
+          "name": "Motorschutzfilter / Halter",
+          "completeness": "partial",
+          "unknowns": [
+            "MF7-Bezeichnung belegt; numerische OEM-Nummer und Halterrevision offen."
+          ]
+        },
+        {
+          "id": "attachment",
+          "name": "Elektrische Vorsatzschnittstelle",
+          "completeness": "partial",
+          "unknowns": [
+            "Kein vollständiger Originalteil-/Pin-/Leistungskatalog recherchiert."
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "assembly": "bag",
+          "part": {
+            "issuer": "Vorwerk",
+            "namespace": "designation",
+            "code": "FP7",
+            "name": "FP7 Premium Filtertüten Set 12 Stk.",
+            "aliases": []
+          },
+          "scope": "VK7",
+          "status": "manufacturer_listing",
+          "listingProof": "fp7-id",
+          "identityProof": "fp7-id",
+          "position": null,
+          "connection": "unknown",
+          "deviceInspection": "unknown",
+          "reusePermission": "unknown",
+          "release": "unconfirmed"
+        },
+        {
+          "assembly": "filter",
+          "part": {
+            "issuer": "Vorwerk",
+            "namespace": "designation",
+            "code": "MF7",
+            "name": "MF7 Motorschutzfilter",
+            "aliases": []
+          },
+          "scope": "VK7",
+          "status": "manufacturer_listing",
+          "listingProof": "mf7-id",
+          "identityProof": "mf7-id",
+          "position": null,
+          "connection": "unknown",
+          "deviceInspection": "unknown",
+          "reusePermission": "unknown",
+          "release": "unconfirmed"
+        }
+      ],
+      "conditions": [
+        {
+          "id": "vk7-bag-safe",
+          "assembly": "bag",
+          "text": "Filtertüte bei ausgeschaltetem, sicher abgelegtem oder geparktem Gerät wechseln; Filterdeckel abnehmen.",
+          "proof": "vk7-bag-change"
+        },
+        {
+          "id": "vk7-filter-dry",
+          "assembly": "filter",
+          "text": "Motorschutzfilter absaugen oder kalt auswaschen; nach Waschen mindestens 24 h vollständig trocknen.",
+          "proof": "vk7-filter-dry"
+        }
+      ],
+      "negativeCases": [
+        {
+          "id": "vk7-mains-exclusion",
+          "assembly": "attachment",
+          "target": "Elektrisch betriebene Vorsätze von Vorwerk Netzstaubsaugern",
+          "when": "Kreuzverbindung VK7-Akkusystem ↔ Netzstaubsauger-System",
+          "status": "excluded",
+          "text": "Anleitung schließt diese elektrische Systemkombination aus. Das ist keine pauschale Aussage über alle nicht elektrischen Teile oder Filtertüten.",
+          "proof": "vk7-exclusion"
+        }
+      ],
+      "unknownCases": [
+        {
+          "id": "vk7-number",
+          "assembly": "filter",
+          "target": "Numerischer MF7-Bestellcode",
+          "status": "unknown",
+          "text": "Keine Ziffern aus Händler-SKUs, Bildern oder Baugruppenpositionen als OEM-Nummer erfinden."
+        }
+      ]
+    }
+  ]
+}

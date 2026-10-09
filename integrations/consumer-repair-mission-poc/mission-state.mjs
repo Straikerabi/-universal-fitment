@@ -2,11 +2,18 @@ import {catalogSnapshot} from './catalog-snapshot.mjs';
 import {mockScenarios} from './mock-fitment-adapter.mjs';
 import {buildSyntheticUiRequest} from '../dual-platform-owner-review/ui-fixtures.mjs';
 import {inspectOnBothSurfaces} from '../dual-platform-owner-review/bridge.mjs';
-export const assemblies=[{id:'filter',label:'Filter & Luftweg',hint:'Filter, Beutel und Luftführung',types:['filter','bag','hose']},{id:'brush',label:'Bürste & Bodendüse',hint:'Walze, Düse und Aufnahme',types:['roller','nozzle']},{id:'battery',label:'Akku & Energie',hint:'Akku, Ladegerät und Anschluss',types:['battery','charger','electrical']},{id:'body',label:'Gehäuse & Behälter',hint:'Behälter, Griff und Abdeckungen',types:['bin','mechanical','storage']}];
+import {catalogFingerprint} from './offline-config.mjs';
+export const assemblies=[
+ {id:'filter',label:'Filter & Beutel',hint:'Filter und Staubbeutel',types:['filter','bag']},
+ {id:'brush',label:'Bürsten & Düsen',hint:'Walze, Bodendüse und Aufnahme',types:['roller','nozzle']},
+ {id:'battery',label:'Akku & Elektrik',hint:'Akku, Ladezubehör und Anschluss',types:['battery','charger','electrical']},
+ {id:'hose',label:'Schläuche',hint:'Schlauch und Luftverbindung',types:['hose']},
+ {id:'body',label:'Gehäuse & Behälter',hint:'Behälter, Griff und Abdeckungen',types:['bin','mechanical','storage']}
+];
 export const problems=[{id:'suction',label:'Saugleistung lässt nach'},{id:'brush',label:'Bürste oder Düse prüfen'},{id:'power',label:'Akku oder Laden prüfen'},{id:'part',label:'Ein bestimmtes Teil finden'}];
-export const dataFingerprint=catalogSnapshot.checkpointSha256+':consumer-ui/1';
+export const dataFingerprint=catalogFingerprint;
 export const storageKey=mode=>'uf-repair-mission-poc-v1-'+mode;
-export function freshMission(mode='real'){return {version:1,fingerprint:dataFingerprint,mode,step:1,deviceId:null,problemId:'part',scenarioId:'filter-positive',variantKnown:false,observedCode:'',assemblyId:null,selectedPartIds:[],done:[]};}
+export function freshMission(mode='real'){return {version:2,fingerprint:dataFingerprint,mode,step:1,deviceId:null,problemId:'part',scenarioId:'filter-positive',variantKnown:false,observedCode:'',assemblyId:null,selectedPartIds:[],done:[]};}
 export function currentDevice(state){return state.mode==='synthetic'?(state.deviceId==='demo:vacuum-a'?{id:'demo:vacuum-a',brand:'Synthetisches Beispiel',model:'Demo Vacuum A',reference:mockScenarios.find(x=>x.id===state.scenarioId)?.variant||'Revision offen',type:'cordless',variantHint:'Fiktives Gerät und fiktive Teile. Dieses Beispiel ist keine Aussage zu einer realen Marke.'}:null):catalogSnapshot.devices.find(x=>x.id===state.deviceId)||null;}
 export function searchDevices(query='',brand='all'){
  const q=query.trim().toLocaleUpperCase('de-DE');
@@ -20,7 +27,7 @@ export function transition(state,action){
  if(action.type==='scenario'){if(!mockScenarios.some(x=>x.id===action.value))return s;return {...freshMission('synthetic'),deviceId:'demo:vacuum-a',scenarioId:action.value};}
  if(action.type==='problem'&&problems.some(x=>x.id===action.value))s.problemId=action.value;
  if(action.type==='variant'){s.variantKnown=action.known===true;s.observedCode=typeof action.code==='string'?action.code.trim().slice(0,100):'';s.selectedPartIds=[];s.done=[];}
- if(action.type==='assembly'&&assemblies.some(x=>x.id===action.value)){s.assemblyId=action.value;s.selectedPartIds=[];s.done=[];}
+ if(action.type==='assembly'&&assemblies.some(x=>x.id===action.value)&&s.assemblyId!==action.value){s.assemblyId=action.value;s.selectedPartIds=[];s.done=[];}
  if(action.type==='part'&&candidateParts(s).some(x=>x.id===action.value)){s.selectedPartIds=s.selectedPartIds.includes(action.value)?s.selectedPartIds.filter(x=>x!==action.value):[...s.selectedPartIds,action.value];s.done=[];}
  if(action.type==='done'&&checklist(s).some(x=>x.id===action.value))s.done=s.done.includes(action.value)?s.done.filter(x=>x!==action.value):[...s.done,action.value];
  if(action.type==='step'&&Number.isInteger(action.value)&&action.value>=1&&action.value<=5){if(action.value>1&&!currentDevice(s))return s;if(action.value>3&&!s.assemblyId)return s;s.step=action.value;}
@@ -44,7 +51,8 @@ export function assessment(state){
   }
  }
  const device=currentDevice(state);
- return {synthetic:false,status:'unclear',headline:'Passung noch nicht geprüft',reasons:['Die Geräteidentität stammt aus dem dokumentierten Bestandskatalog.','Für diese Mission liegt noch keine Antwort der gemeinsamen Passungsprüfung vor. Eine Katalogzuordnung allein bestätigt den Einbau nicht.'],missing:[...(!state.variantKnown?['Vollständige Gerätekennung und Ausführung vom Typenschild übernehmen.']:[]),...(device?.brand==='Bosch'?['Vollständige E-Nr. mit /xx-Index und passenden Herstellerbeleg prüfen.']:[]),...(device?.brand==='Hoover'?['Produktcode und regionalen Serien-/Revisionsbereich prüfen.']:[]),'Modellbezogene Passung sowie Anschluss-/Revisionsbedingungen anhand eines geeigneten Herstellerbelegs klären.'],evidence:[],purchaseAllowed:false,completeKit:false,partCode:null};
+ const userCodeMismatch=state.observedCode&&device&&state.observedCode.toLocaleUpperCase('de-DE')!==device.reference.toLocaleUpperCase('de-DE');
+ return {synthetic:false,status:'unclear',headline:'Passung noch nicht geprüft',reasons:['Die Geräteidentität stammt aus dem dokumentierten Bestandskatalog.','Für diese Mission liegt noch keine Antwort der gemeinsamen Passungsprüfung vor. Eine Katalogzuordnung allein bestätigt den Einbau nicht.'],missing:[...(!state.variantKnown?['Vollständige Gerätekennung und Ausführung vom Typenschild übernehmen.']:[]),...(userCodeMismatch?['Eigene Kennung weicht von der Quellenkennung ab: genaue Variante klären, keine ähnliche Ausführung übernehmen.']:[]),...(device?.brand==='Bosch'?['Vollständige E-Nr. mit /xx-Index und passenden Herstellerbeleg prüfen.']:[]),...(device?.brand==='Hoover'?['Produktcode und regionalen Serien-/Revisionsbereich prüfen.']:[]),'Modellbezogene Passung sowie Anschluss-/Revisionsbedingungen anhand eines geeigneten Herstellerbelegs klären.'],evidence:[],purchaseAllowed:false,completeKit:false,partCode:null};
 }
 export function checklist(state){
  if(!state.assemblyId||!currentDevice(state))return [];
@@ -65,14 +73,14 @@ export function exportMission(state){
 }
 export function restoreMission(raw,mode='real'){
  const fallback=freshMission(mode);try{
-  const s=typeof raw==='string'?JSON.parse(raw):raw;if(!s||s.version!==1||s.fingerprint!==dataFingerprint||s.mode!==mode)return fallback;
+  const s=typeof raw==='string'?JSON.parse(raw):raw;if(!s||s.version!==2||s.fingerprint!==dataFingerprint||s.mode!==mode)return fallback;
   const keys=Object.keys(fallback);if(Object.keys(s).some(x=>!keys.includes(x)))return fallback;
   if(!Number.isInteger(s.step)||s.step<1||s.step>5||typeof s.variantKnown!=='boolean'||typeof s.observedCode!=='string'||s.observedCode.length>100||!Array.isArray(s.selectedPartIds)||!Array.isArray(s.done)||!problems.some(x=>x.id===s.problemId)||!mockScenarios.some(x=>x.id===s.scenarioId))return fallback;
   if(s.deviceId!==null&&(mode==='real'?!catalogSnapshot.devices.some(x=>x.id===s.deviceId):s.deviceId!=='demo:vacuum-a'))return fallback;
   if(s.assemblyId!==null&&!assemblies.some(x=>x.id===s.assemblyId))return fallback;
   if(s.step>1&&!currentDevice(s)||s.step>3&&!s.assemblyId)return fallback;
   if(new Set(s.selectedPartIds).size!==s.selectedPartIds.length||s.selectedPartIds.some(id=>!candidateParts(s).some(p=>p.id===id)))return fallback;
-  const allowed=new Set(checklist(s).map(x=>x.id));if(s.done.length>30||s.done.some(id=>!allowed.has(id)))return fallback;
+  const allowed=new Set(checklist(s).map(x=>x.id));if(s.done.length>30||new Set(s.done).size!==s.done.length||s.done.some(id=>!allowed.has(id)))return fallback;
   return {...s,selectedPartIds:[...s.selectedPartIds],done:[...s.done]};
  }catch{return fallback;}
 }
