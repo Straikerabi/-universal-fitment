@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "liveAffiliateOffersEnabled": false,
+  "proofRequired": "partner-specific signed/approved contract and explicitly granted product-feed use",
+  "merchants": [
+    {
+      "id": "staubsaugermanufaktur",
+      "name": "Staubsaugermanufaktur",
+      "network": "ADCELL",
+      "programId": "11914",
+      "programUrl": "https://www.adcell.de/partnerprogramme/staubsaugermanufaktur",
+      "publishedCommissionRangePercent": [
+        4.5,
+        7
+      ],
+      "sourceCheckedOn": "2026-10-08",
+      "productCsvAdvertised": true,
+      "deeplinkAdvertised": true,
+      "approvalStatus": "not_applied",
+      "feedAccessStatus": "not_granted",
+      "storeHostsVerified": [],
+      "commercialRightsVerified": false
+    },
+    {
+      "id": "ersatzteilshop-de",
+      "name": "ersatzteilshop.de",
+      "network": "ADCELL",
+      "programId": "6277",
+      "programUrl": "https://www.adcell.de/partnerprogramme/ersatzteilshop.de",
+      "publishedCommissionRangePercent": [
+        7,
+        8
+      ],
+      "sourceCheckedOn": "2026-10-08",
+      "productCsvAdvertised": false,
+      "productCsvUnclear": true,
+      "deeplinkAdvertised": true,
+      "approvalStatus": "not_applied",
+      "feedAccessStatus": "not_granted",
+      "storeHostsVerified": [],
+      "commercialRightsVerified": false
+    },
+    {
+      "id": "schraub-doc",
+      "name": "Schraub-Doc",
+      "network": "ADCELL",
+      "programId": "9879",
+      "programUrl": "https://www.adcell.de/partnerprogramme/schraub-doc",
+      "publishedCommissionRangePercent": [
+        7,
+        7
+      ],
+      "sourceCheckedOn": "2026-10-08",
+      "productCsvAdvertised": true,
+      "deeplinkAdvertised": true,
+      "approvalStatus": "not_applied",
+      "feedAccessStatus": "not_granted",
+      "storeHostsVerified": [],
+      "commercialRightsVerified": false
+    }
+  ]
+}

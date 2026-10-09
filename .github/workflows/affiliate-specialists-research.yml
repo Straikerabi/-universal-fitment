@@ -1,0 +1,42 @@
+name: Specialist Affiliate Research Safety (no deployment)
+
+on:
+  push:
+    branches:
+      - research/affiliate-specialists-wave1
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  merchant-evidence-gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout without persisted credentials
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Static gate syntax check
+        run: node --check integrations/affiliate-specialists/offer-gate.mjs
+      - name: Run synthetic merchant matching tests
+        run: node integrations/affiliate-specialists/offer-gate.test.mjs
+      - name: Assert live partner listings are not activated
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          data=json.loads(Path('integrations/affiliate-specialists/merchant-candidates.json').read_text())
+          assert data['liveAffiliateOffersEnabled'] is False
+          assert len(data['merchants']) >= 3
+          for item in data['merchants']:
+              assert item['approvalStatus'] == 'not_applied'
+              assert item['feedAccessStatus'] == 'not_granted'
+              assert item['commercialRightsVerified'] is False
+              assert item['storeHostsVerified'] == []
+          print('PASS: no live partner feed, merchant host or commercial publication is enabled')
+          PY
