@@ -1,32 +1,38 @@
-# Übergabe an #48 und #54
+# Wave4-Übergabe an den Owner
 
-Der Prototyp ist ein Consumer-Workflow, kein zweiter Fitment-Core. `mission-state.mjs` verwaltet Auswahl, offene Angaben und lokale Notizen. Für reale Geräte liefert die UI ausschließlich den eigenen Anbindungszustand „Passung noch nicht geprüft“, ohne OEM-Entscheidung. Vorhandene Katalogzuordnungen werden weder neu bewertet noch als Einbaufreigabe präsentiert.
+[#63](https://github.com/Straikerabi/-universal-fitment/issues/63) verbessert ausschließlich die Consumer-Oberfläche auf `work/consumer-mobile-ux-wave4`. Der Draft richtet sich an `integration/dual-platform-owner-review`, Ausgangscommit `52f056664ddbf1a6c263a3d86feac3ee0128c054` aus [#59](https://github.com/Straikerabi/-universal-fitment/pull/59). Keine Änderungen an B2B, gemeinsamem Core, Produktions-App, Datencheckpoint, Importern anderer Waves, Workflows oder Deployment.
 
-## Heutige Grenze
+## Bestehende Engine-Grenze
 
-| Ebene | Eingabe | Ausgabe und Geltungsbereich |
+| Ebene | Eingabe | Aussage |
 | --- | --- | --- |
-| Identitätsprojektion | bytegeprüfter v1.29.0-Checkpoint | quellengebundene Geräte-/Artikelidentitäten; keine Fitmententscheidung |
-| Reale UI-Mission | explizit ausgewähltes Gerät, ungeprüfte Nutzerangabe, Baugruppe | Status offen; Prüfkandidaten und fehlende Angaben |
-| `mock-fitment-adapter.mjs` | ausschließlich `mode: synthetic`, `assetId: demo:vacuum-a`, bekannte Szene, passender Demo-Kontext | statische synthetische Fixture; kein Netzwerk und kein OEM-Beleg |
-| Checkliste/Cache/Export | UI-Auswahl und Notizen | erhält Geltungsbereich und Quellen; keine Freigabe durch Abhaken oder Wiederherstellen |
+| Historischer Identitätssnapshot | bytegeprüfter v1.29.0-Checkpoint | Geräte-/Artikelidentität und bestehende Mitgliedschaft; keine neue Passung |
+| Reale Consumer-Mission | ausgewähltes Gerät, ungeprüfte eigene Kennung, Baugruppe | Passung offen; Kandidaten, Originalquellen und fehlende Angaben |
+| Synthetischer Consumer-Test | vorhandenes `buildSyntheticUiRequest` und `inspectOnBothSurfaces` aus #59 | gemeinsame v1-Engine entscheidet den Demo-Status; keine echte Marke/OEM-Freigabe |
+| Darstellung | vorhandene Identitäten bzw. Core-Demoantwort | aufklappbare Listen, wörtliche Filter, stabile Name-/Code-Sortierung, Gründe und Lücken |
+| Checkliste/Export | Auswahl und Notizen | keine Freigabe durch Vormerken, Abhaken oder Wiederherstellen |
 
-`consumer-ui-fixture/1` ist eine lokale Fixture-Markierung, **kein Vorschlag für den Shared-FitmentResponse-Vertrag**. Der Adapter prüft Eingabe und Ausgabe: Modus, Gerätekennung, Variante, Baugruppe, Szene und Request-ID müssen zusammenpassen. Fehlende Demo-Ausführung, falsche Baugruppe oder abweichender Kontext erhalten keine positive Antwort. Eine inkompatible Demo-Position kommt nicht in die Teileliste. Fehlende Paketpositionen bleiben offen. In jeder Szene bleiben `purchaseAllowed` und `completeKit` false.
+Die bereits eingebundene Engine und ihre fünf vom Consumer-Server ausgelieferten Shared-Module bleiben unverändert. `mock-fitment-adapter.mjs` bleibt als historischer, isolierter Fixturebestand erhalten; er entscheidet nicht anstelle des v1-Core über den aktuellen UI-Status. Die bestehende Owner-Bridge lehnt reale Aufträge ab und erlaubt keine kommerzielle Freigabe. `purchaseAllowed` und `completeKit` bleiben false.
 
-Reale Gerätekennungen, OEM-Artikelcodes, Herstellerbelege sowie Felder für Preise, Angebote, Bestand oder Lieferung werden vom synthetischen Adapter abgewiesen. Die Demo nutzt keine echten Marken und keine OEM-Quellen. Beide Modi haben getrennte Speicher. Es wird keine FitmentResponse gespeichert; nach dem Wiederherstellen wird der UI-Zustand neu abgeleitet.
+`parts-view.mjs` berechnet nur Darstellung: Baugruppenmitgliedschaften, Identitätsnachweis, Filtertreffer, Reihenfolge und Checklistenabschnitte. Ein ursprünglicher Quellenlink, historischer Status, eigenes Eingabefeld oder Filter erzeugt keine positive oder negative OEM-Entscheidung. Real sind alle Kandidaten „Passung unbestätigt“. Positiv bewertete synthetische Szenen zählen separat und bestätigen 0 reale Teile.
 
-## Spätere Shared-Engine-Anbindung
+## Datenintegration #61
 
-Erst nach einem dokumentierten Vertrag und einer ausdrücklichen Owner-Integration:
+Die Zusammenführung und Migration der Wave3-Daten gehört [#61](https://github.com/Straikerabi/-universal-fitment/issues/61), aufbauend auf [#54](https://github.com/Straikerabi/-universal-fitment/issues/54). Dieser Branch verändert weder `catalog-snapshot.mjs` noch `catalog-lock.json`, `build-catalog.mjs`, `SOURCE-MANIFEST.md` oder den Quellcheckpoint. Zusätzliche Artikel- oder Fitmentzahlen aus anderen Waves werden nicht als bereits integriert angezeigt.
 
-1. Den freigegebenen, versionierten #48-Vertrag lesen. Eine kleine Darstellungsschicht übersetzt dessen echte Antwort in UI-Texte; keine Consumer-Regeln zur Evidenzgewichtung, Kompatibilität oder Variantenvererbung hinzufügen.
-2. Realen Auftrag mit vollständiger Geräte-/Variantenkennung, Baugruppe und eindeutiger Request-ID senden. Eine Antwort muss genau dazu gehören. Unbekannte Vertragsversion, veralteter Kontext oder fehlende Pflichtfelder bleiben offen; frühere Antworten werden nach Auswahlwechsel verworfen.
-3. Status, belegte Gründe, fehlende Attribute, regionale/serielle Bedingungen und Originalquellen aus dem gemeinsamen Core anzeigen. Ein Quellenlink allein, Nutzertext oder historischer Katalogstatus darf keine positive Aussage erzeugen. Eine negative Aussage benötigt ebenfalls den entsprechenden Core-Beleg.
-4. Source-/Rechteinformationen und Genauigkeitsgrenzen erhalten. Artikelidentität, modellgenaue Passung, vollständiges Reparaturset und genehmigtes aktuelles Angebot sind getrennte Aussagen.
-5. Tests für reale positive, negative und unklare Antworten, widersprüchliche OEM-Belege, falsche Region/Revision, veraltete Requests und Cache-Versionen auf dem freigegebenen Vertrag ergänzen. Die synthetische Demo bleibt separat sichtbar und ersetzt keine Abnahme.
+Wenn der Owner einen neuen geprüften Snapshot einbindet:
 
-## Wave3-Handoff
+1. Den freigegebenen Datencommit, Checkpoint und präzise regionale/serielle Quellenbedingungen dokumentieren; die bestehende Projektion und Originalquellen unabhängig prüfen.
+2. Die neue Daten-/Vertragsversion mit der bereits gemeinsamen Engine verbinden. Darstellung aus Core-Antworten übernehmen; keine Consumer-Regeln zur Kompatibilität, Variantenvererbung oder Evidenzgewichtung hinzufügen.
+3. `offline:prepare` auf dem zulässigen Arbeitsbranch ausführen. Der lokale Cache-Fingerprint muss sich mit Snapshot/Core/Fixtures ändern. UI-/Worker-/Serveränderungen ändern ebenfalls die Offline-Version. Anschließend `offline:check`, Node- und Browserprüfungen ausführen.
+4. Alte Missionen verwerfen, wenn ihr Schema oder Daten-/Core-Fingerprint nicht passt. Keine gespeicherten Statusantworten übernehmen. Quellenwebsite, Gerätevariante, Einbauentscheidung und lizenziertes aktuelles Angebot bleiben getrennte Aussagen.
 
-#54 besitzt die Zusammenführung der Wave3-Ergebnisse und den neuen gültigen Checkpoint. Die aktuelle Projektion akzeptiert absichtlich nur den oben gepinnten Ausgangsstand und stoppt bei anderen Bytes. Auf diesem Branch keine Importer aneinanderhängen, Hash- oder Branchprüfungen umgehen, andere Work-Branches rebasen oder neue Artikel-/Fitmentzahlen als bereits integriert ausgeben.
+Die aktuelle Wave4-UI nutzt Mission-Schema 2. Schema-1-Auswahlen werden beim Laden zurückgesetzt; dies ist keine Datensatzmigration. Die stabile Speicher-Namensgebung enthält historisch `v1`, der gespeicherte Payload ist dennoch versioniert. Filter sind flüchtige Darstellung und enthalten keine Fitmententscheidung.
 
-Nach #54 müssen der freigegebene Commit, Checkpoint und die Quellensummen explizit aktualisiert, die Identitätsprojektion erneut geprüft und der Cache-Fingerprint versioniert werden. Nicht belegte Regionen oder Revisionen bleiben unbekannt. Shared-Engine- und Wave3-Handoff sind jeweils unabhängig zu reviewen; ein neuer Datenstand allein integriert keine Engine.
+## Offline- und Review-Grenzen
+
+`prepare-offline.mjs` liest nur lokale Dateien und generiert in diesem Verzeichnis `offline-config.mjs`. 17 feste URLs enthalten die Consumer-Assets und die unveränderten Shared-Module, keine Nutzerantworten, Dokumente, Quellarchive oder externen Herstellerseiten. Der Worker speichert die Liste atomar; eine neue Version übernimmt erst nach Beendigung älterer Tabs. Es gibt kein erzwungenes `skipWaiting` und kein dynamisches Laufzeit-Caching. Ein Cache-Fehler behauptet keine gespeicherte Offline-Version.
+
+Die lokale Vorschau benötigt Loopback oder einen sicheren Kontext. Der Draft veröffentlicht oder deployt sie nicht. Die Browserprüfung verwendet Chromium mit mobilen Viewports; physisches iPhone, Safari/WebKit, native Installation und Feldtests bleiben separate Prüfungen. Aktuelle Nachweise stehen in [WAVE4-VALIDATION.md](WAVE4-VALIDATION.md).
+
+Der vorhandene Owner-Workflow startet bei Push auf den Integration-Branch oder PR gegen `main`. Ein Draft gegen den Integration-Branch kann daher ohne neue GitHub-Checks bleiben. Lokale Tests sind dokumentiert; auf diesem Branch werden keine fremden Workflows verändert oder Checks als gelaufen ausgegeben.
