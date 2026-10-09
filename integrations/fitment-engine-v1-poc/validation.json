@@ -1,0 +1,128 @@
+{
+  "baseline": {
+    "articleRows": 1940,
+    "authorizedPurchasableParts": 0,
+    "confirmedFitments": 0,
+    "distinctScopedArticleIdentities": 1940,
+    "explicitManufacturerRecordedEdges": 8021,
+    "familyFallbackRecords": 9,
+    "independentlyReauditedSourceClaims": 0,
+    "mappedPhysicalEdges": 8643,
+    "modelNames": 1082,
+    "modelRecords": 1093,
+    "multiple": 530,
+    "one": 116,
+    "physicalArticleRows": 1822,
+    "zero": 447
+  },
+  "baselineAppTests": "40 unchanged test groups, syntax and byte-reproducible build passed",
+  "commands": [
+    {
+      "command": "node --test <repo>/integrations/fitment-engine-v1-poc/contract.test.mjs <repo>/integrations/fitment-engine-v1-poc/coverage.test.mjs",
+      "exitCode": 0
+    },
+    {
+      "command": "node <repo>/integrations/fitment-engine-v1-poc/coverage.mjs --check",
+      "exitCode": 0
+    },
+    {
+      "command": "python3 <repo>/integrations/restore-source-checkpoint.py --target <fresh-app>/site",
+      "exitCode": 0
+    },
+    {
+      "command": "node <fresh-app>/integrations/build-app.mjs",
+      "exitCode": 0
+    },
+    {
+      "command": "npm test",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run check",
+      "exitCode": 0
+    },
+    {
+      "command": "node <fresh-app>/integrations/build-app.mjs --check",
+      "exitCode": 0
+    }
+  ],
+  "contractVersion": "1.0.0",
+  "realCatalogExample": {
+    "assemblyId": "unknown-installation-assembly",
+    "assetId": "vac-miele-model-11602400",
+    "canConfirmFitment": false,
+    "canConfirmPurchase": false,
+    "dataVersion": "v1.29.0-checkpoint",
+    "engineVersion": "1.0.0",
+    "evidenceIds": [],
+    "nextChecks": [
+      "Obtain an explicit manufacturer claim for this asset, variant, assembly and article.",
+      "Read the revision or obtain an explicit manufacturer statement covering every revision."
+    ],
+    "partId": "miele-part-11805640",
+    "policyVersion": "vacuum-poc-1",
+    "reasons": [
+      "NO_EXACT_EVIDENCE",
+      "REVISION_UNKNOWN"
+    ],
+    "rights": {
+      "reuseAllowed": false
+    },
+    "schemaVersion": "1.0.0",
+    "sourceIds": [],
+    "sources": [],
+    "status": "unconfirmed",
+    "testOnly": false
+  },
+  "runtime": "v24.19.0",
+  "schemaSha256": "1da4f952e425ab7d3aff565474b5da540b8d00c94c88001c2c5089d8654e5b52",
+  "scope": {
+    "branch": "work/fitment-engine-v1-poc",
+    "deployed": false,
+    "mainMerged": false,
+    "publicApi": false,
+    "uiChanges": 0,
+    "wave3Imported": false
+  },
+  "syntheticPositive": {
+    "assemblyId": "test-assembly",
+    "assetId": "test-asset",
+    "canConfirmFitment": false,
+    "canConfirmPurchase": false,
+    "dataVersion": "synthetic-fixtures-1",
+    "engineVersion": "1.0.0",
+    "evidenceIds": [
+      "test-claim"
+    ],
+    "nextChecks": [
+      "Follow the source-backed installation instructions; merchant availability requires a separate authorized feed."
+    ],
+    "partId": "test-part",
+    "policyVersion": "vacuum-poc-1",
+    "reasons": [
+      "EXACT_EVIDENCE_AND_INTERFACES"
+    ],
+    "rights": {
+      "reuseAllowed": false
+    },
+    "schemaVersion": "1.0.0",
+    "sourceIds": [
+      "test-source"
+    ],
+    "sources": [
+      {
+        "authoritySourceId": null,
+        "checkedAt": "2026-10-09",
+        "digest": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+        "id": "test-source",
+        "kind": "synthetic",
+        "locator": "SYNTHETIC: exact fixture identifiers, revision and interface review; not a manufacturer claim.",
+        "publisher": "Synthetic Fixture",
+        "url": "https://manufacturer.test.invalid/evidence"
+      }
+    ],
+    "status": "evidenced_compatible",
+    "testOnly": true
+  },
+  "tests": "98 node:test cases"
+}
