@@ -37,7 +37,7 @@ export function assessment(state){
    // The shared FitmentResponse decides the status; texts cannot grant compatibility.
    const reasons=(sameAssembly&&state.variantKnown?[...fixture.reasons]:[]).concat(v.engine.reasons.map(x=>'Fitment v1 · '+x));
    const missing=[...(sameAssembly?fixture.missing:[]),...v.engine.nextChecks];
-   if(!state.variantKnown)missing.unshift('Ausführung vom Typenschild auswählen oder als offen markieren.');
+   if(!state.variantKnown)missing.unshift('Ausführung auswählen oder als unbekannt weitergehen; Kennung möglichst vom Typenschild ablesen.');
    return {synthetic:true,status,headline:status==='supported'?'Belegt passend · nur synthetischer Test':status==='incompatible'?'Belegt nicht passend · nur synthetischer Test':'Passung unklar',reasons,missing,evidence:v.engine.sources.map(x=>({id:x.id,label:'Synthetische Testquelle · keine echte OEM-Freigabe',kind:'synthetic',url:null})),purchaseAllowed:false,partCode:sameAssembly?fixture.part:null,completeKit:false};
   }catch {
    return {synthetic:true,status:'unclear',headline:'Passung unklar',reasons:['Der gemeinsame Fitment-Vertrag hat diese Demoantwort nicht freigegeben.'],missing:['Testdaten und exakte Ausführung erneut prüfen.'],evidence:[],purchaseAllowed:false,partCode:null,completeKit:false};
