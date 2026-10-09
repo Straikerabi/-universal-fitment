@@ -1,0 +1,50 @@
+name: Consumer repair evidence passport QA (private, no deployment)
+
+on:
+  push:
+    branches:
+      - integration/consumer-proof-passport-owner
+  pull_request:
+    branches:
+      - integration/private-unified-preview-wave4
+    paths:
+      - 'integrations/consumer-repair-mission-poc/**'
+      - '.github/workflows/consumer-proof-passport-qa.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  proof-passport:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify old and new Consumer tests and shared core
+        run: |
+          set -euo pipefail
+          npm test --prefix integrations/consumer-repair-mission-poc
+          node --check integrations/consumer-repair-mission-poc/app.mjs
+          node --check integrations/consumer-repair-mission-poc/mission-state.mjs
+          npm run offline:check --prefix integrations/consumer-repair-mission-poc
+      - name: Install isolated pinned Chromium test runner
+        run: |
+          set -euo pipefail
+          npm install --prefix "${RUNNER_TEMP}/uf-passport-pw" --no-save playwright@1.62.1
+          node "${RUNNER_TEMP}/uf-passport-pw/node_modules/playwright/cli.js" install chromium
+      - name: Test actual local download on 320 / 375 / 390 / 430 px
+        env:
+          UF_PLAYWRIGHT_MODULE: ${{ runner.temp }}/uf-passport-pw/node_modules/playwright/index.mjs
+        run: |
+          set -euo pipefail
+          node integrations/consumer-repair-mission-poc/tests/passport-browser.mjs
+      - name: Assert reviewed private-only scope
+        run: |
+          set -euo pipefail
+          git diff --name-only integration/private-unified-preview-wave4...HEAD || true
+          test ! -e site
