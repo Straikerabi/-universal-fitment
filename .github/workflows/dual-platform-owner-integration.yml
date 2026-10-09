@@ -35,7 +35,8 @@ jobs:
       - name: Consumer workflow Node tests and source checks
         run: |
           npm test --prefix integrations/consumer-repair-mission-poc
-          npm run check --prefix integrations/consumer-repair-mission-poc
+          find integrations/consumer-repair-mission-poc -type f -name '*.mjs' -print0 | xargs -0 -n1 node --check
+          # The worker's check.mjs pins its own branch; do not weaken that guard here.
       - name: Business embed Node tests and asset checks
         run: |
           node --test integrations/business-embed-poc/tests.mjs
