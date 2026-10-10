@@ -33,7 +33,9 @@ try{
      assert.match(await page.locator('#deviceProfile').innerText(),/nicht unabhängig verifiziert/);assert.match(await page.locator('#deviceProfile').innerText(),/nicht im integrierten Snapshot dokumentiert/);
      assert.ok((await page.locator('#deviceProfile').innerText()).includes(d.reference));await page.locator('.discovery-candidates > summary').click();row.profileLayout=await reflow(page);
      assert.equal(await page.locator('img,svg image').count(),0);
-     row.screenshot=id+'-profile.png';await page.screenshot({path:path.join(dir,row.screenshot),fullPage:true,animations:'disabled'});
+     row.screenshot=id+'-profile.png';const shot=await page.screenshot({path:path.join(dir,row.screenshot),fullPage:true,animations:'disabled'});
+     // Two own-UI previews for direct visual review, in addition to the ZIP.
+     if(engine==='chromium'&&width===375&&font===100)console.log('UI-SCREENSHOT-PROOF '+JSON.stringify({filename:row.screenshot,base64:shot.toString('base64')}));
      // Search is local UI state, not an automatic Mission transition.
      await page.locator('#deviceQuery').fill('QA-SYNTHETIC-UNKNOWN');assert.equal(await page.locator('[data-device]').count(),0);
      assert.ok((await page.locator('#deviceProfile').innerText()).includes(d.reference));

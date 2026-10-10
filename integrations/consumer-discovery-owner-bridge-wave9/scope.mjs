@@ -12,7 +12,11 @@ export const workflow='.github/workflows/consumer-discovery-owner-bridge-wave9.y
 const git=(...a)=>execFileSync('git',a,{cwd:root,encoding:'utf8',maxBuffer:16*1024*1024}).trim();
 const sha=bytes=>createHash('sha256').update(bytes).digest('hex');
 export function scopeProof(){
- const paths=[...new Set([...git('diff','--name-only',base).split('\n'),...git('ls-files','--others','--exclude-standard').split('\n')].filter(Boolean))];
+ // The unchanged Owner runner writes untracked evidence here. This exception
+ // applies ONLY to generated untracked artifacts, never tracked source changes.
+ const runtimeArtifact=p=>/^integrations\/private-owner-wave5\/artifacts\/owner-integration-browser\/[a-z0-9.-]+\.(png|json|txt)$/.test(p);
+ const untracked=git('ls-files','--others','--exclude-standard').split('\n').filter(p=>!runtimeArtifact(p));
+ const paths=[...new Set([...git('diff','--name-only',base).split('\n'),...untracked].filter(Boolean))];
  assert.ok(paths.every(p=>consumerPaths.includes(p)||p.startsWith(own)||p===workflow),'Outside exclusive #95 scope: '+paths.join(','));
  const delta=[],protectedFiles=[];
  for(const line of git('ls-tree','-r',base).split('\n')){
@@ -22,7 +26,9 @@ export function scopeProof(){
   else {assert.equal(blob,expected,'Unapproved baseline bytes changed: '+p);protectedFiles.push({path:p,gitBlob:blob,sha256:sha(bytes)});}
  }
  for(const p of consumerPaths.filter(p=>!git('ls-tree','-r','--name-only',base).split('\n').includes(p))){if(fs.existsSync(path.join(root,p)))delta.push({path:p,beforeGitBlob:null,beforeSha256:null,afterSha256:sha(fs.readFileSync(path.join(root,p)))});}
- return {schema:'uf.owner-discovery-delta/1',issue:95,baseCommit:base,branch:'work/wave9-consumer-discovery-owner-bridge',changedConsumerFiles:delta,protectedFiles:protectedFiles.length,protectedDigest:sha(JSON.stringify(protectedFiles)),launchApproved:false,legalSourceLockUpdated:false,manualOwnerReviewRequired:true};
+ const testCodeFiles=fs.readdirSync(path.join(root,own)).filter(f=>f.endsWith('.mjs')).sort().map(f=>({path:own+f,sha256:sha(fs.readFileSync(path.join(root,own,f)))}));
+ if(fs.existsSync(path.join(root,workflow)))testCodeFiles.push({path:workflow,sha256:sha(fs.readFileSync(path.join(root,workflow)))});
+ return {schema:'uf.owner-discovery-delta/1',issue:95,baseCommit:base,branch:'work/wave9-consumer-discovery-owner-bridge',changedConsumerFiles:delta,protectedFiles:protectedFiles.length,protectedDigest:sha(JSON.stringify(protectedFiles)),testCodeDigest:sha(JSON.stringify(testCodeFiles)),launchApproved:false,legalSourceLockUpdated:false,manualOwnerReviewRequired:true};
 }
 if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)){
  const proof=scopeProof();const file=path.join(root,own,'source-delta.json');
