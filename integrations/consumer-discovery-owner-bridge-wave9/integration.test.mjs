@@ -16,6 +16,7 @@ test('actual 11/5 snapshot drives filters, counts, exact ranking and current Mis
   assert.ok(result.ids.includes(d.id));assert.match(result.markup,/Exakte Katalogkennung/);
   const state=transition(freshMission(),{type:'device',value:d.id});
   assert.equal(currentDevice(state),d);assert.equal(deviceProfile(snapshot,d.id).reference,d.reference);
+  for(const i of d.identifiers)assert.ok(consumerProfile(snapshot,d.id).includes(i.value));
   assert.equal(assessment(state).status,'unclear');assert.equal(assessment(state).purchaseAllowed,false);
  }
 });

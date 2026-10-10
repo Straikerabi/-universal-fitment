@@ -376,6 +376,13 @@ small {
 .discovery-facts > div {min-width:0}
 .discovery-facts dt {font-size:.75rem;color:var(--muted)}
 .discovery-facts dd {margin:4px 0 0;font-size:.85rem;font-weight:650}
+.discovery-profile a {
+  display:inline-flex;
+  align-items:center;
+  min-height:44px;
+  max-width:100%;
+  overflow-wrap:anywhere
+}
 .discovery-candidates {border-top:1px solid var(--line);margin-top:12px}
 .discovery-candidates ul {padding-left:20px}
 .device-text .exact-hint {color:var(--green)}
