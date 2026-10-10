@@ -16,6 +16,9 @@ permissions:
 
 jobs:
   mobile-browser-gate:
+    # Work-B proof is deliberately sealed to its original #81 branch.
+    # Other private Consumer PRs are fully exercised by owner-consumer-browser-integration.yml.
+    if: github.event.pull_request.head.ref == 'work/wave6-consumer-webkit-qa'
     runs-on: ubuntu-24.04
     timeout-minutes: 25
     steps:
