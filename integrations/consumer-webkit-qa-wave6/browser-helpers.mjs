@@ -42,7 +42,13 @@ export async function reflow(page){
    if(!visible(e))return false;const r=e.getBoundingClientRect();
    return r.left< -1||r.right>innerWidth+1||(!['INPUT','SELECT'].includes(e.tagName)&&e.scrollWidth>e.clientWidth+2);
   }).map(e=>({tag:e.tagName,id:e.id,text:e.textContent.trim().slice(0,100),client:e.clientWidth,scroll:e.scrollWidth}));
-  return {viewport:innerWidth,document:document.documentElement.scrollWidth,clipped};
+  const overflow=[...document.querySelectorAll('body *')].filter(visible).map(e=>{
+   const r=e.getBoundingClientRect();return {tag:e.tagName,id:e.id,class:e.className?.baseVal??e.className,
+    text:e.textContent.trim().slice(0,80),left:r.left,right:r.right,width:r.width,client:e.clientWidth,scroll:e.scrollWidth,
+    display:getComputedStyle(e).display,minWidth:getComputedStyle(e).minWidth};
+  }).filter(e=>e.left< -1||e.right>innerWidth+1).slice(0,30);
+  return {stage:document.querySelector('#progress [aria-current=step]')?.dataset.step,
+   viewport:innerWidth,document:document.documentElement.scrollWidth,clipped,overflow};
  });
  assert.ok(r.document<=r.viewport+1,'Document overflow '+JSON.stringify(r));
  assert.deepEqual(r.clipped,[],'Clipped responsive content '+JSON.stringify(r));

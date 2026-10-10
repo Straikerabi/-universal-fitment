@@ -77,7 +77,25 @@ try{
      assert.ok(/^[a-z0-9.-]+$/.test(name));const file=engine+'-'+definition.id+'-'+name;
      await writeFile(path.join(output,file),value+'\n');row.artifacts.push(file);
     };
-    row.measurements=await definition.run({context,page,base,shot,textArtifact});
+    row.phases=[];
+    const phase=async(name,run)=>{
+     const item={name,status:'running'};row.phases.push(item);
+     try{const result=await run();item.status='passed';return result;}
+     catch(error){
+      item.status='failed';item.reason=scrub(error.message);
+      item.state=await page.evaluate(async()=>({
+       url:location.pathname,secure:isSecureContext,online:navigator.onLine,
+       controller:navigator.serviceWorker?.controller?.scriptURL??null,
+       registrationLog:window.__ufQaOffline??null,
+       status:document.querySelector('#connectionStatus')?.textContent,
+       feedback:document.querySelector('#feedback')?.textContent,
+       caches:await caches.keys(),registrations:await navigator.serviceWorker.getRegistrations().then(rs=>rs.map(r=>({scope:r.scope,active:r.active?.state,installing:r.installing?.state,waiting:r.waiting?.state})))
+      })).catch(e=>({diagnosticError:String(e)}));
+      await textArtifact('offline-phases.json',JSON.stringify(row.phases,null,2));
+      throw Error('Offline phase '+name+': '+item.reason+' STATE '+JSON.stringify(item.state));
+     }
+    };
+    row.measurements=await definition.run({context,page,base,shot,textArtifact,phase});
     assert.deepEqual(row.externalRequests,[],'External network attempted');assert.deepEqual(row.runtimeErrors,[],'Browser runtime errors');
     row.status='passed';console.log('PASS '+engine+' '+definition.id);
    }catch(error){

@@ -151,22 +151,35 @@ export function browserCases(){
   return {expectedAbort:true,reason:failure.slice(0,400),warmCache:false};
  },{serviceWorkers:'allow'});
  add('warm-offline',async t=>{
-  await fresh(t.page,t.base);await t.page.waitForFunction(()=>!!navigator.serviceWorker.controller);
-  await t.page.waitForFunction(()=>document.querySelector('#connectionStatus').textContent.includes('gespeichert'));
+  await t.page.addInitScript(()=>{
+   window.__ufQaOffline={registrations:[],violations:[]};
+   document.addEventListener('securitypolicyviolation',e=>window.__ufQaOffline.violations.push({directive:e.violatedDirective,blocked:e.blockedURI}));
+   if('serviceWorker' in navigator){
+    const original=navigator.serviceWorker.register.bind(navigator.serviceWorker);
+    navigator.serviceWorker.register=async(...args)=>{
+     const record={url:args[0],options:args[1]};window.__ufQaOffline.registrations.push(record);
+     try{const registration=await original(...args);record.success=true;return registration;}
+     catch(error){record.error=String(error);throw error;}
+    };
+   }
+  });
+  await fresh(t.page,t.base);
+  await t.phase('controller',()=>t.page.waitForFunction(()=>!!navigator.serviceWorker.controller));
+  await t.phase('cache-ready',()=>t.page.waitForFunction(()=>document.querySelector('#connectionStatus').textContent.includes('gespeichert')));
   const before=await t.page.evaluate(async cacheName=>(await (await caches.open(cacheName)).keys()).map(r=>new URL(r.url).pathname),cacheName);
   assert.deepEqual(before.sort(),[...assetPaths].sort());
   await real(t.page,t.base);await review(t.page);await t.page.locator('[data-part]').first().check();await t.page.locator('main [data-step="5"]').click();
-  const signals=await offline(t.context,t.page);await t.page.reload({waitUntil:'domcontentloaded'});await t.page.locator('[data-done]').first().waitFor();
+  const signals=await offline(t.context,t.page);await t.phase('offline-reload',async()=>{await t.page.reload({waitUntil:'domcontentloaded'});await t.page.locator('[data-done]').first().waitFor();});
   assert.match(await t.page.locator('#connectionStatus').innerText(),/Offline.*gespeicherte Vorschau/);
   assert.match(await t.page.locator('.check-summary').innerText(),/Passung bleibt unbestätigt/);await reflow(t.page);await t.shot('cached-notes');
-  const p=await passport(t.page);assert.equal(p.record.payload.verdict.status,'unconfirmed');
+  const p=await t.phase('offline-json-sha256',()=>passport(t.page));assert.equal(p.record.payload.verdict.status,'unconfirmed');
   await t.page.locator('.checklist-source summary').click();await t.page.locator('.checklist-source a').click();
   assert.match(await t.page.locator('#feedback').innerText(),/Offline.*nicht neu geöffnet/);
   // Inspect a stale mission under the actual warm worker, not just an uncached document.
   await t.page.evaluate(()=>{const key='uf-repair-mission-poc-v1-real',s=JSON.parse(localStorage.getItem(key));s.fingerprint='QA-SYNTHETIC-STALE';localStorage.setItem(key,JSON.stringify(s));});
   await t.page.reload();await t.page.locator('#deviceQuery').waitFor();assert.equal(await t.page.locator('[data-device][aria-pressed=true]').count(),0);
   await t.page.locator('[data-device="'+realId+'"]').click();await t.page.locator('main [data-step="2"]').click();await review(t.page);await t.page.locator('main [data-step="5"]').click();
-  await t.page.locator('#eraseOffline').click();await t.page.waitForFunction(()=>document.querySelector('#feedback').textContent.includes('Offline-Vorschau entfernt'));
+  await t.phase('cache-delete',async()=>{await t.page.locator('#eraseOffline').click();await t.page.waitForFunction(()=>document.querySelector('#feedback').textContent.includes('Offline-Vorschau entfernt'));});
   const remaining=await t.page.evaluate(()=>caches.keys());assert.equal(remaining.filter(k=>k.startsWith('uf-consumer-mobile-wave4-')).length,0);
   assert.match(await t.page.locator('.check-summary').innerText(),/Passung bleibt unbestätigt/);
   return {cacheName,cachePaths:before.length,staleWarmMissionRefused:true,offlinePassportChecksumVerified:true,notesSurviveCacheDeletion:true,...signals};
