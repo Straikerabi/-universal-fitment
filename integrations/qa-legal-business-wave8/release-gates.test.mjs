@@ -1,0 +1,11 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {evaluate,cli,REQUIRED} from './release-gates.mjs';
+const sha='a'.repeat(40);
+const valid={status:'pass',commit:sha,evidence:'reviewed original bytes',reviewer:'independent reviewer',reviewDate:'2026-10-10',command:'node --test',runUrl:'https://github.com/example/run/1',passed:3,total:3};
+test('missing evidence blocks all gates',()=>{const r=evaluate();assert.equal(r.launchApproved,false);assert.equal(r.gates.length,12);assert.equal(r.counts.P0.passed,0);});
+test('invalid evidence is never pass',()=>{for(const change of [{passed:2},{total:0},{runUrl:'http://bad'},{reviewer:''},{commit:'bad'},{evidence:''},{status:'approved'}]){const r=evaluate({operator:{...valid,...change}});assert.equal(r.gates[0].status,'blocked');}});
+test('explicit failure remains failure',()=>assert.equal(evaluate({operator:{status:'fail'}}).gates[0].status,'fail'));
+test('complete evidence is recorded but cannot approve launch',()=>{const data=Object.fromEntries(REQUIRED.map(([,id])=>[id,{...valid}]));const r=evaluate(data);assert.equal(r.counts.P0.passed,7);assert.equal(r.counts.P1.passed,3);assert.equal(r.counts.P2.passed,2);assert.equal(r.launchApproved,false);assert.equal(r.releaseStatus,'BLOCKED');});
+test('malformed input fails closed',()=>{for(const x of [null,[],42,'pass'])assert.equal(evaluate(x).launchApproved,false);});
+test('CLI exits 2 and refuses override',()=>{let output='';assert.equal(cli([],x=>output=x),2);assert.equal(JSON.parse(output).launchApproved,false);assert.throws(()=>cli(['--approve']));});
