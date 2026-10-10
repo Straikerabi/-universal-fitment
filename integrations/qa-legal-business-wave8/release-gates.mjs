@@ -13,7 +13,7 @@ export function evaluate(evidence) {
     const hasProof = isRecord(e) && typeof e.commit === 'string' && /^[a-f0-9]{40}$/.test(e.commit)
       && typeof e.evidence === 'string' && e.evidence.trim().length > 0
       && typeof e.reviewer === 'string' && e.reviewer.trim().length > 0
-      && typeof e.reviewDate === 'string' && /^\\d{4}-\\d{2}-\\d{2}$/.test(e.reviewDate)
+      && typeof e.reviewDate === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(e.reviewDate)
       && typeof e.command === 'string' && e.command.trim().length > 0
       && typeof e.runUrl === 'string' && /^https:\/\//.test(e.runUrl)
       && Number.isSafeInteger(e.passed) && Number.isSafeInteger(e.total)
