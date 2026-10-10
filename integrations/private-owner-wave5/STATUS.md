@@ -38,6 +38,39 @@ Diese Prozentzahlen sind **Planungs-KPIs**, keine automatisch gemessene Code-Abd
 - Kombinierte CI inkl. WebKit/Chromium 66/66, Consumer/Engine/Source/Preflight durchlaufen lassen; externes echtes iPhone/Safari/VoiceOver und Menschenpiloten getrennt erheben.
 - Operator-/Impressum-/DSGVO-/Assetrechte-/Hostingfreigaben inklusive Gewerbe-Entscheidung beim tatsächlichen Geschäftsbeginn statt Prozent-Automatismus.
 
+## Neu: Kataloggröße und Inhaltstiefe separat tracken
+
+**Automatisch gemessener Owner-Consumer (nicht main):** `node integrations/private-owner-wave5/catalog-scorecard.mjs` und sechs Tests in `catalog-scorecard.test.mjs`. [GitHub-CI 38066148245](https://github.com/Straikerabi/-universal-fitment/actions/runs/38066148245) GREEN. Die Werte beziehen sich auf den tatsächlich ausgecheckten Consumer-Snapshot; Quelle-/Datennutzungsrechte sind keine automatisch bestätigten Tatsachen.
+
+| Kennzahl | Gemeinsamer Owner-Consumer | Work A PR #84, noch nicht integriert |
+| --- | ---: | ---: |
+| Modell-/Variantenkennungen | **11** | **29** |
+| Ausbauziel 500 (10 Marken × 50) | **2,2 %** | **5,8 %** |
+| Marken | **5** | **8** |
+| Ersatzteilidentitäten | **11** | **22** |
+| Kandidaten-Zuordnungen Gerät–Teil | **11** | **25** |
+| Geräte mit mindestens einem Teilekandidaten | **6/11 = 54,5 %** | **16/29 = 55,2 %** |
+| Reale physische Einbaupassungen durch v1-Fitment belegt | **0** | **0** |
+
+**Informationstiefe-Index: 28,2 % (neue interne, nachprüfbare gewichtete Felderabdeckung).** Dies ist keine Richtigkeits-, Rechte-, Lizenz- oder Launch-Freigabe. Das Score-Gewicht bleibt fest, bis Owner bewusst eine neue Fassung freigibt:
+
+| Produktinhalt | Gewicht | Aktueller dokumentierter Stand |
+| --- | ---: | ---: |
+| Vollständige Modellkennung / Markt / Quell-URL und -Datum | 10 | 11/11 |
+| Originalteilidentität / Teilegruppe / Quell-URL und -Datum | 10 | 11/11 |
+| Geräte mit mindestens einem separat dokumentierten Teilekandidaten | 15 | 6/11 |
+| Modellbezogene technische Daten und Quellenbeleg | 10 | 0/11 |
+| Gerätespezifische Reparaturschritte mit Quellenbeleg | 15 | 0/11 |
+| Erforderliche Werkzeuge mit Quellenbeleg | 10 | 0/11 |
+| Konkrete Sicherheitshinweise mit Quellenbeleg | 10 | 0/11 |
+| Medien/Bilder mit nachgewiesenen B2C-Nutzungsrechten | 10 | 0/11 |
+| Real belegte und unabhängig geprüfte Einbaupassung | 10 | 0/11 |
+| **Gesamt-Score** | **100** | **28,2 / 100** |
+
+Zusätzliche ausdrücklich geführte Informationslücken im Consumer-Snapshot: **11/11 allgemeine Variantenhinweise**, **0/11 dedizierte Handbuchlinks**, **0/11 strukturierte Maßdaten**. Noch keine automatisch als live geprüften Preise, Versandkosten, Lieferzeiten, Reparaturwerkzeuge, rechtsfreigegebenen Produktbilder oder vollständigen Kompatibilitätsprüfungen. Drehmomentangaben nur, wenn für konkrete Teile erforderlich. Quellen-URL und Erfassungsdatum bedeuten **nicht**, dass Herkunft, Lizenz, tatsächliche Kompatibilität oder Aktualität dieser Website für kommerzielle Nutzung freigegeben sind.
+
+**Künftige Management-Zeile:** `Technik 59 % | Marktreife 41 % | Katalog 11/500 (2,2 %) | Inhaltstiefe 28,2 % | reale Fits 0 | Gewerbe/Launch NO-GO`. Bei PR #84 weiterhin die **nicht integrierten** 29/500 gesondert ausweisen. Modelle allein lassen die Informationstiefe nicht automatisch steigen. Marken- und 500er-Ziel sind Ausbauplanung, keine gesetzliche Mindestgröße einer Beta.
+
 ## Progress-Governance
 
 - Score nur nach **gemessenem, tatsächlich integriertem** Fortschritt ändern, nicht wegen Ticketerstellung oder isoliertem Work-Commit.
