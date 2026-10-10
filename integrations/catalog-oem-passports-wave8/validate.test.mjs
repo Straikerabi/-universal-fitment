@@ -83,3 +83,14 @@ test('part listing must already be an exact known candidate, never a sibling or 
   d=>{d.records.find(x=>x.brand==='Dyson').partListings.push(structuredClone(d.records.find(x=>x.brand==='Dyson').partListings[0]));}
  ]){const d=sample();alter(d);assert.throws(()=>validateDocuments(d));}
 });
+
+test('unknown metadata keys and asserted serial coverage are rejected, not silently ignored',()=>{
+ for(const alter of [
+  d=>{d.records[0].verifiedSerialRange='all';},
+  d=>{d.records[0].technicalFacts[0].status='independently_verified';},
+  d=>{d.records[0].source.rights.usageLicence='granted';},
+  d=>{d.records[0].partListings[0].installationApproved=true;},
+  d=>{d.records.find(x=>x.brand==='Hoover').maintenanceHints[0].tools=['Torx T8'];},
+  d=>{d.records.find(x=>x.brand==='Dyson').supportLink.requiresNoTraining=true;}
+ ]){const d=sample();alter(d);assert.throws(()=>validateDocuments(d),/unreviewed field/);}
+});
