@@ -1,0 +1,53 @@
+name: Real fitment evidence review gate (no deployment)
+
+on:
+  push:
+    branches:
+      - integration/real-fitment-review-gate-owner
+  pull_request:
+    branches:
+      - integration/consumer-proof-passport-owner
+    paths:
+      - 'integrations/real-fitment-review-owner/**'
+      - '.github/workflows/real-fitment-review-gate.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  verified-review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout isolated owner branch
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify existing Wave4 evidence source locks and reports
+        run: |
+          set -euo pipefail
+          python3 integrations/verified-repair-cases-wave4/validate.py
+          python3 integrations/verified-repair-cases-wave4/report.py --check
+          python3 -m unittest discover -s integrations/verified-repair-cases-wave4 -p 'test_*.py' -v
+      - name: Gate all actual manufacturer part listings through canonical v1 core
+        run: |
+          set -euo pipefail
+          node --test integrations/real-fitment-review-owner/review.test.mjs
+          node integrations/real-fitment-review-owner/review.mjs
+          node integrations/real-fitment-review-owner/review.mjs --json > "${RUNNER_TEMP}/uf-evidence-review.json"
+          node --input-type=module -e "import fs from 'node:fs';const x=JSON.parse(fs.readFileSync(process.argv[1]));if(x.counts.manufacturerListedPartAssociations!==18||x.counts.positivelyInstallationApproved!==0)process.exit(1);console.log(x.counts)" "${RUNNER_TEMP}/uf-evidence-review.json"
+      - name: No regressions to single shared fitment core or Consumer
+        run: |
+          set -euo pipefail
+          node --test integrations/fitment-engine-v1-poc/contract.test.mjs integrations/dual-platform-owner-review/bridge.test.mjs
+          npm test --prefix integrations/consumer-repair-mission-poc
+          npm run offline:check --prefix integrations/consumer-repair-mission-poc
+      - name: Verify no published app or checkout files changed
+        run: |
+          set -euo pipefail
+          test ! -e site
+          git status --porcelain
