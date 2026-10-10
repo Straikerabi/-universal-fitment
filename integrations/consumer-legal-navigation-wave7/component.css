@@ -1,0 +1,11 @@
+/* Optional injection styles, scoped to module-owned roots, no Consumer CSS edits. */
+[data-uf-legal="nav"]{display:flex;flex-wrap:wrap;gap:.5rem}
+[data-uf-legal="nav"] a{display:block;flex:1 1 10rem;min-height:44px;padding:.65rem;border:1px solid currentColor;border-radius:.5rem;color:inherit;text-decoration:underline;overflow-wrap:anywhere}
+[data-uf-legal="nav"] a[aria-current="page"]{font-weight:800;text-decoration-thickness:3px}
+[data-uf-legal="panels"]{min-width:0;overflow-wrap:anywhere}
+[data-uf-legal="panels"] [hidden]{display:none!important}
+[data-uf-legal="panels"] button,[data-uf-legal="panels"] input{font:inherit}
+[data-uf-legal="panels"] button{min-height:44px;max-width:100%;white-space:normal;overflow-wrap:anywhere}
+[data-uf-legal="panels"] .confirm{display:grid;grid-template-columns:24px minmax(0,1fr);gap:.65rem}
+[data-uf-legal="panels"] input[type="checkbox"]{width:24px;height:24px}
+[data-uf-legal="nav"] a:focus-visible,[data-uf-legal="panels"] :focus-visible{outline:3px solid currentColor;outline-offset:4px}
