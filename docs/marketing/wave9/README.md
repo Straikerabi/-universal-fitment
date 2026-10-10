@@ -37,7 +37,10 @@ Aus Repo-Root mit Node.js:
 node --test docs/marketing/wave9/validate.test.mjs
 node --input-type=module -e "import {readFileSync} from 'node:fs';import {validateManifest} from './docs/marketing/wave9/validate.mjs';const m=JSON.parse(readFileSync('./docs/marketing/wave9/campaign-manifest.json','utf8'));const errors=validateManifest(m);console.log({assets:m.assets.length,errors});if(errors.length)process.exitCode=1;"
 ```
-\nnode docs/marketing/wave9/check-references.mjs\n\n
+```bash
+node docs/marketing/wave9/check-references.mjs
+```
+
 
 Keine externen Abhängigkeiten, keine Anwendungsausgaben und keine Marketing-Schreibaktionen. **GitHub CI: [PR-Run 38081769320](https://github.com/Straikerabi/-universal-fitment/actions/runs/38081769320) und [Push-Run 38081765119](https://github.com/Straikerabi/-universal-fitment/actions/runs/38081765119) auf SHA `1b4ea7f5…` grün (28/28 native Node-Tests, 14/14 Referenzen).** Tests verifizieren nur Claims-/Sperrregeln. Genauere Ausführung und Einschränkungen in [TEST-REPORT.md](TEST-REPORT.md).
 
