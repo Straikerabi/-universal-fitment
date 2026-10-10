@@ -338,7 +338,7 @@ small {
 .search-row .field-label {
   overflow-wrap:anywhere
 }
-.discovery-search {
+.search-row.discovery-search {
   grid-template-columns:repeat(auto-fit,minmax(min(100%,12rem),1fr))
 }
 .discovery-filters {

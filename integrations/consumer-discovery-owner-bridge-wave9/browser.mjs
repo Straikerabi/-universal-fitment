@@ -24,6 +24,7 @@ try{
     const page=await context.newPage();page.setDefaultTimeout(12000);page.on('pageerror',e=>errors.push(e.message));
     try{
      await page.goto(base);await page.locator('#deviceQuery').waitFor();await page.evaluate(f=>document.documentElement.style.fontSize=f+'%',font);
+     if(font===200)assert.ok(await page.locator('#brandFilter').evaluate(e=>e.getBoundingClientRect().width>innerWidth*.7),'200% brand filter must reflow, not use the old narrow fixed column');
      assert.match(await page.locator('.catalog-note').first().innerText(),/11 Pilotgeräte.*5 Marken/);
      await page.locator('#deviceQuery').fill('VS20C95D4TK/WA');assert.equal(await page.locator('[data-device]').count(),0);assert.match(await page.locator('#deviceResults').innerText(),/nicht erfasst/);
      await page.locator('#resetDeviceFilters').click();assert.equal(await page.locator('#deviceQuery').evaluate(e=>e===document.activeElement),true);

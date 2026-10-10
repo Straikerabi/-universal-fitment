@@ -1,5 +1,5 @@
 // Generated constants by prepare-offline.mjs; worker policy below is hashed independently.
-const cacheName="uf-consumer-mobile-wave4-b9c88f00a85b6d8cbbc7f069";
+const cacheName="uf-consumer-mobile-wave4-bffc6487813081ad8d2f6e87";
 const assetPaths=["/","/index.html","/styles.css","/app.mjs","/mission-state.mjs","/parts-view.mjs","/catalog-snapshot.mjs","/mobile-ui.mjs","/discovery-ui.mjs","/consumer-discovery-wave8/discovery.mjs","/mock-fitment-adapter.mjs","/manifest.webmanifest","/app-icon.svg","/dual-platform-owner-review/bridge.mjs","/dual-platform-owner-review/ui-fixtures.mjs","/fitment-engine-v1-poc/contract.mjs","/fitment-engine-v1-poc/fixtures.mjs","/business-embed-poc/adapter.mjs","/offline-config.mjs"];
 // Offline worker policy (hashed for cache version)
 const allowed=new Set(assetPaths);
