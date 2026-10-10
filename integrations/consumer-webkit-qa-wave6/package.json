@@ -1,0 +1,13 @@
+{
+  "name": "universal-fitment-consumer-webkit-qa-wave6",
+  "private": true,
+  "type": "module",
+  "engines": {"node": ">=22"},
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "check": "node check.mjs",
+    "test:browser": "node run.mjs",
+    "gate": "node gate.mjs artifacts/latest/results.json"
+  },
+  "devDependencies": {"playwright": "1.64.0"}
+}

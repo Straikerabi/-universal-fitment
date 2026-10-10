@@ -1,0 +1,36 @@
+{
+  "issue": 75,
+  "bug": "W6-B1",
+  "checkedAt": "2026-10-10T07:05:42.344Z",
+  "engine": "chromium",
+  "version": "153.0.8010.0",
+  "viewport": {
+    "width": 375,
+    "height": 812
+  },
+  "cssRootFontPercent": 200,
+  "before": {
+    "labelClientWidth": 213,
+    "labelScrollWidth": 223,
+    "text": "Modell oder Gerätekennung",
+    "fontSize": "25.6px",
+    "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "fontWeight": "650",
+    "overflowWrap": "normal"
+  },
+  "proposalOnly": {
+    "labelClientWidth": 213,
+    "labelScrollWidth": 213,
+    "text": "Modell oder Gerätekennung",
+    "fontSize": "25.6px",
+    "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "fontWeight": "650",
+    "overflowWrap": "anywhere"
+  },
+  "temporaryBrowserStyleOnly": true,
+  "productFilesChanged": false,
+  "externalRequests": [],
+  "physicalIPhone": false,
+  "proposedRule": ".search-row .field-label { overflow-wrap: anywhere; }",
+  "protectedFiles": 3719
+}

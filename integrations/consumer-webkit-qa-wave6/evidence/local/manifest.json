@@ -1,0 +1,78 @@
+{
+  "schema": "uf.consumer-qa-artifact-manifest/1",
+  "checkedAt": "2026-10-10T07:08:40.906Z",
+  "baseCommit": "456c8b8936617f5275d8d1ccfc29601d559cac89",
+  "suiteDigest": "46d0cf09a0ae926fe6fc02a92b6e1a9d40e978e894b6b72b77c2bb061ac3eb96",
+  "files": [
+    {
+      "path": "chromium-dark-375-expanded.png",
+      "sha256": "73de1cc1a5de339d19fce884b55abdf6e33b679a024933f2b838f66677056694",
+      "bytes": 189478
+    },
+    {
+      "path": "chromium-demo-negative-synthetic-only.png",
+      "sha256": "d1b79f4205fc93b05db351d48d9dcd134850534db178de5a550bca5455957756",
+      "bytes": 143615
+    },
+    {
+      "path": "chromium-demo-positive-synthetic-only.png",
+      "sha256": "e34e8bb04c9dead90198ab9cc4bd5df466c7bad7ef423debd4c7dfb570f69752",
+      "bytes": 155337
+    },
+    {
+      "path": "chromium-identity-boundaries-regional-source.png",
+      "sha256": "756f11a2dc01b72978e953e7b8a0b5eb54dbb75bc16a76049ccae96c6e66d0cc",
+      "bytes": 233021
+    },
+    {
+      "path": "chromium-keyboard-and-semantics-aria-snapshot.txt",
+      "sha256": "614c230791e5d18d742e29375af021a506bce839910466f69410dbb90ac1aec0",
+      "bytes": 2335
+    },
+    {
+      "path": "chromium-real-passport-notes.png",
+      "sha256": "0814e2ec2cf10d375795db21bcf41654ad4c3ed5a847d3eb16a9c7e15e6bef4a",
+      "bytes": 174764
+    },
+    {
+      "path": "chromium-text-200-320-expanded.png",
+      "sha256": "a775817a6628b17cba0a8d7dbae02dfff90f049cef9bf3b723488d2be795332d",
+      "bytes": 436088
+    },
+    {
+      "path": "chromium-text-200-375-failure.png",
+      "sha256": "9cfddf35654e394fe2ca2aa5121c5e01d2c44da8d40e7a633d064026c6a56ab3",
+      "bytes": 210381
+    },
+    {
+      "path": "chromium-touch-targets-touch-targets.json",
+      "sha256": "dfab9a52254d7503c04167dc7a4da80c82637fad2bb810ad8cef00102fbd7f97",
+      "bytes": 366
+    },
+    {
+      "path": "chromium-viewport-375-portrait-stage-3.png",
+      "sha256": "23e5ba338d1910a1d15fbbcd2597a19df74e54e4069f38e920e79f80c2c2205e",
+      "bytes": 187788
+    },
+    {
+      "path": "chromium-viewport-430-portrait-stage-5.png",
+      "sha256": "06a6ab49f007bda0eafb1b0d91b187bec140d0d068d22b615136c7099c43f59b",
+      "bytes": 169684
+    },
+    {
+      "path": "chromium-warm-offline-cached-notes.png",
+      "sha256": "0a32d3d71397c8aa19231573fe8d1dae4025dc5a9c9e4f4cfb0962d0c96b6609",
+      "bytes": 168861
+    },
+    {
+      "path": "label-proposal.json",
+      "sha256": "7d8d5be09e5fd8f7285bd3a3c26c12fdc850ff58b8664988c77af2f35f587ecb",
+      "bytes": 1009
+    },
+    {
+      "path": "results.json",
+      "sha256": "ca05e9b4e996d2135eaae658cf3473a9b5a4989f6a33aea380d79e73c66b9239",
+      "bytes": 93895
+    }
+  ]
+}

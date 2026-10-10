@@ -1,0 +1,1274 @@
+{
+  "schema": "uf.consumer-browser-gate/1",
+  "baseCommit": "456c8b8936617f5275d8d1ccfc29601d559cac89",
+  "branch": "work/wave6-consumer-webkit-qa",
+  "target": "integration/private-unified-preview-wave5-owner",
+  "testedCommit": "456c8b8936617f5275d8d1ccfc29601d559cac89",
+  "workingTreeHadUncommittedQaFiles": true,
+  "startedAt": "2026-10-10T07:06:57.039Z",
+  "playwrightVersion": "1.62.1",
+  "scopeProof": {
+    "unchanged": true,
+    "protectedFiles": 3719,
+    "baselineTree": "d671b807f18f0aac5700b1a6059d5f52bb4545dd",
+    "protectedTreeEntriesSha256": "6f98deb7acd44b41d6ec047dc0d9ce1643f18f9397e5fe069fd66c97af9d4b08",
+    "changedPaths": [],
+    "untrackedPaths": [
+      ".github/workflows/consumer-webkit-qa-wave6.yml",
+      "integrations/consumer-webkit-qa-wave6/.gitignore",
+      "integrations/consumer-webkit-qa-wave6/browser-helpers.mjs",
+      "integrations/consumer-webkit-qa-wave6/cases.mjs",
+      "integrations/consumer-webkit-qa-wave6/check.mjs",
+      "integrations/consumer-webkit-qa-wave6/gate.mjs",
+      "integrations/consumer-webkit-qa-wave6/package-lock.json",
+      "integrations/consumer-webkit-qa-wave6/package.json",
+      "integrations/consumer-webkit-qa-wave6/policy.mjs",
+      "integrations/consumer-webkit-qa-wave6/reproduce-label.mjs",
+      "integrations/consumer-webkit-qa-wave6/run.mjs",
+      "integrations/consumer-webkit-qa-wave6/runtime.mjs",
+      "integrations/consumer-webkit-qa-wave6/scope.mjs",
+      "integrations/consumer-webkit-qa-wave6/tests/gate.test.mjs",
+      "integrations/consumer-webkit-qa-wave6/tests/workflow.test.mjs"
+    ],
+    "afterUnchanged": true,
+    "afterProtectedTreeEntriesSha256": "6f98deb7acd44b41d6ec047dc0d9ce1643f18f9397e5fe069fd66c97af9d4b08"
+  },
+  "suiteProof": {
+    "files": [
+      {
+        "path": ".github/workflows/consumer-webkit-qa-wave6.yml",
+        "sha256": "0930b03c230453e8430243f90a05c16fe2626c4d35c90d1b528f2e04f1102164"
+      },
+      {
+        "path": "integrations/consumer-webkit-qa-wave6/browser-helpers.mjs",
+        "sha256": "7ddbc3ad1988bd017ef891dba870dc134656f2be02d3889e693d2b841439f504"
+      },
+      {
+        "path": "integrations/consumer-webkit-qa-wave6/cases.mjs",
+        "sha256": "49a92a43a2fae1c97fdac16d6b6017057a5adae930e63cc868462a6b2b90968a"
+      },
+      {
+        "path": "integrations/consumer-webkit-qa-wave6/check.mjs",
+        "sha256": "510481ecbaef7424f80e61c8c52f05c76f6db366cf688d797978b8137e13a99c"
+      },
+      {
+        "path": "integrations/consumer-webkit-qa-wave6/gate.mjs",
+        "sha256": "a8eeb07ec08e5139c3f67ef2ebab5957ef986024b9d9b1da08100a9f28e21000"
+      },
+      {
+        "path": "integrations/consumer-webkit-qa-wave6/package-lock.json",
+        "sha256": "2a283ed452605ac92f48ce7f5f9611e89427d2647e0a25fcb11ffc8645941f08"
+      },
+      {
+        "path": "integrations/consumer-webkit-qa-wave6/package.json",
+        "sha256": "7293a2c6c935e8b49a21e3ecae8183079e57fbd1d2b67da2658b53c23d23f748"
+      },
+      {
+        "path": "integrations/consumer-webkit-qa-wave6/policy.mjs",
+        "sha256": "f634bacd8bb264ab312103caf238f041e9f30aca5f7da3fd7bac74f93652aacd"
+      },
+      {
+        "path": "integrations/consumer-webkit-qa-wave6/reproduce-label.mjs",
+        "sha256": "75e745ead9bf73b998b2accdd7e1363edcff97aba3d144bb4a13ee393bb4315f"
+      },
+      {
+        "path": "integrations/consumer-webkit-qa-wave6/run.mjs",
+        "sha256": "b589b6528ab62b158199d3ac016b7f46cdfd9b1fb214a0cdf56c74b41daa8edf"
+      },
+      {
+        "path": "integrations/consumer-webkit-qa-wave6/runtime.mjs",
+        "sha256": "f92fb725915c79b792892103393d3a24f4d1d5390b346aa28fe9655f9e4328f3"
+      },
+      {
+        "path": "integrations/consumer-webkit-qa-wave6/scope.mjs",
+        "sha256": "9b034a996ca3771d1cd4e641119b36fb25499c56294eb38c6cab2f0f8b7c98f3"
+      },
+      {
+        "path": "integrations/consumer-webkit-qa-wave6/tests/gate.test.mjs",
+        "sha256": "f9736f31251a81fd9a88eabac4d87ceb284232ffe89fbf54a65ba064fd009563"
+      },
+      {
+        "path": "integrations/consumer-webkit-qa-wave6/tests/workflow.test.mjs",
+        "sha256": "1f20b58739f8faac8461c75b6f7daa0bc5710ad320dd14bd9a540ba7b49a41c8"
+      }
+    ],
+    "digest": "46d0cf09a0ae926fe6fc02a92b6e1a9d40e978e894b6b72b77c2bb061ac3eb96",
+    "afterDigest": "46d0cf09a0ae926fe6fc02a92b6e1a9d40e978e894b6b72b77c2bb061ac3eb96"
+  },
+  "engines": {
+    "chromium": {
+      "started": true,
+      "version": "153.0.8010.0",
+      "binary": "explicit-local-override",
+      "simulation": true,
+      "physicalIPhone": false,
+      "macOSSafari": false
+    },
+    "webkit": {
+      "started": false,
+      "version": null,
+      "reason": "browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libgstreamer-1.0.so.0                            ║\n║     libgtk-4.so.1                                    ║\n║     libgraphene-1.0.so.0                             ║\n║     libevent-2.1.so.7                                ║\n║     libgstallocators-1.0.so.0                        ║\n║     libgstapp-1.0.so.0                               ║\n║     libgstbase-1.0.so.0                              ║\n║     libgstpbutils-1.0.so.0                           ║\n║     libgstaudio-1.0.so.0                             ║\n║     libgsttag-1.0.so.0                               ║\n║     libgstvideo-1.0.so.0                             ║\n║     libgstgl-1.0.so.0                                ║\n║     libgstcodecparsers-1.0.so.0                      ║\n║     libgstfft-1.0.so.0                               ║\n║     libavif.so.16                                    ║\n║     libharfbuzz-icu.so.0                             ║\n║     libwayland-server.so.0                           ║\n║     libmanette-0.2.so.0                              ║\n║     libhyphen.so.0                                   ║\n║     libsecret-1.so.0                                 ║\n║     libGLESv2.so.2                                   ║\n╚══════════════════════════════════════════════════════╝"
+    }
+  },
+  "cases": [
+    {
+      "engine": "chromium",
+      "id": "viewport-320-portrait",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 7964,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "measurements": {
+        "viewport": {
+          "id": "320-portrait",
+          "width": 320,
+          "height": 740
+        },
+        "stages": 5
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "viewport-320-landscape",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 4000,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "measurements": {
+        "viewport": {
+          "id": "320-landscape",
+          "width": 740,
+          "height": 320
+        },
+        "stages": 5
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "viewport-375-portrait",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 2849,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [
+        "chromium-viewport-375-portrait-stage-3.png"
+      ],
+      "artifacts": [],
+      "measurements": {
+        "viewport": {
+          "id": "375-portrait",
+          "width": 375,
+          "height": 812
+        },
+        "stages": 5
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "viewport-375-landscape",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 2409,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "measurements": {
+        "viewport": {
+          "id": "375-landscape",
+          "width": 812,
+          "height": 375
+        },
+        "stages": 5
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "viewport-390-portrait",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 1967,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "measurements": {
+        "viewport": {
+          "id": "390-portrait",
+          "width": 390,
+          "height": 844
+        },
+        "stages": 5
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "viewport-390-landscape",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 2789,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "measurements": {
+        "viewport": {
+          "id": "390-landscape",
+          "width": 844,
+          "height": 390
+        },
+        "stages": 5
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "viewport-430-portrait",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 2261,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [
+        "chromium-viewport-430-portrait-stage-5.png"
+      ],
+      "artifacts": [],
+      "measurements": {
+        "viewport": {
+          "id": "430-portrait",
+          "width": 430,
+          "height": 932
+        },
+        "stages": 5
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "viewport-430-landscape",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 2386,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "measurements": {
+        "viewport": {
+          "id": "430-landscape",
+          "width": 932,
+          "height": 430
+        },
+        "stages": 5
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "text-200-320",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 3360,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [
+        "chromium-text-200-320-expanded.png"
+      ],
+      "artifacts": [],
+      "measurements": {
+        "cssRootFontPercent": 200,
+        "physicalPinchZoom": false,
+        "stages": 5
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "text-200-375",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "failed",
+      "elapsedMs": 1951,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [
+        "chromium-text-200-375-failure.png"
+      ],
+      "artifacts": [],
+      "reason": "Clipped responsive content {\"viewport\":375,\"document\":375,\"clipped\":[{\"tag\":\"LABEL\",\"id\":\"\",\"text\":\"Modell oder Gerätekennung\",\"client\":213,\"scroll\":223}]}\n+ actual - expected\n\n+ [\n+   {\n+     client: 213,\n+     id: '',\n+     scroll: 223,\n+     tag: 'LABEL',\n+     text: 'Modell oder Gerätekennung'\n+   }\n+ ]\n- []\n"
+    },
+    {
+      "engine": "chromium",
+      "id": "text-200-390",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 3514,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "measurements": {
+        "cssRootFontPercent": 200,
+        "physicalPinchZoom": false,
+        "stages": 5
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "text-200-430",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 2842,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "measurements": {
+        "cssRootFontPercent": 200,
+        "physicalPinchZoom": false,
+        "stages": 5
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "dark-320",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 2004,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "measurements": {
+        "colorScheme": "dark",
+        "stages": 5
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "dark-375",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 2455,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [
+        "chromium-dark-375-expanded.png"
+      ],
+      "artifacts": [],
+      "measurements": {
+        "colorScheme": "dark",
+        "stages": 5
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "dark-390",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 2357,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "measurements": {
+        "colorScheme": "dark",
+        "stages": 5
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "dark-430",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 2358,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "measurements": {
+        "colorScheme": "dark",
+        "stages": 5
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "real-passport",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 2318,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [
+        "chromium-real-passport-notes.png"
+      ],
+      "artifacts": [],
+      "measurements": {
+        "filename": "Universal-Fitment-Pruefpass.json",
+        "sha256": "88eda93fe5fa2e1cb36d96deba95708f4df3500e28d9eb75a97184fdcc56eb66",
+        "tamperRefused": true,
+        "realInstallationApproved": false
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "identity-boundaries",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 1991,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [
+        "chromium-identity-boundaries-regional-source.png"
+      ],
+      "artifacts": [],
+      "measurements": {
+        "syntheticUserInput": true,
+        "deviceReference": "HF202P 011",
+        "productCode": "39401035",
+        "sourceMarket": "DE"
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "unknown-identifiers",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 923,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "measurements": {
+        "rejectedInputs": 3,
+        "similarVariantSubstituted": false
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "demo-positive",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 1645,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [
+        "chromium-demo-positive-synthetic-only.png"
+      ],
+      "artifacts": [],
+      "measurements": {
+        "synthetic": true,
+        "outcome": "supported",
+        "realInstallationApproved": false
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "demo-negative",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 1793,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [
+        "chromium-demo-negative-synthetic-only.png"
+      ],
+      "artifacts": [],
+      "measurements": {
+        "synthetic": true,
+        "outcome": "incompatible",
+        "excludedFromNotes": true
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "demo-unknown",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 3468,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "measurements": {
+        "synthetic": true,
+        "missingRevision": "unclear",
+        "unselectedVariant": "unclear"
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "demo-connector",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 2346,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "measurements": {
+        "synthetic": true,
+        "connectorExcluded": true
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "demo-incomplete",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 2154,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "measurements": {
+        "synthetic": true,
+        "allNotesTicked": true,
+        "completeKit": false
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "mode-isolation",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 5130,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "measurements": {
+        "separateMissionKeys": [
+          "uf-repair-mission-poc-v1-real",
+          "uf-repair-mission-poc-v1-synthetic"
+        ]
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "stale-and-tampered-state",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 11366,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "measurements": {
+        "syntheticTampering": true,
+        "rejectedStates": 3
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "filters-and-checklist",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 2393,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "measurements": {
+        "hiddenSelectionPreserved": true,
+        "explicitRemoval": true,
+        "priceSortDisabled": true
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "keyboard-and-semantics",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 2760,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [
+        "chromium-keyboard-and-semantics-aria-snapshot.txt"
+      ],
+      "measurements": {
+        "nativeLabels": true,
+        "fieldsetLegend": true,
+        "liveFilterStatus": true,
+        "voiceOverHardwareTest": false
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "touch-targets",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 2179,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [
+        "chromium-touch-targets-touch-targets.json"
+      ],
+      "measurements": {
+        "stageCounts": [
+          {
+            "stage": 1,
+            "targets": 25
+          },
+          {
+            "stage": 2,
+            "targets": 15
+          },
+          {
+            "stage": 3,
+            "targets": 22
+          },
+          {
+            "stage": 4,
+            "targets": 19
+          },
+          {
+            "stage": 5,
+            "targets": 20
+          }
+        ],
+        "minimumDesignTarget": 44
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "cold-offline",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 472,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [
+        {
+          "url": "LOCAL/",
+          "reason": "net::ERR_INTERNET_DISCONNECTED"
+        }
+      ],
+      "screenshots": [],
+      "artifacts": [],
+      "measurements": {
+        "expectedAbort": true,
+        "reason": "page.goto: net::ERR_INTERNET_DISCONNECTED at http://127.0.0.1:36851/\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:36851/\", waiting until \"domcontentloaded\"\u001b[22m\n",
+        "warmCache": false
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "warm-offline",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 5120,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [
+        "chromium-warm-offline-cached-notes.png"
+      ],
+      "artifacts": [],
+      "measurements": {
+        "cacheName": "uf-consumer-mobile-wave4-51bb0317bdaeffb78fb5ddf0",
+        "cachePaths": 17,
+        "staleWarmMissionRefused": true,
+        "offlinePassportChecksumVerified": true,
+        "notesSurviveCacheDeletion": true,
+        "transportOffline": true,
+        "osSignalSimulated": true,
+        "nativeBefore": true,
+        "nativeAfter": false
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "blocked-offline",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 1311,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "measurements": {
+        "workerBlockedByTest": true,
+        "savedOfflineVersionClaimed": false,
+        "transportOffline": true,
+        "osSignalSimulated": true,
+        "nativeBefore": true,
+        "nativeAfter": false
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "storage-and-export-failures",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 2383,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "measurements": {
+        "syntheticFailureInjection": true,
+        "storageDeniedNonfatal": true,
+        "clipboardFallback": true,
+        "missingChecksumRefusesJsonExport": true,
+        "textFallbackWorks": true
+      }
+    },
+    {
+      "engine": "webkit",
+      "id": "viewport-320-portrait",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "blocked",
+      "elapsedMs": null,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "reason": "browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libgstreamer-1.0.so.0                            ║\n║     libgtk-4.so.1                                    ║\n║     libgraphene-1.0.so.0                             ║\n║     libevent-2.1.so.7                                ║\n║     libgstallocators-1.0.so.0                        ║\n║     libgstapp-1.0.so.0                               ║\n║     libgstbase-1.0.so.0                              ║\n║     libgstpbutils-1.0.so.0                           ║\n║     libgstaudio-1.0.so.0                             ║\n║     libgsttag-1.0.so.0                               ║\n║     libgstvideo-1.0.so.0                             ║\n║     libgstgl-1.0.so.0                                ║\n║     libgstcodecparsers-1.0.so.0                      ║\n║     libgstfft-1.0.so.0                               ║\n║     libavif.so.16                                    ║\n║     libharfbuzz-icu.so.0                             ║\n║     libwayland-server.so.0                           ║\n║     libmanette-0.2.so.0                              ║\n║     libhyphen.so.0                                   ║\n║     libsecret-1.so.0                                 ║\n║     libGLESv2.so.2                                   ║\n╚══════════════════════════════════════════════════════╝"
+    },
+    {
+      "engine": "webkit",
+      "id": "viewport-320-landscape",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "blocked",
+      "elapsedMs": null,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "reason": "browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libgstreamer-1.0.so.0                            ║\n║     libgtk-4.so.1                                    ║\n║     libgraphene-1.0.so.0                             ║\n║     libevent-2.1.so.7                                ║\n║     libgstallocators-1.0.so.0                        ║\n║     libgstapp-1.0.so.0                               ║\n║     libgstbase-1.0.so.0                              ║\n║     libgstpbutils-1.0.so.0                           ║\n║     libgstaudio-1.0.so.0                             ║\n║     libgsttag-1.0.so.0                               ║\n║     libgstvideo-1.0.so.0                             ║\n║     libgstgl-1.0.so.0                                ║\n║     libgstcodecparsers-1.0.so.0                      ║\n║     libgstfft-1.0.so.0                               ║\n║     libavif.so.16                                    ║\n║     libharfbuzz-icu.so.0                             ║\n║     libwayland-server.so.0                           ║\n║     libmanette-0.2.so.0                              ║\n║     libhyphen.so.0                                   ║\n║     libsecret-1.so.0                                 ║\n║     libGLESv2.so.2                                   ║\n╚══════════════════════════════════════════════════════╝"
+    },
+    {
+      "engine": "webkit",
+      "id": "viewport-375-portrait",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "blocked",
+      "elapsedMs": null,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "reason": "browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libgstreamer-1.0.so.0                            ║\n║     libgtk-4.so.1                                    ║\n║     libgraphene-1.0.so.0                             ║\n║     libevent-2.1.so.7                                ║\n║     libgstallocators-1.0.so.0                        ║\n║     libgstapp-1.0.so.0                               ║\n║     libgstbase-1.0.so.0                              ║\n║     libgstpbutils-1.0.so.0                           ║\n║     libgstaudio-1.0.so.0                             ║\n║     libgsttag-1.0.so.0                               ║\n║     libgstvideo-1.0.so.0                             ║\n║     libgstgl-1.0.so.0                                ║\n║     libgstcodecparsers-1.0.so.0                      ║\n║     libgstfft-1.0.so.0                               ║\n║     libavif.so.16                                    ║\n║     libharfbuzz-icu.so.0                             ║\n║     libwayland-server.so.0                           ║\n║     libmanette-0.2.so.0                              ║\n║     libhyphen.so.0                                   ║\n║     libsecret-1.so.0                                 ║\n║     libGLESv2.so.2                                   ║\n╚══════════════════════════════════════════════════════╝"
+    },
+    {
+      "engine": "webkit",
+      "id": "viewport-375-landscape",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "blocked",
+      "elapsedMs": null,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "reason": "browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libgstreamer-1.0.so.0                            ║\n║     libgtk-4.so.1                                    ║\n║     libgraphene-1.0.so.0                             ║\n║     libevent-2.1.so.7                                ║\n║     libgstallocators-1.0.so.0                        ║\n║     libgstapp-1.0.so.0                               ║\n║     libgstbase-1.0.so.0                              ║\n║     libgstpbutils-1.0.so.0                           ║\n║     libgstaudio-1.0.so.0                             ║\n║     libgsttag-1.0.so.0                               ║\n║     libgstvideo-1.0.so.0                             ║\n║     libgstgl-1.0.so.0                                ║\n║     libgstcodecparsers-1.0.so.0                      ║\n║     libgstfft-1.0.so.0                               ║\n║     libavif.so.16                                    ║\n║     libharfbuzz-icu.so.0                             ║\n║     libwayland-server.so.0                           ║\n║     libmanette-0.2.so.0                              ║\n║     libhyphen.so.0                                   ║\n║     libsecret-1.so.0                                 ║\n║     libGLESv2.so.2                                   ║\n╚══════════════════════════════════════════════════════╝"
+    },
+    {
+      "engine": "webkit",
+      "id": "viewport-390-portrait",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "blocked",
+      "elapsedMs": null,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "reason": "browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libgstreamer-1.0.so.0                            ║\n║     libgtk-4.so.1                                    ║\n║     libgraphene-1.0.so.0                             ║\n║     libevent-2.1.so.7                                ║\n║     libgstallocators-1.0.so.0                        ║\n║     libgstapp-1.0.so.0                               ║\n║     libgstbase-1.0.so.0                              ║\n║     libgstpbutils-1.0.so.0                           ║\n║     libgstaudio-1.0.so.0                             ║\n║     libgsttag-1.0.so.0                               ║\n║     libgstvideo-1.0.so.0                             ║\n║     libgstgl-1.0.so.0                                ║\n║     libgstcodecparsers-1.0.so.0                      ║\n║     libgstfft-1.0.so.0                               ║\n║     libavif.so.16                                    ║\n║     libharfbuzz-icu.so.0                             ║\n║     libwayland-server.so.0                           ║\n║     libmanette-0.2.so.0                              ║\n║     libhyphen.so.0                                   ║\n║     libsecret-1.so.0                                 ║\n║     libGLESv2.so.2                                   ║\n╚══════════════════════════════════════════════════════╝"
+    },
+    {
+      "engine": "webkit",
+      "id": "viewport-390-landscape",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "blocked",
+      "elapsedMs": null,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "reason": "browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libgstreamer-1.0.so.0                            ║\n║     libgtk-4.so.1                                    ║\n║     libgraphene-1.0.so.0                             ║\n║     libevent-2.1.so.7                                ║\n║     libgstallocators-1.0.so.0                        ║\n║     libgstapp-1.0.so.0                               ║\n║     libgstbase-1.0.so.0                              ║\n║     libgstpbutils-1.0.so.0                           ║\n║     libgstaudio-1.0.so.0                             ║\n║     libgsttag-1.0.so.0                               ║\n║     libgstvideo-1.0.so.0                             ║\n║     libgstgl-1.0.so.0                                ║\n║     libgstcodecparsers-1.0.so.0                      ║\n║     libgstfft-1.0.so.0                               ║\n║     libavif.so.16                                    ║\n║     libharfbuzz-icu.so.0                             ║\n║     libwayland-server.so.0                           ║\n║     libmanette-0.2.so.0                              ║\n║     libhyphen.so.0                                   ║\n║     libsecret-1.so.0                                 ║\n║     libGLESv2.so.2                                   ║\n╚══════════════════════════════════════════════════════╝"
+    },
+    {
+      "engine": "webkit",
+      "id": "viewport-430-portrait",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "blocked",
+      "elapsedMs": null,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "reason": "browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libgstreamer-1.0.so.0                            ║\n║     libgtk-4.so.1                                    ║\n║     libgraphene-1.0.so.0                             ║\n║     libevent-2.1.so.7                                ║\n║     libgstallocators-1.0.so.0                        ║\n║     libgstapp-1.0.so.0                               ║\n║     libgstbase-1.0.so.0                              ║\n║     libgstpbutils-1.0.so.0                           ║\n║     libgstaudio-1.0.so.0                             ║\n║     libgsttag-1.0.so.0                               ║\n║     libgstvideo-1.0.so.0                             ║\n║     libgstgl-1.0.so.0                                ║\n║     libgstcodecparsers-1.0.so.0                      ║\n║     libgstfft-1.0.so.0                               ║\n║     libavif.so.16                                    ║\n║     libharfbuzz-icu.so.0                             ║\n║     libwayland-server.so.0                           ║\n║     libmanette-0.2.so.0                              ║\n║     libhyphen.so.0                                   ║\n║     libsecret-1.so.0                                 ║\n║     libGLESv2.so.2                                   ║\n╚══════════════════════════════════════════════════════╝"
+    },
+    {
+      "engine": "webkit",
+      "id": "viewport-430-landscape",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "blocked",
+      "elapsedMs": null,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "reason": "browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libgstreamer-1.0.so.0                            ║\n║     libgtk-4.so.1                                    ║\n║     libgraphene-1.0.so.0                             ║\n║     libevent-2.1.so.7                                ║\n║     libgstallocators-1.0.so.0                        ║\n║     libgstapp-1.0.so.0                               ║\n║     libgstbase-1.0.so.0                              ║\n║     libgstpbutils-1.0.so.0                           ║\n║     libgstaudio-1.0.so.0                             ║\n║     libgsttag-1.0.so.0                               ║\n║     libgstvideo-1.0.so.0                             ║\n║     libgstgl-1.0.so.0                                ║\n║     libgstcodecparsers-1.0.so.0                      ║\n║     libgstfft-1.0.so.0                               ║\n║     libavif.so.16                                    ║\n║     libharfbuzz-icu.so.0                             ║\n║     libwayland-server.so.0                           ║\n║     libmanette-0.2.so.0                              ║\n║     libhyphen.so.0                                   ║\n║     libsecret-1.so.0                                 ║\n║     libGLESv2.so.2                                   ║\n╚══════════════════════════════════════════════════════╝"
+    },
+    {
+      "engine": "webkit",
+      "id": "text-200-320",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "blocked",
+      "elapsedMs": null,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "reason": "browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libgstreamer-1.0.so.0                            ║\n║     libgtk-4.so.1                                    ║\n║     libgraphene-1.0.so.0                             ║\n║     libevent-2.1.so.7                                ║\n║     libgstallocators-1.0.so.0                        ║\n║     libgstapp-1.0.so.0                               ║\n║     libgstbase-1.0.so.0                              ║\n║     libgstpbutils-1.0.so.0                           ║\n║     libgstaudio-1.0.so.0                             ║\n║     libgsttag-1.0.so.0                               ║\n║     libgstvideo-1.0.so.0                             ║\n║     libgstgl-1.0.so.0                                ║\n║     libgstcodecparsers-1.0.so.0                      ║\n║     libgstfft-1.0.so.0                               ║\n║     libavif.so.16                                    ║\n║     libharfbuzz-icu.so.0                             ║\n║     libwayland-server.so.0                           ║\n║     libmanette-0.2.so.0                              ║\n║     libhyphen.so.0                                   ║\n║     libsecret-1.so.0                                 ║\n║     libGLESv2.so.2                                   ║\n╚══════════════════════════════════════════════════════╝"
+    },
+    {
+      "engine": "webkit",
+      "id": "text-200-375",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "blocked",
+      "elapsedMs": null,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "reason": "browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libgstreamer-1.0.so.0                            ║\n║     libgtk-4.so.1                                    ║\n║     libgraphene-1.0.so.0                             ║\n║     libevent-2.1.so.7                                ║\n║     libgstallocators-1.0.so.0                        ║\n║     libgstapp-1.0.so.0                               ║\n║     libgstbase-1.0.so.0                              ║\n║     libgstpbutils-1.0.so.0                           ║\n║     libgstaudio-1.0.so.0                             ║\n║     libgsttag-1.0.so.0                               ║\n║     libgstvideo-1.0.so.0                             ║\n║     libgstgl-1.0.so.0                                ║\n║     libgstcodecparsers-1.0.so.0                      ║\n║     libgstfft-1.0.so.0                               ║\n║     libavif.so.16                                    ║\n║     libharfbuzz-icu.so.0                             ║\n║     libwayland-server.so.0                           ║\n║     libmanette-0.2.so.0                              ║\n║     libhyphen.so.0                                   ║\n║     libsecret-1.so.0                                 ║\n║     libGLESv2.so.2                                   ║\n╚══════════════════════════════════════════════════════╝"
+    },
+    {
+      "engine": "webkit",
+      "id": "text-200-390",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "blocked",
+      "elapsedMs": null,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "reason": "browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libgstreamer-1.0.so.0                            ║\n║     libgtk-4.so.1                                    ║\n║     libgraphene-1.0.so.0                             ║\n║     libevent-2.1.so.7                                ║\n║     libgstallocators-1.0.so.0                        ║\n║     libgstapp-1.0.so.0                               ║\n║     libgstbase-1.0.so.0                              ║\n║     libgstpbutils-1.0.so.0                           ║\n║     libgstaudio-1.0.so.0                             ║\n║     libgsttag-1.0.so.0                               ║\n║     libgstvideo-1.0.so.0                             ║\n║     libgstgl-1.0.so.0                                ║\n║     libgstcodecparsers-1.0.so.0                      ║\n║     libgstfft-1.0.so.0                               ║\n║     libavif.so.16                                    ║\n║     libharfbuzz-icu.so.0                             ║\n║     libwayland-server.so.0                           ║\n║     libmanette-0.2.so.0                              ║\n║     libhyphen.so.0                                   ║\n║     libsecret-1.so.0                                 ║\n║     libGLESv2.so.2                                   ║\n╚══════════════════════════════════════════════════════╝"
+    },
+    {
+      "engine": "webkit",
+      "id": "text-200-430",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "blocked",
+      "elapsedMs": null,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "reason": "browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libgstreamer-1.0.so.0                            ║\n║     libgtk-4.so.1                                    ║\n║     libgraphene-1.0.so.0                             ║\n║     libevent-2.1.so.7                                ║\n║     libgstallocators-1.0.so.0                        ║\n║     libgstapp-1.0.so.0                               ║\n║     libgstbase-1.0.so.0                              ║\n║     libgstpbutils-1.0.so.0                           ║\n║     libgstaudio-1.0.so.0                             ║\n║     libgsttag-1.0.so.0                               ║\n║     libgstvideo-1.0.so.0                             ║\n║     libgstgl-1.0.so.0                                ║\n║     libgstcodecparsers-1.0.so.0                      ║\n║     libgstfft-1.0.so.0                               ║\n║     libavif.so.16                                    ║\n║     libharfbuzz-icu.so.0                             ║\n║     libwayland-server.so.0                           ║\n║     libmanette-0.2.so.0                              ║\n║     libhyphen.so.0                                   ║\n║     libsecret-1.so.0                                 ║\n║     libGLESv2.so.2                                   ║\n╚══════════════════════════════════════════════════════╝"
+    },
+    {
+      "engine": "webkit",
+      "id": "dark-320",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "blocked",
+      "elapsedMs": null,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "reason": "browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libgstreamer-1.0.so.0                            ║\n║     libgtk-4.so.1                                    ║\n║     libgraphene-1.0.so.0                             ║\n║     libevent-2.1.so.7                                ║\n║     libgstallocators-1.0.so.0                        ║\n║     libgstapp-1.0.so.0                               ║\n║     libgstbase-1.0.so.0                              ║\n║     libgstpbutils-1.0.so.0                           ║\n║     libgstaudio-1.0.so.0                             ║\n║     libgsttag-1.0.so.0                               ║\n║     libgstvideo-1.0.so.0                             ║\n║     libgstgl-1.0.so.0                                ║\n║     libgstcodecparsers-1.0.so.0                      ║\n║     libgstfft-1.0.so.0                               ║\n║     libavif.so.16                                    ║\n║     libharfbuzz-icu.so.0                             ║\n║     libwayland-server.so.0                           ║\n║     libmanette-0.2.so.0                              ║\n║     libhyphen.so.0                                   ║\n║     libsecret-1.so.0                                 ║\n║     libGLESv2.so.2                                   ║\n╚══════════════════════════════════════════════════════╝"
+    },
+    {
+      "engine": "webkit",
+      "id": "dark-375",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "blocked",
+      "elapsedMs": null,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "reason": "browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libgstreamer-1.0.so.0                            ║\n║     libgtk-4.so.1                                    ║\n║     libgraphene-1.0.so.0                             ║\n║     libevent-2.1.so.7                                ║\n║     libgstallocators-1.0.so.0                        ║\n║     libgstapp-1.0.so.0                               ║\n║     libgstbase-1.0.so.0                              ║\n║     libgstpbutils-1.0.so.0                           ║\n║     libgstaudio-1.0.so.0                             ║\n║     libgsttag-1.0.so.0                               ║\n║     libgstvideo-1.0.so.0                             ║\n║     libgstgl-1.0.so.0                                ║\n║     libgstcodecparsers-1.0.so.0                      ║\n║     libgstfft-1.0.so.0                               ║\n║     libavif.so.16                                    ║\n║     libharfbuzz-icu.so.0                             ║\n║     libwayland-server.so.0                           ║\n║     libmanette-0.2.so.0                              ║\n║     libhyphen.so.0                                   ║\n║     libsecret-1.so.0                                 ║\n║     libGLESv2.so.2                                   ║\n╚══════════════════════════════════════════════════════╝"
+    },
+    {
+      "engine": "webkit",
+      "id": "dark-390",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "blocked",
+      "elapsedMs": null,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "reason": "browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libgstreamer-1.0.so.0                            ║\n║     libgtk-4.so.1                                    ║\n║     libgraphene-1.0.so.0                             ║\n║     libevent-2.1.so.7                                ║\n║     libgstallocators-1.0.so.0                        ║\n║     libgstapp-1.0.so.0                               ║\n║     libgstbase-1.0.so.0                              ║\n║     libgstpbutils-1.0.so.0                           ║\n║     libgstaudio-1.0.so.0                             ║\n║     libgsttag-1.0.so.0                               ║\n║     libgstvideo-1.0.so.0                             ║\n║     libgstgl-1.0.so.0                                ║\n║     libgstcodecparsers-1.0.so.0                      ║\n║     libgstfft-1.0.so.0                               ║\n║     libavif.so.16                                    ║\n║     libharfbuzz-icu.so.0                             ║\n║     libwayland-server.so.0                           ║\n║     libmanette-0.2.so.0                              ║\n║     libhyphen.so.0                                   ║\n║     libsecret-1.so.0                                 ║\n║     libGLESv2.so.2                                   ║\n╚══════════════════════════════════════════════════════╝"
+    },
+    {
+      "engine": "webkit",
+      "id": "dark-430",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "blocked",
+      "elapsedMs": null,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "reason": "browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libgstreamer-1.0.so.0                            ║\n║     libgtk-4.so.1                                    ║\n║     libgraphene-1.0.so.0                             ║\n║     libevent-2.1.so.7                                ║\n║     libgstallocators-1.0.so.0                        ║\n║     libgstapp-1.0.so.0                               ║\n║     libgstbase-1.0.so.0                              ║\n║     libgstpbutils-1.0.so.0                           ║\n║     libgstaudio-1.0.so.0                             ║\n║     libgsttag-1.0.so.0                               ║\n║     libgstvideo-1.0.so.0                             ║\n║     libgstgl-1.0.so.0                                ║\n║     libgstcodecparsers-1.0.so.0                      ║\n║     libgstfft-1.0.so.0                               ║\n║     libavif.so.16                                    ║\n║     libharfbuzz-icu.so.0                             ║\n║     libwayland-server.so.0                           ║\n║     libmanette-0.2.so.0                              ║\n║     libhyphen.so.0                                   ║\n║     libsecret-1.so.0                                 ║\n║     libGLESv2.so.2                                   ║\n╚══════════════════════════════════════════════════════╝"
+    },
+    {
+      "engine": "webkit",
+      "id": "real-passport",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "blocked",
+      "elapsedMs": null,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "reason": "browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libgstreamer-1.0.so.0                            ║\n║     libgtk-4.so.1                                    ║\n║     libgraphene-1.0.so.0                             ║\n║     libevent-2.1.so.7                                ║\n║     libgstallocators-1.0.so.0                        ║\n║     libgstapp-1.0.so.0                               ║\n║     libgstbase-1.0.so.0                              ║\n║     libgstpbutils-1.0.so.0                           ║\n║     libgstaudio-1.0.so.0                             ║\n║     libgsttag-1.0.so.0                               ║\n║     libgstvideo-1.0.so.0                             ║\n║     libgstgl-1.0.so.0                                ║\n║     libgstcodecparsers-1.0.so.0                      ║\n║     libgstfft-1.0.so.0                               ║\n║     libavif.so.16                                    ║\n║     libharfbuzz-icu.so.0                             ║\n║     libwayland-server.so.0                           ║\n║     libmanette-0.2.so.0                              ║\n║     libhyphen.so.0                                   ║\n║     libsecret-1.so.0                                 ║\n║     libGLESv2.so.2                                   ║\n╚══════════════════════════════════════════════════════╝"
+    },
+    {
+      "engine": "webkit",
+      "id": "identity-boundaries",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "blocked",
+      "elapsedMs": null,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "reason": "browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libgstreamer-1.0.so.0                            ║\n║     libgtk-4.so.1                                    ║\n║     libgraphene-1.0.so.0                             ║\n║     libevent-2.1.so.7                                ║\n║     libgstallocators-1.0.so.0                        ║\n║     libgstapp-1.0.so.0                               ║\n║     libgstbase-1.0.so.0                              ║\n║     libgstpbutils-1.0.so.0                           ║\n║     libgstaudio-1.0.so.0                             ║\n║     libgsttag-1.0.so.0                               ║\n║     libgstvideo-1.0.so.0                             ║\n║     libgstgl-1.0.so.0                                ║\n║     libgstcodecparsers-1.0.so.0                      ║\n║     libgstfft-1.0.so.0                               ║\n║     libavif.so.16                                    ║\n║     libharfbuzz-icu.so.0                             ║\n║     libwayland-server.so.0                           ║\n║     libmanette-0.2.so.0                              ║\n║     libhyphen.so.0                                   ║\n║     libsecret-1.so.0                                 ║\n║     libGLESv2.so.2                                   ║\n╚══════════════════════════════════════════════════════╝"
+    },
+    {
+      "engine": "webkit",
+      "id": "unknown-identifiers",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "blocked",
+      "elapsedMs": null,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "reason": "browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libgstreamer-1.0.so.0                            ║\n║     libgtk-4.so.1                                    ║\n║     libgraphene-1.0.so.0                             ║\n║     libevent-2.1.so.7                                ║\n║     libgstallocators-1.0.so.0                        ║\n║     libgstapp-1.0.so.0                               ║\n║     libgstbase-1.0.so.0                              ║\n║     libgstpbutils-1.0.so.0                           ║\n║     libgstaudio-1.0.so.0                             ║\n║     libgsttag-1.0.so.0                               ║\n║     libgstvideo-1.0.so.0                             ║\n║     libgstgl-1.0.so.0                                ║\n║     libgstcodecparsers-1.0.so.0                      ║\n║     libgstfft-1.0.so.0                               ║\n║     libavif.so.16                                    ║\n║     libharfbuzz-icu.so.0                             ║\n║     libwayland-server.so.0                           ║\n║     libmanette-0.2.so.0                              ║\n║     libhyphen.so.0                                   ║\n║     libsecret-1.so.0                                 ║\n║     libGLESv2.so.2                                   ║\n╚══════════════════════════════════════════════════════╝"
+    },
+    {
+      "engine": "webkit",
+      "id": "demo-positive",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "blocked",
+      "elapsedMs": null,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "reason": "browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libgstreamer-1.0.so.0                            ║\n║     libgtk-4.so.1                                    ║\n║     libgraphene-1.0.so.0                             ║\n║     libevent-2.1.so.7                                ║\n║     libgstallocators-1.0.so.0                        ║\n║     libgstapp-1.0.so.0                               ║\n║     libgstbase-1.0.so.0                              ║\n║     libgstpbutils-1.0.so.0                           ║\n║     libgstaudio-1.0.so.0                             ║\n║     libgsttag-1.0.so.0                               ║\n║     libgstvideo-1.0.so.0                             ║\n║     libgstgl-1.0.so.0                                ║\n║     libgstcodecparsers-1.0.so.0                      ║\n║     libgstfft-1.0.so.0                               ║\n║     libavif.so.16                                    ║\n║     libharfbuzz-icu.so.0                             ║\n║     libwayland-server.so.0                           ║\n║     libmanette-0.2.so.0                              ║\n║     libhyphen.so.0                                   ║\n║     libsecret-1.so.0                                 ║\n║     libGLESv2.so.2                                   ║\n╚══════════════════════════════════════════════════════╝"
+    },
+    {
+      "engine": "webkit",
+      "id": "demo-negative",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "blocked",
+      "elapsedMs": null,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "reason": "browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libgstreamer-1.0.so.0                            ║\n║     libgtk-4.so.1                                    ║\n║     libgraphene-1.0.so.0                             ║\n║     libevent-2.1.so.7                                ║\n║     libgstallocators-1.0.so.0                        ║\n║     libgstapp-1.0.so.0                               ║\n║     libgstbase-1.0.so.0                              ║\n║     libgstpbutils-1.0.so.0                           ║\n║     libgstaudio-1.0.so.0                             ║\n║     libgsttag-1.0.so.0                               ║\n║     libgstvideo-1.0.so.0                             ║\n║     libgstgl-1.0.so.0                                ║\n║     libgstcodecparsers-1.0.so.0                      ║\n║     libgstfft-1.0.so.0                               ║\n║     libavif.so.16                                    ║\n║     libharfbuzz-icu.so.0                             ║\n║     libwayland-server.so.0                           ║\n║     libmanette-0.2.so.0                              ║\n║     libhyphen.so.0                                   ║\n║     libsecret-1.so.0                                 ║\n║     libGLESv2.so.2                                   ║\n╚══════════════════════════════════════════════════════╝"
+    },
+    {
+      "engine": "webkit",
+      "id": "demo-unknown",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "blocked",
+      "elapsedMs": null,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "reason": "browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libgstreamer-1.0.so.0                            ║\n║     libgtk-4.so.1                                    ║\n║     libgraphene-1.0.so.0                             ║\n║     libevent-2.1.so.7                                ║\n║     libgstallocators-1.0.so.0                        ║\n║     libgstapp-1.0.so.0                               ║\n║     libgstbase-1.0.so.0                              ║\n║     libgstpbutils-1.0.so.0                           ║\n║     libgstaudio-1.0.so.0                             ║\n║     libgsttag-1.0.so.0                               ║\n║     libgstvideo-1.0.so.0                             ║\n║     libgstgl-1.0.so.0                                ║\n║     libgstcodecparsers-1.0.so.0                      ║\n║     libgstfft-1.0.so.0                               ║\n║     libavif.so.16                                    ║\n║     libharfbuzz-icu.so.0                             ║\n║     libwayland-server.so.0                           ║\n║     libmanette-0.2.so.0                              ║\n║     libhyphen.so.0                                   ║\n║     libsecret-1.so.0                                 ║\n║     libGLESv2.so.2                                   ║\n╚══════════════════════════════════════════════════════╝"
+    },
+    {
+      "engine": "webkit",
+      "id": "demo-connector",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "blocked",
+      "elapsedMs": null,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "reason": "browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libgstreamer-1.0.so.0                            ║\n║     libgtk-4.so.1                                    ║\n║     libgraphene-1.0.so.0                             ║\n║     libevent-2.1.so.7                                ║\n║     libgstallocators-1.0.so.0                        ║\n║     libgstapp-1.0.so.0                               ║\n║     libgstbase-1.0.so.0                              ║\n║     libgstpbutils-1.0.so.0                           ║\n║     libgstaudio-1.0.so.0                             ║\n║     libgsttag-1.0.so.0                               ║\n║     libgstvideo-1.0.so.0                             ║\n║     libgstgl-1.0.so.0                                ║\n║     libgstcodecparsers-1.0.so.0                      ║\n║     libgstfft-1.0.so.0                               ║\n║     libavif.so.16                                    ║\n║     libharfbuzz-icu.so.0                             ║\n║     libwayland-server.so.0                           ║\n║     libmanette-0.2.so.0                              ║\n║     libhyphen.so.0                                   ║\n║     libsecret-1.so.0                                 ║\n║     libGLESv2.so.2                                   ║\n╚══════════════════════════════════════════════════════╝"
+    },
+    {
+      "engine": "webkit",
+      "id": "demo-incomplete",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "blocked",
+      "elapsedMs": null,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "reason": "browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libgstreamer-1.0.so.0                            ║\n║     libgtk-4.so.1                                    ║\n║     libgraphene-1.0.so.0                             ║\n║     libevent-2.1.so.7                                ║\n║     libgstallocators-1.0.so.0                        ║\n║     libgstapp-1.0.so.0                               ║\n║     libgstbase-1.0.so.0                              ║\n║     libgstpbutils-1.0.so.0                           ║\n║     libgstaudio-1.0.so.0                             ║\n║     libgsttag-1.0.so.0                               ║\n║     libgstvideo-1.0.so.0                             ║\n║     libgstgl-1.0.so.0                                ║\n║     libgstcodecparsers-1.0.so.0                      ║\n║     libgstfft-1.0.so.0                               ║\n║     libavif.so.16                                    ║\n║     libharfbuzz-icu.so.0                             ║\n║     libwayland-server.so.0                           ║\n║     libmanette-0.2.so.0                              ║\n║     libhyphen.so.0                                   ║\n║     libsecret-1.so.0                                 ║\n║     libGLESv2.so.2                                   ║\n╚══════════════════════════════════════════════════════╝"
+    },
+    {
+      "engine": "webkit",
+      "id": "mode-isolation",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "blocked",
+      "elapsedMs": null,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "reason": "browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libgstreamer-1.0.so.0                            ║\n║     libgtk-4.so.1                                    ║\n║     libgraphene-1.0.so.0                             ║\n║     libevent-2.1.so.7                                ║\n║     libgstallocators-1.0.so.0                        ║\n║     libgstapp-1.0.so.0                               ║\n║     libgstbase-1.0.so.0                              ║\n║     libgstpbutils-1.0.so.0                           ║\n║     libgstaudio-1.0.so.0                             ║\n║     libgsttag-1.0.so.0                               ║\n║     libgstvideo-1.0.so.0                             ║\n║     libgstgl-1.0.so.0                                ║\n║     libgstcodecparsers-1.0.so.0                      ║\n║     libgstfft-1.0.so.0                               ║\n║     libavif.so.16                                    ║\n║     libharfbuzz-icu.so.0                             ║\n║     libwayland-server.so.0                           ║\n║     libmanette-0.2.so.0                              ║\n║     libhyphen.so.0                                   ║\n║     libsecret-1.so.0                                 ║\n║     libGLESv2.so.2                                   ║\n╚══════════════════════════════════════════════════════╝"
+    },
+    {
+      "engine": "webkit",
+      "id": "stale-and-tampered-state",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "blocked",
+      "elapsedMs": null,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "reason": "browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libgstreamer-1.0.so.0                            ║\n║     libgtk-4.so.1                                    ║\n║     libgraphene-1.0.so.0                             ║\n║     libevent-2.1.so.7                                ║\n║     libgstallocators-1.0.so.0                        ║\n║     libgstapp-1.0.so.0                               ║\n║     libgstbase-1.0.so.0                              ║\n║     libgstpbutils-1.0.so.0                           ║\n║     libgstaudio-1.0.so.0                             ║\n║     libgsttag-1.0.so.0                               ║\n║     libgstvideo-1.0.so.0                             ║\n║     libgstgl-1.0.so.0                                ║\n║     libgstcodecparsers-1.0.so.0                      ║\n║     libgstfft-1.0.so.0                               ║\n║     libavif.so.16                                    ║\n║     libharfbuzz-icu.so.0                             ║\n║     libwayland-server.so.0                           ║\n║     libmanette-0.2.so.0                              ║\n║     libhyphen.so.0                                   ║\n║     libsecret-1.so.0                                 ║\n║     libGLESv2.so.2                                   ║\n╚══════════════════════════════════════════════════════╝"
+    },
+    {
+      "engine": "webkit",
+      "id": "filters-and-checklist",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "blocked",
+      "elapsedMs": null,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "reason": "browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libgstreamer-1.0.so.0                            ║\n║     libgtk-4.so.1                                    ║\n║     libgraphene-1.0.so.0                             ║\n║     libevent-2.1.so.7                                ║\n║     libgstallocators-1.0.so.0                        ║\n║     libgstapp-1.0.so.0                               ║\n║     libgstbase-1.0.so.0                              ║\n║     libgstpbutils-1.0.so.0                           ║\n║     libgstaudio-1.0.so.0                             ║\n║     libgsttag-1.0.so.0                               ║\n║     libgstvideo-1.0.so.0                             ║\n║     libgstgl-1.0.so.0                                ║\n║     libgstcodecparsers-1.0.so.0                      ║\n║     libgstfft-1.0.so.0                               ║\n║     libavif.so.16                                    ║\n║     libharfbuzz-icu.so.0                             ║\n║     libwayland-server.so.0                           ║\n║     libmanette-0.2.so.0                              ║\n║     libhyphen.so.0                                   ║\n║     libsecret-1.so.0                                 ║\n║     libGLESv2.so.2                                   ║\n╚══════════════════════════════════════════════════════╝"
+    },
+    {
+      "engine": "webkit",
+      "id": "keyboard-and-semantics",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "blocked",
+      "elapsedMs": null,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "reason": "browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libgstreamer-1.0.so.0                            ║\n║     libgtk-4.so.1                                    ║\n║     libgraphene-1.0.so.0                             ║\n║     libevent-2.1.so.7                                ║\n║     libgstallocators-1.0.so.0                        ║\n║     libgstapp-1.0.so.0                               ║\n║     libgstbase-1.0.so.0                              ║\n║     libgstpbutils-1.0.so.0                           ║\n║     libgstaudio-1.0.so.0                             ║\n║     libgsttag-1.0.so.0                               ║\n║     libgstvideo-1.0.so.0                             ║\n║     libgstgl-1.0.so.0                                ║\n║     libgstcodecparsers-1.0.so.0                      ║\n║     libgstfft-1.0.so.0                               ║\n║     libavif.so.16                                    ║\n║     libharfbuzz-icu.so.0                             ║\n║     libwayland-server.so.0                           ║\n║     libmanette-0.2.so.0                              ║\n║     libhyphen.so.0                                   ║\n║     libsecret-1.so.0                                 ║\n║     libGLESv2.so.2                                   ║\n╚══════════════════════════════════════════════════════╝"
+    },
+    {
+      "engine": "webkit",
+      "id": "touch-targets",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "blocked",
+      "elapsedMs": null,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "reason": "browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libgstreamer-1.0.so.0                            ║\n║     libgtk-4.so.1                                    ║\n║     libgraphene-1.0.so.0                             ║\n║     libevent-2.1.so.7                                ║\n║     libgstallocators-1.0.so.0                        ║\n║     libgstapp-1.0.so.0                               ║\n║     libgstbase-1.0.so.0                              ║\n║     libgstpbutils-1.0.so.0                           ║\n║     libgstaudio-1.0.so.0                             ║\n║     libgsttag-1.0.so.0                               ║\n║     libgstvideo-1.0.so.0                             ║\n║     libgstgl-1.0.so.0                                ║\n║     libgstcodecparsers-1.0.so.0                      ║\n║     libgstfft-1.0.so.0                               ║\n║     libavif.so.16                                    ║\n║     libharfbuzz-icu.so.0                             ║\n║     libwayland-server.so.0                           ║\n║     libmanette-0.2.so.0                              ║\n║     libhyphen.so.0                                   ║\n║     libsecret-1.so.0                                 ║\n║     libGLESv2.so.2                                   ║\n╚══════════════════════════════════════════════════════╝"
+    },
+    {
+      "engine": "webkit",
+      "id": "cold-offline",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "blocked",
+      "elapsedMs": null,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "reason": "browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libgstreamer-1.0.so.0                            ║\n║     libgtk-4.so.1                                    ║\n║     libgraphene-1.0.so.0                             ║\n║     libevent-2.1.so.7                                ║\n║     libgstallocators-1.0.so.0                        ║\n║     libgstapp-1.0.so.0                               ║\n║     libgstbase-1.0.so.0                              ║\n║     libgstpbutils-1.0.so.0                           ║\n║     libgstaudio-1.0.so.0                             ║\n║     libgsttag-1.0.so.0                               ║\n║     libgstvideo-1.0.so.0                             ║\n║     libgstgl-1.0.so.0                                ║\n║     libgstcodecparsers-1.0.so.0                      ║\n║     libgstfft-1.0.so.0                               ║\n║     libavif.so.16                                    ║\n║     libharfbuzz-icu.so.0                             ║\n║     libwayland-server.so.0                           ║\n║     libmanette-0.2.so.0                              ║\n║     libhyphen.so.0                                   ║\n║     libsecret-1.so.0                                 ║\n║     libGLESv2.so.2                                   ║\n╚══════════════════════════════════════════════════════╝"
+    },
+    {
+      "engine": "webkit",
+      "id": "warm-offline",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "blocked",
+      "elapsedMs": null,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "reason": "browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libgstreamer-1.0.so.0                            ║\n║     libgtk-4.so.1                                    ║\n║     libgraphene-1.0.so.0                             ║\n║     libevent-2.1.so.7                                ║\n║     libgstallocators-1.0.so.0                        ║\n║     libgstapp-1.0.so.0                               ║\n║     libgstbase-1.0.so.0                              ║\n║     libgstpbutils-1.0.so.0                           ║\n║     libgstaudio-1.0.so.0                             ║\n║     libgsttag-1.0.so.0                               ║\n║     libgstvideo-1.0.so.0                             ║\n║     libgstgl-1.0.so.0                                ║\n║     libgstcodecparsers-1.0.so.0                      ║\n║     libgstfft-1.0.so.0                               ║\n║     libavif.so.16                                    ║\n║     libharfbuzz-icu.so.0                             ║\n║     libwayland-server.so.0                           ║\n║     libmanette-0.2.so.0                              ║\n║     libhyphen.so.0                                   ║\n║     libsecret-1.so.0                                 ║\n║     libGLESv2.so.2                                   ║\n╚══════════════════════════════════════════════════════╝"
+    },
+    {
+      "engine": "webkit",
+      "id": "blocked-offline",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "blocked",
+      "elapsedMs": null,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "reason": "browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libgstreamer-1.0.so.0                            ║\n║     libgtk-4.so.1                                    ║\n║     libgraphene-1.0.so.0                             ║\n║     libevent-2.1.so.7                                ║\n║     libgstallocators-1.0.so.0                        ║\n║     libgstapp-1.0.so.0                               ║\n║     libgstbase-1.0.so.0                              ║\n║     libgstpbutils-1.0.so.0                           ║\n║     libgstaudio-1.0.so.0                             ║\n║     libgsttag-1.0.so.0                               ║\n║     libgstvideo-1.0.so.0                             ║\n║     libgstgl-1.0.so.0                                ║\n║     libgstcodecparsers-1.0.so.0                      ║\n║     libgstfft-1.0.so.0                               ║\n║     libavif.so.16                                    ║\n║     libharfbuzz-icu.so.0                             ║\n║     libwayland-server.so.0                           ║\n║     libmanette-0.2.so.0                              ║\n║     libhyphen.so.0                                   ║\n║     libsecret-1.so.0                                 ║\n║     libGLESv2.so.2                                   ║\n╚══════════════════════════════════════════════════════╝"
+    },
+    {
+      "engine": "webkit",
+      "id": "storage-and-export-failures",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "blocked",
+      "elapsedMs": null,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "reason": "browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libgstreamer-1.0.so.0                            ║\n║     libgtk-4.so.1                                    ║\n║     libgraphene-1.0.so.0                             ║\n║     libevent-2.1.so.7                                ║\n║     libgstallocators-1.0.so.0                        ║\n║     libgstapp-1.0.so.0                               ║\n║     libgstbase-1.0.so.0                              ║\n║     libgstpbutils-1.0.so.0                           ║\n║     libgstaudio-1.0.so.0                             ║\n║     libgsttag-1.0.so.0                               ║\n║     libgstvideo-1.0.so.0                             ║\n║     libgstgl-1.0.so.0                                ║\n║     libgstcodecparsers-1.0.so.0                      ║\n║     libgstfft-1.0.so.0                               ║\n║     libavif.so.16                                    ║\n║     libharfbuzz-icu.so.0                             ║\n║     libwayland-server.so.0                           ║\n║     libmanette-0.2.so.0                              ║\n║     libhyphen.so.0                                   ║\n║     libsecret-1.so.0                                 ║\n║     libGLESv2.so.2                                   ║\n╚══════════════════════════════════════════════════════╝"
+    }
+  ],
+  "physicalIPhone": false,
+  "macOSSafari": false,
+  "externalTestPeople": 0,
+  "humanConversionRate": null,
+  "humanAbandonmentRate": null,
+  "environment": {
+    "platform": "linux",
+    "node": "v24.19.0"
+  },
+  "simulation": "Linux Playwright WebKit is NOT iOS Safari or a physical iPhone. Viewport/touch/OS-offline-signal simulation only.",
+  "finishedAt": "2026-10-10T07:08:40.906Z",
+  "gate": {
+    "automatedGatePassed": false,
+    "betaOrLaunchApproved": false,
+    "counts": {
+      "planned": 66,
+      "passed": 32,
+      "failed": 1,
+      "blocked": 33,
+      "notRun": 0
+    },
+    "problems": [
+      "browser-not-started:webkit",
+      "not-all-cases-passed"
+    ]
+  }
+}
