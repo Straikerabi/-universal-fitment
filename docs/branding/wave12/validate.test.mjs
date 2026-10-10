@@ -30,8 +30,8 @@ const negatives=[
  ['fake chosen brand',d=>d.candidates[0].brandChosen=true,'BR-01.release_violation'],
  ['false post',d=>d.candidates[0].published=true,'BR-01.release_violation'],
  ['free domain status invented',d=>d.candidates[0].domains.com.status='free','BR-01.domain_status.com'],
- ['fake registered',d=>d.candidates[0].domains.de.status='registered','BR-01.domain_missing_evidence.de'],
- ['unknown dated',d=>d.candidates[0].domains.com.checkedAt='2026-10-11T00:00:00Z','BR-01.domain_unknown.com'],
+ ['fake registered without evidence',d=>d.candidates[5].domains.de.status='registered','BR-06.domain_missing_evidence.de'],
+ ['unknown dated',d=>d.candidates[5].domains.com.checkedAt='2026-10-11T00:00:00Z','BR-06.domain_unknown.com'],
  ['fake 404 vs 200',d=>{const x=d.candidates[0].domains.de;x.status='not_registered_at_check';x.httpStatus=200;x.checkedAt='2026-10-11T00:00:00Z'},'BR-01.domain_wrong_code.de'],
  ['wrong registry URL',d=>d.candidates[0].domains.de.source='https://wrong.invalid/','BR-01.domain_url.de']
 ];
