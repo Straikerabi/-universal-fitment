@@ -1,0 +1,368 @@
+{
+  "schema": "uf-catalog-oem-passports/1",
+  "baseSnapshotVersion": 1,
+  "baseSnapshotExactVariants": [
+    {
+      "id": "vac-miele-model-11806000",
+      "reference": "11806000",
+      "market": "DE"
+    },
+    {
+      "id": "vac-miele-model-11602400",
+      "reference": "11602400",
+      "market": "DE"
+    },
+    {
+      "id": "vac-bosch-model-bgl75x1prq",
+      "reference": "BGL75X1PRQ",
+      "market": "DE"
+    },
+    {
+      "id": "vac-bosch-model-bch3all21",
+      "reference": "BCH3ALL21",
+      "market": "DE"
+    },
+    {
+      "id": "vac-samsung-model-vs20c95d4tk",
+      "reference": "VS20C95D4TK/WD",
+      "market": "DE"
+    },
+    {
+      "id": "vac-samsung-model-vs90f40eek",
+      "reference": "VS90F40EEK/WD",
+      "market": "DE"
+    },
+    {
+      "id": "vac-hoover-model-hf202p011",
+      "reference": "HF202P 011",
+      "market": "DE"
+    },
+    {
+      "id": "vac-hoover-model-fd22g",
+      "reference": "FD22G",
+      "market": "GB"
+    },
+    {
+      "id": "vac-hoover-model-hu300rhm001",
+      "reference": "HU300RHM 001",
+      "market": "GB"
+    },
+    {
+      "id": "vac-dyson-model-369535-01",
+      "reference": "369535-01",
+      "market": "DE"
+    },
+    {
+      "id": "vac-dyson-model-419634-01",
+      "reference": "419634-01",
+      "market": "DE"
+    }
+  ],
+  "recordedAt": "2026-10-10",
+  "provenanceStatus": "source_observed_not_independently_verified",
+  "records": [
+    {
+      "deviceId": "vac-miele-model-11602400",
+      "deviceReference": "11602400",
+      "market": "DE",
+      "brand": "Miele",
+      "source": {
+        "url": "https://www.miele.de/product/11602400/bodenstaubsauger-ohne-beutel-boost-cx1-parquet-powerline-lotosweiss",
+        "observedAt": "2026-10-10",
+        "access": "public_oem_page",
+        "rawSourceSha256": null,
+        "independentRawAudit": false,
+        "licenceEvidenceId": null,
+        "rights": {
+          "factualUse": "review_pending",
+          "pageRedistribution": "not_granted",
+          "mediaB2c": "not_granted"
+        }
+      },
+      "technicalFacts": [
+        {
+          "key": "rated_power",
+          "value": 890,
+          "unit": "W",
+          "locator": "Produktdatenblatt > Technische Daten > Nennleistung in W"
+        },
+        {
+          "key": "dust_container",
+          "value": 1,
+          "unit": "l",
+          "locator": "Produktdatenblatt > Filtersystem > Staubbehältervolumen in l"
+        },
+        {
+          "key": "width",
+          "value": 400,
+          "unit": "mm",
+          "locator": "Produktdatenblatt > Technische Daten > Breite in mm"
+        },
+        {
+          "key": "height",
+          "value": 280,
+          "unit": "mm",
+          "locator": "Produktdatenblatt > Technische Daten > Höhe in mm"
+        },
+        {
+          "key": "depth",
+          "value": 280,
+          "unit": "mm",
+          "locator": "Produktdatenblatt > Technische Daten > Tiefe in mm"
+        },
+        {
+          "key": "operating_radius",
+          "value": 10,
+          "unit": "m",
+          "locator": "Produktdatenblatt > Mobilität > Aktionsradius in m"
+        }
+      ],
+      "partListings": [
+        {
+          "partId": "miele-part-11805640",
+          "partCode": "11805640",
+          "designation": "SBD 365-3",
+          "locator": "Produktdatenblatt > Mitgeliefertes Zubehör > Bodendüse SBD 365-3",
+          "listingType": "oem_included_accessory",
+          "fitment": "unconfirmed"
+        }
+      ],
+      "supportLink": {
+        "url": "https://www.miele.de/product/11602400/bodenstaubsauger-ohne-beutel-boost-cx1-parquet-powerline-lotosweiss",
+        "kind": "manufacturer_product_with_document_section",
+        "locator": "Downloads/Dokumente (keine Einzel-PDF-Prüfung)"
+      },
+      "maintenanceHints": []
+    },
+    {
+      "deviceId": "vac-bosch-model-bgl75x1prq",
+      "deviceReference": "BGL75X1PRQ",
+      "market": "DE",
+      "brand": "Bosch",
+      "source": {
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGL75X1PRQ",
+        "observedAt": "2026-10-10",
+        "access": "public_oem_page",
+        "rawSourceSha256": null,
+        "independentRawAudit": false,
+        "licenceEvidenceId": null,
+        "rights": {
+          "factualUse": "review_pending",
+          "pageRedistribution": "not_granted",
+          "mediaB2c": "not_granted"
+        }
+      },
+      "technicalFacts": [
+        {
+          "key": "height",
+          "value": 275,
+          "unit": "mm",
+          "locator": "Produktmerkmale > Abmessungen H x B x T > Wert 275x320x480 mm"
+        },
+        {
+          "key": "width",
+          "value": 320,
+          "unit": "mm",
+          "locator": "Produktmerkmale > Abmessungen H x B x T > Wert 275x320x480 mm"
+        },
+        {
+          "key": "depth",
+          "value": 480,
+          "unit": "mm",
+          "locator": "Produktmerkmale > Abmessungen H x B x T > Wert 275x320x480 mm"
+        },
+        {
+          "key": "bag_capacity",
+          "value": 5,
+          "unit": "l",
+          "locator": "Produktmerkmale > Nutzbares Filterbeutel-/Behältervolumen"
+        },
+        {
+          "key": "operating_radius",
+          "value": 15,
+          "unit": "m",
+          "locator": "Produktmerkmale > Aktionsradius"
+        },
+        {
+          "key": "body_weight_excluding_external_accessories",
+          "value": 6.1,
+          "unit": "kg",
+          "locator": "Produktmerkmale > Gewicht Gerät ohne dem Saugzubehör außerhalb des Gerätekörpers"
+        }
+      ],
+      "partListings": [],
+      "supportLink": {
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGL75X1PRQ",
+        "kind": "manufacturer_product_with_document_section",
+        "locator": "Downloads/Dokumente (keine Einzel-PDF-Prüfung)"
+      },
+      "maintenanceHints": []
+    },
+    {
+      "deviceId": "vac-samsung-model-vs20c95d4tk",
+      "deviceReference": "VS20C95D4TK/WD",
+      "market": "DE",
+      "brand": "Samsung",
+      "source": {
+        "url": "https://www.samsung.com/de/vacuum-cleaners/stick/vs9500al-stick-more-advance-cleaning-performance-hexajet-motor-jet-cyclone-black-vs20c95d4tk-wd/",
+        "observedAt": "2026-10-10",
+        "access": "public_oem_page",
+        "rawSourceSha256": null,
+        "independentRawAudit": false,
+        "licenceEvidenceId": null,
+        "rights": {
+          "factualUse": "review_pending",
+          "pageRedistribution": "not_granted",
+          "mediaB2c": "not_granted"
+        }
+      },
+      "technicalFacts": [
+        {
+          "key": "net_weight",
+          "value": 2.51,
+          "unit": "kg",
+          "locator": "Technische Daten > Gewicht (netto)"
+        },
+        {
+          "key": "body_height",
+          "value": 930,
+          "unit": "mm",
+          "locator": "Technische Daten > Gerätehöhe"
+        },
+        {
+          "key": "body_width",
+          "value": 250,
+          "unit": "mm",
+          "locator": "Technische Daten > Gerätebreite"
+        },
+        {
+          "key": "body_depth",
+          "value": 202,
+          "unit": "mm",
+          "locator": "Technische Daten > Gerätetiefe"
+        }
+      ],
+      "partListings": [],
+      "supportLink": {
+        "url": "https://www.samsung.com/de/vacuum-cleaners/stick/vs9500al-stick-more-advance-cleaning-performance-hexajet-motor-jet-cyclone-black-vs20c95d4tk-wd/",
+        "kind": "manufacturer_product_with_document_section",
+        "locator": "Downloads/Dokumente (keine Einzel-PDF-Prüfung)"
+      },
+      "maintenanceHints": []
+    },
+    {
+      "deviceId": "vac-hoover-model-hf202p011",
+      "deviceReference": "HF202P 011",
+      "market": "DE",
+      "brand": "Hoover",
+      "source": {
+        "url": "https://www.hoover-home.com/de_DE/akkusauger/39401035/hf202p-011/",
+        "observedAt": "2026-10-10",
+        "access": "public_oem_page",
+        "rawSourceSha256": null,
+        "independentRawAudit": false,
+        "licenceEvidenceId": null,
+        "rights": {
+          "factualUse": "review_pending",
+          "pageRedistribution": "not_granted",
+          "mediaB2c": "not_granted"
+        }
+      },
+      "technicalFacts": [
+        {
+          "key": "rated_voltage",
+          "value": 14.4,
+          "unit": "V",
+          "locator": "Technische Merkmale > Technische Merkmale > Spannung"
+        },
+        {
+          "key": "rated_power",
+          "value": 165,
+          "unit": "W",
+          "locator": "Technische Merkmale > Technische Merkmale > Leistung (W)"
+        },
+        {
+          "key": "maximum_runtime",
+          "value": 80,
+          "unit": "min",
+          "locator": "Technische Merkmale > Laufzeit (bis zu)",
+          "qualifier": "Herstellerwert nur unter geeigneten Betriebsbedingungen"
+        },
+        {
+          "key": "handheld_weight",
+          "value": 1.3,
+          "unit": "kg",
+          "locator": "Ultraleichte Reinigung > Handgeräte-Modus",
+          "qualifier": "nicht das komplette Gerätegewicht"
+        },
+        {
+          "key": "dust_capacity_equivalent",
+          "value": 1,
+          "unit": "l",
+          "locator": "ULTRA COMPACT X3 > bis zu 1 Liter",
+          "qualifier": "äquivalentes verdichtetes Volumen; nicht physisches Bruttovolumen"
+        }
+      ],
+      "partListings": [],
+      "supportLink": {
+        "url": "https://www.hoover-home.com/de_DE/akkusauger/39401035/hf202p-011/",
+        "kind": "manufacturer_product_with_document_section",
+        "locator": "Downloads/Dokumente (keine Einzel-PDF-Prüfung)"
+      },
+      "maintenanceHints": [
+        {
+          "kind": "maintenance_observation_only",
+          "topic": "Bodendüse/Anti-Twist",
+          "locator": "Produktdarstellung > Kein Verheddern von Haaren",
+          "summary": "OEM beschreibt ein zum Reinigen öffnungsfähiges Fenster der Bodendüse; kein bestätigter Demontageablauf.",
+          "instructionsProvided": false,
+          "toolsVerified": false
+        }
+      ]
+    },
+    {
+      "deviceId": "vac-dyson-model-369535-01",
+      "deviceReference": "369535-01",
+      "market": "DE",
+      "brand": "Dyson",
+      "source": {
+        "url": "https://www.dyson.de/support/journey/replacement-parts/search.369535-01",
+        "observedAt": "2026-10-10",
+        "access": "public_oem_page",
+        "rawSourceSha256": null,
+        "independentRawAudit": false,
+        "licenceEvidenceId": null,
+        "rights": {
+          "factualUse": "review_pending",
+          "pageRedistribution": "not_granted",
+          "mediaB2c": "not_granted"
+        }
+      },
+      "technicalFacts": [],
+      "partListings": [
+        {
+          "partId": "dyson-part-971634-01",
+          "partCode": "971634-01",
+          "designation": "Slim Fluffy Bürstenleiste",
+          "locator": "Ersatzteile und Zubehör > Slim Fluffy Bürstenleiste > Teil Nr. 971634-01",
+          "listingType": "oem_device_parts_index",
+          "fitment": "unconfirmed"
+        },
+        {
+          "partId": "dyson-part-970938-01",
+          "partCode": "970938-01",
+          "designation": "Dyson V11™, V15™, Outsize™ Akku",
+          "locator": "Ersatzteile und Zubehör > Dyson V11™, V15™, Outsize™ Akku > Teil Nr. 970938-01",
+          "listingType": "oem_device_parts_index",
+          "fitment": "unconfirmed"
+        }
+      ],
+      "supportLink": {
+        "url": "https://www.dyson.de/support/journey/replacement-parts/search.369535-01",
+        "kind": "manufacturer_support_parts_index",
+        "locator": "Ersatzteile und Zubehör"
+      },
+      "maintenanceHints": []
+    }
+  ]
+}
