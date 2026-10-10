@@ -1,0 +1,70 @@
+name: Owner preflight golden regeneration after reviewed source SHA changes (blocked-only)
+on:
+  push:
+    branches: [integration/consumer-catalog-live-count-owner]
+    paths:
+      - 'integrations/consumer-launch-preflight-wave6/source-lock.json'
+      - '.github/workflows/owner-legal-baseline-review.yml'
+permissions:
+  contents: write
+jobs:
+  review-and-rebuild:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Rebuild only the locked, demonstrably blocked baseline report
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$GITHUB_REF_NAME" = integration/consumer-catalog-live-count-owner
+          python3 - <<'PY'
+          import pathlib,json,sys
+          d=pathlib.Path('integrations/consumer-launch-preflight-wave6')
+          sys.path.insert(0,str(d.resolve()))
+          import preflight as p
+          groups,errors=p.sources(p.ROOT)
+          assert errors==[],errors
+          data=p.inventory(groups)
+          lock=json.loads((d/'source-lock.json').read_text())
+          assert set(lock)=={'checkpoint','consumer'},'Unexpected lock structure'
+          for group in ('checkpoint','consumer'):
+            assert data[group]['files']==lock[group],'Unreviewed source file drift: '+group
+          reports=[]
+          for mode in p.MODES:
+            report=p.evaluate(data,errors,mode,{},lock)
+            assert report['overall']=='BLOCKED' and report['launchApproved'] is False and report['commercialApproved'] is False
+            assert next(v['status'] for v in report['checks'] if v['id']=='source-identity')=='PASS'
+            assert next(v['status'] for v in report['checks'] if v['id']=='human-release')=='BLOCKED'
+            assert all(next(v['status'] for v in report['checks'] if v['id']==name)=='BLOCKED' for name in ('operator','privacy','rights','hosting'))
+            reports.append(report)
+          (d/'baseline-report.json').write_text(json.dumps(reports[0],indent=2,sort_keys=True)+'\n')
+          print('Manually-reviewed five consumer SHA changes match bytes, sourceIdentity PASS, launchApproved FALSE for all three modes')
+          PY
+      - name: Run all 16 legal-preflight unit and mutation tests
+        run: python3 -B -m unittest discover -s integrations/consumer-launch-preflight-wave6 -p test_preflight.py -v
+      - name: Verify CLI always exits blocked for every mode
+        shell: bash
+        run: |
+          set -euo pipefail
+          for mode in free-readonly affiliate b2b-saas; do
+            set +e
+            python3 integrations/consumer-launch-preflight-wave6/preflight.py --mode "$mode" --json > "$RUNNER_TEMP/$mode.json"
+            code=$?
+            set -e
+            test "$code" -eq 2
+            python3 -c 'import json,sys;x=json.load(open(sys.argv[1]));assert x["launchApproved"] is False and x["commercialApproved"] is False and x["overall"]=="BLOCKED"' "$RUNNER_TEMP/$mode.json"
+          done
+      - name: Commit only generated non-PII golden; leave launch blocked
+        shell: bash
+        run: |
+          set -euo pipefail
+          git add -- integrations/consumer-launch-preflight-wave6/baseline-report.json
+          if ! git diff --cached --quiet; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "test(preflight): reproducible new reviewed source baseline remains blocked [skip ci]"
+            git push origin HEAD:refs/heads/integration/consumer-catalog-live-count-owner
+          fi
