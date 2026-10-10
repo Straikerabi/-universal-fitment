@@ -2,6 +2,7 @@
 import {readFileSync,writeFileSync} from 'node:fs';
 import {fileURLToPath} from 'node:url';
 import {performance} from 'node:perf_hooks';
+import {createHash} from 'node:crypto';
 import {catalogSnapshot} from '../consumer-repair-mission-poc/catalog-snapshot.mjs';
 import {generateSyntheticFixtures} from './fixtures.mjs';
 export const manifest=JSON.parse(readFileSync(new URL('./source-candidates.json',import.meta.url),'utf8'));
@@ -32,9 +33,31 @@ export function stageFromEvidence(r){
   req(e.independentIdentityReview===null&&e.rightsReview===null&&e.fitmentReview===null,"Cannot skip raw-source stage");
   return "candidate_observed";
  }
- req(e.originalBytesArchive?.rawBytesSha256&&e.originalBytesArchive?.archiveLocalPath,"Original raw bytes unavailable");
- // Real archive SHA verification must be introduced before raising this research-only gate.
- throw Error("Archive replay and independent review are not installed in this read-only research pilot");
+ throw Error("Original-byte replay and Owner review unavailable in private research pilot");
+}
+// Educational synthetic-only proof-chain exercise: never promotes real OEM entries.
+export function simulateEvidenceStages(r,proof){
+ if(proof===null)return {stage:"candidate_observed",simulationOnly:true,consumerApproved:false};
+ req(proof&&proof.simulationOnly===true,"Only synthetic proof simulation permitted");
+ const a=proof.archive;
+ req(a&&a.syntheticBytes instanceof Uint8Array&&a.syntheticBytes.byteLength>0,"No synthetic archived bytes");
+ req(a.declaredSha256===createHash("sha256").update(a.syntheticBytes).digest("hex"),"Archived-byte SHA mismatch");
+ req(a.exactSourceUrl===r.source.url&&a.capturedBy,"Exact OEM-reference binding missing");
+ let stage="original_bytes_archived";
+ const i=proof.independentReview;
+ if(!i){req(!proof.rightsReview&&!proof.fitmentReview,"No stage skip before independent audit");return {stage,simulationOnly:true,consumerApproved:false};}
+ req(i.auditor&&i.auditor!==a.capturedBy&&i.sha256===a.declaredSha256&&i.exactVariantKey===keyOf(r)&&i.identityResult==="verified","Independent identity witness missing");
+ stage="identity_independently_verified";
+ const rights=proof.rightsReview;
+ if(!rights){req(!proof.fitmentReview,"No fitment without independent rights review");return {stage,simulationOnly:true,consumerApproved:false};}
+ req(rights.contractId&&rights.reviewedBy&&rights.reviewedBy!==a.capturedBy&&rights.commercialUse==="approved"&&rights.mediaUse==="approved","Independent rights review or contract missing");
+ stage="rights_reviewed";
+ const fit=proof.fitmentReview;
+ if(fit){
+  req(fit.physicalTest==="verified"&&fit.partCode&&fit.serialOrRevisionScope&&fit.safetyReviewer&&fit.technicalEvidenceId,"Physical test or safety evidence missing");
+  stage="fitment_verified";
+ }
+ return {stage,simulationOnly:true,consumerApproved:false};
 }
 
 export function checkCandidate(r){
@@ -166,7 +189,7 @@ export function markdown(r){
   "`node --test integrations/catalog-batch-ingestion-wave11/ingest.test.mjs`",""
  ].join("\n");
 }
-if(process.argv[1]&&fileURLToPath(import.meta.url)===new URL(import.meta.url).pathname){
+if(process.argv[1]&&fileURLToPath(import.meta.url)===process.argv[1]){
  const r=batchReport(manifest,catalogSnapshot),j=JSON.stringify(r,null,2)+'\n',md=markdown(r);
  if(process.argv.includes('--check')){
   if(readFileSync(new URL('./report.json',import.meta.url),'utf8')!==j||readFileSync(new URL('./report.md',import.meta.url),'utf8')!==md)throw Error('Report stale or Owner data changed');

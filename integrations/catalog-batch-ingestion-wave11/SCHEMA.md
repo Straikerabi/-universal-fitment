@@ -11,3 +11,7 @@
 **Synthetische Lasttests:** Nur `generateSyntheticFixtures(250)` mit verpflichtendem `recordType=synthetic_load_fixture`, `fixtureOnly:true`, Herstellername `SYNTHETIC-TEST-MANUFACTURER` und `SYNTHETIC-ONLY-* ` IDs. Sie haben nie offizielle URLs und kommen nicht in `realRecords` oder in die Consumer-App. Versucht man sie als Echtzeile einzumischen, bricht der Validator ab.
 
 Einträge stammen von bereits in Owner vorhandenem Wave10-Research (8) und einzeln geprüften Miele-/Dyson-Herstellerseiten (29) am 11.10.2026. Ein Link ist kein unabhängig gesicherter Originalbytebeleg und keine Lizenz. Keiner dieser Einträge beweist eine Teilepassung.
+
+### Synthetischer Evidence-Stufen-Negativtest (keine reale Freigabe)
+
+`simulateEvidenceStages(row, fixture)` demonstriert getrennt fünf Stufen anhand **ausschließlich synthetischer** Archivbytes mit tatsächlich berechnetem SHA-256, einem unabhängig benannten (simulierten) Identitätsprüfer, einer **erkennbar fiktiven** Vertragsreferenz und einem simulierten physischen/Safety-Test. Es liefert auf allen Stufen `simulationOnly:true, consumerApproved:false`. Die reale `checkCandidate()`-Pipeline lehnt jede vorgetäuschte Rohbyte-/Lizenz-/Teilefreigabe weiterhin ab. Ein echtes Archiv-/Unterschriften-/Lizenzreview ist erst nach Owner-Entscheidung anzuschließen.

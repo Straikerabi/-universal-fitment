@@ -1,9 +1,10 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {performance} from 'node:perf_hooks';
+import {createHash} from 'node:crypto';
 import {catalogSnapshot} from '../consumer-repair-mission-poc/catalog-snapshot.mjs';
 import {generateSyntheticFixtures} from './fixtures.mjs';
-import {manifest,validateBatch,checkCandidate,keyOf,stageFromEvidence,ingestSynthetic,batchReport,markdown} from './ingest.mjs';
+import {manifest,validateBatch,checkCandidate,keyOf,stageFromEvidence,simulateEvidenceStages,ingestSynthetic,batchReport,markdown} from './ingest.mjs';
 const cp=x=>structuredClone(x);
 const fail=f=>{const d=cp(manifest);f(d);return ()=>validateBatch(d,catalogSnapshot)};
 const by=(d,brand)=>d.realRecords.find(x=>x.brand===brand);
@@ -25,3 +26,26 @@ test('synthetic duplicate, swapped test tag, fake source, invented license rejec
 test('minimum synthetic 100 enforced and maximum bounded',()=>{assert.throws(()=>generateSyntheticFixtures(99));assert.throws(()=>generateSyntheticFixtures(20001));assert.equal(ingestSynthetic(generateSyntheticFixtures(100)).processed,100)});
 test('real pilot bounded 50, zero hypothetical overfill',()=>{assert.throws(fail(d=>{for(let i=0;i<20;i++){const c=cp(d.realRecords[0]);c.id='W11-9'+i;d.realRecords.push(c)}}),/50-item/)});
 test('report JSON and markdown deterministic, launch false',()=>{const a=batchReport(manifest,catalogSnapshot),b=batchReport(manifest,catalogSnapshot);assert.deepEqual(a,b);assert.ok(markdown(a).includes('## Echte und synthetische Counts'));assert.equal(a.gates.consumerPublished,false)});
+
+test('synthetic SHA256 -> independent audit -> rights -> physical review has five distinct stages, never actual approval',()=>{
+ const row=manifest.realRecords[0];
+ const bytes=Buffer.from('SYNTHETIC_TEST_BYTES_NOT_AN_OEM_ARCHIVE');
+ const digest=createHash('sha256').update(bytes).digest('hex');
+ const archive={syntheticBytes:bytes,declaredSha256:digest,exactSourceUrl:row.source.url,capturedBy:'fixture-capturer'};
+ const base={simulationOnly:true,archive};
+ assert.equal(simulateEvidenceStages(row,null).stage,'candidate_observed');
+ assert.equal(simulateEvidenceStages(row,base).stage,'original_bytes_archived');
+ const independentReview={auditor:'separate-test-reviewer',sha256:digest,exactVariantKey:keyOf(row),identityResult:'verified'};
+ assert.equal(simulateEvidenceStages(row,{...base,independentReview}).stage,'identity_independently_verified');
+ const rightsReview={contractId:'SYNTHETIC-NOT-A-LEGAL-LICENCE',reviewedBy:'second-test-reviewer',commercialUse:'approved',mediaUse:'approved'};
+ assert.equal(simulateEvidenceStages(row,{...base,independentReview,rightsReview}).stage,'rights_reviewed');
+ const fitmentReview={physicalTest:'verified',partCode:'SYNTHETIC-PART',serialOrRevisionScope:'SYNTHETIC-SCOPE',safetyReviewer:'test-safety',technicalEvidenceId:'SYNTHETIC-TEST-EVIDENCE'};
+ const result=simulateEvidenceStages(row,{...base,independentReview,rightsReview,fitmentReview});
+ assert.equal(result.stage,'fitment_verified');assert.equal(result.simulationOnly,true);assert.equal(result.consumerApproved,false);
+ assert.equal(row.evidenceStage,'candidate_observed');
+ assert.throws(()=>simulateEvidenceStages(row,{...base,archive:{...archive,declaredSha256:'invented'}}),/SHA mismatch/);
+ assert.throws(()=>simulateEvidenceStages(row,{...base,independentReview:{...independentReview,auditor:'fixture-capturer'}}),/Independent/);
+ assert.throws(()=>simulateEvidenceStages(row,{...base,rightsReview}),/stage skip/);
+ assert.throws(()=>simulateEvidenceStages(row,{...base,independentReview,fitmentReview}),/No fitment/);
+ assert.throws(()=>simulateEvidenceStages(row,{...base,independentReview,rightsReview,fitmentReview:{...fitmentReview,technicalEvidenceId:''}}),/Physical/);
+});
