@@ -19,8 +19,11 @@
 - **.de** laut [DENIC RDAP-Doku](https://www.denic.de/service/whois-service/rdap-service): `https://rdap.denic.de/domain/<name>.de`, HTTP 200 registriert, 404 bei Abfrage nicht registriert; dieser Dienst hat keine zugesicherten Service Levels.
 - **.com** laut [Verisign RDAP-Dokumentation](https://www.verisign.com/news-insights/registration-data-access-protocol/help/): `https://rdap.verisign.com/com/v1/domain/<name>.com`.
 - Read-only HEAD-Requests über `domain-probe.mjs` in GitHub Actions; bei 403/429/Timeout unbekannt, keine falsche Frei-Behauptung. Auch 404 ist **kein** Markenschutz-, Registrierbarkeits-, Preis- oder App-Store-Versprechen.
-- Jeder Prüfungslauf dokumentiert UTC-Zeit und Host-/HTTP-Code im CI-Log. Echtzeitdaten werden **nicht** dauerhaft nachgehalten, bis die Logresultate transparent in einen Review-Snapshot übertragen werden.
+- Jeder Prüfungslauf dokumentiert UTC-Zeit und Host-/HTTP-Code im CI-Log. Die tatsächlich gemessenen fünf×zwei Ergebnisse **wurden aus dem originalen CI-Log** in `candidates.json` als versionierter Review-Snapshot übertragen (je URL, UTC, HTTP 200/404, Status), ohne einen Kauf oder Markenrecht zu bestätigen.
 - Keine neuen Domains besucht, registriert oder gekauft; Registry-Abfragen stellen keine Nutzer- oder Lead-Verarbeitung dar.
 
 ## Nicht vom Marketing zu tun
 **QA/Recht #108** bearbeitet die kollisionsrelevanten Detailfragen einschließlich Nizza-Klassen, DPMA/EUIPO/WIPO, Firmennamen, Stores, Ähnlichkeit nach Schrift/Klang/Sinn und erforderlichen Lizenzen. Marketing gibt keine juristische Entscheidung, keine Markeneintragung und keine Domainkaufempfehlung als bereits freigegeben aus.
+
+## Gemessener Erstlauf (UTC 2026-10-10T23:30:19Z)
+GitHub [Run #38095246015](https://github.com/Straikerabi/-universal-fitment/actions/runs/38095246015), echter Node-22-Job: DENIC **5× HTTP 404**; Verisign **3× HTTP 404** (nolvanta.com, varidaro.com, partidra.com) und **2× HTTP 200** (varunexa.com, modantra.com). Registry-Berichte sind zeitabhängige technische Abfragen, **keine rechtsverbindliche Marken-, Shop- oder Domainfreigabe**. Der Browser-Webindex war nur eine begrenzte Vorprüfung, weder DPMAregister noch WIPO oder EUIPO wurden vollständig durch Marketing gecleart.

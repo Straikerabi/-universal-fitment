@@ -9,7 +9,7 @@
 - Langfristig kostenlose Consumer-Software und mögliche professionelle B2B-Plattform für viele Gerätetypen; **nicht** nur Staubsauger oder KFZ im Markennamen verankern. 200 Kategorien sind Planung, keine nutzbaren Produkte.
 
 ## Dateien
-- `candidates.json`: 25 jeweils hergeleitete Kunstnamen, Herkunft, DE-/EN-Aussprache, rationale Marketing-Risiken, 5 gewichtete Kriterien; 5 markierte Favoriten mit Rank 1–5. Je Kandidat Datenlage zu Domain/Marken/App Store offen bzw. explizit protokolliert.
+- `candidates.json`: 25 jeweils hergeleitete Kunstnamen, Herkunft, DE-/EN-Aussprache, rationale Marketing-Risiken, 5 gewichtete Kriterien; 5 markierte Favoriten mit Rank 1–5. Je Kandidat ist der Domain-/Marken-/App-Store-Status separat dokumentiert: **für die fünf Favoriten je .de/.com echter RDAP-HEAD-Snapshot vom 11.10.2026, für übrige Kandidaten unknown**. Auch HTTP 404 bedeutet nur momentan nicht registriert; kein Kaufrecht.
 - `SHORTLIST.md`: Priorisierung und Anwendungstest als Markenfamilie, ohne endgültige Entscheidung.
 - `RESEARCH.md`: konkrete Links zu bereits entdeckten Namenskollisionen, seriöse Such-/RDAP-Methodik und Suchdatum.
 - `domain-probe.mjs`: optionaler read-only, timeoutbegrenzter **Registry-HEAD**-Check für 5× .de und .com. Zeigt UTC-Datum, HTTP-Code und eindeutigen Status. **404 ist Momentaufnahme „nicht registriert bei Check“, niemals Rechtefreigabe**; Timeout/403/429 = unknown. Der Workflow nutzt nur diesen technischen Probe-Output in Logs.
@@ -30,4 +30,6 @@ node docs/branding/wave12/validate.mjs
 node --test docs/branding/wave12/validate.test.mjs
 node docs/branding/wave12/domain-probe.mjs
 ```
+**Erste native CI:** [GitHub Actions #38095246015](https://github.com/Straikerabi/-universal-fitment/actions/runs/38095246015) auf Commit `7f870ddf7a3dd165392c37b26564be5253bf5257`: **26/26** Node-Tests (inkl. 25 Negativfälle), 0 FAIL, 0 SKIP; 10/10 RDAP-Anfragen beantwortet mit 5×.de 404, 3×.com 404, 2×.com 200. Spätere Commit-Heads erfordern erneute CI.
+
 Ein positives Naming-/CI-Ergebnis ist **kein** rechtliches Go; private Marketing-Dokumentation darf ohne Produktfreigabe nicht in App-/Store-/Pressemetadaten übernommen werden.

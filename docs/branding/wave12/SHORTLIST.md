@@ -22,6 +22,19 @@
 
 Die Formulierungen sind **keine bestehenden App-Funktionen, Editionen, Produkte, Verträge oder freigegebenen Marken**. Keinen Slogan, Domainnamen oder Subbrand extern verwenden, bis alle Rechte und echten Produktleistungen geprüft sind.
 
+## Gemessener .de/.com-RDAP-Snapshot – 11.10.2026, 01:30 Uhr CEST
+**Offizielle DENIC-/Verisign-HEAD-Abfragen in [GitHub-CI 38095246015](https://github.com/Straikerabi/-universal-fitment/actions/runs/38095246015), Zeitstempel und HTTP-Status maschinenlesbar in `candidates.json`.** Ein HTTP-404 bedeutet nur **„zum Abfragezeitpunkt nicht registriert“**; nicht automatisch kaufbar, frei von Verwechslungsrechten oder als App-Name zulässig.
+
+| Name | .de | .com | Marketing-Konsequenz |
+| --- | --- | --- | --- |
+| Nolvanta | 404 – damals nicht registriert | 404 – damals nicht registriert | stärkste technische Domain-Ausgangslage dieser fünf; Rechtsprüfung zwingend |
+| Varunexa | 404 – damals nicht registriert | **200 – registriert** | eingeschränkte .com-Perspektive; nur bedingt priorisieren |
+| Varidaro | 404 – damals nicht registriert | 404 – damals nicht registriert | technische Domain-Ausgangslage günstig, Rechtsprüfung offen |
+| Modantra | 404 – damals nicht registriert | **200 – registriert** | eingeschränkte .com-Perspektive; nur bedingt priorisieren |
+| Partidra | 404 – damals nicht registriert | 404 – damals nicht registriert | technische Domain-Ausgangslage günstig, Rechtsprüfung offen |
+
+**Reihenfolge der juristischen Vertiefung:** zunächst Nolvanta / Varidaro / Partidra; Varunexa / Modantra nur dann weiterverfolgen, wenn Eigentümer die bereits registrierten .com-Namen als akzeptables Markenrisiko bewertet. Die fünf kreativen Punktwerte oben bleiben unveränderte **Pre-RDAP-Marketing-Bewertungen**, keine kombinierte Domain-/Rechtsscorecard. Die finale Auswahl wird durch #108 und Owner getroffen.
+
 ## Reihenfolge der externen Prüfung
 1. DPMAregister, EUIPO/TMview und WIPO auch mit Varianten und Lautähnlichkeiten durchsuchen, nicht nur identische Schreibweise (v.a. Klassen 9, 35, 42 als juristisch zu prüfende Hypothesen).
 2. Firmen-/Geschäftsbezeichnungen, EU-/Weltmärkte und offizielle App-Store-Suche; orthographische, klangliche und semantische Verwechslungen dokumentieren.
