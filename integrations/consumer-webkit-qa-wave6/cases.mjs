@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import {VIEWPORTS,WIDTHS,CASE_IDS} from './policy.mjs';
 import {fresh,real,assembly,review,demo,noPurchase,reflow,fiveSteps,passport,offline,catalogSnapshot,realId} from './browser-helpers.mjs';
 import {cacheName,assetPaths} from '../consumer-repair-mission-poc/offline-config.mjs';
+import {expectedAssetHashes} from './verify-source.mjs';
 export function browserCases(){
  const cases=[];
  for(const viewport of VIEWPORTS)cases.push({id:'viewport-'+viewport.id,viewport,run:async t=>{
@@ -168,6 +169,14 @@ export function browserCases(){
   await t.phase('cache-ready',()=>t.page.waitForFunction(()=>document.querySelector('#connectionStatus').textContent.includes('gespeichert')));
   const before=await t.page.evaluate(async cacheName=>(await (await caches.open(cacheName)).keys()).map(r=>new URL(r.url).pathname),cacheName);
   assert.deepEqual(before.sort(),[...assetPaths].sort());
+  const cacheHashes=await t.phase('cache-source-bytes',()=>t.page.evaluate(async name=>{
+   const cache=await caches.open(name),rows=await Promise.all((await cache.keys()).map(async request=>{
+    const bytes=await (await cache.match(request)).arrayBuffer();
+    const digest=await crypto.subtle.digest('SHA-256',bytes);
+    return [new URL(request.url).pathname,[...new Uint8Array(digest)].map(x=>x.toString(16).padStart(2,'0')).join('')];
+   }));return Object.fromEntries(rows);
+  },cacheName));
+  assert.deepEqual(cacheHashes,expectedAssetHashes(),'Cached bytes must be the actual regenerated source assets');
   await real(t.page,t.base);await review(t.page);await t.page.locator('[data-part]').first().check();await t.page.locator('main [data-step="5"]').click();
   const signals=await offline(t.context,t.page);await t.phase('offline-reload',async()=>{await t.page.reload({waitUntil:'domcontentloaded'});await t.page.locator('[data-done]').first().waitFor();});
   assert.match(await t.page.locator('#connectionStatus').innerText(),/Offline.*gespeicherte Vorschau/);
@@ -182,7 +191,8 @@ export function browserCases(){
   await t.phase('cache-delete',async()=>{await t.page.locator('#eraseOffline').click();await t.page.waitForFunction(()=>document.querySelector('#feedback').textContent.includes('Offline-Vorschau entfernt'));});
   const remaining=await t.page.evaluate(()=>caches.keys());assert.equal(remaining.filter(k=>k.startsWith('uf-consumer-mobile-wave4-')).length,0);
   assert.match(await t.page.locator('.check-summary').innerText(),/Passung bleibt unbestätigt/);
-  return {cacheName,cachePaths:before.length,staleWarmMissionRefused:true,offlinePassportChecksumVerified:true,notesSurviveCacheDeletion:true,...signals};
+  return {cacheName,cachePaths:before.length,cacheSourceBytesMatched:true,cacheSourceHashCount:Object.keys(cacheHashes).length,
+   staleWarmMissionRefused:true,offlinePassportChecksumVerified:true,notesSurviveCacheDeletion:true,...signals};
  },{serviceWorkers:'allow',viewport:{width:390,height:844}});
  add('blocked-offline',async t=>{
   await real(t.page,t.base);const signals=await offline(t.context,t.page);

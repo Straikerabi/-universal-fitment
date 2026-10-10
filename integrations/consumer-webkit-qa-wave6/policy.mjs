@@ -1,11 +1,15 @@
 export const BASE_COMMIT='456c8b8936617f5275d8d1ccfc29601d559cac89';
 export const BRANCH='work/wave6-consumer-webkit-qa';
 export const TARGET='integration/private-unified-preview-wave5-owner';
-export const PLAYWRIGHT_VERSION='1.62.1';
+export const PLAYWRIGHT_VERSION='1.64.0';
 export const ENGINES=Object.freeze(['chromium','webkit']);
 export const ROOT_PATH='integrations/consumer-webkit-qa-wave6/';
 export const WORKFLOW='.github/workflows/consumer-webkit-qa-wave6.yml';
 export const allowedPath=path=>path.startsWith(ROOT_PATH)||path===WORKFLOW;
+// #81 expressly permits only minimal Consumer fixes, not catalog/core/snapshot edits.
+export const OWNER_DELTA_PATHS=Object.freeze(['styles.css','prepare-offline.mjs','offline-config.mjs']
+ .map(file=>'integrations/consumer-repair-mission-poc/'+file));
+export const allowedChange=path=>allowedPath(path)||OWNER_DELTA_PATHS.includes(path);
 export const VIEWPORTS=Object.freeze([
  {id:'320-portrait',width:320,height:740},{id:'320-landscape',width:740,height:320},
  {id:'375-portrait',width:375,height:812},{id:'375-landscape',width:812,height:375},
@@ -34,6 +38,11 @@ export function summarize(report){
     !/^[a-f0-9]{64}$/.test(report?.scopeProof?.protectedTreeEntriesSha256||'')||
     report?.scopeProof?.protectedTreeEntriesSha256!==report?.scopeProof?.afterProtectedTreeEntriesSha256)problems.push('scope-digest-missing-or-changed');
  if(report?.fatalError||report?.scopeError)problems.push('fatal-or-scope-error');
+ if(report?.scopeProof?.ownerIssue!==81||!Array.isArray(report?.scopeProof?.authorizedDelta)||
+    !/^[a-f0-9]{64}$/.test(report?.scopeProof?.sourceBytesDigest||'')||
+    report?.scopeProof?.sourceBytesDigest!==report?.scopeProof?.afterSourceBytesDigest)problems.push('owner-delta-or-source-bytes-not-proved');
+ if(report?.servedSourceProof?.manifestByteIdentical!==true||!Array.isArray(report?.servedSourceProof?.assets)||report.servedSourceProof.assets.length<18||
+    !/^[a-f0-9]{64}$/.test(report?.servedSourceProof?.digest||''))problems.push('served-source-bytes-not-proved');
  if(!/^[a-f0-9]{64}$/.test(report?.suiteProof?.digest||'')||report?.suiteProof?.digest!==report?.suiteProof?.afterDigest)problems.push('suite-changed-or-unrecorded');
  const rows=Array.isArray(report?.cases)?report.cases:[];
  const required=ENGINES.flatMap(e=>CASE_IDS.map(id=>e+':'+id));

@@ -37,6 +37,8 @@ jobs:
           set -euo pipefail
           npm test --prefix integrations/consumer-webkit-qa-wave6
           npm run check --prefix integrations/consumer-webkit-qa-wave6
+          npm test --prefix integrations/consumer-repair-mission-poc
+          npm run offline:check --prefix integrations/consumer-repair-mission-poc
       - name: Install the two pinned browser bundles and Ubuntu runtime dependencies
         id: browsers
         run: node integrations/consumer-webkit-qa-wave6/node_modules/playwright/cli.js install --with-deps chromium webkit

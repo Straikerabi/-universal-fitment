@@ -6,6 +6,7 @@ import {BASE_COMMIT,BRANCH,TARGET,PLAYWRIGHT_VERSION,ENGINES,CASE_IDS,summarize}
 import {here,scopeProof,git,suiteFingerprint} from './scope.mjs';
 import {loadPlaywright} from './runtime.mjs';
 import {browserCases} from './cases.mjs';
+import {verifyServedSource} from './verify-source.mjs';
 const startedAt=new Date().toISOString(),output=path.join(here,'artifacts/latest');
 await mkdir(output,{recursive:true});
 const report={schema:'uf.consumer-browser-gate/1',baseCommit:BASE_COMMIT,branch:BRANCH,target:TARGET,
@@ -27,6 +28,7 @@ try{
  }catch(error){startupError=error;}
  server=createPreviewServer();await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
  const base='http://127.0.0.1:'+server.address().port+'/';
+ report.servedSourceProof=await verifyServedSource(base);
  const definitions=browserCases();
  for(const engine of ENGINES){
   if(!requested.includes(engine)){
@@ -98,6 +100,7 @@ try{
     row.measurements=await definition.run({context,page,base,shot,textArtifact,phase});
     assert.deepEqual(row.externalRequests,[],'External network attempted');assert.deepEqual(row.runtimeErrors,[],'Browser runtime errors');
     row.status='passed';console.log('PASS '+engine+' '+definition.id);
+    if(definition.id==='warm-offline')console.log('OFFLINE-PROOF '+JSON.stringify({engine,phases:row.phases,measurements:row.measurements}));
    }catch(error){
     row.status='failed';row.reason=scrub(error.message);
     console.error('FAIL '+engine+' '+definition.id+': '+row.reason.slice(0,500));
@@ -116,10 +119,15 @@ finally{
  for(const browser of Object.values(browsers))await browser.close().catch(()=>{});
  if(server)await new Promise(resolve=>server.close(resolve));
  try{const after=scopeProof();report.scopeProof={...report.scopeProof,afterUnchanged:true,
-  afterProtectedTreeEntriesSha256:after.protectedTreeEntriesSha256};}
+  afterProtectedTreeEntriesSha256:after.protectedTreeEntriesSha256,afterSourceBytesDigest:after.sourceBytesDigest};}
  catch(error){report.scopeProof={...report.scopeProof,afterUnchanged:false};report.scopeError=scrub(error.message);}
  report.suiteProof.afterDigest=suiteFingerprint().digest;
  report.finishedAt=new Date().toISOString();report.gate=summarize(report);
+ console.log('SOURCE-PROOF '+JSON.stringify({testedCommit:report.testedCommit,suiteProof:report.suiteProof,
+  protectedFiles:report.scopeProof?.protectedFiles,ownerDelta:report.scopeProof?.authorizedDelta,
+  sourceBytesDigest:report.scopeProof?.sourceBytesDigest,afterSourceBytesDigest:report.scopeProof?.afterSourceBytesDigest,
+  servedSourceProof:report.servedSourceProof}));
  await writeFile(path.join(output,'results.json'),JSON.stringify(report,null,2)+'\n');
+ console.log('REPORT-PROOF '+JSON.stringify(report));
  console.log(JSON.stringify(report.gate));process.exitCode=report.gate.automatedGatePassed?0:1;
 }

@@ -335,6 +335,9 @@ small {
   margin-bottom:7px;
   font-weight:650
 }
+.search-row .field-label {
+  overflow-wrap:anywhere
+}
 .field-help {
   font-size:.77rem;
   line-height:1.6;
@@ -622,6 +625,8 @@ small {
   flex:none
 }
 .orientation p {
+  min-width:0;
+  overflow-wrap:anywhere;
   font-size:.8rem;
   color:var(--muted);
   line-height:1.65

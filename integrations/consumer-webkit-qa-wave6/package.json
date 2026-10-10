@@ -9,5 +9,5 @@
     "test:browser": "node run.mjs",
     "gate": "node gate.mjs artifacts/latest/results.json"
   },
-  "devDependencies": {"playwright": "1.62.1"}
+  "devDependencies": {"playwright": "1.64.0"}
 }

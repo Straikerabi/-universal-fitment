@@ -1,0 +1,23 @@
+{
+  "schema": "uf.owner-authorized-consumer-delta/1",
+  "issue": 81,
+  "authorization": "https://github.com/Straikerabi/-universal-fitment/issues/81",
+  "baseCommit": "456c8b8936617f5275d8d1ccfc29601d559cac89",
+  "files": [
+    {
+      "path": "integrations/consumer-repair-mission-poc/styles.css",
+      "beforeSha256": "4614a167dd354c59ef4e2181684e8178046fee3a08045b2d137ef6d241ed4ae1",
+      "afterSha256": "a38e64b4997f9c8f291ab599d0cd34bdb82a4b9ecdcf346d00d81a726b824012"
+    },
+    {
+      "path": "integrations/consumer-repair-mission-poc/prepare-offline.mjs",
+      "beforeSha256": "14c306b05758f54b29f0e819ec7dff8884a88585beaff34841c2d94277b503e5",
+      "afterSha256": "c7776613a342d6903624aa0437bf9e069cec43e9a4dc5d6225b2353dd448bd78"
+    },
+    {
+      "path": "integrations/consumer-repair-mission-poc/offline-config.mjs",
+      "beforeSha256": "1a39eb338762ccb32821b6233127192f0d8ef508b7fae3ebe128afb2f47a3fa2",
+      "afterSha256": "38234432fea25325c676a4aa42396fd9e2d310a826c7a69dcc29b7580b766534"
+    }
+  ]
+}

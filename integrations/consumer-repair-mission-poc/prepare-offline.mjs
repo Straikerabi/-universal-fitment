@@ -42,7 +42,10 @@ export function configSource(){
 }
 if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)){
  const check=process.argv.includes('--check');
- if(!check)assert.equal(execFileSync('git',['branch','--show-current'],{cwd:repo,encoding:'utf8'}).trim(),'work/consumer-mobile-ux-wave4');
+ if(!check){
+  const branch=execFileSync('git',['branch','--show-current'],{cwd:repo,encoding:'utf8'}).trim();
+  assert.ok(['work/consumer-mobile-ux-wave4','work/wave6-consumer-webkit-qa'].includes(branch),'Offline generation requires the original Wave4 or Owner-authorized #81 branch');
+ }
  const expected=configSource(),file=path.join(here,'offline-config.mjs');
  if(check)assert.equal(fs.readFileSync(file,'utf8'),expected,'Offline assets changed: regenerate the local config');
  else fs.writeFileSync(file,expected);
