@@ -1,6 +1,6 @@
 # Universal Fitment — Projektleitungsübergabe und Chat-Team-Betrieb
 
-**Stand:** 10. Oktober 2026 (Europa/Berlin)  
+**Stand:** 10. Oktober 2026 (Europa/Berlin), Owner Wave8 nach PR #91/#92/#94  
 **Geltung:** Koordinationsdokument. Die GitHub-Branches, Pull Requests, offenen Issues und aktuellen CI-Runs haben Vorrang vor jeder statischen Zahl in dieser Datei.  
 **Quelle der Wahrheit:** Dieses Repository, nicht einzelne Chat-Zusammenfassungen.
 
@@ -10,7 +10,7 @@ Universal Fitment wird eine zunächst kostenlose Consumer-App für das exakte Id
 
 **Keine breite Kategorie als erhältlich oder geprüft bezeichnen, solange echte Geräte-/Teile-/Rechte-/Sicherheitsdaten fehlen.** Wichtige Regulierung: Nicht alle Teile lassen sich rechtmäßig ohne spezifische Zertifizierung installieren oder handeln. Militärische und Raumfahrtkategorien sind im jetzigen Modell ausschließlich unsensitive öffentliche Referenzdaten; keine Waffen-, kontrollierte Hardware-, Export- oder Lufttüchtigkeitsfreigabe.
 
-## Rollen – maximal vier normale Chat-Bereiche plus drei Work-Ausführungsteams
+## Rollen – fünf normale Projekt-Chats plus drei Work-Ausführungsteams
 
 | Chat/Team | Verantwortung | Branch-/Dateirechte |
 | --- | --- | --- |
@@ -18,6 +18,7 @@ Universal Fitment wird eine zunächst kostenlose Consumer-App für das exakte Id
 | **Katalog & OEM** | Offizielle Quellen, vollständige Gerätetypen, Originalteilcodes, Provenienz, Datenqualität, Prüfkandidaten | Eigene `work/`- oder `research/`-Branches; nie ohne Owner auf Owner-Integration |
 | **Consumer & Design** | Suche, Filter, aufklappbare Baugruppen, Geräteansicht, responsive WebKit/iPhone, Offline/PWA, Accessibility | Eigene isolierte Branches, Änderungen an `app.mjs`, `styles.css`, Offline-Dateien nur nach Task-Scope; nicht zeitgleich mit dem Katalog-Integrator |
 | **QA, Recht & Business** | Verifizierbare Tests, Legal-/Privacy-/Hosting-Gates, B2C-Beta, spätere Commerce-/B2B-Prüfungen | Isolierte QA-/Preflight-/Business-Branches; niemals rechtliche Freigabe automatisieren |
+| **Marketing, PR & Community** | Marke, B2C-/B2B-Kommunikation, Wettbewerb, Social Media, Landing-/Pressekit-Entwürfe | Isolierte `docs/marketing/**`-Arbeit; kein Posting, Budget, Tracking, Lead-Erhebung oder externer Claim ohne Rechts-/Owner-Review |
 | **Work A/B/C** | Die drei bestehenden Work-Sitzungen bleiben Ausführungsteams für größere geschlossene Tasks | Jeder Auftrag eigene Issue-ID, isolierten Branch, explizite DoD, CI und Draft-PR gegen Owner; keine parallelen Bearbeitungen derselben Dateien |
 
 **Wichtig:** Normale Chats sind keine automatisch laufenden Hintergrundprozesse und besitzen nicht unabhängig mehr Work-Kontingent. Neue Chat-Fenster umgehen keine kontobasierten Limits. **Nicht** dieselbe Datei von mehreren Chats gleichzeitig bearbeiten. Aufgaben erst aus GitHub lesen, Work-Ergebnisse tatsächlich prüfen, Änderungen erst nach Review übernehmen.
@@ -54,16 +55,21 @@ Universal Fitment wird eine zunächst kostenlose Consumer-App für das exakte Id
 - **Issue #85:** Owner-Integration PR #84 mit WebKit-/Offline-Fixes und Source-Lock-Audit; zentrale Daten-/Integrationspriorität.
 - **Issue #86:** tiefe gerätespezifische Inhalte, Datenfelder, Reparaturhilfe, Werkzeuge, Sicherheitsinformationen und Rechte.
 - **Issue #87:** längerfristige Multi-Domänenarchitektur, keine automatische Live-Freischaltung.
-- **PR #89:** aktueller isolierter eigener Consumer-UI-Fix im Branch `integration/consumer-catalog-live-count-owner`: feste Anzeigen `11 Geräte/5 Marken/v1.29` künftig anhand des *tatsächlichen geladenen Snapshots* berechnet. **53/53 Consumer- und 6/6 Katalog-Node-Tests bestanden** auf eigenem Branch ([Run 38071757005](https://github.com/Straikerabi/-universal-fitment/actions/runs/38071757005)); neu generierte Offline-Fingerprints. **Weiter Draft:** getrennte Browser-WebKit-/Preflight-Läufe zuletzt teilweise **ROT**, finale CI und überprüfter Source-Lock noch offen. Hash-Delta-Kontrolle [38071860529](https://github.com/Straikerabi/-universal-fitment/actions/runs/38071860529) lief erfolgreich und bestätigte `BLOCKED`. Vor Übernahme Recheck/Fehlerursachen beheben; nicht still `source-lock.json` und `baseline-report.json` umschreiben.
+- **PR #89:** dynamische tatsächliche Consumer-Geräte-/Marken-/Teileanzahl, Quellenstand und frisch berechnete Offline-Fingerprints **privat integriert**; isolierte 53/53 Consumer- plus 6/6 Scorecard-Prüfungen und 66/66 Linux-Chromium/WebKit durch unabhängigen Owner-Runner bestanden. Preflight-Lock nach kontrolliertem Source-Diff für fünf Bytesätze erneut gepinnt und bewusst weiterhin `launchApproved:false`; private Owner-Regressions-CI grün. Kein Live-/Main-Merge.
+- **PR #91 (Katalog/OEM):** Forschungspässe für fünf Bestandsmarken, 21 bisher nur beobachtete Technikspezifikationswerte und streng prüfende Varianten-/Rechte-Gates als **isoliertes Staging-Modul privat integriert** (Commit `3bafbc7fd8c8da5ed6fe3bddc70eacbc0be1e035`). Unabhängiger Owner-Test `38074673954` grün; mehrere einzelne OEM-Produktseiten stichprobenartig gegengeprüft, **aber vollständiger Source-Rohbyte-Audit und kommerzielle Nutzungsrechte bleiben offen**. Keiner der Inhalte gilt automatisch als in Consumer veröffentlichbar. Realer Score 28,2 % unverändert.
+- **PR #92 (App/Design):** eigenständiger mobiler Device-Discovery-Pilot, 13/13 Isolationstests bestanden; **privat integriert**, jedoch noch **nicht** im bestehenden fünfstufigen Consumer-Ablauf eingebaut. Neues Work-B-Integrations-Issue **#95** und vorbereiteter Branch `work/wave9-consumer-discovery-owner-bridge`.
+- **PR #94 (Marketing/PR):** sieben **rein interne** `docs/marketing/**`-Entwürfe privat integriert: Marke, Konkurrenzanalyse, Marketingplan, Claim-/Medien-/Privacy-Grenzen. Keine Social-Veröffentlichung, Kampagne, Ausgabe oder Partnerschaft freigegeben.
+- **PR #93 (QA/Recht/Business):** **weiter Draft**, bislang nur Release-Gate-Markdown; Owner fordert im PR-Kommentar reproduzierbare ausführbare QA-/Negativtests und ehrliche Launch-BLOCKED-Belege statt bloßer Planung.
+- **Work A #96:** neuer isolierter Auftrag für unabhängig nachvollziehbare OEM-Quellen, wegen weiterhin fehlendem privaten ZIP zu PR #84; Branch `work/wave9-oem-independent-source-audit`. Kein stiller Import der 29.
 - **Work B #79** wurde vorher mit 66/66 Chromium/WebKit in Owner integriert, aber jede weitere Änderung an Consumer-Assets erfordert **erneute kombinierte Browserprüfung**.
 
 ## Nächste echte Arbeit (Reihenfolge)
 
-**P0 / 1: PR #89 sauber abnehmen.** Branch/CI/Source-Diffs auf aktuellem SHA inspizieren, rote Browser-/Preflight-Gates analysieren und korrekte Offline-Hash-Pins/Legal Source-Review nachweisen; nur nach Abnahme privat integrieren. **Nie durch Deaktivieren der Guards.**
+**P0 / 1: Issue #95, Work B – tatsächlich benutzbaren Consumer-Gerätefinder vereinen.** Die separat geprüfte Device-Discovery-Vorschau aus PR #92 muss in den fünfstufigen Reparaturmodus integriert werden; erst nach exakt kombinierter 66/66-WebKit/Chromium-Abnahme, neu generierten Offline-Fingerprints, unveränderten Real-Fitment-Unknowns und überprüften Source-Locks privat übernehmen.
 
-**P0 / 2: Issue #85, PR #84.** OEM-Quellenarchiv unabhängig lesen oder, falls nicht vorhanden, fehlende Quellen **explizit blockieren**. Consumer-Katalogprojektion und bestehenden WebKit/Offline-Worker konfliktfrei zusammenführen. Modell-, Teile-, Source-/Rechte-, Negative-Fitment- und Browser-Tests mit gemessenen Counts. Kein erfundener Nachweis.
+**P0 / 2: Issue #85/#96, PR #84.** OEM-Quellenarchiv unabhängig lesen oder, falls nicht vorhanden, fehlende Quellen **explizit blockieren**. Consumer-Katalogprojektion und bestehenden WebKit/Offline-Worker konfliktfrei zusammenführen. Modell-, Teile-, Source-/Rechte-, Negative-Fitment- und Browser-Tests mit gemessenen Counts. Kein erfundener Nachweis.
 
-**P1 / 3: Issue #86.** Strukturierte, modellbezogene Gerätesteckbriefe aus legal nutzbaren tatsächlichen Herstellerquellen: Varianten, Maße, technische Daten, Werkzeuge, sichere Anleitungen, Originalteile, Serien-/Revisionseinschränkungen, Bildrechte. Bei fehlenden Daten im UI als unbekannt anzeigen, nicht durch Fantasiefakten auffüllen.
+**P1 / 3: Issue #86, PR #91 research only.** Strukturierte, modellbezogene Gerätesteckbriefe aus legal nutzbaren tatsächlichen Herstellerquellen: Varianten, Maße, technische Daten, Werkzeuge, sichere Anleitungen, Originalteile, Serien-/Revisionseinschränkungen, Bildrechte. Bei fehlenden Daten im UI als unbekannt anzeigen, nicht durch Fantasiefakten auffüllen.
 
 **P1 / 4: Reale UX-/Hardware-Beta.** Physisches iPhone/Safari, Accessibility und echter Nutzerpilot; künstliche Aufgaben werden nicht als echte Nutzer gewertet.
 
@@ -79,6 +85,6 @@ Universal Fitment wird eine zunächst kostenlose Consumer-App für das exakte Id
 
 ## Führung und Wechsel des Projektleiter-Chats
 
-Beim Wechsel zuerst **diese Datei und den aktuellen GitHub-Zustand** lesen. Der neue Leitstand übernimmt danach die **alleinige Owner-Integrationsrolle**. Den vorherigen Leitstand ab dann für keine parallelen Merge-Aufträge mehr verwenden. Die drei Spezialisten-Chats und die drei vorhandenen Works können weiterhin isoliert arbeiten. Für aktuelle Arbeit stets Issues/PRs als Transferprotokoll; keine Erwartung, dass ein neuer Chat die vollständige Geschichte anderer Chats automatisch sieht.
+Beim Wechsel zuerst **diese Datei und den aktuellen GitHub-Zustand** lesen. Der neue Leitstand übernimmt danach die **alleinige Owner-Integrationsrolle**. Den vorherigen Leitstand ab dann für keine parallelen Merge-Aufträge mehr verwenden. Die vier Spezialisten-Chats und die drei vorhandenen Works können weiterhin isoliert arbeiten. Für aktuelle Arbeit stets Issues/PRs als Transferprotokoll; keine Erwartung, dass ein neuer Chat die vollständige Geschichte anderer Chats automatisch sieht.
 
-**Satz für den neuen Leitstand:** „Übernimm die Projektleitung von Universal Fitment. Lies `docs/PROJECT-LEAD-HANDOFF.md`, `integrations/private-owner-wave5/STATUS.md`, offene Issues/PRs und aktuelle CI im Repo `Straikerabi/-universal-fitment`. Koordiniere drei bestehende Work-Sitzungen und spezialisierte Chats, prüfe alle tatsächlichen Ergebnisse und führe ausschließlich sichere private Integrationen aus. Kein `main`-Merge oder Deployment. Melde Technik, Marktreife, echte Katalogabdeckung, Inhaltstiefe, positive reale Passungen, Gewerbe und Launch-Status separat. Priorisiere aktuelle PR #89, Issue #85 und #86.“ 
+**Satz für den neuen Leitstand:** „Übernimm die Projektleitung von Universal Fitment. Lies `docs/PROJECT-LEAD-HANDOFF.md`, `integrations/private-owner-wave5/STATUS.md`, offene Issues/PRs und aktuelle CI im Repo `Straikerabi/-universal-fitment`. Koordiniere drei bestehende Work-Sitzungen und spezialisierte Chats, prüfe alle tatsächlichen Ergebnisse und führe ausschließlich sichere private Integrationen aus. Kein `main`-Merge oder Deployment. Melde Technik, Marktreife, echte Katalogabdeckung, Inhaltstiefe, positive reale Passungen, Gewerbe und Launch-Status separat. Priorisiere Issue #95, den Quellenaudit #96/#85 und reale Contentschärfung #86.“ 
