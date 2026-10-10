@@ -31,7 +31,12 @@ jobs:
           lock=json.loads((d/'source-lock.json').read_text())
           assert set(lock)=={'checkpoint','consumer'},'Unexpected lock structure'
           for group in ('checkpoint','consumer'):
-            assert data[group]['files']==lock[group],'Unreviewed source file drift: '+group
+            if data[group]['files']!=lock[group]:
+              prior=lock[group]
+              now=data[group]['files']
+              print(json.dumps({'group':group,'added':sorted(set(now)-set(prior)),'removed':sorted(set(prior)-set(now)),
+                'changed':[{'path':x,'old':prior[x],'new':now[x]} for x in sorted(set(prior)&set(now)) if prior[x]!=now[x]]},indent=2))
+              raise AssertionError('Unreviewed source file drift: '+group)
           reports=[]
           for mode in p.MODES:
             report=p.evaluate(data,errors,mode,{},lock)
