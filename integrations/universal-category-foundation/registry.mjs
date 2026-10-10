@@ -2,7 +2,7 @@
  * Internal future device taxonomy. No model records, fitments, licence grants,
  * checkout, release authorization or changes to the vacuum-only v1 engine.
  */
-export const TAXONOMY_VERSION='0.3.0';
+export const TAXONOMY_VERSION='0.4.0';
 export const groups=Object.freeze([
   {id:'home-kitchen',label:'Haushalt & Küche'},
   {id:'tools-garden',label:'Elektro- & Gartengeräte'},
@@ -12,7 +12,11 @@ export const groups=Object.freeze([
   {id:'vehicles-mobility',label:'Fahrzeuge & Mobilität'},
   {id:'drones-aviation',label:'Drohnen & Flugtechnik'},
   {id:'energy-climate',label:'Energie & Gebäudetechnik'},
-  {id:'marine-outdoor',label:'Wasserfahrzeuge & Outdoor'}
+  {id:'marine-outdoor',label:'Wasserfahrzeuge & Outdoor'},
+  {id:'mechanical-building',label:'Mechanik, Bauteile & Handwerk'},
+  {id:'special-vehicles',label:'Einsatz- & Sonderfahrzeuge'},
+  {id:'civil-aviation',label:'Luftfahrt & Bodenbetrieb'},
+  {id:'space-systems',label:'Raumfahrt & Weltraumtechnik'}
 ]);
 export const identificationProfiles=Object.freeze({
   household:{
@@ -100,6 +104,16 @@ export const identificationProfiles=Object.freeze({
     variantChecks:['hull-or-engine-series','propulsion','drive-ratio','battery-pack','water-sealing','market'],
     safety:['water-electricity','propeller','water-ingress','marine-safety','qualified-personnel']
   },
+  mechanicalParts:{"requiredForCatalog":["manufacturer","partIdentity","dimensionsOrType","market","evidence"],"variantChecks":["nominal-dimensions","material","load-rating","connection-geometry","standard","revision"],"safety":["load-bearing-mechanics","qualified-installation-when-needed"]},
+  buildingFittings:{"requiredForCatalog":["manufacturer","system","partIdentity","market","evidence"],"variantChecks":["system-profile","installation-standard","handedness","material","dimensions","building-compliance"],"safety":["load-bearing-installation","fire-protection-when-applicable","water-leaks-when-applicable"]},
+  emergencyVehicle:{"requiredForCatalog":["chassisManufacturer","vehicleId","conversionBodybuilder","typeDesignation","market","evidence"],"variantChecks":["vin","chassis-variant","bodybuilder-id","equipment-package","model-year","controller-revision"],"safety":["road-safety","warning-system-rules","patient-safety-when-applicable","qualified-personnel"]},
+  aviation:{"requiredForCatalog":["manufacturer","aircraftType","aircraftSerialRange","marketOrRegistry","evidence"],"variantChecks":["type-certificate","airframe-serial-range","airworthiness-record","configuration","component-release-documents","approved-maintenance-data"],"safety":["airworthiness","flight-critical","licensed-maintenance","part-certification","qualified-personnel"]},
+  defenceReference:{"requiredForCatalog":["publicManufacturerOrOperator","publicPlatformType","publicSource","country","evidence"],"variantChecks":["public-model-designation","public-variant","public-source-rights"],"safety":["defence-export-control","controlled-technology","non-weapon-metadata-only","no-trading-or-installation"]},
+  spaceReference:{"requiredForCatalog":["publicOperatorOrManufacturer","missionOrPlatform","publicSource","country","evidence"],"variantChecks":["public-platform-model","mission-configuration","public-source-rights","export-control-screen"],"safety":["space-technology-control","export-control","no-flight-certified-or-propulsion-parts","no-trading-or-installation"]},
+  printing:{"requiredForCatalog":["manufacturer","model","hardwareRevision","market","evidence"],"variantChecks":["printer-engine-revision","cartridge-or-toner-id","firmware","paper-path-assembly","region"],"safety":["mains-voltage","heated-parts","laser-or-toner-when-applicable"]},
+  additiveManufacturing:{"requiredForCatalog":["manufacturer","model","hardwareRevision","market","evidence"],"variantChecks":["toolhead-revision","controller-board","firmware","print-material-type","power-supply","regional-sku"],"safety":["heated-parts","moving-axis","resin-chemistry-when-applicable","qualified-personnel-when-needed"]},
+  telecom:{"requiredForCatalog":["manufacturer","model","hardwareRevision","market","evidence"],"variantChecks":["handset-base-pairing","radio-frequency","voip-firmware","battery-type","regional-standard"],"safety":["mains-voltage-when-applicable","lithium-battery-when-applicable","radio-regulatory-compliance"]},
+  projection:{"requiredForCatalog":["manufacturer","model","hardwareRevision","market","evidence"],"variantChecks":["lamp-or-laser-engine","optical-module","power-supply","firmware","regional-variant"],"safety":["optical-laser-safety","high-voltage","hot-lamp-assembly"]},
   automotive:{
     requiredForCatalog:['manufacturer','model','vehicleVariant','market','evidence'],
     variantChecks:['vin','kba','pr-code','engine-code','model-year'],
@@ -109,6 +123,10 @@ export const identificationProfiles=Object.freeze({
 const c=(id,group,label,profile,phase,extra={})=>({
   id,group,label,profile,phase,
   availability:'planned',
+  publicCommercialUse:'not-reviewed',
+  partCommerceAuthorized:false,
+  installationApprovalAuthorized:false,
+  regulatedScope:'none-asserted',
   fitmentPolicy:'not-authorized',
   fitmentEngineCategory:null,
   ...extra
@@ -151,7 +169,28 @@ export const categories=Object.freeze([
   c('tablet','electronics-it','Tablets','electronics',3),
   c('television','electronics-it','Fernseher & TVs','electronics',3,{aliases:['tv','fernseher'],safetyExtra:['high-voltage-capacitor']}),
   c('monitor','electronics-it','Monitore','electronics',3),
-  c('printer','electronics-it','Drucker','electronics',3),
+  c('printer','electronics-it','Drucker','printing',3,{aliases:['drucker']}),
+  c('laser-printer','electronics-it','Laserdrucker','printing',3,{"aliases":["laserdrucker"]}),
+  c('inkjet-printer','electronics-it','Tintenstrahldrucker','printing',3,{"aliases":["tintenstrahldrucker"]}),
+  c('label-printer','electronics-it','Etikettendrucker','printing',3,{"aliases":["etikettendrucker"]}),
+  c('thermal-printer','electronics-it','Thermodrucker & Bondrucker','printing',3,{"aliases":["bondrucker"]}),
+  c('photo-printer','electronics-it','Fotodrucker','printing',3,{"aliases":["fotodrucker"]}),
+  c('large-format-printer','electronics-it','Großformatdrucker & Plotter','printing',4,{"aliases":["plotter"]}),
+  c('multifunction-printer','electronics-it','Multifunktionsdrucker & Kopierer','printing',3,{"aliases":["multifunktionsdrucker","kopierer"]}),
+  c('document-scanner','electronics-it','Dokumentenscanner','printing',3,{"aliases":["dokumentenscanner","scanner"]}),
+  c('flatbed-scanner','electronics-it','Flachbettscanner','printing',3,{"aliases":["flachbettscanner"]}),
+  c('film-scanner','electronics-it','Film- & Diascanner','imaging',3,{"aliases":["diascanner"]}),
+  c('3d-scanner','electronics-it','3D-Scanner','imaging',3,{"aliases":["3d-scanning"]}),
+  c('landline-phone','electronics-it','Festnetztelefone','telecom',3,{"aliases":["telefon","telefone","festnetztelefon"]}),
+  c('cordless-phone','electronics-it','Schnurlostelefone & DECT-Telefone','telecom',3,{"aliases":["dect-telefon","schnurlostelefon"]}),
+  c('voip-phone','electronics-it','IP- & VoIP-Telefone','telecom',3,{"aliases":["ip-telefon","voip-telefon"]}),
+  c('telephone-pbx','electronics-it','Telefonanlagen & TK-Systeme','telecom',3,{"aliases":["telefonanlage","tk-anlage"]}),
+  c('fax-machine','electronics-it','Faxgeräte','telecom',3,{"aliases":["faxgeraet"]}),
+  c('projector','electronics-it','Projektoren & Beamer','projection',3,{"aliases":["projektor","projektoren","beamer"]}),
+  c('short-throw-projector','electronics-it','Kurzdistanz-Projektoren','projection',3,{"aliases":["kurzdistanzbeamer"]}),
+  c('portable-projector','electronics-it','Mobile Mini-Projektoren','projection',3,{"aliases":["mini-beamer"]}),
+  c('cinema-projector','electronics-it','Kino- & Profi-Projektoren','projection',4,{"aliases":["kinoprojektor"]}),
+  c('interactive-display','electronics-it','Interaktive Displays & Präsentationstechnik','projection',3,{"aliases":["interaktives-display"]}),
   c('network-device','electronics-it','Router & Netzwerkgeräte','electronics',3),
   c('digital-camera','electronics-it','Digitalkameras','imaging',3,{aliases:['digitalkamera']}),
   c('mirrorless-camera','electronics-it','Systemkameras (spiegellos)','imaging',3,{aliases:['systemkamera','spiegellose-kamera']}),
@@ -197,7 +236,10 @@ export const categories=Object.freeze([
   c('industrial-machine','machines-industry','Industriemaschinen','industrial',4),
   c('compressor','machines-industry','Kompressoren','industrial',4,{safetyExtra:['compressed-air']}),
   c('pump','machines-industry','Pumpen','industrial',4,{safetyExtra:['pressurized-fluid']}),
-  c('3d-printer','machines-industry','3D-Drucker','industrial',4,{safetyExtra:['heat-fire']}),
+  c('3d-printer','machines-industry','3D-Drucker','additiveManufacturing',4,{aliases:['3d-drucker'],safetyExtra:['heat-fire']}),
+  c('filament-3d-printer','machines-industry','FDM-/Filament-3D-Drucker','additiveManufacturing',4,{"aliases":["fdm-drucker","filamentdrucker"],"safetyExtra":["moving-axis"]}),
+  c('resin-3d-printer','machines-industry','Harz-/Resin-3D-Drucker','additiveManufacturing',4,{"aliases":["resin-drucker"],"safetyExtra":["moving-axis"]}),
+  c('industrial-3d-printer','machines-industry','Industrielle 3D-Drucker','additiveManufacturing',4,{"aliases":["industrieller-3d-drucker"],"safetyExtra":["moving-axis"]}),
   // Road vehicles and mobility: drivetrain, approvals and exact full variant are always category-specific.
   c('car','vehicles-mobility','PKW','automotive',3,{aliases:['auto','pkw']}),
   c('electric-car','vehicles-mobility','Elektroautos','electricVehicle',3,{aliases:['e-auto','elektroauto']}),
@@ -259,7 +301,58 @@ export const categories=Object.freeze([
   c('outboard-motor','marine-outdoor','Außenbordmotoren','marine',4,{aliases:['aussenbordmotor']}),
   c('electric-outboard','marine-outdoor','Elektrische Außenborder','marine',4,{aliases:['elektro-aussenborder']}),
   c('personal-watercraft','marine-outdoor','Jetskis & Wasserscooter','marine',4,{aliases:['jetski']}),
-  c('underwater-rov','marine-outdoor','Unterwasserdrohnen & ROVs','marine',4,{aliases:['unterwasserdrohne','unterwasserroboter']})
+  c('underwater-rov','marine-outdoor','Unterwasserdrohnen & ROVs','marine',4,{aliases:['unterwasserdrohne','unterwasserroboter']}),
+  c('door-hardware','mechanical-building','Türbeschläge','buildingFittings',3,{"aliases":["tuerbeschlag"]}),
+  c('door-hinge','mechanical-building','Türscharniere','buildingFittings',3,{"aliases":["tuerscharnier"]}),
+  c('door-lock','mechanical-building','Türschlösser','buildingFittings',3,{"aliases":["tuerschloss"]}),
+  c('window-hardware','mechanical-building','Fensterbeschläge','buildingFittings',3,{"aliases":["fensterbeschlag"]}),
+  c('manual-blinds','mechanical-building','Mechanische Rollläden','buildingFittings',3,{"aliases":["rollladen-mechanisch"]}),
+  c('sanitary-faucet','mechanical-building','Sanitärarmaturen','buildingFittings',3,{"aliases":["wasserhahn"]}),
+  c('plumbing-fittings','mechanical-building','Rohr- & Sanitärverbinder','buildingFittings',3,{"aliases":["rohrverbinder"]}),
+  c('garage-door-mechanism','mechanical-building','Garagentor-Mechaniken','buildingFittings',3,{"aliases":["garagentorbeschlag"]}),
+  c('furniture-hardware','mechanical-building','Möbelbeschläge','mechanicalParts',3,{"aliases":["moebelbeschlag"]}),
+  c('drawer-runners','mechanical-building','Schubladenführungen','mechanicalParts',3,{"aliases":["schubladenfuehrung"]}),
+  c('furniture-lifts','mechanical-building','Möbel-Hub- & Klappbeschläge','mechanicalParts',3,{}),
+  c('valve','mechanical-building','Mechanische Ventile','mechanicalParts',3,{"aliases":["mechanisches-ventil"]}),
+  c('bearing','mechanical-building','Lager & Buchsen','mechanicalParts',3,{"aliases":["waelzlager"]}),
+  c('mechanical-gear','mechanical-building','Zahnräder & Getriebeteile','mechanicalParts',3,{"aliases":["zahnrad"]}),
+  c('fastener','mechanical-building','Schrauben & Verbindungselemente','mechanicalParts',3,{"aliases":["schraube"]}),
+  c('manual-hand-tool','mechanical-building','Handwerkzeuge ohne Antrieb','mechanicalParts',3,{"aliases":["handwerkzeug"]}),
+  c('mechanical-pump','mechanical-building','Handpumpen & mechanische Pumpen','mechanicalParts',3,{"aliases":["handpumpe"]}),
+  c('mechanical-watch','mechanical-building','Mechanische Uhren & Uhrwerke','mechanicalParts',3,{"aliases":["uhrwerk"]}),
+  c('belt-chain-drive','mechanical-building','Riemen- & Kettenantriebe','mechanicalParts',3,{"aliases":["kettenantrieb"]}),
+  c('fire-engine','special-vehicles','Feuerwehrfahrzeuge','emergencyVehicle',4,{"aliases":["feuerwehrauto","feuerwehrfahrzeug"]}),
+  c('ambulance','special-vehicles','Krankenwagen & Rettungswagen','emergencyVehicle',4,{"aliases":["krankenwagen","rettungswagen","rtw"]}),
+  c('emergency-doctor-vehicle','special-vehicles','Notarzteinsatzfahrzeuge','emergencyVehicle',4,{"aliases":["notarzteinsatzfahrzeug","nef"]}),
+  c('police-vehicle','special-vehicles','Polizeifahrzeuge','emergencyVehicle',4,{"aliases":["polizeiauto","polizeifahrzeug"]}),
+  c('rescue-vehicle','special-vehicles','Rettungsdienst-Sonderfahrzeuge','emergencyVehicle',4,{}),
+  c('disaster-response-vehicle','special-vehicles','Katastrophenschutzfahrzeuge','emergencyVehicle',4,{"aliases":["katastrophenschutzfahrzeug"]}),
+  c('tow-truck','special-vehicles','Abschleppfahrzeuge','emergencyVehicle',4,{"aliases":["abschleppwagen"]}),
+  c('road-maintenance-vehicle','special-vehicles','Straßenmeisterei-Fahrzeuge','emergencyVehicle',4,{}),
+  c('snow-plow-truck','special-vehicles','Winterdienstfahrzeuge','emergencyVehicle',4,{"aliases":["schneepflugfahrzeug"]}),
+  c('street-sweeper','special-vehicles','Kehrmaschinen','emergencyVehicle',4,{"aliases":["kehrmaschine"]}),
+  c('aerial-platform-vehicle','special-vehicles','Hubarbeitsbühnen-Fahrzeuge','emergencyVehicle',4,{"aliases":["hubarbeitsbuehnenfahrzeug"]}),
+  c('crane-truck','special-vehicles','Kranfahrzeuge','emergencyVehicle',4,{"aliases":["kranwagen"]}),
+  c('airport-service-vehicle','special-vehicles','Flughafen-Bodenfahrzeuge','emergencyVehicle',4,{"aliases":["flughafenfahrzeug"]}),
+  c('historical-military-vehicle','special-vehicles','Historische Militärfahrzeuge (öffentliche Basisdaten)','defenceReference',4,{"aliases":["historisches-militaerfahrzeug"],"regulatedScope":"public-nonweapon-reference-only"}),
+  c('military-support-vehicle','special-vehicles','Militärische Unterstützungsfahrzeuge (öffentliche Basisdaten)','defenceReference',4,{"aliases":["militaerisches-unterstuetzungsfahrzeug"],"regulatedScope":"public-nonweapon-reference-only"}),
+  c('armoured-military-vehicle','special-vehicles','Gepanzerte Fahrzeuge & Panzer (nur öffentliche Basisdaten)','defenceReference',4,{"aliases":["panzer"],"regulatedScope":"public-nonweapon-reference-only"}),
+  c('fixed-wing-aircraft','civil-aviation','Zivile Flugzeuge','aviation',4,{"aliases":["flugzeug","zivilflugzeug"],"regulatedScope":"airworthiness-review"}),
+  c('helicopter','civil-aviation','Hubschrauber','aviation',4,{"aliases":["hubschrauber","helikopter"],"regulatedScope":"airworthiness-review"}),
+  c('glider','civil-aviation','Segelflugzeuge','aviation',4,{"aliases":["segelflugzeug"],"regulatedScope":"airworthiness-review"}),
+  c('ultralight-aircraft','civil-aviation','Ultraleichtflugzeuge','aviation',4,{"aliases":["ultraleichtflugzeug"],"regulatedScope":"airworthiness-review"}),
+  c('light-sport-aircraft','civil-aviation','Leichtflugzeuge','aviation',4,{"aliases":["leichtflugzeug"],"regulatedScope":"airworthiness-review"}),
+  c('hot-air-balloon','civil-aviation','Heißluftballons','aviation',4,{"aliases":["heissluftballon"],"regulatedScope":"airworthiness-review"}),
+  c('aircraft-cabin-interior','civil-aviation','Flugzeug-Kabinenbauteile (öffentliche Referenzen)','aviation',4,{"regulatedScope":"airworthiness-review"}),
+  c('aircraft-ground-support','civil-aviation','Bodengeräte & Bodenabfertigung','industrial',4,{"aliases":["flugzeug-bodenabfertigung"],"regulatedScope":"qualified-service-review"}),
+  c('flight-simulator','civil-aviation','Flugsimulatoren','electronics',4,{"aliases":["flugsimulator"]}),
+  c('military-aircraft-reference','civil-aviation','Militärflugzeuge (öffentliche Basisdaten)','defenceReference',4,{"aliases":["militaerflugzeug"],"regulatedScope":"public-nonweapon-reference-only"}),
+  c('satellite-reference','space-systems','Satelliten (öffentliche Missionsdaten)','spaceReference',4,{"aliases":["satellit"],"regulatedScope":"public-space-reference-only"}),
+  c('space-probe-reference','space-systems','Raumsonden (öffentliche Missionsdaten)','spaceReference',4,{"aliases":["raumsonde"],"regulatedScope":"public-space-reference-only"}),
+  c('space-rover-reference','space-systems','Weltraum-Rover (öffentliche Missionsdaten)','spaceReference',4,{"aliases":["mars-rover"],"regulatedScope":"public-space-reference-only"}),
+  c('space-station-reference','space-systems','Raumstationen (öffentliche Missionsdaten)','spaceReference',4,{"aliases":["raumstation"],"regulatedScope":"public-space-reference-only"}),
+  c('space-telescope-reference','space-systems','Weltraumteleskope (öffentliche Missionsdaten)','spaceReference',4,{"aliases":["weltraumteleskop"],"regulatedScope":"public-space-reference-only"}),
+  c('ground-station-equipment','space-systems','Raumfahrt-Bodenstationen (öffentliche Basisdaten)','spaceReference',4,{"aliases":["bodenstation-raumfahrt"],"regulatedScope":"public-space-reference-only"})
 ]);
 
 export const index=Object.freeze(Object.fromEntries(categories.map(x=>[x.id,x])));
@@ -278,6 +371,10 @@ export function validateTaxonomy(groupsArg=groups,categoriesArg=categories){
     if(!g.has(v.group)||!v.label||!profileIds.has(v.profile))fail('orphan/missing category data');
     if(!Number.isInteger(v.phase)||v.phase<0||v.phase>4)fail('phase');
     if(!['planned','private-consumer-pilot'].includes(v.availability))fail('availability');
+    if(v.publicCommercialUse!=='not-reviewed'||v.partCommerceAuthorized!==false||v.installationApprovalAuthorized!==false)fail('unreviewed authorizations');
+    if(!['none-asserted','public-nonweapon-reference-only','public-space-reference-only','qualified-service-review','airworthiness-review'].includes(v.regulatedScope))fail('regulated scope');
+    if(v.profile==='defenceReference'&&v.regulatedScope!=='public-nonweapon-reference-only')fail('defence reference boundary');
+    if(v.profile==='spaceReference'&&v.regulatedScope!=='public-space-reference-only')fail('space reference boundary');
     if(v.id==='vacuum-cleaner'){
       if(v.availability!=='private-consumer-pilot'||v.fitmentEngineCategory!=='vacuum'||v.fitmentPolicy!=='vacuum-v1-review-only')fail('vacuum guard');
     } else if(v.availability!=='planned'||v.fitmentEngineCategory!==null||v.fitmentPolicy!=='not-authorized')fail('new-domain unauthorized');
@@ -305,7 +402,7 @@ export function categorySummary(){
   const byGroup=Object.fromEntries(groups.map(g=>[g.id,{planned:0,privatePilot:0}]));
   for(const cat of categories)byGroup[cat.group][cat.availability==='planned'?'planned':'privatePilot']++;
   return {
-    schema:'uf-multicategory-foundation/0.3',
+    schema:'uf-multicategory-foundation/0.4',
     taxonomyVersion:TAXONOMY_VERSION,
     groups:groups.length,
     categories:categories.length,
