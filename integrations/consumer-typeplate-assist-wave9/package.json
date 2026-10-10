@@ -1,0 +1,15 @@
+{
+  "name": "universal-fitment-consumer-typeplate-wave9",
+  "version": "0.0.0-private",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node serve.mjs",
+    "test": "node --test typeplate.test.mjs",
+    "check": "node --check typeplate.mjs && node --check app.mjs && node --check serve.mjs && node --check browser.mjs && node --check typeplate.test.mjs && node --test typeplate.test.mjs",
+    "test:browser": "node browser.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
