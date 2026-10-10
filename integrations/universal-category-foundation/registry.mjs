@@ -202,7 +202,7 @@ export const categories=Object.freeze([
   c('car','vehicles-mobility','PKW','automotive',3,{aliases:['auto','pkw']}),
   c('electric-car','vehicles-mobility','Elektroautos','electricVehicle',3,{aliases:['e-auto','elektroauto']}),
   c('hybrid-car','vehicles-mobility','Hybrid- & Plug-in-Hybrid-PKW','electricVehicle',3,{aliases:['hybridauto','plug-in-hybrid']}),
-  c('truck','vehicles-mobility','LKW','automotive',3,{aliases:['lastkraftwagen']}),
+  c('truck','vehicles-mobility','LKW','automotive',3,{aliases:['lkw','lastkraftwagen']}),
   c('electric-truck','vehicles-mobility','Elektro-LKW','electricVehicle',3,{aliases:['e-lkw']}),
   c('light-commercial-vehicle','vehicles-mobility','Transporter & Lieferwagen','automotive',3,{aliases:['transporter','lieferwagen']}),
   c('electric-van','vehicles-mobility','Elektro-Transporter','electricVehicle',3,{aliases:['e-transporter']}),
@@ -254,7 +254,7 @@ export const categories=Object.freeze([
   c('ups-power','energy-climate','USV-Anlagen','energySystem',4,{aliases:['usv']}),
   // Watercraft, marine propulsion and related electro-mechanical equipment.
   c('motorboat','marine-outdoor','Motorboote','marine',4,{aliases:['motorboot']}),
-  c('electric-boat','marine-outdoor','Elektroboote','marine',4,{aliases:['e-boot']}),
+  c('electric-boat','marine-outdoor','Elektroboote','marine',4,{aliases:['e-boot','elektroboot']}),
   c('sailboat','marine-outdoor','Segelboote','marine',4,{aliases:['segelboot']}),
   c('outboard-motor','marine-outdoor','Außenbordmotoren','marine',4,{aliases:['aussenbordmotor']}),
   c('electric-outboard','marine-outdoor','Elektrische Außenborder','marine',4,{aliases:['elektro-aussenborder']}),
