@@ -2,7 +2,7 @@
  * Internal future device taxonomy. No model records, fitments, licence grants,
  * checkout, release authorization or changes to the vacuum-only v1 engine.
  */
-export const TAXONOMY_VERSION='0.1.0';
+export const TAXONOMY_VERSION='0.2.0';
 export const groups=Object.freeze([
   {id:'home-kitchen',label:'Haushalt & Küche'},
   {id:'tools-garden',label:'Elektro- & Gartengeräte'},
@@ -26,6 +26,26 @@ export const identificationProfiles=Object.freeze({
     requiredForCatalog:['manufacturer','model','hardwareRevision','market','evidence'],
     variantChecks:['hardware-revision','battery-platform','region','firmware'],
     safety:['lithium-battery','automated-motion']
+  },
+  humanoidRobot:{
+    requiredForCatalog:['manufacturer','model','robotSerialOrSku','hardwareRevision','market','evidence'],
+    variantChecks:['joint-generation','actuator-part-no','control-board-revision','sensor-calibration','firmware','serial-range','region','safety-interlocks'],
+    safety:['lithium-battery','powered-joints','pinch-crush','autonomous-motion','emergency-stop','qualified-personnel']
+  },
+  assistantRobot:{
+    requiredForCatalog:['manufacturer','model','hardwareRevision','market','evidence'],
+    variantChecks:['voice-module','sensor-assembly','camera-microphone','connectivity','firmware','cloud-service-dependency','software-pairing'],
+    safety:['lithium-battery','microphone-camera-privacy','autonomous-motion','software-pairing']
+  },
+  robotCompetition:{
+    requiredForCatalog:['manufacturerOrBuilder','chassisId','hardwareRevision','competitionClass','market','evidence'],
+    variantChecks:['chassis-revision','controller','drive-platform','battery','safety-interlocks','competition-ruleset'],
+    safety:['high-energy-moving-parts','impact-risk','pinch-crush','lithium-battery','lockout-emergency-stop','qualified-personnel']
+  },
+  roboticsKit:{
+    requiredForCatalog:['manufacturer','kitModel','boardRevision','market','evidence'],
+    variantChecks:['controller-board','sensor-module','servo-motor','power-supply','firmware','connector-interface'],
+    safety:['lithium-battery','pinch-crush','software-pairing']
   },
   powerTool:{
     requiredForCatalog:['manufacturer','model','typeNo','market','evidence'],
@@ -95,11 +115,28 @@ export const categories=Object.freeze([
   c('monitor','electronics-it','Monitore','electronics',3),
   c('printer','electronics-it','Drucker','electronics',3),
   c('network-device','electronics-it','Router & Netzwerkgeräte','electronics',3),
+  c('smart-speaker','electronics-it','Smarte Lautsprecher & Sprachassistent-Geräte','assistantRobot',3,{aliases:['smart-speaker','sprachassistent','smarter-lautsprecher']}),
+  c('smart-display','electronics-it','Smarte Displays & Assistenzterminals','assistantRobot',3,{aliases:['smart-display']}),
+
   // Robotics: distinct from ordinary appliance models, even if some parts are similar.
   c('robot-vacuum','robotics-smart-home','Saugroboter','robotic',1,{aliases:['staubsaugerroboter']}),
   c('robot-lawnmower','robotics-smart-home','Mähroboter','robotic',3,{aliases:['maehroboter'],safetyExtra:['rotating-blades']}),
   c('pool-robot','robotics-smart-home','Poolroboter','robotic',3,{safetyExtra:['water-electricity']}),
   c('service-robot','robotics-smart-home','Serviceroboter','robotic',4),
+  c('humanoid-robot','robotics-smart-home','Humanoide Roboter','humanoidRobot',4,{aliases:['humanoid','humanoider-roboter','zweibeiniger-roboter']}),
+  c('companion-robot','robotics-smart-home','Begleit- & Haushaltsroboter','assistantRobot',3,{aliases:['begleitroboter','haushaltsroboter']}),
+  c('ai-assistant-robot','robotics-smart-home','KI-Assistentenroboter','assistantRobot',3,{aliases:['smarter-assistentenroboter','ai-companion-robot']}),
+  c('telepresence-robot','robotics-smart-home','Telepräsenzroboter','assistantRobot',3,{aliases:['telepraesenzroboter']}),
+  c('educational-robot','robotics-smart-home','Lern- & Bildungsroboter','roboticsKit',3,{aliases:['lernroboter','bildungsroboter']}),
+  c('hobby-robot','robotics-smart-home','Hobby- & programmierbare Roboter','roboticsKit',3,{aliases:['hobbyroboter','programmierbarer-roboter']}),
+  c('research-robot','robotics-smart-home','Forschungsroboter','humanoidRobot',4,{aliases:['forschungsroboter']}),
+  c('mobile-robot','robotics-smart-home','Mobile Universalroboter','robotic',3,{aliases:['mobiler-roboter']}),
+  c('combat-sport-robot','robotics-smart-home','Wettkampf- & Kampfroboter (Roboter-Sport)','robotCompetition',4,{
+    aliases:['kampfroboter','roboterkampf','battlebot','wettkampfroboter'],
+    safetyExtra:['controlled-arena-only','no-weapon-or-harmful-payload-guidance']
+  }),
+  c('robotics-kit','robotics-smart-home','Robotik-Bausätze & Module','roboticsKit',3,{aliases:['robotik-bausatz']}),
+
   c('industrial-robot','machines-industry','Industrieroboter','industrial',4),
   // Professional and industrial machinery: never offered as general DIY repair.
   c('workshop-machine','machines-industry','Werkstattmaschinen','industrial',4),
