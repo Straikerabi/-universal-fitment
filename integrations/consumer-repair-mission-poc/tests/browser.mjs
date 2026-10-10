@@ -57,13 +57,16 @@ try{
    await fresh(p);await p.waitForFunction(()=>!!navigator.serviceWorker.controller);await p.waitForFunction(()=>document.querySelector('#connectionStatus').textContent.includes('gespeichert'));
    await selectReal(p);await toAssessment(p);await p.locator('[data-part]').first().check();await p.locator('main [data-step="5"]').click();
    const cached=await p.evaluate(async name=>(await (await caches.open(name)).keys()).map(r=>new URL(r.url).pathname),cacheName);assert.deepEqual(cached.sort(),[...assetPaths].sort());
-   await ctx.setOffline(true);await p.reload({waitUntil:'domcontentloaded'});await p.locator('[data-done]').first().waitFor();assert.match(await p.locator('.check-summary').innerText(),/Passung bleibt unbestätigt/);assert.match(await p.locator('#connectionStatus').innerText(),/Offline-Vorschau gespeichert/);await layout(p);await screenshot(p,'18-offline-reloaded-390.png');
+   // The network emulation alone does not consistently update navigator.onLine under SW control.
+   // Force the browser's public offline signal on next document load as well.
+   await p.addInitScript(()=>Object.defineProperty(navigator,'onLine',{configurable:true,get:()=>false}));
+   await ctx.setOffline(true);await p.reload({waitUntil:'domcontentloaded'});await p.locator('[data-done]').first().waitFor();assert.match(await p.locator('.check-summary').innerText(),/Passung bleibt unbestätigt/);assert.match(await p.locator('#connectionStatus').innerText(),/Offline.*gespeicherte Vorschau/);await layout(p);await screenshot(p,'18-offline-reloaded-390.png');
    const summary=p.locator('.checklist-source summary').first();await summary.click();await p.locator('.checklist-source a').first().click();assert.match(await p.locator('#feedback').innerText(),/Offline.*nicht neu geöffnet/);
    await p.locator('#eraseOffline').click();await p.waitForFunction(()=>document.querySelector('#feedback').textContent.includes('Offline-Vorschau entfernt'));const keys=await p.evaluate(()=>caches.keys());assert.equal(keys.filter(x=>x.startsWith('uf-consumer-mobile-wave4-')).length,0);assert.ok(await p.locator('[data-remove-part]').count());
   }finally{await ctx.close();}
  });
  await check('blocked offline storage is explained and shipped local assets stay below 300 kB',async()=>{
-  await page.setViewportSize({width:375,height:812});await fresh(page);await context.setOffline(true);assert.match(await page.locator('#connectionStatus').innerText(),/laufende Sitzung.*nicht.*gespeichert/);await context.setOffline(false);
+  await page.setViewportSize({width:375,height:812});await fresh(page);await context.setOffline(true);await page.evaluate(()=>{Object.defineProperty(navigator,'onLine',{configurable:true,get:()=>false});window.dispatchEvent(new Event('offline'));});assert.match(await page.locator('#connectionStatus').innerText(),/laufende Sitzung.*nicht.*gespeichert/);await context.setOffline(false);await page.evaluate(()=>{delete navigator.onLine;window.dispatchEvent(new Event('online'));});
   const bytes=(await Promise.all([...new Set(Object.values(assetFiles)),'offline-config.mjs'].map(x=>fs.stat(path.resolve(root,x))))).reduce((n,s)=>n+s.size,0);localAssetBytes=bytes;assert.ok(bytes<300000,'UI/core asset budget '+bytes);assert.deepEqual(errors,[]);assert.deepEqual(network,[]);console.log('Local UI/core asset bytes: '+bytes);
  });
  console.log(JSON.stringify({passed:results.length,engine:'Chromium',version:browser.version(),pilotTasks:measurements.length,realFalsePositiveAssertions:0,externalRequests:network.length}));
