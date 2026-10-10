@@ -115,8 +115,8 @@ export const categories=Object.freeze([
   c('monitor','electronics-it','Monitore','electronics',3),
   c('printer','electronics-it','Drucker','electronics',3),
   c('network-device','electronics-it','Router & Netzwerkgeräte','electronics',3),
-  c('smart-speaker','electronics-it','Smarte Lautsprecher & Sprachassistent-Geräte','assistantRobot',3,{aliases:['smart-speaker','sprachassistent','smarter-lautsprecher']}),
-  c('smart-display','electronics-it','Smarte Displays & Assistenzterminals','assistantRobot',3,{aliases:['smart-display']}),
+  c('smart-speaker','electronics-it','Smarte Lautsprecher & Sprachassistent-Geräte','assistantRobot',3,{aliases:['sprachassistent','smarter-lautsprecher']}),
+  c('smart-display','electronics-it','Smarte Displays & Assistenzterminals','assistantRobot',3,{aliases:['smarter-bildschirm']}),
 
   // Robotics: distinct from ordinary appliance models, even if some parts are similar.
   c('robot-vacuum','robotics-smart-home','Saugroboter','robotic',1,{aliases:['staubsaugerroboter']}),
