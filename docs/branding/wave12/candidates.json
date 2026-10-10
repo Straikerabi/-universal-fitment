@@ -39,15 +39,15 @@
       "observedWebReferences": [],
       "domains": {
         "de": {
-          "status": "unknown",
-          "httpStatus": null,
-          "checkedAt": null,
+          "status": "not_registered_at_check",
+          "httpStatus": 404,
+          "checkedAt": "2026-10-10T23:30:19.988Z",
           "source": "https://rdap.denic.de/domain/nolvanta.de"
         },
         "com": {
-          "status": "unknown",
-          "httpStatus": null,
-          "checkedAt": null,
+          "status": "not_registered_at_check",
+          "httpStatus": 404,
+          "checkedAt": "2026-10-10T23:30:19.539Z",
           "source": "https://rdap.verisign.com/com/v1/domain/nolvanta.com"
         }
       },
@@ -80,15 +80,15 @@
       "observedWebReferences": [],
       "domains": {
         "de": {
-          "status": "unknown",
-          "httpStatus": null,
-          "checkedAt": null,
+          "status": "not_registered_at_check",
+          "httpStatus": 404,
+          "checkedAt": "2026-10-10T23:30:19.948Z",
           "source": "https://rdap.denic.de/domain/varunexa.de"
         },
         "com": {
-          "status": "unknown",
-          "httpStatus": null,
-          "checkedAt": null,
+          "status": "registered",
+          "httpStatus": 200,
+          "checkedAt": "2026-10-10T23:30:19.535Z",
           "source": "https://rdap.verisign.com/com/v1/domain/varunexa.com"
         }
       },
@@ -121,15 +121,15 @@
       "observedWebReferences": [],
       "domains": {
         "de": {
-          "status": "unknown",
-          "httpStatus": null,
-          "checkedAt": null,
+          "status": "not_registered_at_check",
+          "httpStatus": 404,
+          "checkedAt": "2026-10-10T23:30:19.985Z",
           "source": "https://rdap.denic.de/domain/varidaro.de"
         },
         "com": {
-          "status": "unknown",
-          "httpStatus": null,
-          "checkedAt": null,
+          "status": "not_registered_at_check",
+          "httpStatus": 404,
+          "checkedAt": "2026-10-10T23:30:19.566Z",
           "source": "https://rdap.verisign.com/com/v1/domain/varidaro.com"
         }
       },
@@ -162,15 +162,15 @@
       "observedWebReferences": [],
       "domains": {
         "de": {
-          "status": "unknown",
-          "httpStatus": null,
-          "checkedAt": null,
+          "status": "not_registered_at_check",
+          "httpStatus": 404,
+          "checkedAt": "2026-10-10T23:30:19.949Z",
           "source": "https://rdap.denic.de/domain/modantra.de"
         },
         "com": {
-          "status": "unknown",
-          "httpStatus": null,
-          "checkedAt": null,
+          "status": "registered",
+          "httpStatus": 200,
+          "checkedAt": "2026-10-10T23:30:19.552Z",
           "source": "https://rdap.verisign.com/com/v1/domain/modantra.com"
         }
       },
@@ -203,15 +203,15 @@
       "observedWebReferences": [],
       "domains": {
         "de": {
-          "status": "unknown",
-          "httpStatus": null,
-          "checkedAt": null,
+          "status": "not_registered_at_check",
+          "httpStatus": 404,
+          "checkedAt": "2026-10-10T23:30:19.968Z",
           "source": "https://rdap.denic.de/domain/partidra.de"
         },
         "com": {
-          "status": "unknown",
-          "httpStatus": null,
-          "checkedAt": null,
+          "status": "not_registered_at_check",
+          "httpStatus": 404,
+          "checkedAt": "2026-10-10T23:30:19.543Z",
           "source": "https://rdap.verisign.com/com/v1/domain/partidra.com"
         }
       },
@@ -1042,5 +1042,11 @@
       "brandChosen": false,
       "published": false
     }
-  ]
+  ],
+  "domainSnapshotEvidence": {
+    "observedAt": "2026-10-10T23:30:19Z",
+    "source": "https://github.com/Straikerabi/-universal-fitment/actions/runs/38095246015",
+    "method": "HEAD official RDAP registry URLs for ranked five; no purchase",
+    "temporaryNotRegisteredIsNotAvailableClaim": true
+  }
 }
