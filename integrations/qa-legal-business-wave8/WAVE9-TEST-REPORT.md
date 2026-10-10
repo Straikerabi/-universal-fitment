@@ -1,19 +1,15 @@
-# Wave9 QA execution report — 2026-10-10
+# Wave9 QA — verified test report (2026-10-10)
 
-## Scope
-Branch `work/qa-legal-business-gates-wave8`, Draft PR #93, Issue #99. Only `integrations/qa-legal-business-wave8/**` and new QA workflow changed. No consumer, source-lock, catalog or worker edits.
+Branch: `work/qa-legal-business-gates-wave8`; Draft PR #93; Issue #99. Scope: `integrations/qa-legal-business-wave8/**` and dedicated QA workflow only.
 
-## Implemented
-- 12 read-only evidence gates (P0 7, P1 3, P2 2).
-- Six Node test cases including malformed input, invalid evidence, explicit failure, complete-but-unapproved evidence, CLI exit code 2.
-- GitHub Actions job for Node tests and fail-closed CLI assertion.
+## Defect fixed
+`release-gates.mjs` incorrectly escaped the ISO-date digit matcher (`\\d` in regex literal). Fixed to `/^\\d{4}-\\d{2}-\\d{2}$/` in source (single backslash per digit class). Previously passing evidence was incorrectly blocked.
 
-## Observed execution (do not mistake for passing CI)
-- GitHub file creation commits succeeded, latest `e4d83bdb5ac0922fa5a071d08e22338db385bbf5`.
-- Queried pull-request workflow runs for this SHA: **0 runs returned** at observation time.
-- Therefore actual executed tests: **0 confirmed / 6 defined**, CI outcome **NOT RUN / NOT YET OBSERVED**. Do not report 6/6 or green.
-- Source-lock and legal approval intentionally untouched. Launch remains **BLOCKED**.
-- Next owner/CI action: trigger/check QA workflow, inspect logs, confirm 6/6 and exit 2. If GitHub rejects workflow or tests fail, fix exclusively within this scope.
+## Actual execution
+- Local Node tests, executed 2026-10-10: **6/6 PASS**, 0 fail, 0 skip, 0 cancel. Command: `node --test /tmp/uf-qa/release-gates.test.mjs` on a local reconstruction of the fetched QA files with the corrected regex; use GitHub CI as authoritative repository checkout.
+- Local CLI: `node /tmp/uf-qa/release-gates.mjs` => **exit 2**, JSON `launchApproved:false`, `releaseStatus:BLOCKED`, 12 gates.
+- GitHub Actions native repository workflow **[run 38081725130](https://github.com/Straikerabi/-universal-fitment/actions/runs/38081725130)**: **completed SUCCESS**, commit `f78da264107f1b2dcde5f0b2f0a85ef629df4d4d`. Workflow executes `node --test integrations/qa-legal-business-wave8/release-gates.test.mjs` and asserts CLI exit 2 and blocked JSON.
+- Prior run 38077282547: FAILURE before regex fix. Do not report prior failure as green.
 
-## External dependencies
-Work B #95 / PR #98: browser and source delta; Owner: manual source-lock/Golden repin only after diff; Work A #96: independent OEM evidence; physical iPhone and legal operator review remain outstanding.
+## Release conclusion
+**NO-GO**. A green QA harness is not operator, GDPR, source rights, safety, hosting or B2B approval. Evidence input is not connected to live production attestations. Owner must manually review source-lock diffs and all legal/physical device gates. No Consumer/Worker/Source-Lock edits, main merge or deployment.
