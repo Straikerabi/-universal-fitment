@@ -1,26 +1,36 @@
-# Wave9 Marketing — Test- und Abnahmeprotokoll
-**Datum:** 2026-10-10. **Scope:** `docs/marketing/wave9/**` auf `work/marketing-playbook-wave9`. **Owner-Referenz bei Anlage:** `be7afa00ff2f69b9071d4d85da4c1f7c7e1a9b38`. Kein Code im Consumer/Katalog/Offline/Worker/Source-Lock verändert.
+# Wave9 Marketing — native Node-/GitHub-CI-Abnahme (privat)
 
-## Tatsächlich ausgeführt (nicht bloß Testcode geschrieben)
-1. **In-process JavaScript-V8-Lauf:** `validate.mjs` direkt aus dem GitHub-Branch gelesen und unverändert bis auf das Entfernen der `export`-Kennzeichnung als JavaScript-Funktion kompiliert. `campaign-manifest.json` **ebenfalls aus dem Branch** geholt. Das `validate.test.mjs`-Testszenario wurde geladen und mit einem synchronen, minimalen Test-/Assert-Adapter ausgeführt (Import-/Node-Dateileseteil durch das tatsächlich abgerufene Manifest ersetzt; `structuredClone` durch eine JSON-taugliche Deep-Copy simuliert). Ergebnis: **28/28 erfolgreich, 0 fehlgeschlagen, 0 unterdrückte Testfälle**. Dieser Adapter-Lauf ist ausdrücklich **nicht** mit `node --test` oder GitHub CI gleichzusetzen.
-2. **Positivfall:** vollständiges Manifest wird durch `validateManifest` ohne Fehler akzeptiert (**1/1**).
-3. **Gezielte Negativfälle:** **27/27** erwartungsgemäß zurückgewiesen: öffentliches GO, GO-Status, Ausgaben, Posts, Leads, Partner, erfundene Nutzer/Fits, 29 statt 11 live, 200 statt 1 aktiv, publiziertes Asset, falsche Owner-/Legal-Abnahme, personenbezogene Daten, verwendete Medien ohne Prüfung, unzulässige Medienrechtsangabe, ID-Duplikat, garantierte Passung, erfundene Reichweite, Link zur Datenerhebung, ungültiger Kanal, Querverweis außerhalb Scope, Safety-Skip, falscher B2B-Kanal, fehlende Assetliste, falscher Owner-SHA.
-4. **Dokumenten-/Manifest-Abgleich:** reale GitHub-Dateien `B2C-STARTPAKET.md`, `B2B-STARTPAKET.md`, `LANDING-PRESS.md`, `COMMUNITY-PLAYBOOK.md` per GitHub gelesen. **14/14** Asset-IDs haben je eine passende Überschrift im deklarierten Dokument, **0 fehlende Referenzen**. **14 Assets / 9 Kanäle**; davon neun Einträge mit Audience B2C (acht Social/Edu und ein Landing), vier B2B und ein Presse.
-5. **Branch-/Diff-Scope:** per GitHub Compare im PR erneut zu prüfen; keine fremden Dateien geplant und keine technischen App-Tests beansprucht.
+**Stand:** 2026-10-10 (Europe/Berlin) · **Issue:** #99 · **Draft:** #102 · **Scope:** nur `docs/marketing/wave9/**` plus vom Owner in PR #102 ausdrücklich autorisierter *neuer* Workflow `.github/workflows/marketing-wave9.yml`.
 
-## Reproduktion in einer normalen Node-Arbeitsumgebung
+## Tatsächlich geprüfter Head und native GitHub-CI
+
+- **Head beim ersten vollständigen CI-Nachweis:** `1b4ea7f5c628d631c847c218e8a9d7a208e8ea74`.
+- **Push-Run:** [38081765119](https://github.com/Straikerabi/-universal-fitment/actions/runs/38081765119) — completed **success**.
+- **Pull-Request-Run:** [38081769320](https://github.com/Straikerabi/-universal-fitment/actions/runs/38081769320) — completed **success**, Job `Validate internal marketing drafts (NO-GO)`, Logs unabhängig gelesen.
+- **Laufzeit:** tatsächliches `Node v22.23.3` im Linux-GitHub-Runner.
+- **Syntax:** `node --check docs/marketing/wave9/{validate.mjs,check-references.mjs,validate.test.mjs}` (je separate Node-Aufrufe) erfolgreich.
+- **Testkommando:** `node --test docs/marketing/wave9/validate.test.mjs` **28/28 PASS, 0 FAIL, 0 CANCEL, 0 SKIP** laut native Node-TAP-Ausgabe; 1 erlaubter privater Basissatz + **27/27** mutierte unzulässige Zustände wurden abgewiesen.
+- **Manifest↔Markdown:** `node docs/marketing/wave9/check-references.mjs` erfolgreich, **14 Manifest-Assets, 14 registrierte IDs, 14 reale Abschnittsüberschriften in 3 Referenz-Dokumenten**, `errors: []`.
+- **Workflow:** read-only Checkout (`persist-credentials:false`), `contents:read`, Node 22, keine Publishing-/Ads-/Contacts-/Deployment-Schritte. Getestet wird explizit `github.event.pull_request.head.sha || github.sha` und nicht unbesehen ein wechselnder Owner-Branch.
+- **Neue Report-/README-Änderung:** dieser Bericht wird nach den obigen Läufen hinzugefügt. **Deren alte Run-IDs werden nicht als CI-Beweis für spätere Commits ausgegeben.** Die endgültige aktualisierte PR-Head-CI muss gesondert grün bestätigt werden (siehe PR-Kommentar).
+
+## Negative Validierungen, geprüft statt behauptet
+Alle 27 Mutationstests erzwingen fail-closed: künstliches Publikations-GO, geänderter Release-Status, bezahlte Werbung, Posts, Lead-Sammlung, erfundene Partner/Nutzer/positive Fits, 29er-Draft als reale 11er-App, 200 geplante Kategorien als verfügbar, falsche Owner-/Legal-Freigabe, persönliche Daten, fremde oder eingesetzte Medien, doppelte IDs, Passungsgarantien und Reichweitenversprechen, externe CTA-URL, ungültige Channel/Doc/Safety-Verknüpfung, B2B-Kanal-Missbrauch, leere Assets und falscher Provenienz-SHA.
+
+## Produktevidenz und echte Grenzen
+- Die 14 Assets bleiben `draft_internal`, `published:false`, `ownerApproval:false`, `legalApproval:false`, `mediaUsed:false`; Run meldet `releaseState:NO_GO` und `externalPublicationAuthorized:false`.
+- Basis-Snapshot: private Consumer-App **11 Geräte, 5 Marken, 11 OEM-Teilidentitäten, 0 reale positive Fits**. #84 **29 Geräte nur im getrennten Draft**, 199 weitere Kategorien **nur geplant**.
+- Die Tests sind **Marketing-Metadaten-/Claims-Checks**, keine Quelllizenzprüfung, reale physische Passungsprüfung, juristische Rechtsfreigabe oder App-Regression.
+- Keine Accounts, Kampagnen, personenbezogene Daten, Tracking, Versand, öffentliches Presse-Kit, `main`-Merge oder Deployment.
+
+## Reproduktion
 ```bash
+node --check docs/marketing/wave9/validate.mjs
+node --check docs/marketing/wave9/check-references.mjs
+node --check docs/marketing/wave9/validate.test.mjs
 node --test docs/marketing/wave9/validate.test.mjs
-node --input-type=module -e "import {readFileSync} from 'node:fs';import {validateManifest} from './docs/marketing/wave9/validate.mjs';const m=JSON.parse(readFileSync('./docs/marketing/wave9/campaign-manifest.json','utf8'));const errors=validateManifest(m);console.log(JSON.stringify({assets:m.assets.length,errors},null,2));if(errors.length)process.exitCode=1;"
+node docs/marketing/wave9/check-references.mjs
 ```
-`node --test` wurde in dieser Bearbeitungsumgebung **nicht** tatsächlich ausgeführt, da ein Repository-Checkout/Dateitransfer dorthin nicht verfügbar war. Der tatsächliche unabhängige V8-Testlauf aus den Connector-Dateien ist oben getrennt dokumentiert. Keine CI eingeführt: #99 erlaubt ausschließlich `docs/marketing/wave9/**`, nicht `.github/workflows/**`.
 
-## Release- und Integrationsrisiken
-- **Fehlende Rechte/Lizenzen:** Eigene Bilder/Audiorechte müssen vor Verwendung nachgewiesen werden, `mediaUsed:false` markiert nur „nicht im Paket enthalten“, **nicht** eine Lizenzfreigabe.
-- **Sicherheit:** Allgemeine Typenschild- und Variantenhilfe; kein Ersatz für elektrische, Akku- oder mechanische Reparaturfreigaben.
-- **Außenclaims:** 11 / 5 / 0 / 29 / 199 beziehen sich ausdrücklich auf den Owner-Snapshot vom 10.10.2026. Vor späterem Posting **neu messen**, nicht ungeprüft wiederverwenden.
-- **Recht/Marketing:** Rechte-, Marken-, DSGVO-, Plattform- und Werbekennzeichnungsprüfung offen. Keine reale Consumer-Beta, kein echter B2B-Geschäftsnachweis.
-- **Release:** `launchApproved` wird hier nicht gesetzt. **NO-GO** unabhängig von Teststatus.
-
-## Owner-Rückmeldung erforderlich
-Interne Copy kann fachlich bewertet werden. Produktfreigabe, Veröffentlichung, Social-Accounts, Kontaktsammlung, Anzeigenbuchung, B2B-Kaltansprache, Domain und Deploy sind **ausdrücklich nicht autorisiert**.
+## Offene Launch-Gates (keine Freigabe)
+Owner/QA/Recht müssen vor **jedem** öffentlichen Text reale Datenscope-, Marken-/Bild-/Musikrechte, sichere Anwendung, Nutzer-/B2B-Nutzenbeweise, Datenschutz/Betreiber/Hosting/Impressum, Werbekennzeichnung und Supportprozesse separat prüfen. Keine Veröffentlichungsautomatik aus CI.

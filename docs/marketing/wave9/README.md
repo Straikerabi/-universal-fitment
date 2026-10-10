@@ -9,8 +9,9 @@
 | [LANDING-PRESS.md](LANDING-PRESS.md) | Private Landing-Textbausteine, Presse-Faktenbogen, Presse-Q&A und nicht versandfähiger E-Mail-Entwurf | kein öffentlicher Start, Kontakt, Download oder Registrierungsformular |
 | [COMMUNITY-PLAYBOOK.md](COMMUNITY-PLAYBOOK.md) | sieben Antwortfälle, fachliche Eskalation, Plattformregeln und Datenschutz-/Safety-Gates | keine aktive Community, keine gespeicherten DMs/Personendaten |
 | [campaign-manifest.json](campaign-manifest.json) | 14 strukturierte Entwürfe, neun Kanäle, Datums-/Owner-Snapshot und harte Sperrflags | jedes Asset `draft_internal`, `published:false`, `mediaUsed:false` |
-| [validate.mjs](validate.mjs), [validate.test.mjs](validate.test.mjs) | ausführbarer, read-only Manifest-Validator und 27 Negativtests + 1 Basisfall | ein grüner Copy-Test bedeutet **weder** Medien-/Rechts-GO **noch** tatsächliches QA-Produkt-GO |
-| [TEST-REPORT.md](TEST-REPORT.md) | tatsächlich durchgeführte JavaScript-Checks, Review-Befunde und reproduzierbare Befehle | keine erfundenen GitHub-Workflow-/Node-CLI-Tests |
+| [validate.mjs](validate.mjs), [validate.test.mjs](validate.test.mjs), [check-references.mjs](check-references.mjs) | ausführbare Node-22-Claim-/Mutationstests plus Manifest-zu-Markdown-Abgleich | Tests überprüfen Marketing-Metadaten, **kein** reales Safety-/Legal-/Produkt-GO |
+| [TEST-REPORT.md](TEST-REPORT.md) | tatsächlicher nativer Node-22-/GitHub-CI-Nachweis samt SHA, Job-Logs und Grenzen | 28/28 Node + 14/14 Referenzen; Freigabe weiterhin NO-GO |
+| [.github/workflows/marketing-wave9.yml](../../../.github/workflows/marketing-wave9.yml) | nur vom Owner für PR #102 genehmigte read-only Actions-CI | kein Social, keine Ads, keine Datenkonten und kein Deploy |
 
 Die vollständige Wave8-Grundstrategie bleibt bei [../STRATEGY.md](../STRATEGY.md), [../CHANNELS-AND-CALENDAR.md](../CHANNELS-AND-CALENDAR.md) und [../COPY-GUARDRAILS.md](../COPY-GUARDRAILS.md). Diese Dateien bleiben **unverändert**.
 
@@ -36,7 +37,9 @@ Aus Repo-Root mit Node.js:
 node --test docs/marketing/wave9/validate.test.mjs
 node --input-type=module -e "import {readFileSync} from 'node:fs';import {validateManifest} from './docs/marketing/wave9/validate.mjs';const m=JSON.parse(readFileSync('./docs/marketing/wave9/campaign-manifest.json','utf8'));const errors=validateManifest(m);console.log({assets:m.assets.length,errors});if(errors.length)process.exitCode=1;"
 ```
-Keine externen Abhängigkeiten, kein Netz, keine Ausgaben und keine Schreibaktionen. Tests **verifizieren nur manifestierte Claim-/Sperrregeln**. Genauere Ausführung und Einschränkungen in [TEST-REPORT.md](TEST-REPORT.md).
+\nnode docs/marketing/wave9/check-references.mjs\n\n
+
+Keine externen Abhängigkeiten, keine Anwendungsausgaben und keine Marketing-Schreibaktionen. **GitHub CI: [PR-Run 38081769320](https://github.com/Straikerabi/-universal-fitment/actions/runs/38081769320) und [Push-Run 38081765119](https://github.com/Straikerabi/-universal-fitment/actions/runs/38081765119) auf SHA `1b4ea7f5…` grün (28/28 native Node-Tests, 14/14 Referenzen).** Tests verifizieren nur Claims-/Sperrregeln. Genauere Ausführung und Einschränkungen in [TEST-REPORT.md](TEST-REPORT.md).
 
 ## Projektleitungs-Entscheidung
 - [ ] Inhaltliche Positionierung gegen Produktstand und Wettbewerb revalidieren
