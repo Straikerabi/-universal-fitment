@@ -1,0 +1,62 @@
+{
+  "schema": "uf.owner-discovery-delta/1",
+  "issue": 95,
+  "baseCommit": "3bafbc7fd8c8da5ed6fe3bddc70eacbc0be1e035",
+  "branch": "work/wave9-consumer-discovery-owner-bridge",
+  "changedConsumerFiles": [
+    {
+      "path": "integrations/consumer-repair-mission-poc/app.mjs",
+      "beforeGitBlob": "6c8b1479b7bccff80189eb83a2f2abb757fa0435",
+      "afterGitBlob": "d61aee9ad858ef72eb877e03ae832a4224e49232",
+      "beforeSha256": "5f8803d9435bad385ed8ecfc69d56acc0e3ed2aa45c073f796d25ee38c065995",
+      "afterSha256": "05178036f2048c205b05f7f7bd3ee8337052276c7926cd1507f7d5161e982862"
+    },
+    {
+      "path": "integrations/consumer-repair-mission-poc/offline-config.mjs",
+      "beforeGitBlob": "1aaeddadfd60a4c10322323f43a587caa469d0f7",
+      "afterGitBlob": "d12258852232f876dffefdf6436ce4dd299f9d13",
+      "beforeSha256": "09dbeba0072946560ef68d9b27ec3b6f8fa4d07db222aeb0a2c3d6753360e76a",
+      "afterSha256": "bd8dbce4bc52415f5d6e61e37c35363afcf55754efa5375cd059a324c4228b83"
+    },
+    {
+      "path": "integrations/consumer-repair-mission-poc/offline-worker.mjs",
+      "beforeGitBlob": "c49e9f594e5da3ecc2cac5633eb7002992600741",
+      "afterGitBlob": "1f7bf4d9d8ead0c850c19ea58e11c49121c75024",
+      "beforeSha256": "2895855cc9ca999b68587b298e4e4f408e0f1bae8901f3eae9cc5a1ae61fe760",
+      "afterSha256": "b14f9195f058b70c81785ac7230007fe31823496119b4ce2577f94ad7be6a979"
+    },
+    {
+      "path": "integrations/consumer-repair-mission-poc/prepare-offline.mjs",
+      "beforeGitBlob": "c7a4f434995974f5f78fa1fdffb1e832d989d57a",
+      "afterGitBlob": "df8a1a8a77c873f985ad4f8e0b18acf86fe11826",
+      "beforeSha256": "cca44a0e933aa311e449936af941d5081a8b4066582987c040d479b80f77fa58",
+      "afterSha256": "d9860c24756c0b28f2693d0c6d62cb43a0ee205da55f5b57a3baa7fd0f2885e3"
+    },
+    {
+      "path": "integrations/consumer-repair-mission-poc/serve.mjs",
+      "beforeGitBlob": "2aee5988ab4b4c2a0a6138ee1ad4f7564b62f131",
+      "afterGitBlob": "a71d02c672c3740b0e8a4272a33cb40b1d7d9736",
+      "beforeSha256": "d916259c365cad5fff541882d9f50cf17301f2881a9a1f6d68703a66ed4e3ba0",
+      "afterSha256": "a06d2a74039e21b9309c82139df631719301e97b18bb6a0a2a4f7b7dea72c534"
+    },
+    {
+      "path": "integrations/consumer-repair-mission-poc/styles.css",
+      "beforeGitBlob": "5e3343c2655f893f73f93b7ba5e909c96c981bd1",
+      "afterGitBlob": "c000138f15c46eaff58657023e75b30946e141b4",
+      "beforeSha256": "4ab4cd47aa0b7a1243274acc36714b6aa73d9880d9f95c7f5560c1e0b5aca1c4",
+      "afterSha256": "f38e74b8c3c7e21226355f6e60a3c4184687d20cd506c074facfee5a242fcab2"
+    },
+    {
+      "path": "integrations/consumer-repair-mission-poc/discovery-ui.mjs",
+      "beforeGitBlob": null,
+      "beforeSha256": null,
+      "afterSha256": "6be579801d4b0dfae3b40672a9cd1b34c0c27419a707ec6ab3a311524794ef17"
+    }
+  ],
+  "protectedFiles": 3826,
+  "protectedDigest": "fc2e8a01beedad8866e5c5404bb929113cf16b9253353cdf2ad03e4bf46f8034",
+  "testCodeDigest": "b66c09f778588eee1e8c659784d7c3b00cbcae007657c071b259822e5e349400",
+  "launchApproved": false,
+  "legalSourceLockUpdated": false,
+  "manualOwnerReviewRequired": true
+}

@@ -338,6 +338,60 @@ small {
 .search-row .field-label {
   overflow-wrap:anywhere
 }
+.search-row.discovery-search {
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,12rem),1fr))
+}
+.discovery-filters {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,12rem),1fr));
+  gap:10px;
+  margin-top:10px
+}
+.discovery-search > label,.discovery-filters > label {
+  min-width:0
+}
+.discovery-filters .field-label,.discovery-profile {
+  overflow-wrap:anywhere
+}
+.discovery-profile {
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  background:var(--paper);
+  margin:16px 0
+}
+.discovery-profile > summary,.discovery-candidates > summary {
+  cursor:pointer;
+  min-height:44px;
+  padding:14px;
+  font-weight:650;
+  line-height:1.5
+}
+.discovery-profile-body {
+  padding:0 16px 16px;
+  min-width:0
+}
+.discovery-facts {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:12px;
+  margin:16px 0
+}
+.discovery-facts > div {min-width:0}
+.discovery-facts dt {font-size:.75rem;color:var(--muted)}
+.discovery-facts dd {margin:4px 0 0;font-size:.85rem;font-weight:650}
+.discovery-profile a {
+  display:inline-flex;
+  align-items:center;
+  min-height:44px;
+  max-width:100%;
+  overflow-wrap:anywhere
+}
+.discovery-candidates {border-top:1px solid var(--line);margin-top:12px}
+.discovery-candidates ul {padding-left:20px}
+.device-text .exact-hint {color:var(--green)}
+@media(max-width:380px) {
+  .discovery-filters,.discovery-facts {grid-template-columns:minmax(0,1fr)}
+}
 .field-help {
   font-size:.77rem;
   line-height:1.6;
