@@ -1,0 +1,46 @@
+name: Marketing Wave9 Claims QA (private, read-only)
+
+on:
+  push:
+    branches:
+      - work/marketing-playbook-wave9
+    paths:
+      - 'docs/marketing/wave9/**'
+      - '.github/workflows/marketing-wave9.yml'
+  pull_request:
+    branches:
+      - integration/private-unified-preview-wave5-owner
+    paths:
+      - 'docs/marketing/wave9/**'
+      - '.github/workflows/marketing-wave9.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  claims-and-references:
+    name: Validate internal marketing drafts (NO-GO)
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Checkout exact head
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+      - name: Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          check-latest: false
+      - name: Verify runtime and syntax
+        run: |
+          node --version
+          node --check docs/marketing/wave9/validate.mjs
+          node --check docs/marketing/wave9/check-references.mjs
+          node --check docs/marketing/wave9/validate.test.mjs
+      - name: Execute claims and mutation tests
+        run: node --test docs/marketing/wave9/validate.test.mjs
+      - name: Check manifest-to-Markdown references
+        run: node docs/marketing/wave9/check-references.mjs
