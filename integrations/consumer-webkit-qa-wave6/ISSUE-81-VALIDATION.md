@@ -32,4 +32,28 @@ Lokal: 53 unveränderte Legacy-Consumer-Node-Tests und die QA-/Source-Lock-Tests
 
 Abweichung transparent: Der historische `consumer-repair-mission-poc/check.mjs` ist weiterhin auf `work/consumer-mobile-ux-wave4` und den alten Wave4-Gesamtdiff festgelegt. Auf dem ausdrücklich gewünschten #81-Branch bricht er an diesem Branchvergleich ab. Er wird nicht gelockert oder als bestanden behauptet. Der engere #81-Syntax-/Hash-/Delta-Scope-Guard sowie die unveränderten Legacy-Tests und `offline:check` sind verpflichtend und ersetzen den unpassenden historischen Branch-Gesamtdiff.
 
-**Aktuelle vollständige CI-Abnahme: nach dem letzten Fixlauf zu ergänzen.** Ein vorbereiteter Workflow, ein Selektivlauf oder der rote Zwischenlauf ist kein 66/66-Beweis. Keine Testskips, keine erhöhten Timeouts, keine erfundenen Resultate. Physisches iPhone, echtes Safari, VoiceOver und menschlicher Pilot bleiben getrennte manuelle Gates; keine Beta-/Launchfreigabe durch Automation.
+## Vollständige CI-Abnahme — 66/66, eigenes Gate GRÜN
+
+[Run 38047125232](https://github.com/Straikerabi/-universal-fitment/actions/runs/38047125232), getesteter Commit `8ca52cd6bb865a9871a2179a03323b1b18da0dee`. Vollmatrix tatsächlich ausgeführt am 2026-10-10, 11:05:28.628–11:06:37.562 UTC, nicht aus selektiven Läufen zusammengesetzt. Job einschließlich Legacy-Browserprüfung und Artefaktupload erfolgreich.
+
+| Prüfung | Gemessenes Ergebnis |
+| --- | --- |
+| Chromium 156.0.8078.4 | 33/33 |
+| Linux-WebKit 27.2 | 33/33 |
+| Gesamt / fehlgeschlagen / blockiert / nicht ausgeführt | 66/66 / 0 / 0 / 0 |
+| QA-Node-Tests / unveränderte Legacy-Node-Tests | 16/16 / 53/53, keine Skips |
+| Unveränderte Legacy-Browserprüfungen / echte JSON-Downloads | 31/31 / 4/4 |
+| Offline-Fingerprint, Manifest und selbständiger Worker | bytegenau, bestanden |
+| Externe App-Requests / aufgezeichnete App-Laufzeitfehler | 0 / 0 |
+
+Beide warmen Offline-Fälle bestehen alle sechs Phasen: Controller, Cache, Cache-Sourcebytes, tatsächlicher Offline-Neustart, JSON-SHA-256 und Cache-Löschung. 17 echte Cacheantworten und 18 HTTP-Ressourcen sind bytegleich mit den ausgeführten Quellen. Vorher-/Nachher-Source-Digest: `fca72e334908b27ac0305ebdc0fd4da825405824c5a11160dd33550eddaa86b0`. Vorher-/Nachher-Suite-Digest: `51575b84e2db6f98b0ed4ed9edf388790468ec03deb7223f2b8c92784b31b108`.
+
+Dauerhafte tatsächliche CI-Nachweise: [66-Zeilen-Report](evidence/ci-issue-81/results.json), [CI-/Artefaktmetadaten](evidence/ci-issue-81/ci-metadata.json), [roter Zwischenlauf 64/66](evidence/ci-issue-81/intermediate-module-worker-64-of-66.json). Diese Dokumentationsarchivierung ändert weder Produkt- noch Suitebytes und behauptet keinen neuen Testlauf.
+
+[Eigene UI-Screenshots und vollständige CI-Artefakte](https://github.com/Straikerabi/-universal-fitment/actions/runs/38047125232/artifacts/11667866660): SHA-256 `b099b8cd6f4f33e038c0ffb6de5fc4577e63e4aff21fa392601f3fff62cbeb6c`, 7.134.947 Bytes, GitHub-Ablauf 2026-10-24. Der dauerhafte Ergebnisreport bleibt unabhängig vom ZIP-Ablauf nachvollziehbar.
+
+## Separater Integrationspunkt — Preflight bleibt ROT
+
+[Preflight-Run 38047125236](https://github.com/Straikerabi/-universal-fitment/actions/runs/38047125236) scheitert im separaten Source-Evidence-Test: dessen alter Source-Lock und reproduzierbarer Beispielreport berücksichtigen die fünf ausdrücklich durch #81 autorisierten Consumer-Änderungen noch nicht. Dieser fremde Workflow wurde nicht gelockert, übersprungen oder verändert. Nachfolgende Schritte dieses separaten Jobs sind wegen des frühen Fehlers nicht ausgeführt; das ist **keine** Behauptung einer vollständig grünen Repository-CI. Owner-Review/Aktualisierung des separaten Preflight-Locks bleibt ein Integrationspunkt. Die eigene 66/66-Suite und alle ihre Jobschritte sind dagegen vollständig erfolgreich, ohne Skips.
+
+Physisches iPhone, echtes macOS-/iOS-Safari, VoiceOver und menschlicher Pilot bleiben getrennte manuelle Gates; 0 Testpersonen, keine erfundenen Conversionraten, keine Beta-/Launchfreigabe. Keine Katalogänderungen, kein main-Merge, kein Deployment.

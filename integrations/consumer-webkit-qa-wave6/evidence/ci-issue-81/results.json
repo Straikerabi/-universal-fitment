@@ -1,0 +1,1782 @@
+{
+  "schema": "uf.consumer-browser-gate/1",
+  "baseCommit": "456c8b8936617f5275d8d1ccfc29601d559cac89",
+  "branch": "work/wave6-consumer-webkit-qa",
+  "target": "integration/private-unified-preview-wave5-owner",
+  "testedCommit": "8ca52cd6bb865a9871a2179a03323b1b18da0dee",
+  "workingTreeHadUncommittedQaFiles": false,
+  "startedAt": "2026-10-10T11:05:28.628Z",
+  "playwrightVersion": "1.64.0",
+  "scopeProof": {
+    "unchanged": true,
+    "ownerIssue": 81,
+    "baselineFiles": 3719,
+    "authorizedDelta": [
+      {
+        "path": "integrations/consumer-repair-mission-poc/app.mjs",
+        "beforeSha256": "c6875789809ffa4914a4ec2a0fc6f4dc9cb2b116f1f9e986a22e5003f7c01822",
+        "afterSha256": "6cae7a94731170e5deefa6dc3d73c9951969be3db4241c5a4510a076c5b0b9f8",
+        "beforeGitBlob": "ad90c92a105c674314171f56c9509ea7b0dda79a",
+        "afterGitBlob": "efc4a9b96deca6a6ca318675e7ed1cf9ab48fdc4"
+      },
+      {
+        "path": "integrations/consumer-repair-mission-poc/offline-config.mjs",
+        "beforeSha256": "1a39eb338762ccb32821b6233127192f0d8ef508b7fae3ebe128afb2f47a3fa2",
+        "afterSha256": "049df316104478981c42937fc925bac0779e50a021c7dbc00cb4ae14f9829441",
+        "beforeGitBlob": "72820f16c4843b52a38f2a9c05d567a44ed09ca2",
+        "afterGitBlob": "d0a715f34688294c0898e134e40eba628b8c4b5f"
+      },
+      {
+        "path": "integrations/consumer-repair-mission-poc/offline-worker.mjs",
+        "beforeSha256": "23d5a68c9d2f7772de71fd7504ef48e256279138c7620b31a13c26773d28244f",
+        "afterSha256": "9b20fc4dc160497f24cf0d1785124c246912699e202031c311b26bae45594eef",
+        "beforeGitBlob": "49a821cccedb01a837ab461c2ff9d93af715adb5",
+        "afterGitBlob": "1e5ae530b29c6e0f807bde2fb89617684299945e"
+      },
+      {
+        "path": "integrations/consumer-repair-mission-poc/prepare-offline.mjs",
+        "beforeSha256": "14c306b05758f54b29f0e819ec7dff8884a88585beaff34841c2d94277b503e5",
+        "afterSha256": "cca44a0e933aa311e449936af941d5081a8b4066582987c040d479b80f77fa58",
+        "beforeGitBlob": "a589ef64b7e14f05a9a14da0244417bba88c2d00",
+        "afterGitBlob": "c7a4f434995974f5f78fa1fdffb1e832d989d57a"
+      },
+      {
+        "path": "integrations/consumer-repair-mission-poc/styles.css",
+        "beforeSha256": "4614a167dd354c59ef4e2181684e8178046fee3a08045b2d137ef6d241ed4ae1",
+        "afterSha256": "4ab4cd47aa0b7a1243274acc36714b6aa73d9880d9f95c7f5560c1e0b5aca1c4",
+        "beforeGitBlob": "2da5e84c539b55865369c864743eb44f3e6e1759",
+        "afterGitBlob": "5e3343c2655f893f73f93b7ba5e909c96c981bd1"
+      }
+    ],
+    "sourceBytesDigest": "fca72e334908b27ac0305ebdc0fd4da825405824c5a11160dd33550eddaa86b0",
+    "protectedFiles": 3714,
+    "baselineTree": "d671b807f18f0aac5700b1a6059d5f52bb4545dd",
+    "protectedTreeEntriesSha256": "c52ee08fdbac2d45960d481ac1fc784863ef081e11a3e6843e1eb60faf76520f",
+    "changedPaths": [
+      ".github/workflows/consumer-webkit-qa-wave6.yml",
+      "integrations/consumer-repair-mission-poc/app.mjs",
+      "integrations/consumer-repair-mission-poc/offline-config.mjs",
+      "integrations/consumer-repair-mission-poc/offline-worker.mjs",
+      "integrations/consumer-repair-mission-poc/prepare-offline.mjs",
+      "integrations/consumer-repair-mission-poc/styles.css",
+      "integrations/consumer-webkit-qa-wave6/.gitignore",
+      "integrations/consumer-webkit-qa-wave6/BUGS.md",
+      "integrations/consumer-webkit-qa-wave6/IPHONE-PILOT-CHECKLIST.md",
+      "integrations/consumer-webkit-qa-wave6/ISSUE-81-VALIDATION.md",
+      "integrations/consumer-webkit-qa-wave6/README.md",
+      "integrations/consumer-webkit-qa-wave6/VALIDATION.md",
+      "integrations/consumer-webkit-qa-wave6/browser-helpers.mjs",
+      "integrations/consumer-webkit-qa-wave6/cases.mjs",
+      "integrations/consumer-webkit-qa-wave6/check.mjs",
+      "integrations/consumer-webkit-qa-wave6/evidence/local/chromium-dark-375-expanded.png",
+      "integrations/consumer-webkit-qa-wave6/evidence/local/chromium-demo-negative-synthetic-only.png",
+      "integrations/consumer-webkit-qa-wave6/evidence/local/chromium-demo-positive-synthetic-only.png",
+      "integrations/consumer-webkit-qa-wave6/evidence/local/chromium-identity-boundaries-regional-source.png",
+      "integrations/consumer-webkit-qa-wave6/evidence/local/chromium-keyboard-and-semantics-aria-snapshot.txt",
+      "integrations/consumer-webkit-qa-wave6/evidence/local/chromium-real-passport-notes.png",
+      "integrations/consumer-webkit-qa-wave6/evidence/local/chromium-text-200-320-expanded.png",
+      "integrations/consumer-webkit-qa-wave6/evidence/local/chromium-text-200-375-failure.png",
+      "integrations/consumer-webkit-qa-wave6/evidence/local/chromium-touch-targets-touch-targets.json",
+      "integrations/consumer-webkit-qa-wave6/evidence/local/chromium-viewport-375-portrait-stage-3.png",
+      "integrations/consumer-webkit-qa-wave6/evidence/local/chromium-viewport-430-portrait-stage-5.png",
+      "integrations/consumer-webkit-qa-wave6/evidence/local/chromium-warm-offline-cached-notes.png",
+      "integrations/consumer-webkit-qa-wave6/evidence/local/label-proposal.json",
+      "integrations/consumer-webkit-qa-wave6/evidence/local/manifest.json",
+      "integrations/consumer-webkit-qa-wave6/evidence/local/results.json",
+      "integrations/consumer-webkit-qa-wave6/gate.mjs",
+      "integrations/consumer-webkit-qa-wave6/human-pilot-template.json",
+      "integrations/consumer-webkit-qa-wave6/owner-authorized-delta.json",
+      "integrations/consumer-webkit-qa-wave6/package-lock.json",
+      "integrations/consumer-webkit-qa-wave6/package.json",
+      "integrations/consumer-webkit-qa-wave6/policy.mjs",
+      "integrations/consumer-webkit-qa-wave6/reproduce-label.mjs",
+      "integrations/consumer-webkit-qa-wave6/run.mjs",
+      "integrations/consumer-webkit-qa-wave6/runtime.mjs",
+      "integrations/consumer-webkit-qa-wave6/scope.mjs",
+      "integrations/consumer-webkit-qa-wave6/seal-owner-delta.mjs",
+      "integrations/consumer-webkit-qa-wave6/tests/gate.test.mjs",
+      "integrations/consumer-webkit-qa-wave6/tests/generated-worker.test.mjs",
+      "integrations/consumer-webkit-qa-wave6/tests/source-lock.test.mjs",
+      "integrations/consumer-webkit-qa-wave6/tests/workflow.test.mjs",
+      "integrations/consumer-webkit-qa-wave6/verify-source.mjs"
+    ],
+    "untrackedPaths": [],
+    "afterUnchanged": true,
+    "afterProtectedTreeEntriesSha256": "c52ee08fdbac2d45960d481ac1fc784863ef081e11a3e6843e1eb60faf76520f",
+    "afterSourceBytesDigest": "fca72e334908b27ac0305ebdc0fd4da825405824c5a11160dd33550eddaa86b0"
+  },
+  "suiteProof": {
+    "files": [
+      {
+        "path": ".github/workflows/consumer-webkit-qa-wave6.yml",
+        "sha256": "d2b083ecf330d97424c08d9cd081607ffdd394048e316521afc4f590bb406ef2"
+      },
+      {
+        "path": "integrations/consumer-webkit-qa-wave6/browser-helpers.mjs",
+        "sha256": "047839ed30a93509f77f294a367eafdc0fbdf15849f657d265755c9261f24f8e"
+      },
+      {
+        "path": "integrations/consumer-webkit-qa-wave6/cases.mjs",
+        "sha256": "bb8727a24ec028a3aa9490cae51ad455f73243de7d2080ecf3b49f90a6dcf3b7"
+      },
+      {
+        "path": "integrations/consumer-webkit-qa-wave6/check.mjs",
+        "sha256": "510481ecbaef7424f80e61c8c52f05c76f6db366cf688d797978b8137e13a99c"
+      },
+      {
+        "path": "integrations/consumer-webkit-qa-wave6/gate.mjs",
+        "sha256": "a8eeb07ec08e5139c3f67ef2ebab5957ef986024b9d9b1da08100a9f28e21000"
+      },
+      {
+        "path": "integrations/consumer-webkit-qa-wave6/owner-authorized-delta.json",
+        "sha256": "61da26bd406b5b5049069b1d5ba37f20da1339dddc5cbee4c636a59bdf45ab59"
+      },
+      {
+        "path": "integrations/consumer-webkit-qa-wave6/package-lock.json",
+        "sha256": "6ab6c400432186ba453efd6847793e75464a3d75b5b2ef47616742734e876efa"
+      },
+      {
+        "path": "integrations/consumer-webkit-qa-wave6/package.json",
+        "sha256": "f1f35cc288149435580eb305a72072beed044df007c8ad99dd2f5dcd52f7bdb9"
+      },
+      {
+        "path": "integrations/consumer-webkit-qa-wave6/policy.mjs",
+        "sha256": "ceddf1a8732f171b37224414ce4b95d93d8c2a5e40b2a935c6e4e6f7757a0fc1"
+      },
+      {
+        "path": "integrations/consumer-webkit-qa-wave6/reproduce-label.mjs",
+        "sha256": "75e745ead9bf73b998b2accdd7e1363edcff97aba3d144bb4a13ee393bb4315f"
+      },
+      {
+        "path": "integrations/consumer-webkit-qa-wave6/run.mjs",
+        "sha256": "ae9b3d4ec1ca6e86416ea11ce7c13ca945100f0cabc1577337ac8ac66b750c85"
+      },
+      {
+        "path": "integrations/consumer-webkit-qa-wave6/runtime.mjs",
+        "sha256": "f92fb725915c79b792892103393d3a24f4d1d5390b346aa28fe9655f9e4328f3"
+      },
+      {
+        "path": "integrations/consumer-webkit-qa-wave6/scope.mjs",
+        "sha256": "910bb90038172c0ed46dc1cfcda1378f752e801145a09b5a7dd5af5a1591b52f"
+      },
+      {
+        "path": "integrations/consumer-webkit-qa-wave6/seal-owner-delta.mjs",
+        "sha256": "05add98818bd74ea54e9da1072fecf9bb823c4decf68f407c94291d164195bd7"
+      },
+      {
+        "path": "integrations/consumer-webkit-qa-wave6/tests/gate.test.mjs",
+        "sha256": "5d6828c2f48e291df8f33f0073db85cd0d2638d1e035c838e15eebd610d4b00f"
+      },
+      {
+        "path": "integrations/consumer-webkit-qa-wave6/tests/generated-worker.test.mjs",
+        "sha256": "cb7ecb8ee2cf84aea1fe1aea40f273194a6d396fbe03705fd4f0d04167d04d3f"
+      },
+      {
+        "path": "integrations/consumer-webkit-qa-wave6/tests/source-lock.test.mjs",
+        "sha256": "f9347b6526be31e63605a8b6f0986fc655afa33edb7b22c3dd013fe5e46db511"
+      },
+      {
+        "path": "integrations/consumer-webkit-qa-wave6/tests/workflow.test.mjs",
+        "sha256": "1f20b58739f8faac8461c75b6f7daa0bc5710ad320dd14bd9a540ba7b49a41c8"
+      },
+      {
+        "path": "integrations/consumer-webkit-qa-wave6/verify-source.mjs",
+        "sha256": "ee2a2f3815838fa72062eafe6cc688fec9e10b4135d3b5dcee45825a51f2551a"
+      }
+    ],
+    "digest": "51575b84e2db6f98b0ed4ed9edf388790468ec03deb7223f2b8c92784b31b108",
+    "afterDigest": "51575b84e2db6f98b0ed4ed9edf388790468ec03deb7223f2b8c92784b31b108"
+  },
+  "engines": {
+    "chromium": {
+      "started": true,
+      "version": "156.0.8078.4",
+      "binary": "pinned-Playwright-bundle",
+      "simulation": true,
+      "physicalIPhone": false,
+      "macOSSafari": false
+    },
+    "webkit": {
+      "started": true,
+      "version": "27.2",
+      "binary": "pinned-Playwright-bundle",
+      "simulation": true,
+      "physicalIPhone": false,
+      "macOSSafari": false
+    }
+  },
+  "cases": [
+    {
+      "engine": "chromium",
+      "id": "viewport-320-portrait",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 715,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "viewport": {
+          "id": "320-portrait",
+          "width": 320,
+          "height": 740
+        },
+        "stages": 5
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "viewport-320-landscape",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 606,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "viewport": {
+          "id": "320-landscape",
+          "width": 740,
+          "height": 320
+        },
+        "stages": 5
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "viewport-375-portrait",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 728,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [
+        "chromium-viewport-375-portrait-stage-3.png"
+      ],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "viewport": {
+          "id": "375-portrait",
+          "width": 375,
+          "height": 812
+        },
+        "stages": 5
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "viewport-375-landscape",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 612,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "viewport": {
+          "id": "375-landscape",
+          "width": 812,
+          "height": 375
+        },
+        "stages": 5
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "viewport-390-portrait",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 609,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "viewport": {
+          "id": "390-portrait",
+          "width": 390,
+          "height": 844
+        },
+        "stages": 5
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "viewport-390-landscape",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 612,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "viewport": {
+          "id": "390-landscape",
+          "width": 844,
+          "height": 390
+        },
+        "stages": 5
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "viewport-430-portrait",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 677,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [
+        "chromium-viewport-430-portrait-stage-5.png"
+      ],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "viewport": {
+          "id": "430-portrait",
+          "width": 430,
+          "height": 932
+        },
+        "stages": 5
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "viewport-430-landscape",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 596,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "viewport": {
+          "id": "430-landscape",
+          "width": 932,
+          "height": 430
+        },
+        "stages": 5
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "text-200-320",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 780,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [
+        "chromium-text-200-320-expanded.png"
+      ],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "cssRootFontPercent": 200,
+        "physicalPinchZoom": false,
+        "stages": 5
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "text-200-375",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 612,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "cssRootFontPercent": 200,
+        "physicalPinchZoom": false,
+        "stages": 5
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "text-200-390",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 612,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "cssRootFontPercent": 200,
+        "physicalPinchZoom": false,
+        "stages": 5
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "text-200-430",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 614,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "cssRootFontPercent": 200,
+        "physicalPinchZoom": false,
+        "stages": 5
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "dark-320",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 595,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "colorScheme": "dark",
+        "stages": 5
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "dark-375",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 679,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [
+        "chromium-dark-375-expanded.png"
+      ],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "colorScheme": "dark",
+        "stages": 5
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "dark-390",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 596,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "colorScheme": "dark",
+        "stages": 5
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "dark-430",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 578,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "colorScheme": "dark",
+        "stages": 5
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "real-passport",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 911,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [
+        "chromium-real-passport-notes.png"
+      ],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "filename": "Universal-Fitment-Pruefpass.json",
+        "sha256": "6543f4a589944827360940438b134a257012bcdb7241199859df483a5bce1973",
+        "tamperRefused": true,
+        "realInstallationApproved": false
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "identity-boundaries",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 702,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [
+        "chromium-identity-boundaries-regional-source.png"
+      ],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "syntheticUserInput": true,
+        "deviceReference": "HF202P 011",
+        "productCode": "39401035",
+        "sourceMarket": "DE"
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "unknown-identifiers",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 219,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "rejectedInputs": 3,
+        "similarVariantSubstituted": false
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "demo-positive",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 608,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [
+        "chromium-demo-positive-synthetic-only.png"
+      ],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "synthetic": true,
+        "outcome": "supported",
+        "realInstallationApproved": false
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "demo-negative",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 612,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [
+        "chromium-demo-negative-synthetic-only.png"
+      ],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "synthetic": true,
+        "outcome": "incompatible",
+        "excludedFromNotes": true
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "demo-unknown",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 755,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "synthetic": true,
+        "missingRevision": "unclear",
+        "unselectedVariant": "unclear"
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "demo-connector",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 496,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "synthetic": true,
+        "connectorExcluded": true
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "demo-incomplete",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 821,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "synthetic": true,
+        "allNotesTicked": true,
+        "completeKit": false
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "mode-isolation",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 667,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "separateMissionKeys": [
+          "uf-repair-mission-poc-v1-real",
+          "uf-repair-mission-poc-v1-synthetic"
+        ]
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "stale-and-tampered-state",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 1333,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "syntheticTampering": true,
+        "rejectedStates": 3
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "filters-and-checklist",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 537,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "hiddenSelectionPreserved": true,
+        "explicitRemoval": true,
+        "priceSortDisabled": true
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "keyboard-and-semantics",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 353,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [
+        "chromium-keyboard-and-semantics-aria-snapshot.txt"
+      ],
+      "phases": [],
+      "measurements": {
+        "nativeLabels": true,
+        "fieldsetLegend": true,
+        "liveFilterStatus": true,
+        "voiceOverHardwareTest": false
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "touch-targets",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 472,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [
+        "chromium-touch-targets-touch-targets.json"
+      ],
+      "phases": [],
+      "measurements": {
+        "stageCounts": [
+          {
+            "stage": 1,
+            "targets": 25
+          },
+          {
+            "stage": 2,
+            "targets": 15
+          },
+          {
+            "stage": 3,
+            "targets": 22
+          },
+          {
+            "stage": 4,
+            "targets": 19
+          },
+          {
+            "stage": 5,
+            "targets": 20
+          }
+        ],
+        "minimumDesignTarget": 44
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "cold-offline",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 67,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [
+        {
+          "url": "LOCAL/",
+          "reason": "net::ERR_INTERNET_DISCONNECTED"
+        }
+      ],
+      "screenshots": [],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "expectedAbort": true,
+        "reason": "page.goto: net::ERR_INTERNET_DISCONNECTED at http://127.0.0.1:35027/\nCall log:\n  - navigating to \"http://127.0.0.1:35027/\", waiting until \"domcontentloaded\"\n",
+        "warmCache": false
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "warm-offline",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 1181,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [
+        "chromium-warm-offline-cached-notes.png"
+      ],
+      "artifacts": [],
+      "phases": [
+        {
+          "name": "controller",
+          "status": "passed"
+        },
+        {
+          "name": "cache-ready",
+          "status": "passed"
+        },
+        {
+          "name": "cache-source-bytes",
+          "status": "passed"
+        },
+        {
+          "name": "offline-reload",
+          "status": "passed"
+        },
+        {
+          "name": "offline-json-sha256",
+          "status": "passed"
+        },
+        {
+          "name": "cache-delete",
+          "status": "passed"
+        }
+      ],
+      "measurements": {
+        "cacheName": "uf-consumer-mobile-wave4-a8757230e3f2b3713822f82f",
+        "cachePaths": 17,
+        "cacheSourceBytesMatched": true,
+        "cacheSourceHashCount": 17,
+        "staleWarmMissionRefused": true,
+        "offlinePassportChecksumVerified": true,
+        "notesSurviveCacheDeletion": true,
+        "transportOffline": true,
+        "osSignalSimulated": true,
+        "nativeBefore": true,
+        "nativeAfter": false
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "blocked-offline",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 256,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "workerBlockedByTest": true,
+        "savedOfflineVersionClaimed": false,
+        "transportOffline": true,
+        "osSignalSimulated": true,
+        "nativeBefore": true,
+        "nativeAfter": false
+      }
+    },
+    {
+      "engine": "chromium",
+      "id": "storage-and-export-failures",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 537,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "syntheticFailureInjection": true,
+        "storageDeniedNonfatal": true,
+        "clipboardFallback": true,
+        "missingChecksumRefusesJsonExport": true,
+        "textFallbackWorks": true
+      }
+    },
+    {
+      "engine": "webkit",
+      "id": "viewport-320-portrait",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 8453,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "viewport": {
+          "id": "320-portrait",
+          "width": 320,
+          "height": 740
+        },
+        "stages": 5
+      }
+    },
+    {
+      "engine": "webkit",
+      "id": "viewport-320-landscape",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 1131,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "viewport": {
+          "id": "320-landscape",
+          "width": 740,
+          "height": 320
+        },
+        "stages": 5
+      }
+    },
+    {
+      "engine": "webkit",
+      "id": "viewport-375-portrait",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 1200,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [
+        "webkit-viewport-375-portrait-stage-3.png"
+      ],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "viewport": {
+          "id": "375-portrait",
+          "width": 375,
+          "height": 812
+        },
+        "stages": 5
+      }
+    },
+    {
+      "engine": "webkit",
+      "id": "viewport-375-landscape",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 1216,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "viewport": {
+          "id": "375-landscape",
+          "width": 812,
+          "height": 375
+        },
+        "stages": 5
+      }
+    },
+    {
+      "engine": "webkit",
+      "id": "viewport-390-portrait",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 1134,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "viewport": {
+          "id": "390-portrait",
+          "width": 390,
+          "height": 844
+        },
+        "stages": 5
+      }
+    },
+    {
+      "engine": "webkit",
+      "id": "viewport-390-landscape",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 1146,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "viewport": {
+          "id": "390-landscape",
+          "width": 844,
+          "height": 390
+        },
+        "stages": 5
+      }
+    },
+    {
+      "engine": "webkit",
+      "id": "viewport-430-portrait",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 1208,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [
+        "webkit-viewport-430-portrait-stage-5.png"
+      ],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "viewport": {
+          "id": "430-portrait",
+          "width": 430,
+          "height": 932
+        },
+        "stages": 5
+      }
+    },
+    {
+      "engine": "webkit",
+      "id": "viewport-430-landscape",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 1188,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "viewport": {
+          "id": "430-landscape",
+          "width": 932,
+          "height": 430
+        },
+        "stages": 5
+      }
+    },
+    {
+      "engine": "webkit",
+      "id": "text-200-320",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 1435,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [
+        "webkit-text-200-320-expanded.png"
+      ],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "cssRootFontPercent": 200,
+        "physicalPinchZoom": false,
+        "stages": 5
+      }
+    },
+    {
+      "engine": "webkit",
+      "id": "text-200-375",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 1287,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "cssRootFontPercent": 200,
+        "physicalPinchZoom": false,
+        "stages": 5
+      }
+    },
+    {
+      "engine": "webkit",
+      "id": "text-200-390",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 1271,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "cssRootFontPercent": 200,
+        "physicalPinchZoom": false,
+        "stages": 5
+      }
+    },
+    {
+      "engine": "webkit",
+      "id": "text-200-430",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 1274,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "cssRootFontPercent": 200,
+        "physicalPinchZoom": false,
+        "stages": 5
+      }
+    },
+    {
+      "engine": "webkit",
+      "id": "dark-320",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 1089,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "colorScheme": "dark",
+        "stages": 5
+      }
+    },
+    {
+      "engine": "webkit",
+      "id": "dark-375",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 1139,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [
+        "webkit-dark-375-expanded.png"
+      ],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "colorScheme": "dark",
+        "stages": 5
+      }
+    },
+    {
+      "engine": "webkit",
+      "id": "dark-390",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 1155,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "colorScheme": "dark",
+        "stages": 5
+      }
+    },
+    {
+      "engine": "webkit",
+      "id": "dark-430",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 1140,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "colorScheme": "dark",
+        "stages": 5
+      }
+    },
+    {
+      "engine": "webkit",
+      "id": "real-passport",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 1416,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [
+        "webkit-real-passport-notes.png"
+      ],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "filename": "Universal-Fitment-Pruefpass.json",
+        "sha256": "622afb25890abadf5992e645193052cf69f935fcaf5fdf2852d9d81aa1e72223",
+        "tamperRefused": true,
+        "realInstallationApproved": false
+      }
+    },
+    {
+      "engine": "webkit",
+      "id": "identity-boundaries",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 1189,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [
+        "webkit-identity-boundaries-regional-source.png"
+      ],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "syntheticUserInput": true,
+        "deviceReference": "HF202P 011",
+        "productCode": "39401035",
+        "sourceMarket": "DE"
+      }
+    },
+    {
+      "engine": "webkit",
+      "id": "unknown-identifiers",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 515,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "rejectedInputs": 3,
+        "similarVariantSubstituted": false
+      }
+    },
+    {
+      "engine": "webkit",
+      "id": "demo-positive",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 1143,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [
+        "webkit-demo-positive-synthetic-only.png"
+      ],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "synthetic": true,
+        "outcome": "supported",
+        "realInstallationApproved": false
+      }
+    },
+    {
+      "engine": "webkit",
+      "id": "demo-negative",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 1068,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [
+        "webkit-demo-negative-synthetic-only.png"
+      ],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "synthetic": true,
+        "outcome": "incompatible",
+        "excludedFromNotes": true
+      }
+    },
+    {
+      "engine": "webkit",
+      "id": "demo-unknown",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 1218,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "synthetic": true,
+        "missingRevision": "unclear",
+        "unselectedVariant": "unclear"
+      }
+    },
+    {
+      "engine": "webkit",
+      "id": "demo-connector",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 954,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "synthetic": true,
+        "connectorExcluded": true
+      }
+    },
+    {
+      "engine": "webkit",
+      "id": "demo-incomplete",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 1370,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "synthetic": true,
+        "allNotesTicked": true,
+        "completeKit": false
+      }
+    },
+    {
+      "engine": "webkit",
+      "id": "mode-isolation",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 1254,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "separateMissionKeys": [
+          "uf-repair-mission-poc-v1-real",
+          "uf-repair-mission-poc-v1-synthetic"
+        ]
+      }
+    },
+    {
+      "engine": "webkit",
+      "id": "stale-and-tampered-state",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 1951,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "syntheticTampering": true,
+        "rejectedStates": 3
+      }
+    },
+    {
+      "engine": "webkit",
+      "id": "filters-and-checklist",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 1016,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "hiddenSelectionPreserved": true,
+        "explicitRemoval": true,
+        "priceSortDisabled": true
+      }
+    },
+    {
+      "engine": "webkit",
+      "id": "keyboard-and-semantics",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 772,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [
+        "webkit-keyboard-and-semantics-aria-snapshot.txt"
+      ],
+      "phases": [],
+      "measurements": {
+        "nativeLabels": true,
+        "fieldsetLegend": true,
+        "liveFilterStatus": true,
+        "voiceOverHardwareTest": false
+      }
+    },
+    {
+      "engine": "webkit",
+      "id": "touch-targets",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 974,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [
+        "webkit-touch-targets-touch-targets.json"
+      ],
+      "phases": [],
+      "measurements": {
+        "stageCounts": [
+          {
+            "stage": 1,
+            "targets": 25
+          },
+          {
+            "stage": 2,
+            "targets": 15
+          },
+          {
+            "stage": 3,
+            "targets": 22
+          },
+          {
+            "stage": 4,
+            "targets": 19
+          },
+          {
+            "stage": 5,
+            "targets": 20
+          }
+        ],
+        "minimumDesignTarget": 44
+      }
+    },
+    {
+      "engine": "webkit",
+      "id": "cold-offline",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 201,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [
+        {
+          "url": "LOCAL/",
+          "reason": "WebKit encountered an internal error"
+        }
+      ],
+      "screenshots": [],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "expectedAbort": true,
+        "reason": "page.goto: WebKit encountered an internal error\nCall log:\n  - navigating to \"http://127.0.0.1:35027/\", waiting until \"domcontentloaded\"\n",
+        "warmCache": false
+      }
+    },
+    {
+      "engine": "webkit",
+      "id": "warm-offline",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 1740,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [
+        {
+          "url": "LOCAL/offline-worker.mjs",
+          "reason": "Load request cancelled"
+        }
+      ],
+      "screenshots": [
+        "webkit-warm-offline-cached-notes.png"
+      ],
+      "artifacts": [],
+      "phases": [
+        {
+          "name": "controller",
+          "status": "passed"
+        },
+        {
+          "name": "cache-ready",
+          "status": "passed"
+        },
+        {
+          "name": "cache-source-bytes",
+          "status": "passed"
+        },
+        {
+          "name": "offline-reload",
+          "status": "passed"
+        },
+        {
+          "name": "offline-json-sha256",
+          "status": "passed"
+        },
+        {
+          "name": "cache-delete",
+          "status": "passed"
+        }
+      ],
+      "measurements": {
+        "cacheName": "uf-consumer-mobile-wave4-a8757230e3f2b3713822f82f",
+        "cachePaths": 17,
+        "cacheSourceBytesMatched": true,
+        "cacheSourceHashCount": 17,
+        "staleWarmMissionRefused": true,
+        "offlinePassportChecksumVerified": true,
+        "notesSurviveCacheDeletion": true,
+        "transportOffline": true,
+        "osSignalSimulated": true,
+        "nativeBefore": true,
+        "nativeAfter": false
+      }
+    },
+    {
+      "engine": "webkit",
+      "id": "blocked-offline",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 622,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "workerBlockedByTest": true,
+        "savedOfflineVersionClaimed": false,
+        "transportOffline": true,
+        "osSignalSimulated": true,
+        "nativeBefore": true,
+        "nativeAfter": false
+      }
+    },
+    {
+      "engine": "webkit",
+      "id": "storage-and-export-failures",
+      "automated": true,
+      "realHumanTest": false,
+      "status": "passed",
+      "elapsedMs": 1008,
+      "runtimeErrors": [],
+      "externalRequests": [],
+      "requestFailures": [],
+      "screenshots": [],
+      "artifacts": [],
+      "phases": [],
+      "measurements": {
+        "syntheticFailureInjection": true,
+        "storageDeniedNonfatal": true,
+        "clipboardFallback": true,
+        "missingChecksumRefusesJsonExport": true,
+        "textFallbackWorks": true
+      }
+    }
+  ],
+  "physicalIPhone": false,
+  "macOSSafari": false,
+  "externalTestPeople": 0,
+  "humanConversionRate": null,
+  "humanAbandonmentRate": null,
+  "environment": {
+    "platform": "linux",
+    "node": "v22.23.3"
+  },
+  "simulation": "Linux Playwright WebKit is NOT iOS Safari or a physical iPhone. Viewport/touch/OS-offline-signal simulation only.",
+  "servedSourceProof": {
+    "manifestByteIdentical": true,
+    "assets": [
+      {
+        "url": "/",
+        "sha256": "f250eb0848ee7945bd97c0437c8142c7f59a5aea064bdc18124984b9615de69c"
+      },
+      {
+        "url": "/index.html",
+        "sha256": "f250eb0848ee7945bd97c0437c8142c7f59a5aea064bdc18124984b9615de69c"
+      },
+      {
+        "url": "/styles.css",
+        "sha256": "4ab4cd47aa0b7a1243274acc36714b6aa73d9880d9f95c7f5560c1e0b5aca1c4"
+      },
+      {
+        "url": "/app.mjs",
+        "sha256": "6cae7a94731170e5deefa6dc3d73c9951969be3db4241c5a4510a076c5b0b9f8"
+      },
+      {
+        "url": "/mission-state.mjs",
+        "sha256": "58108ad55dc52cdb715b6bc5671a138ec8263dc4a4de28095b9fa6c28eb62a36"
+      },
+      {
+        "url": "/parts-view.mjs",
+        "sha256": "324cb2336aa60457bc53744245880cdd9fa4d2d0c62674f277bba0f1a2d10922"
+      },
+      {
+        "url": "/catalog-snapshot.mjs",
+        "sha256": "4b0f6fc17d22b0bc6f320b02eee5fdb39bb23d0083fadb3135e4bed38d3de9ae"
+      },
+      {
+        "url": "/mobile-ui.mjs",
+        "sha256": "97727b3caa044480c79a95734a3887925058c2c8cae1ee165655657deb65e34e"
+      },
+      {
+        "url": "/mock-fitment-adapter.mjs",
+        "sha256": "c4bd2acd84478af78a28ccf7f7fc2b185ed3e47e4532a92b7b97a7796e45b926"
+      },
+      {
+        "url": "/manifest.webmanifest",
+        "sha256": "7464aad4b874e0e172a815c090ebaa08c5f9ebf02dba523df76154376166d3f5"
+      },
+      {
+        "url": "/app-icon.svg",
+        "sha256": "94eb4f087ded346090f89ffd7c88111dc90047086542b7e099a7939ac15716e4"
+      },
+      {
+        "url": "/dual-platform-owner-review/bridge.mjs",
+        "sha256": "d3cb61c0cd4e554585e28bf9b54d51c110c3bd85aefdc733a8578f2feb13cb6c"
+      },
+      {
+        "url": "/dual-platform-owner-review/ui-fixtures.mjs",
+        "sha256": "469f6ae04d4bd4ebb0fa6933b4b193a20ca79c20f2f2f367fcd3b5b5d69a9061"
+      },
+      {
+        "url": "/fitment-engine-v1-poc/contract.mjs",
+        "sha256": "f609d8c4a2d894632b46db76c28e83d581190dcfed0484a3aab3f12efb36e7b3"
+      },
+      {
+        "url": "/fitment-engine-v1-poc/fixtures.mjs",
+        "sha256": "b1a08deb58acf2b7be7319e61e838c2b5ef5cd7833068e368e41dbc79f3e97a9"
+      },
+      {
+        "url": "/business-embed-poc/adapter.mjs",
+        "sha256": "92d41346810d9874f43ec6e986867052d1740c6ab5f4916779789e0596f68d92"
+      },
+      {
+        "url": "/offline-config.mjs",
+        "sha256": "049df316104478981c42937fc925bac0779e50a021c7dbc00cb4ae14f9829441"
+      },
+      {
+        "url": "/offline-worker.mjs",
+        "sha256": "9b20fc4dc160497f24cf0d1785124c246912699e202031c311b26bae45594eef"
+      }
+    ],
+    "digest": "74f17203c6f9168344fb7a10858bb0267945a0ae77844ace67e2cbd57f5acd17"
+  },
+  "finishedAt": "2026-10-10T11:06:37.562Z",
+  "gate": {
+    "automatedGatePassed": true,
+    "betaOrLaunchApproved": false,
+    "counts": {
+      "planned": 66,
+      "passed": 66,
+      "failed": 0,
+      "blocked": 0,
+      "notRun": 0
+    },
+    "problems": []
+  }
+}

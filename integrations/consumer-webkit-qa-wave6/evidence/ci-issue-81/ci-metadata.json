@@ -1,0 +1,40 @@
+{
+  "schema": "uf.ci-evidence/1",
+  "issue": 81,
+  "runId": 38047125232,
+  "jobId": 114198799224,
+  "url": "https://github.com/Straikerabi/-universal-fitment/actions/runs/38047125232",
+  "testedCommit": "8ca52cd6bb865a9871a2179a03323b1b18da0dee",
+  "conclusion": "success",
+  "artifact": {
+    "id": 11667866660,
+    "name": "consumer-wave6-browser-simulation-8ca52cd6bb865a9871a2179a03323b1b18da0dee",
+    "size_in_bytes": 7134947,
+    "url": "https://api.github.com/repos/Straikerabi/-universal-fitment/actions/artifacts/11667866660",
+    "archive_download_url": "https://api.github.com/repos/Straikerabi/-universal-fitment/actions/artifacts/11667866660/zip",
+    "expired": false,
+    "created_at": "2026-10-10T11:07:20Z",
+    "expires_at": "2026-10-24T11:07:18Z",
+    "updated_at": "2026-10-10T11:07:20Z",
+    "digest": "sha256:b099b8cd6f4f33e038c0ffb6de5fc4577e63e4aff21fa392601f3fff62cbeb6c",
+    "workflow_run": {
+      "id": 38047125232,
+      "repository_id": 1405644405,
+      "head_repository_id": 1405644405,
+      "head_branch": "work/wave6-consumer-webkit-qa",
+      "head_sha": "8ca52cd6bb865a9871a2179a03323b1b18da0dee"
+    }
+  },
+  "qaNodeTests": 16,
+  "legacyNodeTests": 53,
+  "legacyBrowserChecks": 31,
+  "legacyPassportDownloads": 4,
+  "physicalIPhone": false,
+  "macOSSafari": false,
+  "externalTestPeople": 0,
+  "separatePreflight": {
+    "runId": 38047125236,
+    "conclusion": "failure",
+    "ownerSourceLockReviewRequired": true
+  }
+}
