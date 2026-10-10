@@ -1,0 +1,38 @@
+name: Owner independent 66-case Consumer browser integration (no release)
+on:
+  push:
+    branches: [integration/consumer-catalog-live-count-owner]
+    paths:
+      - 'integrations/private-owner-wave5/browser-owner-catalog-smoke.mjs'
+      - '.github/workflows/owner-consumer-browser-integration.yml'
+permissions:
+  contents: read
+jobs:
+  both-engines:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Node browser-script syntax and actual offline integrity
+        run: |
+          node --check integrations/private-owner-wave5/browser-owner-catalog-smoke.mjs
+          node integrations/consumer-repair-mission-poc/prepare-offline.mjs --check
+      - name: Install pinned Playwright test package and both real browser engines
+        run: |
+          npm ci --ignore-scripts --no-audit --no-fund --prefix integrations/consumer-webkit-qa-wave6
+          node integrations/consumer-webkit-qa-wave6/node_modules/playwright/cli.js install --with-deps chromium webkit
+      - name: Run complete 33 Chromium and 33 Linux WebKit tests, no skips
+        run: node integrations/private-owner-wave5/browser-owner-catalog-smoke.mjs
+      - name: Keep honest evidence for Owner review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: owner-consumer-66-browser-integration
+          path: integrations/private-owner-wave5/artifacts/owner-integration-browser/
+          if-no-files-found: warn
+          retention-days: 14
