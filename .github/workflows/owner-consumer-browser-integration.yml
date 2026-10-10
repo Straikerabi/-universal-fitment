@@ -5,6 +5,13 @@ on:
     paths:
       - 'integrations/private-owner-wave5/browser-owner-catalog-smoke.mjs'
       - '.github/workflows/owner-consumer-browser-integration.yml'
+  pull_request:
+    branches: [integration/private-unified-preview-wave5-owner]
+    paths:
+      - 'integrations/consumer-repair-mission-poc/**'
+      - 'integrations/consumer-webkit-qa-wave6/**'
+      - 'integrations/private-owner-wave5/browser-owner-catalog-smoke.mjs'
+      - '.github/workflows/owner-consumer-browser-integration.yml'
 permissions:
   contents: read
 jobs:
