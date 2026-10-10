@@ -1,0 +1,25 @@
+name: Catalog Washer Vacuum Expansion Wave10
+on:
+  push:
+    branches: [work/catalog-washer-vacuum-expansion-wave10]
+    paths:
+      - 'integrations/catalog-washer-vacuum-expansion-wave10/**'
+      - '.github/workflows/catalog-washer-vacuum-expansion-wave10.yml'
+  pull_request:
+    branches: [integration/private-unified-preview-wave5-owner]
+    paths:
+      - 'integrations/catalog-washer-vacuum-expansion-wave10/**'
+      - '.github/workflows/catalog-washer-vacuum-expansion-wave10.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate read-only official OEM expansion evidence
+        run: node integrations/catalog-washer-vacuum-expansion-wave10/validate.mjs --check
+      - name: Run native Node strict model identity and rights negatives
+        run: node --test integrations/catalog-washer-vacuum-expansion-wave10/validate.test.mjs
