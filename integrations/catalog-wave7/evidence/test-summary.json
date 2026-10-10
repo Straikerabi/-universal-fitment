@@ -1,0 +1,67 @@
+{
+  "schema": "uf.wave7-test-summary/1",
+  "release": "wave7-de-2026-10-10-v1",
+  "counts": {
+    "baselineDevices": 11,
+    "retainedBaselineDevices": 11,
+    "additionalDevices": 18,
+    "consumerDevices": 29,
+    "additionalBrands": 7,
+    "consumerBrands": 8,
+    "baselineParts": 11,
+    "additionalParts": 11,
+    "consumerParts": 22,
+    "freshSourceResponses": 33,
+    "newDevicePartListings": 14,
+    "newDevicesWithNoSelectedParts": 8,
+    "newPhysicalFitApprovals": 0,
+    "newPurchaseApprovals": 0,
+    "wave3EdgesUpgraded": 0
+  },
+  "nodeTests": {
+    "passed": 294,
+    "failed": 0,
+    "skipped": 0
+  },
+  "privateSourceReplayTests": {
+    "passed": 8,
+    "failed": 0,
+    "skipped": 0
+  },
+  "browserChecks": {
+    "newMigration": 10,
+    "existingRegression": 31,
+    "passportDownload": 4,
+    "passed": 45,
+    "failed": 0,
+    "newVariantViewportRuns": 72,
+    "legacyPilotTasks": 24,
+    "viewports": [
+      320,
+      375,
+      390,
+      430
+    ],
+    "engine": "Chromium headless",
+    "version": "131.0.6778.85",
+    "playwright": "1.62.1",
+    "physicalIPhone": false,
+    "safariWebkit": false,
+    "externalTestParticipants": 0
+  },
+  "assetsBytes": 189355,
+  "catalogFingerprint": "bf8ad5fe5080141ba7aca5073294396499d3a53650205dd6f8d40156c7bcc932:consumer-ui/2",
+  "frozenWave6LaunchPreflight": {
+    "passed": 14,
+    "failed": 2,
+    "failedTests": [
+      "test_actual_sources_and_lock",
+      "test_example_report_is_reproducible"
+    ],
+    "reason": "Fresh Consumer bytes no longer match old frozen Wave6 lock/golden; untouched, Owner must re-review after combining workers.",
+    "overall": "BLOCKED",
+    "sourceIdentity": "UNKNOWN",
+    "launchApproved": false,
+    "commercialApproved": false
+  }
+}

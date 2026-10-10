@@ -1,0 +1,8 @@
+import assert from 'node:assert/strict';import path from 'node:path';import {execFileSync} from 'node:child_process';import {fileURLToPath} from 'node:url';
+import {base,branch} from './project.mjs';
+const here=path.dirname(fileURLToPath(import.meta.url)),repo=path.resolve(here,'../..');const git=(...args)=>execFileSync('git',args,{cwd:repo,encoding:'utf8'}).trim();assert.equal(git('branch','--show-current'),branch);
+const allowed=new Set(['app.mjs','mission-state.mjs','parts-view.mjs','catalog-snapshot.mjs','catalog-lock.json','offline-config.mjs','tests/snapshot.test.mjs'].map(x=>'integrations/consumer-repair-mission-poc/'+x));
+const changes=[...git('diff','--name-only',base).split('\n'),...git('ls-files','--others','--exclude-standard').split('\n')].filter(Boolean);assert.ok(changes.every(p=>p.startsWith('integrations/catalog-wave7/')||allowed.has(p)));
+assert.equal(git('diff',base,'--','.github','.demo','integrations/fitment-engine-v1-poc','integrations/business-embed-poc','integrations/consumer-repair-mission-poc/styles.css','integrations/consumer-repair-mission-poc/tests/browser.mjs','integrations/consumer-launch-preflight-wave6'),'');
+for(const file of ['project.mjs','verify.mjs','tests/project.test.mjs','tests/browser.mjs'])execFileSync(process.execPath,['--check',path.join(here,file)]);
+execFileSync(process.execPath,[path.join(here,'project.mjs')],{stdio:'inherit'});execFileSync(process.execPath,[path.join(repo,'integrations/consumer-repair-mission-poc/prepare-offline.mjs'),'--check'],{stdio:'inherit'});console.log(JSON.stringify({branch,base,changedPaths:changes.length,engineUnchanged:true,workBAndCUnchanged:true,productionUnchanged:true}));

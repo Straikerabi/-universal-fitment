@@ -1,0 +1,9 @@
+{
+  "schema": "uf.private-audit-cache/1",
+  "archive": "wave7-private-oem-audit-2026-10-10.zip",
+  "sha256": "187f6bde4c88691b9521bb0d5e5cdeab0a0093ead750b1eb235341752cee535e",
+  "bytes": 2363333,
+  "responses": 33,
+  "visibility": "Private audit attachment supplied to owner, excluded from GitHub and app assets",
+  "rights": "Restricted internal research only; no blanket licence, redistribution or commercial rights asserted"
+}

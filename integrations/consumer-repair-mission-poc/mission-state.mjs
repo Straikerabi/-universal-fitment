@@ -85,7 +85,7 @@ export function restoreMission(raw,mode='real'){
  }catch{return fallback;}
 }
 export function saveMission(storage,state){try{storage.setItem(storageKey(state.mode),JSON.stringify(state));return true;}catch{return false;}}
-export function loadMission(storage,mode='real'){try{return restoreMission(storage.getItem(storageKey(mode)),mode);}catch{return freshMission(mode);}}
+export function loadMission(storage,mode='real'){try{const raw=storage.getItem(storageKey(mode)),restored=restoreMission(raw,mode);if(raw!==null&&raw!==JSON.stringify(restored))saveMission(storage,restored);return restored;}catch{return freshMission(mode);}}
 
 
 /**
@@ -111,7 +111,9 @@ export function buildRepairPassport(state,{issuedAt=new Date().toISOString()}={}
   issuedAt,
   provenance:{catalogVersion:catalogSnapshot.appVersion,baselineCommit:catalogSnapshot.baseCommit,
    checkpointSha256:catalogSnapshot.checkpointSha256,catalogSnapshotVersion:catalogSnapshot.version,
-   dataFingerprint,consumerWave3Integrated:catalogSnapshot.wave3Integrated===true},
+   dataFingerprint,consumerWave3Integrated:catalogSnapshot.wave3Integrated===true,
+   freshPilotRelease:catalogSnapshot.freshPilot?.release||null,
+   freshPilotManifestSha256:catalogSnapshot.freshPilot?.manifestSha256||null},
   device:{
    catalogId:device.id,manufacturer:device.brand,model:device.model,sourceReference:device.reference,
    sourceMarket:isDemo?null:device.market||null,productCode:isDemo?null:device.productCode||null,

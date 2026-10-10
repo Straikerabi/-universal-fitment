@@ -1,0 +1,439 @@
+Issue #80 final executed test log. Fresh Consumer release, not legal/launch approval.
+Browser environment: Playwright 1.62.1, explicit Chromium headless 131.0.6778.85. No test skips.
+
+### Node unit and shared core regression
+COMMAND: node --test integrations/catalog-wave7/tests/*.test.mjs integrations/consumer-repair-mission-poc/tests/*.test.mjs integrations/fitment-engine-v1-poc/*.test.mjs integrations/dual-platform-owner-review/*.test.mjs integrations/business-embed-poc/tests.mjs integrations/business-embed-poc/pilot.test.mjs
+✔ shared v1 parity atelier/exact (5.812574ms)
+✔ shared v1 parity atelier/revision (1.485024ms)
+✔ shared v1 parity atelier/excluded (0.780374ms)
+✔ shared v1 parity atelier/sku (0.730489ms)
+✔ shared v1 parity atelier/connector (4.284145ms)
+✔ shared v1 parity atelier/private (0.473552ms)
+✔ shared v1 parity nordlicht/exact (0.706122ms)
+✔ shared v1 parity nordlicht/revision (0.352169ms)
+✔ shared v1 parity nordlicht/excluded (0.45161ms)
+✔ shared v1 parity nordlicht/sku (0.549747ms)
+✔ shared v1 parity nordlicht/connector (0.503497ms)
+✔ shared v1 parity nordlicht/private (0.334433ms)
+✔ missing revision on previously positive case delegates unknown to shared engine (0.341504ms)
+✔ shared response denies schema (0.692592ms)
+✔ shared response denies asset (0.512111ms)
+✔ shared response denies part (0.396396ms)
+✔ shared response denies assembly (0.407984ms)
+✔ shared response denies dataVersion (0.506882ms)
+✔ shared response denies real dataset flag (1.03706ms)
+✔ shared response denies fitment permission (0.291959ms)
+✔ shared response denies purchase permission (0.736378ms)
+✔ shared response denies foreign tenant view (0.528184ms)
+✔ shared response denies foreign case view (0.51862ms)
+✔ shared response denies unmapped private field (0.520073ms)
+✔ shared response denies foreign source id (1.024571ms)
+✔ shared response denies non-synthetic source (1.556571ms)
+✔ shared response denies non-synthetic source url (0.541044ms)
+✔ shared response denies foreign evidence (0.576948ms)
+✔ unconfirmed engine cannot be upgraded by presentation (0.642246ms)
+✔ forged SKU and tenant context fail before shared inspection (0.330056ms)
+✔ stale delayed positive cannot resurrect after selection invalidation (0.962678ms)
+✔ newer request wins when old positive resolves last (0.175323ms)
+✔ in-flight caller mutation cannot change tenant binding (0.241654ms)
+✔ view prototypes and missing fields rejected (0.415506ms)
+✔ role reader / fitment:read (0.282485ms)
+✔ role reader / evidence:read (0.068432ms)
+✔ role reader / audit:read (0.050065ms)
+✔ role reviewer / evidence:read (0.049304ms)
+✔ role reviewer / audit:read (0.048703ms)
+✔ role admin / audit:read (0.051948ms)
+✔ access denies cross tenant (0.103656ms)
+✔ access denies unknown role (0.084227ms)
+✔ access denies unknown action (0.146491ms)
+✔ access denies scope missing (0.10631ms)
+✔ access denies foreign token (0.113721ms)
+✔ access denies expired token (0.050306ms)
+✔ access denies revoked token (0.268419ms)
+✔ access denies foreign feed (0.158168ms)
+✔ access denies unknown rights (0.133831ms)
+✔ access denies revoked feed (0.095774ms)
+✔ access denies expired feed (0.083466ms)
+✔ access denies real feed (0.079119ms)
+✔ access denies public feed with tenant (0.076795ms)
+✔ access denies production usage (0.076966ms)
+✔ role scope configuration is immutable (0.278228ms)
+✔ rate budget per tenant, denied requests do not consume allowed budget, window resets (0.35245ms)
+✔ minimal tenant-scoped audit, role denial, bounded retention, clearing and no secret payloads (0.407183ms)
+✔ cache namespace concept covers tenant, role and rights version without collisions (0.189675ms)
+✔ shared source hashes unchanged from assigned integration basis (0.708356ms)
+✔ atelier/exact: exact prerecorded response (2.490576ms)
+✔ atelier/revision: exact prerecorded response (0.274623ms)
+✔ atelier/excluded: exact prerecorded response (0.205318ms)
+✔ atelier/sku: exact prerecorded response (3.435047ms)
+✔ atelier/connector: exact prerecorded response (0.282855ms)
+✔ atelier/private: exact prerecorded response (1.386745ms)
+✔ nordlicht/exact: exact prerecorded response (0.200091ms)
+✔ nordlicht/revision: exact prerecorded response (0.216365ms)
+✔ nordlicht/excluded: exact prerecorded response (0.231418ms)
+✔ nordlicht/sku: exact prerecorded response (0.282375ms)
+✔ nordlicht/connector: exact prerecorded response (0.20565ms)
+✔ nordlicht/private: exact prerecorded response (0.437748ms)
+✔ foreign tenant response is denied (0.281043ms)
+✔ foreign private evidence cannot cross tenants (0.425811ms)
+✔ public evidence cannot carry a tenant identity (0.114822ms)
+✔ extra secret/raw fields are never projected (0.169756ms)
+✔ unknown contract version (0.104958ms)
+✔ unknown outcome (0.074442ms)
+✔ missing positive evidence (0.082514ms)
+✔ unlicensed evidence (0.07991ms)
+✔ duplicate evidence (0.107842ms)
+✔ response for different case (0.087402ms)
+✔ unmapped evidence data (0.099179ms)
+✔ oversized display text (0.135895ms)
+✔ provider rejects unknown model/code without computing a fitment (0.361233ms)
+✔ unknown tenant and case do not fall back to another tenant (0.274764ms)
+✔ contract hooks required; no assumed #48 compatibility (0.23276ms)
+✔ injected contract validator and mapper are both invoked (0.17321ms)
+✔ rejected contract is not mapped or rendered (0.14626ms)
+✔ provider error fails closed and redacts message (0.220301ms)
+✔ timeout aborts provider and cannot produce a delayed positive (9.931749ms)
+✔ case/context mismatch denied before invoking provider (0.225099ms)
+✔ mutating view cannot change reusable source fixtures (0.204969ms)
+✔ private case is separately owned for both demo tenants (0.158749ms)
+✔ local server: exact file allowlist, methods, host, security headers (61.360703ms)
+✔ browser sources have no external transport, storage or HTML injection sinks (0.879654ms)
+✔ measured actual Consumer 11+18=29, all baseline objects and IDs unchanged, 11+11=22 parts (11.352588ms)
+✔ all full indexed variants resolve independently, no country/index/PNC/sku substitution (1.149218ms)
+✔ all 18 real devices, five assemblies, correct and incorrect observed codes remain unconfirmed (6.871296ms)
+✔ eight identity-only devices have honest empty part groups, not not-sold claims (3.462268ms)
+✔ each OEM identity has a separate exact device/assembly listing and remains a literal unconfirmed filter candidate (1.472415ms)
+✔ same family never transfers /03 wheel to /12, VK7 filters to VK200 or V8 battery to V11 (0.238289ms)
+✔ every fresh source is DE, restricted research not a commercial licence (0.445971ms)
+✔ new lock and offline fingerprint are bound to deterministic generated Consumer bytes (9.553331ms)
+✔ actual old fingerprint actively clears persisted mission, selections and checklist even for retained IDs (0.642416ms)
+✔ reject duplicate full device (2.351477ms)
+✔ reject duplicate stable ID (1.205384ms)
+✔ reject duplicate OEM part (1.856322ms)
+✔ reject leading zero removed (0.82453ms)
+✔ reject short PNC (4.76604ms)
+✔ reject dropped E-Nr index (0.86397ms)
+✔ reject different country (0.978762ms)
+✔ reject third party source (0.459632ms)
+✔ reject third party redirect (0.628175ms)
+✔ reject invalid hash (0.61092ms)
+✔ reject invented licence (0.528505ms)
+✔ reject wrong market (0.715696ms)
+✔ reject another manufacturer source (0.755797ms)
+✔ reject missing OEM proof (0.740194ms)
+✔ reject candidate without listing (1.40245ms)
+✔ reject removed scoped listing (1.038883ms)
+✔ reject positive promotion (0.859072ms)
+✔ reject purchase allowed (4.0881ms)
+✔ reject connector approval (0.899062ms)
+✔ reject wrong assembly (0.823779ms)
+✔ reject wrong scope (0.785722ms)
+✔ reject invented price (0.696768ms)
+✔ all five assembly groups preserve existing device memberships and zero confirmed real parts (11.047819ms)
+✔ literal part-code, assembly and type filters intersect without inferring a fitment (0.588545ms)
+✔ source website locale never becomes a device-region fitment claim (0.328344ms)
+✔ original identity evidence remains distinct from alternatives and synthetic evidence (2.53263ms)
+✔ filter miss and missing documentation have different empty-state reasons (0.443607ms)
+✔ sorting is deterministic, read-only and price requests cannot enable commerce (1.242049ms)
+✔ filters never discard selected parts or completed notes (0.815216ms)
+✔ reselecting the same assembly preserves work; switching assembly clears stale work (0.147202ms)
+✔ mismatched user variant remains a missing item in review, checklist and export (0.2993ms)
+✔ grouped checklist retains every item once and never marks a repair complete (1.62937ms)
+✔ schema-1 missions and duplicate done markers cannot survive wave4 restore (0.421464ms)
+✔ synthetic UI status still equals the existing shared engine for each assembly and revision state (29.299404ms)
+✔ offline cache manifest is current and contains only explicitly allowed local UI/core assets (3.301657ms)
+✔ mission cache is bound to catalog, shared core and fixture bytes without storing engine responses (0.457618ms)
+✔ repair passport refuses to invent an unknown device (1.374518ms)
+✔ real passport keeps source identity, market, version and missing checks (0.857179ms)
+✔ selected part stays an unconfirmed candidate after all available checks are ticked (0.37871ms)
+✔ user-entered variant mismatch remains a warning, never elevated to manufacturer claim (0.236025ms)
+✔ synthetic demo cannot masquerade as real OEM compatibility (4.141861ms)
+✔ local JSON export has deterministic SHA256 integrity check but not an OEM signature (10.258731ms)
+✔ revision or selected assembly changes invalidate report payload and its digest (1.277632ms)
+✔ preview serves local UI with a policy that prevents network services and embedding (40.952093ms)
+✔ local preview refuses foreign hosts, origins and absolute proxy targets (14.021201ms)
+✔ offline worker can fetch only same-origin assets; page cannot call network services (23.861835ms)
+✔ preview does not expose tooling, evidence, repository paths or malformed URLs (12.480804ms)
+✔ preview rejects mutation methods (5.241915ms)
+✔ fresh version 2 snapshot retains baseline pins; no Wave3 or engine data imported (2.661734ms)
+✔ every real identity has a manufacturer URL, dated observation and no new commercial fields (0.749307ms)
+✔ 24 source-linked pilot tasks are plans, not fabricated external test results (0.609507ms)
+✔ own illustration has no manufacturer media, remote fonts or copied OEM diagrams (0.872202ms)
+✔ unfinished missions cannot jump past required selections (1.427418ms)
+✔ every real device and assembly stays unclear, even when user says variant known (4.684336ms)
+✔ exact Samsung EEK source is not inferred from EEM alias or WA (0.541244ms)
+✔ same family or shared Miele type is a selection list, never an automatic device (0.34596ms)
+✔ unknown revision is explicit, no serial scope or connector dimensions invented (1.606606ms)
+✔ empty catalog area remains open, no not-sold or out-of-stock inference (0.195223ms)
+✔ real parts are source-bound candidates, no copied prices or offers (0.785311ms)
+✔ other-device parts cannot enter checklist (0.738932ms)
+✔ device, variant and assembly changes clear stale part and done state (0.425881ms)
+✔ completed notes never change assessment or mark a complete repair set (0.3458ms)
+✔ all five synthetic scenarios retain namespace and explicit synthetic marker (5.478952ms)
+✔ synthetic negative parts cannot enter the list; incomplete kit stays incomplete (0.577709ms)
+✔ synthetic positive fixture is hidden until variant selection, wrong assembly is unknown (0.364148ms)
+✔ mock adapter refuses real devices, brand namespaces and changed requests (0.742777ms)
+✔ wrong-context, unmarked and commercial synthetic responses are rejected (0.41872ms)
+✔ roundtrip stores choices, never an authoritative saved response (0.539652ms)
+✔ tampered, stale, foreign and malformed saved missions reset safely (0.823749ms)
+✔ storage failure is nonfatal and states of real and demo are separate (0.577158ms)
+✔ retains 11 identities without granting a physical fit (1.898116ms)
+✔ does not infer regional/family alias matches or install approval (0.414984ms)
+✔ flags missing legacy article and duplicate manufacturer association (0.313372ms)
+✔ fails closed if source locks or measured full-catalog counts differ (0.936649ms)
+✔ never resolves same-brand candidate from model name alone (0.288684ms)
+✔ the same v1 evidence gives matching B2C+B2B synthetic positive, never real purchase (3.577461ms)
+✔ one exact OEM exclusion becomes negative on both surfaces (0.34597ms)
+✔ one connected-part mismatch becomes negative on both surfaces (0.509356ms)
+✔ unknown revision never becomes a positive consumer or B2B claim (0.296956ms)
+✔ region mismatch never becomes a positive consumer or B2B claim (0.238039ms)
+✔ wrong OEM never becomes a positive consumer or B2B claim (0.303637ms)
+✔ missing source never becomes a positive consumer or B2B claim (1.580953ms)
+✔ source rights denied never becomes a positive consumer or B2B claim (0.277898ms)
+✔ malformed data never becomes a positive consumer or B2B claim (0.495506ms)
+✔ high safety risk never becomes a positive consumer or B2B claim (0.453552ms)
+✔ synthetic context not production never becomes a positive consumer or B2B claim (0.13262ms)
+✔ public reuse denial cannot be turned into a real publication (0.379671ms)
+✔ hidden/no display rights downgrade even complete synthetic evidence to unknown (0.309035ms)
+✔ B2B already-existing hook boundary can consume the canonical v1 response (0.828066ms)
+✔ real Miele recorded catalogue example cannot enter the synthetic integration (0.294183ms)
+✔ wrong schema and unknown tenant must fail closed (0.161302ms)
+✔ integration does not change the input evidence (0.934575ms)
+✔ supported strict request/response; schema has no public endpoint (4.696275ms)
+✔ positive complete synthetic chain is explicitly test-only, never authorizes purchase or real fitment (1.658685ms)
+✔ unsupported major version (0.271599ms)
+✔ unsupported minor version (0.223346ms)
+✔ missing mandatory field (0.356356ms)
+✔ unknown property (0.286151ms)
+✔ invalid risk (0.356376ms)
+✔ same brand different execution (0.32567ms)
+✔ identifier suffix cannot be erased (0.380703ms)
+✔ different OEM number (0.467163ms)
+✔ merchant SKU is not OEM (0.410587ms)
+✔ EAN is not OEM (0.276466ms)
+✔ supplier SKU is not OEM (0.264929ms)
+✔ issuer is scoped (0.207031ms)
+✔ source namespace mismatch (0.244818ms)
+✔ unknown revision (1.543602ms)
+✔ unreviewed revision scope (0.271418ms)
+✔ wrong revision (0.224197ms)
+✔ malformed any revision (0.19331ms)
+✔ unknown serial scope (0.194192ms)
+✔ missing numeric serial (0.318288ms)
+✔ serial outside interval (0.335355ms)
+✔ serial interval reversed (0.24614ms)
+✔ malformed universal serial scope (0.226551ms)
+✔ unknown market (0.227212ms)
+✔ different market (0.230416ms)
+✔ no explicit edge (0.19221ms)
+✔ wrong asset binding (0.230436ms)
+✔ wrong part binding (0.236476ms)
+✔ wrong assembly binding (0.180011ms)
+✔ missing source reference (0.483618ms)
+✔ unverified source (0.287703ms)
+✔ withdrawn source (0.236566ms)
+✔ missing digest (0.194803ms)
+✔ bad digest (0.397929ms)
+✔ impossible date (0.276816ms)
+✔ unknown private use rights (0.277988ms)
+✔ denied private use rights (0.475275ms)
+✔ missing rights reference (0.309025ms)
+✔ untrusted domain (0.300722ms)
+✔ untrusted publisher (0.247984ms)
+✔ duplicate source id (0.320172ms)
+✔ duplicate claim id (0.646823ms)
+✔ duplicate connection id (0.264428ms)
+✔ absent installation review (0.290407ms)
+✔ unknown connection shape (0.258609ms)
+✔ unknown required dimension (0.264448ms)
+✔ units differ (0.29251ms)
+✔ unverified connection evidence (0.257718ms)
+✔ different connected assembly (0.26583ms)
+✔ documents are not physical parts (0.221844ms)
+✔ whole devices are not parts (0.252139ms)
+✔ cross-manufacturer unapproved (0.230246ms)
+✔ unknown category default deny (0.213832ms)
+✔ high risk category default deny (0.136795ms)
+✔ review required (0.255334ms)
+✔ prohibited risk (0.148333ms)
+✔ unknown risk (0.224708ms)
+✔ synthetic B2C denied (0.118068ms)
+✔ synthetic B2B denied (0.097677ms)
+✔ malformed input returns safe response (0.219871ms)
+✔ explicit incompatible exact variant (0.189856ms)
+✔ main assembly matches but connected synthetic thread differs: incompatible (0.224958ms)
+✔ exact typed values: no automatic string/number or unit conversion (0.234974ms)
+✔ conflicting exclusion blocks compatible claim (0.343166ms)
+✔ numeric serial inclusive endpoints; no vendor-specific lexicographic guess (0.416797ms)
+✔ reviewed all revisions is explicit, never inferred (0.169094ms)
+✔ reviewed no interface conditions allowed only with review evidence (0.316957ms)
+✔ link permission does not grant commercial reuse (0.394945ms)
+✔ real recorded Miele listing remains unconfirmed, no fabricated conditions (0.356897ms)
+✔ B2C and B2B receive byte-identical real catalog decision (0.298599ms)
+✔ stable order under source and claim permutation (1.191803ms)
+✔ strict issuer/namespace/value: zeros, case and punctuation remain significant (0.09943ms)
+✔ manufacturer URL boundaries reject spoofing, credentials and HTTP (0.213291ms)
+✔ merchant device identity cannot assert exact variant even if matching both sides (0.177187ms)
+✔ missing and cyclic manufacturer delegation cannot authenticate third-party claims (0.249235ms)
+✔ synthetic evidence cannot be relabelled as catalog manufacturer evidence (0.214763ms)
+✔ non-finite connection values refused by strict JSON contract (0.307732ms)
+✔ immutable request is valid; function needs no ambient clock/network/randomness (0.278559ms)
+✔ additional observed variant identity cannot be silently ignored (0.210797ms)
+✔ schema cannot be mutated by consumer import (0.413583ms)
+✔ B2C/B2B rights gate: unknown/denied reuse never promoted from link/private permission (0.138178ms)
+✔ B2C and B2B rights checks identical for explicit synthetic permission (0.065739ms)
+✔ permission label without reference never grants use (0.066741ms)
+✔ status, confidence, brand and source URL alone do not produce explicit edge (1.92155ms)
+✔ unassigned brand-catalog article stays unassigned (0.275114ms)
+✔ candidate is not a confirmed/mapped edge (0.484719ms)
+✔ physical associations deduplicate exact scoped identities (0.290327ms)
+✔ leading zeros, namespaces, issuer and aftermarket remain different identities (0.296195ms)
+✔ document/device/unknown rows excluded by pinned physical taxonomy (0.265449ms)
+✔ family fallback never becomes a concrete model (0.193592ms)
+✔ same model name distinct records counted transparently (0.249405ms)
+✔ duplicate model IDs rejected (0.670078ms)
+✔ missing assemblies remain unknown, never not_sold_separately (3.683311ms)
+✔ structured recorded source edge needs proper first-party domain and date (0.646933ms)
+✔ brand mismatch on recorded source does not count manufacturer assertion (1.981901ms)
+✔ source order independent catalog row ordering (0.744961ms)
+✔ full fresh checkpoint baseline, every source hash, no mutation, byte deterministic golden (1723.327438ms)
+ℹ tests 294
+ℹ suites 0
+ℹ pass 294
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2051.115765
+
+### Private source pin replay and synthetic rejection mutants
+COMMAND: UF_OEM_AUDIT_CACHE=<private cache> python -B -m unittest discover -s integrations/catalog-wave7/tests -p test_*.py -v
+test_all_private_pins_and_scoped_facts_reproduce_byte_identical_pilot (test_sources.FreshReplay.test_all_private_pins_and_scoped_facts_reproduce_byte_identical_pilot) ... ok
+test_bom_index_cannot_transfer_from_sibling (test_sources.FreshReplay.test_bom_index_cannot_transfer_from_sibling) ... ok
+test_changed_body_not_silently_repinned (test_sources.FreshReplay.test_changed_body_not_silently_repinned) ... ok
+test_complete_pnc_index_required (test_sources.FreshReplay.test_complete_pnc_index_required) ... ok
+test_dyson_links_cannot_use_another_full_sku (test_sources.FreshReplay.test_dyson_links_cannot_use_another_full_sku) ... ok
+test_miele_part_must_have_an_own_scoped_card (test_sources.FreshReplay.test_miele_part_must_have_an_own_scoped_card) ... ok
+test_samsung_de_country_suffix_required (test_sources.FreshReplay.test_samsung_de_country_suffix_required) ... ok
+test_vorwerk_own_listing_cannot_transfer_to_vk200 (test_sources.FreshReplay.test_vorwerk_own_listing_cannot_transfer_to_vk200) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 10.766s
+
+OK
+
+### Recompute pinned pilot from private source responses
+COMMAND: python -B integrations/catalog-wave7/import_sources.py --cache <private cache>
+{"sourcesVerified": 33, "devicesVerified": 18, "partIdentitiesVerified": 11, "scopedListingsVerified": 14, "manifestSha256": "9ef42687a35ef603dfbfe57738dc309c6920998d834300f292691a6e8d04bfe0", "state": "byte-identical"}
+
+### New real Consumer mobile and offline browser flows
+COMMAND: node integrations/catalog-wave7/tests/browser.mjs
+PASS actual Consumer 29 devices, 8 brands, accurate data-bound counts
+PASS 320px: all 18 exact new variants through five steps, no real positive
+PASS 375px: all 18 exact new variants through five steps, no real positive
+PASS 390px: all 18 exact new variants through five steps, no real positive
+PASS 430px: all 18 exact new variants through five steps, no real positive
+PASS literal fresh OEM article filter and checklist retain exact 11639250 without approval
+PASS market/index/reference mismatch and VK200 sibling never transfer parts or approve
+PASS actual old fingerprint actively overwritten; retained old ID, selections, checklist cleared
+PASS warm offline reload keeps NEW variant, cached fresh snapshot, unconfirmed checklist
+PASS cold offline with no installation gives network error, no catalog or approvals
+{"passed":10,"newVariantViewportRuns":72,"version":"131.0.6778.85","errors":0,"externalRequests":0}
+
+### Unmodified existing browser regression
+COMMAND: node integrations/consumer-repair-mission-poc/tests/browser.mjs
+PASS source-only initial screen; no automatic device and no network service
+PASS literal country code and EEM alias refuse a substituted device
+PASS real identity, missing revision, assembly and unconfirmed candidate
+PASS checklist autosave and download never approve a real fitment
+PASS return and variant change remove stale candidate
+PASS source URLs have explicit identity scope; no shopping actions
+PASS synthetic supported response stays visibly a demo
+PASS missing variant has no definitive response
+PASS negative revision and connector are blocked from synthetic parts list
+PASS missing kit component stays explicit; notes do not certify completeness
+PASS real and demo local missions cannot leak identifiers or approve one another
+PASS tampered cached response and stale fingerprint are rejected
+PASS no source record means open data, not not-sold or unavailable claims
+PASS 320/375/390/430/844 landscape/768/1280: all five steps reflow
+PASS narrow demo warnings reflow for missing, negative and incomplete results
+PASS 200% text, dark mode and reduced motion preserve warnings and reflow
+PASS all touch buttons are at least 44px; input text stays 16px
+PASS skip link appears only on keyboard focus; source details remain operable
+PASS hostile text is inert; copying fallback gives actionable feedback
+PASS five native accordion groups keep identity counts separate from confirmed parts
+PASS intersecting mobile filters preserve OEM codes and disable price sorting with a reason
+PASS alternative evidence produces a filter miss, not an unavailable part claim
+PASS hidden selected candidates stay in grouped checklist and can be explicitly removed
+PASS region and user variant disagreement stay visible through checklist without negative invention
+PASS Hoover GB article website stays distinct from the DE device source and never confirms fitment
+PASS open filter forms, accordion sources and grouped notes reflow at every required viewport
+PASS large text and dark mobile filters retain warnings and focused search
+PASS 24 documented pilot tasks exercise only real unknown outcomes
+PASS desktop visual preview and no runtime or external network errors
+PASS warm local PWA reloads the exact cached UI/core offline without confirming a real fitment
+Local UI/core asset bytes: 189355
+PASS blocked offline storage is explained and shipped local assets stay below 300 kB
+{"passed":31,"engine":"Chromium","version":"131.0.6778.85","pilotTasks":24,"realFalsePositiveAssertions":0,"externalRequests":0}
+
+### Unmodified actual repair passport browser download
+COMMAND: node integrations/consumer-repair-mission-poc/tests/passport-browser.mjs
+PASS actual Chromium passport download 320px
+PASS actual Chromium passport download 375px
+PASS actual Chromium passport download 390px
+PASS actual Chromium passport download 430px
+
+### Catalog-lock, offline hashes, branch, syntax and scope
+COMMAND: node integrations/catalog-wave7/verify.mjs
+{"state":"byte-identical","baselineDevices":11,"retainedBaselineDevices":11,"additionalDevices":18,"consumerDevices":29,"additionalBrands":7,"consumerBrands":8,"baselineParts":11,"additionalParts":11,"consumerParts":22,"freshSourceResponses":33,"newDevicePartListings":14,"newDevicesWithNoSelectedParts":8,"newPhysicalFitApprovals":0,"newPurchaseApprovals":0,"wave3EdgesUpgraded":0,"cacheName":"uf-consumer-mobile-wave4-8d3f666a66e9c0e0ea3f5a5d","catalogFingerprint":"bf8ad5fe5080141ba7aca5073294396499d3a53650205dd6f8d40156c7bcc932:consumer-ui/2","assetPaths":["/","/index.html","/styles.css","/app.mjs","/mission-state.mjs","/parts-view.mjs","/catalog-snapshot.mjs","/mobile-ui.mjs","/mock-fitment-adapter.mjs","/manifest.webmanifest","/app-icon.svg","/dual-platform-owner-review/bridge.mjs","/dual-platform-owner-review/ui-fixtures.mjs","/fitment-engine-v1-poc/contract.mjs","/fitment-engine-v1-poc/fixtures.mjs","/business-embed-poc/adapter.mjs","/offline-config.mjs"],"hashes":{"/":"f250eb0848ee7945bd97c0437c8142c7f59a5aea064bdc18124984b9615de69c","/index.html":"f250eb0848ee7945bd97c0437c8142c7f59a5aea064bdc18124984b9615de69c","/styles.css":"4614a167dd354c59ef4e2181684e8178046fee3a08045b2d137ef6d241ed4ae1","/app.mjs":"84e49ffc5cbb1834dd919549a8d49340f37b5d431a93af4dc0fae103a2e361b3","/mission-state.mjs":"f8b2aa8aaa0e0677541cf62f052213c8aea85f99c82d78deac535791fa9378ca","/parts-view.mjs":"d9faabc399d6b4eb5b9a1c449d0ae7bfb06434ed50fd825de977ce6246a5d20b","/catalog-snapshot.mjs":"24c5ace3a1042f2f0a339140db43e2c5e2f948a5bfcbd8ac6dd289be9ff80bc7","/mobile-ui.mjs":"97727b3caa044480c79a95734a3887925058c2c8cae1ee165655657deb65e34e","/mock-fitment-adapter.mjs":"c4bd2acd84478af78a28ccf7f7fc2b185ed3e47e4532a92b7b97a7796e45b926","/manifest.webmanifest":"7464aad4b874e0e172a815c090ebaa08c5f9ebf02dba523df76154376166d3f5","/app-icon.svg":"94eb4f087ded346090f89ffd7c88111dc90047086542b7e099a7939ac15716e4","/dual-platform-owner-review/bridge.mjs":"d3cb61c0cd4e554585e28bf9b54d51c110c3bd85aefdc733a8578f2feb13cb6c","/dual-platform-owner-review/ui-fixtures.mjs":"469f6ae04d4bd4ebb0fa6933b4b193a20ca79c20f2f2f367fcd3b5b5d69a9061","/fitment-engine-v1-poc/contract.mjs":"f609d8c4a2d894632b46db76c28e83d581190dcfed0484a3aab3f12efb36e7b3","/fitment-engine-v1-poc/fixtures.mjs":"b1a08deb58acf2b7be7319e61e838c2b5ef5cd7833068e368e41dbc79f3e97a9","/business-embed-poc/adapter.mjs":"92d41346810d9874f43ec6e986867052d1740c6ab5f4916779789e0596f68d92"}}
+
+### Additional frozen Wave6 release guard: KNOWN TWO REFERENCE FAILURES, not silently repinned
+COMMAND: python -B -m unittest discover -s integrations/consumer-launch-preflight-wave6 -v
+test_actual_findings (test_preflight.PreflightTests.test_actual_findings) ... ok
+test_actual_sources_and_lock (test_preflight.PreflightTests.test_actual_sources_and_lock) ... FAIL
+test_candidates_never_prove_real_legal_documents (test_preflight.PreflightTests.test_candidates_never_prove_real_legal_documents) ... ok
+test_checkpoint_checksum_and_identity_fail_closed (test_preflight.PreflightTests.test_checkpoint_checksum_and_identity_fail_closed) ... ok
+test_cli_all_modes_exit_two_and_deterministic (test_preflight.PreflightTests.test_cli_all_modes_exit_two_and_deterministic) ... ok
+test_cli_invalid_private_input_redacted (test_preflight.PreflightTests.test_cli_invalid_private_input_redacted) ... ok
+test_cli_rejects_oversize_receipts (test_preflight.PreflightTests.test_cli_rejects_oversize_receipts) ... ok
+test_digest_is_not_a_real_review (test_preflight.PreflightTests.test_digest_is_not_a_real_review) ... ok
+test_empty_example_stops_every_mode (test_preflight.PreflightTests.test_empty_example_stops_every_mode) ... ok
+test_example_report_is_reproducible (test_preflight.PreflightTests.test_example_report_is_reproducible) ... FAIL
+test_mode_boundaries (test_preflight.PreflightTests.test_mode_boundaries) ... ok
+test_no_network_or_execution_during_inventory (test_preflight.PreflightTests.test_no_network_or_execution_during_inventory) ... ok
+test_placeholder_and_arbitrary_data_never_accepted_or_echoed (test_preflight.PreflightTests.test_placeholder_and_arbitrary_data_never_accepted_or_echoed) ... ok
+test_report_has_only_locations_counts_and_hashes (test_preflight.PreflightTests.test_report_has_only_locations_counts_and_hashes) ... ok
+test_safe_read_rejects_traversal_and_symlinks (test_preflight.PreflightTests.test_safe_read_rejects_traversal_and_symlinks) ... ok
+test_source_drift_and_missing_access_are_unknown (test_preflight.PreflightTests.test_source_drift_and_missing_access_are_unknown) ... ok
+
+======================================================================
+FAIL: test_actual_sources_and_lock (test_preflight.PreflightTests.test_actual_sources_and_lock)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repository>/integrations/consumer-launch-preflight-wave6/test_preflight.py", line 39, in test_actual_sources_and_lock
+    self.assertEqual(self.check(self.report(), id)['status'], 'PASS')
+AssertionError: 'UNKNOWN' != 'PASS'
+- UNKNOWN
++ PASS
+
+
+======================================================================
+FAIL: test_example_report_is_reproducible (test_preflight.PreflightTests.test_example_report_is_reproducible)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<repository>/integrations/consumer-launch-preflight-wave6/test_preflight.py", line 197, in test_example_report_is_reproducible
+    self.assertEqual(saved, self.report())
+AssertionError: {'blockingChecks': ['checkpoint-legal-navig[41597 chars]]}}}} != {'schemaVersion': 1, 'reviewedBase': '456c8[41659 chars]SS']}
+Diff is 111042 characters long. Set self.maxDiff to None to see it.
+
+----------------------------------------------------------------------
+Ran 16 tests in 18.629s
+
+FAILED (failures=2)
+
+### Additional preflight CLI
+COMMAND: python -B integrations/consumer-launch-preflight-wave6/preflight.py --json
+Observed exit 2, overall BLOCKED, source-identity UNKNOWN, launchApproved false, commercialApproved false.
+### Whitespace verification
+COMMAND: git diff --check
+Exit 0, no output.

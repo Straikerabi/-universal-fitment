@@ -27,7 +27,8 @@ export function sourceRegion(source){
   const url=new URL(source.url);
   if(url.hostname==='service.hoover.co.uk')return 'GB';
   if(url.hostname==='www.hoover-home.com'&&url.pathname.startsWith('/en_GB/'))return 'GB (en_GB)';
-  if(['www.miele.de','www.dyson.de'].includes(url.hostname)||
+  if(['www.miele.de','www.dyson.de','shop.aeg.de'].includes(url.hostname)||
+   (['www.siemens-home.bsh-group.com','www.vorwerk.com'].includes(url.hostname)&&url.pathname.startsWith('/de/de/'))||
    (url.hostname==='www.hoover-home.com'&&url.pathname.startsWith('/de_DE/'))||
    (url.hostname==='www.samsung.com'&&url.pathname.startsWith('/de/'))||
    (url.hostname==='www.bosch-home.com'&&url.pathname.startsWith('/de/de/')))return 'DE';

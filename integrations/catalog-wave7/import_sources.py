@@ -34,6 +34,7 @@ def extract(cache, sources):
         need(re.fullmatch(r'[a-z0-9-]+', s['id']), 'unsafe cache identity')
         for key in ['url','finalUrl']:
             u = urlparse(s[key]);need(u.scheme == 'https' and u.hostname == HOSTS[s['brand']], 'non-manufacturer URL/redirect')
+        need(s['contentType'].startswith('text/html') and 0<s['bytes']<2_000_000,'unexpected audit type/size')
         data = (cache / (s['id']+'.html')).read_bytes()
         need(len(data)==s['bytes'] and hashlib.sha256(data).hexdigest()==s['sha256'], 'source digest mismatch: '+s['id'])
         htmls[s['id']] = data.decode('utf-8')
@@ -99,6 +100,7 @@ def extract(cache, sources):
      ('vorwerk-mf7','MF7','Kobold MF7 Motorschutzfilter','filter','manufacturer-part-designation')]
     for key,code,name,assembly,namespace in selected:
         brand=by[key]['brand'];locator='own product heading + exact article identity'
+        if brand!='Miele':need(name in norm(re.sub(r'[™®]','',head(key,'h1'))),'own OEM name heading')
         if brand=='Miele':need('Modellbezeichnung '+name+' Materialnummer Hersteller '+code in texts[key],'own Miele part material')
         elif brand=='Dyson':
             canonical=next(n.attrs['content'] for n in docs[key] if n.tag=='meta' and n.attrs.get('property')=='og:url')
@@ -147,6 +149,9 @@ if __name__=='__main__':
     if args.fetch:
         args.cache.mkdir(parents=True,exist_ok=True)
         for s in sources:
+            need(re.fullmatch(r'[a-z0-9-]+',s['id']),'unsafe cache identity')
+            for key in ['url','finalUrl']:
+                u=urlparse(s[key]);need(u.scheme=='https' and u.hostname==HOSTS[s['brand']],'non-manufacturer URL/redirect')
             target=args.cache/(s['id']+'.html')
             if target.exists():continue
             with urllib.request.urlopen(urllib.request.Request(s['url'],headers={'User-Agent':'Mozilla/5.0'}),timeout=55) as r:
@@ -156,4 +161,5 @@ if __name__=='__main__':
     if args.write:
         need(subprocess.check_output(['git','branch','--show-current'],cwd=ROOT,text=True).strip()=='work/wave7-fresh-oem-consumer-pilot','wrong branch');target.write_text(result)
     else:need(target.read_text()==result,'fresh extraction differs from pinned pilot')
-    print(json.dumps({'sourcesVerified':len(sources),'devicesVerified':18,'partIdentitiesVerified':11,'scopedListingsVerified':14,'manifestSha256':hashlib.sha256(result.encode()).hexdigest(),'state':'generated' if args.write else 'byte-identical'}))
+    measured=json.loads(result)
+    print(json.dumps({'sourcesVerified':len(sources),'devicesVerified':len(measured['devices']),'partIdentitiesVerified':len(measured['parts']),'scopedListingsVerified':len(measured['listings']),'manifestSha256':hashlib.sha256(result.encode()).hexdigest(),'state':'generated' if args.write else 'byte-identical'}))
