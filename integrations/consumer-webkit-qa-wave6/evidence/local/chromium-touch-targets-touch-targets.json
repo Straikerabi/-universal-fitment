@@ -1,0 +1,26 @@
+{
+  "policy": "44 CSS px design target, not a WCAG certification",
+  "stageCounts": [
+    {
+      "stage": 1,
+      "targets": 25
+    },
+    {
+      "stage": 2,
+      "targets": 15
+    },
+    {
+      "stage": 3,
+      "targets": 22
+    },
+    {
+      "stage": 4,
+      "targets": 19
+    },
+    {
+      "stage": 5,
+      "targets": 20
+    }
+  ],
+  "violations": []
+}
