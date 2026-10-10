@@ -118,7 +118,7 @@ test('queue-only work receipt cannot become source or product approval',()=>{
  const id='vacuum-cleaner',a=appendEvent(journal,event(id,'start'),master,evidence);
  const done=appendEvent(a,event(id,'complete'),master,evidence);
  const r=deriveReport(master,done,evidence);
- assert.equal(r.gates.licenseApproved,false);assert.equal(r.gates.consumerPublished,false);
+ assert.equal(r.gates.commercialRightsApproved,false);assert.equal(r.gates.consumerPublished,false);
  assert.equal(r.gates.fitmentConfirmed,false);assert.equal(r.nextSuggested.some(x=>x.categoryId===id),false);
 });
 test('all generated master and reports identical to checked-in files',()=>{
