@@ -14,16 +14,16 @@
     {
       "path": "integrations/consumer-repair-mission-poc/offline-config.mjs",
       "beforeGitBlob": "1aaeddadfd60a4c10322323f43a587caa469d0f7",
-      "afterGitBlob": "ebb1bba74b3ec52ff657c73a1a783b2303ecf993",
+      "afterGitBlob": "6520044c7018aedaf489f7bf1eb4eeae0f1fa9e7",
       "beforeSha256": "09dbeba0072946560ef68d9b27ec3b6f8fa4d07db222aeb0a2c3d6753360e76a",
-      "afterSha256": "a75bd192264dd3921c34c279093864970741ebe2427055e3a83c772e9c09bb86"
+      "afterSha256": "e7c21ceb07d6b0ee0e48384deb44a739a94cbead8e8502ade2e26d216d8718a9"
     },
     {
       "path": "integrations/consumer-repair-mission-poc/offline-worker.mjs",
       "beforeGitBlob": "c49e9f594e5da3ecc2cac5633eb7002992600741",
-      "afterGitBlob": "106b27d71f5b98895dd9f1491f61f43bef2232b4",
+      "afterGitBlob": "2cc58b5190690dd5888781955d9dde713e7c9d77",
       "beforeSha256": "2895855cc9ca999b68587b298e4e4f408e0f1bae8901f3eae9cc5a1ae61fe760",
-      "afterSha256": "8bc2d6895d181c703d438b2c0151c6c33bdd52cd00cc740d170a4f6daa8ffb1c"
+      "afterSha256": "633176db020c134f100af96174c1a4a260f5e25580d85a0c11c6b897149184e9"
     },
     {
       "path": "integrations/consumer-repair-mission-poc/prepare-offline.mjs",
@@ -42,15 +42,15 @@
     {
       "path": "integrations/consumer-repair-mission-poc/styles.css",
       "beforeGitBlob": "5e3343c2655f893f73f93b7ba5e909c96c981bd1",
-      "afterGitBlob": "75fcf5bae86ddbdaf2a6a71d87c812d74af04e77",
+      "afterGitBlob": "ba3165ce75a24ec27f4f369d099c81fce3520305",
       "beforeSha256": "4ab4cd47aa0b7a1243274acc36714b6aa73d9880d9f95c7f5560c1e0b5aca1c4",
-      "afterSha256": "5fcfc99c3059dd528d1bc82cd7502f1fd5823ce2e6a317b4646d5c477f90bc6b"
+      "afterSha256": "8fe8298015f95cb02d0a749ad5ae301d3c04a9bc8b653698328521510744ff73"
     },
     {
       "path": "integrations/consumer-repair-mission-poc/discovery-ui.mjs",
       "beforeGitBlob": null,
       "beforeSha256": null,
-      "afterSha256": "f0fe32fd9bbf12539c9414d7acfdb58a10ebed19f2e3f59644ea6ce3f89248c5"
+      "afterSha256": "6be579801d4b0dfae3b40672a9cd1b34c0c27419a707ec6ab3a311524794ef17"
     }
   ],
   "protectedFiles": 3826,
