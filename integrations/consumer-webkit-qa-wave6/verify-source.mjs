@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
-import {assetFiles,configSource,offlineConfig} from '../consumer-repair-mission-poc/prepare-offline.mjs';
+import {assetFiles,configSource,offlineConfig,workerSource} from '../consumer-repair-mission-poc/prepare-offline.mjs';
 const consumer=new URL('../consumer-repair-mission-poc/',import.meta.url);
 const hash=bytes=>createHash('sha256').update(bytes).digest('hex');
 export function expectedAssetHashes(){
@@ -9,6 +9,7 @@ export function expectedAssetHashes(){
 }
 export async function verifyServedSource(base){
  assert.equal(readFileSync(new URL('offline-config.mjs',consumer),'utf8'),configSource(),'Regenerate offline manifest from real source bytes');
+ assert.equal(readFileSync(new URL('offline-worker.mjs',consumer),'utf8'),workerSource(),'Regenerate classic worker constants from real source bytes');
  const files={...assetFiles,'/offline-config.mjs':'offline-config.mjs','/offline-worker.mjs':'offline-worker.mjs'};
  const rows=await Promise.all(Object.entries(files).map(async([url,file])=>{
   const response=await fetch(new URL(url,base));assert.equal(response.status,200,url);

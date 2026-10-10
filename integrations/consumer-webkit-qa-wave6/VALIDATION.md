@@ -1,5 +1,7 @@
 # Gemessene lokale Abnahme / #75
 
+**Historische #75-Baseline, nicht der aktuelle #81-Stand.** Die Originalmessungen und Artefakte bleiben unverändert. Der autorisierte Fix und die neue CI-Abnahme stehen in [ISSUE-81-VALIDATION.md](ISSUE-81-VALIDATION.md).
+
 **Gate ROT. Keine Beta-/Launchfreigabe.** Die isolierte Suite ist implementiert; die Produktabnahme ist nicht erfolgreich abgeschlossen. Produktfehler werden gemäß Issue nur berichtet, nicht im geschützten Consumer behoben.
 
 Gemessener vollständiger Lauf: **2026-10-10 07:06:57.039–07:08:40.906 UTC**. Ausgangs-HEAD `456c8b8936617f5275d8d1ccfc29601d559cac89`; neue QA-Dateien waren beim Lauf noch uncommitted. Ihre tatsächlich ausgeführten Bytes werden unabhängig vom späteren Commit durch den Suite-SHA-256 `46d0cf09a0ae926fe6fc02a92b6e1a9d40e978e894b6b72b77c2bb061ac3eb96` gebunden. Vor-/Nachher-Digest identisch; Dokumentation und archivierte Ergebnisse sind nicht Teil dieses Code-Digests.

@@ -7,7 +7,7 @@ export const ROOT_PATH='integrations/consumer-webkit-qa-wave6/';
 export const WORKFLOW='.github/workflows/consumer-webkit-qa-wave6.yml';
 export const allowedPath=path=>path.startsWith(ROOT_PATH)||path===WORKFLOW;
 // #81 expressly permits only minimal Consumer fixes, not catalog/core/snapshot edits.
-export const OWNER_DELTA_PATHS=Object.freeze(['styles.css','prepare-offline.mjs','offline-config.mjs']
+export const OWNER_DELTA_PATHS=Object.freeze(['styles.css','app.mjs','offline-worker.mjs','prepare-offline.mjs','offline-config.mjs']
  .map(file=>'integrations/consumer-repair-mission-poc/'+file));
 export const allowedChange=path=>allowedPath(path)||OWNER_DELTA_PATHS.includes(path);
 export const VIEWPORTS=Object.freeze([
@@ -41,6 +41,11 @@ export function summarize(report){
  if(report?.scopeProof?.ownerIssue!==81||!Array.isArray(report?.scopeProof?.authorizedDelta)||
     !/^[a-f0-9]{64}$/.test(report?.scopeProof?.sourceBytesDigest||'')||
     report?.scopeProof?.sourceBytesDigest!==report?.scopeProof?.afterSourceBytesDigest)problems.push('owner-delta-or-source-bytes-not-proved');
+ const deltas=report?.scopeProof?.authorizedDelta??[];
+ if(!Array.isArray(deltas)||deltas.length!==5||report?.scopeProof?.baselineFiles!==3719||report?.scopeProof?.protectedFiles!==3714||
+    new Set(deltas.map(f=>f.path)).size!==5||deltas.some(f=>!OWNER_DELTA_PATHS.includes(f.path)||
+     !/^[a-f0-9]{64}$/.test(f.beforeSha256||'')||!/^[a-f0-9]{64}$/.test(f.afterSha256||'')||f.beforeSha256===f.afterSha256||
+     !/^[a-f0-9]{40}$/.test(f.beforeGitBlob||'')||!/^[a-f0-9]{40}$/.test(f.afterGitBlob||'')))problems.push('owner-delta-matrix');
  if(report?.servedSourceProof?.manifestByteIdentical!==true||!Array.isArray(report?.servedSourceProof?.assets)||report.servedSourceProof.assets.length<18||
     !/^[a-f0-9]{64}$/.test(report?.servedSourceProof?.digest||''))problems.push('served-source-bytes-not-proved');
  if(!/^[a-f0-9]{64}$/.test(report?.suiteProof?.digest||'')||report?.suiteProof?.digest!==report?.suiteProof?.afterDigest)problems.push('suite-changed-or-unrecorded');

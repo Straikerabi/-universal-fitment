@@ -7,11 +7,11 @@ const lock=()=>JSON.parse(readFileSync(new URL('../owner-authorized-delta.json',
 test('actual #81 delta preserves all remaining baseline files and records both real hashes',()=>{
  const proof=scopeProof();assert.equal(proof.baselineFiles,3719);
  assert.equal(proof.protectedFiles+proof.authorizedDelta.length,3719);
- assert.equal(proof.authorizedDelta.length,3);
+ assert.equal(proof.authorizedDelta.length,5);
  for(const f of proof.authorizedDelta){assert.notEqual(f.beforeSha256,f.afterSha256);assert.match(f.beforeGitBlob,/^[a-f0-9]{40}$/);assert.match(f.afterGitBlob,/^[a-f0-9]{40}$/);}
 });
-test('Owner authority cannot expand to catalog, engine, app or worker bytes',()=>{
- for(const path of ['integrations/consumer-repair-mission-poc/catalog-snapshot.mjs','integrations/fitment-engine-v1-poc/contract.mjs','integrations/consumer-repair-mission-poc/app.mjs','integrations/consumer-repair-mission-poc/offline-worker.mjs']){
+test('Owner authority cannot expand to catalog, engine, mission state or server bytes',()=>{
+ for(const path of ['integrations/consumer-repair-mission-poc/catalog-snapshot.mjs','integrations/fitment-engine-v1-poc/contract.mjs','integrations/consumer-repair-mission-poc/mission-state.mjs','integrations/consumer-repair-mission-poc/serve.mjs']){
   const modified=lock();modified.files[0].path=path;assert.throws(()=>validateOwnerDelta(modified),/Unauthorized Owner delta/);
  }
  const duplicate=lock();duplicate.files.push(duplicate.files[0]);assert.throws(()=>validateOwnerDelta(duplicate),/Duplicate Owner path/);

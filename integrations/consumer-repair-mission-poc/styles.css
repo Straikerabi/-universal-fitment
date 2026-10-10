@@ -684,6 +684,10 @@ small {
   font-size:.7rem;
   font-weight:750
 }
+.evidence-path li > span {
+  min-width:0;
+  overflow-wrap:anywhere
+}
 .missing-list {
   margin:12px 0;
   padding-left:22px;

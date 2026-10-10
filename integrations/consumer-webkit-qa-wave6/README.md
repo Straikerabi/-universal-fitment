@@ -1,16 +1,16 @@
 # Consumer WebKit-/Chromium-Gate · Wave 6 / #75
 
-Isolierte, reproduzierbare Abnahme der unveränderten Consumer-Reparaturmission aus Owner-PR #73. Arbeitsbranch `work/wave6-consumer-webkit-qa`, Reviewziel `integration/private-unified-preview-wave5-owner`, feste Ausgangsbasis `456c8b8936617f5275d8d1ccfc29601d559cac89`.
+Isolierte, reproduzierbare Abnahme der Consumer-Reparaturmission aus Owner-PR #73. Arbeitsbranch `work/wave6-consumer-webkit-qa`, Reviewziel `integration/private-unified-preview-wave5-owner`, feste Ausgangsbasis `456c8b8936617f5275d8d1ccfc29601d559cac89`. **Nachtrag #81** autorisiert minimale Produktfixes; Befunde und Nachweis stehen in [ISSUE-81-VALIDATION.md](ISSUE-81-VALIDATION.md). Die ursprünglichen roten #75-Beweise bleiben als historische Baseline erhalten.
 
 **Die Testsuite ist keine zweite Fitment-Engine und kein echter Nutzerpilot.** Linux-Playwright-WebKit ist eine Simulation, kein physisches iPhone und kein Apple-iOS-Safari. Auch ein grünes Automationsgate erteilt keine Beta-/Launchfreigabe. Der lokale gemessene Stand steht in [VALIDATION.md](VALIDATION.md); tatsächliche Fehler und Blocker in [BUGS.md](BUGS.md).
 
 ## Eigentumsgrenze
 
-Nur dieses neue Verzeichnis und `.github/workflows/consumer-webkit-qa-wave6.yml` werden verändert. Consumer-App, Snapshot, Versions-/Offline-Fingerprint, Shared-Core, B2B und paralleler Katalog bleiben bytegleich. `scope.mjs` prüft alle 3.719 geschützten Ausgangsdateien gegen ihre Git-Blob-Hashes, vor und nach Browserausführung. Zusätzlich werden die tatsächlich ausgeführten QA-Dateien vor/nach dem Lauf mit SHA-256 gebunden. Keine heimliche Datenmigration und kein Quellenabruf.
+Neben dieser Suite und ihrem Workflow erlaubt der konkret begründete #81-Delta genau `styles.css`, `app.mjs`, `offline-worker.mjs`, `prepare-offline.mjs` und den regenerierten `offline-config.mjs` im Consumer. [owner-authorized-delta.json](owner-authorized-delta.json) bindet die fünf Änderungen an echte Vorher-/Nachher-SHA-256. App-Delta: nur Registrierungsart `classic`; der Worker enthält generierte Konstanten statt eines Modulimports, seine Install-/Aktivierungs-/Fetch-Policy bleibt gleich. `scope.mjs` prüft die verbleibenden 3.714 Ausgangsdateien gegen ihre Git-Blob-Hashes und sämtliche 3.719 Sourcebytes vor/nach dem Lauf. QA-Code, Workflow und Delta-Lock werden ebenfalls vor/nach SHA-256-gebunden. Katalog, Snapshot, Shared-Core, Mission-State und Server bleiben bytegleich. Der Cache-Fingerprint wird regulär regeneriert, der kataloggebundene Missionsfingerprint bleibt identisch.
 
 ## Reproduzieren
 
-Node.js 22 oder neuer. Die eigene Lockdatei pinnt Playwright 1.62.1 samt Integrity-Werten; keine Produkt-/Shared Dependencies werden verändert.
+Node.js 22 oder neuer. Die eigene Lockdatei pinnt Playwright **1.64.0** samt Integrity-Werten; keine Produkt-/Shared Dependencies werden verändert. Der Upgrade enthält den Fix des bestätigten WebKit-Offline-Emulationsfehlers [microsoft/playwright#42775](https://github.com/microsoft/playwright/issues/42775), gefixt durch [#42894](https://github.com/microsoft/playwright/pull/42894). Der echte, jetzt eigenständig generierte klassische Worker muss weiterhin unter `context.setOffline(true)` neu laden; kein alternativer Origin-Ausfall und keine erhöhte Wartezeit ersetzt diesen Test. Die in CI gemessene Modul-Installationsblockade und Umstellung sind im #81-Nachweis getrennt dokumentiert.
 
 ```bash
 npm ci --ignore-scripts --no-audit --no-fund --prefix integrations/consumer-webkit-qa-wave6
@@ -20,6 +20,8 @@ node integrations/consumer-webkit-qa-wave6/node_modules/playwright/cli.js instal
 npm run test:browser --prefix integrations/consumer-webkit-qa-wave6
 npm run gate --prefix integrations/consumer-webkit-qa-wave6
 ```
+
+Nach einem bewusst autorisierten Consumer-Fix vor dem Testlauf zuerst `npm run offline:prepare --prefix integrations/consumer-repair-mission-poc` und `node integrations/consumer-webkit-qa-wave6/seal-owner-delta.mjs --write` ausführen. CI schreibt weder Fingerprints noch Delta-Hashes, sondern verlangt byteidentische generierte Dateien. Ein erneutes Versiegeln muss als neue Sourceänderung reviewed werden; es ist keine automatische Freigabe.
 
 Die Systemabhängigkeiten nur in einer dafür freigegebenen Umgebung installieren. Fehlende Bibliotheken oder Browser sind Blocker, keine bestandenen Tests. Der Workflow benutzt dafür eine isolierte Ubuntu-24.04-CI-Maschine. Die lokal verwendete Work-Umgebung wurde nicht mit Systempaketen verändert.
 
@@ -50,7 +52,7 @@ Die funktionalen Fälle prüfen vorhandene reale Pilotidentitäten und ausschlie
 
 Browserrequests werden pro Fall aufgezeichnet und externe HTTP(S)-Versuche vorsorglich geblockt. Auch ein geblockter externer Versuch ist ein Gate-Fehler. App-Laufzeitfehler werden aufgezeichnet; fehlgeschlagene Worker-Installation, Cache-Aufbau und Offline-Neustarts führen zu Fehlern oder Timeouts der entsprechenden Pflichtfälle. Die Installation der Testwerkzeuge selbst benötigt natürlich npm-/Browser-Downloadserver; „0 externe Requests“ bezieht sich auf die instrumentierten App-Flows, nicht auf CI-Bootstrap.
 
-Ein frischer, ungespeicherter Offline-Start muss ohne erfundene Oberfläche abbrechen. Der warme Test prüft die genaue vorhandene 17-URL-Cacheliste, echten offline gesperrten Transport, Neustart, offene Checkliste, JSON-Download mit unabhängiger SHA-256-Nachrechnung und Browser-Verifikation, unveränderte Prüfsumme bei manipuliertem Inhalt, Quellenklick, Stale-Fingerprint sowie Cache-Löschung ohne Notizverlust. Ein blockierter Worker erklärt nur die laufende, nicht gespeicherte Sitzung.
+Ein frischer, ungespeicherter Offline-Start muss ohne erfundene Oberfläche abbrechen. Der warme Test prüft die genaue vorhandene 17-URL-Cacheliste und die SHA-256 aller 17 tatsächlich gespeicherten Assetbytes gegen die echten Source-Dateien. Er verlangt offline gesperrten Transport, Neustart, offene Checkliste, JSON-Download mit unabhängiger SHA-256-Nachrechnung und Browser-Verifikation, unveränderte Prüfsumme bei manipuliertem Inhalt, Quellenklick, Stale-Fingerprint sowie Cache-Löschung ohne Notizverlust. Controller, Cachezustand, Sourcebytes, Neustart, JSON und Löschen werden als getrennte Phasen protokolliert. Ein blockierter Worker erklärt nur die laufende, nicht gespeicherte Sitzung.
 
 `context.setOffline(true)` aktualisiert unter Service-Worker-Kontrolle nicht zuverlässig `navigator.onLine`. Darum werden zusätzlich der öffentliche OS-Offline-Indikator und das Offline-Ereignis ausdrücklich simuliert, wie bereits in der Owner-Basis. Beide Signale und native Vorher-/Nachher-Werte werden gemessen. Das ist **kein echter Flugmodus-/iPhone-Test**.
 
@@ -60,7 +62,7 @@ Die JSON-Checksumme ist keine Signatur oder OEM-Zertifizierung. Unveränderte Ch
 
 Der Runner schreibt nur `artifacts/latest/` in dieser Suite: Ergebnis-JSON, Laufzeiten, erwartete Abbruchgründe, Request-/Fehlerlisten, semantische Snapshots, Touchmaße und ausgewählte eigene UI-Screenshots. Bilder werden nicht aufgenommen, wenn Raster-/SVG-Bildelemente auftauchen. Der veröffentlichte lokale Nachweis ist separat unter `evidence/local/` archiviert; ein neuer Lauf überschreibt ihn nicht. Ein temporär erstellter Prüfpass bleibt Browser-Testdownload, kein erfundenes Reparaturereignis.
 
-Der eigene Workflow läuft nur als `pull_request` gegen den Owner-Branch, mit `contents: read`, unveränderlichen Action-SHAs und deaktiviertem Credential-Persistieren. Er testet den genauen PR-Head, keine virtuelle Zusammenführung mit dem parallelen Katalog. Fehler, fehlende Browser, unvollständige Matrix, doppelte Fälle, falsche Version, fehlende Bytebeweise und veränderte QA-Dateien halten das Gate rot. Fehlende Reports/Artefakte sind ebenfalls Fehler. Es gibt kein `continue-on-error`, keinen Merge- oder Deployment-Schritt. Fehlerscreenshots/-reports werden für 14 Tage als CI-Artefakt gehalten.
+Der eigene Workflow läuft nur als `pull_request` gegen den Owner-Branch, mit `contents: read`, unveränderlichen Action-SHAs und deaktiviertem Credential-Persistieren. Er testet den genauen PR-Head, keine virtuelle Zusammenführung mit dem parallelen Katalog. Fehler, fehlende Browser, unvollständige Matrix, doppelte Fälle, falsche Version, fehlende Bytebeweise und veränderte QA-Dateien halten das Gate rot. HTTP-Sourceprobe: alle 18 ausgelieferten UI-/Worker-Ressourcen müssen ihren echten Diskbytes entsprechen. Legacy-Consumer-Node-, Browser- und JSON-Prüfpasstests sowie der Offline-Fingerprint-Check bleiben zusätzliche Pflichtprüfungen. Fehlende Reports/Artefakte sind ebenfalls Fehler. Es gibt kein `continue-on-error`, keinen Merge- oder Deployment-Schritt. Reports/Screenshots werden für 14 Tage als CI-Artefakt gehalten.
 
 ## Echte iPhone-Abnahme bleibt offen
 

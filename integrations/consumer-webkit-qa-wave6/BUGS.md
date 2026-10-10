@@ -1,5 +1,7 @@
 # Gemessene Fehler / Blocker · keine Produktfixes auf diesem Branch
 
+**Historischer #75-Bericht.** #81 erlaubt nachträglich die minimalen Produktfixes. Aktuelle Ursachen, Fixes und CI-Abnahme: [ISSUE-81-VALIDATION.md](ISSUE-81-VALIDATION.md). Die folgenden Originalmessungen werden nicht rückwirkend als grün ausgegeben.
+
 ## W6-B1 · Label läuft bei 375 px / 200 % Schrift in die Nachbarspalte
 
 Status: **reproduziert, offen, Produktänderung nicht angewendet**. Lokales Chromium 153.0.8010.0, Linux, 375×812 CSS px, `document.documentElement.style.fontSize='200%'`. Dies ist keine Aussage über physisches iOS Safari oder jedes andere Font-/Betriebssystem.

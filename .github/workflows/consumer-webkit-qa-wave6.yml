@@ -48,6 +48,15 @@ jobs:
       - name: Fail closed for missing/partial/blocked/failed browser evidence
         if: ${{ !cancelled() }}
         run: npm run gate --prefix integrations/consumer-webkit-qa-wave6
+      - name: Run unchanged legacy Consumer UI and JSON-passport browser checks
+        if: ${{ !cancelled() && steps.scope.outcome == 'success' && steps.browsers.outcome == 'success' }}
+        env:
+          UF_PLAYWRIGHT_MODULE: ${{ github.workspace }}/integrations/consumer-webkit-qa-wave6/node_modules/playwright/index.mjs
+          UF_MISSION_QA_DIR: ${{ github.workspace }}/integrations/consumer-webkit-qa-wave6/artifacts/latest/legacy-consumer
+        run: |
+          set -euo pipefail
+          npm run test:browser --prefix integrations/consumer-repair-mission-poc
+          node integrations/consumer-repair-mission-poc/tests/passport-browser.mjs
       - name: Upload only local QA reports and own-UI screenshots, including failures
         if: ${{ !cancelled() }}
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4

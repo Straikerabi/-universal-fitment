@@ -121,7 +121,7 @@ async function registerOffline(){
   if(!('serviceWorker' in navigator)||!isSecureContext)throw Error('Offline caching unavailable');
   offlineReady=await caches.has(cacheName);connectionStatus();
   if(!navigator.onLine&&offlineReady&&navigator.serviceWorker.controller)return;
-  const registration=await navigator.serviceWorker.register('./offline-worker.mjs',{type:'module',updateViaCache:'none'});
+  const registration=await navigator.serviceWorker.register('./offline-worker.mjs',{type:'classic',updateViaCache:'none'});
   navigator.serviceWorker.ready.then(async()=>{try{offlineReady=await caches.has(cacheName);connectionStatus();}catch{}});
   registration.addEventListener('updatefound',()=>{const installing=registration.installing;installing?.addEventListener('statechange',()=>{if(installing.state==='activated')connectionStatus();});});
  }catch{

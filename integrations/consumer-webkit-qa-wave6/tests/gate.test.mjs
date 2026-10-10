@@ -1,8 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {BASE_COMMIT,PLAYWRIGHT_VERSION,ENGINES,CASE_IDS,summarize,allowedPath} from '../policy.mjs';
+import {BASE_COMMIT,PLAYWRIGHT_VERSION,ENGINES,CASE_IDS,summarize,allowedPath,OWNER_DELTA_PATHS} from '../policy.mjs';
 const good=()=>({schema:'uf.consumer-browser-gate/1',baseCommit:BASE_COMMIT,playwrightVersion:PLAYWRIGHT_VERSION,
- scopeProof:{unchanged:true,afterUnchanged:true,protectedFiles:1,protectedTreeEntriesSha256:'0'.repeat(64),afterProtectedTreeEntriesSha256:'0'.repeat(64),ownerIssue:81,authorizedDelta:[],sourceBytesDigest:'0'.repeat(64),afterSourceBytesDigest:'0'.repeat(64)},physicalIPhone:false,macOSSafari:false,externalTestPeople:0,
+ scopeProof:{unchanged:true,afterUnchanged:true,baselineFiles:3719,protectedFiles:3714,protectedTreeEntriesSha256:'0'.repeat(64),afterProtectedTreeEntriesSha256:'0'.repeat(64),ownerIssue:81,authorizedDelta:OWNER_DELTA_PATHS.map(path=>({path,beforeSha256:'0'.repeat(64),afterSha256:'1'.repeat(64),beforeGitBlob:'0'.repeat(40),afterGitBlob:'1'.repeat(40)})),sourceBytesDigest:'0'.repeat(64),afterSourceBytesDigest:'0'.repeat(64)},physicalIPhone:false,macOSSafari:false,externalTestPeople:0,
  suiteProof:{digest:'0'.repeat(64),afterDigest:'0'.repeat(64)},
  servedSourceProof:{manifestByteIdentical:true,assets:Array.from({length:18},()=>({syntheticReporterFixture:true})),digest:'0'.repeat(64)},
  engines:Object.fromEntries(ENGINES.map(e=>[e,{started:true,version:'SYNTHETIC-TEST-VERSION'}])),

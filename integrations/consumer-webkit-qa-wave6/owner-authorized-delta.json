@@ -7,17 +7,27 @@
     {
       "path": "integrations/consumer-repair-mission-poc/styles.css",
       "beforeSha256": "4614a167dd354c59ef4e2181684e8178046fee3a08045b2d137ef6d241ed4ae1",
-      "afterSha256": "a38e64b4997f9c8f291ab599d0cd34bdb82a4b9ecdcf346d00d81a726b824012"
+      "afterSha256": "4ab4cd47aa0b7a1243274acc36714b6aa73d9880d9f95c7f5560c1e0b5aca1c4"
+    },
+    {
+      "path": "integrations/consumer-repair-mission-poc/app.mjs",
+      "beforeSha256": "c6875789809ffa4914a4ec2a0fc6f4dc9cb2b116f1f9e986a22e5003f7c01822",
+      "afterSha256": "6cae7a94731170e5deefa6dc3d73c9951969be3db4241c5a4510a076c5b0b9f8"
+    },
+    {
+      "path": "integrations/consumer-repair-mission-poc/offline-worker.mjs",
+      "beforeSha256": "23d5a68c9d2f7772de71fd7504ef48e256279138c7620b31a13c26773d28244f",
+      "afterSha256": "9b20fc4dc160497f24cf0d1785124c246912699e202031c311b26bae45594eef"
     },
     {
       "path": "integrations/consumer-repair-mission-poc/prepare-offline.mjs",
       "beforeSha256": "14c306b05758f54b29f0e819ec7dff8884a88585beaff34841c2d94277b503e5",
-      "afterSha256": "c7776613a342d6903624aa0437bf9e069cec43e9a4dc5d6225b2353dd448bd78"
+      "afterSha256": "cca44a0e933aa311e449936af941d5081a8b4066582987c040d479b80f77fa58"
     },
     {
       "path": "integrations/consumer-repair-mission-poc/offline-config.mjs",
       "beforeSha256": "1a39eb338762ccb32821b6233127192f0d8ef508b7fae3ebe128afb2f47a3fa2",
-      "afterSha256": "38234432fea25325c676a4aa42396fd9e2d310a826c7a69dcc29b7580b766534"
+      "afterSha256": "049df316104478981c42937fc925bac0779e50a021c7dbc00cb4ae14f9829441"
     }
   ]
 }

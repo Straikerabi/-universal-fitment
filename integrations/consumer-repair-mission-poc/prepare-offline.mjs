@@ -23,7 +23,7 @@ export const assetFiles=Object.freeze({
 });
 export function offlineConfig(){
  const hashes=Object.fromEntries(Object.entries(assetFiles).map(([url,file])=>[url,sha(fs.readFileSync(path.resolve(here,file)))]));
- const policyHashes=['offline-worker.mjs','serve.mjs'].map(file=>sha(fs.readFileSync(path.join(here,file))));
+ const policyHashes=[sha(workerPolicySource()),sha(fs.readFileSync(path.join(here,'serve.mjs')))];
  const cacheName='uf-consumer-mobile-wave4-'+sha(JSON.stringify([hashes,policyHashes])).slice(0,24);
  const catalogFingerprint=sha(JSON.stringify([
   hashes['/catalog-snapshot.mjs'],hashes['/fitment-engine-v1-poc/contract.mjs'],
@@ -40,15 +40,32 @@ export function configSource(){
   'export const catalogFingerprint='+JSON.stringify(c.catalogFingerprint)+';\n'+
   'export const assetPaths='+JSON.stringify(c.assetPaths,null,2)+';\n';
 }
+// Keep the classic worker self-contained: no module-loader fetch during install.
+// Hash only the authored worker policy, never its generated cache-name constants,
+// which would create a circular fingerprint. --check verifies the entire output.
+export function workerPolicySource(){
+ const source=fs.readFileSync(path.join(here,'offline-worker.mjs'),'utf8');
+ const marker='// Offline worker policy (hashed for cache version)\n';
+ const start=source.indexOf(marker);assert.ok(start>=0&&source.indexOf(marker,start+marker.length)<0,'Worker policy marker must occur exactly once');
+ return source.slice(start);
+}
+export function workerSource(){
+ const c=offlineConfig();
+ return '// Generated constants by prepare-offline.mjs; worker policy below is hashed independently.\n'+
+  'const cacheName='+JSON.stringify(c.cacheName)+';\n'+
+  'const assetPaths='+JSON.stringify(c.assetPaths)+';\n'+workerPolicySource();
+}
 if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)){
  const check=process.argv.includes('--check');
  if(!check){
   const branch=execFileSync('git',['branch','--show-current'],{cwd:repo,encoding:'utf8'}).trim();
   assert.ok(['work/consumer-mobile-ux-wave4','work/wave6-consumer-webkit-qa'].includes(branch),'Offline generation requires the original Wave4 or Owner-authorized #81 branch');
  }
- const expected=configSource(),file=path.join(here,'offline-config.mjs');
- if(check)assert.equal(fs.readFileSync(file,'utf8'),expected,'Offline assets changed: regenerate the local config');
- else fs.writeFileSync(file,expected);
+ const expected=configSource(),worker=workerSource(),file=path.join(here,'offline-config.mjs'),workerFile=path.join(here,'offline-worker.mjs');
+ if(check){
+  assert.equal(fs.readFileSync(file,'utf8'),expected,'Offline assets changed: regenerate the local config');
+  assert.equal(fs.readFileSync(workerFile,'utf8'),worker,'Offline worker constants changed: regenerate the classic worker');
+ }else{fs.writeFileSync(file,expected);fs.writeFileSync(workerFile,worker);}
  const c=offlineConfig();
  console.log(JSON.stringify({offlineAssets:c.assetPaths.length,cacheName:c.cacheName,state:check?'byte-identical':'generated'}));
 }
