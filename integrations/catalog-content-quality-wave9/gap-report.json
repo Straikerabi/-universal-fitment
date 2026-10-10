@@ -1,0 +1,1175 @@
+{
+  "schema": "uf-catalog-content-quality-wave9/1",
+  "snapshotVersion": 1,
+  "counts": {
+    "devices": 11,
+    "brands": 5,
+    "partIdentities": 11,
+    "candidateEdges": 11,
+    "observedPartEdges": 3,
+    "technicalFacts": 21,
+    "positiveFits": 0
+  },
+  "coverage": {
+    "baseIdentityWithSource": {
+      "count": 11,
+      "of": 11
+    },
+    "completeKnownVariantDiscriminator": {
+      "count": 9,
+      "of": 11
+    },
+    "independentlyVerifiedDevices": {
+      "count": 0,
+      "of": 11
+    },
+    "observedOemPages": {
+      "count": 5,
+      "of": 11
+    },
+    "devicesWithTechnicalFacts": {
+      "count": 4,
+      "of": 11
+    },
+    "devicesWithOemPartEdges": {
+      "count": 2,
+      "of": 11
+    },
+    "observedCandidateEdges": {
+      "count": 3,
+      "of": 11
+    },
+    "repairInstructions": {
+      "count": 0,
+      "of": 11
+    },
+    "toolSizes": {
+      "count": 0,
+      "of": 11
+    },
+    "safety": {
+      "count": 0,
+      "of": 11
+    },
+    "manual": {
+      "count": 0,
+      "of": 11
+    },
+    "b2cMediaRights": {
+      "count": 0,
+      "of": 11
+    },
+    "rawSourcesAudited": {
+      "count": 0,
+      "of": 11
+    },
+    "realFits": {
+      "count": 0,
+      "of": 11
+    }
+  },
+  "brands": [
+    {
+      "brand": "Bosch",
+      "deviceIds": [
+        "vac-bosch-model-bgl75x1prq",
+        "vac-bosch-model-bch3all21"
+      ],
+      "devices": 2,
+      "sourceObserved": 1,
+      "specModels": 1,
+      "technicalFacts": 6,
+      "candidateEdges": 2,
+      "observedPartEdges": 0,
+      "incompleteVariants": 2,
+      "verifiedRepairs": 0,
+      "verifiedTools": 0,
+      "reviewedSafety": 0,
+      "licensedPhotos": 0,
+      "realFits": 0
+    },
+    {
+      "brand": "Dyson",
+      "deviceIds": [
+        "vac-dyson-model-369535-01",
+        "vac-dyson-model-419634-01"
+      ],
+      "devices": 2,
+      "sourceObserved": 1,
+      "specModels": 0,
+      "technicalFacts": 0,
+      "candidateEdges": 2,
+      "observedPartEdges": 2,
+      "incompleteVariants": 0,
+      "verifiedRepairs": 0,
+      "verifiedTools": 0,
+      "reviewedSafety": 0,
+      "licensedPhotos": 0,
+      "realFits": 0
+    },
+    {
+      "brand": "Hoover",
+      "deviceIds": [
+        "vac-hoover-model-hf202p011",
+        "vac-hoover-model-fd22g",
+        "vac-hoover-model-hu300rhm001"
+      ],
+      "devices": 3,
+      "sourceObserved": 1,
+      "specModels": 1,
+      "technicalFacts": 5,
+      "candidateEdges": 1,
+      "observedPartEdges": 0,
+      "incompleteVariants": 0,
+      "verifiedRepairs": 0,
+      "verifiedTools": 0,
+      "reviewedSafety": 0,
+      "licensedPhotos": 0,
+      "realFits": 0
+    },
+    {
+      "brand": "Miele",
+      "deviceIds": [
+        "vac-miele-model-11806000",
+        "vac-miele-model-11602400"
+      ],
+      "devices": 2,
+      "sourceObserved": 1,
+      "specModels": 1,
+      "technicalFacts": 6,
+      "candidateEdges": 4,
+      "observedPartEdges": 1,
+      "incompleteVariants": 0,
+      "verifiedRepairs": 0,
+      "verifiedTools": 0,
+      "reviewedSafety": 0,
+      "licensedPhotos": 0,
+      "realFits": 0
+    },
+    {
+      "brand": "Samsung",
+      "deviceIds": [
+        "vac-samsung-model-vs20c95d4tk",
+        "vac-samsung-model-vs90f40eek"
+      ],
+      "devices": 2,
+      "sourceObserved": 1,
+      "specModels": 1,
+      "technicalFacts": 4,
+      "candidateEdges": 2,
+      "observedPartEdges": 0,
+      "incompleteVariants": 0,
+      "verifiedRepairs": 0,
+      "verifiedTools": 0,
+      "reviewedSafety": 0,
+      "licensedPhotos": 0,
+      "realFits": 0
+    }
+  ],
+  "devices": [
+    {
+      "id": "vac-miele-model-11806000",
+      "brand": "Miele",
+      "model": "Triflex HX2 Cat & Dog",
+      "reference": "11806000",
+      "market": "DE",
+      "productCode": null,
+      "identifiers": [
+        {
+          "type": "material-number",
+          "value": "11806000"
+        },
+        {
+          "type": "product-type",
+          "value": "SOML0"
+        }
+      ],
+      "variant": {
+        "status": "catalog_reference_observed",
+        "warnings": [],
+        "eNumberIndex": {
+          "status": "not_applicable",
+          "reason": "Non BSH"
+        },
+        "pnc": {
+          "status": "not_applicable",
+          "reason": "No AEG model in baseline"
+        },
+        "serialOrRevision": {
+          "status": "unknown",
+          "reason": "Raw OEM/serial scope not independently checked"
+        }
+      },
+      "consumerSource": {
+        "url": "https://www.miele.de/product/11806000/akku-staubsauger-triflex-hx2-cat-und-dog-obsidianschwarz",
+        "checkedAt": "2026-10-06",
+        "status": "catalog_reference"
+      },
+      "observedSource": null,
+      "technicalFacts": 0,
+      "candidatePartIds": [
+        "miele-part-13070280",
+        "miele-part-13000250",
+        "miele-part-11384710"
+      ],
+      "observedPartEdges": 0,
+      "info": {
+        "specs": {
+          "status": "unknown",
+          "reason": "No exact model specs"
+        },
+        "exactOemParts": {
+          "status": "unknown",
+          "reason": "Only candidate links available"
+        },
+        "repair": {
+          "status": "unknown",
+          "reason": "No reviewed model-specific procedure"
+        },
+        "tools": {
+          "status": "unknown",
+          "reason": "No sourced tool sizes"
+        },
+        "safety": {
+          "status": "unknown",
+          "reason": "No model-specific safety review"
+        },
+        "manual": {
+          "status": "unknown",
+          "reason": "No verified exact manual"
+        },
+        "mediaRights": {
+          "status": "unknown",
+          "reason": "No documented B2C licence"
+        },
+        "commercialRights": {
+          "status": "unknown",
+          "reason": "Public OEM page not a reuse licence"
+        },
+        "rawSource": {
+          "status": "unknown",
+          "reason": "No independent original source replay"
+        },
+        "physicalFit": {
+          "status": "unconfirmed",
+          "reason": "No real fitment test"
+        }
+      },
+      "realFits": 0
+    },
+    {
+      "id": "vac-miele-model-11602400",
+      "brand": "Miele",
+      "model": "Boost CX1 Parquet PowerLine",
+      "reference": "11602400",
+      "market": "DE",
+      "productCode": null,
+      "identifiers": [
+        {
+          "type": "material-number",
+          "value": "11602400"
+        },
+        {
+          "type": "product-type",
+          "value": "SNCF0"
+        }
+      ],
+      "variant": {
+        "status": "catalog_reference_observed",
+        "warnings": [],
+        "eNumberIndex": {
+          "status": "not_applicable",
+          "reason": "Non BSH"
+        },
+        "pnc": {
+          "status": "not_applicable",
+          "reason": "No AEG model in baseline"
+        },
+        "serialOrRevision": {
+          "status": "unknown",
+          "reason": "Raw OEM/serial scope not independently checked"
+        }
+      },
+      "consumerSource": {
+        "url": "https://www.miele.de/product/11602400/bodenstaubsauger-ohne-beutel-boost-cx1-parquet-powerline-lotosweiss",
+        "checkedAt": "2026-10-06",
+        "status": "catalog_reference"
+      },
+      "observedSource": {
+        "url": "https://www.miele.de/product/11602400/bodenstaubsauger-ohne-beutel-boost-cx1-parquet-powerline-lotosweiss",
+        "observedAt": "2026-10-10",
+        "status": "source_observed",
+        "rawAudit": false,
+        "rights": "unknown"
+      },
+      "technicalFacts": 6,
+      "candidatePartIds": [
+        "miele-part-11805640"
+      ],
+      "observedPartEdges": 1,
+      "info": {
+        "specs": {
+          "status": "source_observed",
+          "reason": "Research only; raw OEM bytes unaudited"
+        },
+        "exactOemParts": {
+          "status": "source_observed",
+          "reason": "Part listing, no physical fit"
+        },
+        "repair": {
+          "status": "unknown",
+          "reason": "No reviewed model-specific procedure"
+        },
+        "tools": {
+          "status": "unknown",
+          "reason": "No sourced tool sizes"
+        },
+        "safety": {
+          "status": "unknown",
+          "reason": "No model-specific safety review"
+        },
+        "manual": {
+          "status": "unknown",
+          "reason": "No verified exact manual"
+        },
+        "mediaRights": {
+          "status": "unknown",
+          "reason": "No documented B2C licence"
+        },
+        "commercialRights": {
+          "status": "unknown",
+          "reason": "Public OEM page not a reuse licence"
+        },
+        "rawSource": {
+          "status": "unknown",
+          "reason": "No independent original source replay"
+        },
+        "physicalFit": {
+          "status": "unconfirmed",
+          "reason": "No real fitment test"
+        }
+      },
+      "realFits": 0
+    },
+    {
+      "id": "vac-bosch-model-bgl75x1prq",
+      "brand": "Bosch",
+      "model": "BGL75X1PRQ",
+      "reference": "BGL75X1PRQ",
+      "market": "DE",
+      "productCode": null,
+      "identifiers": [
+        {
+          "type": "manufacturer-model",
+          "value": "BGL75X1PRQ"
+        }
+      ],
+      "variant": {
+        "status": "incomplete",
+        "warnings": [
+          "E-Nr /xx missing"
+        ],
+        "eNumberIndex": {
+          "status": "unknown",
+          "reason": "BSH /xx not documented"
+        },
+        "pnc": {
+          "status": "not_applicable",
+          "reason": "No AEG model in baseline"
+        },
+        "serialOrRevision": {
+          "status": "unknown",
+          "reason": "Raw OEM/serial scope not independently checked"
+        }
+      },
+      "consumerSource": {
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGL75X1PRQ",
+        "checkedAt": "2026-10-06",
+        "status": "catalog_reference"
+      },
+      "observedSource": {
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGL75X1PRQ",
+        "observedAt": "2026-10-10",
+        "status": "source_observed",
+        "rawAudit": false,
+        "rights": "unknown"
+      },
+      "technicalFacts": 6,
+      "candidatePartIds": [
+        "bosch-part-00460431",
+        "bosch-part-00579421"
+      ],
+      "observedPartEdges": 0,
+      "info": {
+        "specs": {
+          "status": "source_observed",
+          "reason": "Research only; raw OEM bytes unaudited"
+        },
+        "exactOemParts": {
+          "status": "unknown",
+          "reason": "Only candidate links available"
+        },
+        "repair": {
+          "status": "unknown",
+          "reason": "No reviewed model-specific procedure"
+        },
+        "tools": {
+          "status": "unknown",
+          "reason": "No sourced tool sizes"
+        },
+        "safety": {
+          "status": "unknown",
+          "reason": "No model-specific safety review"
+        },
+        "manual": {
+          "status": "unknown",
+          "reason": "No verified exact manual"
+        },
+        "mediaRights": {
+          "status": "unknown",
+          "reason": "No documented B2C licence"
+        },
+        "commercialRights": {
+          "status": "unknown",
+          "reason": "Public OEM page not a reuse licence"
+        },
+        "rawSource": {
+          "status": "unknown",
+          "reason": "No independent original source replay"
+        },
+        "physicalFit": {
+          "status": "unconfirmed",
+          "reason": "No real fitment test"
+        }
+      },
+      "realFits": 0
+    },
+    {
+      "id": "vac-bosch-model-bch3all21",
+      "brand": "Bosch",
+      "model": "BCH3ALL21",
+      "reference": "BCH3ALL21",
+      "market": "DE",
+      "productCode": null,
+      "identifiers": [
+        {
+          "type": "manufacturer-model",
+          "value": "BCH3ALL21"
+        }
+      ],
+      "variant": {
+        "status": "incomplete",
+        "warnings": [
+          "E-Nr /xx missing"
+        ],
+        "eNumberIndex": {
+          "status": "unknown",
+          "reason": "BSH /xx not documented"
+        },
+        "pnc": {
+          "status": "not_applicable",
+          "reason": "No AEG model in baseline"
+        },
+        "serialOrRevision": {
+          "status": "unknown",
+          "reason": "Raw OEM/serial scope not independently checked"
+        }
+      },
+      "consumerSource": {
+        "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/flexxo/BCH3ALL21",
+        "checkedAt": "2026-10-06",
+        "status": "catalog_reference"
+      },
+      "observedSource": null,
+      "technicalFacts": 0,
+      "candidatePartIds": [],
+      "observedPartEdges": 0,
+      "info": {
+        "specs": {
+          "status": "unknown",
+          "reason": "No exact model specs"
+        },
+        "exactOemParts": {
+          "status": "unknown",
+          "reason": "Only candidate links available"
+        },
+        "repair": {
+          "status": "unknown",
+          "reason": "No reviewed model-specific procedure"
+        },
+        "tools": {
+          "status": "unknown",
+          "reason": "No sourced tool sizes"
+        },
+        "safety": {
+          "status": "unknown",
+          "reason": "No model-specific safety review"
+        },
+        "manual": {
+          "status": "unknown",
+          "reason": "No verified exact manual"
+        },
+        "mediaRights": {
+          "status": "unknown",
+          "reason": "No documented B2C licence"
+        },
+        "commercialRights": {
+          "status": "unknown",
+          "reason": "Public OEM page not a reuse licence"
+        },
+        "rawSource": {
+          "status": "unknown",
+          "reason": "No independent original source replay"
+        },
+        "physicalFit": {
+          "status": "unconfirmed",
+          "reason": "No real fitment test"
+        }
+      },
+      "realFits": 0
+    },
+    {
+      "id": "vac-samsung-model-vs20c95d4tk",
+      "brand": "Samsung",
+      "model": "VS20C95D4TK",
+      "reference": "VS20C95D4TK/WD",
+      "market": "DE",
+      "productCode": null,
+      "identifiers": [
+        {
+          "type": "manufacturer-model",
+          "value": "VS20C95D4TK"
+        },
+        {
+          "type": "manufacturer-model",
+          "value": "VS20C95D4TK/WD"
+        }
+      ],
+      "variant": {
+        "status": "catalog_reference_observed",
+        "warnings": [],
+        "eNumberIndex": {
+          "status": "not_applicable",
+          "reason": "Non BSH"
+        },
+        "pnc": {
+          "status": "not_applicable",
+          "reason": "No AEG model in baseline"
+        },
+        "serialOrRevision": {
+          "status": "unknown",
+          "reason": "Raw OEM/serial scope not independently checked"
+        }
+      },
+      "consumerSource": {
+        "url": "https://www.samsung.com/de/vacuum-cleaners/stick/vs9500al-stick-more-advance-cleaning-performance-hexajet-motor-jet-cyclone-black-vs20c95d4tk-wd/",
+        "checkedAt": "2026-10-08",
+        "status": "catalog_reference"
+      },
+      "observedSource": {
+        "url": "https://www.samsung.com/de/vacuum-cleaners/stick/vs9500al-stick-more-advance-cleaning-performance-hexajet-motor-jet-cyclone-black-vs20c95d4tk-wd/",
+        "observedAt": "2026-10-10",
+        "status": "source_observed",
+        "rawAudit": false,
+        "rights": "unknown"
+      },
+      "technicalFacts": 4,
+      "candidatePartIds": [
+        "samsung-part-vca-shf95w",
+        "samsung-part-vca-sapb95_2Fwa"
+      ],
+      "observedPartEdges": 0,
+      "info": {
+        "specs": {
+          "status": "source_observed",
+          "reason": "Research only; raw OEM bytes unaudited"
+        },
+        "exactOemParts": {
+          "status": "unknown",
+          "reason": "Only candidate links available"
+        },
+        "repair": {
+          "status": "unknown",
+          "reason": "No reviewed model-specific procedure"
+        },
+        "tools": {
+          "status": "unknown",
+          "reason": "No sourced tool sizes"
+        },
+        "safety": {
+          "status": "unknown",
+          "reason": "No model-specific safety review"
+        },
+        "manual": {
+          "status": "unknown",
+          "reason": "No verified exact manual"
+        },
+        "mediaRights": {
+          "status": "unknown",
+          "reason": "No documented B2C licence"
+        },
+        "commercialRights": {
+          "status": "unknown",
+          "reason": "Public OEM page not a reuse licence"
+        },
+        "rawSource": {
+          "status": "unknown",
+          "reason": "No independent original source replay"
+        },
+        "physicalFit": {
+          "status": "unconfirmed",
+          "reason": "No real fitment test"
+        }
+      },
+      "realFits": 0
+    },
+    {
+      "id": "vac-samsung-model-vs90f40eek",
+      "brand": "Samsung",
+      "model": "VS90F40EEK",
+      "reference": "VS90F40EEK/WD",
+      "market": "DE",
+      "productCode": null,
+      "identifiers": [
+        {
+          "type": "manufacturer-model",
+          "value": "VS90F40EEK"
+        },
+        {
+          "type": "manufacturer-model",
+          "value": "VS90F40EEK/WD"
+        }
+      ],
+      "variant": {
+        "status": "catalog_reference_observed",
+        "warnings": [],
+        "eNumberIndex": {
+          "status": "not_applicable",
+          "reason": "Non BSH"
+        },
+        "pnc": {
+          "status": "not_applicable",
+          "reason": "No AEG model in baseline"
+        },
+        "serialOrRevision": {
+          "status": "unknown",
+          "reason": "Raw OEM/serial scope not independently checked"
+        }
+      },
+      "consumerSource": {
+        "url": "https://www.samsung.com/de/support/model/VS90F40EEK/WD/",
+        "checkedAt": "2026-10-08",
+        "status": "catalog_reference"
+      },
+      "observedSource": null,
+      "technicalFacts": 0,
+      "candidatePartIds": [],
+      "observedPartEdges": 0,
+      "info": {
+        "specs": {
+          "status": "unknown",
+          "reason": "No exact model specs"
+        },
+        "exactOemParts": {
+          "status": "unknown",
+          "reason": "Only candidate links available"
+        },
+        "repair": {
+          "status": "unknown",
+          "reason": "No reviewed model-specific procedure"
+        },
+        "tools": {
+          "status": "unknown",
+          "reason": "No sourced tool sizes"
+        },
+        "safety": {
+          "status": "unknown",
+          "reason": "No model-specific safety review"
+        },
+        "manual": {
+          "status": "unknown",
+          "reason": "No verified exact manual"
+        },
+        "mediaRights": {
+          "status": "unknown",
+          "reason": "No documented B2C licence"
+        },
+        "commercialRights": {
+          "status": "unknown",
+          "reason": "Public OEM page not a reuse licence"
+        },
+        "rawSource": {
+          "status": "unknown",
+          "reason": "No independent original source replay"
+        },
+        "physicalFit": {
+          "status": "unconfirmed",
+          "reason": "No real fitment test"
+        }
+      },
+      "realFits": 0
+    },
+    {
+      "id": "vac-hoover-model-hf202p011",
+      "brand": "Hoover",
+      "model": "HF202P 011",
+      "reference": "HF202P 011",
+      "market": "DE",
+      "productCode": "39401035",
+      "identifiers": [
+        {
+          "type": "manufacturer-model",
+          "value": "HF202P 011"
+        },
+        {
+          "type": "manufacturer-model",
+          "value": "HF202P011"
+        },
+        {
+          "type": "device-sku",
+          "value": "39401035"
+        }
+      ],
+      "variant": {
+        "status": "catalog_reference_observed",
+        "warnings": [],
+        "eNumberIndex": {
+          "status": "not_applicable",
+          "reason": "Non BSH"
+        },
+        "pnc": {
+          "status": "not_applicable",
+          "reason": "No AEG model in baseline"
+        },
+        "serialOrRevision": {
+          "status": "unknown",
+          "reason": "Raw OEM/serial scope not independently checked"
+        }
+      },
+      "consumerSource": {
+        "url": "https://www.hoover-home.com/de_DE/akkusauger/39401035/hf202p-011/",
+        "checkedAt": "2026-10-08",
+        "status": "catalog_reference"
+      },
+      "observedSource": {
+        "url": "https://www.hoover-home.com/de_DE/akkusauger/39401035/hf202p-011/",
+        "observedAt": "2026-10-10",
+        "status": "source_observed",
+        "rawAudit": false,
+        "rights": "unknown"
+      },
+      "technicalFacts": 5,
+      "candidatePartIds": [
+        "hoover-part-35602893"
+      ],
+      "observedPartEdges": 0,
+      "info": {
+        "specs": {
+          "status": "source_observed",
+          "reason": "Research only; raw OEM bytes unaudited"
+        },
+        "exactOemParts": {
+          "status": "unknown",
+          "reason": "Only candidate links available"
+        },
+        "repair": {
+          "status": "unknown",
+          "reason": "No reviewed model-specific procedure"
+        },
+        "tools": {
+          "status": "unknown",
+          "reason": "No sourced tool sizes"
+        },
+        "safety": {
+          "status": "unknown",
+          "reason": "No model-specific safety review"
+        },
+        "manual": {
+          "status": "unknown",
+          "reason": "No verified exact manual"
+        },
+        "mediaRights": {
+          "status": "unknown",
+          "reason": "No documented B2C licence"
+        },
+        "commercialRights": {
+          "status": "unknown",
+          "reason": "Public OEM page not a reuse licence"
+        },
+        "rawSource": {
+          "status": "unknown",
+          "reason": "No independent original source replay"
+        },
+        "physicalFit": {
+          "status": "unconfirmed",
+          "reason": "No real fitment test"
+        }
+      },
+      "realFits": 0
+    },
+    {
+      "id": "vac-hoover-model-fd22g",
+      "brand": "Hoover",
+      "model": "FD22G",
+      "reference": "FD22G",
+      "market": "GB",
+      "productCode": "39400273",
+      "identifiers": [
+        {
+          "type": "manufacturer-model",
+          "value": "FD22G"
+        },
+        {
+          "type": "device-sku",
+          "value": "39400273"
+        }
+      ],
+      "variant": {
+        "status": "catalog_reference_observed",
+        "warnings": [],
+        "eNumberIndex": {
+          "status": "not_applicable",
+          "reason": "Non BSH"
+        },
+        "pnc": {
+          "status": "not_applicable",
+          "reason": "No AEG model in baseline"
+        },
+        "serialOrRevision": {
+          "status": "unknown",
+          "reason": "Raw OEM/serial scope not independently checked"
+        }
+      },
+      "consumerSource": {
+        "url": "https://service.hoover.co.uk/advice-centre/vacuum-cleaners/fd22g/",
+        "checkedAt": "2026-10-08",
+        "status": "catalog_reference"
+      },
+      "observedSource": null,
+      "technicalFacts": 0,
+      "candidatePartIds": [],
+      "observedPartEdges": 0,
+      "info": {
+        "specs": {
+          "status": "unknown",
+          "reason": "No exact model specs"
+        },
+        "exactOemParts": {
+          "status": "unknown",
+          "reason": "Only candidate links available"
+        },
+        "repair": {
+          "status": "unknown",
+          "reason": "No reviewed model-specific procedure"
+        },
+        "tools": {
+          "status": "unknown",
+          "reason": "No sourced tool sizes"
+        },
+        "safety": {
+          "status": "unknown",
+          "reason": "No model-specific safety review"
+        },
+        "manual": {
+          "status": "unknown",
+          "reason": "No verified exact manual"
+        },
+        "mediaRights": {
+          "status": "unknown",
+          "reason": "No documented B2C licence"
+        },
+        "commercialRights": {
+          "status": "unknown",
+          "reason": "Public OEM page not a reuse licence"
+        },
+        "rawSource": {
+          "status": "unknown",
+          "reason": "No independent original source replay"
+        },
+        "physicalFit": {
+          "status": "unconfirmed",
+          "reason": "No real fitment test"
+        }
+      },
+      "realFits": 0
+    },
+    {
+      "id": "vac-hoover-model-hu300rhm001",
+      "brand": "Hoover",
+      "model": "HU300RHM 001",
+      "reference": "HU300RHM 001",
+      "market": "GB",
+      "productCode": "39101032",
+      "identifiers": [
+        {
+          "type": "manufacturer-model",
+          "value": "HU300RHM 001"
+        },
+        {
+          "type": "manufacturer-model",
+          "value": "HU300RHM001"
+        },
+        {
+          "type": "device-sku",
+          "value": "39101032"
+        }
+      ],
+      "variant": {
+        "status": "catalog_reference_observed",
+        "warnings": [],
+        "eNumberIndex": {
+          "status": "not_applicable",
+          "reason": "Non BSH"
+        },
+        "pnc": {
+          "status": "not_applicable",
+          "reason": "No AEG model in baseline"
+        },
+        "serialOrRevision": {
+          "status": "unknown",
+          "reason": "Raw OEM/serial scope not independently checked"
+        }
+      },
+      "consumerSource": {
+        "url": "https://service.hoover.co.uk/advice-centre/vacuum-cleaners/hu300rhm-001/",
+        "checkedAt": "2026-10-08",
+        "status": "catalog_reference"
+      },
+      "observedSource": null,
+      "technicalFacts": 0,
+      "candidatePartIds": [],
+      "observedPartEdges": 0,
+      "info": {
+        "specs": {
+          "status": "unknown",
+          "reason": "No exact model specs"
+        },
+        "exactOemParts": {
+          "status": "unknown",
+          "reason": "Only candidate links available"
+        },
+        "repair": {
+          "status": "unknown",
+          "reason": "No reviewed model-specific procedure"
+        },
+        "tools": {
+          "status": "unknown",
+          "reason": "No sourced tool sizes"
+        },
+        "safety": {
+          "status": "unknown",
+          "reason": "No model-specific safety review"
+        },
+        "manual": {
+          "status": "unknown",
+          "reason": "No verified exact manual"
+        },
+        "mediaRights": {
+          "status": "unknown",
+          "reason": "No documented B2C licence"
+        },
+        "commercialRights": {
+          "status": "unknown",
+          "reason": "Public OEM page not a reuse licence"
+        },
+        "rawSource": {
+          "status": "unknown",
+          "reason": "No independent original source replay"
+        },
+        "physicalFit": {
+          "status": "unconfirmed",
+          "reason": "No real fitment test"
+        }
+      },
+      "realFits": 0
+    },
+    {
+      "id": "vac-dyson-model-369535-01",
+      "brand": "Dyson",
+      "model": "V15 Detect Absolute",
+      "reference": "369535-01",
+      "market": "DE",
+      "productCode": null,
+      "identifiers": [
+        {
+          "type": "manufacturer-model",
+          "value": "V15 Detect Absolute"
+        },
+        {
+          "type": "device-sku",
+          "value": "369535-01"
+        }
+      ],
+      "variant": {
+        "status": "catalog_reference_observed",
+        "warnings": [],
+        "eNumberIndex": {
+          "status": "not_applicable",
+          "reason": "Non BSH"
+        },
+        "pnc": {
+          "status": "not_applicable",
+          "reason": "No AEG model in baseline"
+        },
+        "serialOrRevision": {
+          "status": "unknown",
+          "reason": "Raw OEM/serial scope not independently checked"
+        }
+      },
+      "consumerSource": {
+        "url": "https://www.dyson.de/support/journey/replacement-parts/search.369535-01",
+        "checkedAt": "2026-10-06",
+        "status": "catalog_reference"
+      },
+      "observedSource": {
+        "url": "https://www.dyson.de/support/journey/replacement-parts/search.369535-01",
+        "observedAt": "2026-10-10",
+        "status": "source_observed",
+        "rawAudit": false,
+        "rights": "unknown"
+      },
+      "technicalFacts": 0,
+      "candidatePartIds": [
+        "dyson-part-971634-01",
+        "dyson-part-970938-01"
+      ],
+      "observedPartEdges": 2,
+      "info": {
+        "specs": {
+          "status": "unknown",
+          "reason": "No exact model specs"
+        },
+        "exactOemParts": {
+          "status": "source_observed",
+          "reason": "Part listing, no physical fit"
+        },
+        "repair": {
+          "status": "unknown",
+          "reason": "No reviewed model-specific procedure"
+        },
+        "tools": {
+          "status": "unknown",
+          "reason": "No sourced tool sizes"
+        },
+        "safety": {
+          "status": "unknown",
+          "reason": "No model-specific safety review"
+        },
+        "manual": {
+          "status": "unknown",
+          "reason": "No verified exact manual"
+        },
+        "mediaRights": {
+          "status": "unknown",
+          "reason": "No documented B2C licence"
+        },
+        "commercialRights": {
+          "status": "unknown",
+          "reason": "Public OEM page not a reuse licence"
+        },
+        "rawSource": {
+          "status": "unknown",
+          "reason": "No independent original source replay"
+        },
+        "physicalFit": {
+          "status": "unconfirmed",
+          "reason": "No real fitment test"
+        }
+      },
+      "realFits": 0
+    },
+    {
+      "id": "vac-dyson-model-419634-01",
+      "brand": "Dyson",
+      "model": "V10 Konical Staubsauger",
+      "reference": "419634-01",
+      "market": "DE",
+      "productCode": null,
+      "identifiers": [
+        {
+          "type": "manufacturer-model",
+          "value": "V10 Konical Staubsauger"
+        },
+        {
+          "type": "device-sku",
+          "value": "419634-01"
+        }
+      ],
+      "variant": {
+        "status": "catalog_reference_observed",
+        "warnings": [],
+        "eNumberIndex": {
+          "status": "not_applicable",
+          "reason": "Non BSH"
+        },
+        "pnc": {
+          "status": "not_applicable",
+          "reason": "No AEG model in baseline"
+        },
+        "serialOrRevision": {
+          "status": "unknown",
+          "reason": "Raw OEM/serial scope not independently checked"
+        }
+      },
+      "consumerSource": {
+        "url": "https://www.dyson.de/support/journey/replacement-parts/search.419634-01",
+        "checkedAt": "2026-10-06",
+        "status": "catalog_reference"
+      },
+      "observedSource": null,
+      "technicalFacts": 0,
+      "candidatePartIds": [],
+      "observedPartEdges": 0,
+      "info": {
+        "specs": {
+          "status": "unknown",
+          "reason": "No exact model specs"
+        },
+        "exactOemParts": {
+          "status": "unknown",
+          "reason": "Only candidate links available"
+        },
+        "repair": {
+          "status": "unknown",
+          "reason": "No reviewed model-specific procedure"
+        },
+        "tools": {
+          "status": "unknown",
+          "reason": "No sourced tool sizes"
+        },
+        "safety": {
+          "status": "unknown",
+          "reason": "No model-specific safety review"
+        },
+        "manual": {
+          "status": "unknown",
+          "reason": "No verified exact manual"
+        },
+        "mediaRights": {
+          "status": "unknown",
+          "reason": "No documented B2C licence"
+        },
+        "commercialRights": {
+          "status": "unknown",
+          "reason": "Public OEM page not a reuse licence"
+        },
+        "rawSource": {
+          "status": "unknown",
+          "reason": "No independent original source replay"
+        },
+        "physicalFit": {
+          "status": "unconfirmed",
+          "reason": "No real fitment test"
+        }
+      },
+      "realFits": 0
+    }
+  ],
+  "releaseGates": {
+    "rawOEM": "BLOCKED",
+    "reuseLicence": "UNKNOWN",
+    "physicalFit": "UNCONFIRMED",
+    "launchApproved": false,
+    "consumerImported": false
+  }
+}
