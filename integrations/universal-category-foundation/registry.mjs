@@ -2,14 +2,17 @@
  * Internal future device taxonomy. No model records, fitments, licence grants,
  * checkout, release authorization or changes to the vacuum-only v1 engine.
  */
-export const TAXONOMY_VERSION='0.2.0';
+export const TAXONOMY_VERSION='0.3.0';
 export const groups=Object.freeze([
   {id:'home-kitchen',label:'Haushalt & Küche'},
   {id:'tools-garden',label:'Elektro- & Gartengeräte'},
   {id:'electronics-it',label:'Elektronik & IT'},
   {id:'robotics-smart-home',label:'Robotik & Smart Home'},
   {id:'machines-industry',label:'Maschinen & Industrie'},
-  {id:'vehicles-mobility',label:'Fahrzeuge & Mobilität'}
+  {id:'vehicles-mobility',label:'Fahrzeuge & Mobilität'},
+  {id:'drones-aviation',label:'Drohnen & Flugtechnik'},
+  {id:'energy-climate',label:'Energie & Gebäudetechnik'},
+  {id:'marine-outdoor',label:'Wasserfahrzeuge & Outdoor'}
 ]);
 export const identificationProfiles=Object.freeze({
   household:{
@@ -61,6 +64,41 @@ export const identificationProfiles=Object.freeze({
     requiredForCatalog:['manufacturer','model','machineTypeNo','market','evidence'],
     variantChecks:['serial-range','machine-revision','motor-voltage','safety-system'],
     safety:['industrial-energy','moving-machinery','qualified-personnel']
+  },
+  twoWheeler:{
+    requiredForCatalog:['manufacturer','model','modelYearOrTypeNo','market','evidence'],
+    variantChecks:['frame-or-type-no','engine-code','market','model-year','brake-type','manufacturer-part-no'],
+    safety:['road-safety','braking-system','qualified-personnel']
+  },
+  micromobility:{
+    requiredForCatalog:['manufacturer','model','productOrFrameCode','market','evidence'],
+    variantChecks:['frame-revision','motor-controller','brake-system','battery-platform','tyre-size','regional-homologation'],
+    safety:['road-safety','braking-system','lithium-battery','qualified-personnel']
+  },
+  electricVehicle:{
+    requiredForCatalog:['manufacturer','model','vehicleOrTypeId','market','evidence'],
+    variantChecks:['vin-or-type-id','model-year','drivetrain','battery-pack-generation','bms-hardware','charger-standard','software-version','regional-homologation'],
+    safety:['road-safety','high-voltage','lithium-battery','battery-thermal-runaway','qualified-personnel']
+  },
+  aerialDrone:{
+    requiredForCatalog:['manufacturer','airframeModel','hardwareRevision','market','evidence'],
+    variantChecks:['airframe-revision','flight-controller-firmware','propeller-spec','battery-part-no','camera-gimbal-revision','radio-region','remote-controller'],
+    safety:['flight-critical','rotating-propellers','lithium-battery','flight-regulatory-review','qualified-personnel']
+  },
+  imaging:{
+    requiredForCatalog:['manufacturer','model','hardwareRevisionOrSerial','market','evidence'],
+    variantChecks:['camera-body-generation','lens-mount','sensor-revision','firmware','regional-sku','battery-type','interface-spec'],
+    safety:['lithium-battery','electricity-esd','optical-laser-safety']
+  },
+  energySystem:{
+    requiredForCatalog:['manufacturer','model','electricalConfiguration','market','evidence'],
+    variantChecks:['power-rating','voltage-class','grid-standard','inverter-or-controller-revision','firmware','connector-standard','installation-context'],
+    safety:['high-voltage','grid-connected','fire-thermal','qualified-electrician']
+  },
+  marine:{
+    requiredForCatalog:['manufacturer','model','hullOrEngineSerial','market','evidence'],
+    variantChecks:['hull-or-engine-series','propulsion','drive-ratio','battery-pack','water-sealing','market'],
+    safety:['water-electricity','propeller','water-ingress','marine-safety','qualified-personnel']
   },
   automotive:{
     requiredForCatalog:['manufacturer','model','vehicleVariant','market','evidence'],
@@ -115,6 +153,21 @@ export const categories=Object.freeze([
   c('monitor','electronics-it','Monitore','electronics',3),
   c('printer','electronics-it','Drucker','electronics',3),
   c('network-device','electronics-it','Router & Netzwerkgeräte','electronics',3),
+  c('digital-camera','electronics-it','Digitalkameras','imaging',3,{aliases:['digitalkamera']}),
+  c('mirrorless-camera','electronics-it','Systemkameras (spiegellos)','imaging',3,{aliases:['systemkamera','spiegellose-kamera']}),
+  c('dslr-camera','electronics-it','Spiegelreflexkameras','imaging',3,{aliases:['spiegelreflexkamera','dslr']}),
+  c('action-camera','electronics-it','Actioncams','imaging',3,{aliases:['actioncam','action-cam']}),
+  c('video-camera','electronics-it','Videokameras & Camcorder','imaging',3,{aliases:['camcorder','videokamera']}),
+  c('camera-360','electronics-it','360-Grad-Kameras','imaging',3,{aliases:['360-grad-kamera']}),
+  c('security-camera','electronics-it','Sicherheits- & Überwachungskameras','imaging',3,{aliases:['ueberwachungskamera']}),
+  c('thermal-camera','electronics-it','Wärmebildkameras','imaging',3,{aliases:['waermebildkamera']}),
+  c('camera-lens','electronics-it','Kameraobjektive','imaging',3,{aliases:['kameraobjektiv']}),
+  c('camera-gimbal','electronics-it','Kamera-Gimbals','imaging',3,{aliases:['kamera-stabilisator']}),
+  c('webcam','electronics-it','Webcams','imaging',3),
+  c('instant-camera','electronics-it','Sofortbildkameras','imaging',3,{aliases:['sofortbildkamera']}),
+  c('camera-flash','electronics-it','Blitzgeräte','imaging',3,{aliases:['blitzgeraet']}),
+  c('pro-audio','electronics-it','Audio- & Studiotechnik','electronics',3,{aliases:['audioequipment','studiotechnik']}),
+
   c('smart-speaker','electronics-it','Smarte Lautsprecher & Sprachassistent-Geräte','assistantRobot',3,{aliases:['sprachassistent','smarter-lautsprecher']}),
   c('smart-display','electronics-it','Smarte Displays & Assistenzterminals','assistantRobot',3,{aliases:['smarter-bildschirm']}),
 
@@ -145,10 +198,68 @@ export const categories=Object.freeze([
   c('compressor','machines-industry','Kompressoren','industrial',4,{safetyExtra:['compressed-air']}),
   c('pump','machines-industry','Pumpen','industrial',4,{safetyExtra:['pressurized-fluid']}),
   c('3d-printer','machines-industry','3D-Drucker','industrial',4,{safetyExtra:['heat-fire']}),
-  // Additional expansion domain, explicitly planned only.
-  c('car','vehicles-mobility','PKW','automotive',4,{aliases:['auto']}),
-  c('motorcycle','vehicles-mobility','Motorräder','automotive',4),
-  c('e-bike','vehicles-mobility','E-Bikes','automotive',4,{safetyExtra:['lithium-battery']})
+  // Road vehicles and mobility: drivetrain, approvals and exact full variant are always category-specific.
+  c('car','vehicles-mobility','PKW','automotive',3,{aliases:['auto','pkw']}),
+  c('electric-car','vehicles-mobility','Elektroautos','electricVehicle',3,{aliases:['e-auto','elektroauto']}),
+  c('hybrid-car','vehicles-mobility','Hybrid- & Plug-in-Hybrid-PKW','electricVehicle',3,{aliases:['hybridauto','plug-in-hybrid']}),
+  c('truck','vehicles-mobility','LKW','automotive',3,{aliases:['lastkraftwagen']}),
+  c('electric-truck','vehicles-mobility','Elektro-LKW','electricVehicle',3,{aliases:['e-lkw']}),
+  c('light-commercial-vehicle','vehicles-mobility','Transporter & Lieferwagen','automotive',3,{aliases:['transporter','lieferwagen']}),
+  c('electric-van','vehicles-mobility','Elektro-Transporter','electricVehicle',3,{aliases:['e-transporter']}),
+  c('bus','vehicles-mobility','Busse','automotive',4,{aliases:['linienbus']}),
+  c('electric-bus','vehicles-mobility','Elektrobusse','electricVehicle',4,{aliases:['e-bus']}),
+  c('motorcycle','vehicles-mobility','Motorräder','twoWheeler',3,{aliases:['motorrad']}),
+  c('electric-motorcycle','vehicles-mobility','Elektromotorräder','electricVehicle',3,{aliases:['e-motorrad','elektromotorrad']}),
+  c('moped','vehicles-mobility','Mopeds & Mofas','twoWheeler',3,{aliases:['mofa','kleinkraftrad']}),
+  c('electric-moped','vehicles-mobility','Elektromopeds','micromobility',3,{aliases:['e-moped']}),
+  c('motor-scooter','vehicles-mobility','Motorroller','twoWheeler',3,{aliases:['motorroller','vespa-roller']}),
+  c('electric-motor-scooter','vehicles-mobility','Elektromotorroller (mit Sitz)','micromobility',3,{aliases:['e-roller','elektroroller']}),
+  c('electric-kick-scooter','vehicles-mobility','Elektrotretroller (E-Scooter)','micromobility',3,{aliases:['e-scooter','elektrotretroller']}),
+  c('kick-scooter','vehicles-mobility','Tretroller','micromobility',3,{aliases:['tretroller']}),
+  c('bicycle','vehicles-mobility','Fahrräder','micromobility',3,{aliases:['fahrrad']}),
+  c('e-bike','vehicles-mobility','E-Bikes & Pedelecs','micromobility',3,{aliases:['pedelec']}),
+  c('cargo-bike','vehicles-mobility','Lastenfahrräder','micromobility',3,{aliases:['lastenrad','lastenfahrrad']}),
+  c('electric-cargo-bike','vehicles-mobility','E-Lastenräder','micromobility',3,{aliases:['e-lastenrad']}),
+  c('electric-unicycle','vehicles-mobility','Elektrische Einräder','micromobility',4,{aliases:['elektrisches-einrad']}),
+  c('atv-quad','vehicles-mobility','Quads & ATVs','twoWheeler',4,{aliases:['quad','atv']}),
+  c('utility-vehicle','vehicles-mobility','Gelände-Nutzfahrzeuge & UTVs','automotive',4,{aliases:['utv']}),
+  c('camper','vehicles-mobility','Wohnmobile','automotive',3,{aliases:['wohnmobil']}),
+  c('caravan','vehicles-mobility','Wohnwagen','automotive',3,{aliases:['wohnwagen']}),
+  c('trailer','vehicles-mobility','Anhänger','automotive',3,{aliases:['anhaenger']}),
+  c('forklift','vehicles-mobility','Gabelstapler','industrial',4,{aliases:['gabelstapler']}),
+  c('electric-forklift','vehicles-mobility','Elektrostapler','industrial',4,{aliases:['e-stapler']}),
+  c('agricultural-tractor','vehicles-mobility','Traktoren & Landmaschinen','industrial',4,{aliases:['traktor','landmaschine']}),
+  c('electric-tractor','vehicles-mobility','Elektrotraktoren','electricVehicle',4,{aliases:['e-traktor']}),
+  // Drone families remain grounded to an exact airframe and permitted manufacturer-specified variant.
+  c('camera-drone','drones-aviation','Kameradrohnen','aerialDrone',3,{aliases:['kameradrohne','fotodrohne']}),
+  c('fpv-drone','drones-aviation','FPV-Drohnen','aerialDrone',3,{aliases:['fpv-drohne']}),
+  c('inspection-drone','drones-aviation','Inspektionsdrohnen','aerialDrone',4,{aliases:['inspektionsdrohne']}),
+  c('agricultural-drone','drones-aviation','Agrardrohnen','aerialDrone',4,{aliases:['agrardrohne']}),
+  c('survey-drone','drones-aviation','Vermessungsdrohnen','aerialDrone',4,{aliases:['vermessungsdrohne']}),
+  c('fixed-wing-drone','drones-aviation','Flächenflugzeug-Drohnen','aerialDrone',4),
+  c('delivery-drone','drones-aviation','Lieferdrohnen','aerialDrone',4,{aliases:['lieferdrohne']}),
+  c('model-aircraft','drones-aviation','Modellflugzeuge','aerialDrone',4,{aliases:['modellflugzeug']}),
+  c('drone-controller','drones-aviation','Drohnen-Fernsteuerungen','electronics',3,{aliases:['drohnen-fernsteuerung']}),
+  // Independent, qualified-installation energy and building systems.
+  c('ev-wallbox','energy-climate','Wallboxen & Ladegeräte für Fahrzeuge','energySystem',3,{aliases:['wallbox','ev-ladestation']}),
+  c('charging-station','energy-climate','Öffentliche Ladeeinrichtungen','energySystem',4,{aliases:['schnellladestation']}),
+  c('solar-inverter','energy-climate','Solar-Wechselrichter','energySystem',3,{aliases:['wechselrichter']}),
+  c('solar-panel','energy-climate','Photovoltaikmodule','energySystem',3,{aliases:['solarmodul']}),
+  c('home-battery','energy-climate','Heimspeicher & Batteriesysteme','energySystem',3,{aliases:['heimspeicher']}),
+  c('portable-power-station','energy-climate','Tragbare Powerstations','energySystem',3,{aliases:['powerstation']}),
+  c('heat-pump','energy-climate','Wärmepumpen','energySystem',3,{aliases:['waermepumpe'],safetyExtra:['refrigerant']}),
+  c('air-conditioner','energy-climate','Klimaanlagen','energySystem',3,{aliases:['klimaanlage'],safetyExtra:['refrigerant']}),
+  c('heating-boiler','energy-climate','Heizungsanlagen','energySystem',3,{aliases:['heizung'],safetyExtra:['gas-connection']}),
+  c('generator','energy-climate','Stromerzeuger','energySystem',4,{aliases:['stromgenerator']}),
+  c('ups-power','energy-climate','USV-Anlagen','energySystem',4,{aliases:['usv']}),
+  // Watercraft, marine propulsion and related electro-mechanical equipment.
+  c('motorboat','marine-outdoor','Motorboote','marine',4,{aliases:['motorboot']}),
+  c('electric-boat','marine-outdoor','Elektroboote','marine',4,{aliases:['e-boot']}),
+  c('sailboat','marine-outdoor','Segelboote','marine',4,{aliases:['segelboot']}),
+  c('outboard-motor','marine-outdoor','Außenbordmotoren','marine',4,{aliases:['aussenbordmotor']}),
+  c('electric-outboard','marine-outdoor','Elektrische Außenborder','marine',4,{aliases:['elektro-aussenborder']}),
+  c('personal-watercraft','marine-outdoor','Jetskis & Wasserscooter','marine',4,{aliases:['jetski']}),
+  c('underwater-rov','marine-outdoor','Unterwasserdrohnen & ROVs','marine',4,{aliases:['unterwasserdrohne','unterwasserroboter']})
 ]);
 
 export const index=Object.freeze(Object.fromEntries(categories.map(x=>[x.id,x])));
@@ -194,7 +305,7 @@ export function categorySummary(){
   const byGroup=Object.fromEntries(groups.map(g=>[g.id,{planned:0,privatePilot:0}]));
   for(const cat of categories)byGroup[cat.group][cat.availability==='planned'?'planned':'privatePilot']++;
   return {
-    schema:'uf-multicategory-foundation/0.1',
+    schema:'uf-multicategory-foundation/0.3',
     taxonomyVersion:TAXONOMY_VERSION,
     groups:groups.length,
     categories:categories.length,
