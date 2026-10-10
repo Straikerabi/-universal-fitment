@@ -14,7 +14,14 @@ const exact=(a,b,label)=>assert.equal(a,b,label);
 const sourceHost=(url,brand)=>{const u=new URL(url);exact(u.protocol,'https:','HTTPS only');assert.ok(validHosts[brand]?.includes(u.hostname),'Unapproved OEM host for '+brand);assert.ok(!u.username&&!u.password&&!u.searchParams.has('token'),'Source must not embed credentials');};
 const nonempty=x=>typeof x==='string'&&x.trim().length>0;
 const allowedUnits=new Set(['mm','kg','W','V','l','m','min']);
+const keys=(obj,allowed,scope)=>{
+ assert.ok(obj&&typeof obj==='object'&&!Array.isArray(obj),scope+' must be an object');
+ for(const key of Object.keys(obj))assert.ok(allowed.includes(key),scope+' contains an unreviewed field: '+key);
+};
+
 export function validateDocuments(doc=sourceDocument,consumer=snapshot){
+ keys(doc,['schema','baseSnapshotVersion','baseSnapshotExactVariants','recordedAt','provenanceStatus','records'],'manifest');
+ assert.equal(doc.provenanceStatus,'source_observed_not_independently_verified');
  assert.equal(doc.schema,'uf-catalog-oem-passports/1');
  assert.equal(consumer.version,doc.baseSnapshotVersion,'Different consumer snapshot: requires manual review');
  assert.ok(Array.isArray(consumer.devices)&&Array.isArray(consumer.parts));
@@ -25,10 +32,13 @@ export function validateDocuments(doc=sourceDocument,consumer=snapshot){
  const devices=new Map(consumer.devices.map(d=>[d.id,d])),parts=new Map(consumer.parts.map(p=>[p.id,p]));
  unique(doc.records.map(x=>x.deviceId),'content profile');
  for(const r of doc.records){
+   keys(r,['deviceId','deviceReference','market','brand','source','technicalFacts','partListings','supportLink','maintenanceHints'],'OEM record');
    const d=devices.get(r.deviceId);
    assert.ok(d,'Record references nonexistent device');
    exact(r.brand,d.brand,'Brand mismatch');exact(r.deviceReference,d.reference,'Exact model/variant mismatch');exact(r.market,d.market,'Market transfer blocked');
-   const s=r.source;assert.ok(s&&s.access==='public_oem_page');sourceHost(s.url,r.brand);
+   const s=r.source;keys(s,['url','observedAt','access','rawSourceSha256','independentRawAudit','licenceEvidenceId','rights'],'source');
+   keys(s.rights,['factualUse','pageRedistribution','mediaB2c'],'rights');
+   assert.ok(s&&s.access==='public_oem_page');sourceHost(s.url,r.brand);
    assert.ok(nonempty(s.observedAt)&&Number.isFinite(Date.parse(s.observedAt)),'Observation date required');
    exact(s.rawSourceSha256,null,'No invented raw source checksum');
    exact(s.independentRawAudit,false,'No independent source audit claimed');
@@ -37,11 +47,13 @@ export function validateDocuments(doc=sourceDocument,consumer=snapshot){
    assert.ok(Array.isArray(r.technicalFacts)&&Array.isArray(r.partListings)&&Array.isArray(r.maintenanceHints),'All content categories explicit');
    unique(r.technicalFacts.map(x=>x.key),'technical key');
    for(const f of r.technicalFacts){
+     keys(f,['key','value','unit','locator','qualifier'],'technical fact');
      assert.ok(nonempty(f.key)&&nonempty(f.locator)&&allowedUnits.has(f.unit),'Granular fact locator/unit required');
      assert.ok(typeof f.value==='number'&&Number.isFinite(f.value)&&f.value>=0,'Measured OEM value required');
      if('qualifier'in f)assert.ok(nonempty(f.qualifier));
    }
    for(const p of r.partListings){
+     keys(p,['partId','partCode','designation','locator','listingType','fitment'],'part listing');
      const part=parts.get(p.partId);
      assert.ok(part&&d.candidatePartIds.includes(p.partId),'Cannot create new part or candidate edge by content data');
      exact(part.code,p.partCode,'OEM part code mismatch');
@@ -51,10 +63,12 @@ export function validateDocuments(doc=sourceDocument,consumer=snapshot){
      exact(p.fitment,'unconfirmed','Manufacturer listing is not physical fitment proof');
    }
    unique(r.partListings.map(p=>p.partId),'observed part listing');
+   keys(r.supportLink,['url','kind','locator'],'support destination');
    assert.ok(r.supportLink&&nonempty(r.supportLink.locator));
    exact(r.supportLink.url,s.url,'Support link requires dedicated source record when URL differs');
    assert.ok(['manufacturer_product_with_document_section','manufacturer_support_parts_index'].includes(r.supportLink.kind));
    for(const m of r.maintenanceHints){
+     keys(m,['kind','topic','locator','summary','instructionsProvided','toolsVerified'],'maintenance observation');
      exact(m.kind,'maintenance_observation_only','No unpublished repair steps');
      assert.ok(nonempty(m.locator)&&nonempty(m.topic)&&nonempty(m.summary));
      exact(m.instructionsProvided,false,'No model-specific repair instructions verified');
