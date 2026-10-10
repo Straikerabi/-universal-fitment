@@ -19,6 +19,21 @@ Diese Prozentzahlen sind **Planungs-KPIs**, keine automatisch gemessene Code-Abd
 | Echte Nutzer-/Hardwarevalidierung | 10 % | 0 % | 0,00 |
 | **Gesamt** | **100 %** | | **40,95 → 41 %** |
 
+## Wave8 Owner-Fortschritt – getrennt von Launch und datenrechtlicher Freigabe
+
+**Aktueller privater Owner-Kommitt nach PR #91/#92/#94:** `3bafbc7fd8c8da5ed6fe3bddc70eacbc0be1e035` (vor dieser Dokumentationsänderung). Die bestehende fünfstufige Consumer-App enthält weiterhin **11 echte Modellreferenzen aus 5 Marken**, 11 OEM-Teilidentitäten, **0 positive reale Passungen**. Inhaltstiefe **28,2 %**, Technik **59 %** und Marktreife **41 %** bleiben unverändert, weil neue Research- und UX-Vorschau-Dateien nicht automatisch in sichtbare Consumer-Felder oder sichere Fitment-Entscheidungen übergehen.
+
+| Private Integration | Tatsächlich abgenommen | Noch nicht realer Consumer-/Launchfortschritt |
+| --- | --- | --- |
+| #89 | dynamische App-Katalogzahlen; 53/53 Consumer + 6/6 Report + 66/66 Chromium/WebKit, Source-Lock neu bewertet; private CI grün | Legal/Operator/Rechte/Hosting weiterhin BLOCKED |
+| #92 | isolierter, mobil bedienbarer Device-Discovery-Prototyp, 13/13 CI grün | Integration in den aktuellen Reparaturmodus ausstehend (#95) |
+| #94 | sieben unveröffentlichte Marketing-/PR-Entwürfe | 0 gebuchte Kampagnen, 0 bestätigte B2B-Partner, 0 Freigabe für externe Claims |
+| #91 | OEM-Research-Observations/11er-Staging mit fünf Profilen und negativen Schema-Gates; isolierte Owner-CI grün [38074673954](https://github.com/Straikerabi/-universal-fitment/actions/runs/38074673954) | 0 unabhängige Raw-Archive vollständig geprüft, 0 kommerzielle Rechtebewilligungen, noch keine Consumer-Contentprojektion |
+| #93 | QA-Release-Gate-Plan als Draft vorhanden | noch keine ausführbaren neuen QA-CI-/Mutationschecks; Owner-Verbesserungsauftrag im PR |
+
+**Zentrale nächste Arbeit:** Work B #95 `work/wave9-consumer-discovery-owner-bridge` (isoliert, echte Consumer-Integration); Work A #96 `work/wave9-oem-independent-source-audit` (Original-33-Antworten oder neue getrennte verifizierbare OEM-Fakten). Work C bleibt reserviert für vollständige kombinierte Regression, sobald #95 ein fertiger Draft ist. Alle Works sind normale vom Nutzer auszulösende Ausführungen, keine automatisch laufenden Chat-Hintergrundjobs.
+
+**Harte Sperre:** #84 (29 Geräte, 8 Marken, 22 OEM-Teile) bleibt separat, bis OEM-Quellen und Nutzungsvoraussetzungen unabhängig geprüft, Konflikte behoben und sämtliche Prüfungen auf neuem kombinierten Commit ausgeführt sind. Ein Status `source_observed` im PR #91 allein rechtfertigt keinen Einbau-/Kauf-/Medien-Claim.
 ## Wave7-Abnahme und Owner-Integration (10.10.2026)
 
 1. **PR #83 / Work C integriert** auf privatem Owner-Branch in Commit `5fcf1abe1a01011eed64c28e9d78bd5b4dc30e11`. Isolierte funktionierende Legal-/Privacy-/Lösch-Navigation lokal: [CI 38047097152](https://github.com/Straikerabi/-universal-fitment/actions/runs/38047097152) GREEN. Nicht in die produktive Consumer-UI eingebettet. Kein vollständiges Impressum oder DSGVO-Art.-13-Freigabe, Betreiber unbekannt. Existierendes Legal-Preflight bleibt bewusst BLOCKED.
