@@ -1,0 +1,246 @@
+{
+  "schema": "uf-oem-expansion-plan-wave10/1",
+  "createdAt": "2026-10-10",
+  "status": "internal_research_only",
+  "sourceOwnerHead": "e044bcd6176bfd347c18a020b090964229ba0e5f",
+  "candidates": [
+    {
+      "id": "wave10-01",
+      "sector": "washing-machine",
+      "brand": "Bosch",
+      "model": "WGG244ZR90",
+      "market": "DE",
+      "primaryCode": "WGG244ZR90",
+      "secondaryIdentity": null,
+      "variantStatus": "incomplete_e_number",
+      "unresolved": [
+        "E-Nr_/xx_missing",
+        "serial_scope_unknown"
+      ],
+      "source": {
+        "url": "https://www.bosch-home.com/de/de/product/waschen-trocknen/waschmaschinen/frontlader-waschmaschinen/WGG244ZR90",
+        "locator": "Produktseite Modell WGG244ZR90, E-Nr /xx nicht belegt",
+        "observedAt": "2026-10-10",
+        "type": "official_manufacturer_page_observed",
+        "rawBytesVerified": false,
+        "rawSha256": null
+      },
+      "mediaRights": "unknown",
+      "commercialRights": "unknown",
+      "consumerImportAllowed": false,
+      "engineApproved": false,
+      "originalParts": [],
+      "fitmentEdges": [],
+      "physicalFitsApproved": 0
+    },
+    {
+      "id": "wave10-02",
+      "sector": "washing-machine",
+      "brand": "Bosch",
+      "model": "WGG244ZV0",
+      "market": "DE",
+      "primaryCode": "WGG244ZV0",
+      "secondaryIdentity": null,
+      "variantStatus": "incomplete_e_number",
+      "unresolved": [
+        "E-Nr_/xx_missing",
+        "serial_scope_unknown"
+      ],
+      "source": {
+        "url": "https://www.bosch-home.com/de/de/product/waschen-trocknen/waschmaschinen/frontlader-waschmaschinen/WGG244ZV0",
+        "locator": "Produktseite Modell WGG244ZV0, E-Nr /xx nicht belegt",
+        "observedAt": "2026-10-10",
+        "type": "official_manufacturer_page_observed",
+        "rawBytesVerified": false,
+        "rawSha256": null
+      },
+      "mediaRights": "unknown",
+      "commercialRights": "unknown",
+      "consumerImportAllowed": false,
+      "engineApproved": false,
+      "originalParts": [],
+      "fitmentEdges": [],
+      "physicalFitsApproved": 0
+    },
+    {
+      "id": "wave10-03",
+      "sector": "washing-machine",
+      "brand": "AEG",
+      "model": "LR8EG75480",
+      "market": "DE",
+      "primaryCode": "LR8EG75480",
+      "secondaryIdentity": {
+        "namespace": "pnc",
+        "value": "914500822"
+      },
+      "variantStatus": "model_identity_observed_only",
+      "unresolved": [
+        "serial_or_revision_scope_unknown"
+      ],
+      "source": {
+        "url": "https://www.aeg.de/laundry/laundry/washing-machines/front-loader-washing-machine/lr8eg75480/",
+        "locator": "Technische Daten > Produktnummer (PNC) 914 500 822",
+        "observedAt": "2026-10-10",
+        "type": "official_manufacturer_page_observed",
+        "rawBytesVerified": false,
+        "rawSha256": null
+      },
+      "mediaRights": "unknown",
+      "commercialRights": "unknown",
+      "consumerImportAllowed": false,
+      "engineApproved": false,
+      "originalParts": [],
+      "fitmentEdges": [],
+      "physicalFitsApproved": 0
+    },
+    {
+      "id": "wave10-04",
+      "sector": "washing-machine",
+      "brand": "AEG",
+      "model": "LR7D70490",
+      "market": "DE",
+      "primaryCode": "LR7D70490",
+      "secondaryIdentity": {
+        "namespace": "pnc",
+        "value": "914501011"
+      },
+      "variantStatus": "model_identity_observed_only",
+      "unresolved": [
+        "serial_or_revision_scope_unknown"
+      ],
+      "source": {
+        "url": "https://www.aeg.de/laundry/laundry/washing-machines/9-kg-washing-machine/lr7d70490/",
+        "locator": "Technische Daten > Produktnummer (PNC) 914 501 011",
+        "observedAt": "2026-10-10",
+        "type": "official_manufacturer_page_observed",
+        "rawBytesVerified": false,
+        "rawSha256": null
+      },
+      "mediaRights": "unknown",
+      "commercialRights": "unknown",
+      "consumerImportAllowed": false,
+      "engineApproved": false,
+      "originalParts": [],
+      "fitmentEdges": [],
+      "physicalFitsApproved": 0
+    },
+    {
+      "id": "wave10-05",
+      "sector": "vacuum-cleaner",
+      "brand": "Hoover",
+      "model": "HF610H 011",
+      "market": "DE",
+      "primaryCode": "HF610H 011",
+      "secondaryIdentity": {
+        "namespace": "product-sku",
+        "value": "39401101"
+      },
+      "variantStatus": "model_identity_observed_only",
+      "unresolved": [
+        "serial_or_revision_scope_unknown"
+      ],
+      "source": {
+        "url": "https://www.hoover-home.com/de_DE/akkusauger/39401101/hf610h-011/",
+        "locator": "HF6 Turbo Sense HF610H 011 mit Produktcode 39401101 im Herstellerpfad",
+        "observedAt": "2026-10-10",
+        "type": "official_manufacturer_page_observed",
+        "rawBytesVerified": false,
+        "rawSha256": null
+      },
+      "mediaRights": "unknown",
+      "commercialRights": "unknown",
+      "consumerImportAllowed": false,
+      "engineApproved": false,
+      "originalParts": [],
+      "fitmentEdges": [],
+      "physicalFitsApproved": 0
+    },
+    {
+      "id": "wave10-06",
+      "sector": "vacuum-cleaner",
+      "brand": "Hoover",
+      "model": "HF610P 011",
+      "market": "DE",
+      "primaryCode": "HF610P 011",
+      "secondaryIdentity": {
+        "namespace": "product-sku",
+        "value": "39401105"
+      },
+      "variantStatus": "model_identity_observed_only",
+      "unresolved": [
+        "serial_or_revision_scope_unknown"
+      ],
+      "source": {
+        "url": "https://www.hoover-home.com/de_DE/akkusauger/39401105/hf610p-011/",
+        "locator": "HF6 Turbo Sense HF610P 011 mit Produktcode 39401105 im Herstellerpfad",
+        "observedAt": "2026-10-10",
+        "type": "official_manufacturer_page_observed",
+        "rawBytesVerified": false,
+        "rawSha256": null
+      },
+      "mediaRights": "unknown",
+      "commercialRights": "unknown",
+      "consumerImportAllowed": false,
+      "engineApproved": false,
+      "originalParts": [],
+      "fitmentEdges": [],
+      "physicalFitsApproved": 0
+    },
+    {
+      "id": "wave10-07",
+      "sector": "vacuum-cleaner",
+      "brand": "Dyson",
+      "model": "V12 Detect Slim Absolute",
+      "market": "DE",
+      "primaryCode": "394167-01",
+      "secondaryIdentity": null,
+      "variantStatus": "model_identity_observed_only",
+      "unresolved": [
+        "serial_or_revision_scope_unknown"
+      ],
+      "source": {
+        "url": "https://www.dyson.de/support/journey/replacement-parts/search.394167-01",
+        "locator": "Hersteller-Support > V12 Detect Slim Absolute, exakter Such-SKU 394167-01",
+        "observedAt": "2026-10-10",
+        "type": "official_manufacturer_page_observed",
+        "rawBytesVerified": false,
+        "rawSha256": null
+      },
+      "mediaRights": "unknown",
+      "commercialRights": "unknown",
+      "consumerImportAllowed": false,
+      "engineApproved": false,
+      "originalParts": [],
+      "fitmentEdges": [],
+      "physicalFitsApproved": 0
+    },
+    {
+      "id": "wave10-08",
+      "sector": "vacuum-cleaner",
+      "brand": "Dyson",
+      "model": "V12 Detect Slim Absolute +",
+      "market": "DE",
+      "primaryCode": "394461-01",
+      "secondaryIdentity": null,
+      "variantStatus": "model_identity_observed_only",
+      "unresolved": [
+        "serial_or_revision_scope_unknown"
+      ],
+      "source": {
+        "url": "https://www.dyson.de/support/journey/replacement-parts/search.394461-01",
+        "locator": "Hersteller-Support > V12 Detect Slim Absolute +, exakter Such-SKU 394461-01",
+        "observedAt": "2026-10-10",
+        "type": "official_manufacturer_page_observed",
+        "rawBytesVerified": false,
+        "rawSha256": null
+      },
+      "mediaRights": "unknown",
+      "commercialRights": "unknown",
+      "consumerImportAllowed": false,
+      "engineApproved": false,
+      "originalParts": [],
+      "fitmentEdges": [],
+      "physicalFitsApproved": 0
+    }
+  ]
+}
