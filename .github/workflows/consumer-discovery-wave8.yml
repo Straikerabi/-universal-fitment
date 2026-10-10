@@ -1,0 +1,25 @@
+name: Consumer Discovery Wave8 – isolated UX tests
+on:
+  pull_request:
+    branches:
+      - integration/private-unified-preview-wave5-owner
+    paths:
+      - 'integrations/consumer-discovery-wave8/**'
+      - '.github/workflows/consumer-discovery-wave8.yml'
+permissions:
+  contents: read
+jobs:
+  discovery-readonly:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate standalone module syntax
+        run: |
+          node --check integrations/consumer-discovery-wave8/discovery.mjs
+          node --check integrations/consumer-discovery-wave8/preview.mjs
+      - name: Run fixture and actual-snapshot tests
+        run: node --test integrations/consumer-discovery-wave8/*.test.mjs
