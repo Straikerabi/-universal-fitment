@@ -1,0 +1,46 @@
+name: Consumer Typeplate Assist Wave9 (isolated)
+on:
+  push:
+    branches:
+      - work/consumer-typeplate-assist-wave9
+    paths:
+      - integrations/consumer-typeplate-assist-wave9/**
+      - .github/workflows/consumer-typeplate-assist-wave9.yml
+  pull_request:
+    branches:
+      - integration/private-unified-preview-wave5-owner
+    paths:
+      - integrations/consumer-typeplate-assist-wave9/**
+      - .github/workflows/consumer-typeplate-assist-wave9.yml
+permissions:
+  contents: read
+jobs:
+  typeplate-readonly:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify isolated source and runtime tests
+        run: npm run check --prefix integrations/consumer-typeplate-assist-wave9
+  mobile-browser:
+    needs: typeplate-readonly
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install existing locked browser QA dependency in ephemeral runner checkout
+        run: npm ci --ignore-scripts --no-audit --no-fund --prefix integrations/consumer-webkit-qa-wave6
+      - name: Install Chromium and Linux WebKit with host dependencies
+        run: node integrations/consumer-webkit-qa-wave6/node_modules/playwright/cli.js install --with-deps chromium webkit
+      - name: Run 8 real browser cases (4 mobile widths by 2 browser engines)
+        env:
+          UF_PLAYWRIGHT_MODULE: ${{ github.workspace }}/integrations/consumer-webkit-qa-wave6/node_modules/playwright/index.mjs
+        run: node integrations/consumer-typeplate-assist-wave9/browser.mjs
