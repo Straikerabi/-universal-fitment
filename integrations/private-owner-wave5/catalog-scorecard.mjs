@@ -1,6 +1,7 @@
 // Owner reporting, not fitment proof, manufacturer's authorization, or a launch decision.
 import assert from 'node:assert/strict';
 import {fileURLToPath} from 'node:url';
+import path from 'node:path';
 import {catalogSnapshot} from '../consumer-repair-mission-poc/catalog-snapshot.mjs';
 
 export const catalogGoal=Object.freeze({brands:10,modelsPerBrand:50,models:500});
@@ -23,7 +24,7 @@ const percent=(n,total)=>Number((ratio(n,total)*100).toFixed(1));
 const unique=(items,key,msg)=>assert.equal(new Set(items.map(key)).size,items.length,msg);
 const anyList=x=>Array.isArray(x)&&x.length>0;
 const nonemptySpec=x=>x&&typeof x==='object'&&!Array.isArray(x)&&Object.values(x).filter(v=>typeof v==='number'||present(v)).length>=2;
-const approvedPhoto=d=>Array.isArray(d.media)&&d.media.some(m=>present(m.url)&&m.rights?.b2cUse==='granted');
+const approvedPhoto=d=>Array.isArray(d.media)&&d.media.some(m=>present(m.url)&&m.rights?.b2cUse==='granted'&&present(m.licenceEvidenceId));
 export function measureCatalog(snapshot=catalogSnapshot,goal=catalogGoal){
  assert.ok(snapshot&&Array.isArray(snapshot.devices)&&Array.isArray(snapshot.parts),'Snapshot must have device/part arrays');
  assert.ok(goal.models>0&&goal.brands>0);
@@ -43,10 +44,10 @@ export function measureCatalog(snapshot=catalogSnapshot,goal=catalogGoal){
     p.identifiers?.some(i=>i.value===p.code)).length,
   devicesWithCandidate:devices.filter(d=>d.candidatePartIds.length>0).length,
   variantWarnings:devices.filter(d=>present(d.variantHint)).length,
-  modelSpecificTechnicalSpecs:devices.filter(d=>nonemptySpec(d.technicalSpecifications)).length,
-  modelSpecificRepairInstructions:devices.filter(d=>anyList(d.repairSteps)).length,
-  modelSpecificTools:devices.filter(d=>anyList(d.requiredTools)).length,
-  modelSpecificSafety:devices.filter(d=>anyList(d.safetyWarnings)).length,
+  modelSpecificTechnicalSpecs:devices.filter(d=>nonemptySpec(d.technicalSpecifications)&&sourceDoc(d.technicalSource)).length,
+  modelSpecificRepairInstructions:devices.filter(d=>anyList(d.repairSteps)&&sourceDoc(d.repairDocumentation?.source)).length,
+  modelSpecificTools:devices.filter(d=>anyList(d.requiredTools)&&sourceDoc(d.toolEvidence?.source)).length,
+  modelSpecificSafety:devices.filter(d=>anyList(d.safetyWarnings)&&sourceDoc(d.safetyEvidence?.source)).length,
   rightsClearedModelMedia:devices.filter(approvedPhoto).length,
   modelSpecificManualLinks:devices.filter(d=>present(d.manualUrl)&&/^https:\/\//.test(d.manualUrl)).length,
   modelSpecificMeasurements:devices.filter(d=>nonemptySpec(d.dimensions)).length,
@@ -95,4 +96,4 @@ export function measureCatalog(snapshot=catalogSnapshot,goal=catalogGoal){
  return result;
 }
 
-if(process.argv[1]&&fileURLToPath(import.meta.url)===fileURLToPath(new URL('file://'+process.argv[1])))console.log(JSON.stringify(measureCatalog(),null,2));
+if(process.argv[1]&&fileURLToPath(import.meta.url)===path.resolve(process.argv[1]))console.log(JSON.stringify(measureCatalog(),null,2));
