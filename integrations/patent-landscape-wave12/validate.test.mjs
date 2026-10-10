@@ -1,0 +1,10 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {load,validate} from './validate.mjs';
+const data=load();const mutate=(fn)=>{const x=structuredClone(data);fn(x.patents);return x;};
+test('matrix schema and links',()=>assert.deepEqual(validate(data),[]));
+test('no duplicated publication',()=>assert.ok(validate(mutate(p=>p.push({...p[0]}))).some(x=>x.includes('duplicate'))));
+test('reject fabricated link',()=>assert.ok(validate(mutate(p=>p[0].url='https://example.com')).some(x=>x.includes('link'))));
+test('reject undocumented legal clearance',()=>assert.ok(validate(mutate(p=>p[0].status='Active')).some(x=>x.includes('status-warning'))));
+test('reject empty claim',()=>assert.ok(validate(mutate(p=>p[0].claim='')).some(x=>x.includes('claim'))));
+test('reject publication typo',()=>assert.ok(validate(mutate(p=>p[0].publication='EP')).some(x=>x.includes('publication-format'))));
+test('reject missing jurisdiction',()=>assert.ok(validate(mutate(p=>p[0].jurisdiction='')).some(x=>x.includes('jurisdiction'))));
+test('no legal clearance flag',()=>assert.equal(data.scope,'preliminary-not-legal-opinion'));
