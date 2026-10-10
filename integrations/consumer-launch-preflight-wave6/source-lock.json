@@ -151,7 +151,7 @@
     "integrations/consumer-repair-mission-poc/mobile-ui.mjs": "97727b3caa044480c79a95734a3887925058c2c8cae1ee165655657deb65e34e",
     "integrations/consumer-repair-mission-poc/mock-fitment-adapter.mjs": "c4bd2acd84478af78a28ccf7f7fc2b185ed3e47e4532a92b7b97a7796e45b926",
     "integrations/consumer-repair-mission-poc/offline-config.mjs": "09dbeba0072946560ef68d9b27ec3b6f8fa4d07db222aeb0a2c3d6753360e76a",
-    "integrations/consumer-repair-mission-poc/offline-worker.mjs": "2895855cc9ca999b68587b298e4e4f408e0f1bae8901f3eae61fe760",
+    "integrations/consumer-repair-mission-poc/offline-worker.mjs": "2895855cc9ca999b68587b298e4e4f408e0f1bae8901f3eae9cc5a1ae61fe760",
     "integrations/consumer-repair-mission-poc/package.json": "0cb2a12f3900a4beb21947c2543360ccb76f4501a2c9ba6848de013948b829c8",
     "integrations/consumer-repair-mission-poc/parts-view.mjs": "324cb2336aa60457bc53744245880cdd9fa4d2d0c62674f277bba0f1a2d10922",
     "integrations/consumer-repair-mission-poc/pilot-cases.json": "b2c6ddfbf2526a1099c59c67bd35affc31cbad595a73d02a7d56dc82f0eef448",
