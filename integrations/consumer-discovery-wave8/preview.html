@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'none'; img-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Gerätefinder – private UX-Vorschau | Universal Fitment</title>
+<link rel="stylesheet" href="preview.css">
+<script type="module" src="preview.mjs"></script>
+</head>
+<body>
+<a class="skip-link" href="#discovery">Zum Gerätefinder</a>
+<header class="topbar"><span class="mark" aria-hidden="true">uf</span><div><strong>universal fitment</strong><small>PRIVATE CONSUMER UX-VORSCHAU</small></div><span class="pilot-tag">Katalog-Pilot</span></header>
+<main id="discovery" class="shell">
+<section class="hero" aria-labelledby="heroTitle"><p class="eyebrow">DEIN GERÄT · DEINE KENNUNG</p><h1 id="heroTitle">Finde das richtige <em>Gerät.</em><br>Prüfe danach das Teil.</h1><p>Suche mit Modellnummer, Materialnummer oder Produktcode. Die passende Ausführung wird niemals geraten.</p><p id="catalogTotal" class="catalog-count"></p></section>
+<section class="workspace" aria-label="Geräte finden und Steckbrief ansehen">
+<div class="finder"><div class="section-head"><div><p class="eyebrow">01 / GERÄTE FINDEN</p><h2>Geräte durchsuchen</h2></div><span class="passive-pill">Nur Identitätsdaten</span></div>
+<div class="search-field"><label for="modelQuery">Modell oder vollständige Kennung</label><input id="modelQuery" type="search" maxlength="100" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="z. B. VS20C95D4TK/WD"></div>
+<div class="filters"><label for="brand">Marke<select id="brand"></select></label><label for="type">Geräteart<select id="type"></select></label><label for="sort">Sortierung<select id="sort"><option value="relevance">Trefferrelevanz</option><option value="name">Modellname A–Z</option><option value="brand">Marke A–Z</option></select></label></div>
+<div class="results-meta"><p id="resultsCount" role="status" aria-live="polite"></p><button class="reset" type="button" data-reset>Filter zurücksetzen</button></div>
+<div id="deviceResults" class="device-list" aria-label="Geräteergebnisse"></div>
+</div>
+<aside class="profile" id="deviceProfile" aria-label="Gerätesteckbrief"></aside>
+</section>
+<footer class="legal-copy">Isolierte lokale UX-Vorschau · keine Freigabe für Kauf, Montage oder Veröffentlichung. Herstellerlinks sind nur Identitätsquellen; keine Bilder oder Live-Preise.</footer>
+</main>
+<noscript>JavaScript ist für diese private Vorschau erforderlich.</noscript>
+</body>
+</html>
