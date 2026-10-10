@@ -1,0 +1,46 @@
+name: Owner OEM Wave8 evidence review (private, no release)
+on:
+  push:
+    branches: [integration/review-oem-passports-wave8-owner]
+permissions:
+  contents: read
+jobs:
+  scoped-evidence:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Run OEM passport schema, exact variants and negative mutation cases
+        run: |
+          set -euo pipefail
+          node --check integrations/catalog-oem-passports-wave8/validate.mjs
+          node integrations/catalog-oem-passports-wave8/validate.mjs
+          node --test integrations/catalog-oem-passports-wave8/validate.test.mjs
+      - name: Cross-check unchanged current Consumer baseline and zero approved fits
+        run: |
+          set -euo pipefail
+          node integrations/private-owner-wave5/catalog-scorecard.mjs > /tmp/current-owner-catalog.json
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          const owner=JSON.parse(fs.readFileSync('/tmp/current-owner-catalog.json','utf8'));
+          if(owner.counts.devices!==11||owner.counts.originalPartIdentities!==11)throw Error('Review on different Consumer snapshot: block');
+          if(owner.fitment.approvedRealInstallationCases!==0)throw Error('Unexpected approved real fitments');
+          const src=JSON.parse(fs.readFileSync('integrations/catalog-oem-passports-wave8/observations.json','utf8'));
+          if(src.provenanceStatus!=='source_observed_not_independently_verified')throw Error('Provenance improperly elevated');
+          for(const r of src.records){
+           const s=r.source;
+           if(s.rawSourceSha256!==null||s.independentRawAudit!==false||
+               s.rights.factualUse!=='review_pending'||s.rights.mediaB2c!=='not_granted')throw Error('Source audit or rights magically granted');
+           if(r.partListings.some(p=>p.fitment!=='unconfirmed'))throw Error('OEM listing is not approved fitment');
+          }
+          console.log(JSON.stringify({actualConsumerDevices:owner.counts.devices,actualPartIdentities:owner.counts.originalPartIdentities,stagingPassportRecords:src.records.length,independentlyVerifiedSourceRecords:0,realApprovedFits:0,launchApproved:false}));
+          NODE
+      - name: Git changes are not a release decision
+        run: |
+          git diff --check
+          echo 'No main merge, no publication, no commercial rights or physical part fitment approved.'
