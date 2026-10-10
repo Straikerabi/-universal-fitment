@@ -1,0 +1,72 @@
+{
+  "schema": "uf.consumer-coverage/2",
+  "release": "wave7-de-2026-10-10-v1",
+  "scope": "Actually used Consumer snapshot; full manufacturer variants, not historical Wave3 rows",
+  "counts": {
+    "baselineDevices": 11,
+    "retainedBaselineDevices": 11,
+    "additionalDevices": 18,
+    "consumerDevices": 29,
+    "additionalBrands": 7,
+    "consumerBrands": 8,
+    "baselineParts": 11,
+    "additionalParts": 11,
+    "consumerParts": 22,
+    "freshSourceResponses": 33,
+    "newDevicePartListings": 14,
+    "newDevicesWithNoSelectedParts": 8,
+    "newPhysicalFitApprovals": 0,
+    "newPurchaseApprovals": 0,
+    "wave3EdgesUpgraded": 0
+  },
+  "brands": [
+    {
+      "brand": "AEG",
+      "baseline": 0,
+      "added": 1,
+      "consumer": 1
+    },
+    {
+      "brand": "Bosch",
+      "baseline": 2,
+      "added": 2,
+      "consumer": 4
+    },
+    {
+      "brand": "Dyson",
+      "baseline": 2,
+      "added": 3,
+      "consumer": 5
+    },
+    {
+      "brand": "Hoover",
+      "baseline": 3,
+      "added": 0,
+      "consumer": 3
+    },
+    {
+      "brand": "Miele",
+      "baseline": 2,
+      "added": 4,
+      "consumer": 6
+    },
+    {
+      "brand": "Samsung",
+      "baseline": 2,
+      "added": 3,
+      "consumer": 5
+    },
+    {
+      "brand": "Siemens",
+      "baseline": 0,
+      "added": 3,
+      "consumer": 3
+    },
+    {
+      "brand": "Vorwerk",
+      "baseline": 0,
+      "added": 2,
+      "consumer": 2
+    }
+  ]
+}

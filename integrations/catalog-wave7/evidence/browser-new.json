@@ -1,0 +1,630 @@
+{
+  "schema": "uf.wave7-browser-report/1",
+  "testedAt": "2026-10-10T15:06:40.742Z",
+  "engine": "Chromium headless",
+  "version": "131.0.6778.85",
+  "passed": 10,
+  "checks": [
+    "actual Consumer 29 devices, 8 brands, accurate data-bound counts",
+    "320px: all 18 exact new variants through five steps, no real positive",
+    "375px: all 18 exact new variants through five steps, no real positive",
+    "390px: all 18 exact new variants through five steps, no real positive",
+    "430px: all 18 exact new variants through five steps, no real positive",
+    "literal fresh OEM article filter and checklist retain exact 11639250 without approval",
+    "market/index/reference mismatch and VK200 sibling never transfer parts or approve",
+    "actual old fingerprint actively overwritten; retained old ID, selections, checklist cleared",
+    "warm offline reload keeps NEW variant, cached fresh snapshot, unconfirmed checklist",
+    "cold offline with no installation gives network error, no catalog or approvals"
+  ],
+  "viewports": [
+    320,
+    375,
+    390,
+    430
+  ],
+  "newVariantViewportRuns": 72,
+  "measuredCoverage": {
+    "baselineDevices": 11,
+    "retainedBaselineDevices": 11,
+    "additionalDevices": 18,
+    "consumerDevices": 29,
+    "additionalBrands": 7,
+    "consumerBrands": 8,
+    "baselineParts": 11,
+    "additionalParts": 11,
+    "consumerParts": 22,
+    "freshSourceResponses": 33,
+    "newDevicePartListings": 14,
+    "newDevicesWithNoSelectedParts": 8,
+    "newPhysicalFitApprovals": 0,
+    "newPurchaseApprovals": 0,
+    "wave3EdgesUpgraded": 0
+  },
+  "measurements": [
+    {
+      "width": 320,
+      "deviceId": "vac-wave7-aeg-90025863800",
+      "reference": "90025863800",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2583
+    },
+    {
+      "width": 320,
+      "deviceId": "vac-wave7-bosch-bgl35mon1-01",
+      "reference": "BGL35MON1/01",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2203
+    },
+    {
+      "width": 320,
+      "deviceId": "vac-wave7-bosch-bgl35mon4-01",
+      "reference": "BGL35MON4/01",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2212
+    },
+    {
+      "width": 320,
+      "deviceId": "vac-wave7-dyson-226397-01",
+      "reference": "226397-01",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2449
+    },
+    {
+      "width": 320,
+      "deviceId": "vac-wave7-dyson-227312-01",
+      "reference": "227312-01",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2534
+    },
+    {
+      "width": 320,
+      "deviceId": "vac-wave7-dyson-268700-01",
+      "reference": "268700-01",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2470
+    },
+    {
+      "width": 320,
+      "deviceId": "vac-wave7-miele-11602420",
+      "reference": "11602420",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2485
+    },
+    {
+      "width": 320,
+      "deviceId": "vac-wave7-miele-11602450",
+      "reference": "11602450",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2496
+    },
+    {
+      "width": 320,
+      "deviceId": "vac-wave7-miele-12031660",
+      "reference": "12031660",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2486
+    },
+    {
+      "width": 320,
+      "deviceId": "vac-wave7-miele-12560300",
+      "reference": "12560300",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2498
+    },
+    {
+      "width": 320,
+      "deviceId": "vac-wave7-samsung-vs20c85g2tw-wd",
+      "reference": "VS20C85G2TW/WD",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2214
+    },
+    {
+      "width": 320,
+      "deviceId": "vac-wave7-samsung-vs20c85g4pb-wd",
+      "reference": "VS20C85G4PB/WD",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2234
+    },
+    {
+      "width": 320,
+      "deviceId": "vac-wave7-samsung-vs20c85g4tb-wd",
+      "reference": "VS20C85G4TB/WD",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2184
+    },
+    {
+      "width": 320,
+      "deviceId": "vac-wave7-siemens-vs06a110-03",
+      "reference": "VS06A110/03",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2484
+    },
+    {
+      "width": 320,
+      "deviceId": "vac-wave7-siemens-vs06a110-12",
+      "reference": "VS06A110/12",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2252
+    },
+    {
+      "width": 320,
+      "deviceId": "vac-wave7-siemens-vsz4g1400-01",
+      "reference": "VSZ4G1400/01",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2216
+    },
+    {
+      "width": 320,
+      "deviceId": "vac-wave7-vorwerk-vk200",
+      "reference": "VK200",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2231
+    },
+    {
+      "width": 320,
+      "deviceId": "vac-wave7-vorwerk-vk7",
+      "reference": "VK7",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2498
+    },
+    {
+      "width": 375,
+      "deviceId": "vac-wave7-aeg-90025863800",
+      "reference": "90025863800",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2513
+    },
+    {
+      "width": 375,
+      "deviceId": "vac-wave7-bosch-bgl35mon1-01",
+      "reference": "BGL35MON1/01",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2210
+    },
+    {
+      "width": 375,
+      "deviceId": "vac-wave7-bosch-bgl35mon4-01",
+      "reference": "BGL35MON4/01",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2226
+    },
+    {
+      "width": 375,
+      "deviceId": "vac-wave7-dyson-226397-01",
+      "reference": "226397-01",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2532
+    },
+    {
+      "width": 375,
+      "deviceId": "vac-wave7-dyson-227312-01",
+      "reference": "227312-01",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2500
+    },
+    {
+      "width": 375,
+      "deviceId": "vac-wave7-dyson-268700-01",
+      "reference": "268700-01",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2518
+    },
+    {
+      "width": 375,
+      "deviceId": "vac-wave7-miele-11602420",
+      "reference": "11602420",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2516
+    },
+    {
+      "width": 375,
+      "deviceId": "vac-wave7-miele-11602450",
+      "reference": "11602450",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2500
+    },
+    {
+      "width": 375,
+      "deviceId": "vac-wave7-miele-12031660",
+      "reference": "12031660",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2503
+    },
+    {
+      "width": 375,
+      "deviceId": "vac-wave7-miele-12560300",
+      "reference": "12560300",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2512
+    },
+    {
+      "width": 375,
+      "deviceId": "vac-wave7-samsung-vs20c85g2tw-wd",
+      "reference": "VS20C85G2TW/WD",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2217
+    },
+    {
+      "width": 375,
+      "deviceId": "vac-wave7-samsung-vs20c85g4pb-wd",
+      "reference": "VS20C85G4PB/WD",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2202
+    },
+    {
+      "width": 375,
+      "deviceId": "vac-wave7-samsung-vs20c85g4tb-wd",
+      "reference": "VS20C85G4TB/WD",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2185
+    },
+    {
+      "width": 375,
+      "deviceId": "vac-wave7-siemens-vs06a110-03",
+      "reference": "VS06A110/03",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2515
+    },
+    {
+      "width": 375,
+      "deviceId": "vac-wave7-siemens-vs06a110-12",
+      "reference": "VS06A110/12",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2199
+    },
+    {
+      "width": 375,
+      "deviceId": "vac-wave7-siemens-vsz4g1400-01",
+      "reference": "VSZ4G1400/01",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2204
+    },
+    {
+      "width": 375,
+      "deviceId": "vac-wave7-vorwerk-vk200",
+      "reference": "VK200",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2177
+    },
+    {
+      "width": 375,
+      "deviceId": "vac-wave7-vorwerk-vk7",
+      "reference": "VK7",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2467
+    },
+    {
+      "width": 390,
+      "deviceId": "vac-wave7-aeg-90025863800",
+      "reference": "90025863800",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2471
+    },
+    {
+      "width": 390,
+      "deviceId": "vac-wave7-bosch-bgl35mon1-01",
+      "reference": "BGL35MON1/01",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2246
+    },
+    {
+      "width": 390,
+      "deviceId": "vac-wave7-bosch-bgl35mon4-01",
+      "reference": "BGL35MON4/01",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2252
+    },
+    {
+      "width": 390,
+      "deviceId": "vac-wave7-dyson-226397-01",
+      "reference": "226397-01",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2499
+    },
+    {
+      "width": 390,
+      "deviceId": "vac-wave7-dyson-227312-01",
+      "reference": "227312-01",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2483
+    },
+    {
+      "width": 390,
+      "deviceId": "vac-wave7-dyson-268700-01",
+      "reference": "268700-01",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2482
+    },
+    {
+      "width": 390,
+      "deviceId": "vac-wave7-miele-11602420",
+      "reference": "11602420",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2536
+    },
+    {
+      "width": 390,
+      "deviceId": "vac-wave7-miele-11602450",
+      "reference": "11602450",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2549
+    },
+    {
+      "width": 390,
+      "deviceId": "vac-wave7-miele-12031660",
+      "reference": "12031660",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2499
+    },
+    {
+      "width": 390,
+      "deviceId": "vac-wave7-miele-12560300",
+      "reference": "12560300",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2484
+    },
+    {
+      "width": 390,
+      "deviceId": "vac-wave7-samsung-vs20c85g2tw-wd",
+      "reference": "VS20C85G2TW/WD",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2215
+    },
+    {
+      "width": 390,
+      "deviceId": "vac-wave7-samsung-vs20c85g4pb-wd",
+      "reference": "VS20C85G4PB/WD",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2250
+    },
+    {
+      "width": 390,
+      "deviceId": "vac-wave7-samsung-vs20c85g4tb-wd",
+      "reference": "VS20C85G4TB/WD",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2233
+    },
+    {
+      "width": 390,
+      "deviceId": "vac-wave7-siemens-vs06a110-03",
+      "reference": "VS06A110/03",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2499
+    },
+    {
+      "width": 390,
+      "deviceId": "vac-wave7-siemens-vs06a110-12",
+      "reference": "VS06A110/12",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2251
+    },
+    {
+      "width": 390,
+      "deviceId": "vac-wave7-siemens-vsz4g1400-01",
+      "reference": "VSZ4G1400/01",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2215
+    },
+    {
+      "width": 390,
+      "deviceId": "vac-wave7-vorwerk-vk200",
+      "reference": "VK200",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2251
+    },
+    {
+      "width": 390,
+      "deviceId": "vac-wave7-vorwerk-vk7",
+      "reference": "VK7",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2483
+    },
+    {
+      "width": 430,
+      "deviceId": "vac-wave7-aeg-90025863800",
+      "reference": "90025863800",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2497
+    },
+    {
+      "width": 430,
+      "deviceId": "vac-wave7-bosch-bgl35mon1-01",
+      "reference": "BGL35MON1/01",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2234
+    },
+    {
+      "width": 430,
+      "deviceId": "vac-wave7-bosch-bgl35mon4-01",
+      "reference": "BGL35MON4/01",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2214
+    },
+    {
+      "width": 430,
+      "deviceId": "vac-wave7-dyson-226397-01",
+      "reference": "226397-01",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2533
+    },
+    {
+      "width": 430,
+      "deviceId": "vac-wave7-dyson-227312-01",
+      "reference": "227312-01",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2505
+    },
+    {
+      "width": 430,
+      "deviceId": "vac-wave7-dyson-268700-01",
+      "reference": "268700-01",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2495
+    },
+    {
+      "width": 430,
+      "deviceId": "vac-wave7-miele-11602420",
+      "reference": "11602420",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2484
+    },
+    {
+      "width": 430,
+      "deviceId": "vac-wave7-miele-11602450",
+      "reference": "11602450",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2485
+    },
+    {
+      "width": 430,
+      "deviceId": "vac-wave7-miele-12031660",
+      "reference": "12031660",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2531
+    },
+    {
+      "width": 430,
+      "deviceId": "vac-wave7-miele-12560300",
+      "reference": "12560300",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2483
+    },
+    {
+      "width": 430,
+      "deviceId": "vac-wave7-samsung-vs20c85g2tw-wd",
+      "reference": "VS20C85G2TW/WD",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2200
+    },
+    {
+      "width": 430,
+      "deviceId": "vac-wave7-samsung-vs20c85g4pb-wd",
+      "reference": "VS20C85G4PB/WD",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2253
+    },
+    {
+      "width": 430,
+      "deviceId": "vac-wave7-samsung-vs20c85g4tb-wd",
+      "reference": "VS20C85G4TB/WD",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2182
+    },
+    {
+      "width": 430,
+      "deviceId": "vac-wave7-siemens-vs06a110-03",
+      "reference": "VS06A110/03",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2499
+    },
+    {
+      "width": 430,
+      "deviceId": "vac-wave7-siemens-vs06a110-12",
+      "reference": "VS06A110/12",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2317
+    },
+    {
+      "width": 430,
+      "deviceId": "vac-wave7-siemens-vsz4g1400-01",
+      "reference": "VSZ4G1400/01",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2266
+    },
+    {
+      "width": 430,
+      "deviceId": "vac-wave7-vorwerk-vk200",
+      "reference": "VK200",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2226
+    },
+    {
+      "width": 430,
+      "deviceId": "vac-wave7-vorwerk-vk7",
+      "reference": "VK7",
+      "result": "unclear",
+      "purchaseActions": 0,
+      "elapsedMs": 2524
+    }
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "oldFingerprint": "a20b269f32838c739a80a60c3d88ebc667e438624a32a9ce2c204768a908f33d:consumer-ui/2",
+  "newFingerprint": "bf8ad5fe5080141ba7aca5073294396499d3a53650205dd6f8d40156c7bcc932:consumer-ui/2",
+  "warmOffline": true,
+  "coldOfflineNoInstall": "network error, no catalog rendered",
+  "physicalPhone": false,
+  "safariWebkit": false,
+  "externalParticipants": 0
+}
