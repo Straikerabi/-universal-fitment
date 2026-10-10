@@ -1,0 +1,43 @@
+name: Consumer preflight guardrail tests (NOT launch approval)
+on:
+  pull_request:
+    branches: [integration/private-unified-preview-wave5-owner]
+    paths:
+      - 'integrations/consumer-launch-preflight-wave6/**'
+      - '.github/workflows/consumer-launch-preflight-wave6.yml'
+      - '.demo/source-v1.29.0/**'
+      - 'integrations/source-checkpoint.json'
+      - 'integrations/consumer-repair-mission-poc/**'
+      - 'integrations/dual-platform-owner-review/**'
+      - 'integrations/fitment-engine-v1-poc/**'
+      - 'integrations/business-embed-poc/adapter.mjs'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  offline-guardrails:
+    name: Offline tests — expected release BLOCKED
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '22'
+      - name: Test source evidence, mode separation and fail-closed CLI
+        run: python3 -m unittest discover -s integrations/consumer-launch-preflight-wave6 -v
+      - name: Existing consumer regressions (synthetic inputs only)
+        run: npm test --prefix integrations/consumer-repair-mission-poc
+      - name: No legal approval — confirm expected exit 2 for empty example
+        shell: bash
+        run: |
+          set +e
+          python3 integrations/consumer-launch-preflight-wave6/preflight.py --receipts integrations/consumer-launch-preflight-wave6/receipts.example.json
+          gate_status=$?
+          set -e
+          test "$gate_status" -eq 2
