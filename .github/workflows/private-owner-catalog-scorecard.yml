@@ -1,0 +1,38 @@
+name: Private Owner catalog size + information-depth scorecard
+
+on:
+  push:
+    branches:
+      - integration/private-unified-preview-wave5-owner
+    paths:
+      - 'integrations/private-owner-wave5/**'
+      - 'integrations/consumer-repair-mission-poc/catalog-snapshot.mjs'
+  pull_request:
+    branches:
+      - integration/private-unified-preview-wave4
+    paths:
+      - 'integrations/private-owner-wave5/**'
+      - 'integrations/consumer-repair-mission-poc/catalog-snapshot.mjs'
+
+permissions:
+  contents: read
+
+jobs:
+  catalog-report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Test auditable model, part, information and unknown counters
+        run: node --test integrations/private-owner-wave5/catalog-scorecard.test.mjs
+      - name: Generate actual branch snapshot metrics (not a legal/fitment approval)
+        shell: bash
+        run: |
+          set -euo pipefail
+          node integrations/private-owner-wave5/catalog-scorecard.mjs > "$RUNNER_TEMP/uf-owner-catalog-metrics.json"
+          node --input-type=module -e "import fs from 'node:fs';const s=JSON.parse(fs.readFileSync(process.argv[1]));if(s.fitment.approvedRealInstallationCases!==0||s.legal.sourceUrlsAreNotLicences!==true)process.exit(1);console.log(JSON.stringify({counts:s.counts,goal:s.target,contentIndex:s.contentIndex.estimatePercent,fields:s.fieldCoverage,releaseApproved:false},null,2));" "$RUNNER_TEMP/uf-owner-catalog-metrics.json"
