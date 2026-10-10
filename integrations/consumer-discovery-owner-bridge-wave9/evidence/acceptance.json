@@ -1,0 +1,2092 @@
+{
+  "schema": "uf.discovery-owner-acceptance/1",
+  "testedCommit": "328ed84701c6959c5b48d8fc702368f7e336d4bf",
+  "sourceDelta": {
+    "schema": "uf.owner-discovery-delta/1",
+    "issue": 95,
+    "baseCommit": "3bafbc7fd8c8da5ed6fe3bddc70eacbc0be1e035",
+    "branch": "work/wave9-consumer-discovery-owner-bridge",
+    "changedConsumerFiles": [
+      {
+        "path": "integrations/consumer-repair-mission-poc/app.mjs",
+        "beforeGitBlob": "6c8b1479b7bccff80189eb83a2f2abb757fa0435",
+        "afterGitBlob": "d61aee9ad858ef72eb877e03ae832a4224e49232",
+        "beforeSha256": "5f8803d9435bad385ed8ecfc69d56acc0e3ed2aa45c073f796d25ee38c065995",
+        "afterSha256": "05178036f2048c205b05f7f7bd3ee8337052276c7926cd1507f7d5161e982862"
+      },
+      {
+        "path": "integrations/consumer-repair-mission-poc/offline-config.mjs",
+        "beforeGitBlob": "1aaeddadfd60a4c10322323f43a587caa469d0f7",
+        "afterGitBlob": "d12258852232f876dffefdf6436ce4dd299f9d13",
+        "beforeSha256": "09dbeba0072946560ef68d9b27ec3b6f8fa4d07db222aeb0a2c3d6753360e76a",
+        "afterSha256": "bd8dbce4bc52415f5d6e61e37c35363afcf55754efa5375cd059a324c4228b83"
+      },
+      {
+        "path": "integrations/consumer-repair-mission-poc/offline-worker.mjs",
+        "beforeGitBlob": "c49e9f594e5da3ecc2cac5633eb7002992600741",
+        "afterGitBlob": "1f7bf4d9d8ead0c850c19ea58e11c49121c75024",
+        "beforeSha256": "2895855cc9ca999b68587b298e4e4f408e0f1bae8901f3eae9cc5a1ae61fe760",
+        "afterSha256": "b14f9195f058b70c81785ac7230007fe31823496119b4ce2577f94ad7be6a979"
+      },
+      {
+        "path": "integrations/consumer-repair-mission-poc/prepare-offline.mjs",
+        "beforeGitBlob": "c7a4f434995974f5f78fa1fdffb1e832d989d57a",
+        "afterGitBlob": "df8a1a8a77c873f985ad4f8e0b18acf86fe11826",
+        "beforeSha256": "cca44a0e933aa311e449936af941d5081a8b4066582987c040d479b80f77fa58",
+        "afterSha256": "d9860c24756c0b28f2693d0c6d62cb43a0ee205da55f5b57a3baa7fd0f2885e3"
+      },
+      {
+        "path": "integrations/consumer-repair-mission-poc/serve.mjs",
+        "beforeGitBlob": "2aee5988ab4b4c2a0a6138ee1ad4f7564b62f131",
+        "afterGitBlob": "a71d02c672c3740b0e8a4272a33cb40b1d7d9736",
+        "beforeSha256": "d916259c365cad5fff541882d9f50cf17301f2881a9a1f6d68703a66ed4e3ba0",
+        "afterSha256": "a06d2a74039e21b9309c82139df631719301e97b18bb6a0a2a4f7b7dea72c534"
+      },
+      {
+        "path": "integrations/consumer-repair-mission-poc/styles.css",
+        "beforeGitBlob": "5e3343c2655f893f73f93b7ba5e909c96c981bd1",
+        "afterGitBlob": "c000138f15c46eaff58657023e75b30946e141b4",
+        "beforeSha256": "4ab4cd47aa0b7a1243274acc36714b6aa73d9880d9f95c7f5560c1e0b5aca1c4",
+        "afterSha256": "f38e74b8c3c7e21226355f6e60a3c4184687d20cd506c074facfee5a242fcab2"
+      },
+      {
+        "path": "integrations/consumer-repair-mission-poc/discovery-ui.mjs",
+        "beforeGitBlob": null,
+        "beforeSha256": null,
+        "afterSha256": "6be579801d4b0dfae3b40672a9cd1b34c0c27419a707ec6ab3a311524794ef17"
+      }
+    ],
+    "protectedFiles": 3826,
+    "protectedDigest": "fc2e8a01beedad8866e5c5404bb929113cf16b9253353cdf2ad03e4bf46f8034",
+    "testCodeDigest": "b66c09f778588eee1e8c659784d7c3b00cbcae007657c071b259822e5e349400",
+    "launchApproved": false,
+    "legalSourceLockUpdated": false,
+    "manualOwnerReviewRequired": true
+  },
+  "browser": {
+    "schema": "uf.owner-browser-independent/1",
+    "startedAt": "2026-10-10T18:55:49.816Z",
+    "details": "Independent Owner CI against actual combined Consumer bytes. Work-B #81 sealed branch remains unchanged.",
+    "physicalIPhone": false,
+    "realHumanTest": false,
+    "mainMerge": false,
+    "launchApproval": false,
+    "assets": {
+      "manifestByteIdentical": true,
+      "assets": [
+        {
+          "url": "/",
+          "sha256": "f250eb0848ee7945bd97c0437c8142c7f59a5aea064bdc18124984b9615de69c"
+        },
+        {
+          "url": "/index.html",
+          "sha256": "f250eb0848ee7945bd97c0437c8142c7f59a5aea064bdc18124984b9615de69c"
+        },
+        {
+          "url": "/styles.css",
+          "sha256": "f38e74b8c3c7e21226355f6e60a3c4184687d20cd506c074facfee5a242fcab2"
+        },
+        {
+          "url": "/app.mjs",
+          "sha256": "05178036f2048c205b05f7f7bd3ee8337052276c7926cd1507f7d5161e982862"
+        },
+        {
+          "url": "/mission-state.mjs",
+          "sha256": "58108ad55dc52cdb715b6bc5671a138ec8263dc4a4de28095b9fa6c28eb62a36"
+        },
+        {
+          "url": "/parts-view.mjs",
+          "sha256": "324cb2336aa60457bc53744245880cdd9fa4d2d0c62674f277bba0f1a2d10922"
+        },
+        {
+          "url": "/catalog-snapshot.mjs",
+          "sha256": "4b0f6fc17d22b0bc6f320b02eee5fdb39bb23d0083fadb3135e4bed38d3de9ae"
+        },
+        {
+          "url": "/mobile-ui.mjs",
+          "sha256": "97727b3caa044480c79a95734a3887925058c2c8cae1ee165655657deb65e34e"
+        },
+        {
+          "url": "/discovery-ui.mjs",
+          "sha256": "6be579801d4b0dfae3b40672a9cd1b34c0c27419a707ec6ab3a311524794ef17"
+        },
+        {
+          "url": "/consumer-discovery-wave8/discovery.mjs",
+          "sha256": "fd949c281eb4d8411fe69dffba2009353c0b3edf54ffeb8f41e572300f14186d"
+        },
+        {
+          "url": "/mock-fitment-adapter.mjs",
+          "sha256": "c4bd2acd84478af78a28ccf7f7fc2b185ed3e47e4532a92b7b97a7796e45b926"
+        },
+        {
+          "url": "/manifest.webmanifest",
+          "sha256": "7464aad4b874e0e172a815c090ebaa08c5f9ebf02dba523df76154376166d3f5"
+        },
+        {
+          "url": "/app-icon.svg",
+          "sha256": "94eb4f087ded346090f89ffd7c88111dc90047086542b7e099a7939ac15716e4"
+        },
+        {
+          "url": "/dual-platform-owner-review/bridge.mjs",
+          "sha256": "d3cb61c0cd4e554585e28bf9b54d51c110c3bd85aefdc733a8578f2feb13cb6c"
+        },
+        {
+          "url": "/dual-platform-owner-review/ui-fixtures.mjs",
+          "sha256": "469f6ae04d4bd4ebb0fa6933b4b193a20ca79c20f2f2f367fcd3b5b5d69a9061"
+        },
+        {
+          "url": "/fitment-engine-v1-poc/contract.mjs",
+          "sha256": "f609d8c4a2d894632b46db76c28e83d581190dcfed0484a3aab3f12efb36e7b3"
+        },
+        {
+          "url": "/fitment-engine-v1-poc/fixtures.mjs",
+          "sha256": "b1a08deb58acf2b7be7319e61e838c2b5ef5cd7833068e368e41dbc79f3e97a9"
+        },
+        {
+          "url": "/business-embed-poc/adapter.mjs",
+          "sha256": "92d41346810d9874f43ec6e986867052d1740c6ab5f4916779789e0596f68d92"
+        },
+        {
+          "url": "/offline-config.mjs",
+          "sha256": "bd8dbce4bc52415f5d6e61e37c35363afcf55754efa5375cd059a324c4228b83"
+        },
+        {
+          "url": "/offline-worker.mjs",
+          "sha256": "b14f9195f058b70c81785ac7230007fe31823496119b4ce2577f94ad7be6a979"
+        }
+      ],
+      "digest": "784155525c5427591cdafdef8d76f9b7b3a06b1843a1cd28e150c28a771778ef"
+    },
+    "browsers": [
+      {
+        "engine": "chromium",
+        "version": "156.0.8078.4",
+        "testedAs": "Linux Playwright; not physical iPhone/Safari"
+      },
+      {
+        "engine": "webkit",
+        "version": "27.2",
+        "testedAs": "Linux Playwright; not physical iPhone/Safari"
+      }
+    ],
+    "cases": [
+      {
+        "engine": "chromium",
+        "id": "viewport-320-portrait",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "viewport": {
+            "id": "320-portrait",
+            "width": 320,
+            "height": 740
+          },
+          "stages": 5
+        }
+      },
+      {
+        "engine": "chromium",
+        "id": "viewport-320-landscape",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "viewport": {
+            "id": "320-landscape",
+            "width": 740,
+            "height": 320
+          },
+          "stages": 5
+        }
+      },
+      {
+        "engine": "chromium",
+        "id": "viewport-375-portrait",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [
+          "chromium-viewport-375-portrait-stage-3.png"
+        ],
+        "measurements": {
+          "viewport": {
+            "id": "375-portrait",
+            "width": 375,
+            "height": 812
+          },
+          "stages": 5
+        }
+      },
+      {
+        "engine": "chromium",
+        "id": "viewport-375-landscape",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "viewport": {
+            "id": "375-landscape",
+            "width": 812,
+            "height": 375
+          },
+          "stages": 5
+        }
+      },
+      {
+        "engine": "chromium",
+        "id": "viewport-390-portrait",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "viewport": {
+            "id": "390-portrait",
+            "width": 390,
+            "height": 844
+          },
+          "stages": 5
+        }
+      },
+      {
+        "engine": "chromium",
+        "id": "viewport-390-landscape",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "viewport": {
+            "id": "390-landscape",
+            "width": 844,
+            "height": 390
+          },
+          "stages": 5
+        }
+      },
+      {
+        "engine": "chromium",
+        "id": "viewport-430-portrait",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [
+          "chromium-viewport-430-portrait-stage-5.png"
+        ],
+        "measurements": {
+          "viewport": {
+            "id": "430-portrait",
+            "width": 430,
+            "height": 932
+          },
+          "stages": 5
+        }
+      },
+      {
+        "engine": "chromium",
+        "id": "viewport-430-landscape",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "viewport": {
+            "id": "430-landscape",
+            "width": 932,
+            "height": 430
+          },
+          "stages": 5
+        }
+      },
+      {
+        "engine": "chromium",
+        "id": "text-200-320",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [
+          "chromium-text-200-320-expanded.png"
+        ],
+        "measurements": {
+          "cssRootFontPercent": 200,
+          "physicalPinchZoom": false,
+          "stages": 5
+        }
+      },
+      {
+        "engine": "chromium",
+        "id": "text-200-375",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "cssRootFontPercent": 200,
+          "physicalPinchZoom": false,
+          "stages": 5
+        }
+      },
+      {
+        "engine": "chromium",
+        "id": "text-200-390",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "cssRootFontPercent": 200,
+          "physicalPinchZoom": false,
+          "stages": 5
+        }
+      },
+      {
+        "engine": "chromium",
+        "id": "text-200-430",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "cssRootFontPercent": 200,
+          "physicalPinchZoom": false,
+          "stages": 5
+        }
+      },
+      {
+        "engine": "chromium",
+        "id": "dark-320",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "colorScheme": "dark",
+          "stages": 5
+        }
+      },
+      {
+        "engine": "chromium",
+        "id": "dark-375",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [
+          "chromium-dark-375-expanded.png"
+        ],
+        "measurements": {
+          "colorScheme": "dark",
+          "stages": 5
+        }
+      },
+      {
+        "engine": "chromium",
+        "id": "dark-390",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "colorScheme": "dark",
+          "stages": 5
+        }
+      },
+      {
+        "engine": "chromium",
+        "id": "dark-430",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "colorScheme": "dark",
+          "stages": 5
+        }
+      },
+      {
+        "engine": "chromium",
+        "id": "real-passport",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [
+          "chromium-real-passport-notes.png"
+        ],
+        "measurements": {
+          "filename": "Universal-Fitment-Pruefpass.json",
+          "sha256": "d1f4abbd927d7b0226524b13cff3a908898686d641231a061e332c76e9c806c8",
+          "tamperRefused": true,
+          "realInstallationApproved": false
+        }
+      },
+      {
+        "engine": "chromium",
+        "id": "identity-boundaries",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [
+          "chromium-identity-boundaries-regional-source.png"
+        ],
+        "measurements": {
+          "syntheticUserInput": true,
+          "deviceReference": "HF202P 011",
+          "productCode": "39401035",
+          "sourceMarket": "DE"
+        }
+      },
+      {
+        "engine": "chromium",
+        "id": "unknown-identifiers",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "rejectedInputs": 3,
+          "similarVariantSubstituted": false
+        }
+      },
+      {
+        "engine": "chromium",
+        "id": "demo-positive",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [
+          "chromium-demo-positive-synthetic-only.png"
+        ],
+        "measurements": {
+          "synthetic": true,
+          "outcome": "supported",
+          "realInstallationApproved": false
+        }
+      },
+      {
+        "engine": "chromium",
+        "id": "demo-negative",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [
+          "chromium-demo-negative-synthetic-only.png"
+        ],
+        "measurements": {
+          "synthetic": true,
+          "outcome": "incompatible",
+          "excludedFromNotes": true
+        }
+      },
+      {
+        "engine": "chromium",
+        "id": "demo-unknown",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "synthetic": true,
+          "missingRevision": "unclear",
+          "unselectedVariant": "unclear"
+        }
+      },
+      {
+        "engine": "chromium",
+        "id": "demo-connector",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "synthetic": true,
+          "connectorExcluded": true
+        }
+      },
+      {
+        "engine": "chromium",
+        "id": "demo-incomplete",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "synthetic": true,
+          "allNotesTicked": true,
+          "completeKit": false
+        }
+      },
+      {
+        "engine": "chromium",
+        "id": "mode-isolation",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "separateMissionKeys": [
+            "uf-repair-mission-poc-v1-real",
+            "uf-repair-mission-poc-v1-synthetic"
+          ]
+        }
+      },
+      {
+        "engine": "chromium",
+        "id": "stale-and-tampered-state",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "syntheticTampering": true,
+          "rejectedStates": 3
+        }
+      },
+      {
+        "engine": "chromium",
+        "id": "filters-and-checklist",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "hiddenSelectionPreserved": true,
+          "explicitRemoval": true,
+          "priceSortDisabled": true
+        }
+      },
+      {
+        "engine": "chromium",
+        "id": "keyboard-and-semantics",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "nativeLabels": true,
+          "fieldsetLegend": true,
+          "liveFilterStatus": true,
+          "voiceOverHardwareTest": false
+        }
+      },
+      {
+        "engine": "chromium",
+        "id": "touch-targets",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "stageCounts": [
+            {
+              "stage": 1,
+              "targets": 29
+            },
+            {
+              "stage": 2,
+              "targets": 15
+            },
+            {
+              "stage": 3,
+              "targets": 22
+            },
+            {
+              "stage": 4,
+              "targets": 19
+            },
+            {
+              "stage": 5,
+              "targets": 20
+            }
+          ],
+          "minimumDesignTarget": 44
+        }
+      },
+      {
+        "engine": "chromium",
+        "id": "cold-offline",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "expectedAbort": true,
+          "reason": "page.goto: net::ERR_INTERNET_DISCONNECTED at http://127.0.0.1:44557/\nCall log:\n  - navigating to \"http://127.0.0.1:44557/\", waiting until \"domcontentloaded\"\n",
+          "warmCache": false
+        }
+      },
+      {
+        "engine": "chromium",
+        "id": "warm-offline",
+        "status": "passed",
+        "error": null,
+        "phases": [
+          {
+            "name": "controller",
+            "status": "passed"
+          },
+          {
+            "name": "cache-ready",
+            "status": "passed"
+          },
+          {
+            "name": "cache-source-bytes",
+            "status": "passed"
+          },
+          {
+            "name": "offline-reload",
+            "status": "passed"
+          },
+          {
+            "name": "offline-json-sha256",
+            "status": "passed"
+          },
+          {
+            "name": "cache-delete",
+            "status": "passed"
+          }
+        ],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [
+          "chromium-warm-offline-cached-notes.png"
+        ],
+        "measurements": {
+          "cacheName": "uf-consumer-mobile-wave4-bffc6487813081ad8d2f6e87",
+          "cachePaths": 19,
+          "cacheSourceBytesMatched": true,
+          "cacheSourceHashCount": 19,
+          "staleWarmMissionRefused": true,
+          "offlinePassportChecksumVerified": true,
+          "notesSurviveCacheDeletion": true,
+          "transportOffline": true,
+          "osSignalSimulated": true,
+          "nativeBefore": true,
+          "nativeAfter": false
+        }
+      },
+      {
+        "engine": "chromium",
+        "id": "blocked-offline",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "workerBlockedByTest": true,
+          "savedOfflineVersionClaimed": false,
+          "transportOffline": true,
+          "osSignalSimulated": true,
+          "nativeBefore": true,
+          "nativeAfter": false
+        }
+      },
+      {
+        "engine": "chromium",
+        "id": "storage-and-export-failures",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "syntheticFailureInjection": true,
+          "storageDeniedNonfatal": true,
+          "clipboardFallback": true,
+          "missingChecksumRefusesJsonExport": true,
+          "textFallbackWorks": true
+        }
+      },
+      {
+        "engine": "webkit",
+        "id": "viewport-320-portrait",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "viewport": {
+            "id": "320-portrait",
+            "width": 320,
+            "height": 740
+          },
+          "stages": 5
+        }
+      },
+      {
+        "engine": "webkit",
+        "id": "viewport-320-landscape",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "viewport": {
+            "id": "320-landscape",
+            "width": 740,
+            "height": 320
+          },
+          "stages": 5
+        }
+      },
+      {
+        "engine": "webkit",
+        "id": "viewport-375-portrait",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [
+          "webkit-viewport-375-portrait-stage-3.png"
+        ],
+        "measurements": {
+          "viewport": {
+            "id": "375-portrait",
+            "width": 375,
+            "height": 812
+          },
+          "stages": 5
+        }
+      },
+      {
+        "engine": "webkit",
+        "id": "viewport-375-landscape",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "viewport": {
+            "id": "375-landscape",
+            "width": 812,
+            "height": 375
+          },
+          "stages": 5
+        }
+      },
+      {
+        "engine": "webkit",
+        "id": "viewport-390-portrait",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "viewport": {
+            "id": "390-portrait",
+            "width": 390,
+            "height": 844
+          },
+          "stages": 5
+        }
+      },
+      {
+        "engine": "webkit",
+        "id": "viewport-390-landscape",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "viewport": {
+            "id": "390-landscape",
+            "width": 844,
+            "height": 390
+          },
+          "stages": 5
+        }
+      },
+      {
+        "engine": "webkit",
+        "id": "viewport-430-portrait",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [
+          "webkit-viewport-430-portrait-stage-5.png"
+        ],
+        "measurements": {
+          "viewport": {
+            "id": "430-portrait",
+            "width": 430,
+            "height": 932
+          },
+          "stages": 5
+        }
+      },
+      {
+        "engine": "webkit",
+        "id": "viewport-430-landscape",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "viewport": {
+            "id": "430-landscape",
+            "width": 932,
+            "height": 430
+          },
+          "stages": 5
+        }
+      },
+      {
+        "engine": "webkit",
+        "id": "text-200-320",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [
+          "webkit-text-200-320-expanded.png"
+        ],
+        "measurements": {
+          "cssRootFontPercent": 200,
+          "physicalPinchZoom": false,
+          "stages": 5
+        }
+      },
+      {
+        "engine": "webkit",
+        "id": "text-200-375",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "cssRootFontPercent": 200,
+          "physicalPinchZoom": false,
+          "stages": 5
+        }
+      },
+      {
+        "engine": "webkit",
+        "id": "text-200-390",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "cssRootFontPercent": 200,
+          "physicalPinchZoom": false,
+          "stages": 5
+        }
+      },
+      {
+        "engine": "webkit",
+        "id": "text-200-430",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "cssRootFontPercent": 200,
+          "physicalPinchZoom": false,
+          "stages": 5
+        }
+      },
+      {
+        "engine": "webkit",
+        "id": "dark-320",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "colorScheme": "dark",
+          "stages": 5
+        }
+      },
+      {
+        "engine": "webkit",
+        "id": "dark-375",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [
+          "webkit-dark-375-expanded.png"
+        ],
+        "measurements": {
+          "colorScheme": "dark",
+          "stages": 5
+        }
+      },
+      {
+        "engine": "webkit",
+        "id": "dark-390",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "colorScheme": "dark",
+          "stages": 5
+        }
+      },
+      {
+        "engine": "webkit",
+        "id": "dark-430",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "colorScheme": "dark",
+          "stages": 5
+        }
+      },
+      {
+        "engine": "webkit",
+        "id": "real-passport",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [
+          "webkit-real-passport-notes.png"
+        ],
+        "measurements": {
+          "filename": "Universal-Fitment-Pruefpass.json",
+          "sha256": "839e2b8795995af5b4840969ca442ebbe243b17af75b35df803e96f7db10578b",
+          "tamperRefused": true,
+          "realInstallationApproved": false
+        }
+      },
+      {
+        "engine": "webkit",
+        "id": "identity-boundaries",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [
+          "webkit-identity-boundaries-regional-source.png"
+        ],
+        "measurements": {
+          "syntheticUserInput": true,
+          "deviceReference": "HF202P 011",
+          "productCode": "39401035",
+          "sourceMarket": "DE"
+        }
+      },
+      {
+        "engine": "webkit",
+        "id": "unknown-identifiers",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "rejectedInputs": 3,
+          "similarVariantSubstituted": false
+        }
+      },
+      {
+        "engine": "webkit",
+        "id": "demo-positive",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [
+          "webkit-demo-positive-synthetic-only.png"
+        ],
+        "measurements": {
+          "synthetic": true,
+          "outcome": "supported",
+          "realInstallationApproved": false
+        }
+      },
+      {
+        "engine": "webkit",
+        "id": "demo-negative",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [
+          "webkit-demo-negative-synthetic-only.png"
+        ],
+        "measurements": {
+          "synthetic": true,
+          "outcome": "incompatible",
+          "excludedFromNotes": true
+        }
+      },
+      {
+        "engine": "webkit",
+        "id": "demo-unknown",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "synthetic": true,
+          "missingRevision": "unclear",
+          "unselectedVariant": "unclear"
+        }
+      },
+      {
+        "engine": "webkit",
+        "id": "demo-connector",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "synthetic": true,
+          "connectorExcluded": true
+        }
+      },
+      {
+        "engine": "webkit",
+        "id": "demo-incomplete",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "synthetic": true,
+          "allNotesTicked": true,
+          "completeKit": false
+        }
+      },
+      {
+        "engine": "webkit",
+        "id": "mode-isolation",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "separateMissionKeys": [
+            "uf-repair-mission-poc-v1-real",
+            "uf-repair-mission-poc-v1-synthetic"
+          ]
+        }
+      },
+      {
+        "engine": "webkit",
+        "id": "stale-and-tampered-state",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "syntheticTampering": true,
+          "rejectedStates": 3
+        }
+      },
+      {
+        "engine": "webkit",
+        "id": "filters-and-checklist",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "hiddenSelectionPreserved": true,
+          "explicitRemoval": true,
+          "priceSortDisabled": true
+        }
+      },
+      {
+        "engine": "webkit",
+        "id": "keyboard-and-semantics",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "nativeLabels": true,
+          "fieldsetLegend": true,
+          "liveFilterStatus": true,
+          "voiceOverHardwareTest": false
+        }
+      },
+      {
+        "engine": "webkit",
+        "id": "touch-targets",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "stageCounts": [
+            {
+              "stage": 1,
+              "targets": 29
+            },
+            {
+              "stage": 2,
+              "targets": 15
+            },
+            {
+              "stage": 3,
+              "targets": 22
+            },
+            {
+              "stage": 4,
+              "targets": 19
+            },
+            {
+              "stage": 5,
+              "targets": 20
+            }
+          ],
+          "minimumDesignTarget": 44
+        }
+      },
+      {
+        "engine": "webkit",
+        "id": "cold-offline",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "expectedAbort": true,
+          "reason": "page.goto: WebKit encountered an internal error\nCall log:\n  - navigating to \"http://127.0.0.1:44557/\", waiting until \"domcontentloaded\"\n",
+          "warmCache": false
+        }
+      },
+      {
+        "engine": "webkit",
+        "id": "warm-offline",
+        "status": "passed",
+        "error": null,
+        "phases": [
+          {
+            "name": "controller",
+            "status": "passed"
+          },
+          {
+            "name": "cache-ready",
+            "status": "passed"
+          },
+          {
+            "name": "cache-source-bytes",
+            "status": "passed"
+          },
+          {
+            "name": "offline-reload",
+            "status": "passed"
+          },
+          {
+            "name": "offline-json-sha256",
+            "status": "passed"
+          },
+          {
+            "name": "cache-delete",
+            "status": "passed"
+          }
+        ],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [
+          "webkit-warm-offline-cached-notes.png"
+        ],
+        "measurements": {
+          "cacheName": "uf-consumer-mobile-wave4-bffc6487813081ad8d2f6e87",
+          "cachePaths": 19,
+          "cacheSourceBytesMatched": true,
+          "cacheSourceHashCount": 19,
+          "staleWarmMissionRefused": true,
+          "offlinePassportChecksumVerified": true,
+          "notesSurviveCacheDeletion": true,
+          "transportOffline": true,
+          "osSignalSimulated": true,
+          "nativeBefore": true,
+          "nativeAfter": false
+        }
+      },
+      {
+        "engine": "webkit",
+        "id": "blocked-offline",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "workerBlockedByTest": true,
+          "savedOfflineVersionClaimed": false,
+          "transportOffline": true,
+          "osSignalSimulated": true,
+          "nativeBefore": true,
+          "nativeAfter": false
+        }
+      },
+      {
+        "engine": "webkit",
+        "id": "storage-and-export-failures",
+        "status": "passed",
+        "error": null,
+        "phases": [],
+        "externalRequests": [],
+        "runtimeErrors": [],
+        "snapshots": [],
+        "measurements": {
+          "syntheticFailureInjection": true,
+          "storageDeniedNonfatal": true,
+          "clipboardFallback": true,
+          "missingChecksumRefusesJsonExport": true,
+          "textFallbackWorks": true
+        }
+      }
+    ],
+    "errors": [],
+    "passed": 66,
+    "failed": 0,
+    "finishedAt": "2026-10-10T18:56:58.169Z",
+    "expected": 66,
+    "complete": true
+  },
+  "discovery": {
+    "schema": "uf.discovery-bridge-browser/1",
+    "testedCommit": "328ed84701c6959c5b48d8fc702368f7e336d4bf",
+    "startedAt": "2026-10-10T18:56:59.090Z",
+    "physicalIPhone": false,
+    "humanPilot": false,
+    "launchApproved": false,
+    "cases": [
+      {
+        "id": "chromium-320-100-light",
+        "status": "passed",
+        "browserVersion": "156.0.8078.4",
+        "syntheticNegativeInput": true,
+        "profileLayout": {
+          "width": 320,
+          "scroll": 320,
+          "overflow": []
+        },
+        "screenshot": "chromium-320-100-light-profile.png",
+        "missionLayout": {
+          "width": 320,
+          "scroll": 320,
+          "overflow": []
+        }
+      },
+      {
+        "id": "chromium-320-100-dark",
+        "status": "passed",
+        "browserVersion": "156.0.8078.4",
+        "syntheticNegativeInput": true,
+        "profileLayout": {
+          "width": 320,
+          "scroll": 320,
+          "overflow": []
+        },
+        "screenshot": "chromium-320-100-dark-profile.png",
+        "missionLayout": {
+          "width": 320,
+          "scroll": 320,
+          "overflow": []
+        }
+      },
+      {
+        "id": "chromium-320-200-light",
+        "status": "passed",
+        "browserVersion": "156.0.8078.4",
+        "syntheticNegativeInput": true,
+        "profileLayout": {
+          "width": 320,
+          "scroll": 320,
+          "overflow": []
+        },
+        "screenshot": "chromium-320-200-light-profile.png",
+        "missionLayout": {
+          "width": 320,
+          "scroll": 320,
+          "overflow": []
+        }
+      },
+      {
+        "id": "chromium-320-200-dark",
+        "status": "passed",
+        "browserVersion": "156.0.8078.4",
+        "syntheticNegativeInput": true,
+        "profileLayout": {
+          "width": 320,
+          "scroll": 320,
+          "overflow": []
+        },
+        "screenshot": "chromium-320-200-dark-profile.png",
+        "missionLayout": {
+          "width": 320,
+          "scroll": 320,
+          "overflow": []
+        }
+      },
+      {
+        "id": "chromium-375-100-light",
+        "status": "passed",
+        "browserVersion": "156.0.8078.4",
+        "syntheticNegativeInput": true,
+        "profileLayout": {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        },
+        "screenshot": "chromium-375-100-light-profile.png",
+        "missionLayout": {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        }
+      },
+      {
+        "id": "chromium-375-100-dark",
+        "status": "passed",
+        "browserVersion": "156.0.8078.4",
+        "syntheticNegativeInput": true,
+        "profileLayout": {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        },
+        "screenshot": "chromium-375-100-dark-profile.png",
+        "missionLayout": {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        }
+      },
+      {
+        "id": "chromium-375-200-light",
+        "status": "passed",
+        "browserVersion": "156.0.8078.4",
+        "syntheticNegativeInput": true,
+        "profileLayout": {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        },
+        "screenshot": "chromium-375-200-light-profile.png",
+        "missionLayout": {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        }
+      },
+      {
+        "id": "chromium-375-200-dark",
+        "status": "passed",
+        "browserVersion": "156.0.8078.4",
+        "syntheticNegativeInput": true,
+        "profileLayout": {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        },
+        "screenshot": "chromium-375-200-dark-profile.png",
+        "missionLayout": {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        }
+      },
+      {
+        "id": "chromium-390-100-light",
+        "status": "passed",
+        "browserVersion": "156.0.8078.4",
+        "syntheticNegativeInput": true,
+        "profileLayout": {
+          "width": 390,
+          "scroll": 390,
+          "overflow": []
+        },
+        "screenshot": "chromium-390-100-light-profile.png",
+        "missionLayout": {
+          "width": 390,
+          "scroll": 390,
+          "overflow": []
+        }
+      },
+      {
+        "id": "chromium-390-100-dark",
+        "status": "passed",
+        "browserVersion": "156.0.8078.4",
+        "syntheticNegativeInput": true,
+        "profileLayout": {
+          "width": 390,
+          "scroll": 390,
+          "overflow": []
+        },
+        "screenshot": "chromium-390-100-dark-profile.png",
+        "missionLayout": {
+          "width": 390,
+          "scroll": 390,
+          "overflow": []
+        }
+      },
+      {
+        "id": "chromium-390-200-light",
+        "status": "passed",
+        "browserVersion": "156.0.8078.4",
+        "syntheticNegativeInput": true,
+        "profileLayout": {
+          "width": 390,
+          "scroll": 390,
+          "overflow": []
+        },
+        "screenshot": "chromium-390-200-light-profile.png",
+        "missionLayout": {
+          "width": 390,
+          "scroll": 390,
+          "overflow": []
+        }
+      },
+      {
+        "id": "chromium-390-200-dark",
+        "status": "passed",
+        "browserVersion": "156.0.8078.4",
+        "syntheticNegativeInput": true,
+        "profileLayout": {
+          "width": 390,
+          "scroll": 390,
+          "overflow": []
+        },
+        "screenshot": "chromium-390-200-dark-profile.png",
+        "missionLayout": {
+          "width": 390,
+          "scroll": 390,
+          "overflow": []
+        }
+      },
+      {
+        "id": "chromium-430-100-light",
+        "status": "passed",
+        "browserVersion": "156.0.8078.4",
+        "syntheticNegativeInput": true,
+        "profileLayout": {
+          "width": 430,
+          "scroll": 430,
+          "overflow": []
+        },
+        "screenshot": "chromium-430-100-light-profile.png",
+        "missionLayout": {
+          "width": 430,
+          "scroll": 430,
+          "overflow": []
+        }
+      },
+      {
+        "id": "chromium-430-100-dark",
+        "status": "passed",
+        "browserVersion": "156.0.8078.4",
+        "syntheticNegativeInput": true,
+        "profileLayout": {
+          "width": 430,
+          "scroll": 430,
+          "overflow": []
+        },
+        "screenshot": "chromium-430-100-dark-profile.png",
+        "missionLayout": {
+          "width": 430,
+          "scroll": 430,
+          "overflow": []
+        }
+      },
+      {
+        "id": "chromium-430-200-light",
+        "status": "passed",
+        "browserVersion": "156.0.8078.4",
+        "syntheticNegativeInput": true,
+        "profileLayout": {
+          "width": 430,
+          "scroll": 430,
+          "overflow": []
+        },
+        "screenshot": "chromium-430-200-light-profile.png",
+        "missionLayout": {
+          "width": 430,
+          "scroll": 430,
+          "overflow": []
+        }
+      },
+      {
+        "id": "chromium-430-200-dark",
+        "status": "passed",
+        "browserVersion": "156.0.8078.4",
+        "syntheticNegativeInput": true,
+        "profileLayout": {
+          "width": 430,
+          "scroll": 430,
+          "overflow": []
+        },
+        "screenshot": "chromium-430-200-dark-profile.png",
+        "missionLayout": {
+          "width": 430,
+          "scroll": 430,
+          "overflow": []
+        }
+      },
+      {
+        "id": "webkit-320-100-light",
+        "status": "passed",
+        "browserVersion": "27.2",
+        "syntheticNegativeInput": true,
+        "profileLayout": {
+          "width": 320,
+          "scroll": 320,
+          "overflow": []
+        },
+        "screenshot": "webkit-320-100-light-profile.png",
+        "missionLayout": {
+          "width": 320,
+          "scroll": 320,
+          "overflow": []
+        }
+      },
+      {
+        "id": "webkit-320-100-dark",
+        "status": "passed",
+        "browserVersion": "27.2",
+        "syntheticNegativeInput": true,
+        "profileLayout": {
+          "width": 320,
+          "scroll": 320,
+          "overflow": []
+        },
+        "screenshot": "webkit-320-100-dark-profile.png",
+        "missionLayout": {
+          "width": 320,
+          "scroll": 320,
+          "overflow": []
+        }
+      },
+      {
+        "id": "webkit-320-200-light",
+        "status": "passed",
+        "browserVersion": "27.2",
+        "syntheticNegativeInput": true,
+        "profileLayout": {
+          "width": 320,
+          "scroll": 320,
+          "overflow": []
+        },
+        "screenshot": "webkit-320-200-light-profile.png",
+        "missionLayout": {
+          "width": 320,
+          "scroll": 320,
+          "overflow": []
+        }
+      },
+      {
+        "id": "webkit-320-200-dark",
+        "status": "passed",
+        "browserVersion": "27.2",
+        "syntheticNegativeInput": true,
+        "profileLayout": {
+          "width": 320,
+          "scroll": 320,
+          "overflow": []
+        },
+        "screenshot": "webkit-320-200-dark-profile.png",
+        "missionLayout": {
+          "width": 320,
+          "scroll": 320,
+          "overflow": []
+        }
+      },
+      {
+        "id": "webkit-375-100-light",
+        "status": "passed",
+        "browserVersion": "27.2",
+        "syntheticNegativeInput": true,
+        "profileLayout": {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        },
+        "screenshot": "webkit-375-100-light-profile.png",
+        "missionLayout": {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        }
+      },
+      {
+        "id": "webkit-375-100-dark",
+        "status": "passed",
+        "browserVersion": "27.2",
+        "syntheticNegativeInput": true,
+        "profileLayout": {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        },
+        "screenshot": "webkit-375-100-dark-profile.png",
+        "missionLayout": {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        }
+      },
+      {
+        "id": "webkit-375-200-light",
+        "status": "passed",
+        "browserVersion": "27.2",
+        "syntheticNegativeInput": true,
+        "profileLayout": {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        },
+        "screenshot": "webkit-375-200-light-profile.png",
+        "missionLayout": {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        }
+      },
+      {
+        "id": "webkit-375-200-dark",
+        "status": "passed",
+        "browserVersion": "27.2",
+        "syntheticNegativeInput": true,
+        "profileLayout": {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        },
+        "screenshot": "webkit-375-200-dark-profile.png",
+        "missionLayout": {
+          "width": 375,
+          "scroll": 375,
+          "overflow": []
+        }
+      },
+      {
+        "id": "webkit-390-100-light",
+        "status": "passed",
+        "browserVersion": "27.2",
+        "syntheticNegativeInput": true,
+        "profileLayout": {
+          "width": 390,
+          "scroll": 390,
+          "overflow": []
+        },
+        "screenshot": "webkit-390-100-light-profile.png",
+        "missionLayout": {
+          "width": 390,
+          "scroll": 390,
+          "overflow": []
+        }
+      },
+      {
+        "id": "webkit-390-100-dark",
+        "status": "passed",
+        "browserVersion": "27.2",
+        "syntheticNegativeInput": true,
+        "profileLayout": {
+          "width": 390,
+          "scroll": 390,
+          "overflow": []
+        },
+        "screenshot": "webkit-390-100-dark-profile.png",
+        "missionLayout": {
+          "width": 390,
+          "scroll": 390,
+          "overflow": []
+        }
+      },
+      {
+        "id": "webkit-390-200-light",
+        "status": "passed",
+        "browserVersion": "27.2",
+        "syntheticNegativeInput": true,
+        "profileLayout": {
+          "width": 390,
+          "scroll": 390,
+          "overflow": []
+        },
+        "screenshot": "webkit-390-200-light-profile.png",
+        "missionLayout": {
+          "width": 390,
+          "scroll": 390,
+          "overflow": []
+        }
+      },
+      {
+        "id": "webkit-390-200-dark",
+        "status": "passed",
+        "browserVersion": "27.2",
+        "syntheticNegativeInput": true,
+        "profileLayout": {
+          "width": 390,
+          "scroll": 390,
+          "overflow": []
+        },
+        "screenshot": "webkit-390-200-dark-profile.png",
+        "missionLayout": {
+          "width": 390,
+          "scroll": 390,
+          "overflow": []
+        }
+      },
+      {
+        "id": "webkit-430-100-light",
+        "status": "passed",
+        "browserVersion": "27.2",
+        "syntheticNegativeInput": true,
+        "profileLayout": {
+          "width": 430,
+          "scroll": 430,
+          "overflow": []
+        },
+        "screenshot": "webkit-430-100-light-profile.png",
+        "missionLayout": {
+          "width": 430,
+          "scroll": 430,
+          "overflow": []
+        }
+      },
+      {
+        "id": "webkit-430-100-dark",
+        "status": "passed",
+        "browserVersion": "27.2",
+        "syntheticNegativeInput": true,
+        "profileLayout": {
+          "width": 430,
+          "scroll": 430,
+          "overflow": []
+        },
+        "screenshot": "webkit-430-100-dark-profile.png",
+        "missionLayout": {
+          "width": 430,
+          "scroll": 430,
+          "overflow": []
+        }
+      },
+      {
+        "id": "webkit-430-200-light",
+        "status": "passed",
+        "browserVersion": "27.2",
+        "syntheticNegativeInput": true,
+        "profileLayout": {
+          "width": 430,
+          "scroll": 430,
+          "overflow": []
+        },
+        "screenshot": "webkit-430-200-light-profile.png",
+        "missionLayout": {
+          "width": 430,
+          "scroll": 430,
+          "overflow": []
+        }
+      },
+      {
+        "id": "webkit-430-200-dark",
+        "status": "passed",
+        "browserVersion": "27.2",
+        "syntheticNegativeInput": true,
+        "profileLayout": {
+          "width": 430,
+          "scroll": 430,
+          "overflow": []
+        },
+        "screenshot": "webkit-430-200-dark-profile.png",
+        "missionLayout": {
+          "width": 430,
+          "scroll": 430,
+          "overflow": []
+        }
+      }
+    ],
+    "errors": [],
+    "finishedAt": "2026-10-10T18:57:43.421Z",
+    "scopeUnchanged": true,
+    "expected": 32,
+    "passed": 32
+  },
+  "scorecard": {
+    "schema": "uf-owner-catalog-scorecard/1",
+    "projectScope": "current-branch Consumer catalog-snapshot.mjs; not the public app or Wave3 scratch",
+    "snapshotVersion": 1,
+    "counts": {
+      "devices": 11,
+      "brands": 5,
+      "originalPartIdentities": 11,
+      "devicePartCandidates": 11,
+      "devicesWithCandidate": 6,
+      "devicesWithNoCandidate": 5,
+      "marketDE": 9
+    },
+    "target": {
+      "brands": 10,
+      "modelsPerBrand": 50,
+      "models": 500,
+      "modelGoalPercent": 2.2
+    },
+    "fieldCoverage": {
+      "modelSourceAndExactIdentity": {
+        "count": 11,
+        "of": 11
+      },
+      "originalPartIdentityAndSource": {
+        "count": 11,
+        "of": 11
+      },
+      "modelSpecificVariantWarnings": {
+        "count": 11,
+        "of": 11
+      },
+      "modelsWithCandidate": {
+        "count": 6,
+        "of": 11
+      },
+      "technicalSpecs": {
+        "count": 0,
+        "of": 11
+      },
+      "repairInstructions": {
+        "count": 0,
+        "of": 11
+      },
+      "requiredTools": {
+        "count": 0,
+        "of": 11
+      },
+      "safetyWarnings": {
+        "count": 0,
+        "of": 11
+      },
+      "modelManualLinks": {
+        "count": 0,
+        "of": 11
+      },
+      "dimensions": {
+        "count": 0,
+        "of": 11
+      },
+      "rightsClearedMedia": {
+        "count": 0,
+        "of": 11
+      }
+    },
+    "contentIndex": {
+      "estimatePercent": 28.2,
+      "components": [
+        {
+          "id": "modelIdentityAndSources",
+          "weight": 10,
+          "documented": 11,
+          "total": 11,
+          "coveragePercent": 100,
+          "weightedPoints": 10
+        },
+        {
+          "id": "originalPartIdentityAndSources",
+          "weight": 10,
+          "documented": 11,
+          "total": 11,
+          "coveragePercent": 100,
+          "weightedPoints": 10
+        },
+        {
+          "id": "deviceWithAtLeastOneListedCandidate",
+          "weight": 15,
+          "documented": 6,
+          "total": 11,
+          "coveragePercent": 54.5,
+          "weightedPoints": 8.182
+        },
+        {
+          "id": "modelSpecificTechnicalSpecs",
+          "weight": 10,
+          "documented": 0,
+          "total": 11,
+          "coveragePercent": 0,
+          "weightedPoints": 0
+        },
+        {
+          "id": "modelSpecificRepairInstructions",
+          "weight": 15,
+          "documented": 0,
+          "total": 11,
+          "coveragePercent": 0,
+          "weightedPoints": 0
+        },
+        {
+          "id": "modelSpecificTools",
+          "weight": 10,
+          "documented": 0,
+          "total": 11,
+          "coveragePercent": 0,
+          "weightedPoints": 0
+        },
+        {
+          "id": "modelSpecificSafety",
+          "weight": 10,
+          "documented": 0,
+          "total": 11,
+          "coveragePercent": 0,
+          "weightedPoints": 0
+        },
+        {
+          "id": "rightsClearedModelMedia",
+          "weight": 10,
+          "documented": 0,
+          "total": 11,
+          "coveragePercent": 0,
+          "weightedPoints": 0
+        },
+        {
+          "id": "realInstallationProof",
+          "weight": 10,
+          "documented": 0,
+          "total": 11,
+          "coveragePercent": 0,
+          "weightedPoints": 0
+        }
+      ],
+      "interpretation": "Internal weighted field-presence index, not validated content quality, legal clearance, or real-fitment coverage"
+    },
+    "fitment": {
+      "approvedRealInstallationCases": 0,
+      "installationProofSource": "shared fitment-v1 evidence review, not catalog listing",
+      "manufacturerListedCandidateIsNotApproval": true
+    },
+    "legal": {
+      "sourceUrlsAreNotLicences": true,
+      "hostingOrCommercialReadinessNotInferred": true
+    }
+  },
+  "preflight": {
+    "overall": "BLOCKED",
+    "launchApproved": false,
+    "sourceIdentity": {
+      "applicable": true,
+      "id": "source-identity",
+      "owner": "Engineering",
+      "priority": "P0",
+      "reason": "Missing lock or source drift: refresh review, never silently adopt",
+      "status": "UNKNOWN"
+    }
+  },
+  "physicalIPhone": false,
+  "humanPilot": false,
+  "launchApproved": false
+}
