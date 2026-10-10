@@ -1,11 +1,11 @@
 # Universal Fitment · Mehrkategorien-Fundament (Owner Draft)
 
-**Status 10.10.2026, Taxonomie v0.3.0:** Nur **private Architektur-Vorbereitung**, kein zweites reales Gerät in der App, kein Public Launch und keine automatische Passungsfreigabe. Epic #87; aktuelle Owner-App und offene Nacharbeiten #85 (Consumer 11→29) und #86 (qualitativ brauchbare Reparatursteckbriefe).
+**Status 10.10.2026, Taxonomie v0.4.0:** Nur **private Architektur-Vorbereitung**, kein zweites reales Gerät in der App, kein Public Launch und keine automatische Passungsfreigabe. Epic #87; aktuelle Owner-App und offene Nacharbeiten #85 (Consumer 11→29) und #86 (qualitativ brauchbare Reparatursteckbriefe).
 
 ## Wozu dieses Modul dient
 Wir bauen keine unabhängigen Waschmaschinen-, Konsolen- und Industriewerkzeug-Apps. Die Gerätearten bekommen **eine gemeinsame Kategorie-Hierarchie** und später dieselbe Suche, Belegverwaltung, neue Consumer-Oberfläche und B2B-Rechte. `registry.mjs` ist ein erster ausführbarer Proof der Kategorien, kein Datenimport. Die Taxonomie ist **intern**, nicht die Anzahl öffentlich unterstützter Gerätetypen. Die vorhandenen, laufenden Staubsaugerdaten bleiben unverändert.
 
-- Sektoren: Haushalt & Küche; Elektro-/Gartengeräte; Elektronik & IT; Robotik/Smart Home; Maschinen & Industrie; Fahrzeuge/Mobilität; Drohnen/Flugtechnik; Energie/Gebäudetechnik; Wasserfahrzeuge/Outdoor.
+- Sektoren: Haushalt & Küche; Elektro-/Gartengeräte; Elektronik & IT; Robotik/Smart Home; Maschinen & Industrie; Fahrzeuge/Mobilität; Drohnen/Flugtechnik; Energie/Gebäudetechnik; Wasserfahrzeuge/Outdoor; Mechanik & Handwerk; Sonder- & Einsatzfahrzeuge; Luftfahrt; Raumfahrt.
 - Blattkategorien: Waschmaschinen, Wäschetrockner, Waschtrockner, Geschirrspüler, Kaffee, Kühlung, Ofen/Herd/Mikrowelle, Elektro-/Gartengeräte, Smartphones/Tablets, PCs/Laptops, Konsolen, TVs/Monitore, verschiedene Roboter, Industriemaschinen/CNC/Kompressoren/Pumpen/3D-Drucker, später Fahrzeuge.
 - Für neue Domänen gilt **`planned` und `fitmentPolicy='not-authorized'`**, NICHT „betriebsbereit“. Nur `vacuum-cleaner` ist als **private Consumer-Pilotkategorie** bekannt; selbst dort sind echte Einbaupassungen derzeit 0.
 - Deutsche Aliasse/Falschzuordnungen: Jeder gültige Alias ordnet genau einer Kategorie zu; unbekannte Begriffe bleiben null. Gerätevarianten werden NIEMALS aus Kategorienamen, Serienfamilien oder ähnlichen Codes geschlossen.
@@ -34,7 +34,7 @@ Für humanoide Systeme unterscheiden wir außerdem Reparatur-Kandidaten (z. B. G
 
 ## Erweiterung: Fahrzeuge, Elektroantriebe, Drohnen, Kameras und Energie
 
-**Neu registriert: 125 unterscheidbare Blattkategorien in 9 Sektoren**, davon **124 nur als `planned`** und weiter ausschließlich `vacuum-cleaner` als privater Consumer-Pilot. Diese Zahl beschreibt nur die **Architektur**, nicht Hersteller, Modelle, Teile, OEM-Nutzungsrechte oder einen öffentlichen Funktionsumfang. Kennung und Zuordnungsbeleg einer realen Variante müssen je Domäne eigens recherchiert werden.
+**Neu registriert: 200 unterscheidbare Blattkategorien in 13 Sektoren**, davon **199 nur als `planned`** und weiter ausschließlich `vacuum-cleaner` als privater Consumer-Pilot. Diese Zahl beschreibt nur die **Architektur**, nicht Hersteller, Modelle, Teile, OEM-Nutzungsrechte oder einen öffentlichen Funktionsumfang. Kennung und Zuordnungsbeleg einer realen Variante müssen je Domäne eigens recherchiert werden.
 
 | Segment | Konkrete Kategorien | Fachliche Abgrenzung |
 | --- | --- | --- |
@@ -49,6 +49,28 @@ Für humanoide Systeme unterscheiden wir außerdem Reparatur-Kandidaten (z. B. G
 **Kein pauschales „E-Fahrzeug“-Kompatibilitätsprofil:** E-Bike, E-Tretroller, E-Motorrad und E-LKW besitzen jeweils unterschiedliche Identitäten, Einsatzbedingungen und Anforderungen. Sie teilen einzelne Sicherheitsprüfungen, aber nicht automatisch Akkus, Ladegeräte oder Werkzeuge. Bei Foto-/Drohnenhardware sind Firmware, Boardrevision, Objektiv-/Gimbalaufnahme und Funkregion genauso wichtig wie mechanische Abmessungen.
 
 **Ausbauempfehlung:** Nach Staubsauger-Datenqualität (#85, #86) zuerst sorgfältig ausgesuchte B2C-Piloten für Waschmaschinen/Geschirrspüler, E-Bike/Elektrowerkzeuge oder Kameras prüfen; die genaue Reihenfolge nach **verfügbaren lizenzierten Primärdaten und Reparaturnutzen** auswählen. KFZ hat ein potenziell starkes B2B-Geschäftsmodell, braucht aber besondere Hersteller-/Typdatenrechte und Einbauprüfungen. Drohnen, HV-/Netztechnik, Gas/Kälte und Industriemaschinen bleiben separate streng gesperrte Freigabedomänen.
+
+## Erweiterung v0.4: Mechanische Teile, Sonderfahrzeuge, Luft- und Raumfahrt
+
+**Mechanische Bauteile** sind grundsätzlich zulässig als generische Katalogobjekte (Tür-/Fenster-/Möbelbeschläge, Scharniere, Rollen, Schrauben, Lager, Zahnräder, Sanitärarmaturen, Handwerkzeuge und mechanische Getriebe). Ein solches Produkt bleibt aber nach Belastung, Material, Maßen, Norm, links-/rechtsseitiger Einbaulage, Brandschutz und exakter Systemzugehörigkeit zu prüfen; statische Bezeichnungen reichen nicht als Einbaunachweis.
+
+**Einsatzfahrzeuge**: Feuerwehr, Rettungswagen/Krankenwagen, Notarzt, Polizei, Abschleppdienst, Katastrophenschutz, Winterdienst, Kehrmaschinen und weitere Aufbauhersteller-Fahrzeuge. Identität = Fahrgestellhersteller + VIN/Variante + separater Aufbauhersteller und ggf. dessen Ausstattungstyp/Softwarestand. Blaulicht-, Einsatzfunk-, medizintechnische und sicherheitskritische Komponenten dürfen nicht allein wegen Modellgleichheit freigeschaltet werden.
+
+**Luftfahrt**: zivile Flugzeuge, Hubschrauber, Segelflugzeuge, Ultraleichtflugzeuge, Bodenabfertigung, Flugzeuginnenausstattung und Simulatoren. Hersteller-/Flugzeugtyp, exakte Serien-/Konfigurationsbereiche, Freigabe- und Lufttüchtigkeitsnachweise sind getrennte Dimensionen. Öffentliche Katalogdaten berechtigen nicht zur Installation in einem lufttüchtigen Fluggerät; zugelassene Teile, Wartungsorganisationen und Zertifikate können zusätzlich erforderlich sein.
+
+**Militärische Fahrzeuge und Flugzeuge**: ausschließlich öffentliche, nicht-sensitive Plattform-/Modellmetadaten mit `regulatedScope:'public-nonweapon-reference-only'`. Keine Waffen-, Panzerbewaffnungs-, Ziel-, Schutz-, Führungs-/Kampfmodul- oder exportkontrollierte Komponentenliste für Erwerb, Einbau oder Beschaffung; auch öffentliche Dokumente verleihen keine pauschalen Nutzungs- oder Exportrechte. Diese Kategorien haben ausdrücklich `partCommerceAuthorized:false` und `installationApprovalAuthorized:false`.
+
+**Raumfahrt**: Satelliten, Sonden, Rover, Raumstationen, Weltraumteleskope und Bodenstationsreferenzen nur als **öffentliche Missions-/Gerätetypdaten**, keine für Flug/Einsatz qualifizierten Baugruppen, Antriebe, kritischen Steuerungen oder kontrollierte technische Detailpakete; `regulatedScope:'public-space-reference-only'`. Keine Zusage, dass weitere technische Daten oder Hardware ohne regulatorische Prüfung genutzt werden dürften.
+
+## Ergänzung v0.4: Büro, Kommunikation, additive Fertigung und Projektion
+
+- Drucker: Tintenstrahl, Laser, Foto, Etiketten, Bondrucker, Plotter, Multifunktionsgeräte und Kopierer
+- Scanner: Dokumenten-, Flachbett-, Film-/Dia- und 3D-Scanner
+- Telefone: Festnetz, schnurlose DECT-Geräte, IP-/VoIP-Telefone, Telefonanlagen und Fax (Smartphones bereits separat)
+- 3D-Drucker: FDM/Filament, Resin und industrielle additive Fertigung – Bauplattform, Heizelement, Belichtung, Steuerung, Material- und Chemierisiken gesondert
+- Projektoren: Beamer, Kurzdistanz-, mobile und professionelle Kinoprojektoren; Lampen-/Laser-/Netzteilsicherheit getrennt
+
+**Alle 199 neu geplanten Kategorien sind rein strukturell erfasst.** `publicCommercialUse:'not-reviewed'`, `partCommerceAuthorized:false` und `installationApprovalAuthorized:false` sind Default für *sämtliche* Kategorien, auch Staubsauger im privaten Pilot. Einen späteren realen Consumer-Scope erhält eine Kategorie erst nach Gerätequellen, Teilen, Rechten, Sicherheits-/Passungs- und Hostingreview. Ohne notwendige externe Lizenz/Zertifizierung bleibt die betroffene Funktion gesperrt statt „einfach zugelassen“.
 
 ## Geräteidentitäten und Inhalte pro Domäne
 | Domäne | Exakte Ausführung erfordert oft | Besonders wichtig vor Reparatur-/Passungsfreigabe |
