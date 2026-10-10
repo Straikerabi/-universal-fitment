@@ -1,0 +1,26 @@
+name: QA Legal Business Wave9
+on:
+  pull_request:
+    paths:
+      - 'integrations/qa-legal-business-wave8/**'
+      - '.github/workflows/qa-legal-business-wave9.yml'
+  workflow_dispatch:
+jobs:
+  fail-closed:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Negative evidence tests
+        run: node --test integrations/qa-legal-business-wave8/release-gates.test.mjs
+      - name: CLI must block release
+        shell: bash
+        run: |
+          set +e
+          node integrations/qa-legal-business-wave8/release-gates.mjs > /tmp/qa-gates.json
+          rc=$?
+          set -e
+          test "$rc" -eq 2
+          node -e "const r=require('/tmp/qa-gates.json'); if(r.launchApproved!==false || r.releaseStatus!=='BLOCKED' || r.gates.length!==12) process.exit(1)"
