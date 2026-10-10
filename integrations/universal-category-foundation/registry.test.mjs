@@ -28,11 +28,12 @@ test('only vacuum is a private pilot; no future category claims it is published 
  }
 });
 test('spelling aliases resolve to one canonical category, not a guessed sibling device',()=>{
- for(const [a,b] of [['Trockner','tumble-dryer'],['Waschmaschine','washing-machine'],['Geschirrspüler','dishwasher'],['Spuelmaschine','dishwasher'],['Mähroboter','robot-lawnmower'],['Handy','smartphone'],['TV','television'],['Akkuschrauber','cordless-drill'],['Humanoid','humanoid-robot'],['Kampfroboter','combat-sport-robot'],['Sprachassistent','smart-speaker'],['Begleitroboter','companion-robot'],['Lernroboter','educational-robot'],['Telepräsenzroboter','telepresence-robot'],['KFZ','car'],['LKW','truck'],['E-LKW','electric-truck'],['Moped','moped'],['Mofa','moped'],['Motorroller','motor-scooter'],['E-Roller','electric-motor-scooter'],['E-Scooter','electric-kick-scooter'],['E-Bike','e-bike'],['Pedelec','e-bike'],['Motorrad','motorcycle'],['E-Motorrad','electric-motorcycle'],['Kameradrohne','camera-drone'],['FPV-Drohne','fpv-drone'],['Spiegelreflexkamera','dslr-camera'],['Wärmebildkamera','thermal-camera'],['Wallbox','ev-wallbox'],['Elektroboot','electric-boat']]){
+ for(const [a,b] of [['Trockner','tumble-dryer'],['Waschmaschine','washing-machine'],['Geschirrspüler','dishwasher'],['Spuelmaschine','dishwasher'],['Mähroboter','robot-lawnmower'],['Handy','smartphone'],['TV','television'],['Akkuschrauber','cordless-drill'],['Humanoid','humanoid-robot'],['Kampfroboter','combat-sport-robot'],['Sprachassistent','smart-speaker'],['Begleitroboter','companion-robot'],['Lernroboter','educational-robot'],['Telepräsenzroboter','telepresence-robot'],['PKW','car'],['LKW','truck'],['E-LKW','electric-truck'],['Moped','moped'],['Mofa','moped'],['Motorroller','motor-scooter'],['E-Roller','electric-motor-scooter'],['E-Scooter','electric-kick-scooter'],['E-Bike','e-bike'],['Pedelec','e-bike'],['Motorrad','motorcycle'],['E-Motorrad','electric-motorcycle'],['Kameradrohne','camera-drone'],['FPV-Drohne','fpv-drone'],['Spiegelreflexkamera','dslr-camera'],['Wärmebildkamera','thermal-camera'],['Wallbox','ev-wallbox'],['Elektroboot','electric-boat']]){
   assert.equal(resolveCategory(a).id,b);
  }
  assert.equal(resolveCategory('absolutely unknown device'),null);
  assert.equal(resolveCategory('IndustrieStaubsauger/99'),null);
+ assert.equal(resolveCategory('KFZ'),null); // Ambiguous umbrella: cars, trucks, scooters are distinct.
 });
 test('domain-specific identifier and hazard profiles are not default low-risk fitment approvals',()=>{
  assert.ok(identificationProfiles.automotive.variantChecks.includes('vin'));
