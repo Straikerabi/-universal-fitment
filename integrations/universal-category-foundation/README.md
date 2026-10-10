@@ -1,6 +1,6 @@
 # Universal Fitment · Mehrkategorien-Fundament (Owner Draft)
 
-**Status 10.10.2026:** Nur **private Architektur-Vorbereitung**, kein zweites reales Gerät in der App, kein Public Launch und keine automatische Passungsfreigabe. Epic #87; aktuelle Owner-App und offene Nacharbeiten #85 (Consumer 11→29) und #86 (qualitativ brauchbare Reparatursteckbriefe).
+**Status 10.10.2026, Taxonomie v0.2.0:** Nur **private Architektur-Vorbereitung**, kein zweites reales Gerät in der App, kein Public Launch und keine automatische Passungsfreigabe. Epic #87; aktuelle Owner-App und offene Nacharbeiten #85 (Consumer 11→29) und #86 (qualitativ brauchbare Reparatursteckbriefe).
 
 ## Wozu dieses Modul dient
 Wir bauen keine unabhängigen Waschmaschinen-, Konsolen- und Industriewerkzeug-Apps. Die Gerätearten bekommen **eine gemeinsame Kategorie-Hierarchie** und später dieselbe Suche, Belegverwaltung, neue Consumer-Oberfläche und B2B-Rechte. `registry.mjs` ist ein erster ausführbarer Proof der Kategorien, kein Datenimport. Die Taxonomie ist **intern**, nicht die Anzahl öffentlich unterstützter Gerätetypen. Die vorhandenen, laufenden Staubsaugerdaten bleiben unverändert.
@@ -12,6 +12,25 @@ Wir bauen keine unabhängigen Waschmaschinen-, Konsolen- und Industriewerkzeug-A
 
 ## Kritische vorhandene Engine-Schranke
 `integrations/fitment-engine-v1-poc/contract.mjs` hat derzeit **`POLICY_VERSION='vacuum-poc-1'`**, lässt reale Anfragen nur für `asset.category==='vacuum'` zu und blockiert neue Kategorien mit `POLICY_BLOCKED`. **Der Schutz bleibt im aktuellen Draft unverändert.** Tests prüfen sogar explizit, dass Waschmaschinen, Saugroboter, Smartphones, Laptops und Industriemaschinen nicht plötzlich als passend bewertet werden. Ein späterer Umbau benötigt eine separate, von Fachleuten geprüfte Sicherheits-/Schnittstellen-Matrix und **denselben gemeinsamen Fitment-Engine-Vertrag** statt zweiter unvereinbarer Motoren.
+
+## Erweiterung: Robotik allgemein, humanoide Roboter und intelligente Assistenten
+
+Robotik bedeutet für das Projekt weit mehr als Saug-/Mähroboter. Die Registry unterstützt als zunächst **geplante** Kategorien auch humanoide Roboter, soziale/Begleitroboter, körperliche KI-Assistenten, Telepräsenz, Bildungs-/Forschungs- und Hobbyroboter, mobile Universalroboter und Robotik-Bausätze. Dazu kommen physische Smart-Speaker- und Display-Geräte als Assistenzterminals sowie professionelle Industrieroboter (weiterhin eigene Industriegruppe).
+
+**Kampfroboter** bedeutet hier technisch gewartete **Roboter-Sport-/Wettkampfgeräte**. Wir erfassen potenziell allgemeine Identitäten, Steuerungen, Akkus und Wartungs-/Sicherheitsinformationen ausschließlich nach sauberer Hersteller-/Regelwerkslage. Hochenergetische Mechanismen benötigen kontrollierte Arenen, Abschaltung und Fachprüfung. Kein Angebot für Waffen, schädigende Nutzlasten oder Anleitungen zu deren Bau, Leistungssteigerung oder Einsatz.
+
+| Robotik-Typ | Unverzichtbare Variantendaten | Zusätzlich sensible Grenzen |
+| --- | --- | --- |
+| Humanoide Roboter | Gelenk-/Aktuatorgeneration, Boardrevision, Controller, Serienbereich, Firmware | Quetschen, Last, Not-Aus, Kalibrierung, Fachpersonal |
+| Smarte Assistenten (physische Roboter) | Modell, Mikrofon-/Kameramodul, Sensor, Funkstandard, Softwarestand, Accountbindung | Datensicherheit/Privatsphäre, Pairing, Cloud-Abhängigkeiten |
+| Smarte Lautsprecher/Displays | Geräte- und Boardrevision, Netzteil/Anzeige/Mikrofon, Firmware, Region | Netzspannung, personenbezogene Sprach-/Videodaten und Softwarebindung |
+| Bildungs-/Hobby-/Forschungsroboter | Kit-Version, Platine, Servos, Motoren, Sensormodule, Anschluss-/Firmwarestand | Akkus, Motorik und je nach Bauart Fachfreigabe |
+| Sport-Kampfroboter | Chassis-/Controllerrevision, Antriebs-/Batterieplattform, zulässige Wettbewerbsklasse | Hochenergetische Bewegung, mechanische Sicherung, Kontrollarena |
+| Industrie-/mobile Roboter | Serien-/Maschinenkennung, Sicherheitssensorik, Aktoren, Steuerung | Sicherheitssteuerungen, Energieisolierung und Fachbetrieb |
+
+**Abgrenzung:** Ein rein digitaler Sprachassistent oder eine Software-/KI-Agent-Anwendung ist kein physisches Ersatzteilgerät. Universal Fitment kann Software-/Firmwareabhängigkeiten eines **realen** Geräts als Information dokumentieren, aber keine erfundenen Hardware-Teile für reine Softwaredienste listen.
+
+Für humanoide Systeme unterscheiden wir außerdem Reparatur-Kandidaten (z. B. Gelenkmodul) von **tatsächlich freigegebener Kalibrierung oder sicherem Einbau**. Letztere setzen dokumentierte Mechanik/Elektronik und spezifische Fachabnahme voraus. Alle neuen Robotik-Kategorien bleiben `planned`; die bestehende Fitment-Engine blockiert sie als `POLICY_BLOCKED`.
 
 ## Geräteidentitäten und Inhalte pro Domäne
 | Domäne | Exakte Ausführung erfordert oft | Besonders wichtig vor Reparatur-/Passungsfreigabe |
