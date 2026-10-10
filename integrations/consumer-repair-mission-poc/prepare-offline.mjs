@@ -13,6 +13,8 @@ export const assetFiles=Object.freeze({
  '/app.mjs':'app.mjs','/mission-state.mjs':'mission-state.mjs',
  '/parts-view.mjs':'parts-view.mjs','/catalog-snapshot.mjs':'catalog-snapshot.mjs',
  '/mobile-ui.mjs':'mobile-ui.mjs',
+ '/discovery-ui.mjs':'discovery-ui.mjs',
+ '/consumer-discovery-wave8/discovery.mjs':'../consumer-discovery-wave8/discovery.mjs',
  '/mock-fitment-adapter.mjs':'mock-fitment-adapter.mjs',
  '/manifest.webmanifest':'manifest.webmanifest','/app-icon.svg':'app-icon.svg',
  '/dual-platform-owner-review/bridge.mjs':'../dual-platform-owner-review/bridge.mjs',
@@ -29,7 +31,8 @@ export function offlineConfig(){
   hashes['/catalog-snapshot.mjs'],hashes['/fitment-engine-v1-poc/contract.mjs'],
   hashes['/fitment-engine-v1-poc/fixtures.mjs'],hashes['/dual-platform-owner-review/bridge.mjs'],
   hashes['/dual-platform-owner-review/ui-fixtures.mjs'],hashes['/business-embed-poc/adapter.mjs'],
-  hashes['/mock-fitment-adapter.mjs']
+  hashes['/mock-fitment-adapter.mjs'],
+  hashes['/discovery-ui.mjs'],hashes['/consumer-discovery-wave8/discovery.mjs']
  ]))+':consumer-ui/2';
  return {cacheName,catalogFingerprint,assetPaths:[...Object.keys(assetFiles),'/offline-config.mjs'],hashes};
 }
@@ -59,7 +62,7 @@ if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.ur
  const check=process.argv.includes('--check');
  if(!check){
   const branch=execFileSync('git',['branch','--show-current'],{cwd:repo,encoding:'utf8'}).trim();
-  assert.ok(['work/consumer-mobile-ux-wave4','work/wave6-consumer-webkit-qa'].includes(branch),'Offline generation requires the original Wave4 or Owner-authorized #81 branch');
+  assert.ok(['work/consumer-mobile-ux-wave4','work/wave6-consumer-webkit-qa','work/wave9-consumer-discovery-owner-bridge'].includes(branch),'Offline generation requires an explicitly Owner-authorized Consumer branch (#81/#95)');
  }
  const expected=configSource(),worker=workerSource(),file=path.join(here,'offline-config.mjs'),workerFile=path.join(here,'offline-worker.mjs');
  if(check){

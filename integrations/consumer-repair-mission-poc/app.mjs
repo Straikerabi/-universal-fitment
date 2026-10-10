@@ -3,11 +3,12 @@ import {mockScenarios} from './mock-fitment-adapter.mjs';
 import {defaultFilters,browseParts,sourceRegion} from './parts-view.mjs';
 import {filtersMarkup,browseSummary,groupsMarkup,activePartsMarkup,checklistMarkup,variantMarkup} from './mobile-ui.mjs';
 import {cacheName} from './offline-config.mjs';
+import {freshDiscovery,discoveryControls,discoveryResults,consumerProfile} from './discovery-ui.mjs';
 import {assemblies,problems,freshMission,currentDevice,searchDevices,candidateParts,transition,assessment,checklist,exportMission,exportRepairPassport,saveMission,loadMission,storageKey} from './mission-state.mjs';
 const $=s=>document.querySelector(s),esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const labels=['Gerät','Ausführung','Baugruppe','Passung','Checkliste'];
 let storage;try{storage=localStorage;}catch{storage={getItem:()=>null,setItem:()=>{throw Error('Unavailable');},removeItem:()=>{}};}
-let state=loadMission(storage),query='',brand='all',saveFailed=false;
+let state=loadMission(storage),discovery=freshDiscovery(),saveFailed=false;
 let partFilters=defaultFilters(),openGroups=null,filterPanelOpen=false;
 let offlineReady=false,offlineDisabled=false;
 try{offlineDisabled=storage.getItem('uf-consumer-offline-disabled')==='true';}catch{}
@@ -33,10 +34,18 @@ function catalogDisplayMeta(snapshot=catalogSnapshot){
  return {devices:devices.length,brands:new Set(devices.map(d=>d.brand)).size,parts:parts.length,
   version:String(snapshot.version??'unbekannt'),appVersion:String(snapshot.appVersion??'unbekannt')};
 }
-function deviceResults(){const rows=searchDevices(query,brand);return rows.length?rows.map(d=>`<button class="device-option" data-device="${esc(d.id)}" aria-pressed="${d.id===state.deviceId}">${icon('device')}<span class="device-text"><strong>${esc(d.brand)} · ${esc(d.model)}</strong><small><code>${esc(d.reference)}</code>${d.productCode?' · '+esc(d.productCode):''} · ${esc(d.market)}</small></span><span class="arrow" aria-hidden="true">${d.id===state.deviceId?'✓':'↗'}</span></button>`).join('') :`<div class="empty">Diese Kennung ist in den ${catalogDisplayMeta().devices} Pilotgeräten nicht erfasst. Es wird keine ähnliche Variante automatisch übernommen. Prüfe die Herstellerquelle oder eine andere genaue Kennung.</div>`;}
+function deviceResults(){return discoveryResults(catalogSnapshot,discovery,state.deviceId,icon).markup;}
+function refreshDiscovery(){
+ $('#deviceResults').innerHTML=deviceResults();
+ $('#discoveryCount').textContent=discoveryResults(catalogSnapshot,discovery,state.deviceId).summary;
+}
 function stepOne(){
  if(state.mode==='synthetic')return heading('Erlebe die drei Passungszustände.','Wähle ein fiktives Beispiel. Gerät, Teile und Belege sind vollständig synthetisch.')+`<div class="device-results">${mockScenarios.map(s=>`<button class="device-option" data-scenario="${s.id}" aria-pressed="${state.scenarioId===s.id&&state.deviceId!==null}">${icon(s.assembly)}<span class="device-text"><strong>${s.label}</strong><small>DEMO-VAC-A · ${s.variant||'Ausführung offen'} · keine reale Marke</small></span><span class="arrow" aria-hidden="true">↗</span></button>`).join('')}</div>`+actions('Demo-Ausführung ansehen',!state.deviceId);
- return heading('Welches Gerät ist es?','Beginne mit der genauen Kennung. Ein Serienname allein sagt noch nicht, welches Teil passt.')+`<div class="search-row"><label><span class="field-label">Modell oder Gerätekennung</span><input id="deviceQuery" type="search" value="${esc(query)}" placeholder="z. B. VS20C95D4TK/WD" autocomplete="off" spellcheck="false" autocapitalize="characters"></label><label><span class="field-label">Marke</span><select id="brandFilter"><option value="all">Alle</option>${[...new Set(catalogSnapshot.devices.map(x=>x.brand))].map(x=>`<option ${brand===x?'selected':''}>${x}</option>`).join('')}</select></label></div><p class="catalog-note">${catalogDisplayMeta().devices} Pilotgeräte · ${catalogDisplayMeta().brands} Marken · ${catalogDisplayMeta().parts} Originalteilidentitäten · Snapshot v${esc(catalogDisplayMeta().version)}</p><div id="deviceResults" class="device-results" aria-label="Kataloggeräte">${deviceResults()}</div><label class="problem-field"><span class="field-label">Was möchtest du klären?</span><select id="problem">${problems.map(p=>`<option value="${p.id}" ${state.problemId===p.id?'selected':''}>${p.label}</option>`).join('')}</select></label>`+actions('Ausführung bestimmen',!state.deviceId)+`<p class="footer-context">Die Auswahl identifiziert einen Katalogeintrag. Sie bestätigt noch keine Passung.</p>`;
+ return heading('Welches Gerät ist es?','Suche die genaue Kennung, grenze Marke und Geräteart ein und öffne den Steckbrief durch deine Auswahl. Ein Serienname allein bestätigt keine Passung.')+
+ discoveryControls(catalogSnapshot,discovery)+
+ `<p class="catalog-note">${catalogDisplayMeta().devices} Pilotgeräte · ${catalogDisplayMeta().brands} Marken · ${catalogDisplayMeta().parts} Originalteilidentitäten · Snapshot v${esc(catalogDisplayMeta().version)}</p><p id="discoveryCount" class="catalog-note" role="status" aria-live="polite">${esc(discoveryResults(catalogSnapshot,discovery,state.deviceId).summary)}</p><div id="deviceResults" class="device-results" aria-label="Kataloggeräte">${deviceResults()}</div>`+
+ consumerProfile(catalogSnapshot,state.deviceId)+
+ `<label class="problem-field"><span class="field-label">Was möchtest du klären?</span><select id="problem">${problems.map(p=>`<option value="${p.id}" ${state.problemId===p.id?'selected':''}>${p.label}</option>`).join('')}</select></label>`+actions('Ausführung bestimmen',!state.deviceId)+`<p class="footer-context">Die Auswahl identifiziert einen Katalogeintrag. Sie bestätigt noch keine Passung.</p>`;
 }
 function stepTwo(){const d=currentDevice(state),fixture=mockScenarios.find(x=>x.id===state.scenarioId);return heading('Die Ausführung macht den Unterschied.','Behalte Zusätze, Länderkennung und Revision bei. Fehlende Angaben dürfen offen bleiben.')+pass()+`<div class="panel"><h3>Woran du deine Ausführung erkennst</h3><p class="field-help">${esc(d.variantHint)}</p>${d.productCode?`<div class="fact"><span>Produktcode aus der Herstellerquelle</span><strong><code>${esc(d.productCode)}</code> · Markt ${esc(d.market)}</strong></div>`:''}${state.mode==='real'?sourceBox(d.source):'<span class="tag demo">Synthetische Ausführung · kein Typenschild eines realen Geräts</span>'}<fieldset class="choice-group"><legend>${state.mode==='synthetic'?'Demo-Ausführung verwenden?':'Ist die Kennung am eigenen Gerät abgelesen?'}</legend><label class="radio-choice"><input type="radio" name="variant" value="known" ${state.variantKnown?'checked':''} ${state.mode==='synthetic'&&!fixture.variant?'disabled':''}><span><strong>${state.mode==='synthetic'?(fixture.variant||'Im Beispiel fehlt die Revision'):'Ja, ich habe die Angabe'}</strong><small>${state.mode==='synthetic'?'Gilt ausschließlich für diese synthetische Szene.':'Deine Angabe bleibt bis zum Quellenabgleich ungeprüft.'}</small></span></label><label class="radio-choice"><input type="radio" name="variant" value="unknown" ${!state.variantKnown?'checked':''}><span><strong>${state.mode==='synthetic'?'Ausführung offen lassen':'Noch nicht – Angabe bleibt offen'}</strong><small>Du kannst eine Prüfliste vorbereiten, ohne eine Passung zu bestätigen.</small></span></label></fieldset>${state.mode==='real'?`<label><span class="field-label">Eigene Gerätekennung (optional)</span><input id="observedCode" value="${esc(state.observedCode)}" maxlength="100" autocomplete="off" spellcheck="false" autocapitalize="characters" placeholder="Kennung genau übernehmen"></label><p class="field-help">Nur lokal gespeichert. Keine Seriennummer nötig.</p><div id="variantMismatch"></div>`:''}</div><p class="notice">${state.mode==='synthetic'?'Demoantworten haben keine Aussagekraft für echte Geräte.':'Eine abgelesene Kennung ist noch kein Herstellerbeleg für ein Ersatzteil. Andere Länder, Revisionen und Anschlüsse bleiben separat zu prüfen.'}</p>`+actions(state.variantKnown?'Baugruppe auswählen':'Mit offenen Angaben weiter');}
 function stepThree(){
@@ -70,13 +79,14 @@ function render(focus=false){
 document.addEventListener('click',async e=>{
  const b=e.target.closest('button');if(!b||b.disabled)return;
  if(b.dataset.step)update({type:'step',value:Number(b.dataset.step)},true);
- else if(b.dataset.device){resetBrowse();update({type:'device',value:b.dataset.device});}
+ else if(b.dataset.device){resetBrowse();update({type:'device',value:b.dataset.device});$('#workspace [data-device="'+CSS.escape(b.dataset.device)+'"]')?.focus({preventScroll:true});}
+ else if(b.id==='resetDeviceFilters'){discovery=freshDiscovery();render();$('#deviceQuery')?.focus();feedback('Gerätesuche zurückgesetzt. Eine bereits gewählte Mission bleibt unverändert.');}
  else if(b.dataset.scenario){resetBrowse();update({type:'scenario',value:b.dataset.scenario});}
  else if(b.dataset.assembly){update({type:'assembly',value:b.dataset.assembly});$('#workspace [data-assembly="'+CSS.escape(b.dataset.assembly)+'"]')?.focus({preventScroll:true});}
  else if(b.id==='resetPartFilters'||b.hasAttribute('data-reset-filters')){resetBrowse();render();$('#partQuery')?.focus();feedback('Teilefilter zurückgesetzt; Passungsstatus unverändert.');}
  else if(b.dataset.removePart){update({type:'part',value:b.dataset.removePart});feedback('Prüfkandidat entfernt; Passungsstatus unverändert.');}
  else if(b.id==='eraseOffline')await toggleOffline();
- else if(b.id==='realMode'||b.id==='demoMode'){persist();state=loadMission(storage,b.id==='realMode'?'real':'synthetic');query='';brand='all';resetBrowse();render(true);feedback('Datenmodi sind getrennt.');}
+ else if(b.id==='realMode'||b.id==='demoMode'){persist();state=loadMission(storage,b.id==='realMode'?'real':'synthetic');discovery=freshDiscovery();resetBrowse();render(true);feedback('Datenmodi sind getrennt.');}
  else if(b.id==='savedMission'){state=loadMission(storage,state.mode);if(!currentDevice(state)){feedback('Noch kein Gerät in dieser Mission gespeichert.');return;}render(true);feedback('Lokale Mission geöffnet; Passungsstatus unverändert.');}
  else if(b.id==='eraseMission'){try{storage.removeItem(storageKey(state.mode));}catch{}state=freshMission(state.mode);resetBrowse();render(true);feedback('Mission in diesem Datenmodus gelöscht.');}
  else if(b.id==='copyMission'){try{await navigator.clipboard.writeText(exportMission(state));feedback('Prüfliste kopiert.');}catch{feedback('Kopieren nicht möglich. Nutze „Textdatei sichern“.',true);}}
@@ -93,12 +103,12 @@ document.addEventListener('click',async e=>{
  else if(b.id==='downloadMission'){const blob=new Blob([exportMission(state)],{type:'text/plain;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=state.mode==='synthetic'?'SYNTHETISCHE-DEMO-Pruefliste.txt':'Universal-Fitment-Pruefliste.txt';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);feedback('Textdatei mit unverändertem Prüfstatus vorbereitet.');}
 });
 document.addEventListener('input',e=>{
- if(e.target.id==='deviceQuery'){query=e.target.value;$('#deviceResults').innerHTML=deviceResults();}
+ if(e.target.id==='deviceQuery'){discovery.query=e.target.value;refreshDiscovery();}
  if(e.target.id==='partQuery'){partFilters.query=e.target.value;refreshParts();}
  if(e.target.id==='observedCode'){state=transition(state,{type:'variant',known:state.variantKnown,code:e.target.value});persist();mismatch();$('#workspace .device-pass').outerHTML=pass();}
 });
 document.addEventListener('change',e=>{
- if(e.target.id==='brandFilter'){brand=e.target.value;$('#deviceResults').innerHTML=deviceResults();}
+ if(['brandFilter','deviceTypeFilter','deviceSort'].includes(e.target.id)){const key={brandFilter:'brand',deviceTypeFilter:'type',deviceSort:'sort'}[e.target.id];discovery[key]=e.target.value;refreshDiscovery();}
  else if(e.target.id==='problem')update({type:'problem',value:e.target.value});
  else if(e.target.name==='variant'){const value=e.target.value;resetBrowse();update({type:'variant',known:value==='known',code:state.observedCode});$('#workspace input[value="'+value+'"]')?.focus({preventScroll:true});}
  else if(['assemblyFilter','typeFilter','evidenceFilter','partSort'].includes(e.target.id)){const key={assemblyFilter:'assembly',typeFilter:'type',evidenceFilter:'evidence',partSort:'sort'}[e.target.id];partFilters[key]=e.target.value;if(state.step===4&&key==='assembly'){if(e.target.value==='all')update({type:'step',value:3},true);else update({type:'assembly',value:e.target.value});}else{if(key==='assembly'&&e.target.value!=='all')openGroups=new Set([e.target.value]);refreshParts();}}

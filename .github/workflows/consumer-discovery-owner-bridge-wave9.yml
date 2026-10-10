@@ -1,0 +1,62 @@
+name: Wave9 Consumer discovery bridge exact-head acceptance (no release)
+on:
+  pull_request:
+    branches: [integration/private-unified-preview-wave5-owner]
+    paths:
+      - 'integrations/consumer-repair-mission-poc/**'
+      - 'integrations/consumer-discovery-owner-bridge-wave9/**'
+      - '.github/workflows/consumer-discovery-owner-bridge-wave9.yml'
+permissions:
+  contents: read
+jobs:
+  exact-head-acceptance:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - name: Checkout exact PR head, no parallel owner catalogue merge
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '22'
+      - name: Exclusive scope, baseline, discovery and integration Node tests
+        run: |
+          set -euo pipefail
+          node integrations/consumer-discovery-owner-bridge-wave9/scope.mjs
+          node --check integrations/consumer-repair-mission-poc/app.mjs
+          node --test integrations/consumer-repair-mission-poc/tests/*.test.mjs integrations/private-owner-wave5/catalog-scorecard.test.mjs integrations/consumer-discovery-wave8/*.test.mjs integrations/consumer-discovery-owner-bridge-wave9/integration.test.mjs
+          node integrations/consumer-repair-mission-poc/prepare-offline.mjs --check
+      - name: Install pinned browser dependencies
+        run: |
+          npm ci --ignore-scripts --no-audit --no-fund --prefix integrations/consumer-webkit-qa-wave6
+          node integrations/consumer-webkit-qa-wave6/node_modules/playwright/cli.js install --with-deps chromium webkit
+      - name: Complete unchanged 66-case Owner matrix on exact SHA
+        run: node integrations/private-owner-wave5/browser-owner-catalog-smoke.mjs
+      - name: Discovery profile reflow and five-step state carryover, both engines
+        run: node integrations/consumer-discovery-owner-bridge-wave9/browser.mjs
+      - name: Unchanged legacy UI and proof-passport downloads
+        env:
+          UF_PLAYWRIGHT_MODULE: ${{ github.workspace }}/integrations/consumer-webkit-qa-wave6/node_modules/playwright/index.mjs
+          UF_MISSION_QA_DIR: ${{ github.workspace }}/integrations/consumer-discovery-owner-bridge-wave9/artifacts/legacy-consumer
+        run: |
+          set -euo pipefail
+          npm run test:browser --prefix integrations/consumer-repair-mission-poc
+          node integrations/consumer-repair-mission-poc/tests/passport-browser.mjs
+      - name: Byte integrity, scorecard and intentionally BLOCKED legal/source gate
+        run: |
+          node integrations/consumer-repair-mission-poc/prepare-offline.mjs --check
+          node integrations/consumer-discovery-owner-bridge-wave9/scope.mjs
+          node integrations/consumer-discovery-owner-bridge-wave9/report.mjs
+      - name: Keep real reports and own interface screenshots including failures
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: wave9-consumer-discovery-${{ github.event.pull_request.head.sha }}
+          path: |
+            integrations/consumer-discovery-owner-bridge-wave9/artifacts/
+            integrations/private-owner-wave5/artifacts/owner-integration-browser/
+          if-no-files-found: error
+          retention-days: 14

@@ -5,9 +5,10 @@ import {fileURLToPath} from 'node:url';
 export const root=path.dirname(fileURLToPath(import.meta.url));
 const mime={'.html':'text/html;charset=utf-8','.mjs':'text/javascript;charset=utf-8','.css':'text/css;charset=utf-8','.json':'application/json;charset=utf-8','.webmanifest':'application/manifest+json;charset=utf-8','.svg':'image/svg+xml','.png':'image/png'};
 // Serve only the UI's root assets. Build scripts, tests and evidence stay private.
-const publicFiles=new Set(['index.html','styles.css','app.mjs','mobile-ui.mjs','mission-state.mjs','parts-view.mjs','mock-fitment-adapter.mjs','catalog-snapshot.mjs','offline-config.mjs','offline-worker.mjs','manifest.webmanifest','app-icon.svg']);
+const publicFiles=new Set(['index.html','styles.css','app.mjs','discovery-ui.mjs','mobile-ui.mjs','mission-state.mjs','parts-view.mjs','mock-fitment-adapter.mjs','catalog-snapshot.mjs','offline-config.mjs','offline-worker.mjs','manifest.webmanifest','app-icon.svg']);
 // Explicit same-origin, read-only shared v1 modules; no arbitrary parent directories.
 const sharedFiles=Object.freeze({
+ '/consumer-discovery-wave8/discovery.mjs':'consumer-discovery-wave8/discovery.mjs',
  '/dual-platform-owner-review/bridge.mjs':'dual-platform-owner-review/bridge.mjs',
  '/dual-platform-owner-review/ui-fixtures.mjs':'dual-platform-owner-review/ui-fixtures.mjs',
  '/fitment-engine-v1-poc/contract.mjs':'fitment-engine-v1-poc/contract.mjs',
