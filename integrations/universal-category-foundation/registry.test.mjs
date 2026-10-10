@@ -9,7 +9,7 @@ test('the registry covers all requested sectors and real leaf-category groups',(
  assert.ok(categories.length>=40);
  for(const id of ['vacuum-cleaner','washing-machine','tumble-dryer','oven','cooktop','coffee-machine',
    'cordless-drill','game-console','television','desktop-pc','laptop','smartphone','robot-vacuum',
-   'robot-lawnmower','industrial-machine','cnc-machine','industrial-robot','3d-printer','car']){
+   'robot-lawnmower','humanoid-robot','companion-robot','ai-assistant-robot','smart-speaker','smart-display','combat-sport-robot','educational-robot','hobby-robot','telepresence-robot','research-robot','robotics-kit','mobile-robot','industrial-machine','cnc-machine','industrial-robot','3d-printer','car']){
   assert.ok(resolveCategory(id),id);
  }
  for(const group of groups)assert.ok(categories.some(c=>c.group===group.id));
@@ -28,7 +28,7 @@ test('only vacuum is a private pilot; no future category claims it is published 
  }
 });
 test('spelling aliases resolve to one canonical category, not a guessed sibling device',()=>{
- for(const [a,b] of [['Trockner','tumble-dryer'],['Waschmaschine','washing-machine'],['Geschirrspüler','dishwasher'],['Spuelmaschine','dishwasher'],['Mähroboter','robot-lawnmower'],['Handy','smartphone'],['TV','television'],['Akkuschrauber','cordless-drill']]){
+ for(const [a,b] of [['Trockner','tumble-dryer'],['Waschmaschine','washing-machine'],['Geschirrspüler','dishwasher'],['Spuelmaschine','dishwasher'],['Mähroboter','robot-lawnmower'],['Handy','smartphone'],['TV','television'],['Akkuschrauber','cordless-drill'],['Humanoid','humanoid-robot'],['Kampfroboter','combat-sport-robot'],['Sprachassistent','smart-speaker'],['Begleitroboter','companion-robot'],['Lernroboter','educational-robot'],['Telepräsenzroboter','telepresence-robot']]){
   assert.equal(resolveCategory(a).id,b);
  }
  assert.equal(resolveCategory('absolutely unknown device'),null);
@@ -43,6 +43,13 @@ test('domain-specific identifier and hazard profiles are not default low-risk fi
  assert.ok(safetyProfile('pool-robot').includes('water-electricity'));
  assert.ok(safetyProfile('industrial-machine').includes('qualified-personnel'));
  assert.ok(safetyProfile('smartphone').includes('software-pairing'));
+ assert.ok(safetyProfile('humanoid').includes('emergency-stop'));
+ assert.ok(safetyProfile('kampfroboter').includes('controlled-arena-only'));
+ assert.ok(safetyProfile('sprachassistent').includes('microphone-camera-privacy'));
+ assert.ok(identificationProfiles.humanoidRobot.variantChecks.includes('joint-generation'));
+ assert.ok(identificationProfiles.robotCompetition.variantChecks.includes('competition-ruleset'));
+ assert.ok(identificationProfiles.assistantRobot.variantChecks.includes('cloud-service-dependency'));
+ assert.ok(identificationProfiles.roboticsKit.variantChecks.includes('servo-motor'));
  assert.equal(safetyProfile('unlisted-device'),null);
 });
 test('schema rejects alias collision, duplicate leaf, fabricated launch and unauthorized non-vacuum policy',()=>{
@@ -54,7 +61,7 @@ test('schema rejects alias collision, duplicate leaf, fabricated launch and unau
  const orphan=copy();orphan[4].group='invented';assert.throws(()=>validateTaxonomy(groups,orphan),/orphan/);
 });
 test('the existing shared fitment v1 engine remains fail-closed on real future categories',()=>{
- for(const category of ['washing-machine','robot-vacuum','laptop','smartphone','industrial-machine']){
+ for(const category of ['washing-machine','robot-vacuum','laptop','smartphone','humanoid-robot','combat-sport-robot','smart-speaker','industrial-machine']){
   const req=realCatalogUnknownRequest();
   req.asset.category=category;
   const out=assessFitment(req);
