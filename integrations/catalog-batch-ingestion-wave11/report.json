@@ -1,0 +1,62 @@
+{
+  "schema": "uf-wave11-batch-report/1",
+  "consumerBaseline": {
+    "devices": 11,
+    "partIdentities": 11,
+    "changed": false
+  },
+  "research": {
+    "researched": 37,
+    "validated": 37,
+    "independentlySourceVerified": 0,
+    "rightsReviewed": 0,
+    "consumerIntegrated": 0,
+    "realPhysicalFits": 0,
+    "unresolvedSerialOrRevision": 37,
+    "boschWithoutFullENumber": 2,
+    "stages": {
+      "candidate_observed": 37,
+      "original_bytes_archived": 0,
+      "identity_independently_verified": 0,
+      "rights_reviewed": 0,
+      "fitment_verified": 0
+    },
+    "byDomainBrand": [
+      {
+        "name": "vacuum-cleaner/Dyson",
+        "count": 6
+      },
+      {
+        "name": "vacuum-cleaner/Hoover",
+        "count": 2
+      },
+      {
+        "name": "vacuum-cleaner/Miele",
+        "count": 21
+      },
+      {
+        "name": "washing-machine/AEG",
+        "count": 2
+      },
+      {
+        "name": "washing-machine/Bosch",
+        "count": 2
+      },
+      {
+        "name": "washing-machine/Miele",
+        "count": 4
+      }
+    ]
+  },
+  "synthetic": {
+    "generatedPerRun": 250,
+    "label": "synthetic_load_fixture",
+    "countedAsReal": false
+  },
+  "gates": {
+    "licenseApproved": false,
+    "fitmentConfirmed": false,
+    "consumerPublished": false,
+    "launchApproved": false
+  }
+}

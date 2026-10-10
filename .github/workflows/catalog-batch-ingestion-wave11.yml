@@ -1,0 +1,25 @@
+name: Catalog Batch Ingestion Wave11
+on:
+  push:
+    branches: [work/catalog-batch-ingestion-wave11]
+    paths:
+      - 'integrations/catalog-batch-ingestion-wave11/**'
+      - '.github/workflows/catalog-batch-ingestion-wave11.yml'
+  pull_request:
+    branches: [integration/private-unified-preview-wave5-owner]
+    paths:
+      - 'integrations/catalog-batch-ingestion-wave11/**'
+      - '.github/workflows/catalog-batch-ingestion-wave11.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deterministic OEM batch, synthetic rate and fail-closed report
+        run: node integrations/catalog-batch-ingestion-wave11/ingest.mjs --check
+      - name: Actual Node negatives and 250/1000 synthetic throughput
+        run: node --test integrations/catalog-batch-ingestion-wave11/ingest.test.mjs
