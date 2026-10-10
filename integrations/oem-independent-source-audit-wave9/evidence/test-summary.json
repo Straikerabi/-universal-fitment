@@ -1,0 +1,54 @@
+{
+  "issue": 96,
+  "executedAt": "2026-10-10T18:41:45.014Z",
+  "preparedBranch": "work/wave9-oem-independent-source-audit",
+  "baseSha": "3bafbc7fd8c8da5ed6fe3bddc70eacbc0be1e035",
+  "nodeVersion": "v24.19.0",
+  "pythonVersion": "Python 3.12.14",
+  "pureValidation": {
+    "tests": 40,
+    "success": true,
+    "skips": 0
+  },
+  "nodeRegression": {
+    "tests": 167,
+    "pass": 167,
+    "fail": 0,
+    "skips": 0
+  },
+  "preflightRegression": {
+    "tests": 16,
+    "success": true,
+    "skips": 0
+  },
+  "actualByteAudit": {
+    "originalSourcesIndependentlyReplayable": 33,
+    "newPageObservations": 3,
+    "fullExactIdentity": 2,
+    "individualFieldsWithOemLocator": 14,
+    "unverified": 0,
+    "rightsGranted": 0,
+    "approvedRealFits": 0
+  },
+  "missingByteAudit": {
+    "originalSourcesIndependentlyReplayable": 0,
+    "newPageObservations": 0,
+    "fullExactIdentity": 0,
+    "individualFieldsWithOemLocator": 0,
+    "unverified": 36,
+    "rightsGranted": 0,
+    "approvedRealFits": 0
+  },
+  "preflightLaunchApproved": false,
+  "ci": "pending: verify actual GitHub run after Draft creation",
+  "browserChecksRun": 0,
+  "scope": "only isolated audit directory and one new workflow",
+  "limitations": [
+    "No externally independent human/source certification",
+    "No 14-edge Wave7 listing or Consumer import replay",
+    "No platform rights grant",
+    "No real physical fitment",
+    "No catalog/Consumer integration",
+    "No main merge or deployment"
+  ]
+}

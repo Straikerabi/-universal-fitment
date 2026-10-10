@@ -1,0 +1,32 @@
+name: Wave9 OEM provenance validations (NOT fitment or launch approval)
+on:
+  pull_request:
+    branches: [integration/private-unified-preview-wave5-owner]
+    paths:
+      - 'integrations/oem-independent-source-audit-wave9/**'
+      - '.github/workflows/oem-independent-source-audit-wave9.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  pure-validations:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Pure validation and negative tests — no private bytes, no skips
+        run: python -B -m unittest discover -s integrations/oem-independent-source-audit-wave9 -v
+      - name: No raw archive in CI means zero independently replayed originals
+        shell: bash
+        run: |
+          set +e
+          python -B integrations/oem-independent-source-audit-wave9/audit.py > /tmp/wave9-missing-evidence.json
+          audit_exit=$?
+          set -e
+          test "$audit_exit" -eq 2
+          python -c 'import json; r=json.load(open("/tmp/wave9-missing-evidence.json")); assert r["originalArchive"]["status"]=="UNVERIFIED_ARCHIVE"; assert r["counts"]["originalSourcesIndependentlyReplayable"]==0; assert r["counts"]["newPageObservations"]==0; assert not r["legacyWave7MigrationAllowed"]; assert not r["launchApproved"]'

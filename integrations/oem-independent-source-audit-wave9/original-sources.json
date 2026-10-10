@@ -1,0 +1,530 @@
+[
+  {
+    "id": "aeg-90025855400",
+    "url": "https://shop.aeg.de/search?pnc=90025855400",
+    "finalUrl": "https://shop.aeg.de/search?pnc=90025855400",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "retrievedAt": "2026-10-10T10:51:22.060761+00:00",
+    "sha256": "e308d5023ea4af5c77a0ac2a3d9dd32486cd2309387218ca42cec654b474e840",
+    "bytes": 1008297,
+    "brand": "AEG",
+    "rights": {
+      "internalResearch": "restricted private audit; no blanket copyright licence asserted",
+      "b2cCommercial": "unknown",
+      "mediaRedistribution": "not-permitted-by-this-dataset"
+    }
+  },
+  {
+    "id": "aeg-90025855700",
+    "url": "https://shop.aeg.de/search?pnc=90025855700",
+    "finalUrl": "https://shop.aeg.de/search?pnc=90025855700",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "retrievedAt": "2026-10-10T10:51:22.127718+00:00",
+    "sha256": "0dd1b1727cd765f030f4f3ee69e15ff17b8f62b4c8b8554533f3cd9cd40d4339",
+    "bytes": 1007088,
+    "brand": "AEG",
+    "rights": {
+      "internalResearch": "restricted private audit; no blanket copyright licence asserted",
+      "b2cCommercial": "unknown",
+      "mediaRedistribution": "not-permitted-by-this-dataset"
+    }
+  },
+  {
+    "id": "aeg-90025856400",
+    "url": "https://shop.aeg.de/search?pnc=90025856400",
+    "finalUrl": "https://shop.aeg.de/search?pnc=90025856400",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "retrievedAt": "2026-10-10T10:51:22.389145+00:00",
+    "sha256": "6efafb296e2df26c93ef7527eca25c6f2eb8ba0737f4244ff2659d93e6a7c7eb",
+    "bytes": 1006942,
+    "brand": "AEG",
+    "rights": {
+      "internalResearch": "restricted private audit; no blanket copyright licence asserted",
+      "b2cCommercial": "unknown",
+      "mediaRedistribution": "not-permitted-by-this-dataset"
+    }
+  },
+  {
+    "id": "aeg-90025863800",
+    "url": "https://shop.aeg.de/search?pnc=90025863800",
+    "finalUrl": "https://shop.aeg.de/search?pnc=90025863800",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "retrievedAt": "2026-10-10T10:51:22.620550+00:00",
+    "sha256": "3e904cbd92ec0ae0b38af43d6151497fd51ab1fec20a1f920c32c105ed8244d2",
+    "bytes": 1006009,
+    "brand": "AEG",
+    "rights": {
+      "internalResearch": "restricted private audit; no blanket copyright licence asserted",
+      "b2cCommercial": "unknown",
+      "mediaRedistribution": "not-permitted-by-this-dataset"
+    }
+  },
+  {
+    "id": "aeg-part-9001677690",
+    "url": "https://shop.aeg.de/staubsauger/staubsauger/filter/afs1w-allergy-plus-s-filter-waschbar-fur-air-max-ultrasilencer/p/9001677690",
+    "finalUrl": "https://shop.aeg.de/staubsauger/staubsauger/filter/afs1w-allergy-plus-s-filter-waschbar-fur-air-max-ultrasilencer/p/9001677690",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "retrievedAt": "2026-10-10T10:53:20.030391+00:00",
+    "sha256": "97ff1d48536e3914b354f97870822ccedcc62e1b3755bfb91a69eeb18b468861",
+    "bytes": 852793,
+    "brand": "AEG",
+    "rights": {
+      "internalResearch": "restricted private audit; no blanket copyright licence asserted",
+      "b2cCommercial": "unknown",
+      "mediaRedistribution": "not-permitted-by-this-dataset"
+    }
+  },
+  {
+    "id": "aeg-part-9001684746",
+    "url": "https://shop.aeg.de/staubsauger/staubsauger/staubsaugerbeutel/gr201s-s-bag-classic-long-performance-staubsaugerbeutel/p/9001684746",
+    "finalUrl": "https://shop.aeg.de/staubsauger/staubsauger/staubsaugerbeutel/gr201s-s-bag-classic-long-performance-staubsaugerbeutel/p/9001684746",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "retrievedAt": "2026-10-10T10:53:20.197138+00:00",
+    "sha256": "b967f3d60d712402c6bbc460e1ba2336bfa86f4db65d7a9360820b9c740a3736",
+    "bytes": 859148,
+    "brand": "AEG",
+    "rights": {
+      "internalResearch": "restricted private audit; no blanket copyright licence asserted",
+      "b2cCommercial": "unknown",
+      "mediaRedistribution": "not-permitted-by-this-dataset"
+    }
+  },
+  {
+    "id": "bosch-bgl35mon1-01",
+    "url": "https://www.bosch-home.com/de/de/productservice/BGL35MON1-01",
+    "finalUrl": "https://www.bosch-home.com/de/de/productservice/BGL35MON1-01",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "retrievedAt": "2026-10-10T10:51:36.042761+00:00",
+    "sha256": "0b1049250553fce4f3cd42e8d64b4b7d52ed57328439b6b49822fa84bd87f0e1",
+    "bytes": 498686,
+    "brand": "Bosch",
+    "rights": {
+      "internalResearch": "restricted private audit; no blanket copyright licence asserted",
+      "b2cCommercial": "unknown",
+      "mediaRedistribution": "not-permitted-by-this-dataset"
+    }
+  },
+  {
+    "id": "bosch-bgl35mon4-01",
+    "url": "https://www.bosch-home.com/de/de/productservice/BGL35MON4-01",
+    "finalUrl": "https://www.bosch-home.com/de/de/productservice/BGL35MON4-01",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "retrievedAt": "2026-10-10T10:51:36.417927+00:00",
+    "sha256": "eb0ff187d994386ec329a3e4e43fc9d1a4bdca8bea6a28a0914c9139b6f5f593",
+    "bytes": 498678,
+    "brand": "Bosch",
+    "rights": {
+      "internalResearch": "restricted private audit; no blanket copyright licence asserted",
+      "b2cCommercial": "unknown",
+      "mediaRedistribution": "not-permitted-by-this-dataset"
+    }
+  },
+  {
+    "id": "dyson-226397-01",
+    "url": "https://www.dyson.de/support/journey/replacement-parts/search.226397-01",
+    "finalUrl": "https://www.dyson.de/support/journey/replacement-parts/search.226397-01",
+    "status": 200,
+    "contentType": "text/html;charset=utf-8",
+    "retrievedAt": "2026-10-10T10:51:31.321931+00:00",
+    "sha256": "d55460176cd013dc2b11d15a12a6faaa5d3e35e9fc558a0bc2146a61e1d81ec5",
+    "bytes": 500475,
+    "brand": "Dyson",
+    "rights": {
+      "internalResearch": "restricted private audit; no blanket copyright licence asserted",
+      "b2cCommercial": "unknown",
+      "mediaRedistribution": "not-permitted-by-this-dataset"
+    }
+  },
+  {
+    "id": "dyson-227312-01",
+    "url": "https://www.dyson.de/support/journey/replacement-parts/search.227312-01",
+    "finalUrl": "https://www.dyson.de/support/journey/replacement-parts/search.227312-01",
+    "status": 200,
+    "contentType": "text/html;charset=utf-8",
+    "retrievedAt": "2026-10-10T10:51:28.364437+00:00",
+    "sha256": "3c63170fa7d550445827bf35f64edf3559be6dd06e40e682822132a12ecf01c3",
+    "bytes": 458709,
+    "brand": "Dyson",
+    "rights": {
+      "internalResearch": "restricted private audit; no blanket copyright licence asserted",
+      "b2cCommercial": "unknown",
+      "mediaRedistribution": "not-permitted-by-this-dataset"
+    }
+  },
+  {
+    "id": "dyson-268700-01",
+    "url": "https://www.dyson.de/support/journey/replacement-parts/search.268700-01",
+    "finalUrl": "https://www.dyson.de/support/journey/replacement-parts/search.268700-01",
+    "status": 200,
+    "contentType": "text/html;charset=utf-8",
+    "retrievedAt": "2026-10-10T10:51:30.876508+00:00",
+    "sha256": "0fbee3c5c6d76a22ac50c00c135202be87fe9f9e7abeb843b3a72da830f4bbe2",
+    "bytes": 425001,
+    "brand": "Dyson",
+    "rights": {
+      "internalResearch": "restricted private audit; no blanket copyright licence asserted",
+      "b2cCommercial": "unknown",
+      "mediaRedistribution": "not-permitted-by-this-dataset"
+    }
+  },
+  {
+    "id": "dyson-part-967834-07",
+    "url": "https://www.dyson.de/support/journey/spare-details.967834-07.227312-01",
+    "finalUrl": "https://www.dyson.de/support/journey/spare-details.967834-07.227312-01",
+    "status": 200,
+    "contentType": "text/html;charset=utf-8",
+    "retrievedAt": "2026-10-10T10:53:15.542899+00:00",
+    "sha256": "c00339a5192374df5b0276d04330c4e8ec5b482874f2930a8b1becee36933416",
+    "bytes": 315374,
+    "brand": "Dyson",
+    "rights": {
+      "internalResearch": "restricted private audit; no blanket copyright licence asserted",
+      "b2cCommercial": "unknown",
+      "mediaRedistribution": "not-permitted-by-this-dataset"
+    }
+  },
+  {
+    "id": "dyson-part-969082-01",
+    "url": "https://www.dyson.de/support/journey/replacement-parts/969082-01.226397-01",
+    "finalUrl": "https://www.dyson.de/support/journey/replacement-parts/969082-01.226397-01",
+    "status": 200,
+    "contentType": "text/html;charset=utf-8",
+    "retrievedAt": "2026-10-10T10:53:21.167756+00:00",
+    "sha256": "b42a2100441479c8ae08ab562dbd8751b86772f6d6e010f37d29c34d57191c04",
+    "bytes": 350557,
+    "brand": "Dyson",
+    "rights": {
+      "internalResearch": "restricted private audit; no blanket copyright licence asserted",
+      "b2cCommercial": "unknown",
+      "mediaRedistribution": "not-permitted-by-this-dataset"
+    }
+  },
+  {
+    "id": "dyson-part-970145-06",
+    "url": "https://www.dyson.de/support/journey/spare-details.970145-06.268700-01",
+    "finalUrl": "https://www.dyson.de/support/journey/spare-details.970145-06.268700-01",
+    "status": 200,
+    "contentType": "text/html;charset=utf-8",
+    "retrievedAt": "2026-10-10T10:53:14.613628+00:00",
+    "sha256": "8775f2a4163ca0af0ff4061aa48d2f9dc9c4de0cc0d88b10f97fd6c5ef994f3e",
+    "bytes": 290692,
+    "brand": "Dyson",
+    "rights": {
+      "internalResearch": "restricted private audit; no blanket copyright licence asserted",
+      "b2cCommercial": "unknown",
+      "mediaRedistribution": "not-permitted-by-this-dataset"
+    }
+  },
+  {
+    "id": "miele-11602420",
+    "url": "https://www.miele.de/product/11602420/bodenstaubsauger-ohne-beutel-boost-cx1-cat-und-dog-powerline-obsidianschwarz",
+    "finalUrl": "https://www.miele.de/product/11602420/bodenstaubsauger-ohne-beutel-boost-cx1-cat-und-dog-powerline-obsidianschwarz",
+    "status": 200,
+    "contentType": "text/html;charset=utf-8",
+    "retrievedAt": "2026-10-10T10:51:16.204940+00:00",
+    "sha256": "0755532379a02ab76569e825d2236690d8b5c9d8593003dc5ac7ed51c1e7a420",
+    "bytes": 685837,
+    "brand": "Miele",
+    "rights": {
+      "internalResearch": "restricted private audit; no blanket copyright licence asserted",
+      "b2cCommercial": "unknown",
+      "mediaRedistribution": "not-permitted-by-this-dataset"
+    }
+  },
+  {
+    "id": "miele-11602450",
+    "url": "https://www.miele.de/product/11602450/bodenstaubsauger-ohne-beutel-boost-cx1-powerline-lotosweiss",
+    "finalUrl": "https://www.miele.de/product/11602450/bodenstaubsauger-ohne-beutel-boost-cx1-powerline-lotosweiss",
+    "status": 200,
+    "contentType": "text/html;charset=utf-8",
+    "retrievedAt": "2026-10-10T10:51:10.126083+00:00",
+    "sha256": "21f04d003bb91f5718ed2bff5812d4299078e151246cb2db011b3fd2fe02fba9",
+    "bytes": 682660,
+    "brand": "Miele",
+    "rights": {
+      "internalResearch": "restricted private audit; no blanket copyright licence asserted",
+      "b2cCommercial": "unknown",
+      "mediaRedistribution": "not-permitted-by-this-dataset"
+    }
+  },
+  {
+    "id": "miele-12031660",
+    "url": "https://www.miele.de/product/12031660/bodenstaubsauger-mit-beutel-complete-c3-silence-lotosweiss",
+    "finalUrl": "https://www.miele.de/product/12031660/bodenstaubsauger-mit-beutel-complete-c3-silence-lotosweiss",
+    "status": 200,
+    "contentType": "text/html;charset=utf-8",
+    "retrievedAt": "2026-10-10T10:51:15.785931+00:00",
+    "sha256": "6e2f442613527509b2c396e3a6b63d6a7e380d0dd61ec1d7d78ee3d9eb7d8264",
+    "bytes": 608741,
+    "brand": "Miele",
+    "rights": {
+      "internalResearch": "restricted private audit; no blanket copyright licence asserted",
+      "b2cCommercial": "unknown",
+      "mediaRedistribution": "not-permitted-by-this-dataset"
+    }
+  },
+  {
+    "id": "miele-12560300",
+    "url": "https://www.miele.de/product/12560300/bodenstaubsauger-mit-beutel-guard-m1-cat-und-dog-obsidianschwarz",
+    "finalUrl": "https://www.miele.de/product/12560300/bodenstaubsauger-mit-beutel-guard-m1-cat-und-dog-obsidianschwarz",
+    "status": 200,
+    "contentType": "text/html;charset=utf-8",
+    "retrievedAt": "2026-10-10T10:51:10.111591+00:00",
+    "sha256": "7fee624d2cc12545727e2d9e6c0f2b3d7ba3c4eea70c46274f5937dc6f133b38",
+    "bytes": 774868,
+    "brand": "Miele",
+    "rights": {
+      "internalResearch": "restricted private audit; no blanket copyright licence asserted",
+      "b2cCommercial": "unknown",
+      "mediaRedistribution": "not-permitted-by-this-dataset"
+    }
+  },
+  {
+    "id": "miele-part-11639210",
+    "url": "https://www.miele.de/product/11639210/hepa-airclean-filter-mit-timestrip-sf-ha-60",
+    "finalUrl": "https://www.miele.de/product/11639210/hepa-airclean-filter-mit-timestrip-sf-ha-60",
+    "status": 200,
+    "contentType": "text/html;charset=utf-8",
+    "retrievedAt": "2026-10-10T10:53:14.996807+00:00",
+    "sha256": "88b62633c9d8d27a5720f4b9b256cd62b0208462b50155014a961413a868621f",
+    "bytes": 471135,
+    "brand": "Miele",
+    "rights": {
+      "internalResearch": "restricted private audit; no blanket copyright licence asserted",
+      "b2cCommercial": "unknown",
+      "mediaRedistribution": "not-permitted-by-this-dataset"
+    }
+  },
+  {
+    "id": "miele-part-11639250",
+    "url": "https://www.miele.de/product/11639250/feinstaubfilter-cx-fsf",
+    "finalUrl": "https://www.miele.de/product/11639250/feinstaubfilter-cx-fsf",
+    "status": 200,
+    "contentType": "text/html;charset=utf-8",
+    "retrievedAt": "2026-10-10T10:53:14.995589+00:00",
+    "sha256": "ec7ca777e192724388cd7011974a4aaab36b1eace960118a968dbaf2343eac3b",
+    "bytes": 455472,
+    "brand": "Miele",
+    "rights": {
+      "internalResearch": "restricted private audit; no blanket copyright licence asserted",
+      "b2cCommercial": "unknown",
+      "mediaRedistribution": "not-permitted-by-this-dataset"
+    }
+  },
+  {
+    "id": "miele-part-12785390",
+    "url": "https://www.miele.de/product/12785390/hepa-airclean-filter-sf-ha-50-1",
+    "finalUrl": "https://www.miele.de/product/12785390/hepa-airclean-filter-sf-ha-50-1",
+    "status": 200,
+    "contentType": "text/html;charset=utf-8",
+    "retrievedAt": "2026-10-10T10:53:14.270012+00:00",
+    "sha256": "18465cb66654cd65bfeb1d99d76402748aac14a5bb0741c2804414c831fdc3ca",
+    "bytes": 502086,
+    "brand": "Miele",
+    "rights": {
+      "internalResearch": "restricted private audit; no blanket copyright licence asserted",
+      "b2cCommercial": "unknown",
+      "mediaRedistribution": "not-permitted-by-this-dataset"
+    }
+  },
+  {
+    "id": "samsung-vs20c85g2tw-wd",
+    "url": "https://www.samsung.com/de/support/model/VS20C85G2TW/WD/",
+    "finalUrl": "https://www.samsung.com/de/support/model/VS20C85G2TW/WD/",
+    "status": 200,
+    "contentType": "text/html; charset=UTF-8",
+    "retrievedAt": "2026-10-10T10:51:32.818482+00:00",
+    "sha256": "1c27f2a14c6d518cebe873e5af50a4f9a94f2020022a4e9fdda1e9db32f3f4ca",
+    "bytes": 362057,
+    "brand": "Samsung",
+    "rights": {
+      "internalResearch": "restricted private audit; no blanket copyright licence asserted",
+      "b2cCommercial": "unknown",
+      "mediaRedistribution": "not-permitted-by-this-dataset"
+    }
+  },
+  {
+    "id": "samsung-vs20c85g4pb-wd",
+    "url": "https://www.samsung.com/de/support/model/VS20C85G4PB/WD/",
+    "finalUrl": "https://www.samsung.com/de/support/model/VS20C85G4PB/WD/",
+    "status": 200,
+    "contentType": "text/html; charset=UTF-8",
+    "retrievedAt": "2026-10-10T10:51:32.763653+00:00",
+    "sha256": "5abb0a4572ad24c90a149f5774695d85db9ba2d46b789b0ba7c924153df600b8",
+    "bytes": 362856,
+    "brand": "Samsung",
+    "rights": {
+      "internalResearch": "restricted private audit; no blanket copyright licence asserted",
+      "b2cCommercial": "unknown",
+      "mediaRedistribution": "not-permitted-by-this-dataset"
+    }
+  },
+  {
+    "id": "samsung-vs20c85g4tb-wd",
+    "url": "https://www.samsung.com/de/support/model/VS20C85G4TB/WD/",
+    "finalUrl": "https://www.samsung.com/de/support/model/VS20C85G4TB/WD/",
+    "status": 200,
+    "contentType": "text/html; charset=UTF-8",
+    "retrievedAt": "2026-10-10T10:51:32.662964+00:00",
+    "sha256": "219d3acd9180490345b6f53a36f984f1b4c74847df72257c28e8cf414511a4cf",
+    "bytes": 362924,
+    "brand": "Samsung",
+    "rights": {
+      "internalResearch": "restricted private audit; no blanket copyright licence asserted",
+      "b2cCommercial": "unknown",
+      "mediaRedistribution": "not-permitted-by-this-dataset"
+    }
+  },
+  {
+    "id": "siemens-bom-vs06a110-03",
+    "url": "https://www.siemens-home.bsh-group.com/de/de/spare-parts-list/VS06A110-03",
+    "finalUrl": "https://www.siemens-home.bsh-group.com/de/de/spare-parts-list/VS06A110-03",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "retrievedAt": "2026-10-10T10:51:14.460358+00:00",
+    "sha256": "d13ac263566f41e1b96d76a31c0223d35e8c3c29b119d1ecd0e856d7b208c651",
+    "bytes": 482235,
+    "brand": "Siemens",
+    "rights": {
+      "internalResearch": "restricted private audit; no blanket copyright licence asserted",
+      "b2cCommercial": "unknown",
+      "mediaRedistribution": "not-permitted-by-this-dataset"
+    }
+  },
+  {
+    "id": "siemens-part-00027606",
+    "url": "https://www.siemens-home.bsh-group.com/de/de/product/00027606",
+    "finalUrl": "https://www.siemens-home.bsh-group.com/de/de/product/00027606",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "retrievedAt": "2026-10-10T10:51:19.680660+00:00",
+    "sha256": "002bfb6c8e526b9ddeb43f8d7b0bd309e17d3bbd13fd16610a2f0c3563bbd45f",
+    "bytes": 631112,
+    "brand": "Siemens",
+    "rights": {
+      "internalResearch": "restricted private audit; no blanket copyright licence asserted",
+      "b2cCommercial": "unknown",
+      "mediaRedistribution": "not-permitted-by-this-dataset"
+    }
+  },
+  {
+    "id": "siemens-vs06a110-03",
+    "url": "https://www.siemens-home.bsh-group.com/de/de/productservice/VS06A110-03",
+    "finalUrl": "https://www.siemens-home.bsh-group.com/de/de/productservice/VS06A110-03",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "retrievedAt": "2026-10-10T10:51:09.309352+00:00",
+    "sha256": "a2d14d86163a8bb3474c8bcbc26afa0ccd70166be65d0eec2ae0784aa8605227",
+    "bytes": 470073,
+    "brand": "Siemens",
+    "rights": {
+      "internalResearch": "restricted private audit; no blanket copyright licence asserted",
+      "b2cCommercial": "unknown",
+      "mediaRedistribution": "not-permitted-by-this-dataset"
+    }
+  },
+  {
+    "id": "siemens-vs06a110-12",
+    "url": "https://www.siemens-home.bsh-group.com/de/de/productservice/VS06A110-12",
+    "finalUrl": "https://www.siemens-home.bsh-group.com/de/de/productservice/VS06A110-12",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "retrievedAt": "2026-10-10T10:51:14.635452+00:00",
+    "sha256": "537329aac4f6b4f01106ef6d9b39164d04e319332de26dbfeeab7f0b85819f38",
+    "bytes": 469701,
+    "brand": "Siemens",
+    "rights": {
+      "internalResearch": "restricted private audit; no blanket copyright licence asserted",
+      "b2cCommercial": "unknown",
+      "mediaRedistribution": "not-permitted-by-this-dataset"
+    }
+  },
+  {
+    "id": "siemens-vsz4g1400-01",
+    "url": "https://www.siemens-home.bsh-group.com/de/de/productservice/VSZ4G1400-01",
+    "finalUrl": "https://www.siemens-home.bsh-group.com/de/de/productservice/VSZ4G1400-01",
+    "status": 200,
+    "contentType": "text/html; charset=utf-8",
+    "retrievedAt": "2026-10-10T10:51:14.604406+00:00",
+    "sha256": "1bba9806648e590ecfd7db0ef17d9d5fedea94898e913646957c99447cef15b7",
+    "bytes": 466638,
+    "brand": "Siemens",
+    "rights": {
+      "internalResearch": "restricted private audit; no blanket copyright licence asserted",
+      "b2cCommercial": "unknown",
+      "mediaRedistribution": "not-permitted-by-this-dataset"
+    }
+  },
+  {
+    "id": "vorwerk-fp7",
+    "url": "https://www.vorwerk.com/de/de/s/shop/kobold-fp7-premium-filtertueten-set-12stk-de",
+    "finalUrl": "https://www.vorwerk.com/de/de/s/shop/kobold-fp7-premium-filtertueten-set-12stk-de",
+    "status": 200,
+    "contentType": "text/html;charset=UTF-8",
+    "retrievedAt": "2026-10-10T10:51:30.405933+00:00",
+    "sha256": "5190da22731e1f3ae7662bcd520cba6f7e48cdad9e81eabd5e65696729340bde",
+    "bytes": 679728,
+    "brand": "Vorwerk",
+    "rights": {
+      "internalResearch": "restricted private audit; no blanket copyright licence asserted",
+      "b2cCommercial": "unknown",
+      "mediaRedistribution": "not-permitted-by-this-dataset"
+    }
+  },
+  {
+    "id": "vorwerk-mf7",
+    "url": "https://www.vorwerk.com/de/de/s/shop/kobold-mf7-motorschutzfilter-de",
+    "finalUrl": "https://www.vorwerk.com/de/de/s/shop/kobold-mf7-motorschutzfilter-de",
+    "status": 200,
+    "contentType": "text/html;charset=UTF-8",
+    "retrievedAt": "2026-10-10T10:51:30.297278+00:00",
+    "sha256": "0f0c7b561cbadcde652615356d325ba45cf167ac97153906d904c54ce5b983b2",
+    "bytes": 367329,
+    "brand": "Vorwerk",
+    "rights": {
+      "internalResearch": "restricted private audit; no blanket copyright licence asserted",
+      "b2cCommercial": "unknown",
+      "mediaRedistribution": "not-permitted-by-this-dataset"
+    }
+  },
+  {
+    "id": "vorwerk-vk200",
+    "url": "https://www.vorwerk.com/de/de/c/home/service/kobold/gebrauchsanleitungen/handstaubsauger",
+    "finalUrl": "https://www.vorwerk.com/de/de/c/home/service/kobold/gebrauchsanleitungen/handstaubsauger",
+    "status": 200,
+    "contentType": "text/html; charset=UTF-8",
+    "retrievedAt": "2026-10-10T10:51:26.507666+00:00",
+    "sha256": "9e560fd6f675e6ddfc31f89087aae2eaef78aba446c48eee7db7bacdbb947e14",
+    "bytes": 366186,
+    "brand": "Vorwerk",
+    "rights": {
+      "internalResearch": "restricted private audit; no blanket copyright licence asserted",
+      "b2cCommercial": "unknown",
+      "mediaRedistribution": "not-permitted-by-this-dataset"
+    }
+  },
+  {
+    "id": "vorwerk-vk7",
+    "url": "https://www.vorwerk.com/de/de/c/home/service/kobold/gebrauchsanleitungen/akku-staubsauger",
+    "finalUrl": "https://www.vorwerk.com/de/de/c/home/service/kobold/gebrauchsanleitungen/akku-staubsauger",
+    "status": 200,
+    "contentType": "text/html; charset=UTF-8",
+    "retrievedAt": "2026-10-10T10:51:26.449183+00:00",
+    "sha256": "291757f41212aa50765bf36f3b71cde47b279a2a6a755e5f81a82b2a75bef4f2",
+    "bytes": 326876,
+    "brand": "Vorwerk",
+    "rights": {
+      "internalResearch": "restricted private audit; no blanket copyright licence asserted",
+      "b2cCommercial": "unknown",
+      "mediaRedistribution": "not-permitted-by-this-dataset"
+    }
+  }
+]

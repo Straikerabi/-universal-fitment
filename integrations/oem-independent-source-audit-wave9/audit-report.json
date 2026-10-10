@@ -1,0 +1,1255 @@
+{
+  "schema": "uf.oem-independent-audit/1",
+  "issue": 96,
+  "baseSha": "3bafbc7fd8c8da5ed6fe3bddc70eacbc0be1e035",
+  "batch": "wave9-new-oem-2026-10-10",
+  "originalArchive": {
+    "status": "VERIFIED_ORIGINAL_BYTES",
+    "required": 33,
+    "independentlyReplayable": 33,
+    "zipDigestVerified": true,
+    "records": [
+      {
+        "id": "aeg-90025855400",
+        "url": "https://shop.aeg.de/search?pnc=90025855400",
+        "finalUrl": "https://shop.aeg.de/search?pnc=90025855400",
+        "observedAt": "2026-10-10T10:51:22.060761+00:00",
+        "sha256": "e308d5023ea4af5c77a0ac2a3d9dd32486cd2309387218ca42cec654b474e840",
+        "rawLocator": "zip-member:aeg-90025855400.html",
+        "rights": {
+          "factualUse": "review_pending",
+          "pageRedistribution": "not_granted",
+          "mediaB2c": "not_granted",
+          "commercialUse": "not_granted"
+        },
+        "status": "independently_replayed_original_bytes",
+        "fields": [
+          {
+            "key": "pnc",
+            "value": "90025855400",
+            "locator": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/h1[1]/text()"
+          },
+          {
+            "key": "pncContext",
+            "value": "90025855400",
+            "locator": "/html[1]/head[1]/meta[3]/@content"
+          },
+          {
+            "key": "documentLocale",
+            "value": "de-DE",
+            "locator": "/html[1]/@lang"
+          }
+        ]
+      },
+      {
+        "id": "aeg-90025855700",
+        "url": "https://shop.aeg.de/search?pnc=90025855700",
+        "finalUrl": "https://shop.aeg.de/search?pnc=90025855700",
+        "observedAt": "2026-10-10T10:51:22.127718+00:00",
+        "sha256": "0dd1b1727cd765f030f4f3ee69e15ff17b8f62b4c8b8554533f3cd9cd40d4339",
+        "rawLocator": "zip-member:aeg-90025855700.html",
+        "rights": {
+          "factualUse": "review_pending",
+          "pageRedistribution": "not_granted",
+          "mediaB2c": "not_granted",
+          "commercialUse": "not_granted"
+        },
+        "status": "independently_replayed_original_bytes",
+        "fields": [
+          {
+            "key": "pnc",
+            "value": "90025855700",
+            "locator": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/h1[1]/text()"
+          },
+          {
+            "key": "pncContext",
+            "value": "90025855700",
+            "locator": "/html[1]/head[1]/meta[3]/@content"
+          },
+          {
+            "key": "documentLocale",
+            "value": "de-DE",
+            "locator": "/html[1]/@lang"
+          }
+        ]
+      },
+      {
+        "id": "aeg-90025856400",
+        "url": "https://shop.aeg.de/search?pnc=90025856400",
+        "finalUrl": "https://shop.aeg.de/search?pnc=90025856400",
+        "observedAt": "2026-10-10T10:51:22.389145+00:00",
+        "sha256": "6efafb296e2df26c93ef7527eca25c6f2eb8ba0737f4244ff2659d93e6a7c7eb",
+        "rawLocator": "zip-member:aeg-90025856400.html",
+        "rights": {
+          "factualUse": "review_pending",
+          "pageRedistribution": "not_granted",
+          "mediaB2c": "not_granted",
+          "commercialUse": "not_granted"
+        },
+        "status": "independently_replayed_original_bytes",
+        "fields": [
+          {
+            "key": "pnc",
+            "value": "90025856400",
+            "locator": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/h1[1]/text()"
+          },
+          {
+            "key": "pncContext",
+            "value": "90025856400",
+            "locator": "/html[1]/head[1]/meta[3]/@content"
+          },
+          {
+            "key": "documentLocale",
+            "value": "de-DE",
+            "locator": "/html[1]/@lang"
+          }
+        ]
+      },
+      {
+        "id": "aeg-90025863800",
+        "url": "https://shop.aeg.de/search?pnc=90025863800",
+        "finalUrl": "https://shop.aeg.de/search?pnc=90025863800",
+        "observedAt": "2026-10-10T10:51:22.620550+00:00",
+        "sha256": "3e904cbd92ec0ae0b38af43d6151497fd51ab1fec20a1f920c32c105ed8244d2",
+        "rawLocator": "zip-member:aeg-90025863800.html",
+        "rights": {
+          "factualUse": "review_pending",
+          "pageRedistribution": "not_granted",
+          "mediaB2c": "not_granted",
+          "commercialUse": "not_granted"
+        },
+        "status": "independently_replayed_original_bytes",
+        "fields": [
+          {
+            "key": "pnc",
+            "value": "90025863800",
+            "locator": "/html[1]/body[1]/main[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/h1[1]/text()"
+          },
+          {
+            "key": "pncContext",
+            "value": "90025863800",
+            "locator": "/html[1]/head[1]/meta[3]/@content"
+          },
+          {
+            "key": "documentLocale",
+            "value": "de-DE",
+            "locator": "/html[1]/@lang"
+          }
+        ]
+      },
+      {
+        "id": "aeg-part-9001677690",
+        "url": "https://shop.aeg.de/staubsauger/staubsauger/filter/afs1w-allergy-plus-s-filter-waschbar-fur-air-max-ultrasilencer/p/9001677690",
+        "finalUrl": "https://shop.aeg.de/staubsauger/staubsauger/filter/afs1w-allergy-plus-s-filter-waschbar-fur-air-max-ultrasilencer/p/9001677690",
+        "observedAt": "2026-10-10T10:53:20.030391+00:00",
+        "sha256": "97ff1d48536e3914b354f97870822ccedcc62e1b3755bfb91a69eeb18b468861",
+        "rawLocator": "zip-member:aeg-part-9001677690.html",
+        "rights": {
+          "factualUse": "review_pending",
+          "pageRedistribution": "not_granted",
+          "mediaB2c": "not_granted",
+          "commercialUse": "not_granted"
+        },
+        "status": "independently_replayed_original_bytes",
+        "fields": [
+          {
+            "key": "articleNumber",
+            "value": "9001677690",
+            "locator": "/html[1]/head[1]/title[1]/text()"
+          },
+          {
+            "key": "documentLocale",
+            "value": "de-DE",
+            "locator": "/html[1]/@lang"
+          }
+        ]
+      },
+      {
+        "id": "aeg-part-9001684746",
+        "url": "https://shop.aeg.de/staubsauger/staubsauger/staubsaugerbeutel/gr201s-s-bag-classic-long-performance-staubsaugerbeutel/p/9001684746",
+        "finalUrl": "https://shop.aeg.de/staubsauger/staubsauger/staubsaugerbeutel/gr201s-s-bag-classic-long-performance-staubsaugerbeutel/p/9001684746",
+        "observedAt": "2026-10-10T10:53:20.197138+00:00",
+        "sha256": "b967f3d60d712402c6bbc460e1ba2336bfa86f4db65d7a9360820b9c740a3736",
+        "rawLocator": "zip-member:aeg-part-9001684746.html",
+        "rights": {
+          "factualUse": "review_pending",
+          "pageRedistribution": "not_granted",
+          "mediaB2c": "not_granted",
+          "commercialUse": "not_granted"
+        },
+        "status": "independently_replayed_original_bytes",
+        "fields": [
+          {
+            "key": "articleNumber",
+            "value": "9001684746",
+            "locator": "/html[1]/head[1]/title[1]/text()"
+          },
+          {
+            "key": "documentLocale",
+            "value": "de-DE",
+            "locator": "/html[1]/@lang"
+          }
+        ]
+      },
+      {
+        "id": "bosch-bgl35mon1-01",
+        "url": "https://www.bosch-home.com/de/de/productservice/BGL35MON1-01",
+        "finalUrl": "https://www.bosch-home.com/de/de/productservice/BGL35MON1-01",
+        "observedAt": "2026-10-10T10:51:36.042761+00:00",
+        "sha256": "0b1049250553fce4f3cd42e8d64b4b7d52ed57328439b6b49822fa84bd87f0e1",
+        "rawLocator": "zip-member:bosch-bgl35mon1-01.html",
+        "rights": {
+          "factualUse": "review_pending",
+          "pageRedistribution": "not_granted",
+          "mediaB2c": "not_granted",
+          "commercialUse": "not_granted"
+        },
+        "status": "independently_replayed_original_bytes",
+        "fields": [
+          {
+            "key": "eNumber",
+            "value": "Service-Seite - Bagged vacuum cleaner | BGL35MON1/01",
+            "locator": "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[1]/div[1]/h1[1]/text()"
+          },
+          {
+            "key": "variantId",
+            "value": "BGL35MON1/01",
+            "locator": "/html[1]/body[1]/script[6]/Flight/1/43/3/content/entrySectionData/variantId"
+          },
+          {
+            "key": "documentLocale",
+            "value": "de-DE",
+            "locator": "/html[1]/@lang"
+          }
+        ]
+      },
+      {
+        "id": "bosch-bgl35mon4-01",
+        "url": "https://www.bosch-home.com/de/de/productservice/BGL35MON4-01",
+        "finalUrl": "https://www.bosch-home.com/de/de/productservice/BGL35MON4-01",
+        "observedAt": "2026-10-10T10:51:36.417927+00:00",
+        "sha256": "eb0ff187d994386ec329a3e4e43fc9d1a4bdca8bea6a28a0914c9139b6f5f593",
+        "rawLocator": "zip-member:bosch-bgl35mon4-01.html",
+        "rights": {
+          "factualUse": "review_pending",
+          "pageRedistribution": "not_granted",
+          "mediaB2c": "not_granted",
+          "commercialUse": "not_granted"
+        },
+        "status": "independently_replayed_original_bytes",
+        "fields": [
+          {
+            "key": "eNumber",
+            "value": "Service-Seite - Bagged vacuum cleaner | BGL35MON4/01",
+            "locator": "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[1]/div[1]/h1[1]/text()"
+          },
+          {
+            "key": "variantId",
+            "value": "BGL35MON4/01",
+            "locator": "/html[1]/body[1]/script[6]/Flight/1/30/3/content/entrySectionData/variantId"
+          },
+          {
+            "key": "documentLocale",
+            "value": "de-DE",
+            "locator": "/html[1]/@lang"
+          }
+        ]
+      },
+      {
+        "id": "dyson-226397-01",
+        "url": "https://www.dyson.de/support/journey/replacement-parts/search.226397-01",
+        "finalUrl": "https://www.dyson.de/support/journey/replacement-parts/search.226397-01",
+        "observedAt": "2026-10-10T10:51:31.321931+00:00",
+        "sha256": "d55460176cd013dc2b11d15a12a6faaa5d3e35e9fc558a0bc2146a61e1d81ec5",
+        "rawLocator": "zip-member:dyson-226397-01.html",
+        "rights": {
+          "factualUse": "review_pending",
+          "pageRedistribution": "not_granted",
+          "mediaB2c": "not_granted",
+          "commercialUse": "not_granted"
+        },
+        "status": "independently_replayed_original_bytes",
+        "fields": [
+          {
+            "key": "deviceSku",
+            "value": "226397-01",
+            "locator": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/ul[1]/li[1]/div[1]/div[1]/a[1]/@href"
+          },
+          {
+            "key": "modelTitle",
+            "value": "Dyson Cyclone V10 Absolute | Ersatzteile und Zubehör | Dyson Dyson",
+            "locator": "/html[1]/head[1]/title[1]/text()"
+          },
+          {
+            "key": "documentLocale",
+            "value": "de-DE",
+            "locator": "/html[1]/@lang"
+          }
+        ]
+      },
+      {
+        "id": "dyson-227312-01",
+        "url": "https://www.dyson.de/support/journey/replacement-parts/search.227312-01",
+        "finalUrl": "https://www.dyson.de/support/journey/replacement-parts/search.227312-01",
+        "observedAt": "2026-10-10T10:51:28.364437+00:00",
+        "sha256": "3c63170fa7d550445827bf35f64edf3559be6dd06e40e682822132a12ecf01c3",
+        "rawLocator": "zip-member:dyson-227312-01.html",
+        "rights": {
+          "factualUse": "review_pending",
+          "pageRedistribution": "not_granted",
+          "mediaB2c": "not_granted",
+          "commercialUse": "not_granted"
+        },
+        "status": "independently_replayed_original_bytes",
+        "fields": [
+          {
+            "key": "deviceSku",
+            "value": "227312-01",
+            "locator": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/ul[1]/li[1]/div[1]/div[1]/a[1]/@href"
+          },
+          {
+            "key": "modelTitle",
+            "value": "Dyson V8 Absolute Pro | Ersatzteile und Zubehör | Dyson Dyson",
+            "locator": "/html[1]/head[1]/title[1]/text()"
+          },
+          {
+            "key": "documentLocale",
+            "value": "de-DE",
+            "locator": "/html[1]/@lang"
+          }
+        ]
+      },
+      {
+        "id": "dyson-268700-01",
+        "url": "https://www.dyson.de/support/journey/replacement-parts/search.268700-01",
+        "finalUrl": "https://www.dyson.de/support/journey/replacement-parts/search.268700-01",
+        "observedAt": "2026-10-10T10:51:30.876508+00:00",
+        "sha256": "0fbee3c5c6d76a22ac50c00c135202be87fe9f9e7abeb843b3a72da830f4bbe2",
+        "rawLocator": "zip-member:dyson-268700-01.html",
+        "rights": {
+          "factualUse": "review_pending",
+          "pageRedistribution": "not_granted",
+          "mediaB2c": "not_granted",
+          "commercialUse": "not_granted"
+        },
+        "status": "independently_replayed_original_bytes",
+        "fields": [
+          {
+            "key": "deviceSku",
+            "value": "268700-01",
+            "locator": "/html[1]/body[1]/main[1]/div[1]/div[2]/div[1]/ul[1]/li[1]/div[1]/div[1]/a[1]/@href"
+          },
+          {
+            "key": "modelTitle",
+            "value": "Dyson V11 Absolute (Generation 2019) Kabelloser Staubsauger Nickel/Blau | Ersatzteile und Zubehör | Dyson Dyson",
+            "locator": "/html[1]/head[1]/title[1]/text()"
+          },
+          {
+            "key": "documentLocale",
+            "value": "de-DE",
+            "locator": "/html[1]/@lang"
+          }
+        ]
+      },
+      {
+        "id": "dyson-part-967834-07",
+        "url": "https://www.dyson.de/support/journey/spare-details.967834-07.227312-01",
+        "finalUrl": "https://www.dyson.de/support/journey/spare-details.967834-07.227312-01",
+        "observedAt": "2026-10-10T10:53:15.542899+00:00",
+        "sha256": "c00339a5192374df5b0276d04330c4e8ec5b482874f2930a8b1becee36933416",
+        "rawLocator": "zip-member:dyson-part-967834-07.html",
+        "rights": {
+          "factualUse": "review_pending",
+          "pageRedistribution": "not_granted",
+          "mediaB2c": "not_granted",
+          "commercialUse": "not_granted"
+        },
+        "status": "independently_replayed_original_bytes",
+        "fields": [
+          {
+            "key": "articleNumber",
+            "value": "967834-07",
+            "locator": "/html[1]/head[1]/meta[3]/@content"
+          },
+          {
+            "key": "documentLocale",
+            "value": "de-DE",
+            "locator": "/html[1]/@lang"
+          }
+        ]
+      },
+      {
+        "id": "dyson-part-969082-01",
+        "url": "https://www.dyson.de/support/journey/replacement-parts/969082-01.226397-01",
+        "finalUrl": "https://www.dyson.de/support/journey/replacement-parts/969082-01.226397-01",
+        "observedAt": "2026-10-10T10:53:21.167756+00:00",
+        "sha256": "b42a2100441479c8ae08ab562dbd8751b86772f6d6e010f37d29c34d57191c04",
+        "rawLocator": "zip-member:dyson-part-969082-01.html",
+        "rights": {
+          "factualUse": "review_pending",
+          "pageRedistribution": "not_granted",
+          "mediaB2c": "not_granted",
+          "commercialUse": "not_granted"
+        },
+        "status": "independently_replayed_original_bytes",
+        "fields": [
+          {
+            "key": "articleNumber",
+            "value": "969082-01",
+            "locator": "/html[1]/head[1]/meta[3]/@content"
+          },
+          {
+            "key": "documentLocale",
+            "value": "de-DE",
+            "locator": "/html[1]/@lang"
+          }
+        ]
+      },
+      {
+        "id": "dyson-part-970145-06",
+        "url": "https://www.dyson.de/support/journey/spare-details.970145-06.268700-01",
+        "finalUrl": "https://www.dyson.de/support/journey/spare-details.970145-06.268700-01",
+        "observedAt": "2026-10-10T10:53:14.613628+00:00",
+        "sha256": "8775f2a4163ca0af0ff4061aa48d2f9dc9c4de0cc0d88b10f97fd6c5ef994f3e",
+        "rawLocator": "zip-member:dyson-part-970145-06.html",
+        "rights": {
+          "factualUse": "review_pending",
+          "pageRedistribution": "not_granted",
+          "mediaB2c": "not_granted",
+          "commercialUse": "not_granted"
+        },
+        "status": "independently_replayed_original_bytes",
+        "fields": [
+          {
+            "key": "articleNumber",
+            "value": "970145-06",
+            "locator": "/html[1]/head[1]/meta[3]/@content"
+          },
+          {
+            "key": "documentLocale",
+            "value": "de-DE",
+            "locator": "/html[1]/@lang"
+          }
+        ]
+      },
+      {
+        "id": "miele-11602420",
+        "url": "https://www.miele.de/product/11602420/bodenstaubsauger-ohne-beutel-boost-cx1-cat-und-dog-powerline-obsidianschwarz",
+        "finalUrl": "https://www.miele.de/product/11602420/bodenstaubsauger-ohne-beutel-boost-cx1-cat-und-dog-powerline-obsidianschwarz",
+        "observedAt": "2026-10-10T10:51:16.204940+00:00",
+        "sha256": "0755532379a02ab76569e825d2236690d8b5c9d8593003dc5ac7ed51c1e7a420",
+        "rawLocator": "zip-member:miele-11602420.html",
+        "rights": {
+          "factualUse": "review_pending",
+          "pageRedistribution": "not_granted",
+          "mediaB2c": "not_granted",
+          "commercialUse": "not_granted"
+        },
+        "status": "independently_replayed_original_bytes",
+        "fields": [
+          {
+            "key": "materialNumber",
+            "value": "11602420",
+            "locator": "/html[1]/body[1]/div[1]/div[2]/div[1]/main[1]/div[1]/div[2]/div[2]/section[1]/div[1]/div[1]/div[1]/details[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/dl[1]/div[2]/dd[1]/text()"
+          },
+          {
+            "key": "model",
+            "value": "Boost CX1 Cat & Dog PowerLine",
+            "locator": "/html[1]/body[1]/div[1]/div[2]/div[1]/main[1]/div[1]/div[2]/div[2]/section[1]/div[1]/div[1]/div[1]/details[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/dl[1]/div[1]/dd[1]/text()"
+          },
+          {
+            "key": "ownHeading",
+            "value": "Boost CX1 Cat & Dog PowerLine Obsidianschwarz",
+            "locator": "/html[1]/body[1]/div[1]/div[2]/div[1]/main[1]/div[1]/div[2]/div[2]/div[2]/div[2]/div[1]/h1[1]/text()"
+          },
+          {
+            "key": "productType",
+            "value": "SNCF0",
+            "locator": "/html[1]/body[1]/div[1]/div[2]/div[1]/main[1]/div[1]/div[2]/div[2]/section[1]/div[1]/div[1]/div[1]/details[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/dl[1]/div[3]/dd[1]/text()"
+          },
+          {
+            "key": "documentLocale",
+            "value": "de-DE",
+            "locator": "/html[1]/@lang"
+          }
+        ]
+      },
+      {
+        "id": "miele-11602450",
+        "url": "https://www.miele.de/product/11602450/bodenstaubsauger-ohne-beutel-boost-cx1-powerline-lotosweiss",
+        "finalUrl": "https://www.miele.de/product/11602450/bodenstaubsauger-ohne-beutel-boost-cx1-powerline-lotosweiss",
+        "observedAt": "2026-10-10T10:51:10.126083+00:00",
+        "sha256": "21f04d003bb91f5718ed2bff5812d4299078e151246cb2db011b3fd2fe02fba9",
+        "rawLocator": "zip-member:miele-11602450.html",
+        "rights": {
+          "factualUse": "review_pending",
+          "pageRedistribution": "not_granted",
+          "mediaB2c": "not_granted",
+          "commercialUse": "not_granted"
+        },
+        "status": "independently_replayed_original_bytes",
+        "fields": [
+          {
+            "key": "materialNumber",
+            "value": "11602450",
+            "locator": "/html[1]/body[1]/div[1]/div[2]/div[1]/main[1]/div[1]/div[2]/div[2]/section[1]/div[1]/div[1]/div[1]/details[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/dl[1]/div[2]/dd[1]/text()"
+          },
+          {
+            "key": "model",
+            "value": "Boost CX1 PowerLine",
+            "locator": "/html[1]/body[1]/div[1]/div[2]/div[1]/main[1]/div[1]/div[2]/div[2]/section[1]/div[1]/div[1]/div[1]/details[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/dl[1]/div[1]/dd[1]/text()"
+          },
+          {
+            "key": "ownHeading",
+            "value": "Boost CX1 PowerLine Lotosweiß",
+            "locator": "/html[1]/body[1]/div[1]/div[2]/div[1]/main[1]/div[1]/div[2]/div[2]/div[2]/div[2]/div[1]/h1[1]/text()"
+          },
+          {
+            "key": "productType",
+            "value": "SNRF0",
+            "locator": "/html[1]/body[1]/div[1]/div[2]/div[1]/main[1]/div[1]/div[2]/div[2]/section[1]/div[1]/div[1]/div[1]/details[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/dl[1]/div[3]/dd[1]/text()"
+          },
+          {
+            "key": "documentLocale",
+            "value": "de-DE",
+            "locator": "/html[1]/@lang"
+          }
+        ]
+      },
+      {
+        "id": "miele-12031660",
+        "url": "https://www.miele.de/product/12031660/bodenstaubsauger-mit-beutel-complete-c3-silence-lotosweiss",
+        "finalUrl": "https://www.miele.de/product/12031660/bodenstaubsauger-mit-beutel-complete-c3-silence-lotosweiss",
+        "observedAt": "2026-10-10T10:51:15.785931+00:00",
+        "sha256": "6e2f442613527509b2c396e3a6b63d6a7e380d0dd61ec1d7d78ee3d9eb7d8264",
+        "rawLocator": "zip-member:miele-12031660.html",
+        "rights": {
+          "factualUse": "review_pending",
+          "pageRedistribution": "not_granted",
+          "mediaB2c": "not_granted",
+          "commercialUse": "not_granted"
+        },
+        "status": "independently_replayed_original_bytes",
+        "fields": [
+          {
+            "key": "materialNumber",
+            "value": "12031660",
+            "locator": "/html[1]/body[1]/div[1]/div[2]/div[1]/main[1]/div[1]/div[2]/div[2]/section[1]/div[1]/div[1]/div[1]/details[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/dl[1]/div[2]/dd[1]/text()"
+          },
+          {
+            "key": "model",
+            "value": "Complete C3 Silence",
+            "locator": "/html[1]/body[1]/div[1]/div[2]/div[1]/main[1]/div[1]/div[2]/div[2]/section[1]/div[1]/div[1]/div[1]/details[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/dl[1]/div[1]/dd[1]/text()"
+          },
+          {
+            "key": "ownHeading",
+            "value": "Complete C3 Silence Lotosweiß",
+            "locator": "/html[1]/body[1]/div[1]/div[2]/div[1]/main[1]/div[1]/div[2]/div[2]/div[2]/div[2]/div[1]/h1[1]/text()"
+          },
+          {
+            "key": "productType",
+            "value": "SGSK5",
+            "locator": "/html[1]/body[1]/div[1]/div[2]/div[1]/main[1]/div[1]/div[2]/div[2]/section[1]/div[1]/div[1]/div[1]/details[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/dl[1]/div[3]/dd[1]/text()"
+          },
+          {
+            "key": "documentLocale",
+            "value": "de-DE",
+            "locator": "/html[1]/@lang"
+          }
+        ]
+      },
+      {
+        "id": "miele-12560300",
+        "url": "https://www.miele.de/product/12560300/bodenstaubsauger-mit-beutel-guard-m1-cat-und-dog-obsidianschwarz",
+        "finalUrl": "https://www.miele.de/product/12560300/bodenstaubsauger-mit-beutel-guard-m1-cat-und-dog-obsidianschwarz",
+        "observedAt": "2026-10-10T10:51:10.111591+00:00",
+        "sha256": "7fee624d2cc12545727e2d9e6c0f2b3d7ba3c4eea70c46274f5937dc6f133b38",
+        "rawLocator": "zip-member:miele-12560300.html",
+        "rights": {
+          "factualUse": "review_pending",
+          "pageRedistribution": "not_granted",
+          "mediaB2c": "not_granted",
+          "commercialUse": "not_granted"
+        },
+        "status": "independently_replayed_original_bytes",
+        "fields": [
+          {
+            "key": "materialNumber",
+            "value": "12560300",
+            "locator": "/html[1]/body[1]/div[1]/div[2]/div[1]/main[1]/div[1]/div[2]/div[2]/section[1]/div[1]/div[1]/div[1]/details[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/dl[1]/div[2]/dd[1]/text()"
+          },
+          {
+            "key": "model",
+            "value": "Guard M1 Cat & Dog",
+            "locator": "/html[1]/body[1]/div[1]/div[2]/div[1]/main[1]/div[1]/div[2]/div[2]/section[1]/div[1]/div[1]/div[1]/details[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/dl[1]/div[1]/dd[1]/text()"
+          },
+          {
+            "key": "ownHeading",
+            "value": "Guard M1 Cat & Dog Obsidianschwarz",
+            "locator": "/html[1]/body[1]/div[1]/div[2]/div[1]/main[1]/div[1]/div[2]/div[2]/div[2]/div[2]/div[1]/h1[1]/text()"
+          },
+          {
+            "key": "productType",
+            "value": "SVZF0",
+            "locator": "/html[1]/body[1]/div[1]/div[2]/div[1]/main[1]/div[1]/div[2]/div[2]/section[1]/div[1]/div[1]/div[1]/details[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/dl[1]/div[3]/dd[1]/text()"
+          },
+          {
+            "key": "documentLocale",
+            "value": "de-DE",
+            "locator": "/html[1]/@lang"
+          }
+        ]
+      },
+      {
+        "id": "miele-part-11639210",
+        "url": "https://www.miele.de/product/11639210/hepa-airclean-filter-mit-timestrip-sf-ha-60",
+        "finalUrl": "https://www.miele.de/product/11639210/hepa-airclean-filter-mit-timestrip-sf-ha-60",
+        "observedAt": "2026-10-10T10:53:14.996807+00:00",
+        "sha256": "88b62633c9d8d27a5720f4b9b256cd62b0208462b50155014a961413a868621f",
+        "rawLocator": "zip-member:miele-part-11639210.html",
+        "rights": {
+          "factualUse": "review_pending",
+          "pageRedistribution": "not_granted",
+          "mediaB2c": "not_granted",
+          "commercialUse": "not_granted"
+        },
+        "status": "independently_replayed_original_bytes",
+        "fields": [
+          {
+            "key": "materialNumber",
+            "value": "11639210",
+            "locator": "/html[1]/body[1]/div[1]/div[2]/div[1]/main[1]/div[1]/div[2]/div[2]/section[1]/div[1]/div[1]/div[1]/details[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/dl[1]/div[2]/dd[1]/text()"
+          },
+          {
+            "key": "model",
+            "value": "SF-HA 60",
+            "locator": "/html[1]/body[1]/div[1]/div[2]/div[1]/main[1]/div[1]/div[2]/div[2]/section[1]/div[1]/div[1]/div[1]/details[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/dl[1]/div[1]/dd[1]/text()"
+          },
+          {
+            "key": "ownHeading",
+            "value": "HEPA AirClean Filter mit timestrip®",
+            "locator": "/html[1]/body[1]/div[1]/div[2]/div[1]/main[1]/div[1]/div[2]/div[2]/div[2]/div[2]/div[1]/h1[1]/text()"
+          },
+          {
+            "key": "documentLocale",
+            "value": "de-DE",
+            "locator": "/html[1]/@lang"
+          }
+        ]
+      },
+      {
+        "id": "miele-part-11639250",
+        "url": "https://www.miele.de/product/11639250/feinstaubfilter-cx-fsf",
+        "finalUrl": "https://www.miele.de/product/11639250/feinstaubfilter-cx-fsf",
+        "observedAt": "2026-10-10T10:53:14.995589+00:00",
+        "sha256": "ec7ca777e192724388cd7011974a4aaab36b1eace960118a968dbaf2343eac3b",
+        "rawLocator": "zip-member:miele-part-11639250.html",
+        "rights": {
+          "factualUse": "review_pending",
+          "pageRedistribution": "not_granted",
+          "mediaB2c": "not_granted",
+          "commercialUse": "not_granted"
+        },
+        "status": "independently_replayed_original_bytes",
+        "fields": [
+          {
+            "key": "materialNumber",
+            "value": "11639250",
+            "locator": "/html[1]/body[1]/div[1]/div[2]/div[1]/main[1]/div[1]/div[2]/div[2]/section[1]/div[1]/div[1]/div[1]/details[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/dl[1]/div[2]/dd[1]/text()"
+          },
+          {
+            "key": "model",
+            "value": "CX FSF",
+            "locator": "/html[1]/body[1]/div[1]/div[2]/div[1]/main[1]/div[1]/div[2]/div[2]/section[1]/div[1]/div[1]/div[1]/details[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/dl[1]/div[1]/dd[1]/text()"
+          },
+          {
+            "key": "ownHeading",
+            "value": "Feinstaubfilter",
+            "locator": "/html[1]/body[1]/div[1]/div[2]/div[1]/main[1]/div[1]/div[2]/div[2]/div[2]/div[2]/div[1]/h1[1]/text()"
+          },
+          {
+            "key": "documentLocale",
+            "value": "de-DE",
+            "locator": "/html[1]/@lang"
+          }
+        ]
+      },
+      {
+        "id": "miele-part-12785390",
+        "url": "https://www.miele.de/product/12785390/hepa-airclean-filter-sf-ha-50-1",
+        "finalUrl": "https://www.miele.de/product/12785390/hepa-airclean-filter-sf-ha-50-1",
+        "observedAt": "2026-10-10T10:53:14.270012+00:00",
+        "sha256": "18465cb66654cd65bfeb1d99d76402748aac14a5bb0741c2804414c831fdc3ca",
+        "rawLocator": "zip-member:miele-part-12785390.html",
+        "rights": {
+          "factualUse": "review_pending",
+          "pageRedistribution": "not_granted",
+          "mediaB2c": "not_granted",
+          "commercialUse": "not_granted"
+        },
+        "status": "independently_replayed_original_bytes",
+        "fields": [
+          {
+            "key": "materialNumber",
+            "value": "12785390",
+            "locator": "/html[1]/body[1]/div[1]/div[2]/div[1]/main[1]/div[1]/div[2]/div[2]/section[1]/div[1]/div[1]/div[1]/details[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/dl[1]/div[2]/dd[1]/text()"
+          },
+          {
+            "key": "model",
+            "value": "SF-HA 50-1",
+            "locator": "/html[1]/body[1]/div[1]/div[2]/div[1]/main[1]/div[1]/div[2]/div[2]/section[1]/div[1]/div[1]/div[1]/details[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/dl[1]/div[1]/dd[1]/text()"
+          },
+          {
+            "key": "ownHeading",
+            "value": "HEPA AirClean Filter",
+            "locator": "/html[1]/body[1]/div[1]/div[2]/div[1]/main[1]/div[1]/div[2]/div[2]/div[2]/div[2]/div[1]/h1[1]/text()"
+          },
+          {
+            "key": "documentLocale",
+            "value": "de-DE",
+            "locator": "/html[1]/@lang"
+          }
+        ]
+      },
+      {
+        "id": "samsung-vs20c85g2tw-wd",
+        "url": "https://www.samsung.com/de/support/model/VS20C85G2TW/WD/",
+        "finalUrl": "https://www.samsung.com/de/support/model/VS20C85G2TW/WD/",
+        "observedAt": "2026-10-10T10:51:32.818482+00:00",
+        "sha256": "1c27f2a14c6d518cebe873e5af50a4f9a94f2020022a4e9fdda1e9db32f3f4ca",
+        "rawLocator": "zip-member:samsung-vs20c85g2tw-wd.html",
+        "rights": {
+          "factualUse": "review_pending",
+          "pageRedistribution": "not_granted",
+          "mediaB2c": "not_granted",
+          "commercialUse": "not_granted"
+        },
+        "status": "independently_replayed_original_bytes",
+        "fields": [
+          {
+            "key": "modelCode",
+            "value": "VS20C85G2TW/WD",
+            "locator": "/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/div[3]/section[1]/ul[1]/li[2]/text()"
+          },
+          {
+            "key": "siteCode",
+            "value": "de",
+            "locator": "/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/div[3]/section[1]/ul[1]/li[1]/text()"
+          },
+          {
+            "key": "documentLocale",
+            "value": "de-DE",
+            "locator": "/html[1]/@lang"
+          }
+        ]
+      },
+      {
+        "id": "samsung-vs20c85g4pb-wd",
+        "url": "https://www.samsung.com/de/support/model/VS20C85G4PB/WD/",
+        "finalUrl": "https://www.samsung.com/de/support/model/VS20C85G4PB/WD/",
+        "observedAt": "2026-10-10T10:51:32.763653+00:00",
+        "sha256": "5abb0a4572ad24c90a149f5774695d85db9ba2d46b789b0ba7c924153df600b8",
+        "rawLocator": "zip-member:samsung-vs20c85g4pb-wd.html",
+        "rights": {
+          "factualUse": "review_pending",
+          "pageRedistribution": "not_granted",
+          "mediaB2c": "not_granted",
+          "commercialUse": "not_granted"
+        },
+        "status": "independently_replayed_original_bytes",
+        "fields": [
+          {
+            "key": "modelCode",
+            "value": "VS20C85G4PB/WD",
+            "locator": "/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/div[3]/section[1]/ul[1]/li[2]/text()"
+          },
+          {
+            "key": "siteCode",
+            "value": "de",
+            "locator": "/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/div[3]/section[1]/ul[1]/li[1]/text()"
+          },
+          {
+            "key": "documentLocale",
+            "value": "de-DE",
+            "locator": "/html[1]/@lang"
+          }
+        ]
+      },
+      {
+        "id": "samsung-vs20c85g4tb-wd",
+        "url": "https://www.samsung.com/de/support/model/VS20C85G4TB/WD/",
+        "finalUrl": "https://www.samsung.com/de/support/model/VS20C85G4TB/WD/",
+        "observedAt": "2026-10-10T10:51:32.662964+00:00",
+        "sha256": "219d3acd9180490345b6f53a36f984f1b4c74847df72257c28e8cf414511a4cf",
+        "rawLocator": "zip-member:samsung-vs20c85g4tb-wd.html",
+        "rights": {
+          "factualUse": "review_pending",
+          "pageRedistribution": "not_granted",
+          "mediaB2c": "not_granted",
+          "commercialUse": "not_granted"
+        },
+        "status": "independently_replayed_original_bytes",
+        "fields": [
+          {
+            "key": "modelCode",
+            "value": "VS20C85G4TB/WD",
+            "locator": "/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/div[3]/section[1]/ul[1]/li[2]/text()"
+          },
+          {
+            "key": "siteCode",
+            "value": "de",
+            "locator": "/html[1]/body[1]/div[1]/div[3]/div[1]/div[1]/div[3]/section[1]/ul[1]/li[1]/text()"
+          },
+          {
+            "key": "documentLocale",
+            "value": "de-DE",
+            "locator": "/html[1]/@lang"
+          }
+        ]
+      },
+      {
+        "id": "siemens-bom-vs06a110-03",
+        "url": "https://www.siemens-home.bsh-group.com/de/de/spare-parts-list/VS06A110-03",
+        "finalUrl": "https://www.siemens-home.bsh-group.com/de/de/spare-parts-list/VS06A110-03",
+        "observedAt": "2026-10-10T10:51:14.460358+00:00",
+        "sha256": "d13ac263566f41e1b96d76a31c0223d35e8c3c29b119d1ecd0e856d7b208c651",
+        "rawLocator": "zip-member:siemens-bom-vs06a110-03.html",
+        "rights": {
+          "factualUse": "review_pending",
+          "pageRedistribution": "not_granted",
+          "mediaB2c": "not_granted",
+          "commercialUse": "not_granted"
+        },
+        "status": "independently_replayed_original_bytes",
+        "fields": [
+          {
+            "key": "eNumber",
+            "value": "Ersatzteile - Staubsauger mit Beutel | VS06A110/03",
+            "locator": "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[1]/div[3]/div[1]/h1[1]/text()"
+          },
+          {
+            "key": "variantId",
+            "value": "VS06A110/03",
+            "locator": "/html[1]/body[1]/script[9]/Flight/1/47/3/content/variantId"
+          },
+          {
+            "key": "documentLocale",
+            "value": "de-DE",
+            "locator": "/html[1]/@lang"
+          }
+        ]
+      },
+      {
+        "id": "siemens-part-00027606",
+        "url": "https://www.siemens-home.bsh-group.com/de/de/product/00027606",
+        "finalUrl": "https://www.siemens-home.bsh-group.com/de/de/product/00027606",
+        "observedAt": "2026-10-10T10:51:19.680660+00:00",
+        "sha256": "002bfb6c8e526b9ddeb43f8d7b0bd309e17d3bbd13fd16610a2f0c3563bbd45f",
+        "rawLocator": "zip-member:siemens-part-00027606.html",
+        "rights": {
+          "factualUse": "review_pending",
+          "pageRedistribution": "not_granted",
+          "mediaB2c": "not_granted",
+          "commercialUse": "not_granted"
+        },
+        "status": "independently_replayed_original_bytes",
+        "fields": [
+          {
+            "key": "articleNumber",
+            "value": "00027606",
+            "locator": "/html[1]/body[1]/main[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/h1[1]/text()"
+          },
+          {
+            "key": "documentLocale",
+            "value": "de-DE",
+            "locator": "/html[1]/@lang"
+          }
+        ]
+      },
+      {
+        "id": "siemens-vs06a110-03",
+        "url": "https://www.siemens-home.bsh-group.com/de/de/productservice/VS06A110-03",
+        "finalUrl": "https://www.siemens-home.bsh-group.com/de/de/productservice/VS06A110-03",
+        "observedAt": "2026-10-10T10:51:09.309352+00:00",
+        "sha256": "a2d14d86163a8bb3474c8bcbc26afa0ccd70166be65d0eec2ae0784aa8605227",
+        "rawLocator": "zip-member:siemens-vs06a110-03.html",
+        "rights": {
+          "factualUse": "review_pending",
+          "pageRedistribution": "not_granted",
+          "mediaB2c": "not_granted",
+          "commercialUse": "not_granted"
+        },
+        "status": "independently_replayed_original_bytes",
+        "fields": [
+          {
+            "key": "eNumber",
+            "value": "Service-Seite - Staubsauger mit Beutel | VS06A110/03",
+            "locator": "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[1]/div[1]/h1[1]/text()"
+          },
+          {
+            "key": "variantId",
+            "value": "VS06A110/03",
+            "locator": "/html[1]/body[1]/script[8]/Flight/1/30/3/content/entrySectionData/variantId"
+          },
+          {
+            "key": "documentLocale",
+            "value": "de-DE",
+            "locator": "/html[1]/@lang"
+          }
+        ]
+      },
+      {
+        "id": "siemens-vs06a110-12",
+        "url": "https://www.siemens-home.bsh-group.com/de/de/productservice/VS06A110-12",
+        "finalUrl": "https://www.siemens-home.bsh-group.com/de/de/productservice/VS06A110-12",
+        "observedAt": "2026-10-10T10:51:14.635452+00:00",
+        "sha256": "537329aac4f6b4f01106ef6d9b39164d04e319332de26dbfeeab7f0b85819f38",
+        "rawLocator": "zip-member:siemens-vs06a110-12.html",
+        "rights": {
+          "factualUse": "review_pending",
+          "pageRedistribution": "not_granted",
+          "mediaB2c": "not_granted",
+          "commercialUse": "not_granted"
+        },
+        "status": "independently_replayed_original_bytes",
+        "fields": [
+          {
+            "key": "eNumber",
+            "value": "Service-Seite - Staubsauger mit Beutel | VS06A110/12",
+            "locator": "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[1]/div[1]/h1[1]/text()"
+          },
+          {
+            "key": "variantId",
+            "value": "VS06A110/12",
+            "locator": "/html[1]/body[1]/script[8]/Flight/1/21/3/content/entrySectionData/variantId"
+          },
+          {
+            "key": "documentLocale",
+            "value": "de-DE",
+            "locator": "/html[1]/@lang"
+          }
+        ]
+      },
+      {
+        "id": "siemens-vsz4g1400-01",
+        "url": "https://www.siemens-home.bsh-group.com/de/de/productservice/VSZ4G1400-01",
+        "finalUrl": "https://www.siemens-home.bsh-group.com/de/de/productservice/VSZ4G1400-01",
+        "observedAt": "2026-10-10T10:51:14.604406+00:00",
+        "sha256": "1bba9806648e590ecfd7db0ef17d9d5fedea94898e913646957c99447cef15b7",
+        "rawLocator": "zip-member:siemens-vsz4g1400-01.html",
+        "rights": {
+          "factualUse": "review_pending",
+          "pageRedistribution": "not_granted",
+          "mediaB2c": "not_granted",
+          "commercialUse": "not_granted"
+        },
+        "status": "independently_replayed_original_bytes",
+        "fields": [
+          {
+            "key": "eNumber",
+            "value": "Service-Seite - Bagged vacuum cleaner | VSZ4G1400/01",
+            "locator": "/html[1]/body[1]/div[2]/main[1]/div[1]/div[1]/div[1]/div[1]/h1[1]/text()"
+          },
+          {
+            "key": "variantId",
+            "value": "VSZ4G1400/01",
+            "locator": "/html[1]/body[1]/script[8]/Flight/1/43/3/content/entrySectionData/variantId"
+          },
+          {
+            "key": "documentLocale",
+            "value": "de-DE",
+            "locator": "/html[1]/@lang"
+          }
+        ]
+      },
+      {
+        "id": "vorwerk-fp7",
+        "url": "https://www.vorwerk.com/de/de/s/shop/kobold-fp7-premium-filtertueten-set-12stk-de",
+        "finalUrl": "https://www.vorwerk.com/de/de/s/shop/kobold-fp7-premium-filtertueten-set-12stk-de",
+        "observedAt": "2026-10-10T10:51:30.405933+00:00",
+        "sha256": "5190da22731e1f3ae7662bcd520cba6f7e48cdad9e81eabd5e65696729340bde",
+        "rawLocator": "zip-member:vorwerk-fp7.html",
+        "rights": {
+          "factualUse": "review_pending",
+          "pageRedistribution": "not_granted",
+          "mediaB2c": "not_granted",
+          "commercialUse": "not_granted"
+        },
+        "status": "independently_replayed_original_bytes",
+        "fields": [
+          {
+            "key": "partDesignation",
+            "value": "FP7",
+            "locator": "/html[1]/body[1]/main[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[1]/div[2]/h1[1]/text()"
+          },
+          {
+            "key": "documentLocale",
+            "value": "de",
+            "locator": "/html[1]/@lang"
+          }
+        ]
+      },
+      {
+        "id": "vorwerk-mf7",
+        "url": "https://www.vorwerk.com/de/de/s/shop/kobold-mf7-motorschutzfilter-de",
+        "finalUrl": "https://www.vorwerk.com/de/de/s/shop/kobold-mf7-motorschutzfilter-de",
+        "observedAt": "2026-10-10T10:51:30.297278+00:00",
+        "sha256": "0f0c7b561cbadcde652615356d325ba45cf167ac97153906d904c54ce5b983b2",
+        "rawLocator": "zip-member:vorwerk-mf7.html",
+        "rights": {
+          "factualUse": "review_pending",
+          "pageRedistribution": "not_granted",
+          "mediaB2c": "not_granted",
+          "commercialUse": "not_granted"
+        },
+        "status": "independently_replayed_original_bytes",
+        "fields": [
+          {
+            "key": "partDesignation",
+            "value": "MF7",
+            "locator": "/html[1]/body[1]/main[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[1]/div[2]/h1[1]/text()"
+          },
+          {
+            "key": "documentLocale",
+            "value": "de",
+            "locator": "/html[1]/@lang"
+          }
+        ]
+      },
+      {
+        "id": "vorwerk-vk200",
+        "url": "https://www.vorwerk.com/de/de/c/home/service/kobold/gebrauchsanleitungen/handstaubsauger",
+        "finalUrl": "https://www.vorwerk.com/de/de/c/home/service/kobold/gebrauchsanleitungen/handstaubsauger",
+        "observedAt": "2026-10-10T10:51:26.507666+00:00",
+        "sha256": "9e560fd6f675e6ddfc31f89087aae2eaef78aba446c48eee7db7bacdbb947e14",
+        "rawLocator": "zip-member:vorwerk-vk200.html",
+        "rights": {
+          "factualUse": "review_pending",
+          "pageRedistribution": "not_granted",
+          "mediaB2c": "not_granted",
+          "commercialUse": "not_granted"
+        },
+        "status": "independently_replayed_original_bytes",
+        "fields": [
+          {
+            "key": "manufacturerModel",
+            "value": "VK200",
+            "locator": "/html[1]/body[1]/main[1]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[1]/section[1]/div[1]/div[1]/section[1]/div[2]/a[1]/@href"
+          },
+          {
+            "key": "documentLocale",
+            "value": "de",
+            "locator": "/html[1]/@lang"
+          }
+        ]
+      },
+      {
+        "id": "vorwerk-vk7",
+        "url": "https://www.vorwerk.com/de/de/c/home/service/kobold/gebrauchsanleitungen/akku-staubsauger",
+        "finalUrl": "https://www.vorwerk.com/de/de/c/home/service/kobold/gebrauchsanleitungen/akku-staubsauger",
+        "observedAt": "2026-10-10T10:51:26.449183+00:00",
+        "sha256": "291757f41212aa50765bf36f3b71cde47b279a2a6a755e5f81a82b2a75bef4f2",
+        "rawLocator": "zip-member:vorwerk-vk7.html",
+        "rights": {
+          "factualUse": "review_pending",
+          "pageRedistribution": "not_granted",
+          "mediaB2c": "not_granted",
+          "commercialUse": "not_granted"
+        },
+        "status": "independently_replayed_original_bytes",
+        "fields": [
+          {
+            "key": "manufacturerModel",
+            "value": "VK7",
+            "locator": "/html[1]/body[1]/main[1]/div[1]/div[1]/div[1]/section[2]/div[1]/div[1]/div[1]/section[1]/div[1]/div[1]/section[1]/div[2]/a[1]/@href"
+          },
+          {
+            "key": "documentLocale",
+            "value": "de",
+            "locator": "/html[1]/@lang"
+          }
+        ]
+      }
+    ],
+    "migrationAllowed": false,
+    "reason": "33/33 original digests, receipts and own identity locators replayed. Not a licence, fitment or migration approval."
+  },
+  "newObservations": [
+    {
+      "id": "miele-11602400",
+      "brand": "Miele",
+      "reference": "11602400",
+      "market": "DE",
+      "fullExactIdentity": true,
+      "url": "https://www.miele.de/product/11602400/bodenstaubsauger-ohne-beutel-boost-cx1-parquet-powerline-lotosweiss",
+      "observedAt": "2026-10-10T18:37:04.211657+00:00",
+      "finalUrl": "https://www.miele.de/product/11602400/bodenstaubsauger-ohne-beutel-boost-cx1-parquet-powerline-lotosweiss",
+      "sha256": "c445ed354d7ce06bed005747197ed1f2601e17483974a1cab7779a9ac6ef05b4",
+      "rawLocator": "miele-11602400.html",
+      "status": "independently_verified_actual_bytes",
+      "fields": [
+        {
+          "key": "materialNumber",
+          "value": "11602400",
+          "locator": "/html[1]/body[1]/div[1]/div[2]/div[1]/main[1]/div[1]/div[2]/div[2]/section[1]/div[1]/div[1]/div[1]/details[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/dl[1]/div[2]/dd[1]/text()"
+        },
+        {
+          "key": "model",
+          "value": "Boost CX1 Parquet PowerLine",
+          "locator": "/html[1]/body[1]/div[1]/div[2]/div[1]/main[1]/div[1]/div[2]/div[2]/section[1]/div[1]/div[1]/div[1]/details[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/dl[1]/div[1]/dd[1]/text()"
+        },
+        {
+          "key": "ownHeading",
+          "value": "Boost CX1 Parquet PowerLine Lotosweiß",
+          "locator": "/html[1]/body[1]/div[1]/div[2]/div[1]/main[1]/div[1]/div[2]/div[2]/div[2]/div[2]/div[1]/h1[1]/text()"
+        },
+        {
+          "key": "productType",
+          "value": "SNCF0",
+          "locator": "/html[1]/body[1]/div[1]/div[2]/div[1]/main[1]/div[1]/div[2]/div[2]/section[1]/div[1]/div[1]/div[1]/details[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/dl[1]/div[3]/dd[1]/text()"
+        },
+        {
+          "key": "documentLocale",
+          "value": "de-DE",
+          "locator": "/html[1]/@lang"
+        },
+        {
+          "key": "dustContainerLitres",
+          "value": "1",
+          "locator": "/html[1]/body[1]/div[1]/div[2]/div[1]/main[1]/div[1]/div[2]/div[2]/section[1]/div[1]/div[1]/div[1]/details[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[6]/dl[1]/div[2]/dd[1]/text()"
+        }
+      ],
+      "rights": {
+        "factualUse": "review_pending",
+        "pageRedistribution": "not_granted",
+        "mediaB2c": "not_granted",
+        "commercialUse": "not_granted"
+      },
+      "fullExactIdentityVerified": true,
+      "physicalFitApproved": false,
+      "missing": [
+        "serial-range",
+        "connectors",
+        "installation-proof",
+        "reuse-permission"
+      ]
+    },
+    {
+      "id": "bosch-bgl75x1prq",
+      "brand": "Bosch",
+      "reference": "BGL75X1PRQ",
+      "market": "DE",
+      "fullExactIdentity": false,
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGL75X1PRQ",
+      "observedAt": "2026-10-10T18:37:12.124957+00:00",
+      "finalUrl": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGL75X1PRQ",
+      "sha256": "3b5609010ea5edb0e448785f95b14c719d088ad5389f7ccb8018a2b886aebf3f",
+      "rawLocator": "bosch-bgl75x1prq.html",
+      "status": "independently_verified_actual_bytes",
+      "fields": [
+        {
+          "key": "productCode",
+          "value": "BGL75X1PRQ",
+          "locator": "/html[1]/body[1]/script[19]/Flight/1/65/3/product/productCode"
+        },
+        {
+          "key": "ownHeadingReference",
+          "value": "BGL75X1PRQ",
+          "locator": "/html[1]/body[1]/main[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/h1[1]/text()"
+        },
+        {
+          "key": "documentLocale",
+          "value": "de-DE",
+          "locator": "/html[1]/@lang"
+        }
+      ],
+      "rights": {
+        "factualUse": "review_pending",
+        "pageRedistribution": "not_granted",
+        "mediaB2c": "not_granted",
+        "commercialUse": "not_granted"
+      },
+      "fullExactIdentityVerified": false,
+      "physicalFitApproved": false,
+      "missing": [
+        "serial-range",
+        "connectors",
+        "installation-proof",
+        "reuse-permission",
+        "E-Nr-/xx-revision: product page does not establish a service revision"
+      ]
+    },
+    {
+      "id": "hoover-39401035",
+      "brand": "Hoover",
+      "reference": "HF202P 011",
+      "market": "DE",
+      "fullExactIdentity": true,
+      "url": "https://www.hoover-home.com/de_DE/akkusauger/39401035/hf202p-011/",
+      "observedAt": "2026-10-10T18:37:17.270477+00:00",
+      "finalUrl": "https://www.hoover-home.com/de_DE/akkusauger/39401035/hf202p-011/",
+      "sha256": "8ff7c4ac5e02cf5d9aae33fbf49138230cb6bc059be8e6a91ad06614efa32efb",
+      "rawLocator": "hoover-39401035.html",
+      "status": "independently_verified_actual_bytes",
+      "fields": [
+        {
+          "key": "manufacturerModel",
+          "value": "HF202P 011",
+          "locator": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/main[1]/section[3]/div[1]/div[2]/div[1]/div[1]/div[1]/ul[1]/li[1]/span[2]/text()"
+        },
+        {
+          "key": "sku",
+          "value": "39401035",
+          "locator": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/main[1]/section[3]/div[1]/div[2]/div[1]/div[1]/div[1]/ul[1]/li[2]/span[2]/text()"
+        },
+        {
+          "key": "documentLocale",
+          "value": "de-DE",
+          "locator": "/html[1]/@lang"
+        },
+        {
+          "key": "ratedPowerWatts",
+          "value": "165",
+          "locator": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/main[1]/section[3]/div[1]/div[2]/div[1]/div[2]/div[1]/ul[1]/li[7]/span[2]/text()"
+        },
+        {
+          "key": "voltageVolts",
+          "value": "14.4",
+          "locator": "/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/main[1]/section[3]/div[1]/div[2]/div[1]/div[2]/div[1]/ul[1]/li[8]/span[2]/text()"
+        }
+      ],
+      "rights": {
+        "factualUse": "review_pending",
+        "pageRedistribution": "not_granted",
+        "mediaB2c": "not_granted",
+        "commercialUse": "not_granted"
+      },
+      "fullExactIdentityVerified": true,
+      "physicalFitApproved": false,
+      "missing": [
+        "serial-range",
+        "connectors",
+        "installation-proof",
+        "reuse-permission"
+      ]
+    }
+  ],
+  "counts": {
+    "originalSourcesIndependentlyReplayable": 33,
+    "newPageObservations": 3,
+    "fullExactIdentity": 2,
+    "individualFieldsWithOemLocator": 14,
+    "unverified": 0,
+    "rightsGranted": 0,
+    "approvedRealFits": 0
+  },
+  "legacyWave7MigrationAllowed": false,
+  "launchApproved": false,
+  "blockers": [
+    "platform reuse rights not granted",
+    "Owner #85 integration and combined regression outstanding",
+    "no physical-fit or serial/connector proof",
+    "historical Wave3 56 missing sources not resolved"
+  ],
+  "caveat": "Reproducible second code-path byte audit, not an external human OEM certification. Historical receipt times/final URLs are archived claims; live requests are a separate batch."
+}

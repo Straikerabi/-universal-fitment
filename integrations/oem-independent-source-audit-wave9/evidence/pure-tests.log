@@ -1,0 +1,45 @@
+test_01_original_manifest_is_exact_pinned_33 (test_audit.PureAuditTests.test_01_original_manifest_is_exact_pinned_33) ... ok
+test_02_no_bytes_no_archive_verification (test_audit.PureAuditTests.test_02_no_bytes_no_archive_verification) ... ok
+test_03_missing_archive_stays_zero (test_audit.PureAuditTests.test_03_missing_archive_stays_zero) ... ok
+test_04_fabricated_archive_cannot_supply_original_bytes (test_audit.PureAuditTests.test_04_fabricated_archive_cannot_supply_original_bytes) ... ok
+test_05_archive_checksum_mismatch_fail_closed (test_audit.PureAuditTests.test_05_archive_checksum_mismatch_fail_closed) ... ok
+test_06_wrong_material_not_family_match (test_audit.PureAuditTests.test_06_wrong_material_not_family_match) ... ok
+test_07_sibling_heading_not_own_product (test_audit.PureAuditTests.test_07_sibling_heading_not_own_product) ... ok
+test_08_swapped_bsh_revision (test_audit.PureAuditTests.test_08_swapped_bsh_revision) ... ok
+test_09_wrong_bom_revision_even_with_heading (test_audit.PureAuditTests.test_09_wrong_bom_revision_even_with_heading) ... ok
+test_10_samsung_market_suffix_preserved (test_audit.PureAuditTests.test_10_samsung_market_suffix_preserved) ... ok
+test_11_conflicting_responsive_siblings_rejected (test_audit.PureAuditTests.test_11_conflicting_responsive_siblings_rejected) ... ok
+test_12_dyson_wrong_part_number (test_audit.PureAuditTests.test_12_dyson_wrong_part_number) ... ok
+test_13_dyson_wrong_device_sku (test_audit.PureAuditTests.test_13_dyson_wrong_device_sku) ... ok
+test_14_vorwerk_recommendation_not_manual_identity (test_audit.PureAuditTests.test_14_vorwerk_recommendation_not_manual_identity) ... ok
+test_15_aeg_complete_pnc_not_short_index (test_audit.PureAuditTests.test_15_aeg_complete_pnc_not_short_index) ... ok
+test_16_official_url_cannot_redirect_to_third_party (test_audit.PureAuditTests.test_16_official_url_cannot_redirect_to_third_party) ... ok
+test_17_same_oem_redirect_to_sibling_still_rejected (test_audit.PureAuditTests.test_17_same_oem_redirect_to_sibling_still_rejected) ... ok
+test_18_altered_checksum_rejected (test_audit.PureAuditTests.test_18_altered_checksum_rejected) ... ok
+test_19_hash_only_is_not_content (test_audit.PureAuditTests.test_19_hash_only_is_not_content) ... ok
+test_20_unavailable_source_is_blocked_not_pass (test_audit.PureAuditTests.test_20_unavailable_source_is_blocked_not_pass) ... ok
+test_21_license_escalation_rejected (test_audit.PureAuditTests.test_21_license_escalation_rejected) ... ok
+test_22_unknown_fit_claim_rejected (test_audit.PureAuditTests.test_22_unknown_fit_claim_rejected) ... ok
+test_23_raw_locator_traversal_rejected (test_audit.PureAuditTests.test_23_raw_locator_traversal_rejected) ... ok
+test_24_bosch_product_not_unproved_service_revision (test_audit.PureAuditTests.test_24_bosch_product_not_unproved_service_revision) ... ok
+test_25_wrong_html_locale (test_audit.PureAuditTests.test_25_wrong_html_locale) ... ok
+test_26_timestamps_require_actual_aware_observation (test_audit.PureAuditTests.test_26_timestamps_require_actual_aware_observation) ... ok
+test_27_cache_inside_git_refused (test_audit.PureAuditTests.test_27_cache_inside_git_refused) ... ok
+test_28_duplicate_receipts_refused (test_audit.PureAuditTests.test_28_duplicate_receipts_refused) ... ok
+test_29_missing_real_cache_no_pass (test_audit.PureAuditTests.test_29_missing_real_cache_no_pass) ... ok
+test_30_schema_not_synthetic_OEM_fixture (test_audit.PureAuditTests.test_30_schema_not_synthetic_OEM_fixture) ... ok
+test_31_fetch_refuses_old_cache_overwrite (test_audit.PureAuditTests.test_31_fetch_refuses_old_cache_overwrite) ... ok
+test_32_response_size_bound (test_audit.PureAuditTests.test_32_response_size_bound) ... ok
+test_33_deceptive_token_prefix_not_exact (test_audit.PureAuditTests.test_33_deceptive_token_prefix_not_exact) ... ok
+test_34_correct_synthetic_parser_control (test_audit.PureAuditTests.test_34_correct_synthetic_parser_control) ... ok
+test_35_network_redirect_handler_does_not_follow_sibling (test_audit.PureAuditTests.test_35_network_redirect_handler_does_not_follow_sibling) ... ok
+test_36_hoover_wrong_sku_not_nearby_model (test_audit.PureAuditTests.test_36_hoover_wrong_sku_not_nearby_model) ... ok
+test_37_any_incomplete_fields_are_not_counted_as_verified (test_audit.PureAuditTests.test_37_any_incomplete_fields_are_not_counted_as_verified) ... ok
+test_38_original_manifest_mutation_rejected (test_audit.PureAuditTests.test_38_original_manifest_mutation_rejected) ... ok
+test_39_malicious_url_credentials_refused (test_audit.PureAuditTests.test_39_malicious_url_credentials_refused) ... ok
+test_40_rights_always_separate_from_byte_match (test_audit.PureAuditTests.test_40_rights_always_separate_from_byte_match) ... ok
+
+----------------------------------------------------------------------
+Ran 40 tests in 0.006s
+
+OK
