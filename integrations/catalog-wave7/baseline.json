@@ -1,0 +1,802 @@
+{
+  "snapshot": {
+    "version": 1,
+    "baseCommit": "71f7826ba936a1f3830c8b2a67e8085a9cfe234e",
+    "appVersion": "1.29.0",
+    "checkpointSha256": "c600a5c5a83a6f096ff5999e5ce5582c37ec424155919d487dfd6ca2221bd42b",
+    "wave3Integrated": false,
+    "engineIntegrated": false,
+    "devices": [
+      {
+        "id": "vac-miele-model-11806000",
+        "brand": "Miele",
+        "model": "Triflex HX2 Cat & Dog",
+        "reference": "11806000",
+        "identifiers": [
+          {
+            "type": "material-number",
+            "value": "11806000"
+          },
+          {
+            "type": "product-type",
+            "value": "SOML0"
+          }
+        ],
+        "productCode": null,
+        "type": "cordless",
+        "market": "DE",
+        "source": {
+          "name": "Miele · Triflex HX2 Cat & Dog · 11806000",
+          "url": "https://www.miele.de/product/11806000/akku-staubsauger-triflex-hx2-cat-und-dog-obsidianschwarz",
+          "checkedAt": "2026-10-06",
+          "scope": "catalog-identity-observation",
+          "rights": "link-and-factual-identity-only; no artwork copied"
+        },
+        "variantHint": "Materialnummer und Gerätetyp vergleichen; derselbe Gerätetyp kann mehrere Modelle umfassen.",
+        "candidatePartIds": [
+          "miele-part-13070280",
+          "miele-part-13000250",
+          "miele-part-11384710"
+        ],
+        "legacyListedPartCount": 23,
+        "assessment": "unavailable"
+      },
+      {
+        "id": "vac-miele-model-11602400",
+        "brand": "Miele",
+        "model": "Boost CX1 Parquet PowerLine",
+        "reference": "11602400",
+        "identifiers": [
+          {
+            "type": "material-number",
+            "value": "11602400"
+          },
+          {
+            "type": "product-type",
+            "value": "SNCF0"
+          }
+        ],
+        "productCode": null,
+        "type": "bagless",
+        "market": "DE",
+        "source": {
+          "name": "Miele · Boost CX1 Parquet PowerLine · 11602400",
+          "url": "https://www.miele.de/product/11602400/bodenstaubsauger-ohne-beutel-boost-cx1-parquet-powerline-lotosweiss",
+          "checkedAt": "2026-10-06",
+          "scope": "catalog-identity-observation",
+          "rights": "link-and-factual-identity-only; no artwork copied"
+        },
+        "variantHint": "Materialnummer und Gerätetyp vergleichen; derselbe Gerätetyp kann mehrere Modelle umfassen.",
+        "candidatePartIds": [
+          "miele-part-11805640"
+        ],
+        "legacyListedPartCount": 13,
+        "assessment": "unavailable"
+      },
+      {
+        "id": "vac-bosch-model-bgl75x1prq",
+        "brand": "Bosch",
+        "model": "BGL75X1PRQ",
+        "reference": "BGL75X1PRQ",
+        "identifiers": [
+          {
+            "type": "manufacturer-model",
+            "value": "BGL75X1PRQ"
+          }
+        ],
+        "productCode": null,
+        "type": "bagged",
+        "market": "DE",
+        "source": {
+          "name": "Bosch · BGL75X1PRQ",
+          "url": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGL75X1PRQ",
+          "checkedAt": "2026-10-06",
+          "scope": "catalog-identity-observation",
+          "rights": "link-and-factual-identity-only; no artwork copied"
+        },
+        "variantHint": "Vollständige E-Nr. mit /xx-Index prüfen. Der Produktname allein belegt den Index nicht.",
+        "candidatePartIds": [
+          "bosch-part-00460431",
+          "bosch-part-00579421"
+        ],
+        "legacyListedPartCount": 14,
+        "assessment": "unavailable"
+      },
+      {
+        "id": "vac-bosch-model-bch3all21",
+        "brand": "Bosch",
+        "model": "BCH3ALL21",
+        "reference": "BCH3ALL21",
+        "identifiers": [
+          {
+            "type": "manufacturer-model",
+            "value": "BCH3ALL21"
+          }
+        ],
+        "productCode": null,
+        "type": "cordless",
+        "market": "DE",
+        "source": {
+          "name": "Bosch · BCH3ALL21",
+          "url": "https://www.bosch-home.com/de/de/product/staubsauger/kabellose-handstaubsauger/flexxo/BCH3ALL21",
+          "checkedAt": "2026-10-06",
+          "scope": "catalog-identity-observation",
+          "rights": "link-and-factual-identity-only; no artwork copied"
+        },
+        "variantHint": "Vollständige E-Nr. mit /xx-Index prüfen. Der Produktname allein belegt den Index nicht.",
+        "candidatePartIds": [],
+        "legacyListedPartCount": 0,
+        "assessment": "unavailable"
+      },
+      {
+        "id": "vac-samsung-model-vs20c95d4tk",
+        "brand": "Samsung",
+        "model": "VS20C95D4TK",
+        "reference": "VS20C95D4TK/WD",
+        "identifiers": [
+          {
+            "type": "manufacturer-model",
+            "value": "VS20C95D4TK"
+          },
+          {
+            "type": "manufacturer-model",
+            "value": "VS20C95D4TK/WD"
+          }
+        ],
+        "productCode": null,
+        "type": "cordless",
+        "market": "DE",
+        "source": {
+          "name": "Samsung · Herstellerkatalog",
+          "url": "https://www.samsung.com/de/vacuum-cleaners/stick/vs9500al-stick-more-advance-cleaning-performance-hexajet-motor-jet-cyclone-black-vs20c95d4tk-wd/",
+          "checkedAt": "2026-10-08",
+          "scope": "catalog-identity-observation",
+          "rights": "link-and-factual-identity-only; no artwork copied"
+        },
+        "variantHint": "Vollständigen Modellcode einschließlich Länderkennung vergleichen. EEK und EEM sind getrennte Kennungen.",
+        "candidatePartIds": [
+          "samsung-part-vca-shf95w",
+          "samsung-part-vca-sapb95_2Fwa"
+        ],
+        "legacyListedPartCount": 9,
+        "assessment": "unavailable"
+      },
+      {
+        "id": "vac-samsung-model-vs90f40eek",
+        "brand": "Samsung",
+        "model": "VS90F40EEK",
+        "reference": "VS90F40EEK/WD",
+        "identifiers": [
+          {
+            "type": "manufacturer-model",
+            "value": "VS90F40EEK"
+          },
+          {
+            "type": "manufacturer-model",
+            "value": "VS90F40EEK/WD"
+          }
+        ],
+        "productCode": null,
+        "type": "cordless",
+        "market": "DE",
+        "source": {
+          "name": "Samsung · Herstellerkatalog",
+          "url": "https://www.samsung.com/de/support/model/VS90F40EEK/WD/",
+          "checkedAt": "2026-10-08",
+          "scope": "catalog-identity-observation",
+          "rights": "link-and-factual-identity-only; no artwork copied"
+        },
+        "variantHint": "Vollständigen Modellcode einschließlich Länderkennung vergleichen. EEK und EEM sind getrennte Kennungen.",
+        "candidatePartIds": [],
+        "legacyListedPartCount": 0,
+        "assessment": "unavailable"
+      },
+      {
+        "id": "vac-hoover-model-hf202p011",
+        "brand": "Hoover",
+        "model": "HF202P 011",
+        "reference": "HF202P 011",
+        "identifiers": [
+          {
+            "type": "manufacturer-model",
+            "value": "HF202P 011"
+          },
+          {
+            "type": "manufacturer-model",
+            "value": "HF202P011"
+          },
+          {
+            "type": "device-sku",
+            "value": "39401035"
+          }
+        ],
+        "productCode": "39401035",
+        "type": "cordless",
+        "market": "DE",
+        "source": {
+          "name": "Hoover · Herstellerkatalog",
+          "url": "https://www.hoover-home.com/de_DE/akkusauger/39401035/hf202p-011/",
+          "checkedAt": "2026-10-08",
+          "scope": "catalog-identity-observation",
+          "rights": "link-and-factual-identity-only; no artwork copied"
+        },
+        "variantHint": "Modell und achtstelligen Produktcode vergleichen. GB-, DE- und FR-Ausführungen nicht übertragen.",
+        "candidatePartIds": [
+          "hoover-part-35602893"
+        ],
+        "legacyListedPartCount": 10,
+        "assessment": "unavailable"
+      },
+      {
+        "id": "vac-hoover-model-fd22g",
+        "brand": "Hoover",
+        "model": "FD22G",
+        "reference": "FD22G",
+        "identifiers": [
+          {
+            "type": "manufacturer-model",
+            "value": "FD22G"
+          },
+          {
+            "type": "device-sku",
+            "value": "39400273"
+          }
+        ],
+        "productCode": "39400273",
+        "type": "cordless",
+        "market": "GB",
+        "source": {
+          "name": "Hoover · Herstellerkatalog",
+          "url": "https://service.hoover.co.uk/advice-centre/vacuum-cleaners/fd22g/",
+          "checkedAt": "2026-10-08",
+          "scope": "catalog-identity-observation",
+          "rights": "link-and-factual-identity-only; no artwork copied"
+        },
+        "variantHint": "Modell und achtstelligen Produktcode vergleichen. GB-, DE- und FR-Ausführungen nicht übertragen.",
+        "candidatePartIds": [],
+        "legacyListedPartCount": 0,
+        "assessment": "unavailable"
+      },
+      {
+        "id": "vac-hoover-model-hu300rhm001",
+        "brand": "Hoover",
+        "model": "HU300RHM 001",
+        "reference": "HU300RHM 001",
+        "identifiers": [
+          {
+            "type": "manufacturer-model",
+            "value": "HU300RHM 001"
+          },
+          {
+            "type": "manufacturer-model",
+            "value": "HU300RHM001"
+          },
+          {
+            "type": "device-sku",
+            "value": "39101032"
+          }
+        ],
+        "productCode": "39101032",
+        "type": "floor",
+        "market": "GB",
+        "source": {
+          "name": "Hoover · Herstellerkatalog",
+          "url": "https://service.hoover.co.uk/advice-centre/vacuum-cleaners/hu300rhm-001/",
+          "checkedAt": "2026-10-08",
+          "scope": "catalog-identity-observation",
+          "rights": "link-and-factual-identity-only; no artwork copied"
+        },
+        "variantHint": "Modell und achtstelligen Produktcode vergleichen. GB-, DE- und FR-Ausführungen nicht übertragen.",
+        "candidatePartIds": [],
+        "legacyListedPartCount": 0,
+        "assessment": "unavailable"
+      },
+      {
+        "id": "vac-dyson-model-369535-01",
+        "brand": "Dyson",
+        "model": "V15 Detect Absolute",
+        "reference": "369535-01",
+        "identifiers": [
+          {
+            "type": "manufacturer-model",
+            "value": "V15 Detect Absolute"
+          },
+          {
+            "type": "device-sku",
+            "value": "369535-01"
+          }
+        ],
+        "productCode": null,
+        "type": "cordless",
+        "market": "DE",
+        "source": {
+          "name": "Dyson · Herstellerkatalog",
+          "url": "https://www.dyson.de/support/journey/replacement-parts/search.369535-01",
+          "checkedAt": "2026-10-06",
+          "scope": "catalog-identity-observation",
+          "rights": "link-and-factual-identity-only; no artwork copied"
+        },
+        "variantHint": "Produktnummer, Generation und tatsächliche Anschlussausführung getrennt prüfen. Ein Modellname ist keine Akku-Freigabe.",
+        "candidatePartIds": [
+          "dyson-part-971634-01",
+          "dyson-part-970938-01"
+        ],
+        "legacyListedPartCount": 14,
+        "assessment": "unavailable"
+      },
+      {
+        "id": "vac-dyson-model-419634-01",
+        "brand": "Dyson",
+        "model": "V10 Konical Staubsauger",
+        "reference": "419634-01",
+        "identifiers": [
+          {
+            "type": "manufacturer-model",
+            "value": "V10 Konical Staubsauger"
+          },
+          {
+            "type": "device-sku",
+            "value": "419634-01"
+          }
+        ],
+        "productCode": null,
+        "type": "cordless",
+        "market": "DE",
+        "source": {
+          "name": "Dyson · Herstellerkatalog",
+          "url": "https://www.dyson.de/support/journey/replacement-parts/search.419634-01",
+          "checkedAt": "2026-10-06",
+          "scope": "catalog-identity-observation",
+          "rights": "link-and-factual-identity-only; no artwork copied"
+        },
+        "variantHint": "Produktnummer, Generation und tatsächliche Anschlussausführung getrennt prüfen. Ein Modellname ist keine Akku-Freigabe.",
+        "candidatePartIds": [],
+        "legacyListedPartCount": 0,
+        "assessment": "unavailable"
+      }
+    ],
+    "parts": [
+      {
+        "id": "miele-part-13070280",
+        "brand": "Miele",
+        "name": "Miele HX-FSF-2",
+        "code": "13070280",
+        "identifiers": [
+          {
+            "type": "material-number",
+            "value": "13070280"
+          },
+          {
+            "type": "ean",
+            "value": "4002517017140"
+          }
+        ],
+        "assembly": "filter",
+        "source": {
+          "name": "Miele · HX-FSF-2",
+          "url": "https://www.miele.de/product/13070280/triflex-feinstaubfilter-hx-fsf-2",
+          "checkedAt": "2026-10-06",
+          "scope": "catalog-identity-observation",
+          "rights": "link-and-factual-identity-only; no artwork copied"
+        },
+        "legacyStatus": "manufacturer_listed",
+        "assessment": "unavailable"
+      },
+      {
+        "id": "miele-part-13000250",
+        "brand": "Miele",
+        "name": "Miele HX-SEB 430 ElectroComfort",
+        "code": "13000250",
+        "identifiers": [
+          {
+            "type": "material-number",
+            "value": "13000250"
+          },
+          {
+            "type": "ean",
+            "value": "4002516992011"
+          }
+        ],
+        "assembly": "nozzle",
+        "source": {
+          "name": "Miele · HX-SEB 430 ElectroComfort",
+          "url": "https://www.miele.de/product/13000250/multifloor-elektrobuerste-hx-seb-430-electrocomfort",
+          "checkedAt": "2026-10-06",
+          "scope": "catalog-identity-observation",
+          "rights": "link-and-factual-identity-only; no artwork copied"
+        },
+        "legacyStatus": "manufacturer_listed",
+        "assessment": "unavailable"
+      },
+      {
+        "id": "miele-part-11384710",
+        "brand": "Miele",
+        "name": "Miele HX-LA",
+        "code": "11384710",
+        "identifiers": [
+          {
+            "type": "material-number",
+            "value": "11384710"
+          },
+          {
+            "type": "ean",
+            "value": "4002516262725"
+          }
+        ],
+        "assembly": "charger",
+        "source": {
+          "name": "Miele · HX-LA",
+          "url": "https://www.miele.de/product/11384710/triflex-li-ion-akku-hx-la",
+          "checkedAt": "2026-10-06",
+          "scope": "catalog-identity-observation",
+          "rights": "link-and-factual-identity-only; no artwork copied"
+        },
+        "legacyStatus": "manufacturer_listed",
+        "assessment": "unavailable"
+      },
+      {
+        "id": "miele-part-11805640",
+        "brand": "Miele",
+        "name": "Miele SBD 365-3",
+        "code": "11805640",
+        "identifiers": [
+          {
+            "type": "material-number",
+            "value": "11805640"
+          },
+          {
+            "type": "ean",
+            "value": "4002516445289"
+          }
+        ],
+        "assembly": "nozzle",
+        "source": {
+          "name": "Miele · SBD 365-3",
+          "url": "https://www.miele.de/product/11805640/allteq-bodenduese-sbd-365-3",
+          "checkedAt": "2026-10-06",
+          "scope": "catalog-identity-observation",
+          "rights": "link-and-factual-identity-only; no artwork copied"
+        },
+        "legacyStatus": "manufacturer_listed",
+        "assessment": "unavailable"
+      },
+      {
+        "id": "bosch-part-00579421",
+        "brand": "Bosch",
+        "name": "Bosch Motorschutzfilter",
+        "code": "00579421",
+        "identifiers": [
+          {
+            "type": "material-number",
+            "value": "00579421"
+          },
+          {
+            "type": "manufacturer-article",
+            "value": "BBZ02MPF"
+          },
+          {
+            "type": "ean",
+            "value": "4242005135806"
+          }
+        ],
+        "assembly": "filter",
+        "source": {
+          "name": "Bosch · BBZ02MPF",
+          "url": "https://www.bosch-home.com/de/de/product/staubsauger/zubehoer-staubsauger/filter/mikrofilter/BBZ02MPF",
+          "checkedAt": "2026-10-06",
+          "scope": "catalog-identity-observation",
+          "rights": "link-and-factual-identity-only; no artwork copied"
+        },
+        "legacyStatus": "catalog_only",
+        "assessment": "unavailable"
+      },
+      {
+        "id": "bosch-part-00460431",
+        "brand": "Bosch",
+        "name": "Bosch Polsterdüse Turbobürste für Polster",
+        "code": "00460431",
+        "identifiers": [
+          {
+            "type": "material-number",
+            "value": "00460431"
+          },
+          {
+            "type": "manufacturer-article",
+            "value": "00460431"
+          }
+        ],
+        "assembly": "nozzle",
+        "source": {
+          "name": "Bosch · 00460431",
+          "url": "https://www.bosch-home.com/de/de/product/staubsauger/zubehoer-staubsauger/buersten-duesen/polsterduesen/00460431",
+          "checkedAt": "2026-10-06",
+          "scope": "catalog-identity-observation",
+          "rights": "link-and-factual-identity-only; no artwork copied"
+        },
+        "legacyStatus": "catalog_only",
+        "assessment": "unavailable"
+      },
+      {
+        "id": "samsung-part-vca-shf95w",
+        "brand": "Samsung",
+        "name": "Samsung Jet Feinstaubfilter VCA-SHF95W VCA-SHF95W",
+        "code": "VCA-SHF95W",
+        "identifiers": [
+          {
+            "type": "manufacturer-article",
+            "value": "VCA-SHF95W"
+          }
+        ],
+        "assembly": "filter",
+        "source": {
+          "name": "Samsung · Herstellerkatalog",
+          "url": "https://www.samsung.com/de/home-appliance-accessories/vs9500-vca-shf95w/",
+          "checkedAt": "2026-10-08",
+          "scope": "catalog-identity-observation",
+          "rights": "link-and-factual-identity-only; no artwork copied"
+        },
+        "legacyStatus": "catalog_only",
+        "assessment": "unavailable"
+      },
+      {
+        "id": "samsung-part-vca-sapb95_2Fwa",
+        "brand": "Samsung",
+        "name": "Samsung Ersatz-Akku mit Ladegerät VCA-SAPB95/WA",
+        "code": "VCA-SAPB95/WA",
+        "identifiers": [
+          {
+            "type": "manufacturer-article",
+            "value": "VCA-SAPB95/WA"
+          }
+        ],
+        "assembly": "battery",
+        "source": {
+          "name": "Samsung · Herstellerkatalog",
+          "url": "https://www.samsung.com/de/home-appliance-accessories/jet-vc-renewal-accessory-battery1-vca-sapb95-wa/",
+          "checkedAt": "2026-10-08",
+          "scope": "catalog-identity-observation",
+          "rights": "link-and-factual-identity-only; no artwork copied"
+        },
+        "legacyStatus": "catalog_only",
+        "assessment": "unavailable"
+      },
+      {
+        "id": "hoover-part-35602893",
+        "brand": "Hoover",
+        "name": "Hoover Filterset · Filter kit - U112 - 35602893 Filter Kit",
+        "code": "35602893",
+        "identifiers": [
+          {
+            "type": "manufacturer-article",
+            "value": "35602893"
+          }
+        ],
+        "assembly": "filter",
+        "source": {
+          "name": "Hoover · Herstellerkatalog",
+          "url": "https://www.hoover-home.com/en_GB/products/35602893-u112-filterkit-hf2",
+          "checkedAt": "2026-10-08",
+          "scope": "catalog-identity-observation",
+          "rights": "link-and-factual-identity-only; no artwork copied"
+        },
+        "legacyStatus": "catalog_only",
+        "assessment": "unavailable"
+      },
+      {
+        "id": "dyson-part-971634-01",
+        "brand": "Dyson",
+        "name": "Dyson Slim Fluffy Bürstenleiste",
+        "code": "971634-01",
+        "identifiers": [
+          {
+            "type": "manufacturer-article",
+            "value": "971634-01"
+          }
+        ],
+        "assembly": "roller",
+        "source": {
+          "name": "Dyson · Herstellerkatalog",
+          "url": "https://www.dyson.de/support/journey/spare-details.971634-01.369535-01",
+          "checkedAt": "2026-10-06T21:47:57.326Z",
+          "scope": "catalog-identity-observation",
+          "rights": "link-and-factual-identity-only; no artwork copied"
+        },
+        "legacyStatus": "catalog_only",
+        "assessment": "unavailable"
+      },
+      {
+        "id": "dyson-part-970938-01",
+        "brand": "Dyson",
+        "name": "Dyson V11™, V15™, Outsize™ Akku",
+        "code": "970938-01",
+        "identifiers": [
+          {
+            "type": "manufacturer-article",
+            "value": "970938-01"
+          }
+        ],
+        "assembly": "battery",
+        "source": {
+          "name": "Dyson · Herstellerkatalog",
+          "url": "https://www.dyson.de/support/journey/spare-details.970938-01.369535-01",
+          "checkedAt": "2026-10-06T21:47:57.326Z",
+          "scope": "catalog-identity-observation",
+          "rights": "link-and-factual-identity-only; no artwork copied"
+        },
+        "legacyStatus": "catalog_only",
+        "assessment": "unavailable"
+      }
+    ]
+  },
+  "lock": {
+    "baseCommit": "71f7826ba936a1f3830c8b2a67e8085a9cfe234e",
+    "appVersion": "1.29.0",
+    "checkpointSha256": "c600a5c5a83a6f096ff5999e5ce5582c37ec424155919d487dfd6ca2221bd42b",
+    "restoredFileCount": 136,
+    "fileSha256": {
+      ".github/workflows/ci.yml": "3abb387174d71817eacb101331e2e473fd6247192b736a010f33b005d2f029ad",
+      ".github/workflows/pages.yml": "b754e3de3a7eabd31cebb08e4c162603a9ce9bf32e7def9dfb91e5a3db49e93a",
+      ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "README.md": "951037431de339e7e4d8cdd938bc023293c8065fbc2eb28661c3e66672bb58dc",
+      "backend/schema.sql": "5acf688fa4b63962fba920f23d50476c788b61353e73aa004a9c12b14230d939",
+      "docs/ARCHITECTURE.md": "5a6b7664d1d414f34473122fa142b5d5e88ba188f4c71be70531c44a4de7dc48",
+      "docs/DATA_SOURCES.md": "dd1fc9bfef0e3d06a0faf66a81a4fde4ffe0e757645f1731a92d60c9e17c5892",
+      "docs/DESIGN_SYSTEM.md": "a280d52cfc59295c33310150b57655ada7311c59789ddcfda50030eee7035744",
+      "docs/LEGAL_CHECKLIST.md": "aab04f0bafa07fe36468f0d993f470cdc787e07589a8a225dd07ab367b4348a1",
+      "docs/QA.md": "4e197965716a90733ed7df5ab5a7a6c1afe75f95211fff34a95d23edcfbfa371",
+      "icons/apple-touch-icon.png": "752eb7e5b3229de48c15c68044f6fff190a6b3c1390fb8d075de5460ae144adc",
+      "icons/icon-192.png": "927a67bd7fff6021f99fee23d1d1a54b44624b811a989732e17e3097b8483c02",
+      "icons/icon-512.png": "53f733efadb7eae1e916843b0d0393b2de0b53c7e99e9f62012c2ea35f25436b",
+      "icons/icon.svg": "90727302f4e85b2748b1d64033f7b40467c77c3c1702f4099549bcab6ae86655",
+      "icons/vacuum.svg": "5f8463a330a6a6357cc25e2fa5b825547defd079caf261f158430bf295e30ef6",
+      "index.html": "7d3de59b597d252898a15d420c1227af6268c395673986c9919659df8480f259",
+      "manifest.webmanifest": "cdccfc235b5ea4ae93fec75af61ebc9c6169617fbba780e7041ddd9c070a5409",
+      "package.json": "acc86040e626bcff63e13ef45ff56c135f1ec909a2ca997f7894daf052bb9404",
+      "src/app.js": "93b968781d78b9bbf6ada4e7ef45c9d79d64f7e8246d0e675e052d7beba0b443",
+      "src/core/backup.js": "a4c031ef879dbb7a25fd0d4ba97a966df8d1c9e2565e24042097fc769e8ad17a",
+      "src/core/bosch-context.js": "e6f6ca5baf2fd87e5b52f9b5df0aab07bc4fe69fe3e966b778b5561596e71c2c",
+      "src/core/bosch-identity.js": "b9dbb8ae297f1a6ae6df858fadacf80d208d903fcbc4a88ddaf2f03e61271d08",
+      "src/core/brand-identity.js": "3426daf45a985638a18ae29725bf75786d1b35881104b3930506841cd862dbd8",
+      "src/core/cart.js": "786edd0c5a76512b3b7200debecbb76bfc4abd147904cca976605c47b15161d3",
+      "src/core/catalog-loader.js": "3b569c52df5988c123f3c998f7f0f9a794938b2d4ee75b7cc06a0dbdea1a57fb",
+      "src/core/device-comparison.js": "27c0b907e2485173410f5a197fdd7c8889130301349cf724fb9e5238b60bece0",
+      "src/core/feedback.js": "ef96ff0f39171ce7dd1ed77caef3b10f78bb82c6476ac178cc57d6635cea1b02",
+      "src/core/handoff.js": "ded9f56845b5b836c91ed1749be1eb4b284e6a44f502b27300e24a242bc040db",
+      "src/core/identifiers.js": "77d06bbfe559b84407a53d43e0a108b57cabfc9c7666c1ddf03e50db73f0c5a4",
+      "src/core/local-state.js": "090b0780905243a2f0fb6256c8a15807a629adabf30199074365a10f2c01431f",
+      "src/core/marketplaces.js": "a8214d331d098b9a7bc7a90c74c09ec2378c13a46b8b61a469d47102c8aced46",
+      "src/core/matcher.js": "15856c7ab6b25100acd0f95ce6c5cdb179303e903777f8fd76b60f1de1c8caf5",
+      "src/core/model-parts-view.js": "b2e665b4f71a61bd8db9f53041fd89933d519006bdb376000e64295916e89504",
+      "src/core/normalization.js": "c5d8ca8185e6d69af9338696c70abdb3704281835e6d856ccec97ea081692e96",
+      "src/core/photo-policy.js": "847dca1ba0ec2b10a29108cf505677e9fe7b1be648d933d747e83cb2ee3b4b13",
+      "src/core/pilot-client.js": "fa0fd99dcefd6a905de18f98181734ac32a072d2eca43d52797d799feaf694e8",
+      "src/core/pilot-config.js": "c537eda7f787eb5821bd791d5c2c83d2084cdcf0dd414b39f7cbe687bce837db",
+      "src/core/pilot-readiness.js": "141db3db33f49acf23b6948a6d4537b5cd8f5f02e64c91bc561e5108e6989ae8",
+      "src/core/preferences.js": "6973c4906a6f17edc8dbdac8141435b21d482bb8663eac90377eb7ffecd82292",
+      "src/core/quantity.js": "bebd1b9b4d5f6930ba141665e4a6bb2bc1ad803be8b87b07589e0f245b13d18b",
+      "src/core/ranking.js": "975ab2994eeb0c42eb44c0879c984a171962ce03b0bfc34dcdc4abf0e5580557",
+      "src/core/scanner.js": "23672c5baa3b4c70bb4bba16a8256f4d61667112771237bef2f481a5b07481e3",
+      "src/core/services.js": "0500d8e0072a522582f5bf43e25d321588869c71c1b3c531a32736f363dad066",
+      "src/core/storage.js": "89448da103435eddf7130f0e9531496e6cac04fcb64c42ca13a0bf1ada2d18da",
+      "src/core/typeplate.js": "005d89be60aa1c6f4483f240d08341a12d9cf91dc5ff33d6ac4ad17e24322339",
+      "src/core/vehicle.js": "2cc439900b6b5c2d7a59c75238174a3af224763fb42384a42f51e8f5d1abbf52",
+      "src/data/aeg-pack.js": "33f704027cc3f7bbcb8ee4859f1110491c5c27a5eee298861f8442b2df80a72a",
+      "src/data/bosch-extra.js": "392cf5189071a210ea9fd17c326c8e40a59e7a0c6d055e3df9cb3c45dc71fc42",
+      "src/data/bosch-models-next.js": "8cc2388098226babd0ea7f52377fe6ef8d4d4f612a6776494cab61ce15b6917e",
+      "src/data/bosch-records.js": "5f51fea9102016f1b16524b483cf3bc51412901a0ee58ab36fa4ee731a2a9f22",
+      "src/data/bosch-vacuum.js": "b7d0f6966eb1bb68544b03dde12a3cc885a96f12bb66395d1dfc133356cb2813",
+      "src/data/brand-index.js": "b9dfa4b0dee8f2a2343506190a6606ad9569be0d2336e82e192e3c246781bcf7",
+      "src/data/brand-products.js": "09e82567c7a0da41c76a8fb81eaba6aa8b1cd2ef5d09c68b547edc17cdb0c06c",
+      "src/data/catalog-extensions.js": "c3e9c42e6c213ccdc64874030df7e2172d8be53680aaef30d5d18946d6e2ea49",
+      "src/data/catalog-plan.js": "86c370d37e460413bd447d5f797325fbafb33b93c8b481819af3e376f96175c0",
+      "src/data/catalog.js": "895bc28cfe7cee77f4a2921959568815c293bacd16ed02d47d3db9bae5436d8e",
+      "src/data/coffee-support.js": "be1d503e807f0c83e14e708aa557ea2c88f6daa13942926204b18e03612c0e20",
+      "src/data/demo-products.js": "d875ec7822358ac1257bc0c02a70587092c1775d251bcf2c399d264b26711daa",
+      "src/data/dyson-models-wave2-state.json": "cae236595577ffba6e84ee13a6f76076f9c03f900dc10289555844416ab25f2c",
+      "src/data/dyson-models-wave2.js": "0bf4c5384f182293b5baa2ee37b6bb631d9fd96136ce8ff6a6af28317ce55466",
+      "src/data/dyson-pack.js": "41bd2f116ca568ec9e4cb48acef343fb3c9f3fa94277e5d76c4c81432058d1f6",
+      "src/data/faq.js": "2e36778667472671cce7cf4c6e71152f11470713d1511e89aa442e0dc7ac2fef",
+      "src/data/hoover-fitment.js": "99a20284e5ee19e2411d1f8ce7d024049893251f518ba9b3618cd3f6577b7a45",
+      "src/data/hoover-pack.js": "21dd46407719229a016bfffa8e0d8f7b326f4e1ee59a781d79ca6afcecff737d",
+      "src/data/job-guidance.js": "ca579e89c71053442b12cb577ef606b650700c2d41cf2c488f43f1a7e844500c",
+      "src/data/miele-aftermarket.js": "00e87042d1ad488e497011bc4e4e9fbd8afef331f2d4cbb7b95b48cdb74fd9b0",
+      "src/data/miele-commerce-records.js": "8923dfdb874baec1454b133895cfa334693fd4c72c38779de008ee6e5ea46602",
+      "src/data/miele-commerce.js": "bc59b32e97f28cc3f53c3b8b9df337163b3bbe9934021b22044895c29415f43e",
+      "src/data/miele-guides.js": "73549c00e2d0349c1821172e5ca09342b1b8beadc2c888bc850452919efb5671",
+      "src/data/miele-installation-times.js": "2d40d4c0cf37766d589019d125a3ed4af796391dbb84827603b660ffc13e3bb1",
+      "src/data/miele-model-records.js": "c4205009d0cac0cff52bbe4f9e5d938d0598641762d001482aa9e164aac41d3e",
+      "src/data/miele-models-wave2.js": "f57aa394cf51e019fcdcffce1c222dd3de4af599627e6ac94c410bc7a29bac53",
+      "src/data/miele-models.js": "60c427c552a637e640ea9ee00f38bcd07d6f94cec0507c383eb869905cacfe98",
+      "src/data/miele-parts.js": "122e7b3ec880e4ef0cdfd241823df0cb24661f6825c677edf23f90e295df7aad",
+      "src/data/miele-spare-records.js": "9d56958e114991259ce1ab768cdc6296a75ee47dd838a4ed4661ee322d20a514",
+      "src/data/miele-vacuum.js": "d70bcb0e19839a52839a08006cf99f43c2b2e9d429e81ec09e40f6b87fdfa9b4",
+      "src/data/new-brands-index.js": "be550b30e1e36c4d25c39d4f7cf4f07f013905856cf7c6a78fb95a137d611493",
+      "src/data/part-taxonomy.js": "cdd0c04fce27895a1d0d85a3ea4c4832676d2626668285f48e5358ac051ec305",
+      "src/data/philips-extra.js": "311d7cd40e962c6e1fc274ebde9ace268077f4eb0d263d2de193a7bf141c5c0c",
+      "src/data/philips-pack.js": "6913d7973055ce7456136516b3a1aba9769d7647d92c2dfa30a370ad57f2e025",
+      "src/data/product-resolver.js": "b9ca784cc28f6f71f3552f278be4e2cb2d31637c48825fc4e88e79f0f975b290",
+      "src/data/rowenta-extra.js": "1bf05448339f18d3a855c73f9bd1063a568df200f6a5619de9e67fe372033148",
+      "src/data/rowenta-pack.js": "edb2c98782d13eb71a8afea501e4c21bc57cc356ad15662bf1106eca24d67f6e",
+      "src/data/samsung-pack.js": "b98ed6a953dfd39b64b93d96ce3f02602a309aa9946304ccc58c560f692ac2df",
+      "src/data/services.js": "4c0f435b7d82713cd76cdb24eee2f8df826a1d785ce2c9e56dd7553b157c3510",
+      "src/data/siemens-pack.js": "7fe7febea7fcc4d548a6252c1a78a19433222521ace183917874fe97707ff7df",
+      "src/data/verified-products.js": "3ebf12689ddff6b51765cd93f0ce298136e48af259d3c9f2504e2f3b163326b1",
+      "src/data/vorwerk-extra.js": "2f951435d862f5ed1c9fbe1201ec4985ff430edc2b8a025247a2be57039f62c5",
+      "src/data/vorwerk-index.js": "b61913bf27ba0510568ba20360e2b3fadf0fa199e09443e93ee57410e590aaa4",
+      "src/data/vorwerk-pack.js": "c81171f5a1bcc5a308bb514cdbb1f6a0743386235ff8016b14203c4dc30d5d90",
+      "src/vendor/LICENSES.txt": "705df2930adc81e60b53571bb1ed0b27fd6b26e93f10413e13a8abeb43a8d7c1",
+      "src/vendor/supabase.js": "b442e8ef212484626b32993fde0c68275e005efb1c55f51d7622f949baf5047e",
+      "styles.css": "5084cca625f2706e114a813f4f4175cd0e7244a095dbfb17356a4ba1e291f202",
+      "sw.js": "1a0a6ff58d3234c45027c10ac37979e82da2b4f5ae12c508f9f5f7dcb17b1ad8",
+      "tests/backup.test.mjs": "5295db1c36da3780786775ed713b7904d00309942e0942b25fda6eb1238098ba",
+      "tests/bosch-boundaries.test.mjs": "ae5a6647251f56334b37ce35c034e650086f09a2642860f4847181b6d9a705f3",
+      "tests/bosch-catalog.test.mjs": "513ffa614c1357a0aee82523aec726bf010b16a775497ef11e03ce04a35c73b1",
+      "tests/bosch-models-next.test.mjs": "9688331dd65641ff6b9973120e0e88bfe7260245e949d7881f949231c44e9826",
+      "tests/bosch-workflow.test.mjs": "603ab5e4f709858f9bf57e6270da20f82f7b0f76a788744678c89603550170e0",
+      "tests/catalog-expansion.test.mjs": "81bf27244181b3317ddc6add3419fb13dd3643bd856f610b7b09631c5e336373",
+      "tests/catalog-goal.test.mjs": "e41e3743d74055e946fb9c34ceea4846e551b66809038fa3c86dcdc54e5b5b44",
+      "tests/catalog-seven-brands.test.mjs": "42723eec5de90a0ffc60e9b29ac8dcaabd6741cbaee8f34b3952c2c00451aea0",
+      "tests/catalog-v126.test.mjs": "5d112d14b98c13847a473ed62c779d05285143feb1386ec5b97c560f79ac759b",
+      "tests/coffee-live.test.mjs": "4c4bb4fb1219ad37deddf11f2ce1b8bc0be7487d40622475b43b1b3660c38e27",
+      "tests/commerce.test.mjs": "dd97426e18ad57f2d35699581cc976fe3b73e3c95d214672d7aba28bc06cba50",
+      "tests/core.test.mjs": "e80146d91bf18d6efec0e91c64cd702d79bf8f683efd4ad39547c659db2bcd1a",
+      "tests/data.test.mjs": "868962eca859e9d6526db32527828c0924f0d409fcc3da2ca5e6495df1fc28e9",
+      "tests/device-comparison.test.mjs": "90d42a407bbc6500691c53613cdbeac8b4a99af81e2d0d971d99d873e2945403",
+      "tests/dyson-models-wave2.test.mjs": "a56438eb57de4461faa3c737ebd32626cea2907d10805552cb08fdc165204f05",
+      "tests/handoff.test.mjs": "c14ccd4b7a743cf665b6b67f696dbe2bd3d8bf8371e3f8731acf50a85f34622c",
+      "tests/identifier.test.mjs": "2f6ddf169c20f13d6f18b35155434f0a297a2926aba1f41a67b9da8464dd0d49",
+      "tests/identity-boundaries.test.mjs": "db65624f0cbc473363084307f4e5b990499ec4d99fe39d72d3943c7a25d8e562",
+      "tests/jobs.test.mjs": "9a49c5df83916ab2ec5f8a741f94e8fe3f0c39bcd1bbf40daac3836fa00a6076",
+      "tests/local-data.test.mjs": "245d530b48372b8bf01836b9442dd6ca2d731b516cd834a93a8653d56b958d2a",
+      "tests/marketplaces.test.mjs": "4653cd481ccb0045a11b3b33086adf8b4febfc071fb14ff5c5b8803ab41dfcb6",
+      "tests/miele-models-wave2.test.mjs": "45ebb0dfb2f6da1159ce2581c571cc4629a6aa32d518a35f693fdbd6cb5cc83b",
+      "tests/miele-models.test.mjs": "d579070c82b5631287bc749ebe044038f583771a00042da4dc5e57fc688e1264",
+      "tests/miele-parts.test.mjs": "2a8428e0190719d72d07ceee2b6503d08b55b22a616aaa651157ebb5df576b85",
+      "tests/miele-pilot.test.mjs": "2c5413ee7e298d3571cd30f5bb15a1b4f2340545063872987e370d36cb618261",
+      "tests/model-parts-view.test.mjs": "d36ebbea142cc462f3efa17f2726d58f217c523c083a37fbb8f8c20cc94196c6",
+      "tests/offline.test.mjs": "a36d962235c8d8349dbb7cae4bf441f04b3e3fd3d5356a9a81ff6e154a07ce0f",
+      "tests/part-taxonomy.test.mjs": "33e743360210899b3cf161c410e633d903524416cdf40ddf756f7dc5f1d33a62",
+      "tests/philips-expansion.test.mjs": "1c47db953019ef75d433ec81891a0f411644e9c62f726d86f797df6f47a8f2a9",
+      "tests/photo-policy.test.mjs": "c89dee556cb79458bb5b4c27160e2a10560e29d334fc5496bd3fcde0340c1401",
+      "tests/pilot-client.test.mjs": "e2043d9aac951f9a11bcb39a259fb0ea122f8eafdeebb6ef475f2977648491cf",
+      "tests/pilot-readiness.test.mjs": "964972aa15573bbed11e30e4c742c7c806ff798292377e1e335bdf2790a81f3d",
+      "tests/resolver.test.mjs": "82c84acbbf59db92cabd22c3520bd42d010995e5c9403dc2c75c70e912868563",
+      "tests/rowenta-expansion.test.mjs": "4d4a8871336e246d34c1f6ea479cebb07a723c824a3aa25f9c1419ee0811e929",
+      "tests/scanner-lifecycle.test.mjs": "191fae8ce80b459c93bacd5859ac473be42d5068b4be552c61ecdd84532aa3e3",
+      "tests/scanner-ocr.test.mjs": "4f383517cebb07e68c02637d0d3c1371b9acc4e47e79fb2e8aea9fca807b65a3",
+      "tests/services.test.mjs": "897dba543f2925f0ca7a4e26d075268a3df86aecdd1f4febc8703601b43e5d16",
+      "tests/static.test.mjs": "291a227c23ee3d492cf6562efa809de8ca9de893fda0cb5477703494cb7439ca",
+      "tests/typeplate.test.mjs": "2c37f270991bdde20544567b65d7e3ddb803669750fef412c61afca6b7b116e2",
+      "tests/v16.test.mjs": "9686db602fe0e4a4c3556aee82c53129ad5f1a58213250687d22d320bb2d96fc",
+      "tests/verified-data.test.mjs": "205529751f93a8ce0e053e4e91651a849c0117f1daab1d598363beba704d6d14",
+      "tests/vorwerk-expansion.test.mjs": "175d832d251edbd9b8c4bed1805a743f5997afbb3f5412e74de878fbae5dcfb1"
+    },
+    "deviceIds": [
+      "vac-miele-model-11806000",
+      "vac-miele-model-11602400",
+      "vac-bosch-model-bgl75x1prq",
+      "vac-bosch-model-bch3all21",
+      "vac-samsung-model-vs20c95d4tk",
+      "vac-samsung-model-vs90f40eek",
+      "vac-hoover-model-hf202p011",
+      "vac-hoover-model-fd22g",
+      "vac-hoover-model-hu300rhm001",
+      "vac-dyson-model-369535-01",
+      "vac-dyson-model-419634-01"
+    ],
+    "partIds": [
+      "miele-part-13070280",
+      "miele-part-13000250",
+      "miele-part-11384710",
+      "miele-part-11805640",
+      "bosch-part-00579421",
+      "bosch-part-00460431",
+      "samsung-part-vca-shf95w",
+      "samsung-part-vca-sapb95_2Fwa",
+      "hoover-part-35602893",
+      "dyson-part-971634-01",
+      "dyson-part-970938-01"
+    ],
+    "snapshotSha256": "4b0f6fc17d22b0bc6f320b02eee5fdb39bb23d0083fadb3135e4bed38d3de9ae"
+  }
+}
