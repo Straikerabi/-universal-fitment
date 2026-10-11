@@ -1,0 +1,1052 @@
+{
+  "schemaVersion": 1,
+  "issueNumber": 107,
+  "preparedOn": "2026-10-11",
+  "currentBrandName": "Universal Fitment",
+  "readOnlyResearch": true,
+  "launchAllowed": false,
+  "domainRightToUseConfirmed": false,
+  "legalClearance": "pending_qa_legal",
+  "scoreWeights": {
+    "distinctiveness": 30,
+    "pronounceability": 20,
+    "confusionResistance": 20,
+    "appStoreFit": 15,
+    "b2cB2bBreadth": 15
+  },
+  "candidates": [
+    {
+      "id": "BR-01",
+      "name": "Nolvanta",
+      "origin": "novo + Variante",
+      "pronunciation": {
+        "de": "Nol-van-ta",
+        "en": "nol-VAN-ta"
+      },
+      "reason": "Breiter, sachlicher Klang für B2C/B2B",
+      "risks": "Ähnliche Nolv-/Nova-Marken noch juristisch zu suchen",
+      "score": {
+        "distinctiveness": 5,
+        "pronounceability": 5,
+        "confusionResistance": 4,
+        "appStoreFit": 5,
+        "b2cB2bBreadth": 5
+      },
+      "scoreTotal": 96,
+      "shortlistRank": 1,
+      "searchDate": "2026-10-11",
+      "screeningStatus": "legal_research_pending",
+      "observedWebReferences": [],
+      "domains": {
+        "de": {
+          "status": "not_registered_at_check",
+          "httpStatus": 404,
+          "checkedAt": "2026-10-10T23:30:19.988Z",
+          "source": "https://rdap.denic.de/domain/nolvanta.de"
+        },
+        "com": {
+          "status": "not_registered_at_check",
+          "httpStatus": 404,
+          "checkedAt": "2026-10-10T23:30:19.539Z",
+          "source": "https://rdap.verisign.com/com/v1/domain/nolvanta.com"
+        }
+      },
+      "appStoreStatus": "not_systematically_checked",
+      "legalStatus": "pending_qa_legal",
+      "brandChosen": false,
+      "published": false
+    },
+    {
+      "id": "BR-02",
+      "name": "Varunexa",
+      "origin": "Variante + Nexus",
+      "pronunciation": {
+        "de": "Va-ru-nex-a",
+        "en": "va-roo-NEK-sa"
+      },
+      "reason": "Verbindet Geräte- und Teilbeziehungen sprachlich",
+      "risks": "Lautnähe zu Varun und Nexa, internationale Recherche offen",
+      "score": {
+        "distinctiveness": 5,
+        "pronounceability": 4,
+        "confusionResistance": 4,
+        "appStoreFit": 5,
+        "b2cB2bBreadth": 5
+      },
+      "scoreTotal": 92,
+      "shortlistRank": 2,
+      "searchDate": "2026-10-11",
+      "screeningStatus": "legal_research_pending",
+      "observedWebReferences": [],
+      "domains": {
+        "de": {
+          "status": "not_registered_at_check",
+          "httpStatus": 404,
+          "checkedAt": "2026-10-10T23:30:19.948Z",
+          "source": "https://rdap.denic.de/domain/varunexa.de"
+        },
+        "com": {
+          "status": "registered",
+          "httpStatus": 200,
+          "checkedAt": "2026-10-10T23:30:19.535Z",
+          "source": "https://rdap.verisign.com/com/v1/domain/varunexa.com"
+        }
+      },
+      "appStoreStatus": "not_systematically_checked",
+      "legalStatus": "pending_qa_legal",
+      "brandChosen": false,
+      "published": false
+    },
+    {
+      "id": "BR-03",
+      "name": "Varidaro",
+      "origin": "Variante + Daten + Orientierung",
+      "pronunciation": {
+        "de": "Va-ri-da-ro",
+        "en": "va-ree-DAH-ro"
+      },
+      "reason": "Weich und einprägsam für App und professionelle Daten",
+      "risks": "Vari- häufig, Veridaro als Klangnachbar prüfen",
+      "score": {
+        "distinctiveness": 4,
+        "pronounceability": 5,
+        "confusionResistance": 4,
+        "appStoreFit": 5,
+        "b2cB2bBreadth": 5
+      },
+      "scoreTotal": 90,
+      "shortlistRank": 3,
+      "searchDate": "2026-10-11",
+      "screeningStatus": "legal_research_pending",
+      "observedWebReferences": [],
+      "domains": {
+        "de": {
+          "status": "not_registered_at_check",
+          "httpStatus": 404,
+          "checkedAt": "2026-10-10T23:30:19.985Z",
+          "source": "https://rdap.denic.de/domain/varidaro.de"
+        },
+        "com": {
+          "status": "not_registered_at_check",
+          "httpStatus": 404,
+          "checkedAt": "2026-10-10T23:30:19.566Z",
+          "source": "https://rdap.verisign.com/com/v1/domain/varidaro.com"
+        }
+      },
+      "appStoreStatus": "not_systematically_checked",
+      "legalStatus": "pending_qa_legal",
+      "brandChosen": false,
+      "published": false
+    },
+    {
+      "id": "BR-04",
+      "name": "Modantra",
+      "origin": "Modell + Trace",
+      "pronunciation": {
+        "de": "Mo-dan-tra",
+        "en": "mo-DAN-tra"
+      },
+      "reason": "Technischer, sehr kompakter Name mit Modellbezug",
+      "risks": "Antra-Klangfamilie könnte Nähe zu bestehenden Namen haben",
+      "score": {
+        "distinctiveness": 5,
+        "pronounceability": 4,
+        "confusionResistance": 4,
+        "appStoreFit": 5,
+        "b2cB2bBreadth": 4
+      },
+      "scoreTotal": 89,
+      "shortlistRank": 4,
+      "searchDate": "2026-10-11",
+      "screeningStatus": "legal_research_pending",
+      "observedWebReferences": [],
+      "domains": {
+        "de": {
+          "status": "not_registered_at_check",
+          "httpStatus": 404,
+          "checkedAt": "2026-10-10T23:30:19.949Z",
+          "source": "https://rdap.denic.de/domain/modantra.de"
+        },
+        "com": {
+          "status": "registered",
+          "httpStatus": 200,
+          "checkedAt": "2026-10-10T23:30:19.552Z",
+          "source": "https://rdap.verisign.com/com/v1/domain/modantra.com"
+        }
+      },
+      "appStoreStatus": "not_systematically_checked",
+      "legalStatus": "pending_qa_legal",
+      "brandChosen": false,
+      "published": false
+    },
+    {
+      "id": "BR-05",
+      "name": "Partidra",
+      "origin": "Part + Identity + Trace",
+      "pronunciation": {
+        "de": "Par-ti-dra",
+        "en": "par-TEE-dra"
+      },
+      "reason": "Verständliche Teil-Identitäts-Assoziation, kurz",
+      "risks": "Englisch Part beschreibend; grenzüberschreitend ähnlich Wörter",
+      "score": {
+        "distinctiveness": 5,
+        "pronounceability": 4,
+        "confusionResistance": 4,
+        "appStoreFit": 4,
+        "b2cB2bBreadth": 4
+      },
+      "scoreTotal": 86,
+      "shortlistRank": 5,
+      "searchDate": "2026-10-11",
+      "screeningStatus": "legal_research_pending",
+      "observedWebReferences": [],
+      "domains": {
+        "de": {
+          "status": "not_registered_at_check",
+          "httpStatus": 404,
+          "checkedAt": "2026-10-10T23:30:19.968Z",
+          "source": "https://rdap.denic.de/domain/partidra.de"
+        },
+        "com": {
+          "status": "not_registered_at_check",
+          "httpStatus": 404,
+          "checkedAt": "2026-10-10T23:30:19.543Z",
+          "source": "https://rdap.verisign.com/com/v1/domain/partidra.com"
+        }
+      },
+      "appStoreStatus": "not_systematically_checked",
+      "legalStatus": "pending_qa_legal",
+      "brandChosen": false,
+      "published": false
+    },
+    {
+      "id": "BR-06",
+      "name": "Varedio",
+      "origin": "Variante + Medium",
+      "pronunciation": {
+        "de": "Va-re-di-o",
+        "en": "va-REH-dee-oh"
+      },
+      "reason": "Freundliches Daten-/Wissens-Label",
+      "risks": "Veredio/Varidio als ähnliche Wortkörper offen",
+      "score": {
+        "distinctiveness": 4,
+        "pronounceability": 4,
+        "confusionResistance": 3,
+        "appStoreFit": 4,
+        "b2cB2bBreadth": 4
+      },
+      "scoreTotal": 76,
+      "shortlistRank": null,
+      "searchDate": "2026-10-11",
+      "screeningStatus": "legal_research_pending",
+      "observedWebReferences": [],
+      "domains": {
+        "de": {
+          "status": "unknown",
+          "httpStatus": null,
+          "checkedAt": null,
+          "source": "https://rdap.denic.de/domain/varedio.de"
+        },
+        "com": {
+          "status": "unknown",
+          "httpStatus": null,
+          "checkedAt": null,
+          "source": "https://rdap.verisign.com/com/v1/domain/varedio.com"
+        }
+      },
+      "appStoreStatus": "not_systematically_checked",
+      "legalStatus": "pending_qa_legal",
+      "brandChosen": false,
+      "published": false
+    },
+    {
+      "id": "BR-07",
+      "name": "Fidivaro",
+      "origin": "Fidelity + Variante",
+      "pronunciation": {
+        "de": "Fi-di-va-ro",
+        "en": "fee-di-VAH-ro"
+      },
+      "reason": "Sorgfältige Auswahl statt Rabatt-Rhetorik",
+      "risks": "Fidi-/Vari-Marken ähnlicher Struktur prüfen",
+      "score": {
+        "distinctiveness": 4,
+        "pronounceability": 4,
+        "confusionResistance": 3,
+        "appStoreFit": 4,
+        "b2cB2bBreadth": 4
+      },
+      "scoreTotal": 76,
+      "shortlistRank": null,
+      "searchDate": "2026-10-11",
+      "screeningStatus": "legal_research_pending",
+      "observedWebReferences": [],
+      "domains": {
+        "de": {
+          "status": "unknown",
+          "httpStatus": null,
+          "checkedAt": null,
+          "source": "https://rdap.denic.de/domain/fidivaro.de"
+        },
+        "com": {
+          "status": "unknown",
+          "httpStatus": null,
+          "checkedAt": null,
+          "source": "https://rdap.verisign.com/com/v1/domain/fidivaro.com"
+        }
+      },
+      "appStoreStatus": "not_systematically_checked",
+      "legalStatus": "pending_qa_legal",
+      "brandChosen": false,
+      "published": false
+    },
+    {
+      "id": "BR-08",
+      "name": "Modivara",
+      "origin": "Modell + Variante",
+      "pronunciation": {
+        "de": "Mo-di-va-ra",
+        "en": "mo-di-VAH-ra"
+      },
+      "reason": "Direkt verständlicher Modellvariantenbezug",
+      "risks": "Bestehender gleichlautender Social-Handle gefunden",
+      "score": {
+        "distinctiveness": 3,
+        "pronounceability": 5,
+        "confusionResistance": 2,
+        "appStoreFit": 4,
+        "b2cB2bBreadth": 5
+      },
+      "scoreTotal": 73,
+      "shortlistRank": null,
+      "searchDate": "2026-10-11",
+      "screeningStatus": "observed_similar_online_use",
+      "observedWebReferences": [
+        "https://twitter.com/modivara"
+      ],
+      "domains": {
+        "de": {
+          "status": "unknown",
+          "httpStatus": null,
+          "checkedAt": null,
+          "source": "https://rdap.denic.de/domain/modivara.de"
+        },
+        "com": {
+          "status": "unknown",
+          "httpStatus": null,
+          "checkedAt": null,
+          "source": "https://rdap.verisign.com/com/v1/domain/modivara.com"
+        }
+      },
+      "appStoreStatus": "not_systematically_checked",
+      "legalStatus": "pending_qa_legal",
+      "brandChosen": false,
+      "published": false
+    },
+    {
+      "id": "BR-09",
+      "name": "Noverida",
+      "origin": "Novo + Verification",
+      "pronunciation": {
+        "de": "No-ve-ri-da",
+        "en": "no-ve-REE-da"
+      },
+      "reason": "Modernes neutrales Plattformwort",
+      "risks": "Häufige Novo-/Veri-Präfixe: Ähnlichkeitsrisiko",
+      "score": {
+        "distinctiveness": 4,
+        "pronounceability": 5,
+        "confusionResistance": 3,
+        "appStoreFit": 4,
+        "b2cB2bBreadth": 5
+      },
+      "scoreTotal": 83,
+      "shortlistRank": null,
+      "searchDate": "2026-10-11",
+      "screeningStatus": "legal_research_pending",
+      "observedWebReferences": [],
+      "domains": {
+        "de": {
+          "status": "unknown",
+          "httpStatus": null,
+          "checkedAt": null,
+          "source": "https://rdap.denic.de/domain/noverida.de"
+        },
+        "com": {
+          "status": "unknown",
+          "httpStatus": null,
+          "checkedAt": null,
+          "source": "https://rdap.verisign.com/com/v1/domain/noverida.com"
+        }
+      },
+      "appStoreStatus": "not_systematically_checked",
+      "legalStatus": "pending_qa_legal",
+      "brandChosen": false,
+      "published": false
+    },
+    {
+      "id": "BR-10",
+      "name": "Varyden",
+      "origin": "Variant + Identity",
+      "pronunciation": {
+        "de": "Va-ri-den",
+        "en": "VA-ree-den"
+      },
+      "reason": "Kürzerer Markenanker, leicht auf App-Screen",
+      "risks": "Englisch phonetisch wie 'very then'",
+      "score": {
+        "distinctiveness": 4,
+        "pronounceability": 4,
+        "confusionResistance": 3,
+        "appStoreFit": 5,
+        "b2cB2bBreadth": 4
+      },
+      "scoreTotal": 79,
+      "shortlistRank": null,
+      "searchDate": "2026-10-11",
+      "screeningStatus": "legal_research_pending",
+      "observedWebReferences": [],
+      "domains": {
+        "de": {
+          "status": "unknown",
+          "httpStatus": null,
+          "checkedAt": null,
+          "source": "https://rdap.denic.de/domain/varyden.de"
+        },
+        "com": {
+          "status": "unknown",
+          "httpStatus": null,
+          "checkedAt": null,
+          "source": "https://rdap.verisign.com/com/v1/domain/varyden.com"
+        }
+      },
+      "appStoreStatus": "not_systematically_checked",
+      "legalStatus": "pending_qa_legal",
+      "brandChosen": false,
+      "published": false
+    },
+    {
+      "id": "BR-11",
+      "name": "Trovexa",
+      "origin": "Trace + Connection",
+      "pronunciation": {
+        "de": "Tro-vex-a",
+        "en": "tro-VEX-a"
+      },
+      "reason": "Fokussiert Prüfspur und Verbindung",
+      "risks": "-vexa ist in Tech-Marken nicht selten",
+      "score": {
+        "distinctiveness": 4,
+        "pronounceability": 4,
+        "confusionResistance": 3,
+        "appStoreFit": 5,
+        "b2cB2bBreadth": 4
+      },
+      "scoreTotal": 79,
+      "shortlistRank": null,
+      "searchDate": "2026-10-11",
+      "screeningStatus": "legal_research_pending",
+      "observedWebReferences": [],
+      "domains": {
+        "de": {
+          "status": "unknown",
+          "httpStatus": null,
+          "checkedAt": null,
+          "source": "https://rdap.denic.de/domain/trovexa.de"
+        },
+        "com": {
+          "status": "unknown",
+          "httpStatus": null,
+          "checkedAt": null,
+          "source": "https://rdap.verisign.com/com/v1/domain/trovexa.com"
+        }
+      },
+      "appStoreStatus": "not_systematically_checked",
+      "legalStatus": "pending_qa_legal",
+      "brandChosen": false,
+      "published": false
+    },
+    {
+      "id": "BR-12",
+      "name": "Varelio",
+      "origin": "Variant + Relief",
+      "pronunciation": {
+        "de": "Va-re-li-o",
+        "en": "va-REH-lee-oh"
+      },
+      "reason": "Servicefreundliche Tonalität",
+      "risks": "Risiko Klangnähe zu Valerio/Varevion",
+      "score": {
+        "distinctiveness": 3,
+        "pronounceability": 5,
+        "confusionResistance": 2,
+        "appStoreFit": 5,
+        "b2cB2bBreadth": 5
+      },
+      "scoreTotal": 76,
+      "shortlistRank": null,
+      "searchDate": "2026-10-11",
+      "screeningStatus": "legal_research_pending",
+      "observedWebReferences": [],
+      "domains": {
+        "de": {
+          "status": "unknown",
+          "httpStatus": null,
+          "checkedAt": null,
+          "source": "https://rdap.denic.de/domain/varelio.de"
+        },
+        "com": {
+          "status": "unknown",
+          "httpStatus": null,
+          "checkedAt": null,
+          "source": "https://rdap.verisign.com/com/v1/domain/varelio.com"
+        }
+      },
+      "appStoreStatus": "not_systematically_checked",
+      "legalStatus": "pending_qa_legal",
+      "brandChosen": false,
+      "published": false
+    },
+    {
+      "id": "BR-13",
+      "name": "Roventra",
+      "origin": "Route + Variante",
+      "pronunciation": {
+        "de": "Ro-ven-tra",
+        "en": "ro-VEN-tra"
+      },
+      "reason": "Orientierung statt unklarer Teilewahl",
+      "risks": "-ventra kommt ähnlich in anderen Firmenklängen vor",
+      "score": {
+        "distinctiveness": 4,
+        "pronounceability": 4,
+        "confusionResistance": 3,
+        "appStoreFit": 4,
+        "b2cB2bBreadth": 5
+      },
+      "scoreTotal": 79,
+      "shortlistRank": null,
+      "searchDate": "2026-10-11",
+      "screeningStatus": "legal_research_pending",
+      "observedWebReferences": [],
+      "domains": {
+        "de": {
+          "status": "unknown",
+          "httpStatus": null,
+          "checkedAt": null,
+          "source": "https://rdap.denic.de/domain/roventra.de"
+        },
+        "com": {
+          "status": "unknown",
+          "httpStatus": null,
+          "checkedAt": null,
+          "source": "https://rdap.verisign.com/com/v1/domain/roventra.com"
+        }
+      },
+      "appStoreStatus": "not_systematically_checked",
+      "legalStatus": "pending_qa_legal",
+      "brandChosen": false,
+      "published": false
+    },
+    {
+      "id": "BR-14",
+      "name": "Tervixo",
+      "origin": "Trace + Verify",
+      "pronunciation": {
+        "de": "Ter-vik-so",
+        "en": "ter-VIK-so"
+      },
+      "reason": "Kompakt und technisch",
+      "risks": "X-Sprache ungleich je Markt",
+      "score": {
+        "distinctiveness": 4,
+        "pronounceability": 3,
+        "confusionResistance": 3,
+        "appStoreFit": 5,
+        "b2cB2bBreadth": 4
+      },
+      "scoreTotal": 75,
+      "shortlistRank": null,
+      "searchDate": "2026-10-11",
+      "screeningStatus": "legal_research_pending",
+      "observedWebReferences": [],
+      "domains": {
+        "de": {
+          "status": "unknown",
+          "httpStatus": null,
+          "checkedAt": null,
+          "source": "https://rdap.denic.de/domain/tervixo.de"
+        },
+        "com": {
+          "status": "unknown",
+          "httpStatus": null,
+          "checkedAt": null,
+          "source": "https://rdap.verisign.com/com/v1/domain/tervixo.com"
+        }
+      },
+      "appStoreStatus": "not_systematically_checked",
+      "legalStatus": "pending_qa_legal",
+      "brandChosen": false,
+      "published": false
+    },
+    {
+      "id": "BR-15",
+      "name": "Pardexa",
+      "origin": "Part + Index",
+      "pronunciation": {
+        "de": "Par-dek-sa",
+        "en": "par-DEK-sa"
+      },
+      "reason": "Beschreibt eher geordneten Ersatzteilindex",
+      "risks": "Klangnähe zu Dex-/Dexa-Familie",
+      "score": {
+        "distinctiveness": 3,
+        "pronounceability": 5,
+        "confusionResistance": 2,
+        "appStoreFit": 4,
+        "b2cB2bBreadth": 4
+      },
+      "scoreTotal": 70,
+      "shortlistRank": null,
+      "searchDate": "2026-10-11",
+      "screeningStatus": "legal_research_pending",
+      "observedWebReferences": [],
+      "domains": {
+        "de": {
+          "status": "unknown",
+          "httpStatus": null,
+          "checkedAt": null,
+          "source": "https://rdap.denic.de/domain/pardexa.de"
+        },
+        "com": {
+          "status": "unknown",
+          "httpStatus": null,
+          "checkedAt": null,
+          "source": "https://rdap.verisign.com/com/v1/domain/pardexa.com"
+        }
+      },
+      "appStoreStatus": "not_systematically_checked",
+      "legalStatus": "pending_qa_legal",
+      "brandChosen": false,
+      "published": false
+    },
+    {
+      "id": "BR-16",
+      "name": "Veluntra",
+      "origin": "Verify + Lumen + Trace",
+      "pronunciation": {
+        "de": "Ve-lun-tra",
+        "en": "ve-LOON-tra"
+      },
+      "reason": "Transparenz und prüfbare Herkunft",
+      "risks": "Luntra/Ventra-Rhythmus kann verwandt wirken",
+      "score": {
+        "distinctiveness": 4,
+        "pronounceability": 4,
+        "confusionResistance": 3,
+        "appStoreFit": 4,
+        "b2cB2bBreadth": 5
+      },
+      "scoreTotal": 79,
+      "shortlistRank": null,
+      "searchDate": "2026-10-11",
+      "screeningStatus": "legal_research_pending",
+      "observedWebReferences": [],
+      "domains": {
+        "de": {
+          "status": "unknown",
+          "httpStatus": null,
+          "checkedAt": null,
+          "source": "https://rdap.denic.de/domain/veluntra.de"
+        },
+        "com": {
+          "status": "unknown",
+          "httpStatus": null,
+          "checkedAt": null,
+          "source": "https://rdap.verisign.com/com/v1/domain/veluntra.com"
+        }
+      },
+      "appStoreStatus": "not_systematically_checked",
+      "legalStatus": "pending_qa_legal",
+      "brandChosen": false,
+      "published": false
+    },
+    {
+      "id": "BR-17",
+      "name": "Kernvexa",
+      "origin": "Kern + Verify",
+      "pronunciation": {
+        "de": "Kern-vek-sa",
+        "en": "kern-VEK-sa"
+      },
+      "reason": "Verlässlicher deutscher B2B-Ton",
+      "risks": "Kern beschreibend, vorn in EN teils anders betont",
+      "score": {
+        "distinctiveness": 4,
+        "pronounceability": 4,
+        "confusionResistance": 3,
+        "appStoreFit": 4,
+        "b2cB2bBreadth": 4
+      },
+      "scoreTotal": 76,
+      "shortlistRank": null,
+      "searchDate": "2026-10-11",
+      "screeningStatus": "legal_research_pending",
+      "observedWebReferences": [],
+      "domains": {
+        "de": {
+          "status": "unknown",
+          "httpStatus": null,
+          "checkedAt": null,
+          "source": "https://rdap.denic.de/domain/kernvexa.de"
+        },
+        "com": {
+          "status": "unknown",
+          "httpStatus": null,
+          "checkedAt": null,
+          "source": "https://rdap.verisign.com/com/v1/domain/kernvexa.com"
+        }
+      },
+      "appStoreStatus": "not_systematically_checked",
+      "legalStatus": "pending_qa_legal",
+      "brandChosen": false,
+      "published": false
+    },
+    {
+      "id": "BR-18",
+      "name": "Partenio",
+      "origin": "Part + Genio",
+      "pronunciation": {
+        "de": "Par-te-ni-o",
+        "en": "par-TEN-ee-oh"
+      },
+      "reason": "Freundlicher Klang, Teilewelt erkennbar",
+      "risks": "Teilebezug kann Fokus auf B2B-Datenplattform verengen",
+      "score": {
+        "distinctiveness": 3,
+        "pronounceability": 5,
+        "confusionResistance": 3,
+        "appStoreFit": 5,
+        "b2cB2bBreadth": 3
+      },
+      "scoreTotal": 74,
+      "shortlistRank": null,
+      "searchDate": "2026-10-11",
+      "screeningStatus": "legal_research_pending",
+      "observedWebReferences": [],
+      "domains": {
+        "de": {
+          "status": "unknown",
+          "httpStatus": null,
+          "checkedAt": null,
+          "source": "https://rdap.denic.de/domain/partenio.de"
+        },
+        "com": {
+          "status": "unknown",
+          "httpStatus": null,
+          "checkedAt": null,
+          "source": "https://rdap.verisign.com/com/v1/domain/partenio.com"
+        }
+      },
+      "appStoreStatus": "not_systematically_checked",
+      "legalStatus": "pending_qa_legal",
+      "brandChosen": false,
+      "published": false
+    },
+    {
+      "id": "BR-19",
+      "name": "Univara",
+      "origin": "Universal + Variante",
+      "pronunciation": {
+        "de": "U-ni-va-ra",
+        "en": "yoo-ni-VA-ra"
+      },
+      "reason": "Universelles Konzept sofort ersichtlich",
+      "risks": "Uni- generisch und ähnlichkeitsträchtig",
+      "score": {
+        "distinctiveness": 2,
+        "pronounceability": 5,
+        "confusionResistance": 2,
+        "appStoreFit": 5,
+        "b2cB2bBreadth": 5
+      },
+      "scoreTotal": 70,
+      "shortlistRank": null,
+      "searchDate": "2026-10-11",
+      "screeningStatus": "legal_research_pending",
+      "observedWebReferences": [],
+      "domains": {
+        "de": {
+          "status": "unknown",
+          "httpStatus": null,
+          "checkedAt": null,
+          "source": "https://rdap.denic.de/domain/univara.de"
+        },
+        "com": {
+          "status": "unknown",
+          "httpStatus": null,
+          "checkedAt": null,
+          "source": "https://rdap.verisign.com/com/v1/domain/univara.com"
+        }
+      },
+      "appStoreStatus": "not_systematically_checked",
+      "legalStatus": "pending_qa_legal",
+      "brandChosen": false,
+      "published": false
+    },
+    {
+      "id": "BR-20",
+      "name": "Revireo",
+      "origin": "Review + Repair",
+      "pronunciation": {
+        "de": "Re-vi-re-o",
+        "en": "re-vee-REH-oh"
+      },
+      "reason": "Reparaturnaher Rhythmus für Consumer",
+      "risks": "Repair-Anmutung später für andere Branchen enger",
+      "score": {
+        "distinctiveness": 3,
+        "pronounceability": 4,
+        "confusionResistance": 3,
+        "appStoreFit": 4,
+        "b2cB2bBreadth": 3
+      },
+      "scoreTotal": 67,
+      "shortlistRank": null,
+      "searchDate": "2026-10-11",
+      "screeningStatus": "legal_research_pending",
+      "observedWebReferences": [],
+      "domains": {
+        "de": {
+          "status": "unknown",
+          "httpStatus": null,
+          "checkedAt": null,
+          "source": "https://rdap.denic.de/domain/revireo.de"
+        },
+        "com": {
+          "status": "unknown",
+          "httpStatus": null,
+          "checkedAt": null,
+          "source": "https://rdap.verisign.com/com/v1/domain/revireo.com"
+        }
+      },
+      "appStoreStatus": "not_systematically_checked",
+      "legalStatus": "pending_qa_legal",
+      "brandChosen": false,
+      "published": false
+    },
+    {
+      "id": "BR-21",
+      "name": "Dexivaro",
+      "origin": "Index + Variante",
+      "pronunciation": {
+        "de": "Dek-si-va-ro",
+        "en": "dek-see-VAH-ro"
+      },
+      "reason": "Datenindex für Varianten technisch verständlich",
+      "risks": "Dex-/Index-Umfeld stark verbreitet",
+      "score": {
+        "distinctiveness": 3,
+        "pronounceability": 4,
+        "confusionResistance": 3,
+        "appStoreFit": 4,
+        "b2cB2bBreadth": 5
+      },
+      "scoreTotal": 73,
+      "shortlistRank": null,
+      "searchDate": "2026-10-11",
+      "screeningStatus": "legal_research_pending",
+      "observedWebReferences": [],
+      "domains": {
+        "de": {
+          "status": "unknown",
+          "httpStatus": null,
+          "checkedAt": null,
+          "source": "https://rdap.denic.de/domain/dexivaro.de"
+        },
+        "com": {
+          "status": "unknown",
+          "httpStatus": null,
+          "checkedAt": null,
+          "source": "https://rdap.verisign.com/com/v1/domain/dexivaro.com"
+        }
+      },
+      "appStoreStatus": "not_systematically_checked",
+      "legalStatus": "pending_qa_legal",
+      "brandChosen": false,
+      "published": false
+    },
+    {
+      "id": "BR-22",
+      "name": "Norivexa",
+      "origin": "Norm + Revision + X",
+      "pronunciation": {
+        "de": "No-ri-vex-a",
+        "en": "no-ree-VEX-a"
+      },
+      "reason": "Klingt nach verlässlicher Norm-/Versionsführung",
+      "risks": "X-Endung wie viele SaaS-Wörter",
+      "score": {
+        "distinctiveness": 4,
+        "pronounceability": 4,
+        "confusionResistance": 3,
+        "appStoreFit": 4,
+        "b2cB2bBreadth": 4
+      },
+      "scoreTotal": 76,
+      "shortlistRank": null,
+      "searchDate": "2026-10-11",
+      "screeningStatus": "legal_research_pending",
+      "observedWebReferences": [],
+      "domains": {
+        "de": {
+          "status": "unknown",
+          "httpStatus": null,
+          "checkedAt": null,
+          "source": "https://rdap.denic.de/domain/norivexa.de"
+        },
+        "com": {
+          "status": "unknown",
+          "httpStatus": null,
+          "checkedAt": null,
+          "source": "https://rdap.verisign.com/com/v1/domain/norivexa.com"
+        }
+      },
+      "appStoreStatus": "not_systematically_checked",
+      "legalStatus": "pending_qa_legal",
+      "brandChosen": false,
+      "published": false
+    },
+    {
+      "id": "BR-23",
+      "name": "Arvinoa",
+      "origin": "Archiv + Novo",
+      "pronunciation": {
+        "de": "Ar-vi-no-a",
+        "en": "ar-vee-NO-ah"
+      },
+      "reason": "Quelle und Dokumentation in warmer Bildwelt",
+      "risks": "Arvino-/Arvio-Klangnachbarn gesondert prüfen",
+      "score": {
+        "distinctiveness": 4,
+        "pronounceability": 4,
+        "confusionResistance": 3,
+        "appStoreFit": 4,
+        "b2cB2bBreadth": 5
+      },
+      "scoreTotal": 79,
+      "shortlistRank": null,
+      "searchDate": "2026-10-11",
+      "screeningStatus": "legal_research_pending",
+      "observedWebReferences": [],
+      "domains": {
+        "de": {
+          "status": "unknown",
+          "httpStatus": null,
+          "checkedAt": null,
+          "source": "https://rdap.denic.de/domain/arvinoa.de"
+        },
+        "com": {
+          "status": "unknown",
+          "httpStatus": null,
+          "checkedAt": null,
+          "source": "https://rdap.verisign.com/com/v1/domain/arvinoa.com"
+        }
+      },
+      "appStoreStatus": "not_systematically_checked",
+      "legalStatus": "pending_qa_legal",
+      "brandChosen": false,
+      "published": false
+    },
+    {
+      "id": "BR-24",
+      "name": "Velnaro",
+      "origin": "Verify + neutraler Kunstwortschluss",
+      "pronunciation": {
+        "de": "Vel-na-ro",
+        "en": "vel-NAH-ro"
+      },
+      "reason": "Sehr kurz, sympathisch und breit",
+      "risks": "Nur geringer Themenbezug; Nähe zu Velnero/Valnaro prüfen",
+      "score": {
+        "distinctiveness": 4,
+        "pronounceability": 5,
+        "confusionResistance": 3,
+        "appStoreFit": 5,
+        "b2cB2bBreadth": 5
+      },
+      "scoreTotal": 86,
+      "shortlistRank": null,
+      "searchDate": "2026-10-11",
+      "screeningStatus": "legal_research_pending",
+      "observedWebReferences": [],
+      "domains": {
+        "de": {
+          "status": "unknown",
+          "httpStatus": null,
+          "checkedAt": null,
+          "source": "https://rdap.denic.de/domain/velnaro.de"
+        },
+        "com": {
+          "status": "unknown",
+          "httpStatus": null,
+          "checkedAt": null,
+          "source": "https://rdap.verisign.com/com/v1/domain/velnaro.com"
+        }
+      },
+      "appStoreStatus": "not_systematically_checked",
+      "legalStatus": "pending_qa_legal",
+      "brandChosen": false,
+      "published": false
+    },
+    {
+      "id": "BR-25",
+      "name": "Carvixa",
+      "origin": "Catalog + Verify + X",
+      "pronunciation": {
+        "de": "Car-vik-sa",
+        "en": "car-VIK-sa"
+      },
+      "reason": "Kräftiger Code-/Datenklang",
+      "risks": "'Car' eng mit Fahrzeugen assoziiert, universell missverständlich",
+      "score": {
+        "distinctiveness": 3,
+        "pronounceability": 4,
+        "confusionResistance": 3,
+        "appStoreFit": 4,
+        "b2cB2bBreadth": 3
+      },
+      "scoreTotal": 67,
+      "shortlistRank": null,
+      "searchDate": "2026-10-11",
+      "screeningStatus": "legal_research_pending",
+      "observedWebReferences": [],
+      "domains": {
+        "de": {
+          "status": "unknown",
+          "httpStatus": null,
+          "checkedAt": null,
+          "source": "https://rdap.denic.de/domain/carvixa.de"
+        },
+        "com": {
+          "status": "unknown",
+          "httpStatus": null,
+          "checkedAt": null,
+          "source": "https://rdap.verisign.com/com/v1/domain/carvixa.com"
+        }
+      },
+      "appStoreStatus": "not_systematically_checked",
+      "legalStatus": "pending_qa_legal",
+      "brandChosen": false,
+      "published": false
+    }
+  ],
+  "domainSnapshotEvidence": {
+    "observedAt": "2026-10-10T23:30:19Z",
+    "source": "https://github.com/Straikerabi/-universal-fitment/actions/runs/38095246015",
+    "method": "HEAD official RDAP registry URLs for ranked five; no purchase",
+    "temporaryNotRegisteredIsNotAvailableClaim": true
+  }
+}
