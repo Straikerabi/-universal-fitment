@@ -1,0 +1,10 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {load,validate} from './validate.mjs';const base=load(),mutate=fn=>{const d=structuredClone(base);fn(d);return d;};
+test('five shortlisted candidates structurally valid',()=>assert.deepEqual(validate(base),[]));
+test('fail closed on clearance',()=>assert.ok(validate(mutate(d=>d.legalClearance=true)).length));
+test('fail closed on brand selection',()=>assert.ok(validate(mutate(d=>d.brandChosen=true)).length));
+test('reject duplicate',()=>assert.ok(validate(mutate(d=>d.candidates[1].name=d.candidates[0].name)).length));
+test('reject invented register verification',()=>assert.ok(validate(mutate(d=>d.candidates[0].registers.EUIPO='cleared')).length));
+test('reject fabricated candidate clearance',()=>assert.ok(validate(mutate(d=>d.candidates[0].legalDecision='approved')).length));
+test('reject bad evidence link',()=>assert.ok(validate(mutate(d=>d.candidates[0].conflictUrl='none')).length));
+test('reject missing domain source',()=>assert.ok(validate(mutate(d=>d.candidates[0].domains.de.source='')).length));
+test('reject missing Nice classes',()=>assert.ok(validate(mutate(d=>d.candidates[0].classesProposed=[9])).length));

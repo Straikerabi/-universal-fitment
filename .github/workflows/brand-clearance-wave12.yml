@@ -1,0 +1,17 @@
+name: Brand Clearance Wave12
+on:
+  pull_request:
+    paths:
+      - 'integrations/brand-clearance-wave12/**'
+      - '.github/workflows/brand-clearance-wave12.yml'
+  workflow_dispatch:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node integrations/brand-clearance-wave12/validate.mjs
+      - run: node --test integrations/brand-clearance-wave12/validate.test.mjs

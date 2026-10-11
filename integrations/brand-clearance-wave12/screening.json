@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "sourceMarketingPr": 112,
+  "asOf": "2026-10-11",
+  "launchApproved": false,
+  "brandChosen": false,
+  "legalClearance": false,
+  "checks": [
+    "DPMAregister DE",
+    "EUIPO/TMview EU",
+    "WIPO Global Brand Database",
+    "Company and trade names",
+    "Apple App Store",
+    "Google Play",
+    "DENIC .de RDAP",
+    "Verisign .com RDAP",
+    "Visual phonetic semantic similarity"
+  ],
+  "candidates": [
+    {
+      "id": "BR-01",
+      "name": "Nolvanta",
+      "asOf": "2026-10-11",
+      "legalDecision": "blocked_pending_official_register_search",
+      "similarityReview": "pending_human_review",
+      "classesProposed": [
+        9,
+        35,
+        42
+      ],
+      "conflictSignal": "NULANTA Indian registered word mark class 5 (phonetic neighbor, different goods; non-EU secondary record)",
+      "conflictUrl": "https://www.quickcompany.in/trademarks/6146741-nulanta",
+      "domains": {
+        "de": {
+          "source": "https://rdap.denic.de/domain/nolvanta.de",
+          "marketingHttpStatus": 404
+        },
+        "com": {
+          "source": "https://rdap.verisign.com/com/v1/domain/nolvanta.com",
+          "marketingHttpStatus": 404
+        }
+      },
+      "registers": {
+        "DPMA": "not_verified",
+        "EUIPO": "not_verified",
+        "WIPO": "not_verified"
+      },
+      "companySearch": "not_verified",
+      "appStoreSearch": "not_verified",
+      "risk": "review_required"
+    },
+    {
+      "id": "BR-02",
+      "name": "Varunexa",
+      "asOf": "2026-10-11",
+      "legalDecision": "blocked_pending_official_register_search",
+      "similarityReview": "pending_human_review",
+      "classesProposed": [
+        9,
+        35,
+        42
+      ],
+      "conflictSignal": "VURNEXA US registered word mark class 31 (phonetic neighbor; different goods; US secondary record)",
+      "conflictUrl": "https://www.trademarkelite.com/trademark/trademark-detail/99654616/VURNEXA",
+      "domains": {
+        "de": {
+          "source": "https://rdap.denic.de/domain/varunexa.de",
+          "marketingHttpStatus": 404
+        },
+        "com": {
+          "source": "https://rdap.verisign.com/com/v1/domain/varunexa.com",
+          "marketingHttpStatus": 200
+        }
+      },
+      "registers": {
+        "DPMA": "not_verified",
+        "EUIPO": "not_verified",
+        "WIPO": "not_verified"
+      },
+      "companySearch": "not_verified",
+      "appStoreSearch": "not_verified",
+      "risk": "review_required"
+    },
+    {
+      "id": "BR-03",
+      "name": "Varidaro",
+      "asOf": "2026-10-11",
+      "legalDecision": "blocked_pending_official_register_search",
+      "similarityReview": "pending_human_review",
+      "classesProposed": [
+        9,
+        35,
+        42
+      ],
+      "conflictSignal": "VERIDARO EU application 019416770 classes 35/42; software/SaaS overlaps intended B2B platform; commercial use veridaro.com",
+      "conflictUrl": "https://www.trademarkelite.com/europe/trademark/trademark-detail/019416770/VERIDARO",
+      "domains": {
+        "de": {
+          "source": "https://rdap.denic.de/domain/varidaro.de",
+          "marketingHttpStatus": 404
+        },
+        "com": {
+          "source": "https://rdap.verisign.com/com/v1/domain/varidaro.com",
+          "marketingHttpStatus": 404
+        }
+      },
+      "registers": {
+        "DPMA": "not_verified",
+        "EUIPO": "not_verified",
+        "WIPO": "not_verified"
+      },
+      "companySearch": "not_verified",
+      "appStoreSearch": "not_verified",
+      "risk": "elevated_similarity_and_class_overlap"
+    },
+    {
+      "id": "BR-04",
+      "name": "Modantra",
+      "asOf": "2026-10-11",
+      "legalDecision": "blocked_pending_official_register_search",
+      "similarityReview": "pending_human_review",
+      "classesProposed": [
+        9,
+        35,
+        42
+      ],
+      "conflictSignal": ".com registered according to Marketing RDAP snapshot; trademark databases not cleared",
+      "conflictUrl": "https://rdap.verisign.com/com/v1/domain/modantra.com",
+      "domains": {
+        "de": {
+          "source": "https://rdap.denic.de/domain/modantra.de",
+          "marketingHttpStatus": 404
+        },
+        "com": {
+          "source": "https://rdap.verisign.com/com/v1/domain/modantra.com",
+          "marketingHttpStatus": 200
+        }
+      },
+      "registers": {
+        "DPMA": "not_verified",
+        "EUIPO": "not_verified",
+        "WIPO": "not_verified"
+      },
+      "companySearch": "not_verified",
+      "appStoreSearch": "not_verified",
+      "risk": "review_required"
+    },
+    {
+      "id": "BR-05",
+      "name": "Partidra",
+      "asOf": "2026-10-11",
+      "legalDecision": "blocked_pending_official_register_search",
+      "similarityReview": "pending_human_review",
+      "classesProposed": [
+        9,
+        35,
+        42
+      ],
+      "conflictSignal": "No verified exact trademark result; absence of indexed hit not a clearance",
+      "conflictUrl": "https://www.tmdn.org/tmview/",
+      "domains": {
+        "de": {
+          "source": "https://rdap.denic.de/domain/partidra.de",
+          "marketingHttpStatus": 404
+        },
+        "com": {
+          "source": "https://rdap.verisign.com/com/v1/domain/partidra.com",
+          "marketingHttpStatus": 404
+        }
+      },
+      "registers": {
+        "DPMA": "not_verified",
+        "EUIPO": "not_verified",
+        "WIPO": "not_verified"
+      },
+      "companySearch": "not_verified",
+      "appStoreSearch": "not_verified",
+      "risk": "review_required"
+    }
+  ]
+}
