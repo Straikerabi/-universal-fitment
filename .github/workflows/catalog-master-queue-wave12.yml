@@ -1,0 +1,25 @@
+name: Catalog Master Queue Wave12
+on:
+  push:
+    branches: [work/catalog-master-queue-wave12]
+    paths:
+      - 'integrations/catalog-master-queue-wave12/**'
+      - '.github/workflows/catalog-master-queue-wave12.yml'
+  pull_request:
+    branches: [integration/private-unified-preview-wave5-owner]
+    paths:
+      - 'integrations/catalog-master-queue-wave12/**'
+      - '.github/workflows/catalog-master-queue-wave12.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check deterministic full registry projection and durable work queue
+        run: node integrations/catalog-master-queue-wave12/cli.mjs --check
+      - name: Execute native Node registry and queue negative regression
+        run: node --test integrations/catalog-master-queue-wave12/master.test.mjs
