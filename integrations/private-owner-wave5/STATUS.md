@@ -1,0 +1,95 @@
+# Universal Fitment — Owner-Marktstart-Scorecard
+
+**Stand:** 2026-10-10 · Owner-Abnahme nach Wave7 (A noch nicht integriert), Bezug: `integration/private-unified-preview-wave5-owner`
+
+**GESAMTE MARKTREIFE (gewichtete Projektleiter-Schätzung): 41 %**
+**TECHNISCHE APP-ENTWICKLUNG (Projektleiter-Schätzung): 59 %**
+**Gewerbe:** nicht allein wegen Entwicklungsprozentsatz anmelden; Gewerbebeginn/Monetarisierung konkret mit zuständiger Stelle abstimmen.
+**Öffentlicher Marktstart:** NO-GO.
+
+Diese Prozentzahlen sind **Planungs-KPIs**, keine automatisch gemessene Code-Abdeckung, keine rechtliche Zusage und kein Launch-Freigabekriterium. Nutzer können eine große Datenbank nicht aus einer Gesamtzahl ableiten.
+
+| Abnahmebereich | Gewicht | geschätzter Teilfortschritt | Beitrag |
+| --- | ---: | ---: | ---: |
+| Nutzeroberfläche / Reparaturmission | 20 % | 80 % | 16,00 |
+| Echte Katalogdaten + belegte Passungsqualität | 30 % | 30 % | 9,00 |
+| Engine / System / Sicherheit / automatische QA | 15 % | 85 % | 12,75 |
+| Recht / Datenschutz / Hosting / Betreiberpflichten | 15 % | 18 % | 2,70 |
+| Händler- und Erlösmodell | 10 % | 5 % | 0,50 |
+| Echte Nutzer-/Hardwarevalidierung | 10 % | 0 % | 0,00 |
+| **Gesamt** | **100 %** | | **40,95 → 41 %** |
+
+## Wave8 Owner-Fortschritt – getrennt von Launch und datenrechtlicher Freigabe
+
+**Aktueller privater Owner-Kommitt nach PR #91/#92/#94:** `3bafbc7fd8c8da5ed6fe3bddc70eacbc0be1e035` (vor dieser Dokumentationsänderung). Die bestehende fünfstufige Consumer-App enthält weiterhin **11 echte Modellreferenzen aus 5 Marken**, 11 OEM-Teilidentitäten, **0 positive reale Passungen**. Inhaltstiefe **28,2 %**, Technik **59 %** und Marktreife **41 %** bleiben unverändert, weil neue Research- und UX-Vorschau-Dateien nicht automatisch in sichtbare Consumer-Felder oder sichere Fitment-Entscheidungen übergehen.
+
+| Private Integration | Tatsächlich abgenommen | Noch nicht realer Consumer-/Launchfortschritt |
+| --- | --- | --- |
+| #89 | dynamische App-Katalogzahlen; 53/53 Consumer + 6/6 Report + 66/66 Chromium/WebKit, Source-Lock neu bewertet; private CI grün | Legal/Operator/Rechte/Hosting weiterhin BLOCKED |
+| #92 | isolierter, mobil bedienbarer Device-Discovery-Prototyp, 13/13 CI grün | Integration in den aktuellen Reparaturmodus ausstehend (#95) |
+| #94 | sieben unveröffentlichte Marketing-/PR-Entwürfe | 0 gebuchte Kampagnen, 0 bestätigte B2B-Partner, 0 Freigabe für externe Claims |
+| #91 | OEM-Research-Observations/11er-Staging mit fünf Profilen und negativen Schema-Gates; isolierte Owner-CI grün [38074673954](https://github.com/Straikerabi/-universal-fitment/actions/runs/38074673954) | 0 unabhängige Raw-Archive vollständig geprüft, 0 kommerzielle Rechtebewilligungen, noch keine Consumer-Contentprojektion |
+| #93 | QA-Release-Gate-Plan als Draft vorhanden | noch keine ausführbaren neuen QA-CI-/Mutationschecks; Owner-Verbesserungsauftrag im PR |
+
+**Zentrale nächste Arbeit:** Work B #95 `work/wave9-consumer-discovery-owner-bridge` (isoliert, echte Consumer-Integration); Work A #96 `work/wave9-oem-independent-source-audit` (Original-33-Antworten oder neue getrennte verifizierbare OEM-Fakten). Work C bleibt reserviert für vollständige kombinierte Regression, sobald #95 ein fertiger Draft ist. Alle Works sind normale vom Nutzer auszulösende Ausführungen, keine automatisch laufenden Chat-Hintergrundjobs.
+
+**Harte Sperre:** #84 (29 Geräte, 8 Marken, 22 OEM-Teile) bleibt separat, bis OEM-Quellen und Nutzungsvoraussetzungen unabhängig geprüft, Konflikte behoben und sämtliche Prüfungen auf neuem kombinierten Commit ausgeführt sind. Ein Status `source_observed` im PR #91 allein rechtfertigt keinen Einbau-/Kauf-/Medien-Claim.
+## Wave7-Abnahme und Owner-Integration (10.10.2026)
+
+1. **PR #83 / Work C integriert** auf privatem Owner-Branch in Commit `5fcf1abe1a01011eed64c28e9d78bd5b4dc30e11`. Isolierte funktionierende Legal-/Privacy-/Lösch-Navigation lokal: [CI 38047097152](https://github.com/Straikerabi/-universal-fitment/actions/runs/38047097152) GREEN. Nicht in die produktive Consumer-UI eingebettet. Kein vollständiges Impressum oder DSGVO-Art.-13-Freigabe, Betreiber unbekannt. Existierendes Legal-Preflight bleibt bewusst BLOCKED.
+2. **PR #79 / Work B integriert** auf privatem Owner-Branch in Commit `8efb24ef980ccdd316d3c05465c90a325d0ea427`. 200%-Schrift-Überlauf und WebKit-Offline-Neustart konkret behoben: [CI 38061777349](https://github.com/Straikerabi/-universal-fitment/actions/runs/38061777349) Chromium **33/33**, Linux-WebKit **33/33**, keine Skips. Altes Preflight-Lock/Golden auf Consumer-Bytes damit **veraltet**, separater Prüflauf [38061777341](https://github.com/Straikerabi/-universal-fitment/actions/runs/38061777341) ROT. Diese Diskrepanz nicht als Rechtsfreigabe oder rundum grüne CI verbergen; neuer Source-Review und neuer Lock sind nötig.
+3. **PR #84 / Work A noch Draft, NICHT integriert**: berichtet und lokal getestet neuen Consumer-Snapshot mit **29 statt 11 Geräten**, **22 statt 11 OEM-Teilidentitäten** bei **8 Marken**, 18 zusätzliche Varianten / 14 separate neue Gerät-Teile-Listings, **0** echte Einbau- und Kauffreigaben. Exakt angegebene 33 neue Quellantworten sind nur in einem **außerhalb des Git-Repositories** befindlichen privaten Auditarchiv dokumentiert. Originalrohbytes liegen dem aktuellen Owner-Review nicht unabhängig vor: Anspruch auf reproduzierbaren OEM-Replay bleibt vor Freigabe zu kontrollieren. Zusätzlich [CI 38062858606](https://github.com/Straikerabi/-universal-fitment/actions/runs/38062858606) ROT wegen veralteter Preflight-Source-Locks; PR #84 kollidiert bei der Integration mit Work-B-Änderungen an `app.mjs` / `offline-config.mjs`. **Im tatsächlichen gemeinsamen Owner-Consumer-Snapshot weiterhin 11 Geräte / 11 Artikelidentitäten.**
+4. Private gemeinsame Wave5-Regression nach beiden Worker-Merges: [Owner CI 38064269115](https://github.com/Straikerabi/-universal-fitment/actions/runs/38064269115) GREEN. Dieser Workflow deckt NICHT automatisch den eingefrorenen Wave6-Legal-Source-Lock ab; dessen eigener Zustand bleibt rot.
+5. Historische Wave3-Vollmigration #69/#74/#77 weiterhin BLOCKED wegen 56 fehlender originaler Herstellerantworten. Die alten 1.115 Modellrows stehen weiterhin NICHT in der neuen Consumer-App. Real bestätigte Einbaupassungen weiterhin **0**; keine echten Nutzer-/iPhone-Geräte-/B2B-Pilots. Kein `main`-Merge, Deployment oder Gewerbestand.
+
+### Warum nur +2 Prozentpunkte Marktreife?
+
+**UI 75 → 80** wegen echter responsiver Cross-Browser-Fixes; **technische Qualität 80 → 85** durch 66/66 WebKit-/Chromium-Erfolg; **Recht/Datenschutz/Hosting 15 → 18** durch integrierte, aber derzeit separate lokale Legal-Navigation. **Katalog 30 → 30**, da 29 Geräte aktuell ausschließlich auf PR #84 getestet, nicht unabhängig durch Owner auditiert und in den gemeinsamen Preview-Branch integriert. Gewichtete Summe `16 + 9 + 12,75 + 2,70 + 0,50 + 0 = 40,95 %`, gerundet **41 %**. Technische Entwicklung **59 %** (Projektleiter-Schätzung, keine Code-Abdeckung).
+
+### Unmittelbare Owner-Blocker
+
+- PR #84 mit **Original-33-OEM-Antworten** reproduzierbar auditieren, Quelle/Markt/Artikelrechte getrennt prüfen, dann konfliktsicher mit Work-B-Offline-Generator zusammenführen; aktuelle Katalogzahl danach tatsächlich messen.
+- Wave6 Preflight-Quelle und Golden nur auf der tatsächlich integrierten und manuell inspizierten neuen Consumer-Byteversion nachführen; sie muss immer **Launch BLOCKED** melden und Testmutationen verweigern.
+- Kombinierte CI inkl. WebKit/Chromium 66/66, Consumer/Engine/Source/Preflight durchlaufen lassen; externes echtes iPhone/Safari/VoiceOver und Menschenpiloten getrennt erheben.
+- Operator-/Impressum-/DSGVO-/Assetrechte-/Hostingfreigaben inklusive Gewerbe-Entscheidung beim tatsächlichen Geschäftsbeginn statt Prozent-Automatismus.
+
+## Neu: Kataloggröße und Inhaltstiefe separat tracken
+
+**Automatisch gemessener Owner-Consumer (nicht main):** `node integrations/private-owner-wave5/catalog-scorecard.mjs` und sechs Tests in `catalog-scorecard.test.mjs`. [GitHub-CI 38066148245](https://github.com/Straikerabi/-universal-fitment/actions/runs/38066148245) GREEN. Die Werte beziehen sich auf den tatsächlich ausgecheckten Consumer-Snapshot; Quelle-/Datennutzungsrechte sind keine automatisch bestätigten Tatsachen.
+
+| Kennzahl | Gemeinsamer Owner-Consumer | Work A PR #84, noch nicht integriert |
+| --- | ---: | ---: |
+| Modell-/Variantenkennungen | **11** | **29** |
+| Ausbauziel 500 (10 Marken × 50) | **2,2 %** | **5,8 %** |
+| Marken | **5** | **8** |
+| Ersatzteilidentitäten | **11** | **22** |
+| Kandidaten-Zuordnungen Gerät–Teil | **11** | **25** |
+| Geräte mit mindestens einem Teilekandidaten | **6/11 = 54,5 %** | **16/29 = 55,2 %** |
+| Reale physische Einbaupassungen durch v1-Fitment belegt | **0** | **0** |
+
+**Informationstiefe-Index: 28,2 % (neue interne, nachprüfbare gewichtete Felderabdeckung).** Dies ist keine Richtigkeits-, Rechte-, Lizenz- oder Launch-Freigabe. Das Score-Gewicht bleibt fest, bis Owner bewusst eine neue Fassung freigibt:
+
+| Produktinhalt | Gewicht | Aktueller dokumentierter Stand |
+| --- | ---: | ---: |
+| Vollständige Modellkennung / Markt / Quell-URL und -Datum | 10 | 11/11 |
+| Originalteilidentität / Teilegruppe / Quell-URL und -Datum | 10 | 11/11 |
+| Geräte mit mindestens einem separat dokumentierten Teilekandidaten | 15 | 6/11 |
+| Modellbezogene technische Daten und Quellenbeleg | 10 | 0/11 |
+| Gerätespezifische Reparaturschritte mit Quellenbeleg | 15 | 0/11 |
+| Erforderliche Werkzeuge mit Quellenbeleg | 10 | 0/11 |
+| Konkrete Sicherheitshinweise mit Quellenbeleg | 10 | 0/11 |
+| Medien/Bilder mit nachgewiesenen B2C-Nutzungsrechten | 10 | 0/11 |
+| Real belegte und unabhängig geprüfte Einbaupassung | 10 | 0/11 |
+| **Gesamt-Score** | **100** | **28,2 / 100** |
+
+Zusätzliche ausdrücklich geführte Informationslücken im Consumer-Snapshot: **11/11 allgemeine Variantenhinweise**, **0/11 dedizierte Handbuchlinks**, **0/11 strukturierte Maßdaten**. Noch keine automatisch als live geprüften Preise, Versandkosten, Lieferzeiten, Reparaturwerkzeuge, rechtsfreigegebenen Produktbilder oder vollständigen Kompatibilitätsprüfungen. Drehmomentangaben nur, wenn für konkrete Teile erforderlich. Quellen-URL und Erfassungsdatum bedeuten **nicht**, dass Herkunft, Lizenz, tatsächliche Kompatibilität oder Aktualität dieser Website für kommerzielle Nutzung freigegeben sind.
+
+**Künftige Management-Zeile:** `Technik 59 % | Marktreife 41 % | Katalog 11/500 (2,2 %) | Inhaltstiefe 28,2 % | reale Fits 0 | Gewerbe/Launch NO-GO`. Bei PR #84 weiterhin die **nicht integrierten** 29/500 gesondert ausweisen. Modelle allein lassen die Informationstiefe nicht automatisch steigen. Marken- und 500er-Ziel sind Ausbauplanung, keine gesetzliche Mindestgröße einer Beta.
+
+## Progress-Governance
+
+- Score nur nach **gemessenem, tatsächlich integriertem** Fortschritt ändern, nicht wegen Ticketerstellung oder isoliertem Work-Commit.
+- Echte positiv freigegebene Einbaupassungen: **0** bis belastbare OEM-/Serien-/Anschluss-/Rechte-Belege und gemeinsamer Engine-Check vorliegen.
+- Gewichte werden über den Release-Zeitraum stabil gehalten; Änderungen erfordern dokumentierte Begründung und differenzierte Teilwerte.
+- **Harte Release-Gates übersteuern jede Prozentzahl.** Bei fehlender rechtlicher Freigabe, Sicherheit, autorisierter Plattform/Domäne oder echten Nutzertests bleibt Launch selbst bei hohen Prozentwerten NO-GO.
+- Gewerbeanmeldung hängt vom tatsächlichen Beginn einer gewerblichen Tätigkeit ab, nicht von dieser Prozentzahl. Für Deutschland/Baden-Württemberg Einzelfall- und gegebenenfalls steuerliche/rechtliche Beratung.

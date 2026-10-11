@@ -1,0 +1,1875 @@
+{
+  "blockingChecks": [
+    "checkpoint-legal-navigation",
+    "consumer-legal-navigation",
+    "operator",
+    "privacy",
+    "rights",
+    "hosting",
+    "storage-consent",
+    "erasure-auth",
+    "business-tax",
+    "migration-runtime",
+    "fitment-safety",
+    "accessibility",
+    "consumer-contracts",
+    "oss-marks",
+    "human-release"
+  ],
+  "checks": [
+    {
+      "applicable": true,
+      "id": "source-access",
+      "owner": "Engineering",
+      "priority": "P0",
+      "reason": "Both actual source sets inspected",
+      "status": "PASS"
+    },
+    {
+      "applicable": true,
+      "id": "source-identity",
+      "owner": "Engineering",
+      "priority": "P0",
+      "reason": "Pinned source hashes match",
+      "status": "PASS"
+    },
+    {
+      "applicable": true,
+      "id": "checkpoint-legal-navigation",
+      "owner": "Consumer owner",
+      "priority": "P0",
+      "reason": "No legal link candidates in inspected source",
+      "status": "BLOCKED"
+    },
+    {
+      "applicable": true,
+      "id": "consumer-legal-navigation",
+      "owner": "Consumer owner",
+      "priority": "P0",
+      "reason": "No legal link candidates in inspected source",
+      "status": "BLOCKED"
+    },
+    {
+      "applicable": true,
+      "id": "receipt-schema",
+      "owner": "Owner",
+      "priority": "P0",
+      "reason": "Opaque references only; their contents/authenticity are NOT verified",
+      "status": "PASS"
+    },
+    {
+      "applicable": true,
+      "id": "operator",
+      "owner": "Owner + legal reviewer",
+      "priority": "P0",
+      "reason": "No independently verified operator/imprint facts",
+      "status": "BLOCKED"
+    },
+    {
+      "applicable": true,
+      "id": "privacy",
+      "owner": "Privacy reviewer",
+      "priority": "P0",
+      "reason": "Real controller, data flows, Art. 13 notice and processor review missing",
+      "status": "BLOCKED"
+    },
+    {
+      "applicable": true,
+      "id": "rights",
+      "owner": "Content rights owner",
+      "priority": "P0",
+      "reason": "Per-published-asset/database/mark use scope not accepted; public URLs are not licenses",
+      "status": "BLOCKED"
+    },
+    {
+      "applicable": true,
+      "id": "hosting",
+      "owner": "Hosting owner",
+      "priority": "P0",
+      "reason": "Commercial package/domain/DPA/retention suitability not accepted; Pages is not a default launch choice",
+      "status": "BLOCKED"
+    },
+    {
+      "applicable": true,
+      "id": "storage-consent",
+      "owner": "Privacy + consumer owner",
+      "priority": "P0",
+      "reason": "Per-purpose TDDDG necessity/consent and deletion review missing",
+      "status": "BLOCKED"
+    },
+    {
+      "applicable": true,
+      "id": "erasure-auth",
+      "owner": "Privacy + auth owner",
+      "priority": "P0",
+      "reason": "Local reset/logout is not account or server erasure; runtime verification unavailable",
+      "status": "BLOCKED"
+    },
+    {
+      "applicable": true,
+      "id": "business-tax",
+      "owner": "Owner + tax adviser",
+      "priority": "P0",
+      "reason": "Case-specific activity/start date/registration/tax decision missing",
+      "status": "BLOCKED"
+    },
+    {
+      "applicable": true,
+      "id": "migration-runtime",
+      "owner": "Engineering + hosting owner",
+      "priority": "P0",
+      "reason": "Target-origin/mobile/PWA/log/redirect tests not performed",
+      "status": "BLOCKED"
+    },
+    {
+      "applicable": false,
+      "id": "affiliate-disclosure",
+      "owner": "Affiliate owner",
+      "priority": "P1",
+      "reason": "Outside selected free-readonly scope; NOT accepted for activation",
+      "status": "PASS"
+    },
+    {
+      "applicable": false,
+      "id": "offer-prices",
+      "owner": "Commerce owner",
+      "priority": "P1",
+      "reason": "Outside selected free-readonly scope; NOT accepted for activation",
+      "status": "PASS"
+    },
+    {
+      "applicable": false,
+      "id": "b2b-contract-security",
+      "owner": "B2B + security + privacy owners",
+      "priority": "P0",
+      "reason": "Outside selected free-readonly scope; NOT accepted for activation",
+      "status": "PASS"
+    },
+    {
+      "applicable": true,
+      "id": "fitment-safety",
+      "owner": "Fitment owner",
+      "priority": "P1",
+      "reason": "Evidence/variant warnings and safety presentation require manual acceptance; no new engine",
+      "status": "BLOCKED"
+    },
+    {
+      "applicable": true,
+      "id": "accessibility",
+      "owner": "Consumer owner",
+      "priority": "P2",
+      "reason": "BFSG applicability and physical iPhone/assistive-technology testing pending",
+      "status": "BLOCKED"
+    },
+    {
+      "applicable": true,
+      "id": "consumer-contracts",
+      "owner": "Legal reviewer",
+      "priority": "P2",
+      "reason": "VSBG/consumer-contract duties require case-specific decision; own checkout out of scope",
+      "status": "BLOCKED"
+    },
+    {
+      "applicable": true,
+      "id": "oss-marks",
+      "owner": "Content + engineering owners",
+      "priority": "P2",
+      "reason": "OSS notices and descriptive trademark use need review; no partnership/registered-right claim",
+      "status": "BLOCKED"
+    },
+    {
+      "applicable": true,
+      "id": "human-release",
+      "owner": "Owner + legal reviewer",
+      "priority": "P0",
+      "reason": "This suite has no release authority; a separate human decision is always required",
+      "status": "BLOCKED"
+    }
+  ],
+  "commercialApproved": false,
+  "launchApproved": false,
+  "limitations": [
+    "Static candidates, not complete AST/runtime/legal analysis",
+    "No network, production auth, real personal data or deployment",
+    "Receipt hashes cannot prove authenticity; manual gates never become PASS"
+  ],
+  "mode": "free-readonly",
+  "overall": "BLOCKED",
+  "reviewedBase": "456c8b8936617f5275d8d1ccfc29601d559cac89",
+  "schemaVersion": 1,
+  "sources": {
+    "checkpoint": {
+      "files": {
+        ".github/workflows/ci.yml": "3abb387174d71817eacb101331e2e473fd6247192b736a010f33b005d2f029ad",
+        ".github/workflows/pages.yml": "b754e3de3a7eabd31cebb08e4c162603a9ce9bf32e7def9dfb91e5a3db49e93a",
+        ".nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "README.md": "951037431de339e7e4d8cdd938bc023293c8065fbc2eb28661c3e66672bb58dc",
+        "backend/schema.sql": "5acf688fa4b63962fba920f23d50476c788b61353e73aa004a9c12b14230d939",
+        "docs/ARCHITECTURE.md": "5a6b7664d1d414f34473122fa142b5d5e88ba188f4c71be70531c44a4de7dc48",
+        "docs/DATA_SOURCES.md": "dd1fc9bfef0e3d06a0faf66a81a4fde4ffe0e757645f1731a92d60c9e17c5892",
+        "docs/DESIGN_SYSTEM.md": "a280d52cfc59295c33310150b57655ada7311c59789ddcfda50030eee7035744",
+        "docs/LEGAL_CHECKLIST.md": "aab04f0bafa07fe36468f0d993f470cdc787e07589a8a225dd07ab367b4348a1",
+        "docs/QA.md": "4e197965716a90733ed7df5ab5a7a6c1afe75f95211fff34a95d23edcfbfa371",
+        "icons/apple-touch-icon.png": "752eb7e5b3229de48c15c68044f6fff190a6b3c1390fb8d075de5460ae144adc",
+        "icons/icon-192.png": "927a67bd7fff6021f99fee23d1d1a54b44624b811a989732e17e3097b8483c02",
+        "icons/icon-512.png": "53f733efadb7eae1e916843b0d0393b2de0b53c7e99e9f62012c2ea35f25436b",
+        "icons/icon.svg": "90727302f4e85b2748b1d64033f7b40467c77c3c1702f4099549bcab6ae86655",
+        "icons/vacuum.svg": "5f8463a330a6a6357cc25e2fa5b825547defd079caf261f158430bf295e30ef6",
+        "index.html": "7d3de59b597d252898a15d420c1227af6268c395673986c9919659df8480f259",
+        "manifest.webmanifest": "cdccfc235b5ea4ae93fec75af61ebc9c6169617fbba780e7041ddd9c070a5409",
+        "package.json": "acc86040e626bcff63e13ef45ff56c135f1ec909a2ca997f7894daf052bb9404",
+        "src/app.js": "93b968781d78b9bbf6ada4e7ef45c9d79d64f7e8246d0e675e052d7beba0b443",
+        "src/core/backup.js": "a4c031ef879dbb7a25fd0d4ba97a966df8d1c9e2565e24042097fc769e8ad17a",
+        "src/core/bosch-context.js": "e6f6ca5baf2fd87e5b52f9b5df0aab07bc4fe69fe3e966b778b5561596e71c2c",
+        "src/core/bosch-identity.js": "b9dbb8ae297f1a6ae6df858fadacf80d208d903fcbc4a88ddaf2f03e61271d08",
+        "src/core/brand-identity.js": "3426daf45a985638a18ae29725bf75786d1b35881104b3930506841cd862dbd8",
+        "src/core/cart.js": "786edd0c5a76512b3b7200debecbb76bfc4abd147904cca976605c47b15161d3",
+        "src/core/catalog-loader.js": "3b569c52df5988c123f3c998f7f0f9a794938b2d4ee75b7cc06a0dbdea1a57fb",
+        "src/core/device-comparison.js": "27c0b907e2485173410f5a197fdd7c8889130301349cf724fb9e5238b60bece0",
+        "src/core/feedback.js": "ef96ff0f39171ce7dd1ed77caef3b10f78bb82c6476ac178cc57d6635cea1b02",
+        "src/core/handoff.js": "ded9f56845b5b836c91ed1749be1eb4b284e6a44f502b27300e24a242bc040db",
+        "src/core/identifiers.js": "77d06bbfe559b84407a53d43e0a108b57cabfc9c7666c1ddf03e50db73f0c5a4",
+        "src/core/local-state.js": "090b0780905243a2f0fb6256c8a15807a629adabf30199074365a10f2c01431f",
+        "src/core/marketplaces.js": "a8214d331d098b9a7bc7a90c74c09ec2378c13a46b8b61a469d47102c8aced46",
+        "src/core/matcher.js": "15856c7ab6b25100acd0f95ce6c5cdb179303e903777f8fd76b60f1de1c8caf5",
+        "src/core/model-parts-view.js": "b2e665b4f71a61bd8db9f53041fd89933d519006bdb376000e64295916e89504",
+        "src/core/normalization.js": "c5d8ca8185e6d69af9338696c70abdb3704281835e6d856ccec97ea081692e96",
+        "src/core/photo-policy.js": "847dca1ba0ec2b10a29108cf505677e9fe7b1be648d933d747e83cb2ee3b4b13",
+        "src/core/pilot-client.js": "fa0fd99dcefd6a905de18f98181734ac32a072d2eca43d52797d799feaf694e8",
+        "src/core/pilot-config.js": "c537eda7f787eb5821bd791d5c2c83d2084cdcf0dd414b39f7cbe687bce837db",
+        "src/core/pilot-readiness.js": "141db3db33f49acf23b6948a6d4537b5cd8f5f02e64c91bc561e5108e6989ae8",
+        "src/core/preferences.js": "6973c4906a6f17edc8dbdac8141435b21d482bb8663eac90377eb7ffecd82292",
+        "src/core/quantity.js": "bebd1b9b4d5f6930ba141665e4a6bb2bc1ad803be8b87b07589e0f245b13d18b",
+        "src/core/ranking.js": "975ab2994eeb0c42eb44c0879c984a171962ce03b0bfc34dcdc4abf0e5580557",
+        "src/core/scanner.js": "23672c5baa3b4c70bb4bba16a8256f4d61667112771237bef2f481a5b07481e3",
+        "src/core/services.js": "0500d8e0072a522582f5bf43e25d321588869c71c1b3c531a32736f363dad066",
+        "src/core/storage.js": "89448da103435eddf7130f0e9531496e6cac04fcb64c42ca13a0bf1ada2d18da",
+        "src/core/typeplate.js": "005d89be60aa1c6f4483f240d08341a12d9cf91dc5ff33d6ac4ad17e24322339",
+        "src/core/vehicle.js": "2cc439900b6b5c2d7a59c75238174a3af224763fb42384a42f51e8f5d1abbf52",
+        "src/data/aeg-pack.js": "33f704027cc3f7bbcb8ee4859f1110491c5c27a5eee298861f8442b2df80a72a",
+        "src/data/bosch-extra.js": "392cf5189071a210ea9fd17c326c8e40a59e7a0c6d055e3df9cb3c45dc71fc42",
+        "src/data/bosch-models-next.js": "8cc2388098226babd0ea7f52377fe6ef8d4d4f612a6776494cab61ce15b6917e",
+        "src/data/bosch-records.js": "5f51fea9102016f1b16524b483cf3bc51412901a0ee58ab36fa4ee731a2a9f22",
+        "src/data/bosch-vacuum.js": "b7d0f6966eb1bb68544b03dde12a3cc885a96f12bb66395d1dfc133356cb2813",
+        "src/data/brand-index.js": "b9dfa4b0dee8f2a2343506190a6606ad9569be0d2336e82e192e3c246781bcf7",
+        "src/data/brand-products.js": "09e82567c7a0da41c76a8fb81eaba6aa8b1cd2ef5d09c68b547edc17cdb0c06c",
+        "src/data/catalog-extensions.js": "c3e9c42e6c213ccdc64874030df7e2172d8be53680aaef30d5d18946d6e2ea49",
+        "src/data/catalog-plan.js": "86c370d37e460413bd447d5f797325fbafb33b93c8b481819af3e376f96175c0",
+        "src/data/catalog.js": "895bc28cfe7cee77f4a2921959568815c293bacd16ed02d47d3db9bae5436d8e",
+        "src/data/coffee-support.js": "be1d503e807f0c83e14e708aa557ea2c88f6daa13942926204b18e03612c0e20",
+        "src/data/demo-products.js": "d875ec7822358ac1257bc0c02a70587092c1775d251bcf2c399d264b26711daa",
+        "src/data/dyson-models-wave2-state.json": "cae236595577ffba6e84ee13a6f76076f9c03f900dc10289555844416ab25f2c",
+        "src/data/dyson-models-wave2.js": "0bf4c5384f182293b5baa2ee37b6bb631d9fd96136ce8ff6a6af28317ce55466",
+        "src/data/dyson-pack.js": "41bd2f116ca568ec9e4cb48acef343fb3c9f3fa94277e5d76c4c81432058d1f6",
+        "src/data/faq.js": "2e36778667472671cce7cf4c6e71152f11470713d1511e89aa442e0dc7ac2fef",
+        "src/data/hoover-fitment.js": "99a20284e5ee19e2411d1f8ce7d024049893251f518ba9b3618cd3f6577b7a45",
+        "src/data/hoover-pack.js": "21dd46407719229a016bfffa8e0d8f7b326f4e1ee59a781d79ca6afcecff737d",
+        "src/data/job-guidance.js": "ca579e89c71053442b12cb577ef606b650700c2d41cf2c488f43f1a7e844500c",
+        "src/data/miele-aftermarket.js": "00e87042d1ad488e497011bc4e4e9fbd8afef331f2d4cbb7b95b48cdb74fd9b0",
+        "src/data/miele-commerce-records.js": "8923dfdb874baec1454b133895cfa334693fd4c72c38779de008ee6e5ea46602",
+        "src/data/miele-commerce.js": "bc59b32e97f28cc3f53c3b8b9df337163b3bbe9934021b22044895c29415f43e",
+        "src/data/miele-guides.js": "73549c00e2d0349c1821172e5ca09342b1b8beadc2c888bc850452919efb5671",
+        "src/data/miele-installation-times.js": "2d40d4c0cf37766d589019d125a3ed4af796391dbb84827603b660ffc13e3bb1",
+        "src/data/miele-model-records.js": "c4205009d0cac0cff52bbe4f9e5d938d0598641762d001482aa9e164aac41d3e",
+        "src/data/miele-models-wave2.js": "f57aa394cf51e019fcdcffce1c222dd3de4af599627e6ac94c410bc7a29bac53",
+        "src/data/miele-models.js": "60c427c552a637e640ea9ee00f38bcd07d6f94cec0507c383eb869905cacfe98",
+        "src/data/miele-parts.js": "122e7b3ec880e4ef0cdfd241823df0cb24661f6825c677edf23f90e295df7aad",
+        "src/data/miele-spare-records.js": "9d56958e114991259ce1ab768cdc6296a75ee47dd838a4ed4661ee322d20a514",
+        "src/data/miele-vacuum.js": "d70bcb0e19839a52839a08006cf99f43c2b2e9d429e81ec09e40f6b87fdfa9b4",
+        "src/data/new-brands-index.js": "be550b30e1e36c4d25c39d4f7cf4f07f013905856cf7c6a78fb95a137d611493",
+        "src/data/part-taxonomy.js": "cdd0c04fce27895a1d0d85a3ea4c4832676d2626668285f48e5358ac051ec305",
+        "src/data/philips-extra.js": "311d7cd40e962c6e1fc274ebde9ace268077f4eb0d263d2de193a7bf141c5c0c",
+        "src/data/philips-pack.js": "6913d7973055ce7456136516b3a1aba9769d7647d92c2dfa30a370ad57f2e025",
+        "src/data/product-resolver.js": "b9ca784cc28f6f71f3552f278be4e2cb2d31637c48825fc4e88e79f0f975b290",
+        "src/data/rowenta-extra.js": "1bf05448339f18d3a855c73f9bd1063a568df200f6a5619de9e67fe372033148",
+        "src/data/rowenta-pack.js": "edb2c98782d13eb71a8afea501e4c21bc57cc356ad15662bf1106eca24d67f6e",
+        "src/data/samsung-pack.js": "b98ed6a953dfd39b64b93d96ce3f02602a309aa9946304ccc58c560f692ac2df",
+        "src/data/services.js": "4c0f435b7d82713cd76cdb24eee2f8df826a1d785ce2c9e56dd7553b157c3510",
+        "src/data/siemens-pack.js": "7fe7febea7fcc4d548a6252c1a78a19433222521ace183917874fe97707ff7df",
+        "src/data/verified-products.js": "3ebf12689ddff6b51765cd93f0ce298136e48af259d3c9f2504e2f3b163326b1",
+        "src/data/vorwerk-extra.js": "2f951435d862f5ed1c9fbe1201ec4985ff430edc2b8a025247a2be57039f62c5",
+        "src/data/vorwerk-index.js": "b61913bf27ba0510568ba20360e2b3fadf0fa199e09443e93ee57410e590aaa4",
+        "src/data/vorwerk-pack.js": "c81171f5a1bcc5a308bb514cdbb1f6a0743386235ff8016b14203c4dc30d5d90",
+        "src/vendor/LICENSES.txt": "705df2930adc81e60b53571bb1ed0b27fd6b26e93f10413e13a8abeb43a8d7c1",
+        "src/vendor/supabase.js": "b442e8ef212484626b32993fde0c68275e005efb1c55f51d7622f949baf5047e",
+        "styles.css": "5084cca625f2706e114a813f4f4175cd0e7244a095dbfb17356a4ba1e291f202",
+        "sw.js": "1a0a6ff58d3234c45027c10ac37979e82da2b4f5ae12c508f9f5f7dcb17b1ad8",
+        "tests/backup.test.mjs": "5295db1c36da3780786775ed713b7904d00309942e0942b25fda6eb1238098ba",
+        "tests/bosch-boundaries.test.mjs": "ae5a6647251f56334b37ce35c034e650086f09a2642860f4847181b6d9a705f3",
+        "tests/bosch-catalog.test.mjs": "513ffa614c1357a0aee82523aec726bf010b16a775497ef11e03ce04a35c73b1",
+        "tests/bosch-models-next.test.mjs": "9688331dd65641ff6b9973120e0e88bfe7260245e949d7881f949231c44e9826",
+        "tests/bosch-workflow.test.mjs": "603ab5e4f709858f9bf57e6270da20f82f7b0f76a788744678c89603550170e0",
+        "tests/catalog-expansion.test.mjs": "81bf27244181b3317ddc6add3419fb13dd3643bd856f610b7b09631c5e336373",
+        "tests/catalog-goal.test.mjs": "e41e3743d74055e946fb9c34ceea4846e551b66809038fa3c86dcdc54e5b5b44",
+        "tests/catalog-seven-brands.test.mjs": "42723eec5de90a0ffc60e9b29ac8dcaabd6741cbaee8f34b3952c2c00451aea0",
+        "tests/catalog-v126.test.mjs": "5d112d14b98c13847a473ed62c779d05285143feb1386ec5b97c560f79ac759b",
+        "tests/coffee-live.test.mjs": "4c4bb4fb1219ad37deddf11f2ce1b8bc0be7487d40622475b43b1b3660c38e27",
+        "tests/commerce.test.mjs": "dd97426e18ad57f2d35699581cc976fe3b73e3c95d214672d7aba28bc06cba50",
+        "tests/core.test.mjs": "e80146d91bf18d6efec0e91c64cd702d79bf8f683efd4ad39547c659db2bcd1a",
+        "tests/data.test.mjs": "868962eca859e9d6526db32527828c0924f0d409fcc3da2ca5e6495df1fc28e9",
+        "tests/device-comparison.test.mjs": "90d42a407bbc6500691c53613cdbeac8b4a99af81e2d0d971d99d873e2945403",
+        "tests/dyson-models-wave2.test.mjs": "a56438eb57de4461faa3c737ebd32626cea2907d10805552cb08fdc165204f05",
+        "tests/handoff.test.mjs": "c14ccd4b7a743cf665b6b67f696dbe2bd3d8bf8371e3f8731acf50a85f34622c",
+        "tests/identifier.test.mjs": "2f6ddf169c20f13d6f18b35155434f0a297a2926aba1f41a67b9da8464dd0d49",
+        "tests/identity-boundaries.test.mjs": "db65624f0cbc473363084307f4e5b990499ec4d99fe39d72d3943c7a25d8e562",
+        "tests/jobs.test.mjs": "9a49c5df83916ab2ec5f8a741f94e8fe3f0c39bcd1bbf40daac3836fa00a6076",
+        "tests/local-data.test.mjs": "245d530b48372b8bf01836b9442dd6ca2d731b516cd834a93a8653d56b958d2a",
+        "tests/marketplaces.test.mjs": "4653cd481ccb0045a11b3b33086adf8b4febfc071fb14ff5c5b8803ab41dfcb6",
+        "tests/miele-models-wave2.test.mjs": "45ebb0dfb2f6da1159ce2581c571cc4629a6aa32d518a35f693fdbd6cb5cc83b",
+        "tests/miele-models.test.mjs": "d579070c82b5631287bc749ebe044038f583771a00042da4dc5e57fc688e1264",
+        "tests/miele-parts.test.mjs": "2a8428e0190719d72d07ceee2b6503d08b55b22a616aaa651157ebb5df576b85",
+        "tests/miele-pilot.test.mjs": "2c5413ee7e298d3571cd30f5bb15a1b4f2340545063872987e370d36cb618261",
+        "tests/model-parts-view.test.mjs": "d36ebbea142cc462f3efa17f2726d58f217c523c083a37fbb8f8c20cc94196c6",
+        "tests/offline.test.mjs": "a36d962235c8d8349dbb7cae4bf441f04b3e3fd3d5356a9a81ff6e154a07ce0f",
+        "tests/part-taxonomy.test.mjs": "33e743360210899b3cf161c410e633d903524416cdf40ddf756f7dc5f1d33a62",
+        "tests/philips-expansion.test.mjs": "1c47db953019ef75d433ec81891a0f411644e9c62f726d86f797df6f47a8f2a9",
+        "tests/photo-policy.test.mjs": "c89dee556cb79458bb5b4c27160e2a10560e29d334fc5496bd3fcde0340c1401",
+        "tests/pilot-client.test.mjs": "e2043d9aac951f9a11bcb39a259fb0ea122f8eafdeebb6ef475f2977648491cf",
+        "tests/pilot-readiness.test.mjs": "964972aa15573bbed11e30e4c742c7c806ff798292377e1e335bdf2790a81f3d",
+        "tests/resolver.test.mjs": "82c84acbbf59db92cabd22c3520bd42d010995e5c9403dc2c75c70e912868563",
+        "tests/rowenta-expansion.test.mjs": "4d4a8871336e246d34c1f6ea479cebb07a723c824a3aa25f9c1419ee0811e929",
+        "tests/scanner-lifecycle.test.mjs": "191fae8ce80b459c93bacd5859ac473be42d5068b4be552c61ecdd84532aa3e3",
+        "tests/scanner-ocr.test.mjs": "4f383517cebb07e68c02637d0d3c1371b9acc4e47e79fb2e8aea9fca807b65a3",
+        "tests/services.test.mjs": "897dba543f2925f0ca7a4e26d075268a3df86aecdd1f4febc8703601b43e5d16",
+        "tests/static.test.mjs": "291a227c23ee3d492cf6562efa809de8ca9de893fda0cb5477703494cb7439ca",
+        "tests/typeplate.test.mjs": "2c37f270991bdde20544567b65d7e3ddb803669750fef412c61afca6b7b116e2",
+        "tests/v16.test.mjs": "9686db602fe0e4a4c3556aee82c53129ad5f1a58213250687d22d320bb2d96fc",
+        "tests/verified-data.test.mjs": "205529751f93a8ce0e053e4e91651a849c0117f1daab1d598363beba704d6d14",
+        "tests/vorwerk-expansion.test.mjs": "175d832d251edbd9b8c4bed1805a743f5997afbb3f5412e74de878fbae5dcfb1"
+      },
+      "observations": {
+        "account_delete_candidates": [],
+        "affiliate_candidates": [],
+        "image_references": [
+          {
+            "count": 427,
+            "file": "src/data/aeg-pack.js",
+            "line": 2
+          },
+          {
+            "count": 40,
+            "file": "src/data/bosch-models-next.js",
+            "line": 5
+          },
+          {
+            "count": 1,
+            "file": "src/data/bosch-models-next.js",
+            "line": 17
+          },
+          {
+            "count": 60,
+            "file": "src/data/bosch-records.js",
+            "line": 2
+          },
+          {
+            "count": 46,
+            "file": "src/data/bosch-records.js",
+            "line": 3
+          },
+          {
+            "count": 1,
+            "file": "src/data/bosch-vacuum.js",
+            "line": 17
+          },
+          {
+            "count": 1,
+            "file": "src/data/bosch-vacuum.js",
+            "line": 45
+          },
+          {
+            "count": 373,
+            "file": "src/data/brand-index.js",
+            "line": 5
+          },
+          {
+            "count": 1,
+            "file": "src/data/brand-products.js",
+            "line": 23
+          },
+          {
+            "count": 1,
+            "file": "src/data/brand-products.js",
+            "line": 34
+          },
+          {
+            "count": 251,
+            "file": "src/data/dyson-pack.js",
+            "line": 2
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 115
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 233
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 351
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 468
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 591
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 708
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 827
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 940
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 1056
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 1172
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 1289
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 1405
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 1519
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 1633
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 1748
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 1863
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 1979
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 2093
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 2217
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 2334
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 2451
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 2568
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 2685
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 2803
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 2920
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 3039
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 3159
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 3278
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 3402
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 3519
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 3646
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 3773
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 3900
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 4025
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 4148
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 4271
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 4394
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 4518
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 4641
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 4765
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 4881
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 4997
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 5112
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 5227
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 5343
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 5460
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 5576
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 5694
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 5810
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 5927
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 6044
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 6162
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 6272
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 6380
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 6488
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 6596
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 6708
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 6820
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 6942
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 7061
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 7175
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-model-records.js",
+            "line": 7294
+          },
+          {
+            "count": 25,
+            "file": "src/data/miele-models-wave2.js",
+            "line": 2
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-models.js",
+            "line": 45
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-parts.js",
+            "line": 32
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 10
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 38
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 64
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 95
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 125
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 150
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 174
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 195
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 225
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 256
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 282
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 313
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 343
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 374
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 405
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 437
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 466
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 494
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 524
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 548
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 583
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 612
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 641
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 672
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 698
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 721
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 751
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 777
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 808
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 839
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 865
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 894
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 923
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 944
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 965
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 986
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 1015
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 1036
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 1057
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 1078
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 1099
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 1120
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 1141
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 1162
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 1183
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 1204
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 1232
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 1253
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 1274
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 1297
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 1318
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 1348
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 1377
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 1404
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 1425
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 1451
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 1477
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 1506
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 1535
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 1561
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 1585
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 1606
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 1627
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 1653
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 1679
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 1700
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 1724
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 1750
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 1776
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 1804
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 1825
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 1851
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 1882
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 1909
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 1935
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 1956
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 1983
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 2010
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 2036
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 2064
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 2091
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 2113
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 2142
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 2180
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 2208
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 2237
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 2264
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 2293
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 2321
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 2348
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 2374
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 2401
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 2428
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 2460
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 2489
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 2518
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 2545
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 2575
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 2604
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 2628
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 2655
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 2684
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 2705
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 2727
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 2756
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 2780
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 2810
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 2837
+          },
+          {
+            "count": 1,
+            "file": "src/data/miele-spare-records.js",
+            "line": 2859
+          },
+          {
+            "count": 139,
+            "file": "src/data/philips-pack.js",
+            "line": 4
+          },
+          {
+            "count": 1,
+            "file": "src/data/product-resolver.js",
+            "line": 32
+          },
+          {
+            "count": 1,
+            "file": "src/data/product-resolver.js",
+            "line": 52
+          },
+          {
+            "count": 811,
+            "file": "src/data/siemens-pack.js",
+            "line": 2
+          }
+        ],
+        "legal_draft_notice": [
+          {
+            "count": 2,
+            "file": "src/app.js",
+            "line": 1770
+          }
+        ],
+        "legal_link_candidates": [],
+        "local_erase": [
+          {
+            "count": 1,
+            "file": "src/app.js",
+            "line": 19
+          },
+          {
+            "count": 1,
+            "file": "src/app.js",
+            "line": 1785
+          },
+          {
+            "count": 1,
+            "file": "src/core/local-state.js",
+            "line": 23
+          },
+          {
+            "count": 1,
+            "file": "src/core/local-state.js",
+            "line": 24
+          },
+          {
+            "count": 1,
+            "file": "src/core/storage.js",
+            "line": 1
+          },
+          {
+            "count": 1,
+            "file": "src/core/storage.js",
+            "line": 10
+          },
+          {
+            "count": 1,
+            "file": "src/core/storage.js",
+            "line": 147
+          }
+        ],
+        "logout": [
+          {
+            "count": 1,
+            "file": "src/core/pilot-client.js",
+            "line": 39
+          },
+          {
+            "count": 1,
+            "file": "src/core/pilot-client.js",
+            "line": 46
+          },
+          {
+            "count": 1,
+            "file": "src/core/pilot-client.js",
+            "line": 51
+          }
+        ],
+        "network_calls": [
+          {
+            "count": 1,
+            "file": "src/core/pilot-client.js",
+            "line": 22
+          },
+          {
+            "count": 1,
+            "file": "src/core/pilot-readiness.js",
+            "line": 20
+          },
+          {
+            "count": 1,
+            "file": "sw.js",
+            "line": 24
+          },
+          {
+            "count": 1,
+            "file": "sw.js",
+            "line": 33
+          }
+        ],
+        "oauth_calls": [],
+        "password_login": [
+          {
+            "count": 1,
+            "file": "src/core/pilot-client.js",
+            "line": 41
+          }
+        ],
+        "price_labels": [
+          {
+            "count": 1,
+            "file": "src/app.js",
+            "line": 371
+          },
+          {
+            "count": 2,
+            "file": "src/data/bosch-vacuum.js",
+            "line": 21
+          },
+          {
+            "count": 1,
+            "file": "src/data/brand-products.js",
+            "line": 38
+          },
+          {
+            "count": 5,
+            "file": "src/data/philips-pack.js",
+            "line": 4
+          },
+          {
+            "count": 2,
+            "file": "src/data/vorwerk-pack.js",
+            "line": 810
+          },
+          {
+            "count": 2,
+            "file": "src/data/vorwerk-pack.js",
+            "line": 849
+          },
+          {
+            "count": 2,
+            "file": "src/data/vorwerk-pack.js",
+            "line": 881
+          },
+          {
+            "count": 2,
+            "file": "src/data/vorwerk-pack.js",
+            "line": 906
+          },
+          {
+            "count": 2,
+            "file": "src/data/vorwerk-pack.js",
+            "line": 938
+          },
+          {
+            "count": 2,
+            "file": "src/data/vorwerk-pack.js",
+            "line": 970
+          },
+          {
+            "count": 2,
+            "file": "src/data/vorwerk-pack.js",
+            "line": 1002
+          },
+          {
+            "count": 2,
+            "file": "src/data/vorwerk-pack.js",
+            "line": 1034
+          },
+          {
+            "count": 2,
+            "file": "src/data/vorwerk-pack.js",
+            "line": 1066
+          },
+          {
+            "count": 2,
+            "file": "src/data/vorwerk-pack.js",
+            "line": 1098
+          },
+          {
+            "count": 2,
+            "file": "src/data/vorwerk-pack.js",
+            "line": 1137
+          },
+          {
+            "count": 2,
+            "file": "src/data/vorwerk-pack.js",
+            "line": 1169
+          },
+          {
+            "count": 2,
+            "file": "src/data/vorwerk-pack.js",
+            "line": 1201
+          },
+          {
+            "count": 2,
+            "file": "src/data/vorwerk-pack.js",
+            "line": 1226
+          },
+          {
+            "count": 2,
+            "file": "src/data/vorwerk-pack.js",
+            "line": 1265
+          },
+          {
+            "count": 2,
+            "file": "src/data/vorwerk-pack.js",
+            "line": 1297
+          },
+          {
+            "count": 2,
+            "file": "src/data/vorwerk-pack.js",
+            "line": 1322
+          },
+          {
+            "count": 2,
+            "file": "src/data/vorwerk-pack.js",
+            "line": 1347
+          },
+          {
+            "count": 2,
+            "file": "src/data/vorwerk-pack.js",
+            "line": 1379
+          },
+          {
+            "count": 2,
+            "file": "src/data/vorwerk-pack.js",
+            "line": 1404
+          },
+          {
+            "count": 2,
+            "file": "src/data/vorwerk-pack.js",
+            "line": 1421
+          },
+          {
+            "count": 2,
+            "file": "src/data/vorwerk-pack.js",
+            "line": 1438
+          },
+          {
+            "count": 2,
+            "file": "src/data/vorwerk-pack.js",
+            "line": 1488
+          }
+        ],
+        "service_worker": [
+          {
+            "count": 1,
+            "file": "src/app.js",
+            "line": 1863
+          },
+          {
+            "count": 2,
+            "file": "sw.js",
+            "line": 5
+          },
+          {
+            "count": 1,
+            "file": "sw.js",
+            "line": 9
+          },
+          {
+            "count": 1,
+            "file": "sw.js",
+            "line": 26
+          },
+          {
+            "count": 1,
+            "file": "sw.js",
+            "line": 34
+          }
+        ],
+        "storage_access": [
+          {
+            "count": 1,
+            "file": "index.html",
+            "line": 16
+          },
+          {
+            "count": 1,
+            "file": "src/app.js",
+            "line": 63
+          },
+          {
+            "count": 1,
+            "file": "src/app.js",
+            "line": 70
+          },
+          {
+            "count": 1,
+            "file": "src/app.js",
+            "line": 83
+          },
+          {
+            "count": 1,
+            "file": "src/app.js",
+            "line": 98
+          },
+          {
+            "count": 1,
+            "file": "src/app.js",
+            "line": 1744
+          },
+          {
+            "count": 1,
+            "file": "src/core/cart.js",
+            "line": 13
+          },
+          {
+            "count": 1,
+            "file": "src/core/cart.js",
+            "line": 14
+          },
+          {
+            "count": 1,
+            "file": "src/core/local-state.js",
+            "line": 5
+          },
+          {
+            "count": 1,
+            "file": "src/core/local-state.js",
+            "line": 8
+          },
+          {
+            "count": 1,
+            "file": "src/core/local-state.js",
+            "line": 17
+          },
+          {
+            "count": 1,
+            "file": "src/core/local-state.js",
+            "line": 20
+          },
+          {
+            "count": 1,
+            "file": "src/core/local-state.js",
+            "line": 24
+          },
+          {
+            "count": 1,
+            "file": "src/core/preferences.js",
+            "line": 8
+          },
+          {
+            "count": 1,
+            "file": "src/core/preferences.js",
+            "line": 9
+          },
+          {
+            "count": 1,
+            "file": "src/core/storage.js",
+            "line": 8
+          },
+          {
+            "count": 1,
+            "file": "src/core/storage.js",
+            "line": 9
+          }
+        ],
+        "storage_keys": [
+          {
+            "count": 1,
+            "file": "index.html",
+            "line": 16
+          },
+          {
+            "count": 1,
+            "file": "src/app.js",
+            "line": 42
+          },
+          {
+            "count": 1,
+            "file": "src/app.js",
+            "line": 61
+          },
+          {
+            "count": 1,
+            "file": "src/app.js",
+            "line": 558
+          },
+          {
+            "count": 1,
+            "file": "src/core/cart.js",
+            "line": 4
+          },
+          {
+            "count": 1,
+            "file": "src/core/preferences.js",
+            "line": 1
+          },
+          {
+            "count": 4,
+            "file": "src/core/storage.js",
+            "line": 3
+          },
+          {
+            "count": 4,
+            "file": "src/core/storage.js",
+            "line": 4
+          },
+          {
+            "count": 3,
+            "file": "src/core/storage.js",
+            "line": 5
+          },
+          {
+            "count": 1,
+            "file": "src/data/demo-products.js",
+            "line": 34
+          },
+          {
+            "count": 1,
+            "file": "src/data/demo-products.js",
+            "line": 53
+          },
+          {
+            "count": 1,
+            "file": "src/data/demo-products.js",
+            "line": 87
+          },
+          {
+            "count": 1,
+            "file": "src/data/demo-products.js",
+            "line": 104
+          },
+          {
+            "count": 1,
+            "file": "src/data/demo-products.js",
+            "line": 118
+          },
+          {
+            "count": 1,
+            "file": "src/data/demo-products.js",
+            "line": 152
+          }
+        ]
+      }
+    },
+    "consumer": {
+      "files": {
+        "integrations/business-embed-poc/adapter.mjs": "92d41346810d9874f43ec6e986867052d1740c6ab5f4916779789e0596f68d92",
+        "integrations/consumer-repair-mission-poc/app-icon.svg": "94eb4f087ded346090f89ffd7c88111dc90047086542b7e099a7939ac15716e4",
+        "integrations/consumer-repair-mission-poc/app.mjs": "5f8803d9435bad385ed8ecfc69d56acc0e3ed2aa45c073f796d25ee38c065995",
+        "integrations/consumer-repair-mission-poc/build-catalog.mjs": "5b6bb3b3b24c31045fa60c1be497d0bb407a4936e0327c6cdf738f4d041ee7d9",
+        "integrations/consumer-repair-mission-poc/catalog-lock.json": "71a7566cddcdc8fcef7f58346ec2f666a94594d674917f9b678d5d6e9ac5d423",
+        "integrations/consumer-repair-mission-poc/catalog-snapshot.mjs": "4b0f6fc17d22b0bc6f320b02eee5fdb39bb23d0083fadb3135e4bed38d3de9ae",
+        "integrations/consumer-repair-mission-poc/check.mjs": "c59960d0c559a8d12d36cd8d9e87c2962fd3cdbe2f712c611c27e75e772863b0",
+        "integrations/consumer-repair-mission-poc/index.html": "f250eb0848ee7945bd97c0437c8142c7f59a5aea064bdc18124984b9615de69c",
+        "integrations/consumer-repair-mission-poc/manifest.webmanifest": "7464aad4b874e0e172a815c090ebaa08c5f9ebf02dba523df76154376166d3f5",
+        "integrations/consumer-repair-mission-poc/mission-state.mjs": "58108ad55dc52cdb715b6bc5671a138ec8263dc4a4de28095b9fa6c28eb62a36",
+        "integrations/consumer-repair-mission-poc/mobile-ui.mjs": "97727b3caa044480c79a95734a3887925058c2c8cae1ee165655657deb65e34e",
+        "integrations/consumer-repair-mission-poc/mock-fitment-adapter.mjs": "c4bd2acd84478af78a28ccf7f7fc2b185ed3e47e4532a92b7b97a7796e45b926",
+        "integrations/consumer-repair-mission-poc/offline-config.mjs": "09dbeba0072946560ef68d9b27ec3b6f8fa4d07db222aeb0a2c3d6753360e76a",
+        "integrations/consumer-repair-mission-poc/offline-worker.mjs": "2895855cc9ca999b68587b298e4e4f408e0f1bae8901f3eae9cc5a1ae61fe760",
+        "integrations/consumer-repair-mission-poc/package.json": "0cb2a12f3900a4beb21947c2543360ccb76f4501a2c9ba6848de013948b829c8",
+        "integrations/consumer-repair-mission-poc/parts-view.mjs": "324cb2336aa60457bc53744245880cdd9fa4d2d0c62674f277bba0f1a2d10922",
+        "integrations/consumer-repair-mission-poc/pilot-cases.json": "b2c6ddfbf2526a1099c59c67bd35affc31cbad595a73d02a7d56dc82f0eef448",
+        "integrations/consumer-repair-mission-poc/pilot-results-template.json": "ee732c58d33ef4ca284ed13b88fca17e612da3066b018bd94a5fcdab5689e1ec",
+        "integrations/consumer-repair-mission-poc/prepare-offline.mjs": "cca44a0e933aa311e449936af941d5081a8b4066582987c040d479b80f77fa58",
+        "integrations/consumer-repair-mission-poc/serve.mjs": "d916259c365cad5fff541882d9f50cf17301f2881a9a1f6d68703a66ed4e3ba0",
+        "integrations/consumer-repair-mission-poc/styles.css": "4ab4cd47aa0b7a1243274acc36714b6aa73d9880d9f95c7f5560c1e0b5aca1c4",
+        "integrations/consumer-repair-mission-poc/wave3-readiness-audit.mjs": "a3f47bcc7c6ceb18476408f2b9402c7288b173670b39a7f30a88804b24ecbcf8",
+        "integrations/dual-platform-owner-review/bridge.mjs": "d3cb61c0cd4e554585e28bf9b54d51c110c3bd85aefdc733a8578f2feb13cb6c",
+        "integrations/dual-platform-owner-review/ui-fixtures.mjs": "469f6ae04d4bd4ebb0fa6933b4b193a20ca79c20f2f2f367fcd3b5b5d69a9061",
+        "integrations/fitment-engine-v1-poc/contract.mjs": "f609d8c4a2d894632b46db76c28e83d581190dcfed0484a3aab3f12efb36e7b3",
+        "integrations/fitment-engine-v1-poc/fixtures.mjs": "b1a08deb58acf2b7be7319e61e838c2b5ef5cd7833068e368e41dbc79f3e97a9"
+      },
+      "observations": {
+        "account_delete_candidates": [],
+        "affiliate_candidates": [],
+        "image_references": [],
+        "legal_draft_notice": [],
+        "legal_link_candidates": [],
+        "local_erase": [
+          {
+            "count": 1,
+            "file": "integrations/consumer-repair-mission-poc/app.mjs",
+            "line": 9
+          },
+          {
+            "count": 1,
+            "file": "integrations/consumer-repair-mission-poc/app.mjs",
+            "line": 81
+          },
+          {
+            "count": 1,
+            "file": "integrations/consumer-repair-mission-poc/app.mjs",
+            "line": 139
+          },
+          {
+            "count": 1,
+            "file": "integrations/consumer-repair-mission-poc/app.mjs",
+            "line": 142
+          }
+        ],
+        "logout": [],
+        "network_calls": [
+          {
+            "count": 1,
+            "file": "integrations/consumer-repair-mission-poc/offline-worker.mjs",
+            "line": 28
+          }
+        ],
+        "oauth_calls": [],
+        "password_login": [],
+        "price_labels": [
+          {
+            "count": 1,
+            "file": "integrations/consumer-repair-mission-poc/parts-view.mjs",
+            "line": 88
+          }
+        ],
+        "service_worker": [
+          {
+            "count": 1,
+            "file": "integrations/consumer-repair-mission-poc/app.mjs",
+            "line": 130
+          },
+          {
+            "count": 1,
+            "file": "integrations/consumer-repair-mission-poc/app.mjs",
+            "line": 143
+          },
+          {
+            "count": 1,
+            "file": "integrations/consumer-repair-mission-poc/offline-worker.mjs",
+            "line": 10
+          },
+          {
+            "count": 1,
+            "file": "integrations/consumer-repair-mission-poc/offline-worker.mjs",
+            "line": 11
+          },
+          {
+            "count": 1,
+            "file": "integrations/consumer-repair-mission-poc/offline-worker.mjs",
+            "line": 12
+          },
+          {
+            "count": 1,
+            "file": "integrations/consumer-repair-mission-poc/offline-worker.mjs",
+            "line": 18
+          },
+          {
+            "count": 1,
+            "file": "integrations/consumer-repair-mission-poc/offline-worker.mjs",
+            "line": 26
+          }
+        ],
+        "storage_access": [
+          {
+            "count": 1,
+            "file": "integrations/consumer-repair-mission-poc/app.mjs",
+            "line": 9
+          }
+        ],
+        "storage_keys": [
+          {
+            "count": 1,
+            "file": "integrations/consumer-repair-mission-poc/app.mjs",
+            "line": 13
+          },
+          {
+            "count": 1,
+            "file": "integrations/consumer-repair-mission-poc/app.mjs",
+            "line": 139
+          },
+          {
+            "count": 1,
+            "file": "integrations/consumer-repair-mission-poc/app.mjs",
+            "line": 140
+          },
+          {
+            "count": 1,
+            "file": "integrations/consumer-repair-mission-poc/app.mjs",
+            "line": 143
+          },
+          {
+            "count": 1,
+            "file": "integrations/consumer-repair-mission-poc/mission-state.mjs",
+            "line": 15
+          },
+          {
+            "count": 1,
+            "file": "integrations/consumer-repair-mission-poc/offline-config.mjs",
+            "line": 2
+          },
+          {
+            "count": 1,
+            "file": "integrations/consumer-repair-mission-poc/offline-worker.mjs",
+            "line": 2
+          },
+          {
+            "count": 1,
+            "file": "integrations/consumer-repair-mission-poc/offline-worker.mjs",
+            "line": 6
+          }
+        ]
+      }
+    }
+  }
+}

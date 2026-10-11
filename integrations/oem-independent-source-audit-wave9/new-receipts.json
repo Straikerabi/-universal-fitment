@@ -1,0 +1,53 @@
+[
+  {
+    "id": "miele-11602400",
+    "url": "https://www.miele.de/product/11602400/bodenstaubsauger-ohne-beutel-boost-cx1-parquet-powerline-lotosweiss",
+    "observedAt": "2026-10-10T18:37:04.211657+00:00",
+    "finalUrl": "https://www.miele.de/product/11602400/bodenstaubsauger-ohne-beutel-boost-cx1-parquet-powerline-lotosweiss",
+    "status": 200,
+    "rawLocator": "miele-11602400.html",
+    "rights": {
+      "factualUse": "review_pending",
+      "pageRedistribution": "not_granted",
+      "mediaB2c": "not_granted",
+      "commercialUse": "not_granted"
+    },
+    "contentType": "text/html;charset=utf-8",
+    "bytes": 698647,
+    "sha256": "c445ed354d7ce06bed005747197ed1f2601e17483974a1cab7779a9ac6ef05b4"
+  },
+  {
+    "id": "bosch-bgl75x1prq",
+    "url": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGL75X1PRQ",
+    "observedAt": "2026-10-10T18:37:12.124957+00:00",
+    "finalUrl": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGL75X1PRQ",
+    "status": 200,
+    "rawLocator": "bosch-bgl75x1prq.html",
+    "rights": {
+      "factualUse": "review_pending",
+      "pageRedistribution": "not_granted",
+      "mediaB2c": "not_granted",
+      "commercialUse": "not_granted"
+    },
+    "contentType": "text/html; charset=utf-8",
+    "bytes": 834245,
+    "sha256": "3b5609010ea5edb0e448785f95b14c719d088ad5389f7ccb8018a2b886aebf3f"
+  },
+  {
+    "id": "hoover-39401035",
+    "url": "https://www.hoover-home.com/de_DE/akkusauger/39401035/hf202p-011/",
+    "observedAt": "2026-10-10T18:37:17.270477+00:00",
+    "finalUrl": "https://www.hoover-home.com/de_DE/akkusauger/39401035/hf202p-011/",
+    "status": 200,
+    "rawLocator": "hoover-39401035.html",
+    "rights": {
+      "factualUse": "review_pending",
+      "pageRedistribution": "not_granted",
+      "mediaB2c": "not_granted",
+      "commercialUse": "not_granted"
+    },
+    "contentType": "text/html",
+    "bytes": 407750,
+    "sha256": "8ff7c4ac5e02cf5d9aae33fbf49138230cb6bc059be8e6a91ad06614efa32efb"
+  }
+]

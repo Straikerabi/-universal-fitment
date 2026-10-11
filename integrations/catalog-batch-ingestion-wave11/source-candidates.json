@@ -1,0 +1,1377 @@
+{
+  "schema": "uf-wave11-oem-batch/1",
+  "baselineOwnerSha": "45e1c687d122b837364aeb4dd5c86e2c34f502cb",
+  "intendedUse": "private_research_only",
+  "productionImportEnabled": false,
+  "realRecords": [
+    {
+      "recordType": "oem_research_candidate",
+      "id": "W11-001",
+      "domain": "washing-machine",
+      "brand": "Bosch",
+      "model": "WGG244ZR90",
+      "market": "DE",
+      "primary": {
+        "namespace": "manufacturer-model",
+        "value": "WGG244ZR90"
+      },
+      "variant": {
+        "eNumber": null,
+        "pnc": null,
+        "manufacturerProductCode": null,
+        "serialRange": null,
+        "revisionRange": null
+      },
+      "identityStatus": "pending_revision_or_serial",
+      "evidenceStage": "candidate_observed",
+      "source": {
+        "authority": "official_manufacturer",
+        "url": "https://www.bosch-home.com/de/de/product/waschen-trocknen/waschmaschinen/frontlader-waschmaschinen/WGG244ZR90",
+        "locator": "Produktseite Modell WGG244ZR90, E-Nr /xx nicht belegt",
+        "observedAt": "2026-10-10",
+        "trace": "prior_wave10_owner_research",
+        "originalBytesArchive": null,
+        "independentIdentityReview": null,
+        "rightsReview": null,
+        "fitmentReview": null
+      },
+      "consumerPublished": false,
+      "fitmentConfirmed": false,
+      "licenseApproved": false,
+      "originalParts": [],
+      "fitmentEdges": []
+    },
+    {
+      "recordType": "oem_research_candidate",
+      "id": "W11-002",
+      "domain": "washing-machine",
+      "brand": "Bosch",
+      "model": "WGG244ZV0",
+      "market": "DE",
+      "primary": {
+        "namespace": "manufacturer-model",
+        "value": "WGG244ZV0"
+      },
+      "variant": {
+        "eNumber": null,
+        "pnc": null,
+        "manufacturerProductCode": null,
+        "serialRange": null,
+        "revisionRange": null
+      },
+      "identityStatus": "pending_revision_or_serial",
+      "evidenceStage": "candidate_observed",
+      "source": {
+        "authority": "official_manufacturer",
+        "url": "https://www.bosch-home.com/de/de/product/waschen-trocknen/waschmaschinen/frontlader-waschmaschinen/WGG244ZV0",
+        "locator": "Produktseite Modell WGG244ZV0, E-Nr /xx nicht belegt",
+        "observedAt": "2026-10-10",
+        "trace": "prior_wave10_owner_research",
+        "originalBytesArchive": null,
+        "independentIdentityReview": null,
+        "rightsReview": null,
+        "fitmentReview": null
+      },
+      "consumerPublished": false,
+      "fitmentConfirmed": false,
+      "licenseApproved": false,
+      "originalParts": [],
+      "fitmentEdges": []
+    },
+    {
+      "recordType": "oem_research_candidate",
+      "id": "W11-003",
+      "domain": "washing-machine",
+      "brand": "AEG",
+      "model": "LR8EG75480",
+      "market": "DE",
+      "primary": {
+        "namespace": "manufacturer-model",
+        "value": "LR8EG75480"
+      },
+      "variant": {
+        "eNumber": null,
+        "pnc": "914500822",
+        "manufacturerProductCode": null,
+        "serialRange": null,
+        "revisionRange": null
+      },
+      "identityStatus": "pending_revision_or_serial",
+      "evidenceStage": "candidate_observed",
+      "source": {
+        "authority": "official_manufacturer",
+        "url": "https://www.aeg.de/laundry/laundry/washing-machines/front-loader-washing-machine/lr8eg75480/",
+        "locator": "Technische Daten > Produktnummer (PNC) 914 500 822",
+        "observedAt": "2026-10-10",
+        "trace": "prior_wave10_owner_research",
+        "originalBytesArchive": null,
+        "independentIdentityReview": null,
+        "rightsReview": null,
+        "fitmentReview": null
+      },
+      "consumerPublished": false,
+      "fitmentConfirmed": false,
+      "licenseApproved": false,
+      "originalParts": [],
+      "fitmentEdges": []
+    },
+    {
+      "recordType": "oem_research_candidate",
+      "id": "W11-004",
+      "domain": "washing-machine",
+      "brand": "AEG",
+      "model": "LR7D70490",
+      "market": "DE",
+      "primary": {
+        "namespace": "manufacturer-model",
+        "value": "LR7D70490"
+      },
+      "variant": {
+        "eNumber": null,
+        "pnc": "914501011",
+        "manufacturerProductCode": null,
+        "serialRange": null,
+        "revisionRange": null
+      },
+      "identityStatus": "pending_revision_or_serial",
+      "evidenceStage": "candidate_observed",
+      "source": {
+        "authority": "official_manufacturer",
+        "url": "https://www.aeg.de/laundry/laundry/washing-machines/9-kg-washing-machine/lr7d70490/",
+        "locator": "Technische Daten > Produktnummer (PNC) 914 501 011",
+        "observedAt": "2026-10-10",
+        "trace": "prior_wave10_owner_research",
+        "originalBytesArchive": null,
+        "independentIdentityReview": null,
+        "rightsReview": null,
+        "fitmentReview": null
+      },
+      "consumerPublished": false,
+      "fitmentConfirmed": false,
+      "licenseApproved": false,
+      "originalParts": [],
+      "fitmentEdges": []
+    },
+    {
+      "recordType": "oem_research_candidate",
+      "id": "W11-005",
+      "domain": "vacuum-cleaner",
+      "brand": "Hoover",
+      "model": "HF610H 011",
+      "market": "DE",
+      "primary": {
+        "namespace": "manufacturer-model",
+        "value": "HF610H 011"
+      },
+      "variant": {
+        "eNumber": null,
+        "pnc": null,
+        "manufacturerProductCode": "39401101",
+        "serialRange": null,
+        "revisionRange": null
+      },
+      "identityStatus": "pending_revision_or_serial",
+      "evidenceStage": "candidate_observed",
+      "source": {
+        "authority": "official_manufacturer",
+        "url": "https://www.hoover-home.com/de_DE/akkusauger/39401101/hf610h-011/",
+        "locator": "HF6 Turbo Sense HF610H 011 mit Produktcode 39401101 im Herstellerpfad",
+        "observedAt": "2026-10-10",
+        "trace": "prior_wave10_owner_research",
+        "originalBytesArchive": null,
+        "independentIdentityReview": null,
+        "rightsReview": null,
+        "fitmentReview": null
+      },
+      "consumerPublished": false,
+      "fitmentConfirmed": false,
+      "licenseApproved": false,
+      "originalParts": [],
+      "fitmentEdges": []
+    },
+    {
+      "recordType": "oem_research_candidate",
+      "id": "W11-006",
+      "domain": "vacuum-cleaner",
+      "brand": "Hoover",
+      "model": "HF610P 011",
+      "market": "DE",
+      "primary": {
+        "namespace": "manufacturer-model",
+        "value": "HF610P 011"
+      },
+      "variant": {
+        "eNumber": null,
+        "pnc": null,
+        "manufacturerProductCode": "39401105",
+        "serialRange": null,
+        "revisionRange": null
+      },
+      "identityStatus": "pending_revision_or_serial",
+      "evidenceStage": "candidate_observed",
+      "source": {
+        "authority": "official_manufacturer",
+        "url": "https://www.hoover-home.com/de_DE/akkusauger/39401105/hf610p-011/",
+        "locator": "HF6 Turbo Sense HF610P 011 mit Produktcode 39401105 im Herstellerpfad",
+        "observedAt": "2026-10-10",
+        "trace": "prior_wave10_owner_research",
+        "originalBytesArchive": null,
+        "independentIdentityReview": null,
+        "rightsReview": null,
+        "fitmentReview": null
+      },
+      "consumerPublished": false,
+      "fitmentConfirmed": false,
+      "licenseApproved": false,
+      "originalParts": [],
+      "fitmentEdges": []
+    },
+    {
+      "recordType": "oem_research_candidate",
+      "id": "W11-007",
+      "domain": "vacuum-cleaner",
+      "brand": "Dyson",
+      "model": "V12 Detect Slim Absolute",
+      "market": "DE",
+      "primary": {
+        "namespace": "device-sku",
+        "value": "394167-01"
+      },
+      "variant": {
+        "eNumber": null,
+        "pnc": null,
+        "manufacturerProductCode": null,
+        "serialRange": null,
+        "revisionRange": null
+      },
+      "identityStatus": "pending_revision_or_serial",
+      "evidenceStage": "candidate_observed",
+      "source": {
+        "authority": "official_manufacturer",
+        "url": "https://www.dyson.de/support/journey/replacement-parts/search.394167-01",
+        "locator": "Hersteller-Support > V12 Detect Slim Absolute, exakter Such-SKU 394167-01",
+        "observedAt": "2026-10-10",
+        "trace": "prior_wave10_owner_research",
+        "originalBytesArchive": null,
+        "independentIdentityReview": null,
+        "rightsReview": null,
+        "fitmentReview": null
+      },
+      "consumerPublished": false,
+      "fitmentConfirmed": false,
+      "licenseApproved": false,
+      "originalParts": [],
+      "fitmentEdges": []
+    },
+    {
+      "recordType": "oem_research_candidate",
+      "id": "W11-008",
+      "domain": "vacuum-cleaner",
+      "brand": "Dyson",
+      "model": "V12 Detect Slim Absolute +",
+      "market": "DE",
+      "primary": {
+        "namespace": "device-sku",
+        "value": "394461-01"
+      },
+      "variant": {
+        "eNumber": null,
+        "pnc": null,
+        "manufacturerProductCode": null,
+        "serialRange": null,
+        "revisionRange": null
+      },
+      "identityStatus": "pending_revision_or_serial",
+      "evidenceStage": "candidate_observed",
+      "source": {
+        "authority": "official_manufacturer",
+        "url": "https://www.dyson.de/support/journey/replacement-parts/search.394461-01",
+        "locator": "Hersteller-Support > V12 Detect Slim Absolute +, exakter Such-SKU 394461-01",
+        "observedAt": "2026-10-10",
+        "trace": "prior_wave10_owner_research",
+        "originalBytesArchive": null,
+        "independentIdentityReview": null,
+        "rightsReview": null,
+        "fitmentReview": null
+      },
+      "consumerPublished": false,
+      "fitmentConfirmed": false,
+      "licenseApproved": false,
+      "originalParts": [],
+      "fitmentEdges": []
+    },
+    {
+      "recordType": "oem_research_candidate",
+      "id": "W11-009",
+      "domain": "vacuum-cleaner",
+      "brand": "Miele",
+      "model": "Triflex HX3",
+      "market": "DE",
+      "primary": {
+        "namespace": "material-number",
+        "value": "12887840"
+      },
+      "variant": {
+        "eNumber": null,
+        "pnc": null,
+        "manufacturerProductCode": null,
+        "serialRange": null,
+        "revisionRange": null
+      },
+      "identityStatus": "pending_revision_or_serial",
+      "evidenceStage": "candidate_observed",
+      "source": {
+        "authority": "official_manufacturer",
+        "url": "https://www.miele.de/product/12887840/akku-staubsauger-triflex-hx3-brillantweiss",
+        "locator": "Produktdatenblatt > Modellbezeichnung: Triflex HX3; Materialnummer Hersteller: 12887840",
+        "observedAt": "2026-10-11",
+        "trace": "direct_oem_page_lookup",
+        "originalBytesArchive": null,
+        "independentIdentityReview": null,
+        "rightsReview": null,
+        "fitmentReview": null
+      },
+      "consumerPublished": false,
+      "fitmentConfirmed": false,
+      "licenseApproved": false,
+      "originalParts": [],
+      "fitmentEdges": []
+    },
+    {
+      "recordType": "oem_research_candidate",
+      "id": "W11-010",
+      "domain": "vacuum-cleaner",
+      "brand": "Miele",
+      "model": "Triflex HX3 Cat & Dog",
+      "market": "DE",
+      "primary": {
+        "namespace": "material-number",
+        "value": "12887850"
+      },
+      "variant": {
+        "eNumber": null,
+        "pnc": null,
+        "manufacturerProductCode": null,
+        "serialRange": null,
+        "revisionRange": null
+      },
+      "identityStatus": "pending_revision_or_serial",
+      "evidenceStage": "candidate_observed",
+      "source": {
+        "authority": "official_manufacturer",
+        "url": "https://www.miele.de/product/12887850/akku-staubsauger-triflex-hx3-cat-und-dog-obsidianschwarz",
+        "locator": "Produktdatenblatt > Modellbezeichnung: Triflex HX3 Cat & Dog; Materialnummer Hersteller: 12887850",
+        "observedAt": "2026-10-11",
+        "trace": "direct_oem_page_lookup",
+        "originalBytesArchive": null,
+        "independentIdentityReview": null,
+        "rightsReview": null,
+        "fitmentReview": null
+      },
+      "consumerPublished": false,
+      "fitmentConfirmed": false,
+      "licenseApproved": false,
+      "originalParts": [],
+      "fitmentEdges": []
+    },
+    {
+      "recordType": "oem_research_candidate",
+      "id": "W11-011",
+      "domain": "vacuum-cleaner",
+      "brand": "Miele",
+      "model": "Triflex HX3 Hardfloor",
+      "market": "DE",
+      "primary": {
+        "namespace": "material-number",
+        "value": "12887860"
+      },
+      "variant": {
+        "eNumber": null,
+        "pnc": null,
+        "manufacturerProductCode": null,
+        "serialRange": null,
+        "revisionRange": null
+      },
+      "identityStatus": "pending_revision_or_serial",
+      "evidenceStage": "candidate_observed",
+      "source": {
+        "authority": "official_manufacturer",
+        "url": "https://www.miele.de/product/12887860/akku-staubsauger-triflex-hx3-hardfloor-casagrau",
+        "locator": "Produktdatenblatt > Modellbezeichnung: Triflex HX3 Hardfloor; Materialnummer Hersteller: 12887860",
+        "observedAt": "2026-10-11",
+        "trace": "direct_oem_page_lookup",
+        "originalBytesArchive": null,
+        "independentIdentityReview": null,
+        "rightsReview": null,
+        "fitmentReview": null
+      },
+      "consumerPublished": false,
+      "fitmentConfirmed": false,
+      "licenseApproved": false,
+      "originalParts": [],
+      "fitmentEdges": []
+    },
+    {
+      "recordType": "oem_research_candidate",
+      "id": "W11-012",
+      "domain": "vacuum-cleaner",
+      "brand": "Miele",
+      "model": "Triflex HX3 Plus",
+      "market": "DE",
+      "primary": {
+        "namespace": "material-number",
+        "value": "12887870"
+      },
+      "variant": {
+        "eNumber": null,
+        "pnc": null,
+        "manufacturerProductCode": null,
+        "serialRange": null,
+        "revisionRange": null
+      },
+      "identityStatus": "pending_revision_or_serial",
+      "evidenceStage": "candidate_observed",
+      "source": {
+        "authority": "official_manufacturer",
+        "url": "https://www.miele.de/product/12887870/akku-staubsauger-triflex-hx3-plus-titanium-pf",
+        "locator": "Produktdatenblatt > Modellbezeichnung: Triflex HX3 Plus; Materialnummer Hersteller: 12887870",
+        "observedAt": "2026-10-11",
+        "trace": "direct_oem_page_lookup",
+        "originalBytesArchive": null,
+        "independentIdentityReview": null,
+        "rightsReview": null,
+        "fitmentReview": null
+      },
+      "consumerPublished": false,
+      "fitmentConfirmed": false,
+      "licenseApproved": false,
+      "originalParts": [],
+      "fitmentEdges": []
+    },
+    {
+      "recordType": "oem_research_candidate",
+      "id": "W11-013",
+      "domain": "vacuum-cleaner",
+      "brand": "Miele",
+      "model": "Triflex HX3 Aqua",
+      "market": "DE",
+      "primary": {
+        "namespace": "material-number",
+        "value": "12887880"
+      },
+      "variant": {
+        "eNumber": null,
+        "pnc": null,
+        "manufacturerProductCode": null,
+        "serialRange": null,
+        "revisionRange": null
+      },
+      "identityStatus": "pending_revision_or_serial",
+      "evidenceStage": "candidate_observed",
+      "source": {
+        "authority": "official_manufacturer",
+        "url": "https://www.miele.de/product/12887880/akku-staubsauger-triflex-hx3-aqua-obsidianschwarz",
+        "locator": "Produktdatenblatt > Modellbezeichnung: Triflex HX3 Aqua; Materialnummer Hersteller: 12887880",
+        "observedAt": "2026-10-11",
+        "trace": "direct_oem_page_lookup",
+        "originalBytesArchive": null,
+        "independentIdentityReview": null,
+        "rightsReview": null,
+        "fitmentReview": null
+      },
+      "consumerPublished": false,
+      "fitmentConfirmed": false,
+      "licenseApproved": false,
+      "originalParts": [],
+      "fitmentEdges": []
+    },
+    {
+      "recordType": "oem_research_candidate",
+      "id": "W11-014",
+      "domain": "vacuum-cleaner",
+      "brand": "Miele",
+      "model": "Triflex HX3 Plus Aqua",
+      "market": "DE",
+      "primary": {
+        "namespace": "material-number",
+        "value": "12887890"
+      },
+      "variant": {
+        "eNumber": null,
+        "pnc": null,
+        "manufacturerProductCode": null,
+        "serialRange": null,
+        "revisionRange": null
+      },
+      "identityStatus": "pending_revision_or_serial",
+      "evidenceStage": "candidate_observed",
+      "source": {
+        "authority": "official_manufacturer",
+        "url": "https://www.miele.de/product/12887890/akku-staubsauger-triflex-hx3-plus-aqua-obsidianschwarz",
+        "locator": "Produktdatenblatt > Modellbezeichnung: Triflex HX3 Plus Aqua; Materialnummer Hersteller: 12887890",
+        "observedAt": "2026-10-11",
+        "trace": "direct_oem_page_lookup",
+        "originalBytesArchive": null,
+        "independentIdentityReview": null,
+        "rightsReview": null,
+        "fitmentReview": null
+      },
+      "consumerPublished": false,
+      "fitmentConfirmed": false,
+      "licenseApproved": false,
+      "originalParts": [],
+      "fitmentEdges": []
+    },
+    {
+      "recordType": "oem_research_candidate",
+      "id": "W11-015",
+      "domain": "vacuum-cleaner",
+      "brand": "Miele",
+      "model": "Boost CX1 Cat & Dog PowerLine",
+      "market": "DE",
+      "primary": {
+        "namespace": "material-number",
+        "value": "11602420"
+      },
+      "variant": {
+        "eNumber": null,
+        "pnc": null,
+        "manufacturerProductCode": null,
+        "serialRange": null,
+        "revisionRange": null
+      },
+      "identityStatus": "pending_revision_or_serial",
+      "evidenceStage": "candidate_observed",
+      "source": {
+        "authority": "official_manufacturer",
+        "url": "https://www.miele.de/product/11602420/bodenstaubsauger-ohne-beutel-boost-cx1-cat-und-dog-powerline-obsidianschwarz",
+        "locator": "Produktdatenblatt > Modellbezeichnung: Boost CX1 Cat & Dog PowerLine; Materialnummer Hersteller: 11602420",
+        "observedAt": "2026-10-11",
+        "trace": "direct_oem_page_lookup",
+        "originalBytesArchive": null,
+        "independentIdentityReview": null,
+        "rightsReview": null,
+        "fitmentReview": null
+      },
+      "consumerPublished": false,
+      "fitmentConfirmed": false,
+      "licenseApproved": false,
+      "originalParts": [],
+      "fitmentEdges": []
+    },
+    {
+      "recordType": "oem_research_candidate",
+      "id": "W11-016",
+      "domain": "vacuum-cleaner",
+      "brand": "Miele",
+      "model": "Boost CX1 Blue Pulse",
+      "market": "DE",
+      "primary": {
+        "namespace": "material-number",
+        "value": "12831350"
+      },
+      "variant": {
+        "eNumber": null,
+        "pnc": null,
+        "manufacturerProductCode": null,
+        "serialRange": null,
+        "revisionRange": null
+      },
+      "identityStatus": "pending_revision_or_serial",
+      "evidenceStage": "candidate_observed",
+      "source": {
+        "authority": "official_manufacturer",
+        "url": "https://www.miele.de/product/12831350/bodenstaubsauger-ohne-beutel-boost-cx1-blue-pulse-obsidianschwarz",
+        "locator": "Produktdatenblatt > Modellbezeichnung: Boost CX1 Blue Pulse; Materialnummer Hersteller: 12831350",
+        "observedAt": "2026-10-11",
+        "trace": "direct_oem_page_lookup",
+        "originalBytesArchive": null,
+        "independentIdentityReview": null,
+        "rightsReview": null,
+        "fitmentReview": null
+      },
+      "consumerPublished": false,
+      "fitmentConfirmed": false,
+      "licenseApproved": false,
+      "originalParts": [],
+      "fitmentEdges": []
+    },
+    {
+      "recordType": "oem_research_candidate",
+      "id": "W11-017",
+      "domain": "vacuum-cleaner",
+      "brand": "Miele",
+      "model": "Boost CX1 125 Edition",
+      "market": "DE",
+      "primary": {
+        "namespace": "material-number",
+        "value": "12433910"
+      },
+      "variant": {
+        "eNumber": null,
+        "pnc": null,
+        "manufacturerProductCode": null,
+        "serialRange": null,
+        "revisionRange": null
+      },
+      "identityStatus": "pending_revision_or_serial",
+      "evidenceStage": "candidate_observed",
+      "source": {
+        "authority": "official_manufacturer",
+        "url": "https://www.miele.de/product/12433910/bodenstaubsauger-ohne-beutel-boost-cx1-125-edition-lotosweiss",
+        "locator": "Produktdatenblatt > Modellbezeichnung: Boost CX1 125 Edition; Materialnummer Hersteller: 12433910",
+        "observedAt": "2026-10-11",
+        "trace": "direct_oem_page_lookup",
+        "originalBytesArchive": null,
+        "independentIdentityReview": null,
+        "rightsReview": null,
+        "fitmentReview": null
+      },
+      "consumerPublished": false,
+      "fitmentConfirmed": false,
+      "licenseApproved": false,
+      "originalParts": [],
+      "fitmentEdges": []
+    },
+    {
+      "recordType": "oem_research_candidate",
+      "id": "W11-018",
+      "domain": "vacuum-cleaner",
+      "brand": "Miele",
+      "model": "Boost CX1 PowerLine",
+      "market": "DE",
+      "primary": {
+        "namespace": "material-number",
+        "value": "11602450"
+      },
+      "variant": {
+        "eNumber": null,
+        "pnc": null,
+        "manufacturerProductCode": null,
+        "serialRange": null,
+        "revisionRange": null
+      },
+      "identityStatus": "pending_revision_or_serial",
+      "evidenceStage": "candidate_observed",
+      "source": {
+        "authority": "official_manufacturer",
+        "url": "https://www.miele.de/product/11602450/bodenstaubsauger-ohne-beutel-boost-cx1-powerline-lotosweiss",
+        "locator": "Produktdatenblatt > Modellbezeichnung: Boost CX1 PowerLine; Materialnummer Hersteller: 11602450",
+        "observedAt": "2026-10-11",
+        "trace": "direct_oem_page_lookup",
+        "originalBytesArchive": null,
+        "independentIdentityReview": null,
+        "rightsReview": null,
+        "fitmentReview": null
+      },
+      "consumerPublished": false,
+      "fitmentConfirmed": false,
+      "licenseApproved": false,
+      "originalParts": [],
+      "fitmentEdges": []
+    },
+    {
+      "recordType": "oem_research_candidate",
+      "id": "W11-019",
+      "domain": "vacuum-cleaner",
+      "brand": "Miele",
+      "model": "Boost CX1 PowerLine",
+      "market": "DE",
+      "primary": {
+        "namespace": "material-number",
+        "value": "11602500"
+      },
+      "variant": {
+        "eNumber": null,
+        "pnc": null,
+        "manufacturerProductCode": null,
+        "serialRange": null,
+        "revisionRange": null
+      },
+      "identityStatus": "pending_revision_or_serial",
+      "evidenceStage": "candidate_observed",
+      "source": {
+        "authority": "official_manufacturer",
+        "url": "https://www.miele.de/product/11602500/bodenstaubsauger-ohne-beutel-boost-cx1-powerline-graphitgrau",
+        "locator": "Produktdatenblatt > Modellbezeichnung: Boost CX1 PowerLine; Materialnummer Hersteller: 11602500",
+        "observedAt": "2026-10-11",
+        "trace": "direct_oem_page_lookup",
+        "originalBytesArchive": null,
+        "independentIdentityReview": null,
+        "rightsReview": null,
+        "fitmentReview": null
+      },
+      "consumerPublished": false,
+      "fitmentConfirmed": false,
+      "licenseApproved": false,
+      "originalParts": [],
+      "fitmentEdges": []
+    },
+    {
+      "recordType": "oem_research_candidate",
+      "id": "W11-020",
+      "domain": "vacuum-cleaner",
+      "brand": "Miele",
+      "model": "Boost CX1 Allergy",
+      "market": "DE",
+      "primary": {
+        "namespace": "material-number",
+        "value": "11850040"
+      },
+      "variant": {
+        "eNumber": null,
+        "pnc": null,
+        "manufacturerProductCode": null,
+        "serialRange": null,
+        "revisionRange": null
+      },
+      "identityStatus": "pending_revision_or_serial",
+      "evidenceStage": "candidate_observed",
+      "source": {
+        "authority": "official_manufacturer",
+        "url": "https://www.miele.de/product/11850040/bodenstaubsauger-ohne-beutel-boost-cx1-allergy-kaschmirgrau",
+        "locator": "Produktdatenblatt > Modellbezeichnung: Boost CX1 Allergy; Materialnummer Hersteller: 11850040",
+        "observedAt": "2026-10-11",
+        "trace": "direct_oem_page_lookup",
+        "originalBytesArchive": null,
+        "independentIdentityReview": null,
+        "rightsReview": null,
+        "fitmentReview": null
+      },
+      "consumerPublished": false,
+      "fitmentConfirmed": false,
+      "licenseApproved": false,
+      "originalParts": [],
+      "fitmentEdges": []
+    },
+    {
+      "recordType": "oem_research_candidate",
+      "id": "W11-021",
+      "domain": "vacuum-cleaner",
+      "brand": "Miele",
+      "model": "Boost CX1 125 Gala Edition",
+      "market": "DE",
+      "primary": {
+        "namespace": "material-number",
+        "value": "12433940"
+      },
+      "variant": {
+        "eNumber": null,
+        "pnc": null,
+        "manufacturerProductCode": null,
+        "serialRange": null,
+        "revisionRange": null
+      },
+      "identityStatus": "pending_revision_or_serial",
+      "evidenceStage": "candidate_observed",
+      "source": {
+        "authority": "official_manufacturer",
+        "url": "https://www.miele.de/product/12433940/bodenstaubsauger-ohne-beutel-boost-cx1-125-gala-edition-obsidianschwarz",
+        "locator": "Produktdatenblatt > Modellbezeichnung: Boost CX1 125 Gala Edition; Materialnummer Hersteller: 12433940",
+        "observedAt": "2026-10-11",
+        "trace": "direct_oem_page_lookup",
+        "originalBytesArchive": null,
+        "independentIdentityReview": null,
+        "rightsReview": null,
+        "fitmentReview": null
+      },
+      "consumerPublished": false,
+      "fitmentConfirmed": false,
+      "licenseApproved": false,
+      "originalParts": [],
+      "fitmentEdges": []
+    },
+    {
+      "recordType": "oem_research_candidate",
+      "id": "W11-022",
+      "domain": "vacuum-cleaner",
+      "brand": "Miele",
+      "model": "Boost CX1 Active",
+      "market": "DE",
+      "primary": {
+        "namespace": "material-number",
+        "value": "12133580"
+      },
+      "variant": {
+        "eNumber": null,
+        "pnc": null,
+        "manufacturerProductCode": null,
+        "serialRange": null,
+        "revisionRange": null
+      },
+      "identityStatus": "pending_revision_or_serial",
+      "evidenceStage": "candidate_observed",
+      "source": {
+        "authority": "official_manufacturer",
+        "url": "https://www.miele.de/product/12133580/bodenstaubsauger-ohne-beutel-boost-cx1-active-graphitgrau",
+        "locator": "Produktdatenblatt > Modellbezeichnung: Boost CX1 Active; Materialnummer Hersteller: 12133580",
+        "observedAt": "2026-10-11",
+        "trace": "direct_oem_page_lookup",
+        "originalBytesArchive": null,
+        "independentIdentityReview": null,
+        "rightsReview": null,
+        "fitmentReview": null
+      },
+      "consumerPublished": false,
+      "fitmentConfirmed": false,
+      "licenseApproved": false,
+      "originalParts": [],
+      "fitmentEdges": []
+    },
+    {
+      "recordType": "oem_research_candidate",
+      "id": "W11-023",
+      "domain": "vacuum-cleaner",
+      "brand": "Miele",
+      "model": "Boost CX1 CarCare",
+      "market": "DE",
+      "primary": {
+        "namespace": "material-number",
+        "value": "12666730"
+      },
+      "variant": {
+        "eNumber": null,
+        "pnc": null,
+        "manufacturerProductCode": null,
+        "serialRange": null,
+        "revisionRange": null
+      },
+      "identityStatus": "pending_revision_or_serial",
+      "evidenceStage": "candidate_observed",
+      "source": {
+        "authority": "official_manufacturer",
+        "url": "https://www.miele.de/product/12666730/bodenstaubsauger-ohne-beutel-boost-cx1-carcare-lotosweiss",
+        "locator": "Produktdatenblatt > Modellbezeichnung: Boost CX1 CarCare; Materialnummer Hersteller: 12666730",
+        "observedAt": "2026-10-11",
+        "trace": "direct_oem_page_lookup",
+        "originalBytesArchive": null,
+        "independentIdentityReview": null,
+        "rightsReview": null,
+        "fitmentReview": null
+      },
+      "consumerPublished": false,
+      "fitmentConfirmed": false,
+      "licenseApproved": false,
+      "originalParts": [],
+      "fitmentEdges": []
+    },
+    {
+      "recordType": "oem_research_candidate",
+      "id": "W11-024",
+      "domain": "vacuum-cleaner",
+      "brand": "Miele",
+      "model": "Classic C1 CarCare",
+      "market": "DE",
+      "primary": {
+        "namespace": "material-number",
+        "value": "12505560"
+      },
+      "variant": {
+        "eNumber": null,
+        "pnc": null,
+        "manufacturerProductCode": null,
+        "serialRange": null,
+        "revisionRange": null
+      },
+      "identityStatus": "pending_revision_or_serial",
+      "evidenceStage": "candidate_observed",
+      "source": {
+        "authority": "official_manufacturer",
+        "url": "https://www.miele.de/product/12505560/bodenstaubsauger-mit-beutel-classic-c1-carcare-mangorot",
+        "locator": "Produktdatenblatt > Modellbezeichnung: Classic C1 CarCare; Materialnummer Hersteller: 12505560",
+        "observedAt": "2026-10-11",
+        "trace": "direct_oem_page_lookup",
+        "originalBytesArchive": null,
+        "independentIdentityReview": null,
+        "rightsReview": null,
+        "fitmentReview": null
+      },
+      "consumerPublished": false,
+      "fitmentConfirmed": false,
+      "licenseApproved": false,
+      "originalParts": [],
+      "fitmentEdges": []
+    },
+    {
+      "recordType": "oem_research_candidate",
+      "id": "W11-025",
+      "domain": "vacuum-cleaner",
+      "brand": "Miele",
+      "model": "Complete C3 Starlight",
+      "market": "DE",
+      "primary": {
+        "namespace": "material-number",
+        "value": "12112100"
+      },
+      "variant": {
+        "eNumber": null,
+        "pnc": null,
+        "manufacturerProductCode": null,
+        "serialRange": null,
+        "revisionRange": null
+      },
+      "identityStatus": "pending_revision_or_serial",
+      "evidenceStage": "candidate_observed",
+      "source": {
+        "authority": "official_manufacturer",
+        "url": "https://www.miele.de/product/12112100/bodenstaubsauger-mit-beutel-complete-c3-starlight-marineblau",
+        "locator": "Produktdatenblatt > Modellbezeichnung: Complete C3 Starlight; Materialnummer Hersteller: 12112100",
+        "observedAt": "2026-10-11",
+        "trace": "direct_oem_page_lookup",
+        "originalBytesArchive": null,
+        "independentIdentityReview": null,
+        "rightsReview": null,
+        "fitmentReview": null
+      },
+      "consumerPublished": false,
+      "fitmentConfirmed": false,
+      "licenseApproved": false,
+      "originalParts": [],
+      "fitmentEdges": []
+    },
+    {
+      "recordType": "oem_research_candidate",
+      "id": "W11-026",
+      "domain": "vacuum-cleaner",
+      "brand": "Miele",
+      "model": "Classic C1 Flex",
+      "market": "DE",
+      "primary": {
+        "namespace": "material-number",
+        "value": "12029770"
+      },
+      "variant": {
+        "eNumber": null,
+        "pnc": null,
+        "manufacturerProductCode": null,
+        "serialRange": null,
+        "revisionRange": null
+      },
+      "identityStatus": "pending_revision_or_serial",
+      "evidenceStage": "candidate_observed",
+      "source": {
+        "authority": "official_manufacturer",
+        "url": "https://www.miele.de/product/12029770/bodenstaubsauger-mit-beutel-classic-c1-flex-lotosweiss",
+        "locator": "Produktdatenblatt > Modellbezeichnung: Classic C1 Flex; Materialnummer Hersteller: 12029770",
+        "observedAt": "2026-10-11",
+        "trace": "direct_oem_page_lookup",
+        "originalBytesArchive": null,
+        "independentIdentityReview": null,
+        "rightsReview": null,
+        "fitmentReview": null
+      },
+      "consumerPublished": false,
+      "fitmentConfirmed": false,
+      "licenseApproved": false,
+      "originalParts": [],
+      "fitmentEdges": []
+    },
+    {
+      "recordType": "oem_research_candidate",
+      "id": "W11-027",
+      "domain": "vacuum-cleaner",
+      "brand": "Miele",
+      "model": "Complete C3 Silence",
+      "market": "DE",
+      "primary": {
+        "namespace": "material-number",
+        "value": "12031660"
+      },
+      "variant": {
+        "eNumber": null,
+        "pnc": null,
+        "manufacturerProductCode": null,
+        "serialRange": null,
+        "revisionRange": null
+      },
+      "identityStatus": "pending_revision_or_serial",
+      "evidenceStage": "candidate_observed",
+      "source": {
+        "authority": "official_manufacturer",
+        "url": "https://www.miele.de/product/12031660/bodenstaubsauger-mit-beutel-complete-c3-silence-lotosweiss",
+        "locator": "Produktdatenblatt > Modellbezeichnung: Complete C3 Silence; Materialnummer Hersteller: 12031660",
+        "observedAt": "2026-10-11",
+        "trace": "direct_oem_page_lookup",
+        "originalBytesArchive": null,
+        "independentIdentityReview": null,
+        "rightsReview": null,
+        "fitmentReview": null
+      },
+      "consumerPublished": false,
+      "fitmentConfirmed": false,
+      "licenseApproved": false,
+      "originalParts": [],
+      "fitmentEdges": []
+    },
+    {
+      "recordType": "oem_research_candidate",
+      "id": "W11-028",
+      "domain": "vacuum-cleaner",
+      "brand": "Miele",
+      "model": "Complete C3 Silence Flex",
+      "market": "DE",
+      "primary": {
+        "namespace": "material-number",
+        "value": "12031720"
+      },
+      "variant": {
+        "eNumber": null,
+        "pnc": null,
+        "manufacturerProductCode": null,
+        "serialRange": null,
+        "revisionRange": null
+      },
+      "identityStatus": "pending_revision_or_serial",
+      "evidenceStage": "candidate_observed",
+      "source": {
+        "authority": "official_manufacturer",
+        "url": "https://www.miele.de/product/12031720/bodenstaubsauger-mit-beutel-complete-c3-silence-flex-graphitgrau",
+        "locator": "Produktdatenblatt > Modellbezeichnung: Complete C3 Silence Flex; Materialnummer Hersteller: 12031720",
+        "observedAt": "2026-10-11",
+        "trace": "direct_oem_page_lookup",
+        "originalBytesArchive": null,
+        "independentIdentityReview": null,
+        "rightsReview": null,
+        "fitmentReview": null
+      },
+      "consumerPublished": false,
+      "fitmentConfirmed": false,
+      "licenseApproved": false,
+      "originalParts": [],
+      "fitmentEdges": []
+    },
+    {
+      "recordType": "oem_research_candidate",
+      "id": "W11-029",
+      "domain": "vacuum-cleaner",
+      "brand": "Miele",
+      "model": "Complete C3 Flex",
+      "market": "DE",
+      "primary": {
+        "namespace": "material-number",
+        "value": "12031710"
+      },
+      "variant": {
+        "eNumber": null,
+        "pnc": null,
+        "manufacturerProductCode": null,
+        "serialRange": null,
+        "revisionRange": null
+      },
+      "identityStatus": "pending_revision_or_serial",
+      "evidenceStage": "candidate_observed",
+      "source": {
+        "authority": "official_manufacturer",
+        "url": "https://www.miele.de/product/12031710/bodenstaubsauger-mit-beutel-complete-c3-flex-currygelb",
+        "locator": "Produktdatenblatt > Modellbezeichnung: Complete C3 Flex; Materialnummer Hersteller: 12031710",
+        "observedAt": "2026-10-11",
+        "trace": "direct_oem_page_lookup",
+        "originalBytesArchive": null,
+        "independentIdentityReview": null,
+        "rightsReview": null,
+        "fitmentReview": null
+      },
+      "consumerPublished": false,
+      "fitmentConfirmed": false,
+      "licenseApproved": false,
+      "originalParts": [],
+      "fitmentEdges": []
+    },
+    {
+      "recordType": "oem_research_candidate",
+      "id": "W11-030",
+      "domain": "washing-machine",
+      "brand": "Miele",
+      "model": "WWD380 WPS PWash&Steam&9kg",
+      "market": "DE",
+      "primary": {
+        "namespace": "material-number",
+        "value": "12703620"
+      },
+      "variant": {
+        "eNumber": null,
+        "pnc": null,
+        "manufacturerProductCode": null,
+        "serialRange": null,
+        "revisionRange": null
+      },
+      "identityStatus": "pending_revision_or_serial",
+      "evidenceStage": "candidate_observed",
+      "source": {
+        "authority": "official_manufacturer",
+        "url": "https://www.miele.de/product/12703620/w1-waschmaschine-frontlader-wwd380-wps-pwashundsteamund9kg-lotosweiss",
+        "locator": "Produktdatenblatt > Modellbezeichnung: WWD380 WPS PWash&Steam&9kg; Materialnummer Hersteller: 12703620",
+        "observedAt": "2026-10-11",
+        "trace": "direct_oem_page_lookup",
+        "originalBytesArchive": null,
+        "independentIdentityReview": null,
+        "rightsReview": null,
+        "fitmentReview": null
+      },
+      "consumerPublished": false,
+      "fitmentConfirmed": false,
+      "licenseApproved": false,
+      "originalParts": [],
+      "fitmentEdges": []
+    },
+    {
+      "recordType": "oem_research_candidate",
+      "id": "W11-031",
+      "domain": "washing-machine",
+      "brand": "Miele",
+      "model": "WWB360 WCS PWash&8kg",
+      "market": "DE",
+      "primary": {
+        "namespace": "material-number",
+        "value": "12694310"
+      },
+      "variant": {
+        "eNumber": null,
+        "pnc": null,
+        "manufacturerProductCode": null,
+        "serialRange": null,
+        "revisionRange": null
+      },
+      "identityStatus": "pending_revision_or_serial",
+      "evidenceStage": "candidate_observed",
+      "source": {
+        "authority": "official_manufacturer",
+        "url": "https://www.miele.de/product/12694310/w1-waschmaschine-frontlader-wwb360-wcs-pwashund8kg",
+        "locator": "Produktdatenblatt > Modellbezeichnung: WWB360 WCS PWash&8kg; Materialnummer Hersteller: 12694310",
+        "observedAt": "2026-10-11",
+        "trace": "direct_oem_page_lookup",
+        "originalBytesArchive": null,
+        "independentIdentityReview": null,
+        "rightsReview": null,
+        "fitmentReview": null
+      },
+      "consumerPublished": false,
+      "fitmentConfirmed": false,
+      "licenseApproved": false,
+      "originalParts": [],
+      "fitmentEdges": []
+    },
+    {
+      "recordType": "oem_research_candidate",
+      "id": "W11-032",
+      "domain": "washing-machine",
+      "brand": "Miele",
+      "model": "WWE380 WPS PWash&Steam&8kg",
+      "market": "DE",
+      "primary": {
+        "namespace": "material-number",
+        "value": "12705740"
+      },
+      "variant": {
+        "eNumber": null,
+        "pnc": null,
+        "manufacturerProductCode": null,
+        "serialRange": null,
+        "revisionRange": null
+      },
+      "identityStatus": "pending_revision_or_serial",
+      "evidenceStage": "candidate_observed",
+      "source": {
+        "authority": "official_manufacturer",
+        "url": "https://www.miele.de/product/12705740/w1-waschmaschine-frontlader-wwe380-wps-pwashundsteamund8kg",
+        "locator": "Produktdatenblatt > Modellbezeichnung: WWE380 WPS PWash&Steam&8kg; Materialnummer Hersteller: 12705740",
+        "observedAt": "2026-10-11",
+        "trace": "direct_oem_page_lookup",
+        "originalBytesArchive": null,
+        "independentIdentityReview": null,
+        "rightsReview": null,
+        "fitmentReview": null
+      },
+      "consumerPublished": false,
+      "fitmentConfirmed": false,
+      "licenseApproved": false,
+      "originalParts": [],
+      "fitmentEdges": []
+    },
+    {
+      "recordType": "oem_research_candidate",
+      "id": "W11-033",
+      "domain": "washing-machine",
+      "brand": "Miele",
+      "model": "WSD383 WCS PWash&Steam&9kg",
+      "market": "DE",
+      "primary": {
+        "namespace": "material-number",
+        "value": "12903050"
+      },
+      "variant": {
+        "eNumber": null,
+        "pnc": null,
+        "manufacturerProductCode": null,
+        "serialRange": null,
+        "revisionRange": null
+      },
+      "identityStatus": "pending_revision_or_serial",
+      "evidenceStage": "candidate_observed",
+      "source": {
+        "authority": "official_manufacturer",
+        "url": "https://www.miele.de/product/12903050/w1-waschmaschine-frontlader-wsd383-wcs-pwashundsteamund9kg",
+        "locator": "Produktdatenblatt > Modellbezeichnung: WSD383 WCS PWash&Steam&9kg; Materialnummer Hersteller: 12903050",
+        "observedAt": "2026-10-11",
+        "trace": "direct_oem_page_lookup",
+        "originalBytesArchive": null,
+        "independentIdentityReview": null,
+        "rightsReview": null,
+        "fitmentReview": null
+      },
+      "consumerPublished": false,
+      "fitmentConfirmed": false,
+      "licenseApproved": false,
+      "originalParts": [],
+      "fitmentEdges": []
+    },
+    {
+      "recordType": "oem_research_candidate",
+      "id": "W11-034",
+      "domain": "vacuum-cleaner",
+      "brand": "Dyson",
+      "model": "Dyson V8 Origin",
+      "market": "DE",
+      "primary": {
+        "namespace": "device-sku",
+        "value": "400394-01"
+      },
+      "variant": {
+        "eNumber": null,
+        "pnc": null,
+        "manufacturerProductCode": null,
+        "serialRange": null,
+        "revisionRange": null
+      },
+      "identityStatus": "pending_revision_or_serial",
+      "evidenceStage": "candidate_observed",
+      "source": {
+        "authority": "official_manufacturer",
+        "url": "https://www.dyson.de/support/journey/replacement-parts/search.400394-01",
+        "locator": "Hersteller-Support > Dyson V8 Origin; exakter Produkt-SKU: 400394-01 im Suchpfad",
+        "observedAt": "2026-10-11",
+        "trace": "direct_oem_support_page_lookup",
+        "originalBytesArchive": null,
+        "independentIdentityReview": null,
+        "rightsReview": null,
+        "fitmentReview": null
+      },
+      "consumerPublished": false,
+      "fitmentConfirmed": false,
+      "licenseApproved": false,
+      "originalParts": [],
+      "fitmentEdges": []
+    },
+    {
+      "recordType": "oem_research_candidate",
+      "id": "W11-035",
+      "domain": "vacuum-cleaner",
+      "brand": "Dyson",
+      "model": "Dyson V11 Absolute Extra",
+      "market": "DE",
+      "primary": {
+        "namespace": "device-sku",
+        "value": "298884-01"
+      },
+      "variant": {
+        "eNumber": null,
+        "pnc": null,
+        "manufacturerProductCode": null,
+        "serialRange": null,
+        "revisionRange": null
+      },
+      "identityStatus": "pending_revision_or_serial",
+      "evidenceStage": "candidate_observed",
+      "source": {
+        "authority": "official_manufacturer",
+        "url": "https://www.dyson.de/support/journey/replacement-parts/search.298884-01",
+        "locator": "Hersteller-Support > Dyson V11 Absolute Extra; exakter Produkt-SKU: 298884-01 im Suchpfad",
+        "observedAt": "2026-10-11",
+        "trace": "direct_oem_support_page_lookup",
+        "originalBytesArchive": null,
+        "independentIdentityReview": null,
+        "rightsReview": null,
+        "fitmentReview": null
+      },
+      "consumerPublished": false,
+      "fitmentConfirmed": false,
+      "licenseApproved": false,
+      "originalParts": [],
+      "fitmentEdges": []
+    },
+    {
+      "recordType": "oem_research_candidate",
+      "id": "W11-036",
+      "domain": "vacuum-cleaner",
+      "brand": "Dyson",
+      "model": "Dyson V15 Detect Complete +",
+      "market": "DE",
+      "primary": {
+        "namespace": "device-sku",
+        "value": "394463-01"
+      },
+      "variant": {
+        "eNumber": null,
+        "pnc": null,
+        "manufacturerProductCode": null,
+        "serialRange": null,
+        "revisionRange": null
+      },
+      "identityStatus": "pending_revision_or_serial",
+      "evidenceStage": "candidate_observed",
+      "source": {
+        "authority": "official_manufacturer",
+        "url": "https://www.dyson.de/support/journey/tools/search.394463-01",
+        "locator": "Hersteller-Support > Dyson V15 Detect Complete +; exakter Produkt-SKU: 394463-01 im Suchpfad",
+        "observedAt": "2026-10-11",
+        "trace": "direct_oem_support_page_lookup",
+        "originalBytesArchive": null,
+        "independentIdentityReview": null,
+        "rightsReview": null,
+        "fitmentReview": null
+      },
+      "consumerPublished": false,
+      "fitmentConfirmed": false,
+      "licenseApproved": false,
+      "originalParts": [],
+      "fitmentEdges": []
+    },
+    {
+      "recordType": "oem_research_candidate",
+      "id": "W11-037",
+      "domain": "vacuum-cleaner",
+      "brand": "Dyson",
+      "model": "Dyson V15 Detect Total Clean",
+      "market": "DE",
+      "primary": {
+        "namespace": "device-sku",
+        "value": "476586-01"
+      },
+      "variant": {
+        "eNumber": null,
+        "pnc": null,
+        "manufacturerProductCode": null,
+        "serialRange": null,
+        "revisionRange": null
+      },
+      "identityStatus": "pending_revision_or_serial",
+      "evidenceStage": "candidate_observed",
+      "source": {
+        "authority": "official_manufacturer",
+        "url": "https://www.dyson.de/support/journey/tools/search.476586-01",
+        "locator": "Hersteller-Support > Dyson V15 Detect Total Clean; exakter Produkt-SKU: 476586-01 im Suchpfad",
+        "observedAt": "2026-10-11",
+        "trace": "direct_oem_support_page_lookup",
+        "originalBytesArchive": null,
+        "independentIdentityReview": null,
+        "rightsReview": null,
+        "fitmentReview": null
+      },
+      "consumerPublished": false,
+      "fitmentConfirmed": false,
+      "licenseApproved": false,
+      "originalParts": [],
+      "fitmentEdges": []
+    }
+  ]
+}

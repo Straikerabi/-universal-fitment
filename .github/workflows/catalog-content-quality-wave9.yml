@@ -1,0 +1,25 @@
+name: Catalog Content Quality Wave9
+on:
+  push:
+    branches: [work/catalog-content-quality-wave9]
+    paths:
+      - 'integrations/catalog-content-quality-wave9/**'
+      - '.github/workflows/catalog-content-quality-wave9.yml'
+  pull_request:
+    branches: [integration/private-unified-preview-wave5-owner]
+    paths:
+      - 'integrations/catalog-content-quality-wave9/**'
+      - '.github/workflows/catalog-content-quality-wave9.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deterministic OEM gap report
+        run: node integrations/catalog-content-quality-wave9/quality.mjs --check
+      - name: Real native Node negative tests
+        run: node --test integrations/catalog-content-quality-wave9/quality.test.mjs

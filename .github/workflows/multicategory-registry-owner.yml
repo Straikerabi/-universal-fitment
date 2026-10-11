@@ -1,0 +1,40 @@
+name: Multi-category registry guard (private, no release)
+on:
+  push:
+    branches:
+      - integration/universal-categories-foundation-owner
+    paths:
+      - 'integrations/universal-category-foundation/**'
+      - '.github/workflows/multicategory-registry-owner.yml'
+  pull_request:
+    branches:
+      - integration/private-unified-preview-wave5-owner
+    paths:
+      - 'integrations/universal-category-foundation/**'
+      - '.github/workflows/multicategory-registry-owner.yml'
+permissions:
+  contents: read
+jobs:
+  validate-planned-only:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '22'
+      - name: Validate categories, aliases, safety profiles and vacuum-only v1 protection
+        run: node --test integrations/universal-category-foundation/registry.test.mjs
+      - name: Report sectors without claiming newly available products
+        run: node integrations/universal-category-foundation/report.mjs
+      - name: Confirm existing consumer pilot, engine and legal files not modified by this branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git diff --check
+          git diff --name-only "origin/integration/private-unified-preview-wave5-owner...HEAD" | tee "$RUNNER_TEMP/changed.txt"
+          grep -Ev '^(integrations/universal-category-foundation/|\.github/workflows/multicategory-registry-owner\.yml$)' "$RUNNER_TEMP/changed.txt" > "$RUNNER_TEMP/disallowed.txt" || true
+          test ! -s "$RUNNER_TEMP/disallowed.txt"

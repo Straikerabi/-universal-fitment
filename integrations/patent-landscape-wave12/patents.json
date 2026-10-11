@@ -1,0 +1,80 @@
+{
+  "asOf": "2026-10-11",
+  "scope": "preliminary-not-legal-opinion",
+  "sources": [
+    "Google Patents; status is unverified secondary-source display",
+    "EPO Register, DPMAregister, WIPO Patentscope, USPTO and CNIPA independent checks outstanding"
+  ],
+  "patents": [
+    {
+      "publication": "EP4446907A1",
+      "jurisdiction": "EP",
+      "priority": "2021-12-06",
+      "filing": "2022-12-02",
+      "status": "Pending (Google Patents display; register unverified)",
+      "family": "EP22904172.8; further family search pending",
+      "claim": "Independent claim 1: part image; detection model classifies part; region in 2D/3D image determines part information",
+      "feature": "image-part-recognition",
+      "implemented": "No. Current typeplate prototype is manual text entry, camera:none, ocr:none; no image detection model.",
+      "gap": "Image detection model and spatial-region inference absent",
+      "risk": "watch-future",
+      "url": "https://patents.google.com/patent/EP4446907A1/en"
+    },
+    {
+      "publication": "EP2042379B1",
+      "jurisdiction": "EP",
+      "priority": "2007-09-19",
+      "filing": "2008-09-17",
+      "status": "Active (Google Patents display; DE validation and register unverified)",
+      "family": "DE102007044586B3; EP2042379A2/A3/B1",
+      "claim": "Independent device/system claims: vehicle control unit, detector, multiple subsystems, non-removable identification means on replacement parts",
+      "feature": "vehicle-part-identity",
+      "implemented": "No vehicle ECU hardware interrogation or inseparable identification tags; current Consumer pilot vacuum-only.",
+      "gap": "Vehicle control unit, subsystem interface and physical part tags absent",
+      "risk": "watch-future",
+      "url": "https://patents.google.com/patent/EP2042379B1/en"
+    },
+    {
+      "publication": "US11017351B2",
+      "jurisdiction": "US",
+      "priority": "2014-09-12",
+      "filing": "2015-09-14",
+      "status": "Active (Google Patents display; USPTO live status unverified)",
+      "family": "US20160078403A1 / US11017351B2",
+      "claim": "Independent claim 1: VIN plus OBD diagnostic code, condition-based aftermarket recommendation, weighting, adaptive rules and subsequent recommendations",
+      "feature": "vin-diagnostics-b2b",
+      "implemented": "No live OBD fault ingestion, no VIN-driven procurement or adaptive recommendation weights in current Consumer.",
+      "gap": "Diagnostic interface, code, weighted recommendation feedback and ECU reset absent",
+      "risk": "watch-future",
+      "url": "https://patents.google.com/patent/US11017351B2/en"
+    },
+    {
+      "publication": "US20150112842A1",
+      "jurisdiction": "US",
+      "priority": "2013-10-21",
+      "filing": "2014-10-21",
+      "status": "Abandoned (Google Patents display; family/continuations unverified)",
+      "family": "US14/519,935 only listed; continuations require separate search",
+      "claim": "Independent claim 1: human-interpreted part interchange descriptors transformed into logic rules/tree to map vehicle VIN to part identifiers",
+      "feature": "vin-interchange",
+      "implemented": "No production VIN decoding or interchange logic tree; HSN/TSN/VIN is a planned isolated exploration.",
+      "gap": "VIN-to-part interchange tree absent",
+      "risk": "prior-art-monitor",
+      "url": "https://patents.google.com/patent/US20150112842A1/en"
+    },
+    {
+      "publication": "CN102930000A",
+      "jurisdiction": "CN",
+      "priority": "2012-10-26",
+      "filing": "2012-10-26",
+      "status": "Pending (Google Patents display; CNIPA current legal status unverified)",
+      "family": "CN2012104150634A; further family check pending",
+      "claim": "Independent claim 1: VIN string segmentation, vehicle parsing, parts matching and fuzzy product-name search",
+      "feature": "vin-search",
+      "implemented": "No released VIN segmentation/vehicle parts search; vacuum search is textual catalog lookup.",
+      "gap": "VIN segmentation and linked vehicle parts matching absent",
+      "risk": "watch-future",
+      "url": "https://patents.google.com/patent/CN102930000A/en"
+    }
+  ]
+}

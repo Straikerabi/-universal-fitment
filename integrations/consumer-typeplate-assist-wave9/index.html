@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="de">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+ <meta name="color-scheme" content="light dark">
+ <meta name="referrer" content="no-referrer">
+ <title>Typenschild-Hilfe · Universal Fitment (interne Vorschau)</title>
+ <link rel="icon" href="data:,">
+ <link rel="stylesheet" href="./styles.css">
+ <script type="module" src="./app.mjs"></script>
+</head>
+<body>
+ <a class="skip-link" href="#searchForm">Direkt zur Gerätekennung</a>
+ <header class="topbar"><div class="logo" aria-label="Universal Fitment"><span class="monogram">uf</span><span>universal <strong>fitment</strong><small>WAVE9 / INTERNE TYPOLOGIEHILFE</small></span></div><span class="prototype">PRIVATE VORSCHAU</span></header>
+ <main id="main">
+  <section class="hero" aria-labelledby="pageTitle">
+   <div class="eyebrow">01 / GERÄT IDENTIFIZIEREN</div>
+   <h1 id="pageTitle">Was steht auf deinem <em>Typenschild?</em></h1>
+   <p>Die genaue Gerätekennung ist wichtiger als der Modellname. Finde die richtige Nummer und vergleiche sie mit bereits dokumentierten Katalogreferenzen.</p>
+   <div class="callout" role="note"><strong>Keine automatische Erkennung.</strong> Gib nur die Modell-/Typenkennung ein – <strong>keine Seriennummer, keinen Namen und keine Fotos.</strong> Deine Eingabe bleibt während dieser Sitzung im Browser und wird nicht gespeichert oder versendet.</div>
+  </section>
+  <div class="layout">
+   <section class="panel" aria-labelledby="searchTitle">
+    <div class="panel-heading"><span class="step-dot">1</span><h2 id="searchTitle">Kennung ablesen</h2></div>
+    <form id="searchForm" autocomplete="off" novalidate>
+     <div class="form-grid">
+      <label for="brand">Hersteller</label>
+      <select id="brand" name="brand"><option value="all">Alle Hersteller</option></select>
+      <label for="code">Modell-/Typenkennung oder Produktcode</label>
+      <input id="code" name="code" type="search" placeholder="z. B. VS20C95D4TK/WD" inputmode="text" maxlength="100" enterkeyhint="search" autocapitalize="characters" spellcheck="false" aria-describedby="codeHelp">
+      <p id="codeHelp" class="help">Alle Buchstaben, Striche, Schrägstriche, führenden Nullen und Suffixe genau übernehmen.</p>
+     </div>
+     <div class="form-actions"><button type="submit" class="primary">Kennung vergleichen <span aria-hidden="true">→</span></button><button id="reset" type="button" class="secondary">Zurücksetzen</button></div>
+    </form>
+    <div id="validation" class="validation" role="alert" hidden></div>
+    <div class="guidance" aria-live="polite" aria-atomic="true">
+     <h3 id="guideTitle">Worauf du achten solltest</h3>
+     <p id="guideDescription">Eine vollständige Kennung kann Modell-, Länder- oder Revisionszusätze enthalten.</p>
+     <p id="guideReminder" class="muted"></p>
+    </div>
+    <div class="privacy"><h3>Datenschutz & Grenzen</h3><ul>
+     <li>Keine Kamera, keine OCR, kein Bild-Upload, keine Cookies oder Telemetrie.</li>
+     <li>Keine Speicherung in LocalStorage, SessionStorage oder Cloud.</li>
+     <li>Ein Treffer ist eine Katalogreferenz, kein Nachweis zur eigenen Ausführung oder Teilepassung.</li>
+     <li>Herstellerlinks verlassen erst nach bewusstem Anklicken diese lokale Vorschau.</li>
+    </ul></div>
+   </section>
+   <section class="panel" aria-labelledby="resultsTitle">
+    <div class="panel-heading"><span class="step-dot">2</span><h2 id="resultsTitle">Katalog vergleichen</h2></div>
+    <p id="resultStatus" class="result-status" role="status" aria-live="polite" aria-atomic="true">Katalog wird vorbereitet.</p>
+    <div id="matches" class="match-list"></div>
+    <section id="profile" class="profile" aria-labelledby="profileTitle" hidden>
+     <div class="profile-heading"><span class="eyebrow">03 / REFERENZ DETAIL</span><h3 id="profileTitle">Gerätesteckbrief</h3></div>
+     <div id="profileContent"></div>
+    </section>
+   </section>
+  </div>
+  <footer>Universal Fitment · rein lokale, nicht veröffentlichte Entwicklungsansicht · <strong>0 bestätigte reale Teilepassungen</strong> · Kein Warenkorb, keine Montagefreigabe</footer>
+ </main>
+ <noscript>JavaScript ist für diese lokale Kennungssuche erforderlich. Eingaben werden nicht übertragen.</noscript>
+</body>
+</html>

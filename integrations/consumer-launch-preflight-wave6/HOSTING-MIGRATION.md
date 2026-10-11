@@ -1,0 +1,33 @@
+# Hosting-Entscheidung und Testmatrix — NICHT DEPLOYEN
+
+Offizielle Quellen geprüft 10.10.2026. Keine Registrierung, Bestellung, Zahlung, Domainaktion oder produktive Einstellung. Eignung des konkreten Betriebs bleibt **BLOCKED**.
+
+## Entscheidungsvorschlag, nicht Beschaffung
+
+[GitHub Pages limits](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits) untersagt kostenloses Hosting für hauptsächlich kommerzielle Transaktionen/SaaS und empfiehlt Pages nicht für sensible Transaktionen wie Passwortübertragung. Eine wirklich freie read-only Beta wird hier nicht pauschal als verboten bezeichnet; Zweck, künftige Monetarisierung und tatsächliche Auth-Flows müssen eingeordnet werden. Für das geplante kommerziell anschlussfähige Projekt ist Pages kein ungeprüfter Standardhost. Eine eigene Domain vor Pages behebt diese Nutzungsbedingungen nicht.
+
+**Kandidat für Owner-Entscheidung: Hetzner Webhosting S in Deutschland, statisches Consumer-Frontend mit eigener Domain.** Die [Produktseite](https://www.hetzner.com/webhosting/) beschreibt gewerbliche Website-Nutzung, SSL und deutsche Serverstandorte; S bietet 10 GB. Domain ist separat erforderlich. Das ist eine plausible technische Option für statische Dateien, keine verbindliche Empfehlung/Freigabe. Keine Preise oder Vertragszusagen aus dynamisch unvollständig gerenderten Tarifwerten übernehmen. Bei später notwendigem Node-Backend nicht S als belegten Node-Tarif deklarieren; die Produktseite nennt Node.js bei L/XL. Kein neues Backend erforderlich für den lokalen PoC; optionales Supabase-Altbackend wird dadurch weder ersetzt noch freigegeben.
+
+[Hetzner Datenschutz/DPA](https://docs.hetzner.com/general/company-and-policy/data-protection-at-hetzner/) beschreibt Muster-DPA, Unterauftragnehmer/TOMs und EU-Verarbeitung für Nicht-Cloud-Produkte. Das dokumentiert Anbieteroptionen, **keinen abgeschlossenen DPA**. Owner muss konkreten Vertrag, Dienste/Region, Kategorien, Rollen, Retention/Backups und Zugriff entscheiden. Produktmarketing „GDPR compliant“ nimmt der App keine Verantwortlichkeit ab. Exakte Access-/Errorlog-Fristen und Kundenkonfiguration wurden nicht nachgewiesen (versuchter Log-Dokumentabruf nicht zugänglich); bleiben UNKNOWN, keine ausgedachten Tage.
+
+## Migrationstestmatrix
+
+Jede Zeile verlangt Datum, Artefakt-/Buildhash, Testumgebung und menschlichen Verantwortlichen. Nur synthetische Testdaten; Auth nur später separat autorisierte Testumgebung, niemals Produktionskonten. Aktuell keine Zielumgebung vorhanden, daher **UNKNOWN**, auch wenn Quelltests bestehen.
+
+| Bereich | Pages-/Altstand | Kandidat / konkrete Abnahme | Erwartung / Negativtest |
+|---|---|---|---|
+| Zweck/Tarif | Pages Geschäfts-/SaaS-Grenze | Hosting owner legt S + Domain als Entscheidung vor; Vertrag/AGB/Nutzungszweck bestätigen | Keine Aktivierung ohne Eignungsnachweis; `github.io`/Custom-Domain-vor-Pages ist kein Bypass |
+| Hostname/TLS | Repo-Unterpfad vs Origin-root | Reale Domain privat wählen, DNS/TLS/Canonical/WWW/404 prüfen | Keine Mixed-Content-/Redirectschleifen, unbekannter Host abweisen; Domainwahl ist keine Registrierung durch diese Suite |
+| Routing/Assets | Alt-App Hash-Routes; private PoC erwartet Origin-root-Assets | Build lokal, gleiche MIME-Typen, Direktaufruf, Reload auf allen 5 Schritten/404 testen | `offline-config.mjs` enthält absolute `/...`-Assets: nicht unverändert unter Repo-Unterpfad hosten; kein JS als HTML-Fallback |
+| Legal/Mobile | Alt-App Platzhalter, neue App nur Kurznotiz | Echte geprüfte Impressums-/Privacylinks auf jeder Route, 320/375/430px, Text 200%, PWA standalone/offline | Links erreichbar/fokussierbar, keine verdeckte Modalabhängigkeit; offline kein veralteter Mustertext |
+| CORS/API | Alt-App liest Supabase Edge; neuer PoC kein API-Client | Nur bei gewählter Alt-App/Auth-Aktivierung konkrete Testorigin/CORS-Allowlist abgleichen | Erlaubte Origin funktioniert, fremde Origin/fehlende Auth wird abgewiesen; kein `*` als vorschneller Fix |
+| Auth-Redirect | E-Mail/Passwort belegt, Laufzeit unbekannt | Bei aktivem Auth Site URL, exakte Redirects, Confirm/Reset/Logout in Testumgebung testen | [Supabase Redirect URLs](https://supabase.com/docs/guides/auth/redirect-urls) nennt Site URL und Allowlist; keine unkontrollierte Produktionswildcard. Alte Pages-URL darf nicht nach Auth zurückkommen |
+| Apple/Google | Keine OAuth-Calls im gelesenen Runtime-Code | Derzeit nicht als aktiver Migrationstest behaupten. Bei späterer Aktivierung separate Anbieter-/Callback-/Secret-/Consentprüfung | Apple-PWA-Tags/Icon ≠ Apple-Login; kein Provider wird hier konfiguriert |
+| Session/Löschung | Lokales Logout, keine vollständige Kontolöschung | Bei Auth Sessionwiderruf, laufende Requests, Tokenablauf, Storage/Quota/Logs und Betroffenenworkflow in Testumgebung nachweisen | Logout/Accountdelete nicht verwechseln; keine Serverprivilegien im Browser, keine echte E-Mail/Testperson |
+| Worker/Cache | Alt-Origin-Cache; neue App versionierter Assetcache | Neue Origin cold boot, Update/Reopen, Cache-Löschung, offline Reload, alter Origin separat behandeln | Alte localStorage/Worker migrieren nicht automatisch originübergreifend; kein Auth-/Query-/Remote-Response im Cache |
+| Speicherung/Consent | Mission automatisch lokal, Worker bei Start | Je Zweck Erforderlichkeit oder Consententscheidung umsetzen, Ablehnung/Widerruf testen | Kein nicht-notwendiger Zugriff vor wirksamer Wahl; Löschen beider Modi, Offline-Flag, Downloads erklären |
+| Logs/Retention/DPA | Tatsächliche Providerkonfiguration unbekannt | Rechte/Rollen, DPA/Transfers, Access/Error/Auth/Audit/Backupfristen privat erfassen und Löschproben durchführen | Keine Inhalte von Kennung/Email/Token in URL/Logs; Frist und Zugriff nachweisen, UNKNOWN bleibt Sperre |
+| Bilder/Links | Alt-App externe Bildhosts; PoC schematisch | Nur freigegebene Artefakte laden; Network-Protokoll vor/ohne Einwilligung und bei Quelllink-Klick | Keine unzulässigen Bildrequests, korrekte Credits, keine stille Affiliate-/Trackingaktivierung |
+| Reproduzierbarkeit/Rollback | Fester Checkpoint/Source-Lock | Build-/Assethash, Version, Offlinekompatibilität, private Rückfallprobe | Rückfall ist kein Pages-Re-Deploy mit ungeklärten Rechten. Keine Deployment-Automation in diesem PR |
+
+Zur Supabase-Prüfung wurde der Skill verwendet: ausschließlich Quellprüfung und aktuelle Redirect-/Changelog-Dokumentation, keine Produktionsabfragen/-änderungen. [Changelog](https://supabase.com/changelog.md) ist dynamisch und lieferte in dieser Sitzung keine brauchbare Markdownübersicht; keine Aussage, alle künftigen Breaking Changes seien geprüft. Keine Supabase-Funktion implementiert.

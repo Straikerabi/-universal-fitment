@@ -1,0 +1,8 @@
+# Queue-Schema und Sicherheitsgrenzen
+
+- `master.json`: vollständig abgeleitete Registry-IDs und Category-Leaf-Daten; nicht von Hand pflegen. `master.mjs` ist der einzige Generator, `registry.mjs` der einzige Kategorien-Ursprung.
+- `queue-state.json`: `{schema:"uf-journal-wave12/1",taxonomyVersion:"0.4.0",events:[]}`. Event-Felder: `eventId,categoryId,batchId,action,receiptRef,reviewer,recordedAt`; nur append-only gültige Zustandsübergänge. Eine Charge gilt arbeitsseitig als fertig **nur** nach `start` und `complete` mit Referenz; nicht als rechtlich oder fachlich geprüft.
+- `evidence-state.json`: `{schema:"uf-evidence-wave12/1",taxonomyVersion:"0.4.0",observations:[]}`. Unverifizierte Beobachtung: `id,categoryId,batchId,reference,sourceStatus:"reference_unverified",rightsStatus:"unknown",fitmentStatus:"not_authorized",published:false`. Bei anderem Status fail-closed, bis der Owner eine separate originale Auditsuite und Freigabeverfahren genehmigt.
+- `queue-report.json`/`queue-report.md`: aus Registry + Journal + Belegindex automatisch erzeugt. Alle gespeicherten Masterdaten und Berichte werden bei `--check` bytegenau mit dem Generator verglichen. `--append-event` validiert vor Schreibzugriff und regeneriert Reports.
+- Kategorie-IDs und Aliasse nur aus Taxonomie. Prioritäten sind reine Research-Planung. `market.researchTarget=DE` steht nicht für überprüfte regionale Verfügbarkeit. Regulierte Kategorien erhalten ein eigenes Owner-Scope-Gate; HSN/TSN/FIN/KBA bleiben eigene lizenzpflichtig zu prüfende KFZ-Identitätsdaten.
+- Keine Kompatibilitäts-, Sicherheits-, Rechte-, Commerce- oder App-Freigabe durch Status, Kategorie, Evidenz-Referenz oder Forschungspass; die Consumer-v1-Vakuumengine bleibt unverändert.

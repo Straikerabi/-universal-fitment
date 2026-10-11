@@ -1,0 +1,46 @@
+name: Branding Wave12 — private name shortlist QA
+on:
+  push:
+    branches:
+      - work/branding-name-shortlist-wave12
+    paths:
+      - 'docs/branding/wave12/**'
+      - '.github/workflows/branding-wave12.yml'
+  pull_request:
+    branches:
+      - integration/private-unified-preview-wave5-owner
+    paths:
+      - 'docs/branding/wave12/**'
+      - '.github/workflows/branding-wave12.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  naming-qa:
+    name: Brand shortlist and domain signal (NO LEGAL GO)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout exact PR head, read-only
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          persist-credentials: false
+      - name: Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          check-latest: false
+      - name: Validate syntax and data
+        run: |
+          node --version
+          node --check docs/branding/wave12/validate.mjs
+          node --check docs/branding/wave12/validate.test.mjs
+          node --check docs/branding/wave12/domain-probe.mjs
+          node docs/branding/wave12/validate.mjs
+      - name: Run 25+ negative and baseline tests
+        run: node --test docs/branding/wave12/validate.test.mjs
+      - name: Read-only RDAP snapshot; unknown is not free
+        run: node docs/branding/wave12/domain-probe.mjs

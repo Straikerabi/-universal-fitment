@@ -1,0 +1,159 @@
+{
+  "schema": "uf-queue-report-wave12/1",
+  "taxonomyVersion": "0.4.0",
+  "groupCount": 13,
+  "categoryCount": 200,
+  "plannedCount": 199,
+  "privatePilotIds": [
+    "vacuum-cleaner"
+  ],
+  "workStatuses": {
+    "ready": 200,
+    "in_progress": 0,
+    "completed": 0,
+    "blocked": 0
+  },
+  "journalEvents": 0,
+  "unverifiedEvidenceReferences": 0,
+  "ownerRestrictedCategories": 18,
+  "nextSuggested": [
+    {
+      "categoryId": "vacuum-cleaner",
+      "label": "Staubsauger",
+      "batchId": "vacuum-cleaner::research-0001",
+      "workStatus": "ready",
+      "priority": 10,
+      "completedBatches": 0,
+      "modelBatchTarget": 25,
+      "rightsApproved": false,
+      "fitmentConfirmed": false
+    },
+    {
+      "categoryId": "washing-machine",
+      "label": "Waschmaschinen",
+      "batchId": "washing-machine::research-0001",
+      "workStatus": "ready",
+      "priority": 20,
+      "completedBatches": 0,
+      "modelBatchTarget": 25,
+      "rightsApproved": false,
+      "fitmentConfirmed": false
+    },
+    {
+      "categoryId": "car",
+      "label": "PKW",
+      "batchId": "car::research-0001",
+      "workStatus": "ready",
+      "priority": 30,
+      "completedBatches": 0,
+      "modelBatchTarget": 25,
+      "rightsApproved": false,
+      "fitmentConfirmed": false
+    },
+    {
+      "categoryId": "dishwasher",
+      "label": "Geschirrspüler",
+      "batchId": "dishwasher::research-0001",
+      "workStatus": "ready",
+      "priority": 40,
+      "completedBatches": 0,
+      "modelBatchTarget": 25,
+      "rightsApproved": false,
+      "fitmentConfirmed": false
+    },
+    {
+      "categoryId": "tumble-dryer",
+      "label": "Wäschetrockner",
+      "batchId": "tumble-dryer::research-0001",
+      "workStatus": "ready",
+      "priority": 50,
+      "completedBatches": 0,
+      "modelBatchTarget": 25,
+      "rightsApproved": false,
+      "fitmentConfirmed": false
+    },
+    {
+      "categoryId": "coffee-machine",
+      "label": "Kaffeemaschinen",
+      "batchId": "coffee-machine::research-0001",
+      "workStatus": "ready",
+      "priority": 60,
+      "completedBatches": 0,
+      "modelBatchTarget": 25,
+      "rightsApproved": false,
+      "fitmentConfirmed": false
+    },
+    {
+      "categoryId": "cordless-drill",
+      "label": "Bohrmaschinen & Akkuschrauber",
+      "batchId": "cordless-drill::research-0001",
+      "workStatus": "ready",
+      "priority": 70,
+      "completedBatches": 0,
+      "modelBatchTarget": 25,
+      "rightsApproved": false,
+      "fitmentConfirmed": false
+    },
+    {
+      "categoryId": "electric-saw",
+      "label": "Elektrische Sägen",
+      "batchId": "electric-saw::research-0001",
+      "workStatus": "ready",
+      "priority": 71,
+      "completedBatches": 0,
+      "modelBatchTarget": 25,
+      "rightsApproved": false,
+      "fitmentConfirmed": false
+    },
+    {
+      "categoryId": "angle-grinder",
+      "label": "Winkelschleifer",
+      "batchId": "angle-grinder::research-0001",
+      "workStatus": "ready",
+      "priority": 72,
+      "completedBatches": 0,
+      "modelBatchTarget": 25,
+      "rightsApproved": false,
+      "fitmentConfirmed": false
+    },
+    {
+      "categoryId": "rotary-hammer",
+      "label": "Bohrhämmer",
+      "batchId": "rotary-hammer::research-0001",
+      "workStatus": "ready",
+      "priority": 73,
+      "completedBatches": 0,
+      "modelBatchTarget": 25,
+      "rightsApproved": false,
+      "fitmentConfirmed": false
+    },
+    {
+      "categoryId": "sander",
+      "label": "Schleifer",
+      "batchId": "sander::research-0001",
+      "workStatus": "ready",
+      "priority": 74,
+      "completedBatches": 0,
+      "modelBatchTarget": 25,
+      "rightsApproved": false,
+      "fitmentConfirmed": false
+    },
+    {
+      "categoryId": "pressure-washer",
+      "label": "Hochdruckreiniger",
+      "batchId": "pressure-washer::research-0001",
+      "workStatus": "ready",
+      "priority": 75,
+      "completedBatches": 0,
+      "modelBatchTarget": 25,
+      "rightsApproved": false,
+      "fitmentConfirmed": false
+    }
+  ],
+  "gates": {
+    "commercialRightsApproved": false,
+    "fitmentConfirmed": false,
+    "consumerPublished": false,
+    "launchApproved": false
+  }
+}

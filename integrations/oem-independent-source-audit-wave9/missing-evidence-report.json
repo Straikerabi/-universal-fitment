@@ -1,0 +1,122 @@
+{
+  "schema": "uf.oem-independent-audit/1",
+  "issue": 96,
+  "baseSha": "3bafbc7fd8c8da5ed6fe3bddc70eacbc0be1e035",
+  "batch": "wave9-new-oem-2026-10-10",
+  "originalArchive": {
+    "status": "UNVERIFIED_ARCHIVE",
+    "required": 33,
+    "independentlyReplayable": 0,
+    "zipDigestVerified": false,
+    "records": [],
+    "migrationAllowed": false,
+    "reason": "Original ZIP not supplied; metadata is not raw evidence."
+  },
+  "newObservations": [
+    {
+      "id": "miele-11602400",
+      "brand": "Miele",
+      "reference": "11602400",
+      "market": "DE",
+      "fullExactIdentity": true,
+      "url": "https://www.miele.de/product/11602400/bodenstaubsauger-ohne-beutel-boost-cx1-parquet-powerline-lotosweiss",
+      "observedAt": "2026-10-10T18:37:04.211657+00:00",
+      "finalUrl": "https://www.miele.de/product/11602400/bodenstaubsauger-ohne-beutel-boost-cx1-parquet-powerline-lotosweiss",
+      "sha256": "c445ed354d7ce06bed005747197ed1f2601e17483974a1cab7779a9ac6ef05b4",
+      "rawLocator": "miele-11602400.html",
+      "status": "unverified",
+      "fields": [],
+      "rights": {
+        "factualUse": "review_pending",
+        "pageRedistribution": "not_granted",
+        "mediaB2c": "not_granted",
+        "commercialUse": "not_granted"
+      },
+      "fullExactIdentityVerified": false,
+      "physicalFitApproved": false,
+      "missing": [
+        "serial-range",
+        "connectors",
+        "installation-proof",
+        "reuse-permission"
+      ],
+      "error": "No raw cache supplied; stored receipts are not verification."
+    },
+    {
+      "id": "bosch-bgl75x1prq",
+      "brand": "Bosch",
+      "reference": "BGL75X1PRQ",
+      "market": "DE",
+      "fullExactIdentity": false,
+      "url": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGL75X1PRQ",
+      "observedAt": "2026-10-10T18:37:12.124957+00:00",
+      "finalUrl": "https://www.bosch-home.com/de/de/product/staubsauger/staubsauger-mit-beutel/BGL75X1PRQ",
+      "sha256": "3b5609010ea5edb0e448785f95b14c719d088ad5389f7ccb8018a2b886aebf3f",
+      "rawLocator": "bosch-bgl75x1prq.html",
+      "status": "unverified",
+      "fields": [],
+      "rights": {
+        "factualUse": "review_pending",
+        "pageRedistribution": "not_granted",
+        "mediaB2c": "not_granted",
+        "commercialUse": "not_granted"
+      },
+      "fullExactIdentityVerified": false,
+      "physicalFitApproved": false,
+      "missing": [
+        "serial-range",
+        "connectors",
+        "installation-proof",
+        "reuse-permission"
+      ],
+      "error": "No raw cache supplied; stored receipts are not verification."
+    },
+    {
+      "id": "hoover-39401035",
+      "brand": "Hoover",
+      "reference": "HF202P 011",
+      "market": "DE",
+      "fullExactIdentity": true,
+      "url": "https://www.hoover-home.com/de_DE/akkusauger/39401035/hf202p-011/",
+      "observedAt": "2026-10-10T18:37:17.270477+00:00",
+      "finalUrl": "https://www.hoover-home.com/de_DE/akkusauger/39401035/hf202p-011/",
+      "sha256": "8ff7c4ac5e02cf5d9aae33fbf49138230cb6bc059be8e6a91ad06614efa32efb",
+      "rawLocator": "hoover-39401035.html",
+      "status": "unverified",
+      "fields": [],
+      "rights": {
+        "factualUse": "review_pending",
+        "pageRedistribution": "not_granted",
+        "mediaB2c": "not_granted",
+        "commercialUse": "not_granted"
+      },
+      "fullExactIdentityVerified": false,
+      "physicalFitApproved": false,
+      "missing": [
+        "serial-range",
+        "connectors",
+        "installation-proof",
+        "reuse-permission"
+      ],
+      "error": "No raw cache supplied; stored receipts are not verification."
+    }
+  ],
+  "counts": {
+    "originalSourcesIndependentlyReplayable": 0,
+    "newPageObservations": 0,
+    "fullExactIdentity": 0,
+    "individualFieldsWithOemLocator": 0,
+    "unverified": 36,
+    "rightsGranted": 0,
+    "approvedRealFits": 0
+  },
+  "legacyWave7MigrationAllowed": false,
+  "launchApproved": false,
+  "blockers": [
+    "platform reuse rights not granted",
+    "Owner #85 integration and combined regression outstanding",
+    "no physical-fit or serial/connector proof",
+    "historical Wave3 56 missing sources not resolved"
+  ],
+  "caveat": "Reproducible second code-path byte audit, not an external human OEM certification. Historical receipt times/final URLs are archived claims; live requests are a separate batch."
+}

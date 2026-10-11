@@ -1,0 +1,46 @@
+- main:
+  - paragraph: 03 / BAUGRUPPE
+  - heading "Dein Gerät. Die richtigen Fragen." [level=2]
+  - paragraph: Öffne eine Baugruppe und grenze die dokumentierten Identitäten ein. Eine Liste allein bestätigt keinen Einbau.
+  - strong: Miele · Triflex HX2 Cat & Dog
+  - text: "Quellenkennung:"
+  - code: "11806000"
+  - text: Herstellerquelle dokumentiert · Passung separat zu prüfen Quellenmarkt DE · Eigene Kennung ungeprüft
+  - img "Neutrale eigene Baugruppen-Illustration; kein konkretes Gerätemodell": 01 02 03
+  - paragraph: Eigene neutrale Orientierung. Keine modellgenauen Einbaupositionen.
+  - region "Teile eingrenzen":
+    - text: Teilename oder Teilecode
+    - searchbox "Teilename oder Teilecode": Filter
+    - group: Filter & Sortierung
+    - status: 1 von 3 belegten Prüfkandidaten sichtbar · 0 bestätigte reale Teile
+    - button "Filter zurücksetzen"
+  - group:
+    - strong: Filter & Beutel
+    - text: 1 von 1 belegten Prüfkandidaten · 0 bestätigte reale Teile
+    - paragraph: Filter und Staubbeutel
+    - article:
+      - strong: Miele HX-FSF-2
+      - code: "13070280"
+      - paragraph: Originalteil-Identität belegt · Passung unbestätigt
+      - group: Quelle zur Artikelidentität
+    - button "Für Mission auswählen"
+  - group:
+    - strong: Bürsten & Düsen
+    - text: 0 von 1 belegten Prüfkandidaten · 0 bestätigte reale Teile
+  - group:
+    - strong: Akku & Elektrik
+    - text: 0 von 1 belegten Prüfkandidaten · 0 bestätigte reale Teile
+  - group:
+    - strong: Schläuche
+    - text: 0 von 0 belegten Prüfkandidaten · 0 bestätigte reale Teile
+    - paragraph: Schlauch und Luftverbindung
+    - strong: Hier noch kein dokumentierter Artikel
+    - paragraph: Für diesen Bereich gibt es im ausgewählten Pilotbestand keinen dokumentierten Artikel. Das heißt weder „nicht erhältlich“ noch „nicht separat verkauft“. OEM-Nummer und Originalbeleg bleiben offen.
+    - button "Gerätekennung prüfen"
+    - button "Für Mission auswählen"
+  - group:
+    - strong: Gehäuse & Behälter
+    - text: 0 von 0 belegten Prüfkandidaten · 0 bestätigte reale Teile
+  - paragraph: Belegt ist die Identität des Prüfkandidaten. Für echte Geräte sind derzeit 0 Teile in diesem Ablauf als passend bestätigt.
+  - button "Zurück"
+  - button "Passung nachvollziehen" [disabled]
